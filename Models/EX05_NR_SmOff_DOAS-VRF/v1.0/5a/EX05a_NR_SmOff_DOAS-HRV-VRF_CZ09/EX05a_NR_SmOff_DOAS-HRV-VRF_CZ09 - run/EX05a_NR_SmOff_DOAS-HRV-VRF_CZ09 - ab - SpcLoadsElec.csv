@@ -1,0 +1,127 @@
+Space Interior Loads Electric Use Report
+,,,,,Regulated,,,,Non-Regulated,,,,Non-Regulated,,,,Non-Regulated,,,,Non-Regulated,,,
+Space,,,,,Interior Lighting,,,,Interior Lighting,,,,Receptacle,,,,Process,,,,Commercial Refrigeration,,,
+Name,Conditioning Type,Space Function,Floor Area,Multiplier,Power Density,Schedule Name,Schedule,Energy Use,Power Density,Schedule Name,Schedule,Energy Use,Power Density,Schedule Name,Schedule,Energy Use,Power Density,Schedule Name,Schedule,Energy Use,Power Density,Schedule Name,Schedule,Energy Use,
+,,,(ft2),,(W/ft2),,(FLH),(kWh),(W/ft2),,(FLH),(kWh),(W/ft2),,(FLH),(kWh),(W/ft2),,(FLH),(kWh),(W/ft2),,(FLH),(kWh),
+"Zn 101 Reception Space","DirectlyConditioned","Lobby, Main Entry",351.146,1,0.7,"OfficeLights",2253.1,553.817,,,,,0.5,"OfficeReceptacle",2855.5,501.349,,,,,,,,,
+"Zn 102 Mail Space","DirectlyConditioned","Storage, General",311.019,1,0.4,"OfficeLights",2253.1,280.303,,,,,0.2,"OfficeReceptacle",2855.5,177.623,,,,,,,,,
+"Zn 103 Copy_Print Space","DirectlyConditioned","Storage, General",292.306,1,0.4,"OfficeLights",2253.1,263.437,,,,,0.2,"OfficeReceptacle",2855.5,166.936,,,,,,,,,
+"Zn 104 Corridor Space","DirectlyConditioned","Corridor Area",437.712,1,0.4,"OfficeLights",2253.1,394.483,,,,,,,,,,,,,,,,,
+"Zn 105 Phone Space","DirectlyConditioned","Electrical, Mechanical, Telephone Rooms",119.127,1,0.4,"OfficeLights",2253.1,107.362,,,,,3,"OfficeReceptacle",2855.5,1020.5,,,,,,,,,
+"Zn 106 Conference Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area",488.62,1,0.75,"OfficeLights",2253.1,825.683,,,,,1,"OfficeReceptacle",2855.5,1395.25,,,,,,,,,
+"Zn 107 Storage Space","DirectlyConditioned","Storage, General",316.083,1,0.4,"OfficeLights",2253.1,284.867,,,,,0.2,"OfficeReceptacle",2855.5,180.515,,,,,,,,,
+"Zn 108 Break Room Space","DirectlyConditioned","Lounge, Breakroom, or Waiting Area",598.434,1,0.55,"OfficeLights",2253.1,741.583,,,,,1,"OfficeReceptacle",2855.5,1708.83,,,,,,,,,
+"Zn 109 Dining Space","DirectlyConditioned","Lounge, Breakroom, or Waiting Area",499.782,1,0.55,"OfficeLights",2253.1,619.332,,,,,1,"OfficeReceptacle",2855.5,1427.13,,,,,,,,,
+"Zn 111 Open Office Space","DirectlyConditioned","Office Area (>250 square feet)",5712.79,1,0.6,"OfficeLights",2253.1,7722.89,,,,,1.5,"OfficeReceptacle",2855.5,24469.3,,,,,,,,,
+"Zn 111A Vestibule Space","DirectlyConditioned","Corridor Area",101.352,1,0.4,"OfficeLights",2253.1,91.3425,,,,,,,,,,,,,,,,,
+"Zn 112 Huddle Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area",147.069,1,0.75,"OfficeLights",2253.1,248.521,,,,,1,"OfficeReceptacle",2855.5,419.956,,,,,,,,,
+"Zn 113 Restroom Space","Unconditioned","Restrooms",245.503,1,0.65,"OfficeLights",2253.1,359.543,,,,,,,,,,,,,,,,,
+"Zn 120 Conference Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area",390.769,1,0.75,"OfficeLights",2253.1,660.332,,,,,1,"OfficeReceptacle",2855.5,1115.84,,,,,,,,,
+"Zn 121 Huddle Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area",99.3377,1,0.75,"OfficeLights",2253.1,167.863,,,,,1,"OfficeReceptacle",2855.5,283.659,,,,,,,,,
+"Zn 122 Office Space","DirectlyConditioned","Office Area (<=250 square feet)",198.656,1,0.65,"OfficeLights",2253.1,290.935,,,,,1.5,"OfficeReceptacle",2855.5,850.895,,,,,,,,,
+"Zn 123 Office Space","DirectlyConditioned","Office Area (<=250 square feet)",178.92,1,0.65,"OfficeLights",2253.1,262.031,,,,,1.5,"OfficeReceptacle",2855.5,766.359,,,,,,,,,
+"Zn 124 Conference Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area",148.303,1,0.75,"OfficeLights",2253.1,250.606,,,,,1,"OfficeReceptacle",2855.5,423.48,,,,,,,,,
+"Zn 125 Electrical Space","Unconditioned","Electrical, Mechanical, Telephone Rooms",64.0852,1,0.4,"OfficeLights",2253.1,57.7561,,,,,3,"OfficeReceptacle",2855.5,548.986,,,,,,,,,
+"Zn 126 Copy Space","DirectlyConditioned","Storage, General",150.835,1,0.4,"OfficeLights",2253.1,135.939,,,,,0.2,"OfficeReceptacle",2855.5,86.142,,,,,,,,,
+"Zn 127 Huddle Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area",98.6374,1,0.75,"OfficeLights",2253.1,166.68,,,,,1,"OfficeReceptacle",2855.5,281.659,,,,,,,,,
+"Zn 128 IT Room Space","DirectlyConditioned","Computer Room",131.889,1,0.5,"DataLights",3062.45,201.951,,,,,20.001,"DataReceptacle",0,0,,,,,,,,,
+"Zn 129 Conference Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area",172.814,1,0.75,"OfficeLights",2253.1,292.025,,,,,1,"OfficeReceptacle",2855.5,493.47,,,,,,,,,
+"Zn 130 Library Space","DirectlyConditioned","Office Area (>250 square feet)",1818.04,1,0.6,"OfficeLights",2253.1,2457.73,,,,,1.5,"OfficeReceptacle",2855.5,7787.11,,,,,,,,,
+"Zn 131 Support Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area",821.379,1,0.75,"OfficeLights",2253.1,1387.99,,,,,1,"OfficeReceptacle",2855.5,2345.45,,,,,,,,,
+
+
+
+Space Loads Report
+Space,,,,,,Occupancy,,,,,Service Hot Water,,Ventilation,,,,,,Infiltration,,,Thermal Zone
+Name,Conditioning Type,Space Function,Floor Area,Story Name,Multiplier,Density,Number,Schedule Name,Sensible Heat Rate,Latent Heat Rate,SHW Use, Schedule Name,Prop. DsgnVentPerArea,Prop. DsgnVentPerPerson,Code VentPerArea,Code VentPerPerson,Sim. Area Flow,Sim. Person Flow,Method,Schedule Name,Design Infiltration Rate,Clg Tstat Sch, Htg Tstat Sch
+,,,(ft2),,,(ppl/1000ft2),(people),,(Btu/h-person),(Btu/h-person),(gal/person),,(cfm/ft2),(cfm/person),(cfm/ft2),(cfm/person),(cfm),(cfm),,,(cfm/ft2)
+"Zn 101 Reception Space","DirectlyConditioned","Lobby, Main Entry",351.1462,"Building Story 1",1,33,11.5878,"OfficeOccupancy",250,250,0.09,"OfficeServiceHotWater",0.495,15,0.495,15,173.817,0,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+"Zn 102 Mail Space","DirectlyConditioned","Storage, General",311.0189,"Building Story 1",1,2,0.622038,"OfficeOccupancy",250,200,0,"OfficeServiceHotWater",0.15,75,0.15,75,46.6528,0,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+"Zn 103 Copy_Print Space","DirectlyConditioned","Storage, General",292.3055,"Building Story 1",1,2,0.584611,"OfficeOccupancy",250,200,0,"OfficeServiceHotWater",0.15,75,0.15,75,43.8458,0,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+"Zn 104 Corridor Space","DirectlyConditioned","Corridor Area",437.7117,"Building Story 1",1,5,2.18856,"OfficeOccupancy",250,250,0,"OfficeServiceHotWater",0.15,30,0.15,30,65.6567,0,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+"Zn 105 Phone Space","DirectlyConditioned","Electrical, Mechanical, Telephone Rooms",119.1270,"Building Story 1",1,5,0.595635,"OfficeOccupancy",250,250,0.18,"OfficeServiceHotWater",0.15,30,0.15,30,17.8691,8.93453,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+"Zn 106 Conference Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area",488.6201,"Building Story 1",1,33,16.1245,"OfficeOccupancy",245,155,0.09,"OfficeServiceHotWater",0.495,15,0.495,15,73.293,241.867,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+"Zn 107 Storage Space","DirectlyConditioned","Storage, General",316.0832,"Building Story 1",1,5,1.58042,"OfficeOccupancy",250,200,0,"OfficeServiceHotWater",0.15,30,0.15,30,47.4125,23.7062,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+"Zn 108 Break Room Space","DirectlyConditioned","Lounge, Breakroom, or Waiting Area",598.4342,"Building Story 1",1,33,19.7483,"OfficeOccupancy",275,275,0.09,"OfficeServiceHotWater",0.495,15,0.495,15,89.7651,296.225,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+"Zn 109 Dining Space","DirectlyConditioned","Lounge, Breakroom, or Waiting Area",499.7819,"Building Story 1",1,33,16.4928,"OfficeOccupancy",275,275,0.09,"OfficeServiceHotWater",0.495,15,0.495,15,74.9673,247.392,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+"Zn 111 Open Office Space","DirectlyConditioned","Office Area (>250 square feet)",5712.7870,"Building Story 1",1,5,28.5639,"OfficeOccupancy",250,200,0.18,"OfficeServiceHotWater",0.15,30,0.15,30,856.918,0,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+"Zn 111A Vestibule Space","DirectlyConditioned","Corridor Area",101.3521,"Building Story 1",1,5,0.50676,"OfficeOccupancy",250,250,0,"OfficeServiceHotWater",0.15,30,0.15,30,15.2028,0,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+"Zn 112 Huddle Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area",147.0692,"Building Story 1",1,33,4.85328,"OfficeOccupancy",245,155,0.09,"OfficeServiceHotWater",0.495,15,0.495,15,22.0604,72.7993,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+"Zn 113 Restroom Space","Unconditioned","Restrooms",245.5033,"Building Story 1",1,5,1.22752,"OfficeOccupancy",250,250,0,"OfficeServiceHotWater",0,0,0,0,0,0,"FlowExteriorWallArea","On",0.2352,"NONE","NONE"
+"Zn 120 Conference Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area",390.7692,"Building Story 1",1,33,12.8954,"OfficeOccupancy",245,155,0.09,"OfficeServiceHotWater",0.495,15,0.495,15,58.6154,193.431,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+"Zn 121 Huddle Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area",99.3377,"Building Story 1",1,33,3.27814,"OfficeOccupancy",245,155,0.09,"OfficeServiceHotWater",0.495,15,0.495,15,49.1722,0,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+"Zn 122 Office Space","DirectlyConditioned","Office Area (<=250 square feet)",198.6565,"Building Story 1",1,5,0.993282,"OfficeOccupancy",250,200,0.18,"OfficeServiceHotWater",0.15,30,0.15,30,29.7985,0,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+"Zn 123 Office Space","DirectlyConditioned","Office Area (<=250 square feet)",178.9199,"Building Story 1",1,5,0.8946,"OfficeOccupancy",250,200,0.18,"OfficeServiceHotWater",0.15,30,0.15,30,26.838,0,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+"Zn 124 Conference Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area",148.3032,"Building Story 1",1,33,4.894,"OfficeOccupancy",245,155,0.09,"OfficeServiceHotWater",0.495,15,0.495,15,22.2455,73.4101,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+"Zn 125 Electrical Space","Unconditioned","Electrical, Mechanical, Telephone Rooms",64.0852,"Building Story 1",1,5,0.320426,"OfficeOccupancy",250,250,0.18,"OfficeServiceHotWater",0,0,0,0,0,0,"FlowExteriorWallArea","On",0.2352,"NONE","NONE"
+"Zn 126 Copy Space","DirectlyConditioned","Storage, General",150.8352,"Building Story 1",1,2,0.30167,"OfficeOccupancy",250,200,0,"OfficeServiceHotWater",0.15,75,0.15,75,22.6253,0,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+"Zn 127 Huddle Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area",98.6374,"Building Story 1",1,33,3.25503,"OfficeOccupancy",245,155,0.09,"OfficeServiceHotWater",0.495,15,0.495,15,48.8255,0,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+"Zn 128 IT Room Space","DirectlyConditioned","Computer Room",131.8885,"Building Story 1",1,5,0.659443,"DataOccupancy",275,475,0.18,"DataServiceHotWater",0.15,30,0.15,30,19.7833,0,"FlowExteriorWallArea","DataInfiltration",0.2352,"DataClgSetpt","DataHtgSetpt"
+"Zn 129 Conference Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area",172.8139,"Building Story 1",1,33,5.70286,"OfficeOccupancy",245,155,0.09,"OfficeServiceHotWater",0.495,15,0.495,15,25.9221,85.5429,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+"Zn 130 Library Space","DirectlyConditioned","Office Area (>250 square feet)",1818.0385,"Building Story 1",1,5,9.09019,"OfficeOccupancy",250,200,0.18,"OfficeServiceHotWater",0.15,30,0.15,30,272.706,0,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+"Zn 131 Support Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area",821.3788,"Building Story 1",1,33,27.1055,"OfficeOccupancy",245,155,0.09,"OfficeServiceHotWater",0.495,15,0.495,15,123.207,406.582,"FlowExteriorWallArea","OfficeInfiltration",0.2352,"OfficeClgSetpt","OfficeHtgSetpt"
+
+
+
+Space Interior Lighting Report
+Space,,,,,Regulated,,,,,,,,,,,Non-Regulated
+Name,Conditioning Type,Space Function,Lighting Status,Floor Area,Lighting Specification Method,Installed Power,Schedule Name,Schedule,Lighting System Count,Lighting Control Credit,General Lighting Power,Area Category Allowances,Tailored Allowances,Simulated Power,Simulated LPD,Power,Schedule Name,Schedule,LPD
+,,,,(ft2),,(Watts),,(FLH),,(Watts),(Watts),(Watts),(Watts),(Watts),(Watts/ft2),(Watts),,(FLH),(Watts/ft2),
+"Zn 101 Reception Space","DirectlyConditioned","Lobby, Main Entry","Future",351.146,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,245.802,0,-99996,245.802,0.70
+"Zn 102 Mail Space","DirectlyConditioned","Storage, General","Future",311.019,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,124.408,0,-99996,124.408,0.40
+"Zn 103 Copy_Print Space","DirectlyConditioned","Storage, General","Future",292.306,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,116.922,0,-99996,116.922,0.40
+"Zn 104 Corridor Space","DirectlyConditioned","Corridor Area","Future",437.712,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,175.085,0,-99996,175.085,0.40
+"Zn 105 Phone Space","DirectlyConditioned","Electrical, Mechanical, Telephone Rooms","Future",119.127,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,47.6508,0,-99996,47.6508,0.40
+"Zn 106 Conference Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area","Future",488.62,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,366.465,0,-99996,366.465,0.75
+"Zn 107 Storage Space","DirectlyConditioned","Storage, General","Future",316.083,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,126.433,0,-99996,126.433,0.40
+"Zn 108 Break Room Space","DirectlyConditioned","Lounge, Breakroom, or Waiting Area","Future",598.434,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,329.139,0,-99996,329.139,0.55
+"Zn 109 Dining Space","DirectlyConditioned","Lounge, Breakroom, or Waiting Area","Future",499.782,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,274.88,0,-99996,274.88,0.55
+"Zn 111 Open Office Space","DirectlyConditioned","Office Area (>250 square feet)","Future",5712.79,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,3427.67,0,-99996,3427.67,0.60
+"Zn 111A Vestibule Space","DirectlyConditioned","Corridor Area","Future",101.352,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,40.5408,0,-99996,40.5408,0.40
+"Zn 112 Huddle Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area","Future",147.069,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,110.302,0,-99996,110.302,0.75
+"Zn 113 Restroom Space","Unconditioned","Restrooms","Future",245.503,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,159.577,0,-99996,159.577,0.65
+"Zn 120 Conference Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area","Future",390.769,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,293.077,0,-99996,293.077,0.75
+"Zn 121 Huddle Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area","Future",99.3377,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,74.5033,0,-99996,74.5033,0.75
+"Zn 122 Office Space","DirectlyConditioned","Office Area (<=250 square feet)","Future",198.656,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,129.127,0,-99996,129.127,0.65
+"Zn 123 Office Space","DirectlyConditioned","Office Area (<=250 square feet)","Future",178.92,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,116.298,0,-99996,116.298,0.65
+"Zn 124 Conference Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area","Future",148.303,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,111.227,0,-99996,111.227,0.75
+"Zn 125 Electrical Space","Unconditioned","Electrical, Mechanical, Telephone Rooms","Future",64.0852,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,25.6341,0,-99996,25.6341,0.40
+"Zn 126 Copy Space","DirectlyConditioned","Storage, General","Future",150.835,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,60.3341,0,-99996,60.3341,0.40
+"Zn 127 Huddle Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area","Future",98.6374,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,73.978,0,-99996,73.978,0.75
+"Zn 128 IT Room Space","DirectlyConditioned","Computer Room","Future",131.889,"AreaCategoryMethod",0,"DataLights",3062.45,-99996,0,65.9443,0,-99996,65.9443,0.50
+"Zn 129 Conference Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area","Future",172.814,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,129.61,0,-99996,129.61,0.75
+"Zn 130 Library Space","DirectlyConditioned","Office Area (>250 square feet)","Future",1818.04,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,1090.82,0,-99996,1090.82,0.60
+"Zn 131 Support Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area","Future",821.379,"AreaCategoryMethod",0,"OfficeLights",2253.1,-99996,0,616.034,0,-99996,616.034,0.75
+
+
+
+Space Daylighting,,,,,,,,,,,,,,,,,,,,,,,,,
+Name,SpcFunc,FlrArea,DayltgCtrlType,MandMinDaylitArea,MinDimLtgFrac,MinDimPwrFrac,NumOfCtrlSteps,SkylitDaylitArea,SkylitDayltgCtrlLtgPwr,SkylitDayltgCtrlLtgFrac,SkylitDayltgIllumSetpt,SkylitDayltgIllumSetptAdjFac,SkylitDayltgAdjIllumSetpt,,PriSideDayltgRefPtCoord[1],PriSideDayltgRefPtCoord[2],PriSideDayltgRefPtCoord[3],PriSideDaylitArea,PriSideDayltgCtrlLtgPwr,PriSideDayltgCtrlLtgFrac,PriSideDayltgIllumSetpt,PriSideDayltgIllumSetptAdjFac,PriSideDayltgAdjIllumSetpt,,SecSideDayltgRefPtCoord[1],SecSideDayltgRefPtCoord[2],SecSideDayltgRefPtCoord[3],SecSideDaylitArea,SecSideDayltgCtrlLtgPwr,SecSideDayltgCtrlLtgFrac,SecSideDayltgIllumSetpt,SecSideDayltgIllumSetptAdjFac,SecSideDayltgAdjIllumSetpt
+Space,,,,,,,,Skylit Zone,,,,,,,Primary Sidelit Daylit Zone,,,,,,,,,,Secondary Sidelit Daylit Zone,,,,,,
+Name,Space Function,Floor Area,Control Type,MinDayltg per 140.3c,Min. Dim. Ltg. Frac.,Min Dim. Pwr. Frac.,Switched # Ctrl. Steps,Daylit Area,Controlled Watts,Control Fraction,Illuminance Set Pt,Illum Set Pt Adj Factor,Adj Illum. Set Point,,Ref Pt Coord [1],Ref Pt Coord [2],Ref Pt Coord [3],Daylit Area,Controlled Watts,Control Fraction,Illuminance Set Pt,Illum Set Pt Adj Factor,Adj Illum. Set Point,,Ref Pt Coord [1],Ref Pt Coord [2],Ref Pt Coord [3],Daylit Area,Controlled Watts,Control Fraction,Illuminance Set Pt,Illum Set Pt Adj Factor,Adj Illum. Set Point
+,,(ft2),,(ft2),,,,(ft2),(Watts),(Frac),(lux),,(lux),,,,,(ft2),(Watts),(Frac),(lux),,(lux),,,,,(ft2),(Watts),(Frac),(lux),,(lux)
+"Zn 101 Reception Space","Lobby, Main Entry",351.146,"Continuous",-99996,0.1,0.1,-99996,312.146,218.502,0.888935,125,-99996,125,,-101.616,102.906,2.5,0,0,0,125,-99996,187.5,,-99.3388,94.4057,2.5,39.0001,0,0,125,-99996,250
+"Zn 102 Mail Space","Storage, General",311.019,"Continuous",-99996,0.1,0.1,-99996,309.355,123.742,0.99465,175,-99996,175,,-99996,-99996,-99996,0,0,0,175,-99996,262.5,,-99996,-99996,-99996,0,0,0,175,-99996,350
+"Zn 103 Copy_Print Space","Storage, General",292.306,"Continuous",-99996,0.1,0.1,-99996,251.767,100.707,0.861314,175,-99996,175,,-99996,-99996,-99996,0,0,0,175,-99996,262.5,,-99996,-99996,-99996,0,0,0,175,-99996,350
+"Zn 104 Corridor Space","Corridor Area",437.712,"None",-99996,-99996,-99996,-99996,0,0,0,75,-99996,75,,-99996,-99996,-99996,0,0,0,75,-99996,112.5,,-99996,-99996,-99996,0,0,0,75,-99996,150
+"Zn 105 Phone Space","Electrical, Mechanical, Telephone Rooms",119.127,"None",-99996,-99996,-99996,-99996,0,0,0,200,-99996,200,,-87.6708,108.889,2.5,114.857,0,0,200,-99996,200,,-90.9269,104.199,2.5,4.27042,0,0,200,-99996,800
+"Zn 106 Conference Space","Convention, Conference, Multipurpose and Meeting Area",488.62,"Continuous",-99996,0.1,0.1,-99996,0,0,0,165,-99996,165,,-77.3723,106.904,2.5,218.165,163.624,0.446493,165,-99996,247.5,,-77.8743,97.1153,2.5,212.501,159.376,0.434901,165,-99996,330
+"Zn 107 Storage Space","Storage, General",316.083,"None",-99996,-99996,-99996,-99996,0,0,0,175,-99996,175,,-99996,-99996,-99996,0,0,0,175,-99996,262.5,,-99996,-99996,-99996,0,0,0,175,-99996,350
+"Zn 108 Break Room Space","Lounge, Breakroom, or Waiting Area",598.434,"None",-99996,-99996,-99996,-99996,0,0,0,170,-99996,170,,-31.1172,82.1302,2.5,49.9666,0,0,170,-99996,255,,-39.6173,79.8525,2.5,49.9798,0,0,170,-99996,340
+"Zn 109 Dining Space","Lounge, Breakroom, or Waiting Area",499.782,"Continuous",-99996,0.1,0.1,-99996,0,0,0,170,-99996,170,,-26.8399,66.1672,2.5,221.335,121.734,0.442862,170,-99996,255,,-34.7161,64.0574,2.5,243.902,134.146,0.488018,170,-99996,340
+"Zn 111 Open Office Space","Office Area (>250 square feet)",5712.79,"Continuous",-99996,0.1,0.1,-99996,3865.17,2319.1,0.676582,287.5,-99996,287.5,,-20.3971,42.1223,2.5,72.3759,0,0,287.5,-99996,287.5,,-28.8972,39.8448,2.5,0.258596,0,0,287.5,-99996,1150
+"Zn 111A Vestibule Space","Corridor Area",101.352,"None",-99996,-99996,-99996,-99996,0,0,0,75,-99996,75,,-105.038,25.7411,2.5,56.1636,0,0,75,-99996,112.5,,-99.6127,28.8503,2.5,45.1884,0,0,75,-99996,150
+"Zn 112 Huddle Space","Convention, Conference, Multipurpose and Meeting Area",147.069,"None",-99996,-99996,-99996,-99996,0,0,0,165,-99996,165,,-13.3599,15.8593,2.5,97.8865,0,0,165,-99996,247.5,,-14.8494,9.85153,2.5,34.6825,0,0,165,-99996,330
+"Zn 113 Restroom Space","Restrooms",245.503,"None",-99996,-99996,-99996,-99996,0,0,0,75,-99996,75,,-99996,-99996,-99996,0,0,0,75,-99996,112.5,,-99996,-99996,-99996,0,0,0,75,-99996,150
+"Zn 120 Conference Space","Convention, Conference, Multipurpose and Meeting Area",390.769,"None",-99996,-99996,-99996,-99996,0,0,0,165,-99996,165,,-99996,-99996,-99996,0,0,0,165,-99996,247.5,,-99996,-99996,-99996,0,0,0,165,-99996,330
+"Zn 121 Huddle Space","Convention, Conference, Multipurpose and Meeting Area",99.3377,"None",-99996,-99996,-99996,-99996,0,0,0,165,-99996,165,,-99996,-99996,-99996,0,0,0,165,-99996,247.5,,-99996,-99996,-99996,0,0,0,165,-99996,330
+"Zn 122 Office Space","Office Area (<=250 square feet)",198.656,"None",-99996,-99996,-99996,-99996,0,0,0,287.5,-99996,287.5,,-99996,-99996,-99996,0,0,0,287.5,-99996,431.25,,-99996,-99996,-99996,0,0,0,287.5,-99996,575
+"Zn 123 Office Space","Office Area (<=250 square feet)",178.92,"None",-99996,-99996,-99996,-99996,0,0,0,287.5,-99996,287.5,,-102.596,21.471,2.5,88.3947,0,0,287.5,-99996,431.25,,-95.428,21.3947,2.5,63.287,0,0,287.5,-99996,575
+"Zn 124 Conference Space","Convention, Conference, Multipurpose and Meeting Area",148.303,"Continuous",-99996,0.1,0.1,-99996,0,0,0,165,-99996,165,,-112.081,36.4485,2.5,148.303,111.227,1,165,-99996,247.5,,-99996,-99996,-99996,0,0,0,165,-99996,330
+"Zn 125 Electrical Space","Electrical, Mechanical, Telephone Rooms",64.0852,"None",-99996,-99996,-99996,-99996,0,0,0,200,-99996,200,,-99996,-99996,-99996,0,0,0,200,-99996,200,,-99996,-99996,-99996,0,0,0,200,-99996,800
+"Zn 126 Copy Space","Storage, General",150.835,"None",-99996,-99996,-99996,-99996,0,0,0,175,-99996,175,,-99996,-99996,-99996,0,0,0,175,-99996,262.5,,-99996,-99996,-99996,0,0,0,175,-99996,350
+"Zn 127 Huddle Space","Convention, Conference, Multipurpose and Meeting Area",98.6374,"None",-99996,-99996,-99996,-99996,0,0,0,165,-99996,165,,-99996,-99996,-99996,0,0,0,165,-99996,247.5,,-99996,-99996,-99996,0,0,0,165,-99996,330
+"Zn 128 IT Room Space","Computer Room",131.889,"None",-99996,-99996,-99996,-99996,0,0,0,187.5,-99996,187.5,,-99996,-99996,-99996,0,0,0,187.5,-99996,187.5,,-99996,-99996,-99996,0,0,0,187.5,-99996,750
+"Zn 129 Conference Space","Convention, Conference, Multipurpose and Meeting Area",172.814,"Continuous",-99996,0.1,0.1,-99996,0,0,0,165,-99996,165,,-131.474,45.8337,2.5,115.528,86.646,0.668511,165,-99996,247.5,,-122.997,51.5088,2.5,47.2561,0,0,165,-99996,330
+"Zn 130 Library Space","Office Area (>250 square feet)",1818.04,"Continuous",-99996,0.1,0.1,-99996,791.906,475.144,0.435583,287.5,-99996,287.5,,-140.468,82.9979,2.5,457.359,274.415,0.251567,287.5,-99996,287.5,,-127.126,87.6268,2.5,245.166,147.1,0.134852,287.5,-99996,1150
+"Zn 131 Support Space","Convention, Conference, Multipurpose and Meeting Area",821.379,"None",-99996,-99996,-99996,-99996,0,0,0,165,-99996,165,,-99996,-99996,-99996,0,0,0,165,-99996,247.5,,-99996,-99996,-99996,0,0,0,165,-99996,330

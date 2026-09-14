@@ -1,0 +1,75 @@
+ #define  ISSEASONCOOLING  (@weather.taDbAvg07 > SEASONCHANGESETPT)
+ #define  FANVENTAVAIL  (@weather.taDbAvg07 > FANVENTLOCKOUTTEMP)
+ #define  ClimateZone          9   // ClimateZone9
+ #define  HWUSEF_WD  hourval( 0.014, 0.008, 0.009, 0.011, 0.020, 0.044, 0.089, 0.107, 0.089, 0.066, 0.052, 0.038, 0.036, 0.033, 0.032, 0.026, 0.042, 0.048, 0.052, 0.047, 0.042, 0.039, 0.036, 0.022 )
+ #define  HWUSEF_WE  hourval( 0.018, 0.010, 0.009, 0.008, 0.015, 0.023, 0.026, 0.047, 0.077, 0.083, 0.074, 0.061, 0.051, 0.043, 0.039, 0.039, 0.052, 0.058, 0.056, 0.052, 0.047, 0.044, 0.040, 0.028 )
+ #define  ShwrFLOWF  1
+ #define  ShwrDRAINHREFF  0
+ #define  CwshHOTF  0.22
+ #define  CwshUSEF  2.03
+ #define  FaucHOTF  0.5
+ #define  FaucFlowF  1
+ #define  BathFLOWF  1
+ #define  BathDRAINHREFF  0
+ #define  DwshFLOWF  1
+ #define  NumCntrlWHtrs( s)  tofloat( 1+fix(@DHWSYS[ s].loadMax / (15400. * @DHWSYS[ s].loadMaxDur)))
+   wfName = "CA_Title24_2025_LOS-ANGELES-USC.epw"
+   ebTolHour = 0.001
+   ebTolDay = 0.001
+   ebTolMon = 0.001
+   ebTolSubHr = 0.001
+   tol = 0.01                           // Endtest convergence tolerance for internal iteration in models
+   jan1DOW = "THU"
+   skyModel = "anisotropic"
+   dt = "YES"
+   nSubSteps = 20
+   wuDays = 30
+   awTrigSlr = 0.1
+   anTolAbs = 0.005
+   anTolRel = 0.0005
+   auszTol = 0.01
+   awTrigT = 3
+   awTrigH = 0.3
+
+ DELETE Report "eb"    // move from end of CSE file
+
+METER   "MtrElec"  
+
+METER   "MtrNatGas"  
+
+DHWMETER   "DHWMtrFXMix"  
+
+DHWMETER   "DHWMtrWH"  
+
+PVARRAY   "T24 PVArray-sim"  
+   pvDCSysSize = 24.383971              // kW
+   pvModuleType = "Standard"
+   pvArrayType = "FixedOpenRack"
+   pvTilt = 22.619884                   // deg
+   pvAzm = 170                          // deg
+   pvSIF = 2                            // frac
+   pvInverterEff = 0.96                 // frac
+   pvSysLosses = 0.1744                 // frac
+   pvElecMtr = "MtrElec"
+
+EXPORT   "ExportElec"  
+   exExportfile = "Primary"             // Name of EXPORTFILE to write simulation results to
+   exType = "MTR"                       // Export type
+   exFreq = "HOUR"                      // Time interval for generating rows of export data
+   exMeter = "MtrElec"                  // Meter to report
+   exBtuSf = 1000                       // Result scaling factor (1,000 reports kBtu)
+   exDayBeg = Jan 1                     // initial day of export period
+   exDayEnd = Dec 31                    // final day of export period
+
+EXPORT   "ExportNatGas"  
+   exExportfile = "Primary"             // Name of EXPORTFILE to write simulation results to
+   exType = "MTR"                       // Export type
+   exFreq = "HOUR"                      // Time interval for generating rows of export data
+   exMeter = "MtrNatGas"                // Meter to report
+   exBtuSf = 1000                       // Result scaling factor (1,000 reports kBtu)
+   exDayBeg = Jan 1                     // initial day of export period
+   exDayEnd = Dec 31                    // final day of export period
+
+
+ RUN
+ $EOF

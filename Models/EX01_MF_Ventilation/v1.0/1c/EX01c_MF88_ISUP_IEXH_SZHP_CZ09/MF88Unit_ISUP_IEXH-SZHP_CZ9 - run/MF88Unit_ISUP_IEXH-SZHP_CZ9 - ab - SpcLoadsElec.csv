@@ -1,0 +1,75 @@
+Space Interior Loads Electric Use Report
+,,,,,Regulated,,,,Non-Regulated,,,,Non-Regulated,,,,Non-Regulated,,,,Non-Regulated,,,
+Space,,,,,Interior Lighting,,,,Interior Lighting,,,,Receptacle,,,,Process,,,,Commercial Refrigeration,,,
+Name,Conditioning Type,Space Function,Floor Area,Multiplier,Power Density,Schedule Name,Schedule,Energy Use,Power Density,Schedule Name,Schedule,Energy Use,Power Density,Schedule Name,Schedule,Energy Use,Power Density,Schedule Name,Schedule,Energy Use,Power Density,Schedule Name,Schedule,Energy Use,
+,,,(ft2),,(W/ft2),,(FLH),(kWh),(W/ft2),,(FLH),(kWh),(W/ft2),,(FLH),(kWh),(W/ft2),,(FLH),(kWh),(W/ft2),,(FLH),(kWh),
+"F1 Retail N Core","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1665,1,0.95,"RetailLights",3459.4,5471.91,,,,,1,"RetailReceptacle",3636.35,6054.52,,,,,,,,,
+"F1 Retail NE Core","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1440,1,0.95,"RetailLights",3459.4,4732.46,,,,,1,"RetailReceptacle",3636.35,5236.34,,,,,,,,,
+"F1 Retail NE Inner","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1440,1,0.95,"RetailLights",3459.4,4732.46,,,,,1,"RetailReceptacle",3636.35,5236.34,,,,,,,,,
+"F1 Retail NE Outer","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1440,1,0.95,"RetailLights",3459.4,4732.46,,,,,1,"RetailReceptacle",3636.35,5236.34,,,,,,,,,
+"F1 Retail NW Inner Core","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1440,1,0.95,"RetailLights",3459.4,4732.46,,,,,1,"RetailReceptacle",3636.35,5236.34,,,,,,,,,
+"F1 Retail NW Outer","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1440,1,0.95,"RetailLights",3459.4,4732.46,,,,,1,"RetailReceptacle",3636.35,5236.34,,,,,,,,,
+"F1 Retail NW Outer Core","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1440,1,0.95,"RetailLights",3459.4,4732.46,,,,,1,"RetailReceptacle",3636.35,5236.34,,,,,,,,,
+"F1 Retail SE Bottom","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1440,1,0.95,"RetailLights",3459.4,4732.46,,,,,1,"RetailReceptacle",3636.35,5236.34,,,,,,,,,
+"F1 Retail SE Top","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1440,1,0.95,"RetailLights",3459.4,4732.46,,,,,1,"RetailReceptacle",3636.35,5236.34,,,,,,,,,
+"F1 Retail SW Bottom","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1440,1,0.95,"RetailLights",3459.4,4732.46,,,,,1,"RetailReceptacle",3636.35,5236.34,,,,,,,,,
+"F1 Retail SW Core","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1440,1,0.95,"RetailLights",3459.4,4732.46,,,,,1,"RetailReceptacle",3636.35,5236.34,,,,,,,,,
+"F1 Retail SW Top","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1548,1,0.95,"RetailLights",3459.4,5087.39,,,,,1,"RetailReceptacle",3636.35,5629.07,,,,,,,,,
+
+
+
+Space Loads Report
+Space,,,,,,Occupancy,,,,,Service Hot Water,,Ventilation,,,,,,Infiltration,,,Thermal Zone
+Name,Conditioning Type,Space Function,Floor Area,Story Name,Multiplier,Density,Number,Schedule Name,Sensible Heat Rate,Latent Heat Rate,SHW Use, Schedule Name,Prop. DsgnVentPerArea,Prop. DsgnVentPerPerson,Code VentPerArea,Code VentPerPerson,Sim. Area Flow,Sim. Person Flow,Method,Schedule Name,Design Infiltration Rate,Clg Tstat Sch, Htg Tstat Sch
+,,,(ft2),,,(ppl/1000ft2),(people),,(Btu/h-person),(Btu/h-person),(gal/person),,(cfm/ft2),(cfm/person),(cfm/ft2),(cfm/person),(cfm),(cfm),,,(cfm/ft2)
+"F1 Retail N Core","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1665.0000,"Building Story Nonresidential",1,17,28.305,"RetailOccupancy",250,200,0.18,"RetailServiceHotWater",0.255,15,0.255,15,424.575,0,"FlowExteriorWallArea","RetailInfiltration",0.2352,"RetailClgSetpt","RetailHtgSetpt"
+"F1 Retail NE Core","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1440.0000,"Building Story Nonresidential",1,17,24.48,"RetailOccupancy",250,200,0.18,"RetailServiceHotWater",0.255,15,0.255,15,367.2,0,"FlowExteriorWallArea","RetailInfiltration",0.2352,"RetailClgSetpt","RetailHtgSetpt"
+"F1 Retail NE Inner","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1440.0000,"Building Story Nonresidential",1,17,24.48,"RetailOccupancy",250,200,0.18,"RetailServiceHotWater",0.255,15,0.255,15,367.2,0,"FlowExteriorWallArea","RetailInfiltration",0.2352,"RetailClgSetpt","RetailHtgSetpt"
+"F1 Retail NE Outer","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1440.0000,"Building Story Nonresidential",1,17,24.48,"RetailOccupancy",250,200,0.18,"RetailServiceHotWater",0.255,15,0.255,15,367.2,0,"FlowExteriorWallArea","RetailInfiltration",0.2352,"RetailClgSetpt","RetailHtgSetpt"
+"F1 Retail NW Inner Core","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1440.0000,"Building Story Nonresidential",1,17,24.48,"RetailOccupancy",250,200,0.18,"RetailServiceHotWater",0.255,15,0.255,15,367.2,0,"FlowExteriorWallArea","RetailInfiltration",0.2352,"RetailClgSetpt","RetailHtgSetpt"
+"F1 Retail NW Outer","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1440.0000,"Building Story Nonresidential",1,17,24.48,"RetailOccupancy",250,200,0.18,"RetailServiceHotWater",0.255,15,0.255,15,367.2,0,"FlowExteriorWallArea","RetailInfiltration",0.2352,"RetailClgSetpt","RetailHtgSetpt"
+"F1 Retail NW Outer Core","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1440.0000,"Building Story Nonresidential",1,17,24.48,"RetailOccupancy",250,200,0.18,"RetailServiceHotWater",0.255,15,0.255,15,367.2,0,"FlowExteriorWallArea","RetailInfiltration",0.2352,"RetailClgSetpt","RetailHtgSetpt"
+"F1 Retail SE Bottom","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1440.0000,"Building Story Nonresidential",1,17,24.48,"RetailOccupancy",250,200,0.18,"RetailServiceHotWater",0.255,15,0.255,15,367.2,0,"FlowExteriorWallArea","RetailInfiltration",0.2352,"RetailClgSetpt","RetailHtgSetpt"
+"F1 Retail SE Top","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1440.0000,"Building Story Nonresidential",1,17,24.48,"RetailOccupancy",250,200,0.18,"RetailServiceHotWater",0.255,15,0.255,15,367.2,0,"FlowExteriorWallArea","RetailInfiltration",0.2352,"RetailClgSetpt","RetailHtgSetpt"
+"F1 Retail SW Bottom","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1440.0000,"Building Story Nonresidential",1,17,24.48,"RetailOccupancy",250,200,0.18,"RetailServiceHotWater",0.255,15,0.255,15,367.2,0,"FlowExteriorWallArea","RetailInfiltration",0.2352,"RetailClgSetpt","RetailHtgSetpt"
+"F1 Retail SW Core","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1440.0000,"Building Story Nonresidential",1,17,24.48,"RetailOccupancy",250,200,0.18,"RetailServiceHotWater",0.255,15,0.255,15,367.2,0,"FlowExteriorWallArea","RetailInfiltration",0.2352,"RetailClgSetpt","RetailHtgSetpt"
+"F1 Retail SW Top","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)",1548.0000,"Building Story Nonresidential",1,17,26.316,"RetailOccupancy",250,200,0.18,"RetailServiceHotWater",0.255,15,0.255,15,394.74,0,"FlowExteriorWallArea","RetailInfiltration",0.2352,"RetailClgSetpt","RetailHtgSetpt"
+
+
+
+Space Interior Lighting Report
+Space,,,,,Regulated,,,,,,,,,,,Non-Regulated
+Name,Conditioning Type,Space Function,Lighting Status,Floor Area,Lighting Specification Method,Installed Power,Schedule Name,Schedule,Lighting System Count,Lighting Control Credit,General Lighting Power,Area Category Allowances,Tailored Allowances,Simulated Power,Simulated LPD,Power,Schedule Name,Schedule,LPD
+,,,,(ft2),,(Watts),,(FLH),,(Watts),(Watts),(Watts),(Watts),(Watts),(Watts/ft2),(Watts),,(FLH),(Watts/ft2),
+"F1 Retail N Core","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","New",1665,"AreaCategoryMethod",0,"RetailLights",3459.4,-99996,0,1581.75,0,-99996,1581.75,0.95
+"F1 Retail NE Core","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","New",1440,"AreaCategoryMethod",0,"RetailLights",3459.4,-99996,0,1368,0,-99996,1368,0.95
+"F1 Retail NE Inner","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","New",1440,"AreaCategoryMethod",0,"RetailLights",3459.4,-99996,0,1368,0,-99996,1368,0.95
+"F1 Retail NE Outer","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","New",1440,"AreaCategoryMethod",0,"RetailLights",3459.4,-99996,0,1368,0,-99996,1368,0.95
+"F1 Retail NW Inner Core","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","New",1440,"AreaCategoryMethod",0,"RetailLights",3459.4,-99996,0,1368,0,-99996,1368,0.95
+"F1 Retail NW Outer","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","New",1440,"AreaCategoryMethod",0,"RetailLights",3459.4,-99996,0,1368,0,-99996,1368,0.95
+"F1 Retail NW Outer Core","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","New",1440,"AreaCategoryMethod",0,"RetailLights",3459.4,-99996,0,1368,0,-99996,1368,0.95
+"F1 Retail SE Bottom","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","New",1440,"AreaCategoryMethod",0,"RetailLights",3459.4,-99996,0,1368,0,-99996,1368,0.95
+"F1 Retail SE Top","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","New",1440,"AreaCategoryMethod",0,"RetailLights",3459.4,-99996,0,1368,0,-99996,1368,0.95
+"F1 Retail SW Bottom","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","New",1440,"AreaCategoryMethod",0,"RetailLights",3459.4,-99996,0,1368,0,-99996,1368,0.95
+"F1 Retail SW Core","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","New",1440,"AreaCategoryMethod",0,"RetailLights",3459.4,-99996,0,1368,0,-99996,1368,0.95
+"F1 Retail SW Top","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","New",1548,"AreaCategoryMethod",0,"RetailLights",3459.4,-99996,0,1470.6,0,-99996,1470.6,0.95
+
+
+
+Space Daylighting,,,,,,,,,,,,,,,,,,,,,,,,,
+Name,SpcFunc,FlrArea,DayltgCtrlType,MandMinDaylitArea,MinDimLtgFrac,MinDimPwrFrac,NumOfCtrlSteps,SkylitDaylitArea,SkylitDayltgCtrlLtgPwr,SkylitDayltgCtrlLtgFrac,SkylitDayltgIllumSetpt,SkylitDayltgIllumSetptAdjFac,SkylitDayltgAdjIllumSetpt,,PriSideDayltgRefPtCoord[1],PriSideDayltgRefPtCoord[2],PriSideDayltgRefPtCoord[3],PriSideDaylitArea,PriSideDayltgCtrlLtgPwr,PriSideDayltgCtrlLtgFrac,PriSideDayltgIllumSetpt,PriSideDayltgIllumSetptAdjFac,PriSideDayltgAdjIllumSetpt,,SecSideDayltgRefPtCoord[1],SecSideDayltgRefPtCoord[2],SecSideDayltgRefPtCoord[3],SecSideDaylitArea,SecSideDayltgCtrlLtgPwr,SecSideDayltgCtrlLtgFrac,SecSideDayltgIllumSetpt,SecSideDayltgIllumSetptAdjFac,SecSideDayltgAdjIllumSetpt
+Space,,,,,,,,Skylit Zone,,,,,,,Primary Sidelit Daylit Zone,,,,,,,,,,Secondary Sidelit Daylit Zone,,,,,,
+Name,Space Function,Floor Area,Control Type,MinDayltg per 140.3c,Min. Dim. Ltg. Frac.,Min Dim. Pwr. Frac.,Switched # Ctrl. Steps,Daylit Area,Controlled Watts,Control Fraction,Illuminance Set Pt,Illum Set Pt Adj Factor,Adj Illum. Set Point,,Ref Pt Coord [1],Ref Pt Coord [2],Ref Pt Coord [3],Daylit Area,Controlled Watts,Control Fraction,Illuminance Set Pt,Illum Set Pt Adj Factor,Adj Illum. Set Point,,Ref Pt Coord [1],Ref Pt Coord [2],Ref Pt Coord [3],Daylit Area,Controlled Watts,Control Fraction,Illuminance Set Pt,Illum Set Pt Adj Factor,Adj Illum. Set Point
+,,(ft2),,(ft2),,,,(ft2),(Watts),(Frac),(lux),,(lux),,,,,(ft2),(Watts),(Frac),(lux),,(lux),,,,,(ft2),(Watts),(Frac),(lux),,(lux)
+"F1 Retail N Core","Retail Sales Area (Retail Merchandise Sales)",1665,"None",-99996,-99996,-99996,-99996,0,0,0,550,-99996,550,,86.5001,150.907,2.5,118.417,0,0,550,-99996,825,,86.5001,146.813,2.5,118.417,0,0,550,-99996,1100
+"F1 Retail NE Core","Retail Sales Area (Retail Merchandise Sales)",1440,"None",-99996,-99996,-99996,-99996,0,0,0,550,-99996,550,,144,150.905,2.5,98,0,0,550,-99996,825,,144,146.811,2.5,99,0,0,550,-99996,1100
+"F1 Retail NE Inner","Retail Sales Area (Retail Merchandise Sales)",1440,"None",-99996,-99996,-99996,-99996,0,0,0,550,-99996,550,,120,150.905,2.5,98,0,0,550,-99996,825,,120,146.811,2.5,99,0,0,550,-99996,1100
+"F1 Retail NE Outer","Retail Sales Area (Retail Merchandise Sales)",1440,"None",-99996,-99996,-99996,-99996,0,0,0,550,-99996,550,,175.91,125,2.5,326.326,0,0,550,-99996,825,,171.819,125,2.5,293.639,0,0,550,-99996,1100
+"F1 Retail NW Inner Core","Retail Sales Area (Retail Merchandise Sales)",1440,"None",-99996,-99996,-99996,-99996,0,0,0,550,-99996,550,,60,150.905,2.5,98,0,0,550,-99996,825,,60,146.811,2.5,99,0,0,550,-99996,1100
+"F1 Retail NW Outer","Retail Sales Area (Retail Merchandise Sales)",1440,"None",-99996,-99996,-99996,-99996,0,0,0,550,-99996,550,,4.09038,125,2.5,326.326,0,0,550,-99996,825,,8.18076,125,2.5,293.639,0,0,550,-99996,1100
+"F1 Retail NW Outer Core","Retail Sales Area (Retail Merchandise Sales)",1440,"None",-99996,-99996,-99996,-99996,0,0,0,550,-99996,550,,36,150.905,2.5,98,0,0,550,-99996,825,,36,146.811,2.5,99,0,0,550,-99996,1100
+"F1 Retail SE Bottom","Retail Sales Area (Retail Merchandise Sales)",1440,"None",-99996,-99996,-99996,-99996,0,0,0,550,-99996,550,,150,4.09038,2.5,407.653,0,0,550,-99996,825,,150,8.18076,2.5,342.278,0,0,550,-99996,1100
+"F1 Retail SE Top","Retail Sales Area (Retail Merchandise Sales)",1440,"None",-99996,-99996,-99996,-99996,0,0,0,550,-99996,550,,175.905,36,2.5,196,0,0,550,-99996,825,,171.811,36,2.5,198,0,0,550,-99996,1100
+"F1 Retail SW Bottom","Retail Sales Area (Retail Merchandise Sales)",1440,"None",-99996,-99996,-99996,-99996,0,0,0,550,-99996,550,,30,4.09038,2.5,407.653,0,0,550,-99996,825,,30,8.18076,2.5,342.278,0,0,550,-99996,1100
+"F1 Retail SW Core","Retail Sales Area (Retail Merchandise Sales)",1440,"None",-99996,-99996,-99996,-99996,0,0,0,550,-99996,550,,55.9054,36,2.5,196,0,0,550,-99996,825,,51.8108,36,2.5,198,0,0,550,-99996,1100
+"F1 Retail SW Top","Retail Sales Area (Retail Merchandise Sales)",1548,"None",-99996,-99996,-99996,-99996,0,0,0,550,-99996,550,,55.9068,63,2.5,220.5,0,0,550,-99996,825,,51.8136,63,2.5,221.5,0,0,550,-99996,1100

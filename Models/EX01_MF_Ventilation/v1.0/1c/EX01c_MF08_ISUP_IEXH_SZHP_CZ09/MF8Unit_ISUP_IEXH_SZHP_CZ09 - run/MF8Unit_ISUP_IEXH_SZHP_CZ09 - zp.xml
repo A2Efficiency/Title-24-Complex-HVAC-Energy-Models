@@ -1,0 +1,1207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SDDXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RulesetFilename file="T24_2025.bin"/>
+  <Proj>
+    <Name>MF8_IndSupply_IndExhaust_SZHP</Name>
+    <SolDistribution>FullExterior</SolDistribution>
+    <NumTimeStepsPerHr>4</NumTimeStepsPerHr>
+    <ClgUnmetLdHrTol>1</ClgUnmetLdHrTol>
+    <HtgUnmetLdHrTol>1</HtgUnmetLdHrTol>
+    <CliZn>ClimateZone9</CliZn>
+    <Lat>38.69</Lat>
+    <Long>-121.6</Long>
+    <Elevation>179</Elevation>
+    <BldgTerrain>Suburbs</BldgTerrain>
+    <WtrMnTempSchRef>WaterMainCZ09</WtrMnTempSchRef>
+    <DsgnDBT>92.7</DsgnDBT>
+    <MCWBT>70.2</MCWBT>
+    <DsgnWBT>71.7</DsgnWBT>
+    <DsgnHtgDBT>43.1</DsgnHtgDBT>
+    <DDWeatherFile>C:/Users/MichaelSawford/A2 Efficiency/P-2050-006.00 SCE T24 Complex HVAC - Documents/4.00-Modeling/EX01c_MF Ventilation/MF08_1C_ISUP_IEXH_SZ_CZ09/MF8Unit_ISUP_IEXH_SZHP_CZ09 - run/CA_Title24_2025_LOS-ANGELES-USC.ddy</DDWeatherFile>
+    <AnnualWeatherFile>C:/Users/MichaelSawford/Documents/CBECC 2025 Data/EPW25/CA_Title24_2025_LOS-ANGELES-USC.epw</AnnualWeatherFile>
+    <AnnualWeatherFileNoPath>CA_Title24_2025_LOS-ANGELES-USC.epw</AnnualWeatherFileNoPath>
+    <HVACAutoSizing>1</HVACAutoSizing>
+    <SimDsgnDays>1</SimDsgnDays>
+    <SimFlag>0</SimFlag>
+    <RunPeriodBeginMonth>1</RunPeriodBeginMonth>
+    <RunPeriodBeginDay>1</RunPeriodBeginDay>
+    <RunPeriodEndMonth>12</RunPeriodEndMonth>
+    <RunPeriodEndDay>31</RunPeriodEndDay>
+    <RunPeriodYear>2009</RunPeriodYear>
+    <SimVarsInterval>Hourly</SimVarsInterval>
+    <SimVarsFlagSetAll>0</SimVarsFlagSetAll>
+    <SimVarsSite>0</SimVarsSite>
+    <SimVarsThrmlZn>0</SimVarsThrmlZn>
+    <SimVarsDayltg>0</SimVarsDayltg>
+    <SimVarsHVACSec>0</SimVarsHVACSec>
+    <SimVarsHVACSecTempFlow>0</SimVarsHVACSecTempFlow>
+    <SimVarsHVACPri>1</SimVarsHVACPri>
+    <SimVarsHVACZn>0</SimVarsHVACZn>
+    <SimVarsHVACZnTempFlow>0</SimVarsHVACZnTempFlow>
+    <SimVarsVRFSys>0</SimVarsVRFSys>
+    <SimVarsHtRcvry>0</SimVarsHtRcvry>
+    <SimVarsFen>0</SimVarsFen>
+    <SimVarsDr>0</SimVarsDr>
+    <SimVarsWtrHtr>0</SimVarsWtrHtr>
+    <SimVarsThrmlEngyStor>0</SimVarsThrmlEngyStor>
+    <SHWWtrHtrCnt>1</SHWWtrHtrCnt>
+    <ResProj>
+      <Name>MF8 2-Story_IndSupply_IndExhaust_ResProj</Name>
+      <PVWDCSysSize index="0">1</PVWDCSysSize>
+      <PVWDCSysSize index="1">0</PVWDCSysSize>
+      <PVWDCSysSize index="2">0</PVWDCSysSize>
+      <PVWDCSysSize index="3">0</PVWDCSysSize>
+      <PVWDCSysSize index="4">0</PVWDCSysSize>
+    </ResProj>
+    <SchDay>
+      <Name>CARes2013 InsLighting Hrly</Name>
+      <Type>Fraction</Type>
+      <Hr index="0">0.023</Hr>
+      <Hr index="1">0.019</Hr>
+      <Hr index="2">0.015</Hr>
+      <Hr index="3">0.017</Hr>
+      <Hr index="4">0.021</Hr>
+      <Hr index="5">0.031</Hr>
+      <Hr index="6">0.042</Hr>
+      <Hr index="7">0.041</Hr>
+      <Hr index="8">0.034</Hr>
+      <Hr index="9">0.029</Hr>
+      <Hr index="10">0.027</Hr>
+      <Hr index="11">0.025</Hr>
+      <Hr index="12">0.021</Hr>
+      <Hr index="13">0.021</Hr>
+      <Hr index="14">0.021</Hr>
+      <Hr index="15">0.026</Hr>
+      <Hr index="16">0.031</Hr>
+      <Hr index="17">0.044</Hr>
+      <Hr index="18">0.084</Hr>
+      <Hr index="19">0.118</Hr>
+      <Hr index="20">0.113</Hr>
+      <Hr index="21">0.096</Hr>
+      <Hr index="22">0.063</Hr>
+      <Hr index="23">0.038</Hr>
+    </SchDay>
+    <SchDay>
+      <Name>CARes2013 Occupancy Hrly</Name>
+      <Type>Fraction</Type>
+      <Hr index="0">0.035</Hr>
+      <Hr index="1">0.035</Hr>
+      <Hr index="2">0.035</Hr>
+      <Hr index="3">0.035</Hr>
+      <Hr index="4">0.035</Hr>
+      <Hr index="5">0.059</Hr>
+      <Hr index="6">0.082</Hr>
+      <Hr index="7">0.055</Hr>
+      <Hr index="8">0.027</Hr>
+      <Hr index="9">0.014</Hr>
+      <Hr index="10">0.014</Hr>
+      <Hr index="11">0.014</Hr>
+      <Hr index="12">0.014</Hr>
+      <Hr index="13">0.014</Hr>
+      <Hr index="14">0.019</Hr>
+      <Hr index="15">0.027</Hr>
+      <Hr index="16">0.041</Hr>
+      <Hr index="17">0.055</Hr>
+      <Hr index="18">0.068</Hr>
+      <Hr index="19">0.082</Hr>
+      <Hr index="20">0.082</Hr>
+      <Hr index="21">0.07</Hr>
+      <Hr index="22">0.053</Hr>
+      <Hr index="23">0.035</Hr>
+    </SchDay>
+    <SchDay>
+      <Name>CARes2013 Equipment Hrly</Name>
+      <Type>Fraction</Type>
+      <Hr index="0">0.037</Hr>
+      <Hr index="1">0.035</Hr>
+      <Hr index="2">0.034</Hr>
+      <Hr index="3">0.034</Hr>
+      <Hr index="4">0.032</Hr>
+      <Hr index="5">0.036</Hr>
+      <Hr index="6">0.042</Hr>
+      <Hr index="7">0.044</Hr>
+      <Hr index="8">0.037</Hr>
+      <Hr index="9">0.032</Hr>
+      <Hr index="10">0.033</Hr>
+      <Hr index="11">0.033</Hr>
+      <Hr index="12">0.032</Hr>
+      <Hr index="13">0.033</Hr>
+      <Hr index="14">0.035</Hr>
+      <Hr index="15">0.037</Hr>
+      <Hr index="16">0.044</Hr>
+      <Hr index="17">0.053</Hr>
+      <Hr index="18">0.058</Hr>
+      <Hr index="19">0.06</Hr>
+      <Hr index="20">0.062</Hr>
+      <Hr index="21">0.06</Hr>
+      <Hr index="22">0.052</Hr>
+      <Hr index="23">0.045</Hr>
+    </SchDay>
+    <SchDay>
+      <Name>CARes2013 ExtLighting Hrly</Name>
+      <Type>Fraction</Type>
+      <Hr index="0">0</Hr>
+      <Hr index="1">0</Hr>
+      <Hr index="2">0</Hr>
+      <Hr index="3">0</Hr>
+      <Hr index="4">0</Hr>
+      <Hr index="5">0</Hr>
+      <Hr index="6">0</Hr>
+      <Hr index="7">0</Hr>
+      <Hr index="8">0</Hr>
+      <Hr index="9">0</Hr>
+      <Hr index="10">0</Hr>
+      <Hr index="11">0</Hr>
+      <Hr index="12">0</Hr>
+      <Hr index="13">0</Hr>
+      <Hr index="14">0</Hr>
+      <Hr index="15">0</Hr>
+      <Hr index="16">0</Hr>
+      <Hr index="17">0</Hr>
+      <Hr index="18">0</Hr>
+      <Hr index="19">0</Hr>
+      <Hr index="20">0.25</Hr>
+      <Hr index="21">0.25</Hr>
+      <Hr index="22">0.25</Hr>
+      <Hr index="23">0.25</Hr>
+    </SchDay>
+    <SchDay>
+      <Name>CARes2013 SZ Heat Hrly</Name>
+      <Type>Temperature</Type>
+      <Hr index="0">65</Hr>
+      <Hr index="1">65</Hr>
+      <Hr index="2">65</Hr>
+      <Hr index="3">65</Hr>
+      <Hr index="4">65</Hr>
+      <Hr index="5">65</Hr>
+      <Hr index="6">66.5</Hr>
+      <Hr index="7">68</Hr>
+      <Hr index="8">68</Hr>
+      <Hr index="9">68</Hr>
+      <Hr index="10">68</Hr>
+      <Hr index="11">68</Hr>
+      <Hr index="12">68</Hr>
+      <Hr index="13">68</Hr>
+      <Hr index="14">68</Hr>
+      <Hr index="15">68</Hr>
+      <Hr index="16">68</Hr>
+      <Hr index="17">68</Hr>
+      <Hr index="18">68</Hr>
+      <Hr index="19">68</Hr>
+      <Hr index="20">68</Hr>
+      <Hr index="21">68</Hr>
+      <Hr index="22">68</Hr>
+      <Hr index="23">65</Hr>
+    </SchDay>
+    <SchDay>
+      <Name>CARes2013 Liv Heat Hrly</Name>
+      <Type>Temperature</Type>
+      <Hr index="0">65</Hr>
+      <Hr index="1">65</Hr>
+      <Hr index="2">65</Hr>
+      <Hr index="3">65</Hr>
+      <Hr index="4">65</Hr>
+      <Hr index="5">65</Hr>
+      <Hr index="6">66.5</Hr>
+      <Hr index="7">68</Hr>
+      <Hr index="8">68</Hr>
+      <Hr index="9">68</Hr>
+      <Hr index="10">68</Hr>
+      <Hr index="11">68</Hr>
+      <Hr index="12">68</Hr>
+      <Hr index="13">68</Hr>
+      <Hr index="14">68</Hr>
+      <Hr index="15">68</Hr>
+      <Hr index="16">68</Hr>
+      <Hr index="17">68</Hr>
+      <Hr index="18">68</Hr>
+      <Hr index="19">68</Hr>
+      <Hr index="20">68</Hr>
+      <Hr index="21">68</Hr>
+      <Hr index="22">68</Hr>
+      <Hr index="23">65</Hr>
+    </SchDay>
+    <SchDay>
+      <Name>CARes2013 Slp Heat Hrly</Name>
+      <Type>Temperature</Type>
+      <Hr index="0">65</Hr>
+      <Hr index="1">65</Hr>
+      <Hr index="2">65</Hr>
+      <Hr index="3">65</Hr>
+      <Hr index="4">65</Hr>
+      <Hr index="5">65</Hr>
+      <Hr index="6">66.5</Hr>
+      <Hr index="7">68</Hr>
+      <Hr index="8">68</Hr>
+      <Hr index="9">65</Hr>
+      <Hr index="10">65</Hr>
+      <Hr index="11">65</Hr>
+      <Hr index="12">65</Hr>
+      <Hr index="13">65</Hr>
+      <Hr index="14">65</Hr>
+      <Hr index="15">65</Hr>
+      <Hr index="16">68</Hr>
+      <Hr index="17">68</Hr>
+      <Hr index="18">68</Hr>
+      <Hr index="19">68</Hr>
+      <Hr index="20">68</Hr>
+      <Hr index="21">68</Hr>
+      <Hr index="22">68</Hr>
+      <Hr index="23">65</Hr>
+    </SchDay>
+    <SchDay>
+      <Name>CARes2013 SZ Cool Hrly</Name>
+      <Type>Temperature</Type>
+      <Hr index="0">78</Hr>
+      <Hr index="1">78</Hr>
+      <Hr index="2">78</Hr>
+      <Hr index="3">78</Hr>
+      <Hr index="4">78</Hr>
+      <Hr index="5">78</Hr>
+      <Hr index="6">78</Hr>
+      <Hr index="7">83</Hr>
+      <Hr index="8">83</Hr>
+      <Hr index="9">83</Hr>
+      <Hr index="10">83</Hr>
+      <Hr index="11">83</Hr>
+      <Hr index="12">83</Hr>
+      <Hr index="13">82</Hr>
+      <Hr index="14">81</Hr>
+      <Hr index="15">80</Hr>
+      <Hr index="16">79</Hr>
+      <Hr index="17">78</Hr>
+      <Hr index="18">78</Hr>
+      <Hr index="19">78</Hr>
+      <Hr index="20">78</Hr>
+      <Hr index="21">78</Hr>
+      <Hr index="22">78</Hr>
+      <Hr index="23">78</Hr>
+    </SchDay>
+    <SchDay>
+      <Name>CARes2013 Liv Cool Hrly</Name>
+      <Type>Temperature</Type>
+      <Hr index="0">78</Hr>
+      <Hr index="1">78</Hr>
+      <Hr index="2">78</Hr>
+      <Hr index="3">78</Hr>
+      <Hr index="4">78</Hr>
+      <Hr index="5">78</Hr>
+      <Hr index="6">78</Hr>
+      <Hr index="7">83</Hr>
+      <Hr index="8">83</Hr>
+      <Hr index="9">83</Hr>
+      <Hr index="10">83</Hr>
+      <Hr index="11">83</Hr>
+      <Hr index="12">83</Hr>
+      <Hr index="13">82</Hr>
+      <Hr index="14">81</Hr>
+      <Hr index="15">80</Hr>
+      <Hr index="16">79</Hr>
+      <Hr index="17">78</Hr>
+      <Hr index="18">78</Hr>
+      <Hr index="19">78</Hr>
+      <Hr index="20">78</Hr>
+      <Hr index="21">78</Hr>
+      <Hr index="22">78</Hr>
+      <Hr index="23">78</Hr>
+    </SchDay>
+    <SchDay>
+      <Name>CARes2013 Slp Cool Hrly</Name>
+      <Type>Temperature</Type>
+      <Hr index="0">78</Hr>
+      <Hr index="1">78</Hr>
+      <Hr index="2">78</Hr>
+      <Hr index="3">78</Hr>
+      <Hr index="4">78</Hr>
+      <Hr index="5">78</Hr>
+      <Hr index="6">78</Hr>
+      <Hr index="7">83</Hr>
+      <Hr index="8">83</Hr>
+      <Hr index="9">83</Hr>
+      <Hr index="10">83</Hr>
+      <Hr index="11">83</Hr>
+      <Hr index="12">83</Hr>
+      <Hr index="13">82</Hr>
+      <Hr index="14">81</Hr>
+      <Hr index="15">80</Hr>
+      <Hr index="16">79</Hr>
+      <Hr index="17">78</Hr>
+      <Hr index="18">78</Hr>
+      <Hr index="19">78</Hr>
+      <Hr index="20">78</Hr>
+      <Hr index="21">78</Hr>
+      <Hr index="22">78</Hr>
+      <Hr index="23">78</Hr>
+    </SchDay>
+    <PVArray>
+      <Name>PV Array</Name>
+      <PwrElecEffAdj>1</PwrElecEffAdj>
+      <ShdgImpactFac>2</ShdgImpactFac>
+    </PVArray>
+    <Bldg>
+      <Name>Building</Name>
+      <BldgAz>0</BldgAz>
+    </Bldg>
+    <Sch>
+      <Name>WaterMainCZ09</Name>
+      <Type>Temperature</Type>
+      <EndMonth index="0">1</EndMonth>
+      <EndMonth index="1">2</EndMonth>
+      <EndMonth index="2">3</EndMonth>
+      <EndMonth index="3">4</EndMonth>
+      <EndMonth index="4">5</EndMonth>
+      <EndMonth index="5">6</EndMonth>
+      <EndMonth index="6">7</EndMonth>
+      <EndMonth index="7">8</EndMonth>
+      <EndMonth index="8">9</EndMonth>
+      <EndMonth index="9">10</EndMonth>
+      <EndMonth index="10">11</EndMonth>
+      <EndMonth index="11">12</EndMonth>
+      <EndDay index="0">31</EndDay>
+      <EndDay index="1">28</EndDay>
+      <EndDay index="2">31</EndDay>
+      <EndDay index="3">30</EndDay>
+      <EndDay index="4">31</EndDay>
+      <EndDay index="5">30</EndDay>
+      <EndDay index="6">31</EndDay>
+      <EndDay index="7">31</EndDay>
+      <EndDay index="8">30</EndDay>
+      <EndDay index="9">31</EndDay>
+      <EndDay index="10">30</EndDay>
+      <EndDay index="11">31</EndDay>
+      <SchWeekRef index="0">WaterMainCZ09JanWk</SchWeekRef>
+      <SchWeekRef index="1">WaterMainCZ09FebWk</SchWeekRef>
+      <SchWeekRef index="2">WaterMainCZ09MarWk</SchWeekRef>
+      <SchWeekRef index="3">WaterMainCZ09AprWk</SchWeekRef>
+      <SchWeekRef index="4">WaterMainCZ09MayWk</SchWeekRef>
+      <SchWeekRef index="5">WaterMainCZ09JunWk</SchWeekRef>
+      <SchWeekRef index="6">WaterMainCZ09JulWk</SchWeekRef>
+      <SchWeekRef index="7">WaterMainCZ09AugWk</SchWeekRef>
+      <SchWeekRef index="8">WaterMainCZ09SepWk</SchWeekRef>
+      <SchWeekRef index="9">WaterMainCZ09OctWk</SchWeekRef>
+      <SchWeekRef index="10">WaterMainCZ09NovWk</SchWeekRef>
+      <SchWeekRef index="11">WaterMainCZ09DecWk</SchWeekRef>
+      <ColSeparator>Comma</ColSeparator>
+      <InterpToTimestep>Yes</InterpToTimestep>
+    </Sch>
+    <SchWeek>
+      <Name>WaterMainCZ09JanWk</Name>
+      <Type>Temperature</Type>
+      <SchDaySunRef>WaterMainCZ09Jan</SchDaySunRef>
+      <SchDayMonRef>WaterMainCZ09Jan</SchDayMonRef>
+      <SchDayTueRef>WaterMainCZ09Jan</SchDayTueRef>
+      <SchDayWedRef>WaterMainCZ09Jan</SchDayWedRef>
+      <SchDayThuRef>WaterMainCZ09Jan</SchDayThuRef>
+      <SchDayFriRef>WaterMainCZ09Jan</SchDayFriRef>
+      <SchDaySatRef>WaterMainCZ09Jan</SchDaySatRef>
+      <SchDayHolRef>WaterMainCZ09Jan</SchDayHolRef>
+      <SchDayClgDDRef>WaterMainCZ09Jan</SchDayClgDDRef>
+      <SchDayHtgDDRef>WaterMainCZ09Jan</SchDayHtgDDRef>
+    </SchWeek>
+    <SchDay>
+      <Name>WaterMainCZ09Jan</Name>
+      <Type>Temperature</Type>
+      <Hr index="0">57.7</Hr>
+      <Hr index="1">57.7</Hr>
+      <Hr index="2">57.7</Hr>
+      <Hr index="3">57.7</Hr>
+      <Hr index="4">57.7</Hr>
+      <Hr index="5">57.7</Hr>
+      <Hr index="6">57.7</Hr>
+      <Hr index="7">57.7</Hr>
+      <Hr index="8">57.7</Hr>
+      <Hr index="9">57.7</Hr>
+      <Hr index="10">57.7</Hr>
+      <Hr index="11">57.7</Hr>
+      <Hr index="12">57.7</Hr>
+      <Hr index="13">57.7</Hr>
+      <Hr index="14">57.7</Hr>
+      <Hr index="15">57.7</Hr>
+      <Hr index="16">57.7</Hr>
+      <Hr index="17">57.7</Hr>
+      <Hr index="18">57.7</Hr>
+      <Hr index="19">57.7</Hr>
+      <Hr index="20">57.7</Hr>
+      <Hr index="21">57.7</Hr>
+      <Hr index="22">57.7</Hr>
+      <Hr index="23">57.7</Hr>
+    </SchDay>
+    <SchWeek>
+      <Name>WaterMainCZ09FebWk</Name>
+      <Type>Temperature</Type>
+      <SchDaySunRef>WaterMainCZ09Feb</SchDaySunRef>
+      <SchDayMonRef>WaterMainCZ09Feb</SchDayMonRef>
+      <SchDayTueRef>WaterMainCZ09Feb</SchDayTueRef>
+      <SchDayWedRef>WaterMainCZ09Feb</SchDayWedRef>
+      <SchDayThuRef>WaterMainCZ09Feb</SchDayThuRef>
+      <SchDayFriRef>WaterMainCZ09Feb</SchDayFriRef>
+      <SchDaySatRef>WaterMainCZ09Feb</SchDaySatRef>
+      <SchDayHolRef>WaterMainCZ09Feb</SchDayHolRef>
+      <SchDayClgDDRef>WaterMainCZ09Feb</SchDayClgDDRef>
+      <SchDayHtgDDRef>WaterMainCZ09Feb</SchDayHtgDDRef>
+    </SchWeek>
+    <SchDay>
+      <Name>WaterMainCZ09Feb</Name>
+      <Type>Temperature</Type>
+      <Hr index="0">57.6</Hr>
+      <Hr index="1">57.6</Hr>
+      <Hr index="2">57.6</Hr>
+      <Hr index="3">57.6</Hr>
+      <Hr index="4">57.6</Hr>
+      <Hr index="5">57.6</Hr>
+      <Hr index="6">57.6</Hr>
+      <Hr index="7">57.6</Hr>
+      <Hr index="8">57.6</Hr>
+      <Hr index="9">57.6</Hr>
+      <Hr index="10">57.6</Hr>
+      <Hr index="11">57.6</Hr>
+      <Hr index="12">57.6</Hr>
+      <Hr index="13">57.6</Hr>
+      <Hr index="14">57.6</Hr>
+      <Hr index="15">57.6</Hr>
+      <Hr index="16">57.6</Hr>
+      <Hr index="17">57.6</Hr>
+      <Hr index="18">57.6</Hr>
+      <Hr index="19">57.6</Hr>
+      <Hr index="20">57.6</Hr>
+      <Hr index="21">57.6</Hr>
+      <Hr index="22">57.6</Hr>
+      <Hr index="23">57.6</Hr>
+    </SchDay>
+    <SchWeek>
+      <Name>WaterMainCZ09MarWk</Name>
+      <Type>Temperature</Type>
+      <SchDaySunRef>WaterMainCZ09Mar</SchDaySunRef>
+      <SchDayMonRef>WaterMainCZ09Mar</SchDayMonRef>
+      <SchDayTueRef>WaterMainCZ09Mar</SchDayTueRef>
+      <SchDayWedRef>WaterMainCZ09Mar</SchDayWedRef>
+      <SchDayThuRef>WaterMainCZ09Mar</SchDayThuRef>
+      <SchDayFriRef>WaterMainCZ09Mar</SchDayFriRef>
+      <SchDaySatRef>WaterMainCZ09Mar</SchDaySatRef>
+      <SchDayHolRef>WaterMainCZ09Mar</SchDayHolRef>
+      <SchDayClgDDRef>WaterMainCZ09Mar</SchDayClgDDRef>
+      <SchDayHtgDDRef>WaterMainCZ09Mar</SchDayHtgDDRef>
+    </SchWeek>
+    <SchDay>
+      <Name>WaterMainCZ09Mar</Name>
+      <Type>Temperature</Type>
+      <Hr index="0">58</Hr>
+      <Hr index="1">58</Hr>
+      <Hr index="2">58</Hr>
+      <Hr index="3">58</Hr>
+      <Hr index="4">58</Hr>
+      <Hr index="5">58</Hr>
+      <Hr index="6">58</Hr>
+      <Hr index="7">58</Hr>
+      <Hr index="8">58</Hr>
+      <Hr index="9">58</Hr>
+      <Hr index="10">58</Hr>
+      <Hr index="11">58</Hr>
+      <Hr index="12">58</Hr>
+      <Hr index="13">58</Hr>
+      <Hr index="14">58</Hr>
+      <Hr index="15">58</Hr>
+      <Hr index="16">58</Hr>
+      <Hr index="17">58</Hr>
+      <Hr index="18">58</Hr>
+      <Hr index="19">58</Hr>
+      <Hr index="20">58</Hr>
+      <Hr index="21">58</Hr>
+      <Hr index="22">58</Hr>
+      <Hr index="23">58</Hr>
+    </SchDay>
+    <SchWeek>
+      <Name>WaterMainCZ09AprWk</Name>
+      <Type>Temperature</Type>
+      <SchDaySunRef>WaterMainCZ09Apr</SchDaySunRef>
+      <SchDayMonRef>WaterMainCZ09Apr</SchDayMonRef>
+      <SchDayTueRef>WaterMainCZ09Apr</SchDayTueRef>
+      <SchDayWedRef>WaterMainCZ09Apr</SchDayWedRef>
+      <SchDayThuRef>WaterMainCZ09Apr</SchDayThuRef>
+      <SchDayFriRef>WaterMainCZ09Apr</SchDayFriRef>
+      <SchDaySatRef>WaterMainCZ09Apr</SchDaySatRef>
+      <SchDayHolRef>WaterMainCZ09Apr</SchDayHolRef>
+      <SchDayClgDDRef>WaterMainCZ09Apr</SchDayClgDDRef>
+      <SchDayHtgDDRef>WaterMainCZ09Apr</SchDayHtgDDRef>
+    </SchWeek>
+    <SchDay>
+      <Name>WaterMainCZ09Apr</Name>
+      <Type>Temperature</Type>
+      <Hr index="0">58.7</Hr>
+      <Hr index="1">58.7</Hr>
+      <Hr index="2">58.7</Hr>
+      <Hr index="3">58.7</Hr>
+      <Hr index="4">58.7</Hr>
+      <Hr index="5">58.7</Hr>
+      <Hr index="6">58.7</Hr>
+      <Hr index="7">58.7</Hr>
+      <Hr index="8">58.7</Hr>
+      <Hr index="9">58.7</Hr>
+      <Hr index="10">58.7</Hr>
+      <Hr index="11">58.7</Hr>
+      <Hr index="12">58.7</Hr>
+      <Hr index="13">58.7</Hr>
+      <Hr index="14">58.7</Hr>
+      <Hr index="15">58.7</Hr>
+      <Hr index="16">58.7</Hr>
+      <Hr index="17">58.7</Hr>
+      <Hr index="18">58.7</Hr>
+      <Hr index="19">58.7</Hr>
+      <Hr index="20">58.7</Hr>
+      <Hr index="21">58.7</Hr>
+      <Hr index="22">58.7</Hr>
+      <Hr index="23">58.7</Hr>
+    </SchDay>
+    <SchWeek>
+      <Name>WaterMainCZ09MayWk</Name>
+      <Type>Temperature</Type>
+      <SchDaySunRef>WaterMainCZ09May</SchDaySunRef>
+      <SchDayMonRef>WaterMainCZ09May</SchDayMonRef>
+      <SchDayTueRef>WaterMainCZ09May</SchDayTueRef>
+      <SchDayWedRef>WaterMainCZ09May</SchDayWedRef>
+      <SchDayThuRef>WaterMainCZ09May</SchDayThuRef>
+      <SchDayFriRef>WaterMainCZ09May</SchDayFriRef>
+      <SchDaySatRef>WaterMainCZ09May</SchDaySatRef>
+      <SchDayHolRef>WaterMainCZ09May</SchDayHolRef>
+      <SchDayClgDDRef>WaterMainCZ09May</SchDayClgDDRef>
+      <SchDayHtgDDRef>WaterMainCZ09May</SchDayHtgDDRef>
+    </SchWeek>
+    <SchDay>
+      <Name>WaterMainCZ09May</Name>
+      <Type>Temperature</Type>
+      <Hr index="0">58.9</Hr>
+      <Hr index="1">58.9</Hr>
+      <Hr index="2">58.9</Hr>
+      <Hr index="3">58.9</Hr>
+      <Hr index="4">58.9</Hr>
+      <Hr index="5">58.9</Hr>
+      <Hr index="6">58.9</Hr>
+      <Hr index="7">58.9</Hr>
+      <Hr index="8">58.9</Hr>
+      <Hr index="9">58.9</Hr>
+      <Hr index="10">58.9</Hr>
+      <Hr index="11">58.9</Hr>
+      <Hr index="12">58.9</Hr>
+      <Hr index="13">58.9</Hr>
+      <Hr index="14">58.9</Hr>
+      <Hr index="15">58.9</Hr>
+      <Hr index="16">58.9</Hr>
+      <Hr index="17">58.9</Hr>
+      <Hr index="18">58.9</Hr>
+      <Hr index="19">58.9</Hr>
+      <Hr index="20">58.9</Hr>
+      <Hr index="21">58.9</Hr>
+      <Hr index="22">58.9</Hr>
+      <Hr index="23">58.9</Hr>
+    </SchDay>
+    <SchWeek>
+      <Name>WaterMainCZ09JunWk</Name>
+      <Type>Temperature</Type>
+      <SchDaySunRef>WaterMainCZ09Jun</SchDaySunRef>
+      <SchDayMonRef>WaterMainCZ09Jun</SchDayMonRef>
+      <SchDayTueRef>WaterMainCZ09Jun</SchDayTueRef>
+      <SchDayWedRef>WaterMainCZ09Jun</SchDayWedRef>
+      <SchDayThuRef>WaterMainCZ09Jun</SchDayThuRef>
+      <SchDayFriRef>WaterMainCZ09Jun</SchDayFriRef>
+      <SchDaySatRef>WaterMainCZ09Jun</SchDaySatRef>
+      <SchDayHolRef>WaterMainCZ09Jun</SchDayHolRef>
+      <SchDayClgDDRef>WaterMainCZ09Jun</SchDayClgDDRef>
+      <SchDayHtgDDRef>WaterMainCZ09Jun</SchDayHtgDDRef>
+    </SchWeek>
+    <SchDay>
+      <Name>WaterMainCZ09Jun</Name>
+      <Type>Temperature</Type>
+      <Hr index="0">61.2</Hr>
+      <Hr index="1">61.2</Hr>
+      <Hr index="2">61.2</Hr>
+      <Hr index="3">61.2</Hr>
+      <Hr index="4">61.2</Hr>
+      <Hr index="5">61.2</Hr>
+      <Hr index="6">61.2</Hr>
+      <Hr index="7">61.2</Hr>
+      <Hr index="8">61.2</Hr>
+      <Hr index="9">61.2</Hr>
+      <Hr index="10">61.2</Hr>
+      <Hr index="11">61.2</Hr>
+      <Hr index="12">61.2</Hr>
+      <Hr index="13">61.2</Hr>
+      <Hr index="14">61.2</Hr>
+      <Hr index="15">61.2</Hr>
+      <Hr index="16">61.2</Hr>
+      <Hr index="17">61.2</Hr>
+      <Hr index="18">61.2</Hr>
+      <Hr index="19">61.2</Hr>
+      <Hr index="20">61.2</Hr>
+      <Hr index="21">61.2</Hr>
+      <Hr index="22">61.2</Hr>
+      <Hr index="23">61.2</Hr>
+    </SchDay>
+    <SchWeek>
+      <Name>WaterMainCZ09JulWk</Name>
+      <Type>Temperature</Type>
+      <SchDaySunRef>WaterMainCZ09Jul</SchDaySunRef>
+      <SchDayMonRef>WaterMainCZ09Jul</SchDayMonRef>
+      <SchDayTueRef>WaterMainCZ09Jul</SchDayTueRef>
+      <SchDayWedRef>WaterMainCZ09Jul</SchDayWedRef>
+      <SchDayThuRef>WaterMainCZ09Jul</SchDayThuRef>
+      <SchDayFriRef>WaterMainCZ09Jul</SchDayFriRef>
+      <SchDaySatRef>WaterMainCZ09Jul</SchDaySatRef>
+      <SchDayHolRef>WaterMainCZ09Jul</SchDayHolRef>
+      <SchDayClgDDRef>WaterMainCZ09Jul</SchDayClgDDRef>
+      <SchDayHtgDDRef>WaterMainCZ09Jul</SchDayHtgDDRef>
+    </SchWeek>
+    <SchDay>
+      <Name>WaterMainCZ09Jul</Name>
+      <Type>Temperature</Type>
+      <Hr index="0">62.4</Hr>
+      <Hr index="1">62.4</Hr>
+      <Hr index="2">62.4</Hr>
+      <Hr index="3">62.4</Hr>
+      <Hr index="4">62.4</Hr>
+      <Hr index="5">62.4</Hr>
+      <Hr index="6">62.4</Hr>
+      <Hr index="7">62.4</Hr>
+      <Hr index="8">62.4</Hr>
+      <Hr index="9">62.4</Hr>
+      <Hr index="10">62.4</Hr>
+      <Hr index="11">62.4</Hr>
+      <Hr index="12">62.4</Hr>
+      <Hr index="13">62.4</Hr>
+      <Hr index="14">62.4</Hr>
+      <Hr index="15">62.4</Hr>
+      <Hr index="16">62.4</Hr>
+      <Hr index="17">62.4</Hr>
+      <Hr index="18">62.4</Hr>
+      <Hr index="19">62.4</Hr>
+      <Hr index="20">62.4</Hr>
+      <Hr index="21">62.4</Hr>
+      <Hr index="22">62.4</Hr>
+      <Hr index="23">62.4</Hr>
+    </SchDay>
+    <SchWeek>
+      <Name>WaterMainCZ09AugWk</Name>
+      <Type>Temperature</Type>
+      <SchDaySunRef>WaterMainCZ09Aug</SchDaySunRef>
+      <SchDayMonRef>WaterMainCZ09Aug</SchDayMonRef>
+      <SchDayTueRef>WaterMainCZ09Aug</SchDayTueRef>
+      <SchDayWedRef>WaterMainCZ09Aug</SchDayWedRef>
+      <SchDayThuRef>WaterMainCZ09Aug</SchDayThuRef>
+      <SchDayFriRef>WaterMainCZ09Aug</SchDayFriRef>
+      <SchDaySatRef>WaterMainCZ09Aug</SchDaySatRef>
+      <SchDayHolRef>WaterMainCZ09Aug</SchDayHolRef>
+      <SchDayClgDDRef>WaterMainCZ09Aug</SchDayClgDDRef>
+      <SchDayHtgDDRef>WaterMainCZ09Aug</SchDayHtgDDRef>
+    </SchWeek>
+    <SchDay>
+      <Name>WaterMainCZ09Aug</Name>
+      <Type>Temperature</Type>
+      <Hr index="0">63.9</Hr>
+      <Hr index="1">63.9</Hr>
+      <Hr index="2">63.9</Hr>
+      <Hr index="3">63.9</Hr>
+      <Hr index="4">63.9</Hr>
+      <Hr index="5">63.9</Hr>
+      <Hr index="6">63.9</Hr>
+      <Hr index="7">63.9</Hr>
+      <Hr index="8">63.9</Hr>
+      <Hr index="9">63.9</Hr>
+      <Hr index="10">63.9</Hr>
+      <Hr index="11">63.9</Hr>
+      <Hr index="12">63.9</Hr>
+      <Hr index="13">63.9</Hr>
+      <Hr index="14">63.9</Hr>
+      <Hr index="15">63.9</Hr>
+      <Hr index="16">63.9</Hr>
+      <Hr index="17">63.9</Hr>
+      <Hr index="18">63.9</Hr>
+      <Hr index="19">63.9</Hr>
+      <Hr index="20">63.9</Hr>
+      <Hr index="21">63.9</Hr>
+      <Hr index="22">63.9</Hr>
+      <Hr index="23">63.9</Hr>
+    </SchDay>
+    <SchWeek>
+      <Name>WaterMainCZ09SepWk</Name>
+      <Type>Temperature</Type>
+      <SchDaySunRef>WaterMainCZ09Sep</SchDaySunRef>
+      <SchDayMonRef>WaterMainCZ09Sep</SchDayMonRef>
+      <SchDayTueRef>WaterMainCZ09Sep</SchDayTueRef>
+      <SchDayWedRef>WaterMainCZ09Sep</SchDayWedRef>
+      <SchDayThuRef>WaterMainCZ09Sep</SchDayThuRef>
+      <SchDayFriRef>WaterMainCZ09Sep</SchDayFriRef>
+      <SchDaySatRef>WaterMainCZ09Sep</SchDaySatRef>
+      <SchDayHolRef>WaterMainCZ09Sep</SchDayHolRef>
+      <SchDayClgDDRef>WaterMainCZ09Sep</SchDayClgDDRef>
+      <SchDayHtgDDRef>WaterMainCZ09Sep</SchDayHtgDDRef>
+    </SchWeek>
+    <SchDay>
+      <Name>WaterMainCZ09Sep</Name>
+      <Type>Temperature</Type>
+      <Hr index="0">64.5</Hr>
+      <Hr index="1">64.5</Hr>
+      <Hr index="2">64.5</Hr>
+      <Hr index="3">64.5</Hr>
+      <Hr index="4">64.5</Hr>
+      <Hr index="5">64.5</Hr>
+      <Hr index="6">64.5</Hr>
+      <Hr index="7">64.5</Hr>
+      <Hr index="8">64.5</Hr>
+      <Hr index="9">64.5</Hr>
+      <Hr index="10">64.5</Hr>
+      <Hr index="11">64.5</Hr>
+      <Hr index="12">64.5</Hr>
+      <Hr index="13">64.5</Hr>
+      <Hr index="14">64.5</Hr>
+      <Hr index="15">64.5</Hr>
+      <Hr index="16">64.5</Hr>
+      <Hr index="17">64.5</Hr>
+      <Hr index="18">64.5</Hr>
+      <Hr index="19">64.5</Hr>
+      <Hr index="20">64.5</Hr>
+      <Hr index="21">64.5</Hr>
+      <Hr index="22">64.5</Hr>
+      <Hr index="23">64.5</Hr>
+    </SchDay>
+    <SchWeek>
+      <Name>WaterMainCZ09OctWk</Name>
+      <Type>Temperature</Type>
+      <SchDaySunRef>WaterMainCZ09Oct</SchDaySunRef>
+      <SchDayMonRef>WaterMainCZ09Oct</SchDayMonRef>
+      <SchDayTueRef>WaterMainCZ09Oct</SchDayTueRef>
+      <SchDayWedRef>WaterMainCZ09Oct</SchDayWedRef>
+      <SchDayThuRef>WaterMainCZ09Oct</SchDayThuRef>
+      <SchDayFriRef>WaterMainCZ09Oct</SchDayFriRef>
+      <SchDaySatRef>WaterMainCZ09Oct</SchDaySatRef>
+      <SchDayHolRef>WaterMainCZ09Oct</SchDayHolRef>
+      <SchDayClgDDRef>WaterMainCZ09Oct</SchDayClgDDRef>
+      <SchDayHtgDDRef>WaterMainCZ09Oct</SchDayHtgDDRef>
+    </SchWeek>
+    <SchDay>
+      <Name>WaterMainCZ09Oct</Name>
+      <Type>Temperature</Type>
+      <Hr index="0">64.4</Hr>
+      <Hr index="1">64.4</Hr>
+      <Hr index="2">64.4</Hr>
+      <Hr index="3">64.4</Hr>
+      <Hr index="4">64.4</Hr>
+      <Hr index="5">64.4</Hr>
+      <Hr index="6">64.4</Hr>
+      <Hr index="7">64.4</Hr>
+      <Hr index="8">64.4</Hr>
+      <Hr index="9">64.4</Hr>
+      <Hr index="10">64.4</Hr>
+      <Hr index="11">64.4</Hr>
+      <Hr index="12">64.4</Hr>
+      <Hr index="13">64.4</Hr>
+      <Hr index="14">64.4</Hr>
+      <Hr index="15">64.4</Hr>
+      <Hr index="16">64.4</Hr>
+      <Hr index="17">64.4</Hr>
+      <Hr index="18">64.4</Hr>
+      <Hr index="19">64.4</Hr>
+      <Hr index="20">64.4</Hr>
+      <Hr index="21">64.4</Hr>
+      <Hr index="22">64.4</Hr>
+      <Hr index="23">64.4</Hr>
+    </SchDay>
+    <SchWeek>
+      <Name>WaterMainCZ09NovWk</Name>
+      <Type>Temperature</Type>
+      <SchDaySunRef>WaterMainCZ09Nov</SchDaySunRef>
+      <SchDayMonRef>WaterMainCZ09Nov</SchDayMonRef>
+      <SchDayTueRef>WaterMainCZ09Nov</SchDayTueRef>
+      <SchDayWedRef>WaterMainCZ09Nov</SchDayWedRef>
+      <SchDayThuRef>WaterMainCZ09Nov</SchDayThuRef>
+      <SchDayFriRef>WaterMainCZ09Nov</SchDayFriRef>
+      <SchDaySatRef>WaterMainCZ09Nov</SchDaySatRef>
+      <SchDayHolRef>WaterMainCZ09Nov</SchDayHolRef>
+      <SchDayClgDDRef>WaterMainCZ09Nov</SchDayClgDDRef>
+      <SchDayHtgDDRef>WaterMainCZ09Nov</SchDayHtgDDRef>
+    </SchWeek>
+    <SchDay>
+      <Name>WaterMainCZ09Nov</Name>
+      <Type>Temperature</Type>
+      <Hr index="0">61.3</Hr>
+      <Hr index="1">61.3</Hr>
+      <Hr index="2">61.3</Hr>
+      <Hr index="3">61.3</Hr>
+      <Hr index="4">61.3</Hr>
+      <Hr index="5">61.3</Hr>
+      <Hr index="6">61.3</Hr>
+      <Hr index="7">61.3</Hr>
+      <Hr index="8">61.3</Hr>
+      <Hr index="9">61.3</Hr>
+      <Hr index="10">61.3</Hr>
+      <Hr index="11">61.3</Hr>
+      <Hr index="12">61.3</Hr>
+      <Hr index="13">61.3</Hr>
+      <Hr index="14">61.3</Hr>
+      <Hr index="15">61.3</Hr>
+      <Hr index="16">61.3</Hr>
+      <Hr index="17">61.3</Hr>
+      <Hr index="18">61.3</Hr>
+      <Hr index="19">61.3</Hr>
+      <Hr index="20">61.3</Hr>
+      <Hr index="21">61.3</Hr>
+      <Hr index="22">61.3</Hr>
+      <Hr index="23">61.3</Hr>
+    </SchDay>
+    <SchWeek>
+      <Name>WaterMainCZ09DecWk</Name>
+      <Type>Temperature</Type>
+      <SchDaySunRef>WaterMainCZ09Dec</SchDaySunRef>
+      <SchDayMonRef>WaterMainCZ09Dec</SchDayMonRef>
+      <SchDayTueRef>WaterMainCZ09Dec</SchDayTueRef>
+      <SchDayWedRef>WaterMainCZ09Dec</SchDayWedRef>
+      <SchDayThuRef>WaterMainCZ09Dec</SchDayThuRef>
+      <SchDayFriRef>WaterMainCZ09Dec</SchDayFriRef>
+      <SchDaySatRef>WaterMainCZ09Dec</SchDaySatRef>
+      <SchDayHolRef>WaterMainCZ09Dec</SchDayHolRef>
+      <SchDayClgDDRef>WaterMainCZ09Dec</SchDayClgDDRef>
+      <SchDayHtgDDRef>WaterMainCZ09Dec</SchDayHtgDDRef>
+    </SchWeek>
+    <SchDay>
+      <Name>WaterMainCZ09Dec</Name>
+      <Type>Temperature</Type>
+      <Hr index="0">58.3</Hr>
+      <Hr index="1">58.3</Hr>
+      <Hr index="2">58.3</Hr>
+      <Hr index="3">58.3</Hr>
+      <Hr index="4">58.3</Hr>
+      <Hr index="5">58.3</Hr>
+      <Hr index="6">58.3</Hr>
+      <Hr index="7">58.3</Hr>
+      <Hr index="8">58.3</Hr>
+      <Hr index="9">58.3</Hr>
+      <Hr index="10">58.3</Hr>
+      <Hr index="11">58.3</Hr>
+      <Hr index="12">58.3</Hr>
+      <Hr index="13">58.3</Hr>
+      <Hr index="14">58.3</Hr>
+      <Hr index="15">58.3</Hr>
+      <Hr index="16">58.3</Hr>
+      <Hr index="17">58.3</Hr>
+      <Hr index="18">58.3</Hr>
+      <Hr index="19">58.3</Hr>
+      <Hr index="20">58.3</Hr>
+      <Hr index="21">58.3</Hr>
+      <Hr index="22">58.3</Hr>
+      <Hr index="23">58.3</Hr>
+    </SchDay>
+  </Proj>
+  <ResHVACSys>
+    <Name>Zone1 HVACSys</Name>
+    <AutoSizeHeatInp>0</AutoSizeHeatInp>
+    <NumHeatSysUnits>0</NumHeatSysUnits>
+    <AutoSizeCoolInp>1</AutoSizeCoolInp>
+    <NumCoolSysUnits>0</NumCoolSysUnits>
+    <NumHtPumpSysUnits>4</NumHtPumpSysUnits>
+    <ZonalSysBypassDuct>0</ZonalSysBypassDuct>
+    <AutoSizeCool index="0">1</AutoSizeCool>
+    <AutoSizeCool index="1">1</AutoSizeCool>
+    <AutoSizeCool index="2">1</AutoSizeCool>
+    <AutoSizeCool index="3">1</AutoSizeCool>
+    <AutoSizeCool index="4">1</AutoSizeCool>
+    <AutoSizeCool index="5">1</AutoSizeCool>
+    <AutoSizeCool index="6">1</AutoSizeCool>
+    <AutoSizeCool index="7">1</AutoSizeCool>
+    <AutoSizeCool index="8">1</AutoSizeCool>
+    <AutoSizeCool index="9">1</AutoSizeCool>
+    <AutoSizeHeat index="0">0</AutoSizeHeat>
+    <AutoSizeHeat index="1">0</AutoSizeHeat>
+    <AutoSizeHeat index="2">0</AutoSizeHeat>
+    <AutoSizeHeat index="3">0</AutoSizeHeat>
+    <AutoSizeHeat index="4">0</AutoSizeHeat>
+    <AutoSizeHeat index="5">0</AutoSizeHeat>
+    <AutoSizeHeat index="6">0</AutoSizeHeat>
+    <AutoSizeHeat index="7">0</AutoSizeHeat>
+    <AutoSizeHeat index="8">0</AutoSizeHeat>
+    <AutoSizeHeat index="9">0</AutoSizeHeat>
+    <IsHtSysAFUE index="0">0</IsHtSysAFUE>
+    <IsHtSysAFUE index="1">0</IsHtSysAFUE>
+    <IsHtSysAFUE index="2">0</IsHtSysAFUE>
+    <IsHtSysAFUE index="3">0</IsHtSysAFUE>
+    <IsHtSysAFUE index="4">0</IsHtSysAFUE>
+    <IsHtSysAFUE index="5">0</IsHtSysAFUE>
+    <IsHtSysAFUE index="6">0</IsHtSysAFUE>
+    <IsHtSysAFUE index="7">0</IsHtSysAFUE>
+    <IsHtSysAFUE index="8">0</IsHtSysAFUE>
+    <IsHtSysAFUE index="9">0</IsHtSysAFUE>
+    <IsHPSysSEER index="0">0</IsHPSysSEER>
+    <IsHPSysSEER index="1">0</IsHPSysSEER>
+    <IsHPSysSEER index="2">0</IsHPSysSEER>
+    <IsHPSysSEER index="3">0</IsHPSysSEER>
+    <IsHPSysSEER index="4">0</IsHPSysSEER>
+    <IsHPSysSEER index="5">0</IsHPSysSEER>
+    <IsHPSysSEER index="6">0</IsHPSysSEER>
+    <IsHPSysSEER index="7">0</IsHPSysSEER>
+    <IsHPSysSEER index="8">0</IsHPSysSEER>
+    <IsHPSysSEER index="9">0</IsHPSysSEER>
+    <IsHPSysSEER2 index="0">1</IsHPSysSEER2>
+    <IsHPSysSEER2 index="1">0</IsHPSysSEER2>
+    <IsHPSysSEER2 index="2">0</IsHPSysSEER2>
+    <IsHPSysSEER2 index="3">0</IsHPSysSEER2>
+    <IsHPSysSEER2 index="4">0</IsHPSysSEER2>
+    <IsHPSysSEER2 index="5">0</IsHPSysSEER2>
+    <IsHPSysSEER2 index="6">0</IsHPSysSEER2>
+    <IsHPSysSEER2 index="7">0</IsHPSysSEER2>
+    <IsHPSysSEER2 index="8">0</IsHPSysSEER2>
+    <IsHPSysSEER2 index="9">0</IsHPSysSEER2>
+    <IsHPSysEER index="0">0</IsHPSysEER>
+    <IsHPSysEER index="1">0</IsHPSysEER>
+    <IsHPSysEER index="2">0</IsHPSysEER>
+    <IsHPSysEER index="3">0</IsHPSysEER>
+    <IsHPSysEER index="4">0</IsHPSysEER>
+    <IsHPSysEER index="5">0</IsHPSysEER>
+    <IsHPSysEER index="6">0</IsHPSysEER>
+    <IsHPSysEER index="7">0</IsHPSysEER>
+    <IsHPSysEER index="8">0</IsHPSysEER>
+    <IsHPSysEER index="9">0</IsHPSysEER>
+    <IsHPSysEER2 index="0">1</IsHPSysEER2>
+    <IsHPSysEER2 index="1">0</IsHPSysEER2>
+    <IsHPSysEER2 index="2">0</IsHPSysEER2>
+    <IsHPSysEER2 index="3">0</IsHPSysEER2>
+    <IsHPSysEER2 index="4">0</IsHPSysEER2>
+    <IsHPSysEER2 index="5">0</IsHPSysEER2>
+    <IsHPSysEER2 index="6">0</IsHPSysEER2>
+    <IsHPSysEER2 index="7">0</IsHPSysEER2>
+    <IsHPSysEER2 index="8">0</IsHPSysEER2>
+    <IsHPSysEER2 index="9">0</IsHPSysEER2>
+    <IsHPSysCFMperTon index="0">1</IsHPSysCFMperTon>
+    <IsHPSysCFMperTon index="1">0</IsHPSysCFMperTon>
+    <IsHPSysCFMperTon index="2">0</IsHPSysCFMperTon>
+    <IsHPSysCFMperTon index="3">0</IsHPSysCFMperTon>
+    <IsHPSysCFMperTon index="4">0</IsHPSysCFMperTon>
+    <IsHPSysCFMperTon index="5">0</IsHPSysCFMperTon>
+    <IsHPSysCFMperTon index="6">0</IsHPSysCFMperTon>
+    <IsHPSysCFMperTon index="7">0</IsHPSysCFMperTon>
+    <IsHPSysCFMperTon index="8">0</IsHPSysCFMperTon>
+    <IsHPSysCFMperTon index="9">0</IsHPSysCFMperTon>
+    <IsClSysSEER index="0">0</IsClSysSEER>
+    <IsClSysSEER index="1">0</IsClSysSEER>
+    <IsClSysSEER index="2">0</IsClSysSEER>
+    <IsClSysSEER index="3">0</IsClSysSEER>
+    <IsClSysSEER index="4">0</IsClSysSEER>
+    <IsClSysSEER index="5">0</IsClSysSEER>
+    <IsClSysSEER index="6">0</IsClSysSEER>
+    <IsClSysSEER index="7">0</IsClSysSEER>
+    <IsClSysSEER index="8">0</IsClSysSEER>
+    <IsClSysSEER index="9">0</IsClSysSEER>
+    <IsClSysSEER2 index="0">0</IsClSysSEER2>
+    <IsClSysSEER2 index="1">0</IsClSysSEER2>
+    <IsClSysSEER2 index="2">0</IsClSysSEER2>
+    <IsClSysSEER2 index="3">0</IsClSysSEER2>
+    <IsClSysSEER2 index="4">0</IsClSysSEER2>
+    <IsClSysSEER2 index="5">0</IsClSysSEER2>
+    <IsClSysSEER2 index="6">0</IsClSysSEER2>
+    <IsClSysSEER2 index="7">0</IsClSysSEER2>
+    <IsClSysSEER2 index="8">0</IsClSysSEER2>
+    <IsClSysSEER2 index="9">0</IsClSysSEER2>
+    <IsClSysEER index="0">0</IsClSysEER>
+    <IsClSysEER index="1">0</IsClSysEER>
+    <IsClSysEER index="2">0</IsClSysEER>
+    <IsClSysEER index="3">0</IsClSysEER>
+    <IsClSysEER index="4">0</IsClSysEER>
+    <IsClSysEER index="5">0</IsClSysEER>
+    <IsClSysEER index="6">0</IsClSysEER>
+    <IsClSysEER index="7">0</IsClSysEER>
+    <IsClSysEER index="8">0</IsClSysEER>
+    <IsClSysEER index="9">0</IsClSysEER>
+    <IsClSysEER2 index="0">0</IsClSysEER2>
+    <IsClSysEER2 index="1">0</IsClSysEER2>
+    <IsClSysEER2 index="2">0</IsClSysEER2>
+    <IsClSysEER2 index="3">0</IsClSysEER2>
+    <IsClSysEER2 index="4">0</IsClSysEER2>
+    <IsClSysEER2 index="5">0</IsClSysEER2>
+    <IsClSysEER2 index="6">0</IsClSysEER2>
+    <IsClSysEER2 index="7">0</IsClSysEER2>
+    <IsClSysEER2 index="8">0</IsClSysEER2>
+    <IsClSysEER2 index="9">0</IsClSysEER2>
+    <IsClSysCFMperTon index="0">0</IsClSysCFMperTon>
+    <IsClSysCFMperTon index="1">0</IsClSysCFMperTon>
+    <IsClSysCFMperTon index="2">0</IsClSysCFMperTon>
+    <IsClSysCFMperTon index="3">0</IsClSysCFMperTon>
+    <IsClSysCFMperTon index="4">0</IsClSysCFMperTon>
+    <IsClSysCFMperTon index="5">0</IsClSysCFMperTon>
+    <IsClSysCFMperTon index="6">0</IsClSysCFMperTon>
+    <IsClSysCFMperTon index="7">0</IsClSysCFMperTon>
+    <IsClSysCFMperTon index="8">0</IsClSysCFMperTon>
+    <IsClSysCFMperTon index="9">0</IsClSysCFMperTon>
+    <DuctStatusFlag index="0">3</DuctStatusFlag>
+    <DuctStatusFlag index="1">3</DuctStatusFlag>
+    <DuctStatusFlag index="2">3</DuctStatusFlag>
+    <DuctStatusFlag index="3">3</DuctStatusFlag>
+    <DuctStatusFlag index="4">3</DuctStatusFlag>
+    <DuctStatusFlag index="5">3</DuctStatusFlag>
+    <DuctStatusFlag index="6">3</DuctStatusFlag>
+    <DuctStatusFlag index="7">3</DuctStatusFlag>
+    <DuctStatusFlag index="8">3</DuctStatusFlag>
+    <DuctStatusFlag index="9">3</DuctStatusFlag>
+    <T24RPV_EER2>11.7</T24RPV_EER2>
+  </ResHVACSys>
+  <ResHVACSys>
+    <Name>Zone2 HVACSys</Name>
+    <AutoSizeHeatInp>0</AutoSizeHeatInp>
+    <NumHeatSysUnits>0</NumHeatSysUnits>
+    <AutoSizeCoolInp>1</AutoSizeCoolInp>
+    <NumCoolSysUnits>0</NumCoolSysUnits>
+    <NumHtPumpSysUnits>4</NumHtPumpSysUnits>
+    <ZonalSysBypassDuct>0</ZonalSysBypassDuct>
+    <AutoSizeCool index="0">1</AutoSizeCool>
+    <AutoSizeCool index="1">1</AutoSizeCool>
+    <AutoSizeCool index="2">1</AutoSizeCool>
+    <AutoSizeCool index="3">1</AutoSizeCool>
+    <AutoSizeCool index="4">1</AutoSizeCool>
+    <AutoSizeCool index="5">1</AutoSizeCool>
+    <AutoSizeCool index="6">1</AutoSizeCool>
+    <AutoSizeCool index="7">1</AutoSizeCool>
+    <AutoSizeCool index="8">1</AutoSizeCool>
+    <AutoSizeCool index="9">1</AutoSizeCool>
+    <AutoSizeHeat index="0">0</AutoSizeHeat>
+    <AutoSizeHeat index="1">0</AutoSizeHeat>
+    <AutoSizeHeat index="2">0</AutoSizeHeat>
+    <AutoSizeHeat index="3">0</AutoSizeHeat>
+    <AutoSizeHeat index="4">0</AutoSizeHeat>
+    <AutoSizeHeat index="5">0</AutoSizeHeat>
+    <AutoSizeHeat index="6">0</AutoSizeHeat>
+    <AutoSizeHeat index="7">0</AutoSizeHeat>
+    <AutoSizeHeat index="8">0</AutoSizeHeat>
+    <AutoSizeHeat index="9">0</AutoSizeHeat>
+    <IsHtSysAFUE index="0">0</IsHtSysAFUE>
+    <IsHtSysAFUE index="1">0</IsHtSysAFUE>
+    <IsHtSysAFUE index="2">0</IsHtSysAFUE>
+    <IsHtSysAFUE index="3">0</IsHtSysAFUE>
+    <IsHtSysAFUE index="4">0</IsHtSysAFUE>
+    <IsHtSysAFUE index="5">0</IsHtSysAFUE>
+    <IsHtSysAFUE index="6">0</IsHtSysAFUE>
+    <IsHtSysAFUE index="7">0</IsHtSysAFUE>
+    <IsHtSysAFUE index="8">0</IsHtSysAFUE>
+    <IsHtSysAFUE index="9">0</IsHtSysAFUE>
+    <IsHPSysSEER index="0">0</IsHPSysSEER>
+    <IsHPSysSEER index="1">0</IsHPSysSEER>
+    <IsHPSysSEER index="2">0</IsHPSysSEER>
+    <IsHPSysSEER index="3">0</IsHPSysSEER>
+    <IsHPSysSEER index="4">0</IsHPSysSEER>
+    <IsHPSysSEER index="5">0</IsHPSysSEER>
+    <IsHPSysSEER index="6">0</IsHPSysSEER>
+    <IsHPSysSEER index="7">0</IsHPSysSEER>
+    <IsHPSysSEER index="8">0</IsHPSysSEER>
+    <IsHPSysSEER index="9">0</IsHPSysSEER>
+    <IsHPSysSEER2 index="0">1</IsHPSysSEER2>
+    <IsHPSysSEER2 index="1">0</IsHPSysSEER2>
+    <IsHPSysSEER2 index="2">0</IsHPSysSEER2>
+    <IsHPSysSEER2 index="3">0</IsHPSysSEER2>
+    <IsHPSysSEER2 index="4">0</IsHPSysSEER2>
+    <IsHPSysSEER2 index="5">0</IsHPSysSEER2>
+    <IsHPSysSEER2 index="6">0</IsHPSysSEER2>
+    <IsHPSysSEER2 index="7">0</IsHPSysSEER2>
+    <IsHPSysSEER2 index="8">0</IsHPSysSEER2>
+    <IsHPSysSEER2 index="9">0</IsHPSysSEER2>
+    <IsHPSysEER index="0">0</IsHPSysEER>
+    <IsHPSysEER index="1">0</IsHPSysEER>
+    <IsHPSysEER index="2">0</IsHPSysEER>
+    <IsHPSysEER index="3">0</IsHPSysEER>
+    <IsHPSysEER index="4">0</IsHPSysEER>
+    <IsHPSysEER index="5">0</IsHPSysEER>
+    <IsHPSysEER index="6">0</IsHPSysEER>
+    <IsHPSysEER index="7">0</IsHPSysEER>
+    <IsHPSysEER index="8">0</IsHPSysEER>
+    <IsHPSysEER index="9">0</IsHPSysEER>
+    <IsHPSysEER2 index="0">1</IsHPSysEER2>
+    <IsHPSysEER2 index="1">0</IsHPSysEER2>
+    <IsHPSysEER2 index="2">0</IsHPSysEER2>
+    <IsHPSysEER2 index="3">0</IsHPSysEER2>
+    <IsHPSysEER2 index="4">0</IsHPSysEER2>
+    <IsHPSysEER2 index="5">0</IsHPSysEER2>
+    <IsHPSysEER2 index="6">0</IsHPSysEER2>
+    <IsHPSysEER2 index="7">0</IsHPSysEER2>
+    <IsHPSysEER2 index="8">0</IsHPSysEER2>
+    <IsHPSysEER2 index="9">0</IsHPSysEER2>
+    <IsHPSysCFMperTon index="0">1</IsHPSysCFMperTon>
+    <IsHPSysCFMperTon index="1">0</IsHPSysCFMperTon>
+    <IsHPSysCFMperTon index="2">0</IsHPSysCFMperTon>
+    <IsHPSysCFMperTon index="3">0</IsHPSysCFMperTon>
+    <IsHPSysCFMperTon index="4">0</IsHPSysCFMperTon>
+    <IsHPSysCFMperTon index="5">0</IsHPSysCFMperTon>
+    <IsHPSysCFMperTon index="6">0</IsHPSysCFMperTon>
+    <IsHPSysCFMperTon index="7">0</IsHPSysCFMperTon>
+    <IsHPSysCFMperTon index="8">0</IsHPSysCFMperTon>
+    <IsHPSysCFMperTon index="9">0</IsHPSysCFMperTon>
+    <IsClSysSEER index="0">0</IsClSysSEER>
+    <IsClSysSEER index="1">0</IsClSysSEER>
+    <IsClSysSEER index="2">0</IsClSysSEER>
+    <IsClSysSEER index="3">0</IsClSysSEER>
+    <IsClSysSEER index="4">0</IsClSysSEER>
+    <IsClSysSEER index="5">0</IsClSysSEER>
+    <IsClSysSEER index="6">0</IsClSysSEER>
+    <IsClSysSEER index="7">0</IsClSysSEER>
+    <IsClSysSEER index="8">0</IsClSysSEER>
+    <IsClSysSEER index="9">0</IsClSysSEER>
+    <IsClSysSEER2 index="0">0</IsClSysSEER2>
+    <IsClSysSEER2 index="1">0</IsClSysSEER2>
+    <IsClSysSEER2 index="2">0</IsClSysSEER2>
+    <IsClSysSEER2 index="3">0</IsClSysSEER2>
+    <IsClSysSEER2 index="4">0</IsClSysSEER2>
+    <IsClSysSEER2 index="5">0</IsClSysSEER2>
+    <IsClSysSEER2 index="6">0</IsClSysSEER2>
+    <IsClSysSEER2 index="7">0</IsClSysSEER2>
+    <IsClSysSEER2 index="8">0</IsClSysSEER2>
+    <IsClSysSEER2 index="9">0</IsClSysSEER2>
+    <IsClSysEER index="0">0</IsClSysEER>
+    <IsClSysEER index="1">0</IsClSysEER>
+    <IsClSysEER index="2">0</IsClSysEER>
+    <IsClSysEER index="3">0</IsClSysEER>
+    <IsClSysEER index="4">0</IsClSysEER>
+    <IsClSysEER index="5">0</IsClSysEER>
+    <IsClSysEER index="6">0</IsClSysEER>
+    <IsClSysEER index="7">0</IsClSysEER>
+    <IsClSysEER index="8">0</IsClSysEER>
+    <IsClSysEER index="9">0</IsClSysEER>
+    <IsClSysEER2 index="0">0</IsClSysEER2>
+    <IsClSysEER2 index="1">0</IsClSysEER2>
+    <IsClSysEER2 index="2">0</IsClSysEER2>
+    <IsClSysEER2 index="3">0</IsClSysEER2>
+    <IsClSysEER2 index="4">0</IsClSysEER2>
+    <IsClSysEER2 index="5">0</IsClSysEER2>
+    <IsClSysEER2 index="6">0</IsClSysEER2>
+    <IsClSysEER2 index="7">0</IsClSysEER2>
+    <IsClSysEER2 index="8">0</IsClSysEER2>
+    <IsClSysEER2 index="9">0</IsClSysEER2>
+    <IsClSysCFMperTon index="0">0</IsClSysCFMperTon>
+    <IsClSysCFMperTon index="1">0</IsClSysCFMperTon>
+    <IsClSysCFMperTon index="2">0</IsClSysCFMperTon>
+    <IsClSysCFMperTon index="3">0</IsClSysCFMperTon>
+    <IsClSysCFMperTon index="4">0</IsClSysCFMperTon>
+    <IsClSysCFMperTon index="5">0</IsClSysCFMperTon>
+    <IsClSysCFMperTon index="6">0</IsClSysCFMperTon>
+    <IsClSysCFMperTon index="7">0</IsClSysCFMperTon>
+    <IsClSysCFMperTon index="8">0</IsClSysCFMperTon>
+    <IsClSysCFMperTon index="9">0</IsClSysCFMperTon>
+    <DuctStatusFlag index="0">3</DuctStatusFlag>
+    <DuctStatusFlag index="1">3</DuctStatusFlag>
+    <DuctStatusFlag index="2">3</DuctStatusFlag>
+    <DuctStatusFlag index="3">3</DuctStatusFlag>
+    <DuctStatusFlag index="4">3</DuctStatusFlag>
+    <DuctStatusFlag index="5">3</DuctStatusFlag>
+    <DuctStatusFlag index="6">3</DuctStatusFlag>
+    <DuctStatusFlag index="7">3</DuctStatusFlag>
+    <DuctStatusFlag index="8">3</DuctStatusFlag>
+    <DuctStatusFlag index="9">3</DuctStatusFlag>
+    <T24RPV_EER2>11.7</T24RPV_EER2>
+  </ResHVACSys>
+  <ResDistSys>
+    <Name>Air Distribution System - Res</Name>
+    <LowLkgAH>0</LowLkgAH>
+  </ResDistSys>
+  <ResDHWSys>
+    <Name>DHWHeatpump</Name>
+    <LoadMaxNumHrs>12</LoadMaxNumHrs>
+    <DrawMaxNumHrs>4</DrawMaxNumHrs>
+  </ResDHWSys>
+  <ResLpTankHtr>
+    <Name>DHW Loop Tank Heater 1</Name>
+    <whEF>0.97</whEF>
+    <whResHtPwr>4500</whResHtPwr>
+    <whVol>80</whVol>
+  </ResLpTankHtr>
+</SDDXML>

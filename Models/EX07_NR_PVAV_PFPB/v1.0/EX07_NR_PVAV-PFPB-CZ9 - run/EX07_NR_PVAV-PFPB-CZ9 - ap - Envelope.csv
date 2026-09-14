@@ -1,0 +1,262 @@
+General Information
+Project Address,City,ZipCode,ClimateZone,Compliance Software,Compliance Manager,RulesetFile Name,Compliance Type
+" - specify - "," - specify - ",90045,"ClimateZone9","CBECC 2025.2.0.1 (1395)","BEMCmpMgr 2025.2.0.1 (625)","CA 2025 Nonresidential, Vers. 1.0 (T24_2025.bin)","NewComplete"
+
+No. of Thermal Zones,No. of Thermal Zones (cond),No. of Air Systems,No. of Zonal Systems,No. of Terminal Units
+18,15,3,0,15
+
+No. of Stories
+Total,New,Existing,Altered
+3,3,0,0
+
+No. of Above Grade Stories
+Total,New,Existing,Altered
+3,3,0,0
+
+No. of Dwelling Units (Conditioned)
+Total,New,Existing,Altered
+0,0,0,0
+
+NonRes Floor Area (Conditioned)
+Total,New,Existing,Altered
+3,3,0,0
+
+Res Floor Area (Conditioned)
+Total,New,Existing,Altered
+0,0,0,0
+
+,Conditioned Floor Area
+Total Floor Area,Total,New,Existing,Altered
+53627.8,53627.8,0,0,0
+
+
+
+Building Wall Area
+Total ExtWall,N ExtWall,E ExtWall,S ExtWall,W ExtWall,
+(ft2),(ft2),(ft2),(ft2),(ft2)
+21287.45,6386.25,4257.47,6386.25,4257.47
+
+Building New Wall Area
+Total ExtWall,N ExtWall,E ExtWall,S ExtWall,W ExtWall,
+(ft2),(ft2),(ft2),(ft2),(ft2)
+21287.45,6386.25,4257.47,6386.25,4257.47
+Building Existing or Altered Wall Area
+Total ExtWall,N ExtWall,E ExtWall,S ExtWall,W ExtWall,
+(ft2),(ft2),(ft2),(ft2),(ft2)
+0.00,0.00,0.00,0.00,0.00
+
+
+Building Window Area,
+Total Window Area,North Window,E Window,S Window,W Window
+(ft2),(ft2),(ft2),(ft2),(ft2)
+7026.53,2108.10,1405.16,2108.10,1405.16
+
+Building New Window Area on New Walls,
+Total Window Area,North Window,E Window,S Window,W Window
+(ft2),(ft2),(ft2),(ft2),(ft2)
+7026.53,2108.10,1405.16,2108.10,1405.16
+Building New Window Area on Existing or Altered Walls,
+Total Window Area,North Window,E Window,S Window,W Window
+(ft2),(ft2),(ft2),(ft2),(ft2)
+0.00,0.00,0.00,0.00,0.00
+Building Existing or Altered Window Area on Existing or Altered Walls,
+Total Window Area,North Window,E Window,S Window,W Window
+(ft2),(ft2),(ft2),(ft2),(ft2)
+0.00,0.00,0.00,0.00,0.00
+
+
+Window to Wall Ratio
+Bldg. WWR,North WWR,East WWR,South WWR,West WWR
+(frac.),(frac.),(frac.),(frac.),(frac.)
+0.3301,0.3301,0.3300,0.3301,0.3300
+
+New Window to New Wall Ratio
+Bldg. WWR,North WWR,East WWR,South WWR,West WWR
+(frac.),(frac.),(frac.),(frac.),(frac.)
+0.3301,0.3301,0.3300,0.3301,0.3300
+New Window to Existing or Altered Wall Ratio
+Bldg. WWR,North WWR,East WWR,South WWR,West WWR
+(frac.),(frac.),(frac.),(frac.),(frac.)
+0.0000,0.0000,0.0000,0.0000,0.0000
+Existing or Altered Window to Existing or Altered Wall Ratio
+Bldg. WWR,North WWR,East WWR,South WWR,West WWR
+(frac.),(frac.),(frac.),(frac.),(frac.)
+0.0000,0.0000,0.0000,0.0000,0.0000
+
+
+Skylight to Roof Ratio (SRR),Display Perimeter\SRR,West,Total
+(frac.),(ft),(ft)
+0.0000,0.00,0.00
+
+New Skylight to New Roof Ratio (SRR)
+(frac.)
+0.0000
+New Skylight to Existing or Altered Roof Ratio (SRR)
+(frac.)
+0.0000
+Existing or Altered Skylight to Existing or Altered Roof Ratio (SRR)
+(frac.)
+0.0000
+
+
+
+Exterior Roofs
+,,,,,,,,,,,,Aged Thermal Emittance,,ThrmlAbs,,Aged Solar Reflectance,,SolAbs,
+Name,Status,Name,Occupancy Classification,Conditioning Status,Assigned Occ Class (Ref),Area,Tilt,Slope Category,Cons Name,Construction Type,U-Factor,Roof,Cons,Roof,Cons,Roof,Cons,Roof,Cons
+,,,,,,(ft2),(deg),,,,(Btu/h-?F-ft2),(frac.),(frac.),(frac.),(frac.),(frac.),(frac.),(frac.),(frac.),
+"Building_Roof","New","TopFloor_Plenum","Nonresidential","Plenum","NonResidential",17875.93,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU034","WoodFramingAndOtherRoof",0.034,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+
+
+
+Exterior Wall
+,,Space
+Name,Status,Name,Occupancy Classification,Conditioning Status,Building Type,Area,Azimuth,Cons Name,Construction Type,U Factor,Window Area
+,,,,,,(ft2),(deg),,,(Btu/h-?F-ft2),(ft2)
+"Perimeter_bot_ZN_1_Wall_South","New","Perimeter_bot_ZN_1","Nonresidential","DirectlyConditioned","NonResidential",1473.75,180,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,702.69
+"Perimeter_bot_ZN_2_Wall_East","New","Perimeter_bot_ZN_2","Nonresidential","DirectlyConditioned","NonResidential",982.49,90,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,468.38
+"Perimeter_bot_ZN_3_Wall_North","New","Perimeter_bot_ZN_3","Nonresidential","DirectlyConditioned","NonResidential",1473.75,0,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,702.69
+"Perimeter_bot_ZN_4_Wall_West","New","Perimeter_bot_ZN_4","Nonresidential","DirectlyConditioned","NonResidential",982.49,270,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,468.38
+"Perimeter_bot_Plenum_Wall_East","New","FirstFloor_Plenum","Nonresidential","Plenum","NonResidential",436.66,90,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"Perimeter_bot_Plenum_Wall_North","New","FirstFloor_Plenum","Nonresidential","Plenum","NonResidential",655.00,0,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"Perimeter_bot_Plenum_Wall_South","New","FirstFloor_Plenum","Nonresidential","Plenum","NonResidential",655.00,180,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"Perimeter_bot_Plenum_Wall_West","New","FirstFloor_Plenum","Nonresidential","Plenum","NonResidential",436.66,270,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"Perimeter_mid_ZN_1_Wall_South","New","Perimeter_mid_ZN_1","Nonresidential","DirectlyConditioned","NonResidential",1473.75,180,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,702.70
+"Perimeter_mid_ZN_2_Wall_East","New","Perimeter_mid_ZN_2","Nonresidential","DirectlyConditioned","NonResidential",982.49,90,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,468.39
+"Perimeter_mid_ZN_3_Wall_North","New","Perimeter_mid_ZN_3","Nonresidential","DirectlyConditioned","NonResidential",1473.75,0,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,702.70
+"Perimeter_mid_ZN_4_Wall_West","New","Perimeter_mid_ZN_4","Nonresidential","DirectlyConditioned","NonResidential",982.49,270,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,468.39
+"Perimeter_mid_Plenum_Wall_East","New","MidFloor_Plenum","Nonresidential","Plenum","NonResidential",436.66,90,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"Perimeter_mid_Plenum_Wall_North","New","MidFloor_Plenum","Nonresidential","Plenum","NonResidential",655.00,0,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"Perimeter_mid_Plenum_Wall_South","New","MidFloor_Plenum","Nonresidential","Plenum","NonResidential",655.00,180,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"Perimeter_mid_Plenum_Wall_West","New","MidFloor_Plenum","Nonresidential","Plenum","NonResidential",436.66,270,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"Perimeter_top_ZN_1_Wall_South","New","Perimeter_top_ZN_1","Nonresidential","DirectlyConditioned","NonResidential",1473.75,180,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,702.70
+"Perimeter_top_ZN_2_Wall_East","New","Perimeter_top_ZN_2","Nonresidential","DirectlyConditioned","NonResidential",982.49,90,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,468.39
+"Perimeter_top_ZN_3_Wall_North","New","Perimeter_top_ZN_3","Nonresidential","DirectlyConditioned","NonResidential",1473.75,0,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,702.70
+"Perimeter_top_ZN_4_Wall_West","New","Perimeter_top_ZN_4","Nonresidential","DirectlyConditioned","NonResidential",982.49,270,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,468.39
+"Perimeter_top_Plenum_Wall_East","New","TopFloor_Plenum","Nonresidential","Plenum","NonResidential",436.66,90,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"Perimeter_top_Plenum_Wall_North","New","TopFloor_Plenum","Nonresidential","Plenum","NonResidential",655.00,0,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"Perimeter_top_Plenum_Wall_South","New","TopFloor_Plenum","Nonresidential","Plenum","NonResidential",655.00,180,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"Perimeter_top_Plenum_Wall_West","New","TopFloor_Plenum","Nonresidential","Plenum","NonResidential",436.66,270,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+
+
+
+Underground Floor
+,,Space
+Name,Status,Name,Occupancy Classification,Conditioning Status,Slab Type,Area,Exposed Perimeter,Cons Name,Slab Insulation Orientation,Overall 'F' Factor
+,,,,,(Heated/Unheated),(ft2),(ft),,,(Btu/h-?F-ft2)
+"Core_bot_ZN_5_Floor","New","Core_bottom","Nonresidential","DirectlyConditioned","UnheatedSlab",10586.70,0.00,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"Perimeter_bot_ZN_1_Floor","New","Perimeter_bot_ZN_1","Nonresidential","DirectlyConditioned","UnheatedSlab",2231.76,163.75,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"Perimeter_bot_ZN_2_Floor","New","Perimeter_bot_ZN_2","Nonresidential","DirectlyConditioned","UnheatedSlab",1412.90,109.17,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"Perimeter_bot_ZN_3_Floor","New","Perimeter_bot_ZN_3","Nonresidential","DirectlyConditioned","UnheatedSlab",2231.76,163.75,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"Perimeter_bot_ZN_4_Floor","New","Perimeter_bot_ZN_4","Nonresidential","DirectlyConditioned","UnheatedSlab",1412.80,109.17,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+
+
+
+Window
+,,,,Exterior Wall,Window
+Name,Status,Occupancy Classification,Conditioning Status,Name,Area,Azimuth,Product Type,Cert Method,Cons Name,Frame Type,Glazing Type,U Factor,SHGC,Visual Transmittance, U Factor Simulated,Inside Convection Coefficient
+,,,,,(ft2),(Deg),,,,,,(Btu/h-?F-ft2),,,(Btu/h-?F-ft2),(Btu/h-?F-ft2)
+"Perimeter_bot_ZN_1_Wall_South_Window","New","Nonresidential","DirectlyConditioned","Perimeter_bot_ZN_1_Wall_South",702.69,180,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Perimeter_bot_ZN_2_Wall_East_Window","New","Nonresidential","DirectlyConditioned","Perimeter_bot_ZN_2_Wall_East",468.38,90,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Perimeter_bot_ZN_3_Wall_North_Window","New","Nonresidential","DirectlyConditioned","Perimeter_bot_ZN_3_Wall_North",702.69,0,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Perimeter_bot_ZN_4_Wall_West_Window","New","Nonresidential","DirectlyConditioned","Perimeter_bot_ZN_4_Wall_West",468.38,270,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Perimeter_mid_ZN_1_Wall_South_Window","New","Nonresidential","DirectlyConditioned","Perimeter_mid_ZN_1_Wall_South",702.70,180,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Perimeter_mid_ZN_2_Wall_East_Window","New","Nonresidential","DirectlyConditioned","Perimeter_mid_ZN_2_Wall_East",468.39,90,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Perimeter_mid_ZN_3_Wall_North_Window","New","Nonresidential","DirectlyConditioned","Perimeter_mid_ZN_3_Wall_North",702.70,0,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Perimeter_mid_ZN_4_Wall_West_Window","New","Nonresidential","DirectlyConditioned","Perimeter_mid_ZN_4_Wall_West",468.39,270,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Perimeter_top_ZN_1_Wall_South_Window","New","Nonresidential","DirectlyConditioned","Perimeter_top_ZN_1_Wall_South",702.70,180,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Perimeter_top_ZN_2_Wall_East_Window","New","Nonresidential","DirectlyConditioned","Perimeter_top_ZN_2_Wall_East",468.39,90,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Perimeter_top_ZN_3_Wall_North_Window","New","Nonresidential","DirectlyConditioned","Perimeter_top_ZN_3_Wall_North",702.70,0,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Perimeter_top_ZN_4_Wall_West_Window","New","Nonresidential","DirectlyConditioned","Perimeter_top_ZN_4_Wall_West",468.39,270,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+
+
+
+Interior Wall
+,,Space
+Name,Status,Name,Occupancy Classification,Conditioning Status,Area,Azimuth,Cons Name,Construction Type,U Factor
+,,,,,(ft2),(deg),,,(Btu/h-?F-ft2)
+"Core_bot_ZN_5_Wall_East","New","Core_bottom","Nonresidential","DirectlyConditioned",712.42,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Core_bot_ZN_5_Wall_North","New","Core_bottom","Nonresidential","DirectlyConditioned",1203.67,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Core_bot_ZN_5_Wall_South","New","Core_bottom","Nonresidential","DirectlyConditioned",1203.67,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Core_bot_ZN_5_Wall_West","New","Core_bottom","Nonresidential","DirectlyConditioned",712.42,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Perimeter_bot_ZN_1_Wall_East","New","Perimeter_bot_ZN_1","Nonresidential","DirectlyConditioned",190.98,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Perimeter_bot_ZN_4_Wall_South Reversed","New","Perimeter_bot_ZN_1","Nonresidential","DirectlyConditioned",190.97,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Perimeter_bot_ZN_2_Wall_North","New","Perimeter_bot_ZN_2","Nonresidential","DirectlyConditioned",190.98,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Perimeter_bot_ZN_3_Wall_West","New","Perimeter_bot_ZN_3","Nonresidential","DirectlyConditioned",190.97,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Core_mid_ZN_5_Wall_East","New","Core_mid","Nonresidential","DirectlyConditioned",712.42,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Core_mid_ZN_5_Wall_North","New","Core_mid","Nonresidential","DirectlyConditioned",1203.67,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Core_mid_ZN_5_Wall_South","New","Core_mid","Nonresidential","DirectlyConditioned",1203.67,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Core_mid_ZN_5_Wall_West","New","Core_mid","Nonresidential","DirectlyConditioned",712.42,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Perimeter_mid_ZN_1_Wall_East","New","Perimeter_mid_ZN_1","Nonresidential","DirectlyConditioned",190.98,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Perimeter_mid_ZN_4_Wall_South Reversed","New","Perimeter_mid_ZN_1","Nonresidential","DirectlyConditioned",190.97,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Perimeter_mid_ZN_2_Wall_North","New","Perimeter_mid_ZN_2","Nonresidential","DirectlyConditioned",190.98,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Perimeter_mid_ZN_3_Wall_West","New","Perimeter_mid_ZN_3","Nonresidential","DirectlyConditioned",190.97,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Core_top_ZN_5_Wall_East","New","Core_top","Nonresidential","DirectlyConditioned",712.42,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Core_top_ZN_5_Wall_North","New","Core_top","Nonresidential","DirectlyConditioned",1203.67,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Core_top_ZN_5_Wall_South","New","Core_top","Nonresidential","DirectlyConditioned",1203.67,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Core_top_ZN_5_Wall_West","New","Core_top","Nonresidential","DirectlyConditioned",712.42,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Perimeter_top_ZN_1_Wall_East","New","Perimeter_top_ZN_1","Nonresidential","DirectlyConditioned",190.98,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Perimeter_top_ZN_4_Wall_South Reversed","New","Perimeter_top_ZN_1","Nonresidential","DirectlyConditioned",190.97,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Perimeter_top_ZN_2_Wall_North","New","Perimeter_top_ZN_2","Nonresidential","DirectlyConditioned",190.98,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+"Perimeter_top_ZN_3_Wall_West","New","Perimeter_top_ZN_3","Nonresidential","DirectlyConditioned",190.97,-99996,"NACM_Interior Wall","UNDEFINED",0.319
+
+
+
+Interior Floor
+,,Space
+Name,Status,Name,Occupancy Classification,Conditioning Status,Area,Cons Name,Construction Type,U Factor
+,,,,,(ft2),,,(Btu/h-?F-ft2)
+"Core_bot_ZN_5_Ceiling Reversed","New","FirstFloor_Plenum","Nonresidential","Plenum",10586.70,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Perimeter_bot_ZN_1_Ceiling Reversed","New","FirstFloor_Plenum","Nonresidential","Plenum",2231.76,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Perimeter_bot_ZN_2_Ceiling Reversed","New","FirstFloor_Plenum","Nonresidential","Plenum",1412.90,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Perimeter_bot_ZN_3_Ceiling Reversed","New","FirstFloor_Plenum","Nonresidential","Plenum",2231.76,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Perimeter_bot_ZN_4_Ceiling Reversed","New","FirstFloor_Plenum","Nonresidential","Plenum",1412.80,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Core_mid_ZN_5_Floor","New","Core_mid","Nonresidential","DirectlyConditioned",10586.70,"NACM_Interior Floor","UNDEFINED",0.238
+"Perimeter_mid_ZN_1_Floor","New","Perimeter_mid_ZN_1","Nonresidential","DirectlyConditioned",2231.76,"NACM_Interior Floor","UNDEFINED",0.238
+"Perimeter_mid_ZN_2_Floor","New","Perimeter_mid_ZN_2","Nonresidential","DirectlyConditioned",1412.90,"NACM_Interior Floor","UNDEFINED",0.238
+"Perimeter_mid_ZN_3_Floor","New","Perimeter_mid_ZN_3","Nonresidential","DirectlyConditioned",2231.76,"NACM_Interior Floor","UNDEFINED",0.238
+"Perimeter_mid_ZN_4_Floor","New","Perimeter_mid_ZN_4","Nonresidential","DirectlyConditioned",1412.80,"NACM_Interior Floor","UNDEFINED",0.238
+"Core_mid_ZN_5_Ceiling Reversed","New","MidFloor_Plenum","Nonresidential","Plenum",10586.70,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Perimeter_mid_ZN_1_Ceiling Reversed","New","MidFloor_Plenum","Nonresidential","Plenum",2231.76,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Perimeter_mid_ZN_2_Ceiling Reversed","New","MidFloor_Plenum","Nonresidential","Plenum",1412.90,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Perimeter_mid_ZN_3_Ceiling Reversed","New","MidFloor_Plenum","Nonresidential","Plenum",2231.76,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Perimeter_mid_ZN_4_Ceiling Reversed","New","MidFloor_Plenum","Nonresidential","Plenum",1412.80,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Core_top_ZN_5_Floor","New","Core_top","Nonresidential","DirectlyConditioned",10586.70,"NACM_Interior Floor","UNDEFINED",0.238
+"Perimeter_top_ZN_1_Floor","New","Perimeter_top_ZN_1","Nonresidential","DirectlyConditioned",2231.76,"NACM_Interior Floor","UNDEFINED",0.238
+"Perimeter_top_ZN_2_Floor","New","Perimeter_top_ZN_2","Nonresidential","DirectlyConditioned",1412.90,"NACM_Interior Floor","UNDEFINED",0.238
+"Perimeter_top_ZN_3_Floor","New","Perimeter_top_ZN_3","Nonresidential","DirectlyConditioned",2231.76,"NACM_Interior Floor","UNDEFINED",0.238
+"Perimeter_top_ZN_4_Floor","New","Perimeter_top_ZN_4","Nonresidential","DirectlyConditioned",1412.80,"NACM_Interior Floor","UNDEFINED",0.238
+"Core_top_ZN_5_Ceiling Reversed","New","TopFloor_Plenum","Nonresidential","Plenum",10586.70,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Perimeter_top_ZN_1_Ceiling Reversed","New","TopFloor_Plenum","Nonresidential","Plenum",2231.76,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Perimeter_top_ZN_2_Ceiling Reversed","New","TopFloor_Plenum","Nonresidential","Plenum",1412.90,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Perimeter_top_ZN_3_Ceiling Reversed","New","TopFloor_Plenum","Nonresidential","Plenum",2231.76,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Perimeter_top_ZN_4_Ceiling Reversed","New","TopFloor_Plenum","Nonresidential","Plenum",1412.80,"NACM_Drop Ceiling","UNDEFINED",0.292
+
+
+
+Construction Assembly
+Name,Surface Type,Material Layer 1 (CodeItem),Material Layer 2 (CodeItem),Material Layer 3 (CodeItem),Material Layer 4 (CodeItem),Material Layer 5 (CodeItem), Material Layer 6 (CodeItem), Material Layer 7 (CodeItem), Material Layer 8 (CodeItem), Material Layer 9 (CodeItem), Material Layer 10 (CodeItem)
+"Base_CZ12-SlabOnOrBelowGradeF073","UndergroundFloor","","","","","","","","","",""
+"Base_CZ12-NonresMetalFrameWallU055","ExteriorWall","Stucco - 7/8 in.","Compliance Insulation R14.60","Compliance Insulation R1.41","Compliance Insulation R0.02","Compliance Insulation R0.02","Air - Metal Wall Framing - 16 or 24 in. OC","Gypsum Board - 1/2 in.","","",""
+"NACM_Interior Wall","InteriorWall","Gypsum Board - 5/8 in.","Air - Metal Wall Framing - 16 or 24 in. OC","Gypsum Board - 5/8 in.","","","","","","",""
+"Base_CZ12-FlatNonresWoodFramingAndOtherRoofU034","Roof","Metal Standing Seam - 1/16 in.","Compliance Insulation R28.63","","","","","","","",""
+"NACM_Drop Ceiling","InteriorFloor","Acoustic Tile - 3/4 in.","","","","","","","","",""
+"NACM_Interior Floor","InteriorFloor","Metal Deck - 1/16 in.","Concrete - 140 lb/ft3 - 4 in.","Carpet - 3/4 in.","","","","","","",""
+
+
+
+Construction Materials
+Name,Code Item,Type,R-value,Thickness,Frame Type,Frame Configuration,Frame Depth, Frame Cavity Insulation(for composite material)
+,,,(?F-ft2-h/Btuh),(in),,,,(?F-ft2-h/Btuh)
+"Stucco - 7/8 in.","Stucco - 7/8 in.","Plastering Materials",0.180,0.880,"- specify -","- specify -","- specify -",0.000
+"Air - Metal Wall Framing - 16 or 24 in. OC","Air - Metal Wall Framing - 16 or 24 in. OC","Air",0.650,5.500,"- specify -","- specify -","- specify -",0.000
+"Gypsum Board - 1/2 in.","Gypsum Board - 1/2 in.","Bldg Board and Siding",0.450,0.500,"- specify -","- specify -","- specify -",0.000
+"Gypsum Board - 5/8 in.","Gypsum Board - 5/8 in.","Bldg Board and Siding",0.560,0.630,"- specify -","- specify -","- specify -",0.000
+"Metal Standing Seam - 1/16 in.","Metal Standing Seam - 1/16 in.","Roofing",0.000,0.063,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation R28.63","Compliance Insulation R28.63","Insulation Board",28.630,4.569,"- specify -","- specify -","- specify -",0.000
+"Acoustic Tile - 3/4 in.","Acoustic Tile - 3/4 in.","Finish Materials",1.890,0.750,"- specify -","- specify -","- specify -",0.000
+"Metal Deck - 1/16 in.","Metal Deck - 1/16 in.","Bldg Board and Siding",0.000,0.063,"- specify -","- specify -","- specify -",0.000
+"Concrete - 140 lb/ft3 - 4 in.","Concrete - 140 lb/ft3 - 4 in.","Concrete",0.300,4.000,"- specify -","- specify -","- specify -",0.000
+"Carpet - 3/4 in.","Carpet - 3/4 in.","Finish Materials",2.380,0.750,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation R14.60","Compliance Insulation R14.60","Insulation Board",14.600,2.330,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation R1.41","Compliance Insulation R1.41","Insulation Board",1.410,0.225,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation R0.02","Compliance Insulation R0.02","Insulation Board",0.020,0.003,"- specify -","- specify -","- specify -",0.000

@@ -1,0 +1,20 @@
+AirSystems
+,,Fan Capacity,,,,Fan Pwr (Design),,,,,Fan Pwr Ratio,,,,Fan Pwr Adj
+System Name,Type,Supply Fan Capacity,Return Fan Capacity,Relief Fan Capacity,Exhaust Fan Capacity,Supply Fan Pwr,Return Fan Pwr,Relief Fan Pwr,Exhaust Fan Pwr,Total System Fan Pwr,Supply Fan Pwr Ratio,Return Fan Pwr Ratio,Relief Fan Pwr Ratio,Exhaust Fan Pwr Ratio,Total Exhaust Fan Pwr Adj,Total NonExhaust Fan Pwr Adj,Total System Fan Pwr Adj,Fully Ducted Exhaust Pressure Drop Adj,Exhaust Filter Pressure Drop Adj,Biosafety Cabinet Pressure Drop Adj,Fully Ducted Return Pressure Drop Adj,MERV16 Filter Pressure Drop Adj,Air Cleaner Pressure Drop Adj,Fully Ducted Exhaust Design Flow,Exhaust Filter Design Flow,Biosafety Design Flow,Fully Ducted Return Design Flow,MERV16 Filter Design Flow,Air Cleaner Design Flow
+,,(cfm),(cfm),(cfm),(cfm),(kW),(kW),(kW),(kW),(kW),(frac),(frac),(frac),(frac),(kW),(kW),(kW),(inH2O),(inH2O),(inH2O),(inH2O),(inH2O),(inH2O),(cfm),(cfm),(cfm),(cfm),(cfm),(cfm)
+"Dining - RTU / DOAS 1","SZVAVDFHP",2000.0,0.0,0.0,0.0,1.492,0.000,0.000,0.000,-99996.000,-99996.000,-99996.000,-99996.000,-99996.000,0.000,0.000,0.000,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000
+"Kitchen-RTU / DOAS 2","SZVAVDFHP",4500.0,0.0,0.0,0.0,3.690,0.000,0.000,0.000,-99996.000,-99996.000,-99996.000,-99996.000,-99996.000,0.000,0.000,0.000,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000
+
+ZoneSystems
+,,Fan Capacity,,,,Fan Pwr (Design),,,,,Fan Pwr Ratio,,,,Fan Pwr Adj
+System Name,Type,Supply Fan Capacity,Return Fan Capacity,Relief Fan Capacity,Exhaust Fan Capacity,Supply Fan Pwr,Return Fan Pwr,Relief Fan Pwr,Exhaust Fan Pwr,Total System Fan Pwr,Supply Fan Pwr Ratio,Return Fan Pwr Ratio,Relief Fan Pwr Ratio,Exhaust Fan Pwr Ratio,Total Exhaust Fan Pwr Adj,Total NonExhaust Fan Pwr Adj,Total System Fan Pwr Adj,Fully Ducted Exhaust Pressure Drop Adj,Exhaust Filter Pressure Drop Adj,Biosafety Cabinet Pressure Drop Adj,Fully Ducted Return Pressure Drop Adj,MERV16 Filter Pressure Drop Adj,Air Cleaner Pressure Drop Adj,Fully Ducted Exhaust Design Flow,Exhaust Filter Design Flow,Biosafety Design Flow,Fully Ducted Return Design Flow,MERV16 Filter Design Flow,Air Cleaner Design Flow
+,,(cfm),(cfm),(cfm),(cfm),(kW),(kW),(kW),(kW),(kW),(frac),(frac),(frac),(frac),(kW),(kW),(kW),(inH2O),(inH2O),(inH2O),(inH2O),(inH2O),(inH2O),(cfm),(cfm),(cfm),(cfm),(cfm),(cfm)
+"KitchenExhaust","Exhaust",0.0,0,0,2400.0,0.000,0,0,1.560,-99996.000,-99996.000,0,0,-99996.000,0.000,0.000,0.000,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000
+
+Thermal Zone
+,,,,,,Fan Capacity,,,Fan Flow Ratio,,,Fan Pwr,,,,,Fan Pwr Adj
+Name,Pri HVAC Sys,Vent Sys,Exhaust Sys,Floor Area,Multiplier,Pri. System Flow,Ventilation System Flow,Exhaust Flow,Zone Pri-Air-Flow-to-Sys Flow Ratio,Zone Vent-to-Sys-Air Flow Ratio,Zone Exh-to-Sys Flow Ratio,Prop Supply Fan Pwr,Prop Return Fan Pwr,Prop Relief Fan Pwr,Prop Exhaust Fan Pwr,Total Prop Fan Pwr,Total Exhaust Fan Pwr Adj,Total NonExhaust Fan Pwr Adj,Total Fan Pwr Adj,Fully Ducted Exhaust Pwr Adj,Exhaust Filter Fan Pwr Adj,Biosafety Cabinet Fan Pwr Adj,Fully Ducted Return Fan Pwr Adj,MERV16 Fan Pwr Adj,Air Cleaner Fan Pwr Adj,Exhaust Fan Motor BHP
+,,,,(ft2),,(cfm),(cfm),(cfm),(frac),(frac),(frac),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW)
+"Attic Zn","NONE","NONE","NONE",0.0,1,0.0,0.0,0.0,0.000,0.000,0.000,-99996.000,0.000,0.000,0.000,0.000,-99996.000,-99996.000,-99996.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Dining Thermal Zone","Dining - RTU / DOAS 1","Dining - RTU / DOAS 1","NONE",1250.5,1,2000.0,2000.0,0.0,1.000,0.000,0.000,-99996.000,0.000,0.000,0.000,1.492,-99996.000,-99996.000,-99996.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Kitchen Thermal Zone","Kitchen-RTU / DOAS 2","Kitchen-RTU / DOAS 2","KitchenExhaust",1250.5,1,4500.0,4500.0,2400.0,1.000,0.000,1.000,-99996.000,0.000,0.000,1.560,5.250,-99996.000,-99996.000,-99996.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000

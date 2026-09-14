@@ -1,0 +1,114 @@
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX03_MF_CENTRAL-WSHP\EX03_MF88_CENTRAL-WSHP_CZ09\EX03_MF88_CENTRAL-WSHP_CZ09 - RUN\EX03_MF88_CENTRAL-WSHP_CZ09 - ZB-CSE.CSE(37893): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (253.368 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX03_MF_CENTRAL-WSHP\EX03_MF88_CENTRAL-WSHP_CZ09\EX03_MF88_CENTRAL-WSHP_CZ09 - RUN\EX03_MF88_CENTRAL-WSHP_CZ09 - ZB-CSE.CSE(37924): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-2-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (263.475 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX03_MF_CENTRAL-WSHP\EX03_MF88_CENTRAL-WSHP_CZ09\EX03_MF88_CENTRAL-WSHP_CZ09 - RUN\EX03_MF88_CENTRAL-WSHP_CZ09 - ZB-CSE.CSE(37955): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-3-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (230.752 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX03_MF_CENTRAL-WSHP\EX03_MF88_CENTRAL-WSHP_CZ09\EX03_MF88_CENTRAL-WSHP_CZ09 - RUN\EX03_MF88_CENTRAL-WSHP_CZ09 - ZB-CSE.CSE(38017): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-5-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (276.075 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX03_MF_CENTRAL-WSHP\EX03_MF88_CENTRAL-WSHP_CZ09\EX03_MF88_CENTRAL-WSHP_CZ09 - RUN\EX03_MF88_CENTRAL-WSHP_CZ09 - ZB-CSE.CSE(38110): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-8-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (224.55 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX03_MF_CENTRAL-WSHP\EX03_MF88_CENTRAL-WSHP_CZ09\EX03_MF88_CENTRAL-WSHP_CZ09 - RUN\EX03_MF88_CENTRAL-WSHP_CZ09 - ZB-CSE.CSE(38141): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-9-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (241.971 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX03_MF_CENTRAL-WSHP\EX03_MF88_CENTRAL-WSHP_CZ09\EX03_MF88_CENTRAL-WSHP_CZ09 - RUN\EX03_MF88_CENTRAL-WSHP_CZ09 - ZB-CSE.CSE(38172): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-10-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (224.713 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX03_MF_CENTRAL-WSHP\EX03_MF88_CENTRAL-WSHP_CZ09\EX03_MF88_CENTRAL-WSHP_CZ09 - RUN\EX03_MF88_CENTRAL-WSHP_CZ09 - ZB-CSE.CSE(38203): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-11-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (224.466 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX03_MF_CENTRAL-WSHP\EX03_MF88_CENTRAL-WSHP_CZ09\EX03_MF88_CENTRAL-WSHP_CZ09 - RUN\EX03_MF88_CENTRAL-WSHP_CZ09 - ZB-CSE.CSE(38234): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-12-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (224.557 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX03_MF_CENTRAL-WSHP\EX03_MF88_CENTRAL-WSHP_CZ09\EX03_MF88_CENTRAL-WSHP_CZ09 - RUN\EX03_MF88_CENTRAL-WSHP_CZ09 - ZB-CSE.CSE(38265): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-13-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (243.07 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX03_MF_CENTRAL-WSHP\EX03_MF88_CENTRAL-WSHP_CZ09\EX03_MF88_CENTRAL-WSHP_CZ09 - RUN\EX03_MF88_CENTRAL-WSHP_CZ09 - ZB-CSE.CSE(38296): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-14-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (225.449 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX03_MF_CENTRAL-WSHP\EX03_MF88_CENTRAL-WSHP_CZ09\EX03_MF88_CENTRAL-WSHP_CZ09 - RUN\EX03_MF88_CENTRAL-WSHP_CZ09 - ZB-CSE.CSE(38327): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-15-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (224.514 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX03_MF_CENTRAL-WSHP\EX03_MF88_CENTRAL-WSHP_CZ09\EX03_MF88_CENTRAL-WSHP_CZ09 - RUN\EX03_MF88_CENTRAL-WSHP_CZ09 - ZB-CSE.CSE(38358): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-16-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (223.927 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX03_MF_CENTRAL-WSHP\EX03_MF88_CENTRAL-WSHP_CZ09\EX03_MF88_CENTRAL-WSHP_CZ09 - RUN\EX03_MF88_CENTRAL-WSHP_CZ09 - ZB-CSE.CSE(38389): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-17-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (243.111 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX03_MF_CENTRAL-WSHP\EX03_MF88_CENTRAL-WSHP_CZ09\EX03_MF88_CENTRAL-WSHP_CZ09 - RUN\EX03_MF88_CENTRAL-WSHP_CZ09 - ZB-CSE.CSE(38420): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-18-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (225.273 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX03_MF_CENTRAL-WSHP\EX03_MF88_CENTRAL-WSHP_CZ09\EX03_MF88_CENTRAL-WSHP_CZ09 - RUN\EX03_MF88_CENTRAL-WSHP_CZ09 - ZB-CSE.CSE(38451): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-19-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (233.71 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - 

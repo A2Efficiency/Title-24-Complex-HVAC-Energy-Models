@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SDDXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RulesetFilename file="T24_2025.bin"/>
+  <Proj>
+    <Name>EX08_NR_Rstnt-SZ-VAV-AC</Name>
+    <BldgEngyModelVersion>17</BldgEngyModelVersion>
+    <CreateDate>1779397707</CreateDate>
+    <ModDate>1784735185</ModDate>
+    <RunDate>1784735167</RunDate>
+    <EffMetric>SEER2/EER2/HSPF2</EffMetric>
+    <CliZn>ClimateZone9</CliZn>
+    <ZipCode>95857</ZipCode>
+    <WeatherStation>LOS ANGELES USC</WeatherStation>
+    <AutoHardSize>0</AutoHardSize>
+    <AutoEffInput>0</AutoEffInput>
+    <DefaultDayltgCtrls>0</DefaultDayltgCtrls>
+    <CompType>NewComplete</CompType>
+    <AirBarrier>Air barrier - not verified</AirBarrier>
+    <SoftwareVersion>CBECC 2025.2.0.1 (1395)</SoftwareVersion>
+    <ResultsCurrentMessage>(not current)</ResultsCurrentMessage>
+    <ProjVar>
+      <Name>EX08_NR_Rstnt-SZ-VAV-AC - ProjVar</Name>
+      <ExcptCondNoClgSys>No</ExcptCondNoClgSys>
+      <ExcptCondRtdCap>No</ExcptCondRtdCap>
+      <ExcptCondNarrative>No</ExcptCondNarrative>
+    </ProjVar>
+    <ConsAssm>
+      <Name>Base_CZ12-SlabOnOrBelowGradeF073</Name>
+      <CompatibleSurfType>UndergroundFloor</CompatibleSurfType>
+      <SlabType>UnheatedSlabOnGrade</SlabType>
+      <MatRef index="0">Concrete - 140 lb/ft3 - 6 in.</MatRef>
+    </ConsAssm>
+    <Mat>
+      <Name>Concrete - 140 lb/ft3 - 6 in.</Name>
+      <CodeCat>Concrete</CodeCat>
+      <CodeItem>Concrete - 140 lb/ft3 - 6 in.</CodeItem>
+    </Mat>
+    <ConsAssm>
+      <Name>Base_CZ12-NonresMetalFrameWallU055</Name>
+      <CompatibleSurfType>ExteriorWall</CompatibleSurfType>
+      <MatRef index="0">Stucco - 7/8 in.</MatRef>
+      <MatRef index="1">Compliance Insulation R14.60</MatRef>
+      <MatRef index="2">Compliance Insulation R1.41</MatRef>
+      <MatRef index="3">Compliance Insulation R0.02</MatRef>
+      <MatRef index="4">Compliance Insulation R0.02</MatRef>
+      <MatRef index="5">Air - Metal Wall Framing - 16 or 24 in. OC</MatRef>
+      <MatRef index="6">Gypsum Board - 1/2 in.</MatRef>
+    </ConsAssm>
+    <Mat>
+      <Name>Stucco - 7/8 in.</Name>
+      <CodeCat>Plastering Materials</CodeCat>
+      <CodeItem>Stucco - 7/8 in.</CodeItem>
+    </Mat>
+    <Mat>
+      <Name>Air - Metal Wall Framing - 16 or 24 in. OC</Name>
+      <CodeCat>Air</CodeCat>
+      <CodeItem>Air - Metal Wall Framing - 16 or 24 in. OC</CodeItem>
+    </Mat>
+    <Mat>
+      <Name>Gypsum Board - 1/2 in.</Name>
+      <CodeCat>Bldg Board and Siding</CodeCat>
+      <CodeItem>Gypsum Board - 1/2 in.</CodeItem>
+    </Mat>
+    <ConsAssm>
+      <Name>NACM_Interior Wall</Name>
+      <CompatibleSurfType>InteriorWall</CompatibleSurfType>
+      <MatRef index="0">Gypsum Board - 5/8 in.</MatRef>
+      <MatRef index="1">Air - Metal Wall Framing - 16 or 24 in. OC</MatRef>
+      <MatRef index="2">Gypsum Board - 5/8 in.</MatRef>
+    </ConsAssm>
+    <Mat>
+      <Name>Gypsum Board - 5/8 in.</Name>
+      <CodeCat>Bldg Board and Siding</CodeCat>
+      <CodeItem>Gypsum Board - 5/8 in.</CodeItem>
+    </Mat>
+    <ConsAssm>
+      <Name>Base_CZ12-SteepNonresWoodFramingAndOtherRoofU028</Name>
+      <CompatibleSurfType>Roof</CompatibleSurfType>
+      <CRRCInitialRefl>0.25</CRRCInitialRefl>
+      <CRRCAgedRefl>0.25</CRRCAgedRefl>
+      <CRRCInitialEmit>0.8</CRRCInitialEmit>
+      <CRRCAgedEmit>0.8</CRRCAgedEmit>
+      <CRRCProdID>XXXX-XXXX</CRRCProdID>
+      <MatRef index="0">Metal Standing Seam - 1/16 in.</MatRef>
+      <MatRef index="1">Compliance Insulation R34.93</MatRef>
+    </ConsAssm>
+    <Mat>
+      <Name>Metal Standing Seam - 1/16 in.</Name>
+      <CodeCat>Roofing</CodeCat>
+      <CodeItem>Metal Standing Seam - 1/16 in.</CodeItem>
+    </Mat>
+    <Mat>
+      <Name>Compliance Insulation R34.93</Name>
+      <CodeCat>Insulation Board</CodeCat>
+      <CodeItem>Compliance Insulation R34.93</CodeItem>
+    </Mat>
+    <ConsAssm>
+      <Name>Base_CZ12-NonresOtherFloorU071</Name>
+      <CompatibleSurfType>ExteriorFloor</CompatibleSurfType>
+      <MatRef index="0">Compliance Insulation R9.83</MatRef>
+      <MatRef index="1">Plywood - 5/8 in.</MatRef>
+      <MatRef index="2">Carpet - 3/4 in.</MatRef>
+    </ConsAssm>
+    <Mat>
+      <Name>Compliance Insulation R9.83</Name>
+      <CodeCat>Insulation Board</CodeCat>
+      <CodeItem>Compliance Insulation R9.83</CodeItem>
+    </Mat>
+    <Mat>
+      <Name>Plywood - 5/8 in.</Name>
+      <CodeCat>Bldg Board and Siding</CodeCat>
+      <CodeItem>Plywood - 5/8 in.</CodeItem>
+    </Mat>
+    <Mat>
+      <Name>Carpet - 3/4 in.</Name>
+      <CodeCat>Finish Materials</CodeCat>
+      <CodeItem>Carpet - 3/4 in.</CodeItem>
+    </Mat>
+    <ConsAssm>
+      <Name>NACM_Drop Ceiling</Name>
+      <CompatibleSurfType>InteriorFloor</CompatibleSurfType>
+      <MatRef index="0">Acoustic Tile - 3/4 in.</MatRef>
+    </ConsAssm>
+    <Mat>
+      <Name>Acoustic Tile - 3/4 in.</Name>
+      <CodeCat>Finish Materials</CodeCat>
+      <CodeItem>Acoustic Tile - 3/4 in.</CodeItem>
+    </Mat>
+    <FenCons>
+      <Name>Base_AllCZ_FixedWindowU34</Name>
+      <FenType>VerticalFenestration</FenType>
+      <FenProdType>FixedWindow</FenProdType>
+      <AssmContext>Manufactured</AssmContext>
+      <CertificationMthd>NFRCRated</CertificationMthd>
+      <SHGC>0.22</SHGC>
+      <UFactor>0.34</UFactor>
+      <VT>0.42</VT>
+    </FenCons>
+    <Bldg>
+      <Name>QS Restaurant</Name>
+      <TotStoryCnt>1</TotStoryCnt>
+      <AboveGrdStoryCnt>1</AboveGrdStoryCnt>
+      <Story>
+        <Name>QS Restaurant 1</Name>
+        <Spc>
+          <Name>Attic Space</Name>
+          <CondgType>IndirectlyConditioned</CondgType>
+          <ThrmlZnRef>Attic Zn</ThrmlZnRef>
+          <Vol>8933.61</Vol>
+          <SpcFunc>Unoccupied-Exclude from Gross Floor Area</SpcFunc>
+          <PolyLp>
+            <CartesianPt><Coord>50.0092</Coord><Coord>50.0092</Coord><Coord>10.0026</Coord></CartesianPt>
+            <CartesianPt><Coord>50.0092</Coord><Coord>0</Coord><Coord>10.0026</Coord></CartesianPt>
+            <CartesianPt><Coord>0</Coord><Coord>0</Coord><Coord>10.0026</Coord></CartesianPt>
+            <CartesianPt><Coord>0</Coord><Coord>50.0092</Coord><Coord>10.0026</Coord></CartesianPt>
+          </PolyLp>
+          <IntFlr>
+            <Name>attic-floor-dinning</Name>
+            <AdjacentSpcRef>Dining</AdjacentSpcRef>
+            <ConsAssmRef>NACM_Drop Ceiling</ConsAssmRef>
+            <PolyLp>
+              <CartesianPt><Coord>50.0092</Coord><Coord>25.0046</Coord><Coord>10.0026</Coord></CartesianPt>
+              <CartesianPt><Coord>50.0092</Coord><Coord>0</Coord><Coord>10.0026</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>0</Coord><Coord>10.0026</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>25.0046</Coord><Coord>10.0026</Coord></CartesianPt>
+            </PolyLp>
+          </IntFlr>
+          <IntFlr>
+            <Name>attic-floor-kitchen</Name>
+            <AdjacentSpcRef>Kitchen</AdjacentSpcRef>
+            <ConsAssmRef>NACM_Drop Ceiling</ConsAssmRef>
+            <PolyLp>
+              <CartesianPt><Coord>50.0092</Coord><Coord>50.0092</Coord><Coord>10.0026</Coord></CartesianPt>
+              <CartesianPt><Coord>50.0092</Coord><Coord>25.0046</Coord><Coord>10.0026</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>25.0046</Coord><Coord>10.0026</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>50.0092</Coord><Coord>10.0026</Coord></CartesianPt>
+            </PolyLp>
+          </IntFlr>
+          <Roof>
+            <Name>east-roof</Name>
+            <ConsAssmRef>Base_CZ12-SteepNonresWoodFramingAndOtherRoofU028</ConsAssmRef>
+            <PolyLp>
+              <CartesianPt><Coord>41.6742</Coord><Coord>25.0046</Coord><Coord>18.3376</Coord></CartesianPt>
+              <CartesianPt><Coord>50.0092</Coord><Coord>0</Coord><Coord>10.0026</Coord></CartesianPt>
+              <CartesianPt><Coord>50.0092</Coord><Coord>50.0092</Coord><Coord>10.0026</Coord></CartesianPt>
+            </PolyLp>
+          </Roof>
+          <Roof>
+            <Name>north-roof</Name>
+            <ConsAssmRef>Base_CZ12-SteepNonresWoodFramingAndOtherRoofU028</ConsAssmRef>
+            <PolyLp>
+              <CartesianPt><Coord>41.6742</Coord><Coord>25.0046</Coord><Coord>18.3376</Coord></CartesianPt>
+              <CartesianPt><Coord>50.0092</Coord><Coord>50.0092</Coord><Coord>10.0026</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>50.0092</Coord><Coord>10.0026</Coord></CartesianPt>
+              <CartesianPt><Coord>8.33497</Coord><Coord>25.0046</Coord><Coord>18.3376</Coord></CartesianPt>
+            </PolyLp>
+          </Roof>
+          <Roof>
+            <Name>south-roof</Name>
+            <ConsAssmRef>Base_CZ12-SteepNonresWoodFramingAndOtherRoofU028</ConsAssmRef>
+            <PolyLp>
+              <CartesianPt><Coord>8.33497</Coord><Coord>25.0046</Coord><Coord>18.3376</Coord></CartesianPt>
+              <CartesianPt><Coord>1.93046e-33</Coord><Coord>-2.76065e-16</Coord><Coord>10.0026</Coord></CartesianPt>
+              <CartesianPt><Coord>50.0092</Coord><Coord>-2.41094e-16</Coord><Coord>10.0026</Coord></CartesianPt>
+              <CartesianPt><Coord>41.6742</Coord><Coord>25.0046</Coord><Coord>18.3376</Coord></CartesianPt>
+            </PolyLp>
+          </Roof>
+          <Roof>
+            <Name>west-roof</Name>
+            <ConsAssmRef>Base_CZ12-SteepNonresWoodFramingAndOtherRoofU028</ConsAssmRef>
+            <PolyLp>
+              <CartesianPt><Coord>8.33497</Coord><Coord>25.0046</Coord><Coord>18.3376</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>50.0092</Coord><Coord>10.0026</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>0</Coord><Coord>10.0026</Coord></CartesianPt>
+            </PolyLp>
+          </Roof>
+        </Spc>
+        <Spc>
+          <Name>Dining</Name>
+          <ThrmlZnRef>Dining Thermal Zone</ThrmlZnRef>
+          <Vol>12507.9</Vol>
+          <SpcFuncDefaultsRef>Dining Area Defaults</SpcFuncDefaultsRef>
+          <SpcFunc/>
+          <PriSide100PctControlled>1</PriSide100PctControlled>
+          <SecSide100PctControlled>1</SecSide100PctControlled>
+          <DayltgCtrlType>Continuous</DayltgCtrlType>
+          <MinDimLtgFrac>0.1</MinDimLtgFrac>
+          <MinDimPwrFrac>0.1</MinDimPwrFrac>
+          <SHWFluidSegRef>SHWSupplyGas</SHWFluidSegRef>
+          <PolyLp>
+            <CartesianPt><Coord>50.0092</Coord><Coord>25.0046</Coord><Coord>0</Coord></CartesianPt>
+            <CartesianPt><Coord>50.0092</Coord><Coord>0</Coord><Coord>0</Coord></CartesianPt>
+            <CartesianPt><Coord>0</Coord><Coord>0</Coord><Coord>0</Coord></CartesianPt>
+            <CartesianPt><Coord>0</Coord><Coord>25.0046</Coord><Coord>0</Coord></CartesianPt>
+          </PolyLp>
+          <UndgrFlr>
+            <Name>Dining_Floor</Name>
+            <ConsAssmRef>Base_CZ12-SlabOnOrBelowGradeF073</ConsAssmRef>
+            <PolyLp>
+              <CartesianPt><Coord>50.0092</Coord><Coord>25.0046</Coord><Coord>0</Coord></CartesianPt>
+              <CartesianPt><Coord>50.0092</Coord><Coord>0</Coord><Coord>0</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>0</Coord><Coord>0</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>25.0046</Coord><Coord>0</Coord></CartesianPt>
+            </PolyLp>
+          </UndgrFlr>
+          <ExtWall>
+            <Name>Dining_Wall_East</Name>
+            <ConsAssmRef>Base_CZ12-NonresMetalFrameWallU055</ConsAssmRef>
+            <PolyLp>
+              <CartesianPt><Coord>50.0092</Coord><Coord>0</Coord><Coord>10.0026</Coord></CartesianPt>
+              <CartesianPt><Coord>50.0092</Coord><Coord>0</Coord><Coord>0</Coord></CartesianPt>
+              <CartesianPt><Coord>50.0092</Coord><Coord>25.0046</Coord><Coord>0</Coord></CartesianPt>
+              <CartesianPt><Coord>50.0092</Coord><Coord>25.0046</Coord><Coord>10.0026</Coord></CartesianPt>
+            </PolyLp>
+            <Win>
+              <Name>Dining_Wall_East_Window</Name>
+              <FenConsRef>Base_AllCZ_FixedWindowU34</FenConsRef>
+              <PolyLp>
+                <CartesianPt><Coord>50.0092</Coord><Coord>0.833333</Coord><Coord>6.50164</Coord></CartesianPt>
+                <CartesianPt><Coord>50.0092</Coord><Coord>0.833333</Coord><Coord>3.50098</Coord></CartesianPt>
+                <CartesianPt><Coord>50.0092</Coord><Coord>24.1709</Coord><Coord>3.50098</Coord></CartesianPt>
+                <CartesianPt><Coord>50.0092</Coord><Coord>24.1709</Coord><Coord>6.50164</Coord></CartesianPt>
+              </PolyLp>
+            </Win>
+          </ExtWall>
+          <IntWall>
+            <Name>Dining_Wall_North</Name>
+            <AdjacentSpcRef>Kitchen</AdjacentSpcRef>
+            <ConsAssmRef>NACM_Interior Wall</ConsAssmRef>
+            <PolyLp>
+              <CartesianPt><Coord>50.0092</Coord><Coord>25.0046</Coord><Coord>10.0026</Coord></CartesianPt>
+              <CartesianPt><Coord>50.0092</Coord><Coord>25.0046</Coord><Coord>0</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>25.0046</Coord><Coord>0</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>25.0046</Coord><Coord>10.0026</Coord></CartesianPt>
+            </PolyLp>
+          </IntWall>
+          <ExtWall>
+            <Name>Dining_Wall_South</Name>
+            <ConsAssmRef>Base_CZ12-NonresMetalFrameWallU055</ConsAssmRef>
+            <PolyLp>
+              <CartesianPt><Coord>0</Coord><Coord>0</Coord><Coord>10.0026</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>0</Coord><Coord>0</Coord></CartesianPt>
+              <CartesianPt><Coord>50.0092</Coord><Coord>0</Coord><Coord>0</Coord></CartesianPt>
+              <CartesianPt><Coord>50.0092</Coord><Coord>0</Coord><Coord>10.0026</Coord></CartesianPt>
+            </PolyLp>
+            <Win>
+              <Name>Dining_Wall_South_Window</Name>
+              <FenConsRef>Base_AllCZ_FixedWindowU34</FenConsRef>
+              <PolyLp>
+                <CartesianPt><Coord>1.66667</Coord><Coord>0</Coord><Coord>6.50164</Coord></CartesianPt>
+                <CartesianPt><Coord>1.66667</Coord><Coord>0</Coord><Coord>3.50098</Coord></CartesianPt>
+                <CartesianPt><Coord>48.3432</Coord><Coord>0</Coord><Coord>3.50098</Coord></CartesianPt>
+                <CartesianPt><Coord>48.3432</Coord><Coord>0</Coord><Coord>6.50164</Coord></CartesianPt>
+              </PolyLp>
+            </Win>
+          </ExtWall>
+          <ExtWall>
+            <Name>Dining_Wall_West</Name>
+            <ConsAssmRef>Base_CZ12-NonresMetalFrameWallU055</ConsAssmRef>
+            <PolyLp>
+              <CartesianPt><Coord>0</Coord><Coord>25.0046</Coord><Coord>10.0026</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>25.0046</Coord><Coord>0</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>0</Coord><Coord>0</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>0</Coord><Coord>10.0026</Coord></CartesianPt>
+            </PolyLp>
+            <Win>
+              <Name>Dining_Wall_West_Window</Name>
+              <FenConsRef>Base_AllCZ_FixedWindowU34</FenConsRef>
+              <PolyLp>
+                <CartesianPt><Coord>0</Coord><Coord>24.1709</Coord><Coord>6.50164</Coord></CartesianPt>
+                <CartesianPt><Coord>0</Coord><Coord>24.1709</Coord><Coord>3.50098</Coord></CartesianPt>
+                <CartesianPt><Coord>0</Coord><Coord>0.833333</Coord><Coord>3.50098</Coord></CartesianPt>
+                <CartesianPt><Coord>0</Coord><Coord>0.833333</Coord><Coord>6.50164</Coord></CartesianPt>
+              </PolyLp>
+            </Win>
+          </ExtWall>
+        </Spc>
+        <Spc>
+          <Name>Kitchen</Name>
+          <ThrmlZnRef>Kitchen Thermal Zone</ThrmlZnRef>
+          <Vol>12507.9</Vol>
+          <SpcFuncDefaultsRef>Kitchen Food Preparation Defaults</SpcFuncDefaultsRef>
+          <SpcFunc>Kitchen/Food Preparation Area</SpcFunc>
+          <SHWFluidSegRef>SHWSupplyGas</SHWFluidSegRef>
+          <VentSpcFunc>Food Service - Kitchen (cooking)</VentSpcFunc>
+          <VentPerSpc>1700</VentPerSpc>
+          <ExhPerSpc>2336</ExhPerSpc>
+          <KitExhHoodLen>10</KitExhHoodLen>
+          <KitExhHoodStyle>WallMountedCanopy</KitExhHoodStyle>
+          <KitExhHoodDuty>Heavy</KitExhHoodDuty>
+          <KitExhHoodFlow>2400</KitExhHoodFlow>
+          <PolyLp>
+            <CartesianPt><Coord>50.0092</Coord><Coord>50.0092</Coord><Coord>0</Coord></CartesianPt>
+            <CartesianPt><Coord>50.0092</Coord><Coord>25.0046</Coord><Coord>0</Coord></CartesianPt>
+            <CartesianPt><Coord>0</Coord><Coord>25.0046</Coord><Coord>0</Coord></CartesianPt>
+            <CartesianPt><Coord>0</Coord><Coord>50.0092</Coord><Coord>0</Coord></CartesianPt>
+          </PolyLp>
+          <UndgrFlr>
+            <Name>Kitchen_Floor</Name>
+            <ConsAssmRef>Base_CZ12-SlabOnOrBelowGradeF073</ConsAssmRef>
+            <PolyLp>
+              <CartesianPt><Coord>50.0092</Coord><Coord>50.0092</Coord><Coord>0</Coord></CartesianPt>
+              <CartesianPt><Coord>50.0092</Coord><Coord>25.0046</Coord><Coord>0</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>25.0046</Coord><Coord>0</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>50.0092</Coord><Coord>0</Coord></CartesianPt>
+            </PolyLp>
+          </UndgrFlr>
+          <ExtWall>
+            <Name>Kitchen_Wall_East</Name>
+            <ConsAssmRef>Base_CZ12-NonresMetalFrameWallU055</ConsAssmRef>
+            <PolyLp>
+              <CartesianPt><Coord>50.0092</Coord><Coord>25.0046</Coord><Coord>10.0026</Coord></CartesianPt>
+              <CartesianPt><Coord>50.0092</Coord><Coord>25.0046</Coord><Coord>0</Coord></CartesianPt>
+              <CartesianPt><Coord>50.0092</Coord><Coord>50.0092</Coord><Coord>0</Coord></CartesianPt>
+              <CartesianPt><Coord>50.0092</Coord><Coord>50.0092</Coord><Coord>10.0026</Coord></CartesianPt>
+            </PolyLp>
+          </ExtWall>
+          <ExtWall>
+            <Name>Kitchen_Wall_North</Name>
+            <ConsAssmRef>Base_CZ12-NonresMetalFrameWallU055</ConsAssmRef>
+            <PolyLp>
+              <CartesianPt><Coord>50.0092</Coord><Coord>50.0092</Coord><Coord>10.0026</Coord></CartesianPt>
+              <CartesianPt><Coord>50.0092</Coord><Coord>50.0092</Coord><Coord>0</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>50.0092</Coord><Coord>0</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>50.0092</Coord><Coord>10.0026</Coord></CartesianPt>
+            </PolyLp>
+          </ExtWall>
+          <ExtWall>
+            <Name>Kitchen_Wall_West</Name>
+            <ConsAssmRef>Base_CZ12-NonresMetalFrameWallU055</ConsAssmRef>
+            <PolyLp>
+              <CartesianPt><Coord>0</Coord><Coord>50.0092</Coord><Coord>10.0026</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>50.0092</Coord><Coord>0</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>25.0046</Coord><Coord>0</Coord></CartesianPt>
+              <CartesianPt><Coord>0</Coord><Coord>25.0046</Coord><Coord>10.0026</Coord></CartesianPt>
+            </PolyLp>
+          </ExtWall>
+        </Spc>
+      </Story>
+      <ThrmlZn>
+        <Name>Attic Zn</Name>
+        <Type>Unconditioned</Type>
+      </ThrmlZn>
+      <ThrmlZn>
+        <Name>Dining Thermal Zone</Name>
+        <Type>Conditioned</Type>
+        <PriAirCondgSysRef index="0">Dining - RTU / DOAS 1</PriAirCondgSysRef>
+        <VentCtrlMthd>CO2Sensors</VentCtrlMthd>
+      </ThrmlZn>
+      <ThrmlZn>
+        <Name>Kitchen Thermal Zone</Name>
+        <Type>Conditioned</Type>
+        <PriAirCondgSysRef index="0">Kitchen-RTU / DOAS 2</PriAirCondgSysRef>
+        <ExhSysRef>KitchenExhaust</ExhSysRef>
+      </ThrmlZn>
+      <AirSys>
+        <Name>Dining - RTU / DOAS 1</Name>
+        <Type>SZVAVDFHP</Type>
+        <CtrlSysType>DDCToZone</CtrlSysType>
+        <CtrlZnRef>Dining Thermal Zone</CtrlZnRef>
+        <FanCtrl>Continuous</FanCtrl>
+        <ClgDsgnSupAirTemp>55</ClgDsgnSupAirTemp>
+        <HtgDsgnSupAirTemp>85</HtgDsgnSupAirTemp>
+        <DuctLctn>Conditioned</DuctLctn>
+        <AirSeg>
+          <Name>Dining SupAirSeg</Name>
+          <Type>Supply</Type>
+          <CoilClg>
+            <Name>Dining CoilClg</Name>
+            <Type>DirectExpansion</Type>
+            <FuelSrc>Electric</FuelSrc>
+            <NumClgStages>1</NumClgStages>
+            <CapTotNetRtd>98700</CapTotNetRtd>
+            <DXSEER>14</DXSEER>
+            <DXEER>11</DXEER>
+            <DXIEER>14.6</DXIEER>
+          </CoilClg>
+          <CoilHtg>
+            <Name>Dining CoilHtg</Name>
+            <Type>HeatPump</Type>
+            <CapTotNetRtd>95423</CapTotNetRtd>
+            <FurnAFUE>0.81</FurnAFUE>
+            <FurnIgnType>IntermittentIgnitionDevice</FurnIgnType>
+            <HtPumpCOP>3.4</HtPumpCOP>
+            <HtPumpSuppCoilHtgRef>Dining CoilHtg Backup</HtPumpSuppCoilHtgRef>
+            <HtPumpSuppTemp>40</HtPumpSuppTemp>
+          </CoilHtg>
+          <Fan>
+            <Name>Dining Fan</Name>
+            <CtrlMthd>VariableSpeedDrive</CtrlMthd>
+            <Class>Centrifugal</Class>
+            <FlowCap>2000</FlowCap>
+            <FlowMin>1200</FlowMin>
+            <PwrIdx>0.746</PwrIdx>
+            <MtrHP>2</MtrHP>
+            <MtrEff>0.865</MtrEff>
+            <FEI>1</FEI>
+          </Fan>
+          <CoilHtg>
+            <Name>Dining CoilHtg Backup</Name>
+            <Type>Furnace</Type>
+            <CapTotGrossRtd>95423</CapTotGrossRtd>
+            <FurnAFUE>0.81</FurnAFUE>
+          </CoilHtg>
+        </AirSeg>
+        <TrmlUnit>
+          <Name>Dining TerminalUnit</Name>
+          <Type>VAVNoReheatBox</Type>
+          <ZnServedRef>Dining Thermal Zone</ZnServedRef>
+          <PriAirSegRef>Dining SupAirSeg</PriAirSegRef>
+          <PriAirFlowMax>2000</PriAirFlowMax>
+          <PriAirFlowMin>1200</PriAirFlowMin>
+        </TrmlUnit>
+        <AirSeg>
+          <Name>Dining ReturnAirSeg</Name>
+          <Type>Return</Type>
+          <Path>Direct</Path>
+        </AirSeg>
+        <OACtrl>
+          <Name>DiningOAControl</Name>
+          <EconoCtrlMthd>DifferentialEnthalpy</EconoCtrlMthd>
+          <EconoIntegration>Integrated</EconoIntegration>
+          <EconoHiTempLockout>71</EconoHiTempLockout>
+          <EconoHiEnthLockout>28</EconoHiEnthLockout>
+          <MaxOARat>1</MaxOARat>
+          <OASchMthd>FollowHVACAvailability</OASchMthd>
+          <AirSegSupRef>Dining SupAirSeg</AirSegSupRef>
+          <AirSegRetRef>Dining ReturnAirSeg</AirSegRetRef>
+        </OACtrl>
+      </AirSys>
+      <AirSys>
+        <Name>Kitchen-RTU / DOAS 2</Name>
+        <Type>SZVAVDFHP</Type>
+        <CtrlSysType>Other</CtrlSysType>
+        <CtrlZnRef>Kitchen Thermal Zone</CtrlZnRef>
+        <FanCtrl>Continuous</FanCtrl>
+        <ClgDsgnSupAirTemp>55</ClgDsgnSupAirTemp>
+        <HtgDsgnSupAirTemp>85</HtgDsgnSupAirTemp>
+        <DuctLctn>Conditioned</DuctLctn>
+        <AirSeg>
+          <Name>Kitchen SupAirSeg</Name>
+          <Type>Supply</Type>
+          <CoilClg>
+            <Name>Kitchen CoilClg</Name>
+            <Type>DirectExpansion</Type>
+            <FuelSrc>Electric</FuelSrc>
+            <NumClgStages>2</NumClgStages>
+            <CapTotNetRtd>205000</CapTotNetRtd>
+            <CapTotRtdStageFrac index="0">0.5</CapTotRtdStageFrac>
+            <CapTotRtdStageFrac index="1">1</CapTotRtdStageFrac>
+            <DXSEER>14</DXSEER>
+            <DXEER>10.8</DXEER>
+            <DXIEER>14</DXIEER>
+            <CndsrType>Air</CndsrType>
+          </CoilClg>
+          <CoilHtg>
+            <Name>Kitchen CoilHtg</Name>
+            <Type>HeatPump</Type>
+            <CapTotNetRtd>151516</CapTotNetRtd>
+            <FurnAFUE>0.81</FurnAFUE>
+            <FurnIgnType>IntermittentIgnitionDevice</FurnIgnType>
+            <HtPumpCOP>3.4</HtPumpCOP>
+            <HtPumpSuppCoilHtgRef>Kitchen CoilHtg Backup</HtPumpSuppCoilHtgRef>
+            <HtPumpSuppTemp>40</HtPumpSuppTemp>
+          </CoilHtg>
+          <Fan>
+            <Name>Kitchen Fan</Name>
+            <CtrlMthd>VariableSpeedDrive</CtrlMthd>
+            <Class>Centrifugal</Class>
+            <CentType>AirFoil</CentType>
+            <FlowCap>4500</FlowCap>
+            <FlowMin>1700</FlowMin>
+            <PwrIdx>0.82</PwrIdx>
+            <MtrHP>5</MtrHP>
+            <MtrEff>0.865</MtrEff>
+            <FEI>0.95</FEI>
+          </Fan>
+          <CoilHtg>
+            <Name>Kitchen CoilHtg Backup</Name>
+            <Type>Furnace</Type>
+            <CapTotGrossRtd>151516</CapTotGrossRtd>
+            <FurnAFUE>0.81</FurnAFUE>
+          </CoilHtg>
+        </AirSeg>
+        <AirSeg>
+          <Name>Kitchen ReturnAirSeg</Name>
+          <Type>Return</Type>
+          <Path>Direct</Path>
+        </AirSeg>
+        <TrmlUnit>
+          <Name>Kitchen TerminalUnit</Name>
+          <Type>VAVNoReheatBox</Type>
+          <ZnServedRef>Kitchen Thermal Zone</ZnServedRef>
+          <PriAirSegRef>Kitchen SupAirSeg</PriAirSegRef>
+          <PriAirFlowMax>4500</PriAirFlowMax>
+          <PriAirFlowMin>1700</PriAirFlowMin>
+        </TrmlUnit>
+        <OACtrl>
+          <Name>Kitchen OAControl</Name>
+          <EconoCtrlMthd>DifferentialEnthalpy</EconoCtrlMthd>
+          <EconoIntegration>Integrated</EconoIntegration>
+          <EconoHiTempLockout>71</EconoHiTempLockout>
+          <EconoHiEnthLockout>28</EconoHiEnthLockout>
+          <OASchMthd>FollowHVACAvailability</OASchMthd>
+          <AirSegSupRef>Kitchen SupAirSeg</AirSegSupRef>
+          <AirSegRetRef>Kitchen ReturnAirSeg</AirSegRetRef>
+        </OACtrl>
+      </AirSys>
+      <ZnSys>
+        <Name>KitchenExhaust</Name>
+        <Type>Exhaust</Type>
+        <ExhSysType>CommercialKitchen</ExhSysType>
+        <ExhCtrlMthd>ConstantFlowConstantSpeedFan</ExhCtrlMthd>
+        <FullyDuctedExhFlag>0</FullyDuctedExhFlag>
+        <ExhFiltersFlag>0</ExhFiltersFlag>
+        <BiosftyCabExhFlag>0</BiosftyCabExhFlag>
+        <Fan>
+          <Name>KitchExh Fan</Name>
+          <CtrlMthd>ConstantVolume</CtrlMthd>
+          <Class>Centrifugal</Class>
+          <CentType>AirFoil</CentType>
+          <ModelingMthd>StaticPressure</ModelingMthd>
+          <FlowCap>2400</FlowCap>
+          <FlowEff>0.5</FlowEff>
+          <TotStaticPress>2.393</TotStaticPress>
+          <MtrHP>2</MtrHP>
+          <MtrEff>0.865</MtrEff>
+          <FEI>1</FEI>
+        </Fan>
+      </ZnSys>
+    </Bldg>
+    <SpcFuncDefaults>
+      <Name>Dining Area Defaults</Name>
+      <SpcFunc>Dining Area (Cafeteria/Fast Food)</SpcFunc>
+      <VentPerArea>0.15</VentPerArea>
+    </SpcFuncDefaults>
+    <SpcFuncDefaults>
+      <Name>Kitchen Food Preparation Defaults</Name>
+      <SpcFunc>Kitchen/Food Preparation Area</SpcFunc>
+    </SpcFuncDefaults>
+    <FluidSys>
+      <Name>SHWFluidSysGas</Name>
+      <Type>ServiceHotWater</Type>
+      <FluidSeg>
+        <Name>SHWSupplyGas</Name>
+        <Type>PrimarySupply</Type>
+      </FluidSeg>
+      <FluidSeg>
+        <Name>SHWMakeupGas</Name>
+        <Type>MakeupFluid</Type>
+        <Src>MunicipalWater</Src>
+      </FluidSeg>
+      <WtrHtr>
+        <Name>WaterHeater1</Name>
+        <FluidSegOutRef>SHWSupplyGas</FluidSegOutRef>
+        <FluidSegMakeupRef>SHWMakeupGas</FluidSegMakeupRef>
+        <StorCap>30</StorCap>
+        <UEF>0.6515</UEF>
+        <RE>0.8</RE>
+        <FirstHrRating>60</FirstHrRating>
+        <CapRtd>37294.6</CapRtd>
+        <StdbyLossFrac>0.09</StdbyLossFrac>
+      </WtrHtr>
+    </FluidSys>
+    <Mat>
+      <Name>Compliance Insulation R14.60</Name>
+      <CodeCat>Insulation Board</CodeCat>
+      <CodeItem>Compliance Insulation R14.60</CodeItem>
+    </Mat>
+    <Mat>
+      <Name>Compliance Insulation R1.41</Name>
+      <CodeCat>Insulation Board</CodeCat>
+      <CodeItem>Compliance Insulation R1.41</CodeItem>
+    </Mat>
+    <Mat>
+      <Name>Compliance Insulation R0.02</Name>
+      <CodeCat>Insulation Board</CodeCat>
+      <CodeItem>Compliance Insulation R0.02</CodeItem>
+    </Mat>
+    <PVArray>
+      <Name>T24 PVArray</Name>
+      <DCSysSize>24.3</DCSysSize>
+    </PVArray>
+    <EUseSummary>
+      <Name>Metrics 2025 (Oct 2022)</Name>
+      <Title1 index="1">Proposed Design</Title1>
+      <Title1 index="2">Proposed</Title1>
+      <Title1 index="3">Proposed</Title1>
+      <Title1 index="4">Standard Design</Title1>
+      <Title1 index="5">Standard</Title1>
+      <Title1 index="6">Standard</Title1>
+      <Title1 index="7">Compliance Margins</Title1>
+      <Title1 index="10">Proposed</Title1>
+      <Title1 index="11">Standard</Title1>
+      <Title1 index="12">Compliance</Title1>
+      <Title1 index="16">Proposed Design Emissions</Title1>
+      <Title1 index="17">Prop Design</Title1>
+      <Title1 index="18">Prop Design</Title1>
+      <Title1 index="19">Standard Design Emissions</Title1>
+      <Title1 index="20">Std Design</Title1>
+      <Title1 index="21">Std Design</Title1>
+      <Title1 index="22">Emissions Margin</Title1>
+      <Title2 index="1">Site Elec.</Title2>
+      <Title2 index="2">Site Gas</Title2>
+      <Title2 index="3">LSC¹</Title2>
+      <Title2 index="4">Site Elec.</Title2>
+      <Title2 index="5">Site Gas</Title2>
+      <Title2 index="6">LSC¹</Title2>
+      <Title2 index="7">LSC¹</Title2>
+      <Title2 index="10">Source</Title2>
+      <Title2 index="11">Source</Title2>
+      <Title2 index="12">Source</Title2>
+      <Title2 index="16">Electricity</Title2>
+      <Title2 index="17">Fuel</Title2>
+      <Title2 index="18">Total</Title2>
+      <Title2 index="19">Electricity</Title2>
+      <Title2 index="20">Fuel</Title2>
+      <Title2 index="21">Total</Title2>
+      <Title2 index="22">Total</Title2>
+      <Title3 index="0">End Use</Title3>
+      <Title3 index="1">(MWh/yr)</Title3>
+      <Title3 index="2">(MBtu/yr)</Title3>
+      <Title3 index="3">($/ft²-yr)</Title3>
+      <Title3 index="4">(MWh/yr)</Title3>
+      <Title3 index="5">(MBtu/yr)</Title3>
+      <Title3 index="6">($/ft²-yr)</Title3>
+      <Title3 index="7">($/ft²-yr)</Title3>
+      <Title3 index="10">(kBtu/ft²-yr)</Title3>
+      <Title3 index="11">(kBtu/ft²-yr)</Title3>
+      <Title3 index="12">(kBtu/ft²-yr)</Title3>
+      <Title3 index="16">(tonnes of CO2)</Title3>
+      <Title3 index="17">(tonnes of CO2)</Title3>
+      <Title3 index="18">(tonnes of CO2)</Title3>
+      <Title3 index="19">(tonnes of CO2)</Title3>
+      <Title3 index="20">(tonnes of CO2)</Title3>
+      <Title3 index="21">(tonnes of CO2)</Title3>
+      <Title3 index="22">(tonnes of CO2)</Title3>
+      <Enduse1 index="0">Space Heating</Enduse1>
+      <Enduse1 index="1">5.0</Enduse1>
+      <Enduse1 index="2">--</Enduse1>
+      <Enduse1 index="3">13.09</Enduse1>
+      <Enduse1 index="4">--</Enduse1>
+      <Enduse1 index="5">65.3</Enduse1>
+      <Enduse1 index="6">15.89</Enduse1>
+      <Enduse1 index="7">2.80</Enduse1>
+      <Enduse1 index="8">1.4</Enduse1>
+      <Enduse1 index="9">--</Enduse1>
+      <Enduse1 index="10">5.67</Enduse1>
+      <Enduse1 index="11">23.50</Enduse1>
+      <Enduse1 index="12">17.83</Enduse1>
+      <Enduse1 index="16">0.75</Enduse1>
+      <Enduse1 index="18">0.75</Enduse1>
+      <Enduse1 index="20">3.57</Enduse1>
+      <Enduse1 index="21">3.57</Enduse1>
+      <Enduse1 index="22">2.82</Enduse1>
+      <Enduse2 index="0">Space Cooling</Enduse2>
+      <Enduse2 index="1">7.8</Enduse2>
+      <Enduse2 index="2">--</Enduse2>
+      <Enduse2 index="3">15.81</Enduse2>
+      <Enduse2 index="4">5.7</Enduse2>
+      <Enduse2 index="5">--</Enduse2>
+      <Enduse2 index="6">11.43</Enduse2>
+      <Enduse2 index="7">-4.38</Enduse2>
+      <Enduse2 index="8">0.2</Enduse2>
+      <Enduse2 index="9">0.2</Enduse2>
+      <Enduse2 index="10">2.18</Enduse2>
+      <Enduse2 index="11">1.63</Enduse2>
+      <Enduse2 index="12">-0.55</Enduse2>
+      <Enduse2 index="16">0.29</Enduse2>
+      <Enduse2 index="18">0.29</Enduse2>
+      <Enduse2 index="19">0.22</Enduse2>
+      <Enduse2 index="21">0.22</Enduse2>
+      <Enduse2 index="22">-0.07</Enduse2>
+      <Enduse3 index="0">Indoor Fans</Enduse3>
+      <Enduse3 index="1">19.1</Enduse3>
+      <Enduse3 index="2">--</Enduse3>
+      <Enduse3 index="3">39.68</Enduse3>
+      <Enduse3 index="4">22.6</Enduse3>
+      <Enduse3 index="5">--</Enduse3>
+      <Enduse3 index="6">47.91</Enduse3>
+      <Enduse3 index="7">8.23</Enduse3>
+      <Enduse3 index="8">1.1</Enduse3>
+      <Enduse3 index="9">1.9</Enduse3>
+      <Enduse3 index="10">8.55</Enduse3>
+      <Enduse3 index="11">12.84</Enduse3>
+      <Enduse3 index="12">4.29</Enduse3>
+      <Enduse3 index="16">1.13</Enduse3>
+      <Enduse3 index="18">1.13</Enduse3>
+      <Enduse3 index="19">1.70</Enduse3>
+      <Enduse3 index="21">1.70</Enduse3>
+      <Enduse3 index="22">0.57</Enduse3>
+      <Enduse4 index="0">Heat Rejection</Enduse4>
+      <Enduse4 index="1">--</Enduse4>
+      <Enduse4 index="2">--</Enduse4>
+      <Enduse4 index="3">--</Enduse4>
+      <Enduse4 index="4">--</Enduse4>
+      <Enduse4 index="5">--</Enduse4>
+      <Enduse4 index="6">--</Enduse4>
+      <Enduse4 index="7">--</Enduse4>
+      <Enduse4 index="8">--</Enduse4>
+      <Enduse4 index="9">--</Enduse4>
+      <Enduse4 index="10">--</Enduse4>
+      <Enduse4 index="11">--</Enduse4>
+      <Enduse4 index="12">--</Enduse4>
+      <Enduse4 index="22">0.00</Enduse4>
+      <Enduse5 index="0">Pumps &amp; Misc.</Enduse5>
+      <Enduse5 index="1">--</Enduse5>
+      <Enduse5 index="2">--</Enduse5>
+      <Enduse5 index="3">--</Enduse5>
+      <Enduse5 index="4">--</Enduse5>
+      <Enduse5 index="5">--</Enduse5>
+      <Enduse5 index="6">--</Enduse5>
+      <Enduse5 index="7">--</Enduse5>
+      <Enduse5 index="8">--</Enduse5>
+      <Enduse5 index="9">--</Enduse5>
+      <Enduse5 index="10">--</Enduse5>
+      <Enduse5 index="11">--</Enduse5>
+      <Enduse5 index="12">--</Enduse5>
+      <Enduse5 index="22">0.00</Enduse5>
+      <Enduse6 index="0">Domestic Hot Water</Enduse6>
+      <Enduse6 index="1">--</Enduse6>
+      <Enduse6 index="2">58.3</Enduse6>
+      <Enduse6 index="3">12.52</Enduse6>
+      <Enduse6 index="4">--</Enduse6>
+      <Enduse6 index="5">60.6</Enduse6>
+      <Enduse6 index="6">13.02</Enduse6>
+      <Enduse6 index="7">0.50</Enduse6>
+      <Enduse6 index="8">--</Enduse6>
+      <Enduse6 index="9">--</Enduse6>
+      <Enduse6 index="10">20.97</Enduse6>
+      <Enduse6 index="11">21.81</Enduse6>
+      <Enduse6 index="12">0.84</Enduse6>
+      <Enduse6 index="17">3.18</Enduse6>
+      <Enduse6 index="18">3.18</Enduse6>
+      <Enduse6 index="20">3.31</Enduse6>
+      <Enduse6 index="21">3.31</Enduse6>
+      <Enduse6 index="22">0.13</Enduse6>
+      <Enduse7 index="0">Indoor Lighting</Enduse7>
+      <Enduse7 index="1">7.2</Enduse7>
+      <Enduse7 index="2">--</Enduse7>
+      <Enduse7 index="3">15.78</Enduse7>
+      <Enduse7 index="4">7.2</Enduse7>
+      <Enduse7 index="5">--</Enduse7>
+      <Enduse7 index="6">15.78</Enduse7>
+      <Enduse7 index="7">--</Enduse7>
+      <Enduse7 index="8">0.5</Enduse7>
+      <Enduse7 index="9">0.5</Enduse7>
+      <Enduse7 index="10">4.50</Enduse7>
+      <Enduse7 index="11">4.50</Enduse7>
+      <Enduse7 index="12">--</Enduse7>
+      <Enduse7 index="16">0.60</Enduse7>
+      <Enduse7 index="18">0.60</Enduse7>
+      <Enduse7 index="19">0.60</Enduse7>
+      <Enduse7 index="21">0.60</Enduse7>
+      <Enduse7 index="22">0.00</Enduse7>
+      <Enduse8 index="0">Total Compliance</Enduse8>
+      <Enduse8 index="1">-0.5</Enduse8>
+      <Enduse8 index="2">58.3</Enduse8>
+      <Enduse8 index="3">42.47</Enduse8>
+      <Enduse8 index="4">-4.2</Enduse8>
+      <Enduse8 index="5">125.9</Enduse8>
+      <Enduse8 index="6">51.54</Enduse8>
+      <Enduse8 index="7">9.07</Enduse8>
+      <Enduse8 index="8">3.1</Enduse8>
+      <Enduse8 index="9">2.4</Enduse8>
+      <Enduse8 index="10">33.52</Enduse8>
+      <Enduse8 index="11">55.90</Enduse8>
+      <Enduse8 index="12">22.38</Enduse8>
+      <Enduse8 index="16">1.66</Enduse8>
+      <Enduse8 index="17">3.18</Enduse8>
+      <Enduse8 index="18">4.84</Enduse8>
+      <Enduse8 index="19">1.41</Enduse8>
+      <Enduse8 index="20">6.88</Enduse8>
+      <Enduse8 index="21">8.29</Enduse8>
+      <Enduse8 index="22">3.45</Enduse8>
+      <Enduse9 index="0">Receptacle</Enduse9>
+      <Enduse9 index="1">12.6</Enduse9>
+      <Enduse9 index="2">192.1</Enduse9>
+      <Enduse9 index="3">68.15</Enduse9>
+      <Enduse9 index="4">12.6</Enduse9>
+      <Enduse9 index="5">192.1</Enduse9>
+      <Enduse9 index="6">68.15</Enduse9>
+      <Enduse9 index="7">--</Enduse9>
+      <Enduse9 index="8">0.8</Enduse9>
+      <Enduse9 index="9">0.8</Enduse9>
+      <Enduse9 index="10">76.45</Enduse9>
+      <Enduse9 index="11">76.45</Enduse9>
+      <Enduse9 index="12">--</Enduse9>
+      <Enduse9 index="16">0.97</Enduse9>
+      <Enduse9 index="17">10.50</Enduse9>
+      <Enduse9 index="18">11.47</Enduse9>
+      <Enduse9 index="19">0.97</Enduse9>
+      <Enduse9 index="20">10.50</Enduse9>
+      <Enduse9 index="21">11.47</Enduse9>
+      <Enduse9 index="22">0.00</Enduse9>
+      <Enduse10 index="0">Process</Enduse10>
+      <Enduse10 index="1">13.5</Enduse10>
+      <Enduse10 index="2">--</Enduse10>
+      <Enduse10 index="3">30.49</Enduse10>
+      <Enduse10 index="4">13.5</Enduse10>
+      <Enduse10 index="5">--</Enduse10>
+      <Enduse10 index="6">30.49</Enduse10>
+      <Enduse10 index="7">--</Enduse10>
+      <Enduse10 index="8">1.5</Enduse10>
+      <Enduse10 index="9">1.5</Enduse10>
+      <Enduse10 index="10">9.21</Enduse10>
+      <Enduse10 index="11">9.21</Enduse10>
+      <Enduse10 index="12">--</Enduse10>
+      <Enduse10 index="16">1.22</Enduse10>
+      <Enduse10 index="18">1.22</Enduse10>
+      <Enduse10 index="19">1.22</Enduse10>
+      <Enduse10 index="21">1.22</Enduse10>
+      <Enduse10 index="22">0.00</Enduse10>
+      <Enduse11 index="0">Other Lighting</Enduse11>
+      <Enduse11 index="1">--</Enduse11>
+      <Enduse11 index="2">--</Enduse11>
+      <Enduse11 index="3">--</Enduse11>
+      <Enduse11 index="4">--</Enduse11>
+      <Enduse11 index="5">--</Enduse11>
+      <Enduse11 index="6">--</Enduse11>
+      <Enduse11 index="7">--</Enduse11>
+      <Enduse11 index="8">--</Enduse11>
+      <Enduse11 index="9">--</Enduse11>
+      <Enduse11 index="10">--</Enduse11>
+      <Enduse11 index="11">--</Enduse11>
+      <Enduse11 index="12">--</Enduse11>
+      <Enduse11 index="22">0.00</Enduse11>
+      <Enduse12 index="0">Process Motors</Enduse12>
+      <Enduse12 index="1">--</Enduse12>
+      <Enduse12 index="2">--</Enduse12>
+      <Enduse12 index="3">--</Enduse12>
+      <Enduse12 index="4">--</Enduse12>
+      <Enduse12 index="5">--</Enduse12>
+      <Enduse12 index="6">--</Enduse12>
+      <Enduse12 index="7">--</Enduse12>
+      <Enduse12 index="8">--</Enduse12>
+      <Enduse12 index="9">--</Enduse12>
+      <Enduse12 index="10">--</Enduse12>
+      <Enduse12 index="11">--</Enduse12>
+      <Enduse12 index="12">--</Enduse12>
+      <Enduse12 index="22">0.00</Enduse12>
+      <Enduse13 index="0">Photovoltaics</Enduse13>
+      <Enduse13 index="1">-39.6</Enduse13>
+      <Enduse13 index="2">--</Enduse13>
+      <Enduse13 index="3">-54.41</Enduse13>
+      <Enduse13 index="4">-39.7</Enduse13>
+      <Enduse13 index="5">--</Enduse13>
+      <Enduse13 index="6">-52.49</Enduse13>
+      <Enduse13 index="7">1.92</Enduse13>
+      <Enduse13 index="8">-0.1</Enduse13>
+      <Enduse13 index="9">-0.1</Enduse13>
+      <Enduse13 index="10">-8.35</Enduse13>
+      <Enduse13 index="11">-8.38</Enduse13>
+      <Enduse13 index="12">-0.03</Enduse13>
+      <Enduse13 index="16">-1.11</Enduse13>
+      <Enduse13 index="18">-1.11</Enduse13>
+      <Enduse13 index="19">-1.11</Enduse13>
+      <Enduse13 index="21">-1.11</Enduse13>
+      <Enduse13 index="22">0.00</Enduse13>
+      <Enduse14 index="0">Battery Storage</Enduse14>
+      <Enduse14 index="1">--</Enduse14>
+      <Enduse14 index="2">--</Enduse14>
+      <Enduse14 index="3">--</Enduse14>
+      <Enduse14 index="4">--</Enduse14>
+      <Enduse14 index="5">--</Enduse14>
+      <Enduse14 index="6">--</Enduse14>
+      <Enduse14 index="7">--</Enduse14>
+      <Enduse14 index="8">--</Enduse14>
+      <Enduse14 index="9">--</Enduse14>
+      <Enduse14 index="10">--</Enduse14>
+      <Enduse14 index="11">--</Enduse14>
+      <Enduse14 index="12">--</Enduse14>
+      <Enduse14 index="22">0.00</Enduse14>
+      <Enduse15 index="0">Project Total</Enduse15>
+      <Enduse15 index="1">25.6</Enduse15>
+      <Enduse15 index="2">250.4</Enduse15>
+      <Enduse15 index="3">141.11</Enduse15>
+      <Enduse15 index="4">21.9</Enduse15>
+      <Enduse15 index="5">318.0</Enduse15>
+      <Enduse15 index="6">150.18</Enduse15>
+      <Enduse15 index="7">9.07</Enduse15>
+      <Enduse15 index="8">5.4</Enduse15>
+      <Enduse15 index="9">4.7</Enduse15>
+      <Enduse15 index="10">119.18</Enduse15>
+      <Enduse15 index="11">141.56</Enduse15>
+      <Enduse15 index="12">22.38</Enduse15>
+      <Enduse15 index="16">3.85</Enduse15>
+      <Enduse15 index="17">13.68</Enduse15>
+      <Enduse15 index="18">17.53</Enduse15>
+      <Enduse15 index="19">3.60</Enduse15>
+      <Enduse15 index="20">17.38</Enduse15>
+      <Enduse15 index="21">20.98</Enduse15>
+      <Enduse15 index="22">3.45</Enduse15>
+      <Enduse16 index="0">Efficiency Compliance</Enduse16>
+      <Enduse16 index="1">39.1</Enduse16>
+      <Enduse16 index="2">58.3</Enduse16>
+      <Enduse16 index="3">96.88</Enduse16>
+      <Enduse16 index="4">35.5</Enduse16>
+      <Enduse16 index="5">125.9</Enduse16>
+      <Enduse16 index="6">104.03</Enduse16>
+      <Enduse16 index="7">7.15</Enduse16>
+      <Enduse16 index="8">3.2</Enduse16>
+      <Enduse16 index="9">2.5</Enduse16>
+      <Enduse16 index="10">41.87</Enduse16>
+      <Enduse16 index="11">64.28</Enduse16>
+      <Enduse16 index="12">22.41</Enduse16>
+      <Enduse16 index="16">2.77</Enduse16>
+      <Enduse16 index="17">3.18</Enduse16>
+      <Enduse16 index="18">5.95</Enduse16>
+      <Enduse16 index="19">2.52</Enduse16>
+      <Enduse16 index="20">6.88</Enduse16>
+      <Enduse16 index="21">9.40</Enduse16>
+      <Enduse16 index="22">3.45</Enduse16>
+      <ZoneUMLHsLoaded index="0">0</ZoneUMLHsLoaded>
+      <ZoneUMLHsLoaded index="1">1</ZoneUMLHsLoaded>
+      <ZoneUMLHs index="0">clg: 0  htg: 0  'Attic Zn'
+clg: 0  htg: 0  'Dining Thermal Zone'
+clg: 0  htg: 0  'Kitchen Thermal Zone'</ZoneUMLHs>
+      <ZoneUMLHs index="1">clg: 0  htg: 0  'Attic Zn'
+clg: 0  htg: 0  'Dining Thermal Zone'
+clg: 0  htg: 0  'Kitchen Thermal Zone'</ZoneUMLHs>
+      <SimSummary index="0">CSE Successful, E+ Successful (116 warnings)</SimSummary>
+      <SimSummary index="2">CSE Successful, E+ Successful (99 warnings)</SimSummary>
+      <PassFail>PASS</PassFail>
+      <MetricPassFail index="0">Pass</MetricPassFail>
+      <MetricPassFail index="1">Pass</MetricPassFail>
+      <MetricPassFail index="2">Pass</MetricPassFail>
+      <ComplyMessage>COMPLIES</ComplyMessage>
+      <StdPVBatteryMsg>Standard Design PV Capacity: 24.4 kWdc  /  (no battery)</StdPVBatteryMsg>
+      <AnalysisValid>1</AnalysisValid>
+      <HideCompSmrySrc>0</HideCompSmrySrc>
+      <HideCompSmryTot>0</HideCompSmryTot>
+      <PctSavingsSLCC>6.03942</PctSavingsSLCC>
+      <PctSavingsEffSLCC>6.87302</PctSavingsEffSLCC>
+      <PctSavingsCmpSLCC>17.598</PctSavingsCmpSLCC>
+      <PctSavSLCCLbl>6.0</PctSavSLCCLbl>
+      <PctSavEffSLCCLbl>6.9</PctSavEffSLCCLbl>
+      <PctSavCmpSLCCLbl>17.6</PctSavCmpSLCCLbl>
+      <PctSavingsSrc>15.8096</PctSavingsSrc>
+      <PctSavingsEffSrc>34.8631</PctSavingsEffSrc>
+      <PctSavingsCmpSrc>40.0358</PctSavingsCmpSrc>
+      <PctSavSrcLbl>15.8</PctSavSrcLbl>
+      <PctSavEffSrcLbl>34.9</PctSavEffSrcLbl>
+      <PctSavCmpSrcLbl>40.0</PctSavCmpSrcLbl>
+      <MarginkW>-0.7</MarginkW>
+      <PVBattResultsValid>1</PVBattResultsValid>
+      <PropPV_Size>24.3</PropPV_Size>
+      <PropPV_Total>39604.9</PropPV_Total>
+      <PropPV_Export>8377.84</PropPV_Export>
+      <PropPV_PctExport>21.1536</PropPV_PctExport>
+      <PropBatt_Size>0</PropBatt_Size>
+      <PropBatt_Pwr>0</PropBatt_Pwr>
+      <StdPV_Size>24.38</StdPV_Size>
+      <StdPV_Total>39741.7</StdPV_Total>
+      <StdPV_Export>9844.31</StdPV_Export>
+      <StdPV_PctExport>24.7707</StdPV_PctExport>
+      <StdBatt_Size>0</StdBatt_Size>
+      <StdBatt_Pwr>0</StdBatt_Pwr>
+    </EUseSummary>
+  </Proj>
+</SDDXML>

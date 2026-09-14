@@ -1,0 +1,163 @@
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(653): Info: 
+  DHWSYS 'dhwsys-F1 Business Center': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump' has a fixed setpoint.
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(677): Info: 
+  DHWSYS 'dhwsys-F1 Fitness Center': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 3' has a fixed setpoint.
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(701): Info: 
+  DHWSYS 'dhwsys-F1 Leasing Office': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 4' has a fixed setpoint.
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(725): Info: 
+  DHWSYS 'dhwsys-F1 Lobby': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 5' has a fixed setpoint.
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(749): Info: 
+  DHWSYS 'dhwsys-F1 Mech Rm': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 6' has a fixed setpoint.
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(773): Info: 
+  DHWSYS 'dhwsys-F2 Break Room': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 7' has a fixed setpoint.
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(797): Info: 
+  DHWSYS 'dhwsys-F3 Break Room': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 8' has a fixed setpoint.
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(821): Info: 
+  DHWSYS 'dhwsys-F4 Break Room': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 9' has a fixed setpoint.
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(845): Info: 
+  DHWSYS 'dhwsys-F5 Break Room': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 10' has a fixed setpoint.
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(35094): Warning: 
+  airHandler 'F1 Business Cent AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (253.908 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(35125): Warning: 
+  airHandler 'F1 Corridor AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (248.507 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(35156): Warning: 
+  airHandler 'F1 Fitness Cente AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (236.685 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(35218): Warning: 
+  airHandler 'F1 Lobby AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (278.519 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(35311): Warning: 
+  airHandler 'F2 Corridor AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (225.895 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(35342): Warning: 
+  airHandler 'F2 Break Room AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (244.479 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(35373): Warning: 
+  airHandler 'F2 Stairs E AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (226.779 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(35404): Warning: 
+  airHandler 'F2 Stairs W AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (224.438 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(35435): Warning: 
+  airHandler 'F3 Corridor AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (224.608 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(35466): Warning: 
+  airHandler 'F3 Break Room AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (244.7 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(35497): Warning: 
+  airHandler 'F3 Stairs E AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (226.804 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(35528): Warning: 
+  airHandler 'F3 Stairs W AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (228.916 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(35559): Warning: 
+  airHandler 'F4 Corridor AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (224.611 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(35590): Warning: 
+  airHandler 'F4 Break Room AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (244.725 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(35621): Warning: 
+  airHandler 'F4 Stairs E AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (226.941 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(35652): Warning: 
+  airHandler 'F4 Stairs W AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (236.461 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(35683): Warning: 
+  airHandler 'F5 Corridor AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (225.138 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\GITHUB\P-COMPLEXHVAC\P-SCE-COMPLEX_HVAC\MF EXAMPLES\MF88_1C_ISUP_IEXH-SZHP_CZ09\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_IEXH-SZHP_CZ9 - ZP-CSE.CSE(35714): Warning: 
+  airHandler 'F5 Break Room AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (249.528 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------

@@ -1,0 +1,258 @@
+Zone:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName = 'THERMAL ZONE: F1 RETAIL N-NW') AND (ColumnName='During Occupied Cooling') AND (Units = 'hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName='THERMAL ZONE: F1 RETAIL N-NW') AND (ColumnName='During Occupied Heating') AND (Units='hr') -->> 1
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='THERMAL ZONE: F1 RETAIL N-NW') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 106662
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='THERMAL ZONE: F1 RETAIL N-NW') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 30722.6
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='THERMAL ZONE: F1 RETAIL N-NW') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 4880.93
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='THERMAL ZONE: F1 RETAIL N-NW') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 1125.74
+
+Zone:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName = 'THERMAL ZONE: F1 RETAIL NE') AND (ColumnName='During Occupied Cooling') AND (Units = 'hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName='THERMAL ZONE: F1 RETAIL NE') AND (ColumnName='During Occupied Heating') AND (Units='hr') -->> 0.5
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='THERMAL ZONE: F1 RETAIL NE') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 80215.9
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='THERMAL ZONE: F1 RETAIL NE') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 25194.2
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='THERMAL ZONE: F1 RETAIL NE') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 3670.75
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='THERMAL ZONE: F1 RETAIL NE') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 923.166
+
+Zone:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName = 'THERMAL ZONE: F1 RETAIL SE') AND (ColumnName='During Occupied Cooling') AND (Units = 'hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName='THERMAL ZONE: F1 RETAIL SE') AND (ColumnName='During Occupied Heating') AND (Units='hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='THERMAL ZONE: F1 RETAIL SE') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 53211.7
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='THERMAL ZONE: F1 RETAIL SE') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 22384.2
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='THERMAL ZONE: F1 RETAIL SE') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 2435.01
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='THERMAL ZONE: F1 RETAIL SE') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 820.201
+
+Zone:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName = 'THERMAL ZONE: F1 RETAIL SW') AND (ColumnName='During Occupied Cooling') AND (Units = 'hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName='THERMAL ZONE: F1 RETAIL SW') AND (ColumnName='During Occupied Heating') AND (Units='hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='THERMAL ZONE: F1 RETAIL SW') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 83205.9
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='THERMAL ZONE: F1 RETAIL SW') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 32279.2
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='THERMAL ZONE: F1 RETAIL SW') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 3807.57
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='THERMAL ZONE: F1 RETAIL SW') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 1182.77
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'BASESYS5 SUPFAN') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 14528.5
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-2') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-3') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-4') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-5') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-6') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-7') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-8') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-9') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-10') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-11') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-12') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-13') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-14') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-15') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-16') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-17') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-18') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-19') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-20') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-21') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-22') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'RESBASEAIRSYS_SZHP SUPFAN-23') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'BASESYS5 COILCLG') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 398935
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'BASESYS5 COILCLG') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 319525
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'BASESYS5 COILCLG') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-2') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-2') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-2') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-3') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-3') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-3') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-4') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-4') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-4') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-5') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-5') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-5') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-6') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-6') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-6') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-7') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-7') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-7') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-8') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-8') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-8') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-9') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-9') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-9') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-10') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-10') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-10') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-11') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-11') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-11') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-12') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-12') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-12') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-13') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-13') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-13') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-14') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-14') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-14') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-15') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-15') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-15') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-16') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-16') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-16') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-17') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-17') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-17') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-18') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-18') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-18') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-19') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-19') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-19') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-20') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-20') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-20') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-21') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-21') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-21') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-22') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-22') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-22') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-23') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILCLG-23') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILCLG-23') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'BASESYS5 COILHTG') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 80743.2
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'BASESYS5 COILHTG') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-2') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-2') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-3') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-3') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-4') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-4') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-5') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-5') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-6') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-6') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-7') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-7') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-8') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-8') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-9') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-9') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-10') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-10') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-11') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-11') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-12') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-12') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-13') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-13') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-14') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-14') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-15') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-15') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-16') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-16') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-17') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-17') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-18') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-18') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-19') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-19') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-20') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-20') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-21') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-21') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-22') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-22') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'RESBASEAIRSYS_SZHP COILHTG-23') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 0
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'RESBASEAIRSYS_SZHP COILHTG-23') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'BASEVAVBOX COILHTG') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 80247.1
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'BASEVAVBOX COILHTG') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'BASEVAVBOX COILHTG-2') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 63022.8
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'BASEVAVBOX COILHTG-2') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'BASEVAVBOX COILHTG-3') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 53042.1
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'BASEVAVBOX COILHTG-3') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'BASEVAVBOX COILHTG-4') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 76488.5
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'BASEVAVBOX COILHTG-4') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+Boiler:  timeSeries( CA_TITLE24_2025_LOS-ANGELES-USC, Hourly, Boiler Heating Rate, BASE BLR ) -->> 62531.1
+Pump:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Pumps') AND (RowName = 'BASE HW PUMP') AND (ColumnName='Water Flow') AND (Units = 'gal/min') -->> 17.345

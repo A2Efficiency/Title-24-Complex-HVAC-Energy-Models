@@ -1,0 +1,647 @@
+General Information
+Project Address,City,ZipCode,ClimateZone,Compliance Software,Compliance Manager,RulesetFile Name,Compliance Type
+" - specify - "," - specify - ",95837,"ClimateZone9","CBECC 2025.2.0.1 (1395)","BEMCmpMgr 2025.2.0.1 (625)","CA 2025 Nonresidential, Vers. 1.0 (T24_2025.bin)","NewEnvelopeAndMechanical"
+
+No. of Thermal Zones,No. of Thermal Zones (cond),No. of Air Systems,No. of Zonal Systems,No. of Terminal Units
+29,27,4,27,25
+
+No. of Stories
+Total,New,Existing,Altered
+2,2,0,0
+
+No. of Above Grade Stories
+Total,New,Existing,Altered
+2,2,0,0
+
+No. of Dwelling Units (Conditioned)
+Total,New,Existing,Altered
+0,0,0,0
+
+NonRes Floor Area (Conditioned)
+Total,New,Existing,Altered
+2,2,0,0
+
+Res Floor Area (Conditioned)
+Total,New,Existing,Altered
+0,0,0,0
+
+,Conditioned Floor Area
+Total Floor Area,Total,New,Existing,Altered
+28505.7,27040.5,0,0,0
+
+
+
+Building Wall Area
+Total ExtWall,N ExtWall,E ExtWall,S ExtWall,W ExtWall,
+(ft2),(ft2),(ft2),(ft2),(ft2)
+14403.25,4092.56,2902.63,4555.71,2852.35
+
+Building New Wall Area
+Total ExtWall,N ExtWall,E ExtWall,S ExtWall,W ExtWall,
+(ft2),(ft2),(ft2),(ft2),(ft2)
+14403.25,4092.56,2902.63,4555.71,2852.35
+Building Existing or Altered Wall Area
+Total ExtWall,N ExtWall,E ExtWall,S ExtWall,W ExtWall,
+(ft2),(ft2),(ft2),(ft2),(ft2)
+0.00,0.00,0.00,0.00,0.00
+
+
+Building Window Area,
+Total Window Area,North Window,E Window,S Window,W Window
+(ft2),(ft2),(ft2),(ft2),(ft2)
+4027.94,1075.16,0.00,2230.32,722.46
+
+Building New Window Area on New Walls,
+Total Window Area,North Window,E Window,S Window,W Window
+(ft2),(ft2),(ft2),(ft2),(ft2)
+4027.94,1075.16,0.00,2230.32,722.46
+Building New Window Area on Existing or Altered Walls,
+Total Window Area,North Window,E Window,S Window,W Window
+(ft2),(ft2),(ft2),(ft2),(ft2)
+0.00,0.00,0.00,0.00,0.00
+Building Existing or Altered Window Area on Existing or Altered Walls,
+Total Window Area,North Window,E Window,S Window,W Window
+(ft2),(ft2),(ft2),(ft2),(ft2)
+0.00,0.00,0.00,0.00,0.00
+
+
+Window to Wall Ratio
+Bldg. WWR,North WWR,East WWR,South WWR,West WWR
+(frac.),(frac.),(frac.),(frac.),(frac.)
+0.2797,0.2627,0.0000,0.4896,0.2533
+
+New Window to New Wall Ratio
+Bldg. WWR,North WWR,East WWR,South WWR,West WWR
+(frac.),(frac.),(frac.),(frac.),(frac.)
+0.2797,0.2627,0.0000,0.4896,0.2533
+New Window to Existing or Altered Wall Ratio
+Bldg. WWR,North WWR,East WWR,South WWR,West WWR
+(frac.),(frac.),(frac.),(frac.),(frac.)
+0.0000,0.0000,0.0000,0.0000,0.0000
+Existing or Altered Window to Existing or Altered Wall Ratio
+Bldg. WWR,North WWR,East WWR,South WWR,West WWR
+(frac.),(frac.),(frac.),(frac.),(frac.)
+0.0000,0.0000,0.0000,0.0000,0.0000
+
+
+Skylight to Roof Ratio (SRR),Display Perimeter\SRR,West,Total
+(frac.),(ft),(ft)
+0.0096,0.00,0.00
+
+New Skylight to New Roof Ratio (SRR)
+(frac.)
+0.0096
+New Skylight to Existing or Altered Roof Ratio (SRR)
+(frac.)
+0.0000
+Existing or Altered Skylight to Existing or Altered Roof Ratio (SRR)
+(frac.)
+0.0000
+
+
+
+Exterior Roofs
+,,,,,,,,,,,,Aged Thermal Emittance,,ThrmlAbs,,Aged Solar Reflectance,,SolAbs,
+Name,Status,Name,Occupancy Classification,Conditioning Status,Assigned Occ Class (Ref),Area,Tilt,Slope Category,Cons Name,Construction Type,U-Factor,Roof,Cons,Roof,Cons,Roof,Cons,Roof,Cons
+,,,,,,(ft2),(deg),,,,(Btu/h-?F-ft2),(frac.),(frac.),(frac.),(frac.),(frac.),(frac.),(frac.),(frac.),
+"B1_Gym 1_1_388","New","B1_Gym 1 Space","Nonresidential","DirectlyConditioned","NonResidential",147.32,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Conference Room 5_1_421","New","RCA_Conference Room 5 Space","Nonresidential","DirectlyConditioned","NonResidential",726.49,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Corridor 11_1_376","New","RCA_Corridor 11 Space","Nonresidential","DirectlyConditioned","NonResidential",39.93,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Corridor 14_1_426","New","RCA_Corridor 14 Space","Nonresidential","DirectlyConditioned","NonResidential",76.97,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Corridor 14_1_429","New","RCA_Corridor 14 Space","Nonresidential","DirectlyConditioned","NonResidential",44.39,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Lobby 1_1_340","New","RCA_Lobby 1 Space","Nonresidential","DirectlyConditioned","NonResidential",31.69,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Open Office 7_1_485","New","RCA_Open Office 7 Space","Nonresidential","DirectlyConditioned","NonResidential",30.85,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"B1_Reception 1_1_210","New","B1_Reception 1 Space","Nonresidential","DirectlyConditioned","NonResidential",135.35,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"Class Room 1_1_291","New","Class Room 1 Space","Nonresidential","DirectlyConditioned","NonResidential",1122.03,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"Collaboration Space 1_1_225","New","Collaboration Space 1 Space","Nonresidential","DirectlyConditioned","NonResidential",892.00,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"Huddle 1_1_17","New","Huddle 1 Space","Nonresidential","DirectlyConditioned","NonResidential",19.68,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"Huddle 1_1_25","New","Huddle 1 Space","Nonresidential","DirectlyConditioned","NonResidential",335.17,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"Huddle 2_1_235","New","Huddle 2 Space","Nonresidential","DirectlyConditioned","NonResidential",5.35,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"Huddle 2_1_240","New","Huddle 2 Space","Nonresidential","DirectlyConditioned","NonResidential",117.64,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"Huddle 2_1_242","New","Huddle 2 Space","Nonresidential","DirectlyConditioned","NonResidential",7.36,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"Huddle 2_1_246","New","Huddle 2 Space","Nonresidential","DirectlyConditioned","NonResidential",161.96,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Conference Room 2_1_27","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned","NonResidential",5.54,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Conference Room 2_1_30","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned","NonResidential",144.34,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Conference Room 2_1_32","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned","NonResidential",12.32,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Conference Room 2_1_37","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned","NonResidential",320.71,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Conference Room 2_1_39","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned","NonResidential",5.85,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Conference Room 2_1_45","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned","NonResidential",152.29,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Conference Room 2_1_47","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned","NonResidential",5.53,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Conference Room 2_1_50","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned","NonResidential",143.92,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Conference Room 3_1_266","New","RCA_Conference Room 3 Space","Nonresidential","DirectlyConditioned","NonResidential",660.15,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Conference Room 3_1_271","New","RCA_Conference Room 3 Space","Nonresidential","DirectlyConditioned","NonResidential",187.79,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Conference Room 4_1_318","New","RCA_Conference Room 4 Space","Nonresidential","DirectlyConditioned","NonResidential",8.24,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Conference Room 4_1_327","New","RCA_Conference Room 4 Space","Nonresidential","DirectlyConditioned","NonResidential",352.91,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Corridor 4_1_166","New","RCA_Corridor 4 Space","Nonresidential","DirectlyConditioned","NonResidential",823.21,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Corridor 5_1_168","New","RCA_Corridor 5 Space","Nonresidential","DirectlyConditioned","NonResidential",3.50,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Corridor 5_1_175","New","RCA_Corridor 5 Space","Nonresidential","DirectlyConditioned","NonResidential",257.02,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Corridor 6_1_188","New","RCA_Corridor 6 Space","Nonresidential","DirectlyConditioned","NonResidential",485.02,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Corridor 7_1_202","New","RCA_Corridor 7 Space","Nonresidential","DirectlyConditioned","NonResidential",450.47,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Corridor 8_1_293","New","RCA_Corridor 8 Space","Nonresidential","DirectlyConditioned","NonResidential",7.52,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Corridor 8_1_300","New","RCA_Corridor 8 Space","Nonresidential","DirectlyConditioned","NonResidential",936.86,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Corridor 9_1_308","New","RCA_Corridor 9 Space","Nonresidential","DirectlyConditioned","NonResidential",18.75,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Corridor 9_1_313","New","RCA_Corridor 9 Space","Nonresidential","DirectlyConditioned","NonResidential",431.07,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_IT Room 2_1_374","New","RCA_IT Room 2 Space","Nonresidential","DirectlyConditioned","NonResidential",105.03,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Kitchen Break Room 1_1_233","New","RCA_Kitchen Break Room 1 Space","Nonresidential","DirectlyConditioned","NonResidential",477.21,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Open Office 4_1_89","New","RCA_Open Office 4 Space","Nonresidential","DirectlyConditioned","NonResidential",30.90,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Open Office 4_1_95","New","RCA_Open Office 4 Space","Nonresidential","DirectlyConditioned","NonResidential",896.12,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Open Office 5_1_102","New","RCA_Open Office 5 Space","Nonresidential","DirectlyConditioned","NonResidential",453.17,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Open Office 5_1_97","New","RCA_Open Office 5 Space","Nonresidential","DirectlyConditioned","NonResidential",17.52,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Open Office 6_1_113","New","RCA_Open Office 6 Space","Nonresidential","DirectlyConditioned","NonResidential",2048.30,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Restrooms 2_1_63","New","RCA_Restrooms 2 Space","Nonresidential","Unconditioned","NonResidential",811.19,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Store 1_1_248","New","RCA_Store 1 Space","Nonresidential","DirectlyConditioned","NonResidential",5.98,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Store 1_1_254","New","RCA_Store 1 Space","Nonresidential","DirectlyConditioned","NonResidential",333.73,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Store 2_1_277","New","RCA_Store 2 Space","Nonresidential","DirectlyConditioned","NonResidential",197.93,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+"RCA_Store 3_1_283","New","RCA_Store 3 Space","Nonresidential","DirectlyConditioned","NonResidential",133.30,0,"Low","Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",0.028,0.75,0.75,0.75,0.75,0.63,0.63,0.37,0.37
+
+
+
+Exterior Wall
+,,Space
+Name,Status,Name,Occupancy Classification,Conditioning Status,Building Type,Area,Azimuth,Cons Name,Construction Type,U Factor,Window Area
+,,,,,,(ft2),(deg),,,(Btu/h-?F-ft2),(ft2)
+"B1_Gym 1_1_386","New","B1_Gym 1 Space","Nonresidential","DirectlyConditioned","NonResidential",197.40,14.9993,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,114.29
+"B1_Gym 1_1_392","New","B1_Gym 1 Space","Nonresidential","DirectlyConditioned","NonResidential",128.43,15.0012,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,64.20
+"B1_Gym 1_1_393","New","B1_Gym 1 Space","Nonresidential","DirectlyConditioned","NonResidential",17.17,14.9933,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"B1_Gym 1_1_394","New","B1_Gym 1 Space","Nonresidential","DirectlyConditioned","NonResidential",106.00,15.0009,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,60.86
+"B1_Gym 1_1_395","New","B1_Gym 1 Space","Nonresidential","DirectlyConditioned","NonResidential",10.05,14.9987,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"B1_Gym 1_1_396","New","B1_Gym 1 Space","Nonresidential","DirectlyConditioned","NonResidential",61.53,15.0001,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,28.72
+"B1_Gym 1_1_397","New","B1_Gym 1 Space","Nonresidential","DirectlyConditioned","NonResidential",61.66,105.002,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Conference Room 1_1_10","New","RCA_Conference Room 1 Space","Nonresidential","DirectlyConditioned","NonResidential",16.74,195.002,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Conference Room 1_1_11","New","RCA_Conference Room 1 Space","Nonresidential","DirectlyConditioned","NonResidential",152.01,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,97.80
+"RCA_Conference Room 1_1_12","New","RCA_Conference Room 1 Space","Nonresidential","DirectlyConditioned","NonResidential",68.39,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Conference Room 1_1_13","New","RCA_Conference Room 1 Space","Nonresidential","DirectlyConditioned","NonResidential",66.42,285,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Conference Room 1_1_6","New","RCA_Conference Room 1 Space","Nonresidential","DirectlyConditioned","NonResidential",206.99,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Conference Room 1_1_7","New","RCA_Conference Room 1 Space","Nonresidential","DirectlyConditioned","NonResidential",145.32,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,93.38
+"RCA_Conference Room 1_1_8","New","RCA_Conference Room 1 Space","Nonresidential","DirectlyConditioned","NonResidential",17.17,195.002,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Conference Room 1_1_9","New","RCA_Conference Room 1 Space","Nonresidential","DirectlyConditioned","NonResidential",158.54,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,102.13
+"RCA_Conference Room 5_1_416","New","RCA_Conference Room 5 Space","Nonresidential","DirectlyConditioned","NonResidential",50.26,104.997,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Conference Room 5_1_417","New","RCA_Conference Room 5 Space","Nonresidential","DirectlyConditioned","NonResidential",65.31,195.001,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Conference Room 5_1_418","New","RCA_Conference Room 5 Space","Nonresidential","DirectlyConditioned","NonResidential",553.09,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,405.43
+"RCA_Conference Room 5_1_419","New","RCA_Conference Room 5 Space","Nonresidential","DirectlyConditioned","NonResidential",84.80,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Corridor 10_1_344","New","RCA_Corridor 10 Space","Nonresidential","DirectlyConditioned","NonResidential",43.62,15.0002,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,30.18
+"RCA_Corridor 10_1_348","New","RCA_Corridor 10 Space","Nonresidential","DirectlyConditioned","NonResidential",169.13,285,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,42.22
+"RCA_Corridor 10_1_351","New","RCA_Corridor 10 Space","Nonresidential","DirectlyConditioned","NonResidential",29.23,15.0002,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Corridor 10_1_352","New","RCA_Corridor 10 Space","Nonresidential","DirectlyConditioned","NonResidential",9.53,14.9922,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Corridor 11_1_381","New","RCA_Corridor 11 Space","Nonresidential","DirectlyConditioned","NonResidential",48.44,284.996,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Corridor 11_1_382","New","RCA_Corridor 11 Space","Nonresidential","DirectlyConditioned","NonResidential",6.84,14.9985,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Corridor 11_1_383","New","RCA_Corridor 11 Space","Nonresidential","DirectlyConditioned","NonResidential",46.36,15.0033,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,25.15
+"RCA_Corridor 11_1_384","New","RCA_Corridor 11 Space","Nonresidential","DirectlyConditioned","NonResidential",87.91,14.9993,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,48.74
+"RCA_Corridor 14_1_427","New","RCA_Corridor 14 Space","Nonresidential","DirectlyConditioned","NonResidential",150.46,14.9996,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Corridor 14_1_430","New","RCA_Corridor 14 Space","Nonresidential","DirectlyConditioned","NonResidential",719.46,105,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Corridor 14_1_431","New","RCA_Corridor 14 Space","Nonresidential","DirectlyConditioned","NonResidential",234.99,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,66.44
+"RCA_Corridor 14_1_432","New","RCA_Corridor 14 Space","Nonresidential","DirectlyConditioned","NonResidential",50.26,284.997,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Corridor 14_1_433","New","RCA_Corridor 14 Space","Nonresidential","DirectlyConditioned","NonResidential",104.08,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,60.55
+"RCA_Corridor 16_1_447","New","RCA_Corridor 16 Space","Nonresidential","DirectlyConditioned","NonResidential",57.35,14.9988,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,27.42
+"RCA_Corridor 16_1_448","New","RCA_Corridor 16 Space","Nonresidential","DirectlyConditioned","NonResidential",53.19,15.0022,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,22.85
+"RCA_Corridor 16_1_449","New","RCA_Corridor 16 Space","Nonresidential","DirectlyConditioned","NonResidential",139.69,14.9987,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Corridor 16_1_450","New","RCA_Corridor 16 Space","Nonresidential","DirectlyConditioned","NonResidential",231.42,105.003,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Corridor 16_1_453","New","RCA_Corridor 16 Space","Nonresidential","DirectlyConditioned","NonResidential",39.75,194.998,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Corridor 16_1_454","New","RCA_Corridor 16 Space","Nonresidential","DirectlyConditioned","NonResidential",120.44,104.997,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Corridor 2_1_120","New","RCA_Corridor 2 Space","Nonresidential","DirectlyConditioned","NonResidential",91.58,15.0005,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,16.62
+"RCA_Elec Room 1_1_499","New","RCA_Elec Room 1 Space","Nonresidential","DirectlyConditioned","NonResidential",101.16,104.999,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Elec Room 1_1_500","New","RCA_Elec Room 1 Space","Nonresidential","DirectlyConditioned","NonResidential",110.70,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Lobby 1_1_330","New","RCA_Lobby 1 Space","Nonresidential","DirectlyConditioned","NonResidential",66.42,105,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Lobby 1_1_331","New","RCA_Lobby 1 Space","Nonresidential","DirectlyConditioned","NonResidential",18.65,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Lobby 1_1_332","New","RCA_Lobby 1 Space","Nonresidential","DirectlyConditioned","NonResidential",139.83,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,86.89
+"RCA_Lobby 1_1_333","New","RCA_Lobby 1 Space","Nonresidential","DirectlyConditioned","NonResidential",55.55,285,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,31.06
+"RCA_Lobby 1_1_334","New","RCA_Lobby 1 Space","Nonresidential","DirectlyConditioned","NonResidential",194.26,285,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,22.00
+"RCA_Lobby 1_1_339","New","RCA_Lobby 1 Space","Nonresidential","DirectlyConditioned","NonResidential",128.27,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,85.21
+"RCA_Open Office 1_1_67","New","RCA_Open Office 1 Space","Nonresidential","DirectlyConditioned","NonResidential",685.37,285,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,202.67
+"RCA_Open Office 2_1_74","New","RCA_Open Office 2 Space","Nonresidential","DirectlyConditioned","NonResidential",580.31,15,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,66.66
+"RCA_Restrooms 1_1_492","New","RCA_Restrooms 1 Space","Nonresidential","Unconditioned","NonResidential",130.36,14.9998,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Store 4_1_357","New","RCA_Store 4 Space","Nonresidential","DirectlyConditioned","NonResidential",129.82,285,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Store 4_1_358","New","RCA_Store 4 Space","Nonresidential","DirectlyConditioned","NonResidential",9.40,15.0033,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Store 4_1_359","New","RCA_Store 4 Space","Nonresidential","DirectlyConditioned","NonResidential",131.90,14.9999,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,20.50
+"RCA_Store 5_1_365","New","RCA_Store 5 Space","Nonresidential","DirectlyConditioned","NonResidential",156.35,14.9998,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,13.31
+"RCA_Store 5_1_366","New","RCA_Store 5 Space","Nonresidential","DirectlyConditioned","NonResidential",48.44,104.996,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"B1_Reception 1_1_206","New","B1_Reception 1 Space","Nonresidential","DirectlyConditioned","NonResidential",126.57,104.997,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"Class Room 1_1_286","New","Class Room 1 Space","Nonresidential","DirectlyConditioned","NonResidential",46.62,285,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"Class Room 1_1_288","New","Class Room 1 Space","Nonresidential","DirectlyConditioned","NonResidential",80.30,104.996,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"Collaboration Space 1_1_219","New","Collaboration Space 1 Space","Nonresidential","DirectlyConditioned","NonResidential",408.69,15.0001,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,268.83
+"Collaboration Space 1_1_220","New","Collaboration Space 1 Space","Nonresidential","DirectlyConditioned","NonResidential",13.90,104.966,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"Huddle 1_1_21","New","Huddle 1 Space","Nonresidential","DirectlyConditioned","NonResidential",164.57,285,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"Huddle 1_1_22","New","Huddle 1 Space","Nonresidential","DirectlyConditioned","NonResidential",323.57,14.9999,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,26.62
+"Huddle 2_1_237","New","Huddle 2 Space","Nonresidential","DirectlyConditioned","NonResidential",147.06,104.999,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"Huddle 2_1_238","New","Huddle 2 Space","Nonresidential","DirectlyConditioned","NonResidential",158.12,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"Huddle 2_1_244","New","Huddle 2 Space","Nonresidential","DirectlyConditioned","NonResidential",158.12,14.9996,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,45.62
+"Huddle 2_1_245","New","Huddle 2 Space","Nonresidential","DirectlyConditioned","NonResidential",202.47,105.004,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Conference Room 2_1_29","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned","NonResidential",135.84,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,86.90
+"RCA_Conference Room 2_1_33","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned","NonResidential",165.58,105,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Conference Room 2_1_34","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned","NonResidential",81.27,195.001,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Conference Room 2_1_35","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned","NonResidential",220.55,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,145.89
+"RCA_Conference Room 2_1_40","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned","NonResidential",67.42,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,41.72
+"RCA_Conference Room 2_1_41","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned","NonResidential",75.90,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Conference Room 2_1_42","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned","NonResidential",32.05,284.999,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Conference Room 2_1_49","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned","NonResidential",135.44,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,86.62
+"RCA_Conference Room 4_1_323","New","RCA_Conference Room 4 Space","Nonresidential","DirectlyConditioned","NonResidential",268.49,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,211.75
+"RCA_Conference Room 4_1_324","New","RCA_Conference Room 4 Space","Nonresidential","DirectlyConditioned","NonResidential",90.52,285,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Conference Room 4_1_325","New","RCA_Conference Room 4 Space","Nonresidential","DirectlyConditioned","NonResidential",111.33,285,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,22.00
+"RCA_Corridor 5_1_170","New","RCA_Corridor 5 Space","Nonresidential","DirectlyConditioned","NonResidential",85.75,15.0005,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,13.31
+"RCA_Corridor 6_1_180","New","RCA_Corridor 6 Space","Nonresidential","DirectlyConditioned","NonResidential",80.30,284.996,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Corridor 6_1_181","New","RCA_Corridor 6 Space","Nonresidential","DirectlyConditioned","NonResidential",72.63,195.001,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Corridor 6_1_183","New","RCA_Corridor 6 Space","Nonresidential","DirectlyConditioned","NonResidential",8.04,285,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Corridor 7_1_195","New","RCA_Corridor 7 Space","Nonresidential","DirectlyConditioned","NonResidential",20.66,195.004,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Corridor 7_1_196","New","RCA_Corridor 7 Space","Nonresidential","DirectlyConditioned","NonResidential",270.19,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,173.85
+"RCA_Corridor 7_1_197","New","RCA_Corridor 7 Space","Nonresidential","DirectlyConditioned","NonResidential",557.57,195,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,326.91
+"RCA_Corridor 7_1_198","New","RCA_Corridor 7 Space","Nonresidential","DirectlyConditioned","NonResidential",10.74,285,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Corridor 8_1_304","New","RCA_Corridor 8 Space","Nonresidential","DirectlyConditioned","NonResidential",158.12,14.9996,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Corridor 8_1_305","New","RCA_Corridor 8 Space","Nonresidential","DirectlyConditioned","NonResidential",206.66,105,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Corridor 9_1_314","New","RCA_Corridor 9 Space","Nonresidential","DirectlyConditioned","NonResidential",515.47,105,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Corridor 9_1_315","New","RCA_Corridor 9 Space","Nonresidential","DirectlyConditioned","NonResidential",246.98,194.999,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,158.83
+"RCA_Corridor 9_1_316","New","RCA_Corridor 9 Space","Nonresidential","DirectlyConditioned","NonResidential",151.87,285.002,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Kitchen Break Room 1_1_232","New","RCA_Kitchen Break Room 1 Space","Nonresidential","DirectlyConditioned","NonResidential",195.78,15.0008,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,114.72
+"RCA_Open Office 4_1_93","New","RCA_Open Office 4 Space","Nonresidential","DirectlyConditioned","NonResidential",757.06,285,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,402.51
+"RCA_Open Office 5_1_100","New","RCA_Open Office 5 Space","Nonresidential","DirectlyConditioned","NonResidential",429.21,15,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,53.25
+"RCA_Restrooms 2_1_58","New","RCA_Restrooms 2 Space","Nonresidential","Unconditioned","NonResidential",13.18,285,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Restrooms 2_1_59","New","RCA_Restrooms 2 Space","Nonresidential","Unconditioned","NonResidential",37.09,285.001,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Restrooms 2_1_60","New","RCA_Restrooms 2 Space","Nonresidential","Unconditioned","NonResidential",137.00,14.9998,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Restrooms 2_1_61","New","RCA_Restrooms 2 Space","Nonresidential","Unconditioned","NonResidential",20.21,15.008,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Restrooms 2_1_62","New","RCA_Restrooms 2 Space","Nonresidential","Unconditioned","NonResidential",175.59,14.9989,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,113.52
+"RCA_Store 1_1_251","New","RCA_Store 1 Space","Nonresidential","DirectlyConditioned","NonResidential",146.39,14.9998,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,13.31
+"RCA_Store 1_1_252","New","RCA_Store 1 Space","Nonresidential","DirectlyConditioned","NonResidential",45.35,104.996,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+"RCA_Store 3_1_281","New","RCA_Store 3 Space","Nonresidential","DirectlyConditioned","NonResidential",72.63,15.0013,"Base_CZ12-NonresMetalFrameWallU055","MetalFrameWall",0.055,0.00
+
+
+
+Exterior Floor
+,,Space
+Name,Status,Name,Occupancy Classification,Conditioning Status,Building Type,Area,Cons Name,Construction Type,U Factor
+,,,,,,(ft2),,,(Btu/h-?F-ft2)
+"Collaboration Space 1_1_214","New","Collaboration Space 1 Space","Nonresidential","DirectlyConditioned","NonResidential",7.71,"Base_CZ12-NonresOtherFloorU071","OtherFloor",0.055,
+"RCA_Conference Room 4_1_319","New","RCA_Conference Room 4 Space","Nonresidential","DirectlyConditioned","NonResidential",24.12,"Base_CZ12-NonresOtherFloorU071","OtherFloor",0.055,
+
+
+
+Underground Floor
+,,Space
+Name,Status,Name,Occupancy Classification,Conditioning Status,Slab Type,Area,Exposed Perimeter,Cons Name,Slab Insulation Orientation,Overall 'F' Factor
+,,,,,(Heated/Unheated),(ft2),(ft),,,(Btu/h-?F-ft2)
+"B1_Changing 1_1_406","New","B1_Changing 1 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",240.81,0.00,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"B1_Gym 1_1_390","New","B1_Gym 1 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",629.13,44.50,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Conference Room 1_1_0","New","RCA_Conference Room 1 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",790.50,63.56,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Conference Room 5_1_413","New","RCA_Conference Room 5 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",726.49,57.59,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Conference Room 6_1_456","New","RCA_Conference Room 6 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",660.15,0.00,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Conference Room 6_1_462","New","RCA_Conference Room 6 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",187.79,0.00,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Corridor 1_1_503","New","RCA_Corridor 1 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",823.21,0.00,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Corridor 10_1_341","New","RCA_Corridor 10 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",283.48,24.79,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Corridor 11_1_375","New","RCA_Corridor 11 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",71.55,14.49,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Corridor 14_1_428","New","RCA_Corridor 14 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",1172.09,96.25,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Corridor 16_1_439","New","RCA_Corridor 16 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",490.94,49.06,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Corridor 2_1_114","New","RCA_Corridor 2 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",260.52,7.00,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Corridor 3_1_131","New","RCA_Corridor 3 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",1914.65,0.00,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Elec Room 1_1_497","New","RCA_Elec Room 1 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",65.42,16.19,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_IT Room 1_1_255","New","RCA_IT Room 1 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",105.03,0.00,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Lobby 1_1_328","New","RCA_Lobby 1 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",368.71,46.09,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Open Office 1_1_64","New","RCA_Open Office 1 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",785.78,52.39,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Open Office 2_1_70","New","RCA_Open Office 2 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",595.87,44.35,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Restrooms 1_1_486","New","RCA_Restrooms 1 Space","Nonresidential","Unconditioned","UnheatedSlab",654.06,9.96,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Store 4_1_355","New","RCA_Store 4 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",107.17,20.72,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Store 5_1_362","New","RCA_Store 5 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",339.72,15.65,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Open Office 3_1_77","New","RCA_Open Office 3 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",2028.56,0.00,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Open Office 7_1_473","New","RCA_Open Office 7 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",1122.03,0.00,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Open Office 7_1_478","New","RCA_Open Office 7 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",133.30,0.00,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Open Office 7_1_482","New","RCA_Open Office 7 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",30.85,0.00,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+"RCA_Store 7_1_467","New","RCA_Store 7 Space","Nonresidential","DirectlyConditioned","UnheatedSlab",197.93,0.00,"Base_CZ12-SlabOnOrBelowGradeF073","None",0.730
+
+
+
+Window
+,,,,Exterior Wall,Window
+Name,Status,Occupancy Classification,Conditioning Status,Name,Area,Azimuth,Product Type,Cert Method,Cons Name,Frame Type,Glazing Type,U Factor,SHGC,Visual Transmittance, U Factor Simulated,Inside Convection Coefficient
+,,,,,(ft2),(Deg),,,,,,(Btu/h-?F-ft2),,,(Btu/h-?F-ft2),(Btu/h-?F-ft2)
+"B1_Gym 1_2_0_1","New","Nonresidential","DirectlyConditioned","B1_Gym 1_1_386",114.29,14.9993,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"B1_Gym 1_2_0_9","New","Nonresidential","DirectlyConditioned","B1_Gym 1_1_392",64.20,15.0012,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"B1_Gym 1_2_0_13","New","Nonresidential","DirectlyConditioned","B1_Gym 1_1_394",60.86,15.0009,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"B1_Gym 1_2_0_17","New","Nonresidential","DirectlyConditioned","B1_Gym 1_1_396",28.72,15.0001,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Conference Room 1_2_0_16","New","Nonresidential","DirectlyConditioned","RCA_Conference Room 1_1_11",97.80,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Conference Room 1_2_0_8","New","Nonresidential","DirectlyConditioned","RCA_Conference Room 1_1_7",93.38,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Conference Room 1_2_0_12","New","Nonresidential","DirectlyConditioned","RCA_Conference Room 1_1_9",102.13,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Conference Room 5_2_0_6","New","Nonresidential","DirectlyConditioned","RCA_Conference Room 5_1_418",405.43,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 10_2_0_4","New","Nonresidential","DirectlyConditioned","RCA_Corridor 10_1_344",20.50,15.0002,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 10_2_0_6","New","Nonresidential","DirectlyConditioned","RCA_Corridor 10_1_344",9.68,15.0002,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 10_2_0_12","New","Nonresidential","DirectlyConditioned","RCA_Corridor 10_1_348",42.22,285,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 11_2_0_9","New","Nonresidential","DirectlyConditioned","RCA_Corridor 11_1_383",25.15,15.0033,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 11_2_0_12","New","Nonresidential","DirectlyConditioned","RCA_Corridor 11_1_384",48.74,14.9993,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 14_2_0_10","New","Nonresidential","DirectlyConditioned","RCA_Corridor 14_1_431",66.44,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 14_2_0_14","New","Nonresidential","DirectlyConditioned","RCA_Corridor 14_1_433",60.55,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 16_2_0_9","New","Nonresidential","DirectlyConditioned","RCA_Corridor 16_1_447",27.42,14.9988,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 16_2_0_12","New","Nonresidential","DirectlyConditioned","RCA_Corridor 16_1_448",22.85,15.0022,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 2_2_0_7","New","Nonresidential","DirectlyConditioned","RCA_Corridor 2_1_120",13.31,15.0005,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 2_2_0_9","New","Nonresidential","DirectlyConditioned","RCA_Corridor 2_1_120",3.31,15.0005,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34_Clerestory","- specify -","- specify -",0.340,0.220,0.001,0.34000,-99996.00000
+"RCA_Lobby 1_2_0_5","New","Nonresidential","DirectlyConditioned","RCA_Lobby 1_1_332",86.89,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Lobby 1_2_0_8","New","Nonresidential","DirectlyConditioned","RCA_Lobby 1_1_333",31.06,285,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Lobby 1_2_0_11","New","Nonresidential","DirectlyConditioned","RCA_Lobby 1_1_334",22.00,285,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Lobby 1_2_0_18","New","Nonresidential","DirectlyConditioned","RCA_Lobby 1_1_339",85.21,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Open Office 1_2_0_4","New","Nonresidential","DirectlyConditioned","RCA_Open Office 1_1_67",67.56,285,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Open Office 1_2_0_6","New","Nonresidential","DirectlyConditioned","RCA_Open Office 1_1_67",67.56,285,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Open Office 1_2_0_8","New","Nonresidential","DirectlyConditioned","RCA_Open Office 1_1_67",67.56,285,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Open Office 2_2_0_11","New","Nonresidential","DirectlyConditioned","RCA_Open Office 2_1_74",13.31,15,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Open Office 2_2_0_13","New","Nonresidential","DirectlyConditioned","RCA_Open Office 2_1_74",10.11,15,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Open Office 2_2_0_15","New","Nonresidential","DirectlyConditioned","RCA_Open Office 2_1_74",3.31,15,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34_Clerestory","- specify -","- specify -",0.340,0.220,0.001,0.34000,-99996.00000
+"RCA_Open Office 2_2_0_5","New","Nonresidential","DirectlyConditioned","RCA_Open Office 2_1_74",13.31,15,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Open Office 2_2_0_7","New","Nonresidential","DirectlyConditioned","RCA_Open Office 2_1_74",13.31,15,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Open Office 2_2_0_9","New","Nonresidential","DirectlyConditioned","RCA_Open Office 2_1_74",13.31,15,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Store 4_2_0_5","New","Nonresidential","DirectlyConditioned","RCA_Store 4_1_359",20.50,14.9999,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Store 5_2_0_4","New","Nonresidential","DirectlyConditioned","RCA_Store 5_1_365",13.31,14.9998,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Collaboration Space 1_2_0_9","New","Nonresidential","DirectlyConditioned","Collaboration Space 1_1_219",268.83,15.0001,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Huddle 1_2_0_7","New","Nonresidential","DirectlyConditioned","Huddle 1_1_22",13.31,14.9999,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Huddle 1_2_0_9","New","Nonresidential","DirectlyConditioned","Huddle 1_1_22",13.31,14.9999,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Huddle 2_2_1_5","New","Nonresidential","DirectlyConditioned","Huddle 2_1_244",45.62,14.9996,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Conference Room 2_2_0_6","New","Nonresidential","DirectlyConditioned","RCA_Conference Room 2_1_29",86.90,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Conference Room 2_2_1_5","New","Nonresidential","DirectlyConditioned","RCA_Conference Room 2_1_35",145.89,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Conference Room 2_2_2_4","New","Nonresidential","DirectlyConditioned","RCA_Conference Room 2_1_40",41.72,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Conference Room 2_2_3_6","New","Nonresidential","DirectlyConditioned","RCA_Conference Room 2_1_49",86.62,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Conference Room 4_2_0_11","New","Nonresidential","DirectlyConditioned","RCA_Conference Room 4_1_323",52.94,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Conference Room 4_2_0_13","New","Nonresidential","DirectlyConditioned","RCA_Conference Room 4_1_323",52.94,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Conference Room 4_2_0_7","New","Nonresidential","DirectlyConditioned","RCA_Conference Room 4_1_323",52.94,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Conference Room 4_2_0_9","New","Nonresidential","DirectlyConditioned","RCA_Conference Room 4_1_323",52.94,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Conference Room 4_2_0_17","New","Nonresidential","DirectlyConditioned","RCA_Conference Room 4_1_325",22.00,285,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 5_2_0_4","New","Nonresidential","DirectlyConditioned","RCA_Corridor 5_1_170",13.31,15.0005,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 7_2_0_8","New","Nonresidential","DirectlyConditioned","RCA_Corridor 7_1_196",173.85,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 7_2_0_11","New","Nonresidential","DirectlyConditioned","RCA_Corridor 7_1_197",10.67,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 7_2_0_13","New","Nonresidential","DirectlyConditioned","RCA_Corridor 7_1_197",7.11,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 7_2_0_15","New","Nonresidential","DirectlyConditioned","RCA_Corridor 7_1_197",10.67,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 7_2_0_17","New","Nonresidential","DirectlyConditioned","RCA_Corridor 7_1_197",7.11,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 7_2_0_19","New","Nonresidential","DirectlyConditioned","RCA_Corridor 7_1_197",164.37,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 7_2_0_21","New","Nonresidential","DirectlyConditioned","RCA_Corridor 7_1_197",10.50,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 7_2_0_23","New","Nonresidential","DirectlyConditioned","RCA_Corridor 7_1_197",10.50,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 7_2_0_25","New","Nonresidential","DirectlyConditioned","RCA_Corridor 7_1_197",105.98,195,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 9_2_0_11","New","Nonresidential","DirectlyConditioned","RCA_Corridor 9_1_315",52.94,194.999,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 9_2_0_13","New","Nonresidential","DirectlyConditioned","RCA_Corridor 9_1_315",52.94,194.999,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Corridor 9_2_0_15","New","Nonresidential","DirectlyConditioned","RCA_Corridor 9_1_315",52.94,194.999,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Kitchen Break Room 1_2_0_11","New","Nonresidential","DirectlyConditioned","RCA_Kitchen Break Room 1_1_232",7.78,15.0008,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Kitchen Break Room 1_2_0_13","New","Nonresidential","DirectlyConditioned","RCA_Kitchen Break Room 1_1_232",51.23,15.0008,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Kitchen Break Room 1_2_0_7","New","Nonresidential","DirectlyConditioned","RCA_Kitchen Break Room 1_1_232",45.05,15.0008,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Kitchen Break Room 1_2_0_9","New","Nonresidential","DirectlyConditioned","RCA_Kitchen Break Room 1_1_232",10.66,15.0008,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Open Office 4_2_0_6","New","Nonresidential","DirectlyConditioned","RCA_Open Office 4_1_93",402.51,285,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Open Office 5_2_0_11","New","Nonresidential","DirectlyConditioned","RCA_Open Office 5_1_100",13.31,15,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Open Office 5_2_0_5","New","Nonresidential","DirectlyConditioned","RCA_Open Office 5_1_100",13.31,15,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Open Office 5_2_0_7","New","Nonresidential","DirectlyConditioned","RCA_Open Office 5_1_100",13.31,15,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Open Office 5_2_0_9","New","Nonresidential","DirectlyConditioned","RCA_Open Office 5_1_100",13.31,15,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Restrooms 2_2_0_12","New","Nonresidential","Unconditioned","RCA_Restrooms 2_1_62",113.52,14.9989,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"RCA_Store 1_2_0_5","New","Nonresidential","DirectlyConditioned","RCA_Store 1_1_251",13.31,14.9998,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+
+
+
+Skylight
+,,Space,,Exterior Roof,,,Skylight
+Name,Status,Occupancy Classification,Conditioning Status,Name,Area,Tilt,Cons Name,Curb,Glazing,U Factor,SHGC,Visual Transmittance, U Factor Simulated,Inside Convection Coefficient
+,,,,,(ft2),(Deg),,,,(Btu/h-?F-ft2),,,(Btu/h-?F-ft2),(Btu/h-?F-ft2)
+"Class Room 1_2_0_10","New","Nonresidential","DirectlyConditioned","Class Room 1_1_291",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"Class Room 1_2_0_12","New","Nonresidential","DirectlyConditioned","Class Room 1_1_291",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"Class Room 1_2_0_14","New","Nonresidential","DirectlyConditioned","Class Room 1_1_291",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"Class Room 1_2_0_8","New","Nonresidential","DirectlyConditioned","Class Room 1_1_291",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"Collaboration Space 1_2_0_17","New","Nonresidential","DirectlyConditioned","Collaboration Space 1_1_225",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"Collaboration Space 1_2_0_19","New","Nonresidential","DirectlyConditioned","Collaboration Space 1_1_225",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Conference Room 3_2_0_11","New","Nonresidential","DirectlyConditioned","RCA_Conference Room 3_1_266",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Conference Room 3_2_0_13","New","Nonresidential","DirectlyConditioned","RCA_Conference Room 3_1_266",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Conference Room 3_2_0_15","New","Nonresidential","DirectlyConditioned","RCA_Conference Room 3_1_266",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Conference Room 3_2_0_17","New","Nonresidential","DirectlyConditioned","RCA_Conference Room 3_1_266",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Conference Room 3_2_0_7","New","Nonresidential","DirectlyConditioned","RCA_Conference Room 3_1_266",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Conference Room 3_2_0_9","New","Nonresidential","DirectlyConditioned","RCA_Conference Room 3_1_266",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Conference Room 3_2_1_6","New","Nonresidential","DirectlyConditioned","RCA_Conference Room 3_1_271",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Corridor 4_2_0_20","New","Nonresidential","DirectlyConditioned","RCA_Corridor 4_1_166",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Corridor 4_2_0_22","New","Nonresidential","DirectlyConditioned","RCA_Corridor 4_1_166",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Corridor 4_2_0_24","New","Nonresidential","DirectlyConditioned","RCA_Corridor 4_1_166",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Corridor 4_2_0_26","New","Nonresidential","DirectlyConditioned","RCA_Corridor 4_1_166",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Corridor 6_2_0_13","New","Nonresidential","DirectlyConditioned","RCA_Corridor 6_1_188",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Corridor 6_2_0_15","New","Nonresidential","DirectlyConditioned","RCA_Corridor 6_1_188",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Corridor 8_2_0_11","New","Nonresidential","DirectlyConditioned","RCA_Corridor 8_1_300",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Corridor 8_2_0_13","New","Nonresidential","DirectlyConditioned","RCA_Corridor 8_1_300",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Corridor 8_2_0_15","New","Nonresidential","DirectlyConditioned","RCA_Corridor 8_1_300",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Corridor 8_2_0_9","New","Nonresidential","DirectlyConditioned","RCA_Corridor 8_1_300",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Corridor 9_2_0_7","New","Nonresidential","DirectlyConditioned","RCA_Corridor 9_1_313",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Kitchen Break Room 1_2_0_16","New","Nonresidential","DirectlyConditioned","RCA_Kitchen Break Room 1_1_233",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Kitchen Break Room 1_2_0_18","New","Nonresidential","DirectlyConditioned","RCA_Kitchen Break Room 1_1_233",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Open Office 6_2_0_11","New","Nonresidential","DirectlyConditioned","RCA_Open Office 6_1_113",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Open Office 6_2_0_13","New","Nonresidential","DirectlyConditioned","RCA_Open Office 6_1_113",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Open Office 6_2_0_15","New","Nonresidential","DirectlyConditioned","RCA_Open Office 6_1_113",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Open Office 6_2_0_17","New","Nonresidential","DirectlyConditioned","RCA_Open Office 6_1_113",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Open Office 6_2_0_19","New","Nonresidential","DirectlyConditioned","RCA_Open Office 6_1_113",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Open Office 6_2_0_21","New","Nonresidential","DirectlyConditioned","RCA_Open Office 6_1_113",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Open Office 6_2_0_23","New","Nonresidential","DirectlyConditioned","RCA_Open Office 6_1_113",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Open Office 6_2_0_25","New","Nonresidential","DirectlyConditioned","RCA_Open Office 6_1_113",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Open Office 6_2_0_27","New","Nonresidential","DirectlyConditioned","RCA_Open Office 6_1_113",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Open Office 6_2_0_29","New","Nonresidential","DirectlyConditioned","RCA_Open Office 6_1_113",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Open Office 6_2_0_31","New","Nonresidential","DirectlyConditioned","RCA_Open Office 6_1_113",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Open Office 6_2_0_33","New","Nonresidential","DirectlyConditioned","RCA_Open Office 6_1_113",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Open Office 6_2_0_35","New","Nonresidential","DirectlyConditioned","RCA_Open Office 6_1_113",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Restrooms 2_2_0_15","New","Nonresidential","Unconditioned","RCA_Restrooms 2_1_63",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Restrooms 2_2_0_17","New","Nonresidential","Unconditioned","RCA_Restrooms 2_1_63",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+"RCA_Store 2_2_0_6","New","Nonresidential","DirectlyConditioned","RCA_Store 2_1_277",3.36,0,"Skylight","CurbMounted","Glass",0.300,0.25,0.5,0.30000,-99996.00000
+
+
+
+Interior Wall
+,,Space
+Name,Status,Name,Occupancy Classification,Conditioning Status,Area,Azimuth,Cons Name,Construction Type,U Factor
+,,,,,(ft2),(deg),,,(Btu/h-?F-ft2)
+"B1_Changing 1_1_408","New","B1_Changing 1 Space","Nonresidential","DirectlyConditioned",306.36,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"B1_Changing 1_1_409","New","B1_Changing 1 Space","Nonresidential","DirectlyConditioned",134.54,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"B1_Changing 1_1_410","New","B1_Changing 1 Space","Nonresidential","DirectlyConditioned",306.37,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"B1_Changing 1_1_411","New","B1_Changing 1 Space","Nonresidential","DirectlyConditioned",134.55,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"B1_Gym 1_1_398","New","B1_Gym 1 Space","Nonresidential","DirectlyConditioned",67.23,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"B1_Gym 1_1_401","New","B1_Gym 1 Space","Nonresidential","DirectlyConditioned",169.04,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"B1_Gym 1_1_402","New","B1_Gym 1 Space","Nonresidential","DirectlyConditioned",111.80,-99996,"NACM_Interior Wall","MetalFrameWall",0.141
+"B1_Gym 1_1_403","New","B1_Gym 1 Space","Nonresidential","DirectlyConditioned",176.65,-99996,"NACM_Interior Wall","MetalFrameWall",0.141
+"B1_Gym 1_1_404","New","B1_Gym 1 Space","Nonresidential","DirectlyConditioned",66.60,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"B1_Gym 1_1_405","New","B1_Gym 1 Space","Nonresidential","DirectlyConditioned",86.79,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 1_1_14","New","RCA_Conference Room 1 Space","Nonresidential","DirectlyConditioned",110.42,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 1_1_4","New","RCA_Conference Room 1 Space","Nonresidential","DirectlyConditioned",765.16,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 1_1_5","New","RCA_Conference Room 1 Space","Nonresidential","DirectlyConditioned",176.84,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 5_1_414","New","RCA_Conference Room 5 Space","Nonresidential","DirectlyConditioned",703.21,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 5_1_415","New","RCA_Conference Room 5 Space","Nonresidential","DirectlyConditioned",126.58,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 6_1_457","New","RCA_Conference Room 6 Space","Nonresidential","DirectlyConditioned",208.64,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 6_1_458","New","RCA_Conference Room 6 Space","Nonresidential","DirectlyConditioned",277.92,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 6_1_459","New","RCA_Conference Room 6 Space","Nonresidential","DirectlyConditioned",406.59,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 6_1_460","New","RCA_Conference Room 6 Space","Nonresidential","DirectlyConditioned",277.92,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 6_1_463","New","RCA_Conference Room 6 Space","Nonresidential","DirectlyConditioned",162.38,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 6_1_464","New","RCA_Conference Room 6 Space","Nonresidential","DirectlyConditioned",197.95,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 6_1_465","New","RCA_Conference Room 6 Space","Nonresidential","DirectlyConditioned",162.38,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 1_1_505","New","RCA_Corridor 1 Space","Nonresidential","DirectlyConditioned",72.97,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 1_1_506","New","RCA_Corridor 1 Space","Nonresidential","DirectlyConditioned",234.20,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 1_1_507","New","RCA_Corridor 1 Space","Nonresidential","DirectlyConditioned",497.40,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 1_1_508","New","RCA_Corridor 1 Space","Nonresidential","DirectlyConditioned",283.03,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 1_1_509","New","RCA_Corridor 1 Space","Nonresidential","DirectlyConditioned",91.58,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 1_1_510","New","RCA_Corridor 1 Space","Nonresidential","DirectlyConditioned",156.35,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 1_1_511","New","RCA_Corridor 1 Space","Nonresidential","DirectlyConditioned",70.14,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 1_1_513","New","RCA_Corridor 1 Space","Nonresidential","DirectlyConditioned",162.38,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 1_1_514","New","RCA_Corridor 1 Space","Nonresidential","DirectlyConditioned",208.64,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 1_1_518","New","RCA_Corridor 1 Space","Nonresidential","DirectlyConditioned",93.64,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 10_1_345","New","RCA_Corridor 10 Space","Nonresidential","DirectlyConditioned",123.19,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 10_1_346","New","RCA_Corridor 10 Space","Nonresidential","DirectlyConditioned",27.43,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 10_1_347","New","RCA_Corridor 10 Space","Nonresidential","DirectlyConditioned",196.25,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 10_1_349","New","RCA_Corridor 10 Space","Nonresidential","DirectlyConditioned",141.30,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 10_1_350","New","RCA_Corridor 10 Space","Nonresidential","DirectlyConditioned",129.82,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 10_1_353","New","RCA_Corridor 10 Space","Nonresidential","DirectlyConditioned",175.76,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 11_1_379","New","RCA_Corridor 11 Space","Nonresidential","DirectlyConditioned",74.51,-99996,"NACM_Interior Wall","MetalFrameWall",0.141
+"RCA_Corridor 11_1_380","New","RCA_Corridor 11 Space","Nonresidential","DirectlyConditioned",38.35,-99996,"NACM_Interior Wall","MetalFrameWall",0.141
+"RCA_Corridor 14_1_422","New","RCA_Corridor 14 Space","Nonresidential","DirectlyConditioned",99.77,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 14_1_435","New","RCA_Corridor 14 Space","Nonresidential","DirectlyConditioned",93.64,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 14_1_436","New","RCA_Corridor 14 Space","Nonresidential","DirectlyConditioned",20.30,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 14_1_437","New","RCA_Corridor 14 Space","Nonresidential","DirectlyConditioned",88.85,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 14_1_438","New","RCA_Corridor 14 Space","Nonresidential","DirectlyConditioned",428.67,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 16_1_444","New","RCA_Corridor 16 Space","Nonresidential","DirectlyConditioned",251.25,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 16_1_451","New","RCA_Corridor 16 Space","Nonresidential","DirectlyConditioned",110.70,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 16_1_452","New","RCA_Corridor 16 Space","Nonresidential","DirectlyConditioned",101.16,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 2_1_115","New","RCA_Corridor 2 Space","Nonresidential","DirectlyConditioned",371.93,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 2_1_116","New","RCA_Corridor 2 Space","Nonresidential","DirectlyConditioned",114.99,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 2_1_118","New","RCA_Corridor 2 Space","Nonresidential","DirectlyConditioned",311.17,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 2_1_119","New","RCA_Corridor 2 Space","Nonresidential","DirectlyConditioned",175.76,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 3_1_128","New","RCA_Corridor 3 Space","Nonresidential","DirectlyConditioned",69.11,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 3_1_130","New","RCA_Corridor 3 Space","Nonresidential","DirectlyConditioned",316.66,-99996,"NACM_Interior Wall","MetalFrameWall",0.141
+"RCA_Corridor 3_1_132","New","RCA_Corridor 3 Space","Nonresidential","DirectlyConditioned",223.49,-99996,"NACM_Interior Wall","MetalFrameWall",0.141
+"RCA_Corridor 3_1_140","New","RCA_Corridor 3 Space","Nonresidential","DirectlyConditioned",330.19,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 3_1_141","New","RCA_Corridor 3 Space","Nonresidential","DirectlyConditioned",76.40,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 3_1_142","New","RCA_Corridor 3 Space","Nonresidential","DirectlyConditioned",69.11,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 3_1_143","New","RCA_Corridor 3 Space","Nonresidential","DirectlyConditioned",472.37,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 3_1_146","New","RCA_Corridor 3 Space","Nonresidential","DirectlyConditioned",472.37,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_IT Room 1_1_256","New","RCA_IT Room 1 Space","Nonresidential","DirectlyConditioned",156.35,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_IT Room 1_1_257","New","RCA_IT Room 1 Space","Nonresidential","DirectlyConditioned",114.99,-99996,"NACM_Interior Wall","MetalFrameWall",0.141
+"RCA_Lobby 1_1_335","New","RCA_Lobby 1 Space","Nonresidential","DirectlyConditioned",196.25,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Lobby 1_1_336","New","RCA_Lobby 1 Space","Nonresidential","DirectlyConditioned",90.50,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Open Office 1_1_65","New","RCA_Open Office 1 Space","Nonresidential","DirectlyConditioned",685.37,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Open Office 2_1_72","New","RCA_Open Office 2 Space","Nonresidential","DirectlyConditioned",580.31,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Restrooms 1_1_491","New","RCA_Restrooms 1 Space","Nonresidential","Unconditioned",323.49,-99996,"NACM_Interior Wall","MetalFrameWall",0.141
+"B1_Reception 1_1_205","New","B1_Reception 1 Space","Nonresidential","DirectlyConditioned",202.17,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"B1_Reception 1_1_207","New","B1_Reception 1 Space","Nonresidential","DirectlyConditioned",202.17,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"B1_Reception 1_1_208","New","B1_Reception 1 Space","Nonresidential","DirectlyConditioned",29.17,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"B1_Reception 1_1_209","New","B1_Reception 1 Space","Nonresidential","DirectlyConditioned",97.40,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"Class Room 1_1_285","New","Class Room 1 Space","Nonresidential","DirectlyConditioned",380.70,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"Class Room 1_1_287","New","Class Room 1 Space","Nonresidential","DirectlyConditioned",496.44,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"Class Room 1_1_289","New","Class Room 1 Space","Nonresidential","DirectlyConditioned",347.01,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"Class Room 1_1_290","New","Class Room 1 Space","Nonresidential","DirectlyConditioned",496.44,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"Collaboration Space 1_1_216","New","Collaboration Space 1 Space","Nonresidential","DirectlyConditioned",66.75,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"Collaboration Space 1_1_217","New","Collaboration Space 1 Space","Nonresidential","DirectlyConditioned",139.77,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"Collaboration Space 1_1_218","New","Collaboration Space 1 Space","Nonresidential","DirectlyConditioned",460.83,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"Collaboration Space 1_1_221","New","Collaboration Space 1 Space","Nonresidential","DirectlyConditioned",202.47,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"Collaboration Space 1_1_222","New","Collaboration Space 1 Space","Nonresidential","DirectlyConditioned",147.07,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"Huddle 1_1_20","New","Huddle 1 Space","Nonresidential","DirectlyConditioned",183.75,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"Huddle 1_1_23","New","Huddle 1 Space","Nonresidential","DirectlyConditioned",164.57,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"Huddle 1_1_24","New","Huddle 1 Space","Nonresidential","DirectlyConditioned",139.82,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 2_1_28","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned",135.84,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 2_1_36","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned",301.82,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 2_1_43","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned",133.53,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 2_1_44","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned",143.32,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 2_1_48","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned",135.44,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 3_1_263","New","RCA_Conference Room 3 Space","Nonresidential","DirectlyConditioned",260.22,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 3_1_264","New","RCA_Conference Room 3 Space","Nonresidential","DirectlyConditioned",195.35,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 3_1_265","New","RCA_Conference Room 3 Space","Nonresidential","DirectlyConditioned",260.22,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 3_1_268","New","RCA_Conference Room 3 Space","Nonresidential","DirectlyConditioned",152.04,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 3_1_269","New","RCA_Conference Room 3 Space","Nonresidential","DirectlyConditioned",152.04,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 3_1_270","New","RCA_Conference Room 3 Space","Nonresidential","DirectlyConditioned",185.34,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 4_1_320","New","RCA_Conference Room 4 Space","Nonresidential","DirectlyConditioned",84.74,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 4_1_321","New","RCA_Conference Room 4 Space","Nonresidential","DirectlyConditioned",68.32,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Conference Room 4_1_326","New","RCA_Conference Room 4 Space","Nonresidential","DirectlyConditioned",183.75,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 4_1_148","New","RCA_Corridor 4 Space","Nonresidential","DirectlyConditioned",146.39,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 4_1_149","New","RCA_Corridor 4 Space","Nonresidential","DirectlyConditioned",65.67,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 4_1_151","New","RCA_Corridor 4 Space","Nonresidential","DirectlyConditioned",152.04,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 4_1_152","New","RCA_Corridor 4 Space","Nonresidential","DirectlyConditioned",195.35,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 4_1_156","New","RCA_Corridor 4 Space","Nonresidential","DirectlyConditioned",87.67,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 4_1_162","New","RCA_Corridor 4 Space","Nonresidential","DirectlyConditioned",219.28,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 4_1_163","New","RCA_Corridor 4 Space","Nonresidential","DirectlyConditioned",465.72,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 4_1_164","New","RCA_Corridor 4 Space","Nonresidential","DirectlyConditioned",265.01,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 4_1_165","New","RCA_Corridor 4 Space","Nonresidential","DirectlyConditioned",85.75,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 5_1_169","New","RCA_Corridor 5 Space","Nonresidential","DirectlyConditioned",164.57,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 5_1_171","New","RCA_Corridor 5 Space","Nonresidential","DirectlyConditioned",348.24,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 5_1_172","New","RCA_Corridor 5 Space","Nonresidential","DirectlyConditioned",107.67,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 5_1_174","New","RCA_Corridor 5 Space","Nonresidential","DirectlyConditioned",291.35,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 6_1_178","New","RCA_Corridor 6 Space","Nonresidential","DirectlyConditioned",99.29,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 6_1_179","New","RCA_Corridor 6 Space","Nonresidential","DirectlyConditioned",347.01,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 6_1_184","New","RCA_Corridor 6 Space","Nonresidential","DirectlyConditioned",332.80,-99996,"NACM_Interior Wall","MetalFrameWall",0.141
+"RCA_Corridor 6_1_185","New","RCA_Corridor 6 Space","Nonresidential","DirectlyConditioned",195.79,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 6_1_187","New","RCA_Corridor 6 Space","Nonresidential","DirectlyConditioned",501.03,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 7_1_192","New","RCA_Corridor 7 Space","Nonresidential","DirectlyConditioned",197.07,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 7_1_193","New","RCA_Corridor 7 Space","Nonresidential","DirectlyConditioned",98.41,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 7_1_194","New","RCA_Corridor 7 Space","Nonresidential","DirectlyConditioned",17.00,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 7_1_200","New","RCA_Corridor 7 Space","Nonresidential","DirectlyConditioned",72.63,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 8_1_295","New","RCA_Corridor 8 Space","Nonresidential","DirectlyConditioned",130.73,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 8_1_297","New","RCA_Corridor 8 Space","Nonresidential","DirectlyConditioned",363.60,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Corridor 8_1_298","New","RCA_Corridor 8 Space","Nonresidential","DirectlyConditioned",99.25,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_IT Room 2_1_370","New","RCA_IT Room 2 Space","Nonresidential","DirectlyConditioned",146.39,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_IT Room 2_1_371","New","RCA_IT Room 2 Space","Nonresidential","DirectlyConditioned",107.67,-99996,"NACM_Interior Wall","MetalFrameWall",0.141
+"RCA_Kitchen Break Room 1_1_231","New","RCA_Kitchen Break Room 1 Space","Nonresidential","DirectlyConditioned",460.84,-99996,"NACM_Interior Wall","MetalFrameWall",0.141
+"RCA_Open Office 4_1_91","New","RCA_Open Office 4 Space","Nonresidential","DirectlyConditioned",757.07,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Open Office 5_1_98","New","RCA_Open Office 5 Space","Nonresidential","DirectlyConditioned",429.21,-99996,"NACM_Interior Wall","UNDEFINED",0.141
+"RCA_Restrooms 2_1_55","New","RCA_Restrooms 2 Space","Nonresidential","Unconditioned",302.89,-99996,"NACM_Interior Wall","MetalFrameWall",0.141
+
+
+
+Interior Floor
+,,Space
+Name,Status,Name,Occupancy Classification,Conditioning Status,Area,Cons Name,Construction Type,U Factor
+,,,,,(ft2),,,(Btu/h-?F-ft2)
+"B1_Reception 1_1_203","New","B1_Reception 1 Space","Nonresidential","DirectlyConditioned",70.19,"NACM_Drop Ceiling","UNDEFINED",0.292
+"B1_Reception 1_1_204","New","B1_Reception 1 Space","Nonresidential","DirectlyConditioned",65.15,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Class Room 1_1_284","New","Class Room 1 Space","Nonresidential","DirectlyConditioned",1122.03,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Collaboration Space 1_1_211","New","Collaboration Space 1 Space","Nonresidential","DirectlyConditioned",193.84,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Collaboration Space 1_1_212","New","Collaboration Space 1 Space","Nonresidential","DirectlyConditioned",327.34,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Collaboration Space 1_1_213","New","Collaboration Space 1 Space","Nonresidential","DirectlyConditioned",135.88,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Collaboration Space 1_1_215","New","Collaboration Space 1 Space","Nonresidential","DirectlyConditioned",227.24,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Huddle 1_1_16","New","Huddle 1 Space","Nonresidential","DirectlyConditioned",125.17,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Huddle 1_1_18","New","Huddle 1 Space","Nonresidential","DirectlyConditioned",122.51,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Huddle 1_1_19","New","Huddle 1 Space","Nonresidential","DirectlyConditioned",107.17,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Huddle 2_1_234","New","Huddle 2 Space","Nonresidential","DirectlyConditioned",57.57,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Huddle 2_1_236","New","Huddle 2 Space","Nonresidential","DirectlyConditioned",65.42,"NACM_Drop Ceiling","UNDEFINED",0.292
+"Huddle 2_1_241","New","Huddle 2 Space","Nonresidential","DirectlyConditioned",169.33,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Conference Room 2_1_26","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned",149.89,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Conference Room 2_1_31","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned",333.03,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Conference Room 2_1_38","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned",158.14,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Conference Room 2_1_46","New","RCA_Conference Room 2 Space","Nonresidential","DirectlyConditioned",149.45,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Conference Room 3_1_261","New","RCA_Conference Room 3 Space","Nonresidential","DirectlyConditioned",660.15,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Conference Room 3_1_267","New","RCA_Conference Room 3 Space","Nonresidential","DirectlyConditioned",187.79,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Conference Room 4_1_317","New","RCA_Conference Room 4 Space","Nonresidential","DirectlyConditioned",337.02,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Corridor 4_1_147","New","RCA_Corridor 4 Space","Nonresidential","DirectlyConditioned",823.21,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Corridor 5_1_167","New","RCA_Corridor 5 Space","Nonresidential","DirectlyConditioned",260.52,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Corridor 6_1_176","New","RCA_Corridor 6 Space","Nonresidential","DirectlyConditioned",485.02,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Corridor 7_1_189","New","RCA_Corridor 7 Space","Nonresidential","DirectlyConditioned",384.69,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Corridor 7_1_190","New","RCA_Corridor 7 Space","Nonresidential","DirectlyConditioned",65.78,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Corridor 8_1_294","New","RCA_Corridor 8 Space","Nonresidential","DirectlyConditioned",535.15,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Corridor 8_1_296","New","RCA_Corridor 8 Space","Nonresidential","DirectlyConditioned",409.22,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Corridor 9_1_310","New","RCA_Corridor 9 Space","Nonresidential","DirectlyConditioned",449.81,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_IT Room 2_1_369","New","RCA_IT Room 2 Space","Nonresidential","DirectlyConditioned",105.03,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Kitchen Break Room 1_1_226","New","RCA_Kitchen Break Room 1 Space","Nonresidential","DirectlyConditioned",243.24,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Kitchen Break Room 1_1_227","New","RCA_Kitchen Break Room 1 Space","Nonresidential","DirectlyConditioned",220.43,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Kitchen Break Room 1_1_228","New","RCA_Kitchen Break Room 1 Space","Nonresidential","DirectlyConditioned",13.56,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Open Office 4_1_88","New","RCA_Open Office 4 Space","Nonresidential","DirectlyConditioned",785.78,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Open Office 4_1_90","New","RCA_Open Office 4 Space","Nonresidential","DirectlyConditioned",141.24,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Open Office 5_1_96","New","RCA_Open Office 5 Space","Nonresidential","DirectlyConditioned",470.69,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Open Office 6_1_103","New","RCA_Open Office 6 Space","Nonresidential","DirectlyConditioned",2028.56,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Open Office 6_1_104","New","RCA_Open Office 6 Space","Nonresidential","DirectlyConditioned",19.74,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Restrooms 2_1_51","New","RCA_Restrooms 2 Space","Nonresidential","Unconditioned",654.06,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Restrooms 2_1_52","New","RCA_Restrooms 2 Space","Nonresidential","Unconditioned",31.62,"NACM_Drop Ceiling","WoodFramingAndOtherRoof",0.292
+"RCA_Restrooms 2_1_53","New","RCA_Restrooms 2 Space","Nonresidential","Unconditioned",125.50,"NACM_Drop Ceiling","WoodFramingAndOtherRoof",0.292
+"RCA_Store 1_1_247","New","RCA_Store 1 Space","Nonresidential","DirectlyConditioned",339.72,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Store 2_1_272","New","RCA_Store 2 Space","Nonresidential","DirectlyConditioned",197.93,"NACM_Drop Ceiling","UNDEFINED",0.292
+"RCA_Store 3_1_278","New","RCA_Store 3 Space","Nonresidential","DirectlyConditioned",133.30,"NACM_Drop Ceiling","UNDEFINED",0.292
+
+
+
+Construction Assembly
+Name,Surface Type,Material Layer 1 (CodeItem),Material Layer 2 (CodeItem),Material Layer 3 (CodeItem),Material Layer 4 (CodeItem),Material Layer 5 (CodeItem), Material Layer 6 (CodeItem), Material Layer 7 (CodeItem), Material Layer 8 (CodeItem), Material Layer 9 (CodeItem), Material Layer 10 (CodeItem)
+"Base_CZ12-SlabOnOrBelowGradeF073","UndergroundFloor","","","","","","","","","",""
+"Base_CZ12-NonresMetalFrameWallU055","ExteriorWall","","","","","","","","","",""
+"NACM_Interior Wall","InteriorWall","","","","","","","","","",""
+"Base_CZ12-FlatNonresWoodFramingAndOtherRoofU028","Roof","","","","","","","","","",""
+"Base_CZ12-NonresOtherFloorU071","ExteriorFloor","","","","","","","","","",""
+"NACM_Drop Ceiling","InteriorFloor","","","","","","","","","",""
+
+
+
+Construction Materials
+Name,Code Item,Type,R-value,Thickness,Frame Type,Frame Configuration,Frame Depth, Frame Cavity Insulation(for composite material)
+,,,(?F-ft2-h/Btuh),(in),,,,(?F-ft2-h/Btuh)
+"Stucco - 7/8 in.","UNDEFINED","Plastering Materials",0.180,0.880,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation R14.60","UNDEFINED","Insulation Board",14.600,2.330,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation R1.41","UNDEFINED","Insulation Board",1.410,0.225,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation R0.02","UNDEFINED","Insulation Board",0.020,0.003,"- specify -","- specify -","- specify -",0.000
+"Air - Metal Wall Framing - 16 or 24 in. OC","UNDEFINED","Air",0.650,5.500,"- specify -","- specify -","- specify -",0.000
+"Gypsum Board - 1/2 in.","UNDEFINED","Bldg Board and Siding",0.450,0.500,"- specify -","- specify -","- specify -",0.000
+"Gypsum Board - 5/8 in.","UNDEFINED","Bldg Board and Siding",0.560,0.630,"- specify -","- specify -","- specify -",0.000
+"Metal Standing Seam - 1/16 in.","UNDEFINED","Roofing",0.000,0.063,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation R34.93","UNDEFINED","Insulation Board",34.930,5.575,"- specify -","- specify -","- specify -",0.000
+"Acoustic Tile - 3/4 in.","UNDEFINED","Finish Materials",1.890,0.750,"- specify -","- specify -","- specify -",0.000
+"Metal Deck - 1/16 in.","UNDEFINED","Bldg Board and Siding",0.000,0.063,"- specify -","- specify -","- specify -",0.000
+"Carpet - 3/4 in.","UNDEFINED","Finish Materials",2.380,0.750,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation Int wall","UNDEFINED","Insulation Board",4.500,0.718,"- specify -","- specify -","- specify -",0.000

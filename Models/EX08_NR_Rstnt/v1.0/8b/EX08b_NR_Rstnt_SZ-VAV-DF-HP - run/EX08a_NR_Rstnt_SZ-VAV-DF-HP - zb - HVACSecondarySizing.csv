@@ -1,0 +1,31 @@
+; Tables for Std model AutoHardSize capacity look-up rules
+TABLE EX08a_NR_Rstnt_SZ-VAV-DF-HP25TrmlUnit
+PropName,BaseName,Type,System,Zone,PriAirFlowMax,PriAirFlowMin,HtgAirFlowMax,ReheatCtrlMthd
+;,,,,,(cfm),(cfm),( cfm)
+,"BaseVAVNoReheatTrmlUnit","VAVNoReheatBox","BaseAirSys7or3a","Dining Thermal Zone",-99996.000,618.978,-99996.000,""
+,"BaseUnctrl TrmlUnit","VAVNoReheatBox","BaseAirSys13","Kitchen Thermal Zone",-99996.000,1700.000,-99996.000,""
+ENDTABLE
+TABLE EX08a_NR_Rstnt_SZ-VAV-DF-HP25CoilClg
+PropName,BaseName,Type,System,Zone,CapTotNetRtd,CapTotGrossRtd,FluidFlowRtDsgn,DXSEER,DXEER,NumClgStages
+;,,,,,(Btu/hr),(Btu/hr),( gpm),
+,"BaseSys7or3a CoilClg","DirectExpansion","BaseAirSys7or3a","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys13 CoilClg","DirectExpansion","BaseAirSys13","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+ENDTABLE
+TABLE EX08a_NR_Rstnt_SZ-VAV-DF-HP25CoilHtg
+PropName,BaseName,Type,System,Zone,CapTotNetRtd,CapTotGrossRtd,FluidFlowRtDsgn,FurnAFUE,FurnThrmlEff,
+;,,,,,(Btu/hr),(Btu/hr),( gpm),
+,"BaseSys7or3a CoilHtg","Furnace","BaseAirSys7or3a","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,0.800
+,"BaseSys13 CoilHtg","Furnace","BaseAirSys13","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,0.800
+ENDTABLE
+TABLE EX08a_NR_Rstnt_SZ-VAV-DF-HP25Fan
+PropName,BaseName,CtrlMthd,System,Zone,FlowCap,FlowMin,FlowEff,ModelingMthd,TotStaticPress,MtrBHP,MtrHP,MtrPos,MtrEff,PwrIdx
+;,,,,,(cfm),(cfm),,,(inH2O),(hp),(hp),,(W/cfm)
+,"BaseSys7or3a SupFan","VariableSpeedDrive","BaseAirSys7or3a","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys13 SupFan","VariableSpeedDrive","BaseAirSys13","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+ENDTABLE
+TABLE EX08a_NR_Rstnt_SZ-VAV-DF-HP25OACtrl
+PropName,BaseName,EconoCtrlMthd,System,EconoIntegration
+;
+,"BaseSys7or3a OACtrl","NoEconomizer","BaseAirSys7or3a","UNDEFINED"
+,"BaseSys13 OACtrl","NoEconomizer","BaseAirSys13","UNDEFINED"
+ENDTABLE

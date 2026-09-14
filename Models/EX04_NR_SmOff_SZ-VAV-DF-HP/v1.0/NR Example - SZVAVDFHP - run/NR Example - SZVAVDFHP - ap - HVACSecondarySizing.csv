@@ -1,0 +1,68 @@
+; Tables for Std model AutoHardSize capacity look-up rules
+TABLE NR Example - SZVAVDFHP25TrmlUnit
+PropName,BaseName,Type,System,Zone,PriAirFlowMax,PriAirFlowMin,HtgAirFlowMax,ReheatCtrlMthd
+;,,,,,(cfm),(cfm),( cfm)
+,"CoreZn TU","VAVNoReheatBox","SZHPAirSys 1","Zn Sys 1 Reception",1363.000,681.500,-99996.000,""
+,"CoreZn TU 2","VAVNoReheatBox","SZHPAirSys 2","Zn Sys 2 Conference",1449.000,724.500,-99996.000,""
+,"CoreZn TU 3","VAVNoReheatBox","SZHPAirSys 3","Zn Sys 3 Break Room",1473.000,736.500,-99996.000,""
+,"CoreZn TU 4","VAVNoReheatBox","SZHPAirSys 4","Zn Sys 4 Open Office",5603.000,2801.500,-99996.000,""
+,"CoreZn TU 5","VAVNoReheatBox","SZHPAirSys 5","Zn Sys 5 Conference-Office",621.000,310.500,-99996.000,""
+,"CoreZn TU 6","VAVNoReheatBox","SZHPAirSys 6","Zn Sys 6 Conference-Support",1567.000,783.500,-99996.000,""
+,"CoreZn TU 8","Uncontrolled","PSZ CRAC","Zn Sys 8 IT and Elec",1010.390,-99996.000,-99996.000,""
+,"CoreZn TU 9","VAVNoReheatBox","SZHPAirSys 7","Zn Sys 9 Library",2173.000,1086.500,-99996.000,""
+ENDTABLE
+TABLE NR Example - SZVAVDFHP25CoilClg
+PropName,BaseName,Type,System,Zone,CapTotNetRtd,CapTotGrossRtd,FluidFlowRtDsgn,DXSEER,DXEER,NumClgStages
+;,,,,,(Btu/hr),(Btu/hr),( gpm),
+,"CoreZnCoolingCoil 1","DirectExpansion","SZHPAirSys 1","n/a",51545.000,53777.445,-99996.00000,13.958,12.500,1
+,"CoreZnCoolingCoil 2","DirectExpansion","SZHPAirSys 2","n/a",59153.200,61715.161,-99996.00000,13.958,12.500,1
+,"CoreZnCoolingCoil 3","DirectExpansion","SZHPAirSys 3","n/a",46008.100,48000.739,-99996.00000,13.958,12.500,1
+,"CoreZnCoolingCoil 4","DirectExpansion","SZHPAirSys 4","n/a",202499.000,211269.354,-99996.00000,-99996.000,10.400,2
+,"CoreZnCoolingCoil 5","DirectExpansion","SZHPAirSys 5","n/a",22534.600,23510.587,-99996.00000,13.958,12.500,1
+,"CoreZnCoolingCoil 6","DirectExpansion","SZHPAirSys 6","n/a",47990.300,50068.789,-99996.00000,13.958,12.500,1
+,"CoreZnCoolingCoil 8","DirectExpansion","PSZ CRAC","n/a",29239.000,31183.840,-99996.00000,-99996.000,-99996.000,1
+,"CoreZnCoolingCoil 9","DirectExpansion","SZHPAirSys 7","n/a",72924.400,76082.800,-99996.00000,-99996.000,10.800,2
+ENDTABLE
+TABLE NR Example - SZVAVDFHP25CoilHtg
+PropName,BaseName,Type,System,Zone,CapTotNetRtd,CapTotGrossRtd,FluidFlowRtDsgn,FurnAFUE,FurnThrmlEff,
+;,,,,,(Btu/hr),(Btu/hr),( gpm),
+,"CoreZnHeatingCoil","HeatPump","SZHPAirSys 1","n/a",53687.000,51454.555,-99996.00000,-99996.000,-99996.000
+,"CoreZnSupplyHeatingCoil 1","Furnace","SZHPAirSys 1","n/a",33009.000,33009.000,-99996.00000,0.810,0.815
+,"CoreZnHeatingCoil 2","HeatPump","SZHPAirSys 2","n/a",53687.000,51125.039,-99996.00000,-99996.000,-99996.000
+,"CoreZnSupplyHeatingCoil 2","Furnace","SZHPAirSys 2","n/a",43690.000,43690.000,-99996.00000,0.810,0.815
+,"CoreZnHeatingCoil 3","HeatPump","SZHPAirSys 3","n/a",45356.000,43363.361,-99996.00000,-99996.000,-99996.000
+,"CoreZnSupplyHeatingCoil 3","Furnace","SZHPAirSys 3","n/a",53059.000,53059.000,-99996.00000,0.810,0.815
+,"CoreZnHeatingCoil 4","HeatPump","SZHPAirSys 4","n/a",210212.000,201441.646,-99996.00000,-99996.000,-99996.000
+,"CoreZnSupplyHeatingCoil 4","Furnace","SZHPAirSys 4","n/a",132016.000,132016.000,-99996.00000,0.810,0.815
+,"CoreZnHeatingCoil 5","HeatPump","SZHPAirSys 5","n/a",23500.000,22524.013,-99996.00000,-99996.000,-99996.000
+,"CoreZnSupplyHeatingCoil 5","Furnace","SZHPAirSys 5","n/a",15662.000,15662.000,-99996.00000,0.810,0.815
+,"CoreZnHeatingCoil 6","HeatPump","SZHPAirSys 6","n/a",72000.000,69921.511,-99996.00000,-99996.000,-99996.000
+,"CoreZnSupplyHeatingCoil 6","Furnace","SZHPAirSys 6","n/a",58750.000,58750.000,-99996.00000,0.810,0.815
+,"CoreZnHeatingCoil 9","HeatPump","SZHPAirSys 7","n/a",54000.000,50841.600,-99996.00000,-99996.000,-99996.000
+,"CoreZnSupplyHeatingCoil 9","Furnace","SZHPAirSys 7","n/a",54000.000,54000.000,-99996.00000,0.810,0.815
+ENDTABLE
+TABLE NR Example - SZVAVDFHP25Fan
+PropName,BaseName,CtrlMthd,System,Zone,FlowCap,FlowMin,FlowEff,ModelingMthd,TotStaticPress,MtrBHP,MtrHP,MtrPos,MtrEff,PwrIdx
+;,,,,,(cfm),(cfm),,,(inH2O),(hp),(hp),,(W/cfm)
+,"CoreZnSupplyFan","VariableSpeedDrive","SZHPAirSys 1","n/a",1362.850,681.425,0.650,"PowerPerUnitFlow",3.551,1.173,1.100,"InAirStream",0.665,0.9646
+,"CoreZnSupplyFan 2","VariableSpeedDrive","SZHPAirSys 2","n/a",1448.840,724.420,0.650,"PowerPerUnitFlow",3.551,1.247,1.400,"InAirStream",0.665,0.9646
+,"CoreZnSupplyFan 3","VariableSpeedDrive","SZHPAirSys 3","n/a",1472.840,736.420,0.650,"PowerPerUnitFlow",3.551,1.268,1.500,"InAirStream",0.665,0.9646
+,"CoreZnSupplyFan 4","VariableSpeedDrive","SZHPAirSys 4","n/a",5602.380,2801.190,0.650,"PowerPerUnitFlow",3.764,5.113,5.300,"InAirStream",0.705,0.9646
+,"CoreZnSupplyFan 5","VariableSpeedDrive","SZHPAirSys 5","n/a",620.930,310.465,0.650,"PowerPerUnitFlow",3.510,0.528,0.600,"InAirStream",0.658,0.9646
+,"CoreZnSupplyFan 6","VariableSpeedDrive","SZHPAirSys 6","n/a",1566.830,783.415,0.650,"PowerPerUnitFlow",3.751,1.425,1.600,"InAirStream",0.665,1.0191
+,"CoreZnSupplyFan 8","ConstantVolume","PSZ CRAC","n/a",1010.390,-99996.000,0.556,"StaticPressure",2.740,0.785,0.800,"InAirStream",0.658,0.8804
+,"CoreZnSupplyFan 9","VariableSpeedDrive","SZHPAirSys 7","n/a",2172.760,1086.380,0.650,"PowerPerUnitFlow",3.674,1.935,2.200,"InAirStream",0.688,0.9646
+,"Exhaust Fan","ConstantVolume","ZoneSys-Exhaust","UNDEFINED",250.000,-99996.000,0.650,"PowerPerUnitFlow",3.918,0.238,0.300,"InAirStream",0.855,0.8284
+ENDTABLE
+TABLE NR Example - SZVAVDFHP25OACtrl
+PropName,BaseName,EconoCtrlMthd,System,EconoIntegration
+;
+,"CoreZnOAControl","FixedDryBulb","SZHPAirSys 1","NonIntegrated"
+,"CoreZnOAControl 2","FixedDryBulb","SZHPAirSys 2","NonIntegrated"
+,"CoreZnOAControl 3","FixedDryBulb","SZHPAirSys 3","NonIntegrated"
+,"CoreZnOAControl 4","FixedDryBulb","SZHPAirSys 4","NonIntegrated"
+,"CoreZnOAControl 5","NoEconomizer","SZHPAirSys 5","UNDEFINED"
+,"CoreZnOAControl 6","FixedDryBulb","SZHPAirSys 6","NonIntegrated"
+,"CoreZnOAControl 8","FixedDryBulb","PSZ CRAC","NonIntegrated"
+,"CoreZnOAControl 9","FixedDryBulb","SZHPAirSys 7","NonIntegrated"
+ENDTABLE

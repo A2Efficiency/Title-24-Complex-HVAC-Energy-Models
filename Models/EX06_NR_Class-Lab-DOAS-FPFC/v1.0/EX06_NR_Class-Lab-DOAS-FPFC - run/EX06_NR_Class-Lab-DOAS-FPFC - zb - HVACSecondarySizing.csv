@@ -1,0 +1,144 @@
+; Tables for Std model AutoHardSize capacity look-up rules
+TABLE EX06_NR_Class-Lab-DOAS-FPFC25TrmlUnit
+PropName,BaseName,Type,System,Zone,PriAirFlowMax,PriAirFlowMin,HtgAirFlowMax,ReheatCtrlMthd
+;,,,,,(cfm),(cfm),( cfm)
+,"BaseVAVNoReheatTrmlUnit","VAVNoReheatBox","BaseAirSys7or3b","L2_ZN02_Core Classroom",-99996.000,655.996,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-2","VAVNoReheatBox","BaseAirSys7or3b-2","L2_ZN07_Huddle Area",-99996.000,600.000,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-3","VAVNoReheatBox","BaseAirSys7or3b-3","L2_ZN04_Huddle Offices",-99996.000,250.000,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-4","VAVNoReheatBox","BaseAirSys7or3b-4","L2_ZN07 North Conf",-99996.000,400.000,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-5","VAVNoReheatBox","BaseAirSys7or3b-5","L2_ZN01_Core Conf Room",-99996.000,429.689,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-6","VAVNoReheatBox","BaseAirSys7or3b-6","L2_ZN06 Corner Conf",-99996.000,250.000,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-7","VAVNoReheatBox","BaseAirSys7or3b-7","L1_ZN09 N Conf Room",-99996.000,300.000,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-8","VAVNoReheatBox","BaseAirSys7or3b-8","L2_ZN13 Core Conf Room",-99996.000,179.689,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-9","VAVNoReheatBox","BaseAirSys7or3b-9","L1_ZN08 NE Corridor",-99996.000,341.818,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-10","VAVNoReheatBox","BaseAirSys7or3b-10","L1_ZN12 SE Corridor Corner",-99996.000,73.642,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-11","VAVNoReheatBox","BaseAirSys7or3b-11","L1_ZN04_South Corridor",-99996.000,106.112,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-12","VAVNoReheatBox","BaseAirSys7or3b-12","L1_ZN05_Core Corridor",-99996.000,287.198,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-13","VAVNoReheatBox","BaseAirSys7or3b-13","L2_ZN09 NE Corridor",-99996.000,135.042,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-14","VAVNoReheatBox","BaseAirSys7or3b-14","L2_ZN08_Recep Corridor",-99996.000,404.887,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-15","VAVNoReheatBox","BaseAirSys7or3b-15","L1_ZN13 Elec Room",-99996.000,9.813,-99996.000,""
+,"BaseUnctrl TrmlUnit","Uncontrolled","BaseAirSys11","L1_ZN06_IT Room",-99996.000,-99996.000,-99996.000,""
+,"BaseUnctrl TrmlUnit-2","Uncontrolled","BaseAirSys11-2","L2_ZN10_IT Room",-99996.000,-99996.000,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-16","VAVNoReheatBox","BaseAirSys7or3b-16","L2_ZN11_Breakroom",-99996.000,236.227,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-17","VAVNoReheatBox","BaseAirSys7or3b-17","L1_ZN13 Lobby NW",-99996.000,182.513,-99996.000,""
+,"BaseVAVBox TrmlUnit","VAVReheatBox","BaseAirSys5","L1_ZN03_South Open Office",-99996.000,1021.515,-99996.000,"SingleMaximum"
+,"BaseVAVBox TrmlUnit-2","VAVReheatBox","BaseAirSys5","L1_ZN02 Core_Open Office",-99996.000,2637.124,-99996.000,"SingleMaximum"
+,"BaseVAVBox TrmlUnit-3","VAVReheatBox","BaseAirSys5-2","L2_ZN03_South Open Office",-99996.000,1817.029,-99996.000,"SingleMaximum"
+,"BaseVAVBox TrmlUnit-4","VAVReheatBox","BaseAirSys5-2","L2_ZN05_Core Open Office Cor",-99996.000,2662.784,-99996.000,"SingleMaximum"
+,"BaseVAVBox TrmlUnit-5","VAVReheatBox","BaseAirSys5","L1_ZN14_Core Open Office",-99996.000,1672.031,-99996.000,"SingleMaximum"
+,"BaseVAVNoReheatTrmlUnit-18","VAVNoReheatBox","BaseAirSys7or3b-18","L2_ZN12 Storage",-99996.000,90.036,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-19","VAVNoReheatBox","BaseAirSys7or3b-19","L1_ZN05_Fitness Center",-99996.000,360.732,-99996.000,""
+,"BaseVAVBox TrmlUnit-6","VAVReheatBox","BaseAirSys5","L1_ZN01_SE_Open Office",-99996.000,774.631,-99996.000,"SingleMaximum"
+ENDTABLE
+TABLE EX06_NR_Class-Lab-DOAS-FPFC25CoilClg
+PropName,BaseName,Type,System,Zone,CapTotNetRtd,CapTotGrossRtd,FluidFlowRtDsgn,DXSEER,DXEER,NumClgStages
+;,,,,,(Btu/hr),(Btu/hr),( gpm),
+,"BaseSys5 CoilClg","DirectExpansion","BaseAirSys5","UNDEFINED",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys5 CoilClg-2","DirectExpansion","BaseAirSys5-2","UNDEFINED",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg","DirectExpansion","BaseAirSys7or3b","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-2","DirectExpansion","BaseAirSys7or3b-2","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-3","DirectExpansion","BaseAirSys7or3b-3","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-4","DirectExpansion","BaseAirSys7or3b-4","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-5","DirectExpansion","BaseAirSys7or3b-5","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-6","DirectExpansion","BaseAirSys7or3b-6","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-7","DirectExpansion","BaseAirSys7or3b-7","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-8","DirectExpansion","BaseAirSys7or3b-8","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-9","DirectExpansion","BaseAirSys7or3b-9","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-10","DirectExpansion","BaseAirSys7or3b-10","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-11","DirectExpansion","BaseAirSys7or3b-11","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-12","DirectExpansion","BaseAirSys7or3b-12","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-13","DirectExpansion","BaseAirSys7or3b-13","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-14","DirectExpansion","BaseAirSys7or3b-14","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-15","DirectExpansion","BaseAirSys7or3b-15","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys11 CoilClg","DirectExpansion","BaseAirSys11","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys11 CoilClg-2","DirectExpansion","BaseAirSys11-2","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-16","DirectExpansion","BaseAirSys7or3b-16","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-17","DirectExpansion","BaseAirSys7or3b-17","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-18","DirectExpansion","BaseAirSys7or3b-18","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-19","DirectExpansion","BaseAirSys7or3b-19","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+ENDTABLE
+TABLE EX06_NR_Class-Lab-DOAS-FPFC25CoilHtg
+PropName,BaseName,Type,System,Zone,CapTotNetRtd,CapTotGrossRtd,FluidFlowRtDsgn,FurnAFUE,FurnThrmlEff,
+;,,,,,(Btu/hr),(Btu/hr),( gpm),
+,"BaseSys5 CoilHtg","HotWater","BaseAirSys5","UNDEFINED",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys5 CoilHtg-2","HotWater","BaseAirSys5-2","UNDEFINED",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg","Resistance","BaseAirSys7or3b","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-2","Resistance","BaseAirSys7or3b-2","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-3","Resistance","BaseAirSys7or3b-3","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-4","Resistance","BaseAirSys7or3b-4","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-5","Resistance","BaseAirSys7or3b-5","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-6","Resistance","BaseAirSys7or3b-6","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-7","Resistance","BaseAirSys7or3b-7","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-8","Resistance","BaseAirSys7or3b-8","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-9","Resistance","BaseAirSys7or3b-9","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-10","Resistance","BaseAirSys7or3b-10","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-11","Resistance","BaseAirSys7or3b-11","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-12","Resistance","BaseAirSys7or3b-12","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-13","Resistance","BaseAirSys7or3b-13","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-14","Resistance","BaseAirSys7or3b-14","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-15","Resistance","BaseAirSys7or3b-15","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-16","Resistance","BaseAirSys7or3b-16","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-17","Resistance","BaseAirSys7or3b-17","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-18","Resistance","BaseAirSys7or3b-18","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-19","Resistance","BaseAirSys7or3b-19","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseVAVBox CoilHtg","HotWater","BaseAirSys5","L1_ZN03_South Open Office",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseVAVBox CoilHtg-2","HotWater","BaseAirSys5","L1_ZN02 Core_Open Office",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseVAVBox CoilHtg-3","HotWater","BaseAirSys5-2","L2_ZN03_South Open Office",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseVAVBox CoilHtg-4","HotWater","BaseAirSys5-2","L2_ZN05_Core Open Office Cor",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseVAVBox CoilHtg-5","HotWater","BaseAirSys5","L1_ZN14_Core Open Office",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseVAVBox CoilHtg-6","HotWater","BaseAirSys5","L1_ZN01_SE_Open Office",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+ENDTABLE
+TABLE EX06_NR_Class-Lab-DOAS-FPFC25Fan
+PropName,BaseName,CtrlMthd,System,Zone,FlowCap,FlowMin,FlowEff,ModelingMthd,TotStaticPress,MtrBHP,MtrHP,MtrPos,MtrEff,PwrIdx
+;,,,,,(cfm),(cfm),,,(inH2O),(hp),(hp),,(W/cfm)
+,"BaseSys5 SupFan","VariableSpeedDrive","BaseAirSys5","UNDEFINED",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys5 SupFan-2","VariableSpeedDrive","BaseAirSys5-2","UNDEFINED",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan","VariableSpeedDrive","BaseAirSys7or3b","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-2","VariableSpeedDrive","BaseAirSys7or3b-2","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-3","VariableSpeedDrive","BaseAirSys7or3b-3","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-4","VariableSpeedDrive","BaseAirSys7or3b-4","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-5","VariableSpeedDrive","BaseAirSys7or3b-5","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-6","VariableSpeedDrive","BaseAirSys7or3b-6","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-7","VariableSpeedDrive","BaseAirSys7or3b-7","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-8","VariableSpeedDrive","BaseAirSys7or3b-8","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-9","VariableSpeedDrive","BaseAirSys7or3b-9","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-10","VariableSpeedDrive","BaseAirSys7or3b-10","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-11","VariableSpeedDrive","BaseAirSys7or3b-11","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-12","VariableSpeedDrive","BaseAirSys7or3b-12","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-13","VariableSpeedDrive","BaseAirSys7or3b-13","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-14","VariableSpeedDrive","BaseAirSys7or3b-14","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-15","VariableSpeedDrive","BaseAirSys7or3b-15","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys11 SupFan","ConstantVolume","BaseAirSys11","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys11 SupFan-2","ConstantVolume","BaseAirSys11-2","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-16","VariableSpeedDrive","BaseAirSys7or3b-16","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-17","VariableSpeedDrive","BaseAirSys7or3b-17","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-18","VariableSpeedDrive","BaseAirSys7or3b-18","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-19","VariableSpeedDrive","BaseAirSys7or3b-19","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+ENDTABLE
+TABLE EX06_NR_Class-Lab-DOAS-FPFC25OACtrl
+PropName,BaseName,EconoCtrlMthd,System,EconoIntegration
+;
+,"BaseSys5 OACtrl","NoEconomizer","BaseAirSys5","UNDEFINED"
+,"BaseSys5 OACtrl-2","NoEconomizer","BaseAirSys5-2","UNDEFINED"
+,"BaseSys7or3b OACtrl","NoEconomizer","BaseAirSys7or3b","UNDEFINED"
+,"BaseSys7or3b OACtrl-2","NoEconomizer","BaseAirSys7or3b-2","UNDEFINED"
+,"BaseSys7or3b OACtrl-3","NoEconomizer","BaseAirSys7or3b-3","UNDEFINED"
+,"BaseSys7or3b OACtrl-4","NoEconomizer","BaseAirSys7or3b-4","UNDEFINED"
+,"BaseSys7or3b OACtrl-5","NoEconomizer","BaseAirSys7or3b-5","UNDEFINED"
+,"BaseSys7or3b OACtrl-6","NoEconomizer","BaseAirSys7or3b-6","UNDEFINED"
+,"BaseSys7or3b OACtrl-7","NoEconomizer","BaseAirSys7or3b-7","UNDEFINED"
+,"BaseSys7or3b OACtrl-8","NoEconomizer","BaseAirSys7or3b-8","UNDEFINED"
+,"BaseSys7or3b OACtrl-9","NoEconomizer","BaseAirSys7or3b-9","UNDEFINED"
+,"BaseSys7or3b OACtrl-10","NoEconomizer","BaseAirSys7or3b-10","UNDEFINED"
+,"BaseSys7or3b OACtrl-11","NoEconomizer","BaseAirSys7or3b-11","UNDEFINED"
+,"BaseSys7or3b OACtrl-12","NoEconomizer","BaseAirSys7or3b-12","UNDEFINED"
+,"BaseSys7or3b OACtrl-13","NoEconomizer","BaseAirSys7or3b-13","UNDEFINED"
+,"BaseSys7or3b OACtrl-14","NoEconomizer","BaseAirSys7or3b-14","UNDEFINED"
+,"BaseSys7or3b OACtrl-15","NoEconomizer","BaseAirSys7or3b-15","UNDEFINED"
+,"BaseSys11 OACtrl","NoEconomizer","BaseAirSys11","UNDEFINED"
+,"BaseSys11 OACtrl-2","NoEconomizer","BaseAirSys11-2","UNDEFINED"
+,"BaseSys7or3b OACtrl-16","NoEconomizer","BaseAirSys7or3b-16","UNDEFINED"
+,"BaseSys7or3b OACtrl-17","NoEconomizer","BaseAirSys7or3b-17","UNDEFINED"
+,"BaseSys7or3b OACtrl-18","NoEconomizer","BaseAirSys7or3b-18","UNDEFINED"
+,"BaseSys7or3b OACtrl-19","NoEconomizer","BaseAirSys7or3b-19","UNDEFINED"
+ENDTABLE

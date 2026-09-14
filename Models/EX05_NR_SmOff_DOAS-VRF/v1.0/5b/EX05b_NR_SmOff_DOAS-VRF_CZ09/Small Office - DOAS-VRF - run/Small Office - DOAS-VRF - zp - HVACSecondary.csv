@@ -1,0 +1,94 @@
+AirSystems
+,,,,,Cooling,,,,Heating,,,Fan/Ventilation,,,Controls
+Name,Type,Status,System Count,Floor Area Served,Net Capacity,Design Supply T,Capacity/Area,Supply Flow/Ton,Net Capacity,Design Supply T,Capacity/Area,Supply Flow,Supply Flow/Area,Design OA,OA/Area,Control Zone Name,Temp Control,FixedT,Supply HiT,At Outdoor,Supply LowT,At OutdoorT,ReheatCtrlMthd,Availability Schedule,Night Cycle Control
+,,,(#),(ft2),(Btu/hr),(degF),(Btu/ft2),(cfm/ton),(Btu/hr),(degF),(Btu/ft2),(cfm),(cfm/ft2),(cfm),(cfm/ft2),,,(degF),(degF),(degF),(degF),( degF),,,
+"DX-DOASHRV - Sys 1","DOASVAV","New",1,13453.1,156169,55,11.6084,257.721,120000,68,8.91986,3354,0.24931,3334.59,0.24931,"NONE","NoSATControl",,-99996,,-99996,,"SingleMaximum","OfficeHVACAvail","StaysOff"
+"CoreZnPSZ AirSys 8","SZAC","New",1,131.889,27548.1,65,208.874,447.232,0,-99996,0,1026.7,7.7846,19.7833,0.15,"Zn Sys 8 IT and Elec","NoSATControl",,-99996,,-99996,,"UNDEFINED","DataHVACAvail","CycleOnCallPrimaryZone"
+
+
+
+ZoneSystems
+,,,,Cooling,,,,Heating,,,Fan/Ventilation,,,Controls
+Name,Type,System Count,Floor Area Served,Net Capacity,Design Supply T,Capacity/Area,Supply Flow/Ton,Net Capacity,Design Supply T,Capacity/Area,Supply Flow,Supply Flow/Area,Design OA,OA/Area,Control Zone Name,Temp Control,Availability Schedule
+,,(#),(ft2),(Btu/hr),(degF),(Btu/ft2),(cfm/ton),(Btu/hr),(degF),(Btu/ft2),(cfm),(cfm/ft2),(cfm),( cfm/ft2),,,,,,,,,,
+"CoreZn VRF Terminal 1","VRF",1,1392.18,18369,55,13.1944,661.767,27820,95,19.983,1013,0.727635,0,0,"Zn Sys 1 Reception","NoSATControl","OfficeHVACAvail"
+"CoreZn VRF Terminal 2","VRF",1,928.864,18928,55,20.3776,594.675,25749,95,27.721,938,1.00984,0,0,"Zn Sys 2 Conference","NoSATControl","OfficeHVACAvail"
+"CoreZn VRF Terminal 3","VRF",1,1414.3,16747,55,11.8412,801.815,30713,95,21.7161,1119,0.791205,0,0,"Zn Sys 3 Break Room","NoSATControl","OfficeHVACAvail"
+"CoreZn VRF Terminal 4","VRF",1,5962.26,93705,55,15.7164,545.926,89761,95,15.0549,4263,0.714997,0,0,"Zn Sys 4 Open Office","NoSATControl","OfficeHVACAvail"
+"CoreZn VRF Terminal 5","VRF",1,578.266,9117,55,15.7661,556.762,11618,95,20.0911,423,0.731497,0,0,"Zn Sys 5 Conference-Office","NoSATControl","OfficeHVACAvail"
+"CoreZn VRF Terminal 6","VRF",1,1359.22,80000,55,58.8574,172.8,90000,95,66.2146,1152,0.847547,0,0,"Zn Sys 6 Conference-Support","NoSATControl","OfficeHVACAvail"
+"CoreZn VRF Terminal 7","VRF",1,1818.04,34285,55,18.8582,546.011,31086,95,17.0986,1560,0.858068,0,0,"Zn Sys 9 Library","NoSATControl","OfficeHVACAvail"
+"ZoneSystem - Restrooms","Exhaust",1,0,0,-99996,0,0,0,-99996,0,0,0,0,0,"NONE","NoSATControl","AssemblyHVACAvail"
+
+
+
+Terminal Units
+,,,,Relationships,,,,,AirFlow,,VAV,,Fan Powered Terminal
+Name,Type,Status,Qty,System,System Qty,Zone,Floor Area,HVAC Zones,Primary Max,Primary Min,Heating Max,Reheat Control,Induced Air Zone,Induction Ratio,Fan Power,Parallel Box Control,Flow Fraction
+,,,(#),,(#),,(ft2),(#),(cfm),(cfm),(cfm),,,,( W/cfm)
+"Terminal Unit 1 (CV)","VAVNoReheatBox","New",1,"DX-DOASHRV - Sys 1",1,"Zn Sys 1 Reception",1392.18,1,329.973,329.973,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"Terminal Unit 2 (VAV)","VAVNoReheatBox","New",1,"DX-DOASHRV - Sys 1",1,"Zn Sys 2 Conference",928.864,1,418.689,139.33,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"Terminal Unit 3 (VAV)","VAVNoReheatBox","New",1,"DX-DOASHRV - Sys 1",1,"Zn Sys 3 Break Room",1414.3,1,591.029,212.145,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"Terminal Unit 5 (CV)","VAVNoReheatBox","New",1,"DX-DOASHRV - Sys 1",1,"Zn Sys 5 Conference-Office",578.266,1,121.011,121.011,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"Terminal Unit 6 (VAV)","VAVNoReheatBox","New",1,"DX-DOASHRV - Sys 1",1,"Zn Sys 6 Conference-Support",1359.22,1,672.813,203.883,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"Terminal Unit 7 (CV)","VAVNoReheatBox","New",1,"DX-DOASHRV - Sys 1",1,"Zn Sys 9 Library",1818.04,1,272.706,272.706,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"Terminal Unit 4 (CV)","VAVNoReheatBox","New",1,"DX-DOASHRV - Sys 1",1,"Zn Sys 4 Open Office",5962.26,1,928.369,928.369,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"CoreZn TU 8 (uncontrolled)","Uncontrolled","New",1,"CoreZnPSZ AirSys 8",1,"Zn Sys 8 IT and Elec",131.889,1,1026.7,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+
+
+
+Cooling Coils
+,,,,Relationships,,,Capacity,,,,ChilledWater,,,DirectExpansion
+Name,Type,Status,Fuel Src,System,System Qty,Zone,Total-Net,Total-Gross,FluidSegIn,FluidSegOut,Design Flow Rate,Condenser Type,Number Stages,SEER (rounded),CodeMin SEER,EER (rounded),CodeMin EER,IEER (roundded),CodeMin IEER,EIR,Sizing Ratio,SEER2 (rounded),CodeMin SEER2,EER2 (rounded), CodeMin EER2
+,,,,,(#),,(Btu/hr),(Btu/hr),(Btu/hr),(Btu/hr),( gpm)
+"CoreZnCoolingCoil-1","VRF","New","- specify -","CoreZn VRF Terminal 1",1,"Zn Sys 1 Reception",18369,19164.6,"NONE","NONE",-99996,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,1,-99996,-99996,-99996,-99996
+"DX Clg Coil 1","DirectExpansion","New","Electric","DX-DOASHRV - Sys 1",1,"UNDEFINED",156169,162933,"NONE","NONE",-99996,"Air",2,-99996,-99996,11.5,10.6,14.5,13.5,0.242866,1,-99996,-99996,-99996,-99996
+"CoreZnCoolingCoil-2","VRF","New","- specify -","CoreZn VRF Terminal 2",1,"Zn Sys 2 Conference",18928,19747.8,"NONE","NONE",-99996,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,1,-99996,-99996,-99996,-99996
+"CoreZnCoolingCoil-3","VRF","New","- specify -","CoreZn VRF Terminal 3",1,"Zn Sys 3 Break Room",16747,17472.3,"NONE","NONE",-99996,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,1,-99996,-99996,-99996,-99996
+"CoreZnCoolingCoil-4","VRF","New","- specify -","CoreZn VRF Terminal 4",1,"Zn Sys 4 Open Office",93705,97763.4,"NONE","NONE",-99996,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,1,-99996,-99996,-99996,-99996
+"CoreZnCoolingCoil-5","VRF","New","- specify -","CoreZn VRF Terminal 5",1,"Zn Sys 5 Conference-Office",9117,9511.86,"NONE","NONE",-99996,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,1,-99996,-99996,-99996,-99996
+"CoreZnCoolingCoil-6","VRF","New","- specify -","CoreZn VRF Terminal 6",1,"Zn Sys 6 Conference-Support",80000,83464.8,"NONE","NONE",-99996,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,1,-99996,-99996,-99996,-99996
+"CoreZnCoolingCoil-7","VRF","New","- specify -","CoreZn VRF Terminal 7",1,"Zn Sys 9 Library",34285,35769.9,"NONE","NONE",-99996,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,1,-99996,-99996,-99996,-99996
+"CoreZnCoolingCoil 8","DirectExpansion","New","Electric","CoreZnPSZ AirSys 8",1,"n/a",28000,29226.1,"NONE","NONE",-99996,"Air",1,-99996,-99996,-99996,-99996,-99996,-99996,0.307881,1,-99996,-99996,-99996,-99996
+
+
+
+Heating Coils
+,,,,Relationships,,,Capacity,,HotWater,,,HeatPump,,,,,,,,,Furnace
+Name,Type,Status,Fuel Src,System,System Qty,Zone,Total-Net,Total-Gross,FluidSeg In,FluidSeg Out,Design Flow Rate,Condenser Type,Number Stages,HSPF (rounded),CodeMin HSPF,COP (rounded),CodeMin COP,EIR,Comp Lockout Temp,Supp Htr Temp,AFUE,CodeMin AFUE,Thrml Eff,CodeMin Thrml Eff,SizingRatio,HSPF2 (rounded), CodeMin HSPF2
+,,,,,(#),,(Btu/hr),(Btu/hr),,,(gpm),,,,,,,,(?F),( ?F)
+"CoreZnHeatingCoil-1","VRF","New","- specify -","CoreZn VRF Terminal 1",1,"Zn Sys 1 Reception",27820,27024.4,"NONE","NONE",-99996,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,1,-99996,-99996
+"Heating Heat Pump","HeatPump","New","Electric","DX-DOASHRV - Sys 1",1,"UNDEFINED",120000,113236,"NONE","NONE",-99996,"Air",1,-99996,-99996,3.7,3.3,0.226682,17,-99996,-99996,-99996,-99996,-99996,1,-99996,-99996
+"CoreZnHeatingCoil-2","VRF","New","- specify -","CoreZn VRF Terminal 2",1,"Zn Sys 2 Conference",25749,24929.2,"NONE","NONE",-99996,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,1,-99996,-99996
+"CoreZnHeatingCoil-3","VRF","New","- specify -","CoreZn VRF Terminal 3",1,"Zn Sys 3 Break Room",30713,29987.7,"NONE","NONE",-99996,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,1,-99996,-99996
+"CoreZnHeatingCoil-4","VRF","New","- specify -","CoreZn VRF Terminal 4",1,"Zn Sys 4 Open Office",89761,85702.6,"NONE","NONE",-99996,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,1,-99996,-99996
+"CoreZnHeatingCoil-5","VRF","New","- specify -","CoreZn VRF Terminal 5",1,"Zn Sys 5 Conference-Office",11618,11223.1,"NONE","NONE",-99996,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,1,-99996,-99996
+"CoreZnHeatingCoil-6","VRF","New","- specify -","CoreZn VRF Terminal 6",1,"Zn Sys 6 Conference-Support",90000,86535.2,"NONE","NONE",-99996,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,1,-99996,-99996
+"CoreZnHeatingCoil-7","VRF","New","- specify -","CoreZn VRF Terminal 7",1,"Zn Sys 9 Library",31086,29601.1,"NONE","NONE",-99996,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,1,-99996,-99996
+
+
+
+Fans
+,,,,,Relationships,,,Capacity,,,Power,,,,Motor
+Name,Control Method,Status,Class,Cent Type,System,System Qty,Zone,Maximum,Minimum,Efficiency,Modeling Method,Brake HP,Total Static,Power Index,Nameplate HP,Position,Efficiency
+,,,,,,(#),,(cfm),(cfm),,,(hp),(inH2O),(W/cfm),( hp)
+"CoreZnSupplyFan-1","ConstantVolume","New","Centrifugal","AirFoil","CoreZn VRF Terminal 1",1,"Zn Sys 1 Reception",1013,-99996,0.5,"PowerPerUnitFlow",0.406572,1.2734,0.35,1,"InAirStream",0.855
+"Supply Fan 1","VariableSpeedDrive","New","Centrifugal","AirFoil","DX-DOASHRV - Sys 1",1,"UNDEFINED",3354,3335,0.65,"PowerPerUnitFlow",1.82882,2.249,0.47,2,"InAirStream",0.865
+"Exhaust Fan 1","ConstantVolume","New","Centrifugal","AirFoil","DX-DOASHRV - Sys 1",1,"UNDEFINED",3354,-99996,0.65,"PowerPerUnitFlow",1.16733,1.43553,0.3,1.5,"InAirStream",0.865
+"CoreZnSupplyFan-2","VariableSpeedDrive","New","Centrifugal","AirFoil","CoreZn VRF Terminal 2",1,"Zn Sys 2 Conference",938,469,0.5,"PowerPerUnitFlow",0.376471,1.2734,0.35,1,"InAirStream",0.855
+"CoreZnSupplyFan-3","VariableSpeedDrive","New","Centrifugal","AirFoil","CoreZn VRF Terminal 3",1,"Zn Sys 3 Break Room",1119,559.5,0.5,"PowerPerUnitFlow",0.449116,1.2734,0.35,0.5,"InAirStream",0.855
+"CoreZnSupplyFan-4","ConstantVolume","New","Centrifugal","AirFoil","CoreZn VRF Terminal 4",1,"Zn Sys 4 Open Office",4263,-99996,0.5,"PowerPerUnitFlow",1.79102,1.33298,0.35,5,"InAirStream",0.895
+"CoreZnSupplyFan-5","ConstantVolume","New","Centrifugal","AirFoil","CoreZn VRF Terminal 5",1,"Zn Sys 5 Conference-Office",423,-99996,0.5,"PowerPerUnitFlow",0.169773,1.2734,0.35,0.5,"InAirStream",0.855
+"CoreZnSupplyFan-6","VariableSpeedDrive","New","Centrifugal","AirFoil","CoreZn VRF Terminal 6",1,"Zn Sys 6 Conference-Support",1152,576,0.5,"PowerPerUnitFlow",0.462361,1.2734,0.35,0.5,"InAirStream",0.855
+"CoreZnSupplyFan-7","ConstantVolume","New","Centrifugal","AirFoil","CoreZn VRF Terminal 7",1,"Zn Sys 9 Library",1560,-99996,0.5,"PowerPerUnitFlow",0.633436,1.2883,0.35,1.5,"InAirStream",0.865
+"CoreZnSupplyFan 8","ConstantVolume","New","Centrifugal","AirFoil","CoreZnPSZ AirSys 8",1,"n/a",1026.7,-99996,0.65,"PowerPerUnitFlow",0.412071,1.65543,0.35,0.125,"InAirStream",0.855
+"Exhaust Fan restroom","ConstantVolume","New","Centrifugal","AirFoil","ZoneSystem - Restrooms",1,"UNDEFINED",250,-99996,0.65,"PowerPerUnitFlow",0.100339,1.65543,0.35,0.083,"InAirStream",0.855
+
+
+
+Outside Air Control
+,,,,Relationships,,Control
+Name,Control,Status,Design OA,Name,System Count,Econo Integration,Max OA Ratio,High DB Lockout,Low DB Lockout,High Enthalpy Lockout,OA Schedule Method,Delay,Schedule Name
+,,,(cfm),,(#),,,(F),(F),(Btu/lb),,( hrs)
+"OutsideAirControl 1","FixedDryBulb","New",3334.59,"DX-DOASHRV - Sys 1",1,"NonIntegrated",1,71,-99996,50,"Constant",-99996,"NONE"
+"OutsideAirControl 2","NoEconomizer","New",19.7833,"CoreZnPSZ AirSys 8",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"

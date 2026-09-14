@@ -1,0 +1,175 @@
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(647): Info: 
+  DHWSYS 'dhwsys-F1 Business Center': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump' has a fixed setpoint.
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(671): Info: 
+  DHWSYS 'dhwsys-F1 Fitness Center': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 3' has a fixed setpoint.
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(695): Info: 
+  DHWSYS 'dhwsys-F1 Leasing Office': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 4' has a fixed setpoint.
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(719): Info: 
+  DHWSYS 'dhwsys-F1 Lobby': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 5' has a fixed setpoint.
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(743): Info: 
+  DHWSYS 'dhwsys-F1 Mech Rm': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 6' has a fixed setpoint.
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(767): Info: 
+  DHWSYS 'dhwsys-F2 Break Room': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 7' has a fixed setpoint.
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(791): Info: 
+  DHWSYS 'dhwsys-F3 Break Room': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 8' has a fixed setpoint.
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(815): Info: 
+  DHWSYS 'dhwsys-F4 Break Room': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 9' has a fixed setpoint.
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(839): Info: 
+  DHWSYS 'dhwsys-F5 Break Room': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 10' has a fixed setpoint.
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(36009): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(36009): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(35296): Warning: 
+  airHandler 'F1 Business Cent AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (253.906 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(35327): Warning: 
+  airHandler 'F1 Corridor AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (248.49 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(35358): Warning: 
+  airHandler 'F1 Fitness Cente AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (236.688 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(35420): Warning: 
+  airHandler 'F1 Lobby AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (278.512 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(35513): Warning: 
+  airHandler 'F2 Corridor AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (225.893 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(35544): Warning: 
+  airHandler 'F2 Break Room AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (244.473 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(35575): Warning: 
+  airHandler 'F2 Stairs E AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (225.909 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(35606): Warning: 
+  airHandler 'F2 Stairs W AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (224.437 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(35637): Warning: 
+  airHandler 'F3 Corridor AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (224.606 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(35668): Warning: 
+  airHandler 'F3 Break Room AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (244.694 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(35699): Warning: 
+  airHandler 'F3 Stairs E AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (226.805 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(35730): Warning: 
+  airHandler 'F3 Stairs W AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (227.731 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(35761): Warning: 
+  airHandler 'F4 Corridor AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (224.612 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(35792): Warning: 
+  airHandler 'F4 Break Room AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (244.718 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(35823): Warning: 
+  airHandler 'F4 Stairs E AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (226.939 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(35854): Warning: 
+  airHandler 'F4 Stairs W AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (233.264 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(35885): Warning: 
+  airHandler 'F5 Corridor AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (225.138 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(35916): Warning: 
+  airHandler 'F5 Break Room AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (249.522 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - ZP-CSE.CSE(36009): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------

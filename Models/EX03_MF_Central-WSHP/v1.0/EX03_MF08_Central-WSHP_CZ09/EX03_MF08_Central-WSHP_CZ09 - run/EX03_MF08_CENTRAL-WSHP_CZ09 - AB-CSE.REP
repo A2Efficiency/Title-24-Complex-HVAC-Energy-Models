@@ -1,0 +1,2366 @@
+
+
+Error Messages for Run 001: MF08_Individual Supply + Individual Exhaust (WSHP)
+
+---------------
+Warning: Zone 'Attic-atc': Condensation occurred in 273 subhours of run.
+    Total condensation heat = 71.1765 kBtu.
+---------------
+
+
+
+Log for Run 001: MF08_Individual Supply + Individual Exhaust (WSHP)  /  Standa
+
+CSE 0.927.0 for Win32 console
+
+
+
+Input for Run 001:
+
+#        #define  RunDateFmt  22:46, Thu, Jun 11, 2026
+#        #define  RunID               12   // Standard
+#        #define  AnalysisType        13   // Proposed and Standard
+#        #define  CompCodeBase      2025   // CA2025
+#        #define  StdDesignBase     2025   // CA2025
+#        #define  StandardsVersion  2026   // Compliance2025
+#        #define  DesignRatingBase     0   // n/a
+#        #define  ClimateZone          9   // ClimateZone9
+#        #define  DD1  Aug 14
+#        #define  CD1  Jun 20
+#        #define  HD1  Dec 01
+#        #define  SEASONCHANGESETPT  60
+#        #define  FANVENTLOCKOUTTEMP  68
+#        #define  ISSEASONCOOLING  (@weather.taDbAvg07 > SEASONCHANGESETPT)
+#        #define  FANVENTAVAIL  (@weather.taDbAvg07 > FANVENTLOCKOUTTEMP)
+#        #define  WINDOWVENTAVAIL  (!@Top.autoSizing && ($hour < 24 && ($hour > 12 || $radDiff+$radbeam > .01)))
+#        #define  HWUSEF_WD  hourval( 0.014, 0.008, 0.009, 0.011, 0.020, 0.044, 0.089, 0.107, 0.089, 0.066, 0.052, 0.038, 0.036, 0.033, 0.032, 0.026, 0.042, 0.048, 0.052, 0.047, 0.042, 0.039, 0.036, 0.022 )
+#        #define  HWUSEF_WE  hourval( 0.018, 0.010, 0.009, 0.008, 0.015, 0.023, 0.026, 0.047, 0.077, 0.083, 0.074, 0.061, 0.051, 0.043, 0.039, 0.039, 0.052, 0.058, 0.056, 0.052, 0.047, 0.044, 0.040, 0.028 )
+#        #define  ShwrFLOWF  1
+#        #define  ShwrDRAINHREFF  0
+#        #define  CwshHOTF  0.22
+#        #define  CwshUSEF  2.03
+#        #define  FaucHOTF  0.5
+#        #define  FaucFlowF  1
+#        #define  BathFLOWF  1
+#        #define  BathDRAINHREFF  0
+#        #define  DwshFLOWF  1
+#        #define  Cook_WD       hourval( .005,.004,.004,.004,.004,.014,.019,.025,.026,.022,.021,.029,.035,.032,.034,.052,.115,.193,.180,.098,.042,.020,.012,.010)
+#        #define  Cook_WEH      hourval( .005,.004,.003,.003,.003,.005,.010,.027,.048,.048,.046,.055,.063,.059,.062,.068,.091,.139,.129,.072,.032,.014,.009,.005)
+#        #define  TV_WD         hourval( .035,.026,.023,.022,.021,.021,.025,.032,.038,.040,.038,.038,.041,.042,.042,.041,.044,.049,.056,.064,.070,.074,.067,.051)
+#        #define  TV_WEH        hourval( .035,.027,.022,.021,.020,.020,.022,.029,.037,.043,.042,.039,.040,.042,.045,.048,.051,.052,.056,.061,.065,.069,.064,.050)
+#        #define  STB_WD        hourval( .040,.040,.040,.040,.040,.040,.040,.041,.040,.040,.040,.040,.040,.040,.041,.041,.042,.043,.044,.045,.046,.047,.045,.045)
+#        #define  STB_WEH       hourval( .041,.041,.040,.041,.040,.040,.040,.040,.041,.042,.042,.041,.041,.041,.041,.042,.042,.043,.044,.044,.045,.045,.044,.039)
+#        #define  Comp_WD       hourval( .036,.033,.032,.032,.031,.032,.034,.036,.039,.043,.045,.045,.046,.046,.046,.047,.048,.049,.049,.049,.049,.048,.044,.041)
+#        #define  Comp_WEH      hourval( .036,.034,.033,.033,.032,.033,.033,.035,.038,.042,.044,.045,.046,.047,.047,.048,.049,.049,.048,.048,.048,.047,.044,.041)
+#        #define  RMEL_WD       hourval( .037,.035,.034,.034,.032,.036,.042,.044,.037,.032,.033,.033,.032,.033,.035,.037,.044,.053,.058,.060,.062,.060,.052,.045)
+#        #define  RMEL_WEH      hourval( .037,.035,.034,.034,.032,.036,.042,.044,.037,.032,.033,.033,.032,.033,.035,.037,.044,.053,.058,.060,.062,.060,.052,.045)
+#        #define  IntLight_WD   hourval( .023,.019,.015,.017,.021,.031,.042,.041,.034,.029,.027,.025,.021,.021,.021,.026,.031,.044,.084,.117,.113,.096,.063,.039)
+#        #define  IntLight_WEH  hourval( .023,.019,.015,.017,.021,.031,.042,.041,.034,.029,.027,.025,.021,.021,.021,.026,.031,.044,.084,.117,.113,.096,.063,.039)
+#        #define  ExtLight_WD   hourval( .046,.046,.046,.046,.046,.037,.035,.034,.033,.028,.022,.015,.012,.011,.011,.012,.019,.037,.049,.065,.091,.105,.091,.063)
+#        #define  ExtLight_WEH  hourval( .046,.046,.045,.045,.046,.045,.044,.041,.036,.030,.024,.016,.012,.011,.011,.012,.019,.038,.048,.060,.083,.098,.085,.059)
+#        #define  Cook_SM    choose1( $month, 1.094,1.065,1.074,0.889,0.891,0.935,0.993,0.92,0.923,0.92,1.128,1.168)
+#        #define  TV_SM      choose1( $month, 1.032,.991,.986,.99,.971,.971,1.002,1.013,1.008,1.008,1.02,1.008)
+#        #define  STB_SM     choose1( $month, 1.02,.84,.92,.98,.91,.94,1.05,1.06,1.06,1.14,1.03,1.050)
+#        #define  Comp_SM    choose1( $month, 0.98,0.87,0.89,1.11,1.14,0.99,1.05,1.01,0.96,0.97,0.99,1.04)
+#        #define  Other_SM   choose1( $month,  1.19,1.11,1.02,.93,.84,.8,.82,.88,.98,1.07,1.16,1.2)
+#        #define  RefrConst_WD   hourval( -0.5436,-0.3646,-0.4044,-0.3871,-0.5341,-0.7521,-0.3747,0.0041,-0.1293,-0.4644,-0.4800,-0.4351,-0.2195,-0.3301,-0.0919,-0.1686,-0.4819,-0.4731,-0.2223,0.0604,-0.1466,-0.3214,-0.4113,-0.7701)
+#        #define  RefrConst_WEH  hourval( -0.3467,-0.2779,-0.2844,-0.2954,-0.4680,-0.5127,-0.7110,-0.5662,0.0463,-0.2995,-0.2388,-0.2646,-0.2905,-0.2730,-0.3306,-0.0031,-0.4356,-0.2580,0.2384,0.1176,-0.0458,-0.0596,-0.5300,0.0197 )
+#        #define  RefrTemp_WD    hourval( 0.0195,0.0167,0.0169,0.0165,0.0183,0.0218,0.0178,0.0136,0.0151,0.0189,0.0188,0.0183,0.0156,0.0169,0.0137,0.0149,0.0197,0.0208,0.0184,0.0144,0.0166,0.0184,0.0188,0.0229)
+#        #define  RefrTemp_WEH   hourval( 0.0171,0.0156,0.0155,0.0154,0.0175,0.0181,0.0212,0.0201,0.0130,0.0176,0.0165,0.0171,0.0177,0.0176,0.0182,0.0139,0.0197,0.0180,0.0121,0.0135,0.0154,0.0150,0.0205,0.0129)
+#        #define  FVCHPC  0.95		// VCHP cooling input energy factor
+#        #define  FVCHPH  0.88		// VCHP heating input energy factor
+#        #define  NumCntrlWHtrs( s)  tofloat( 1+fix(@DHWSYS[ s].loadMax / (15400. * @DHWSYS[ s].loadMaxDur)))
+#        #define  RunFileName  EX03_MF08_Central-WSHP_CZ09 - ab
+        
+#       #include "DHWDU2.txt"
+I       //File generated at 2021-02-15 20:16:40.066349
+I#      #echooff
+I#      ... Suppressing input echo until matching #ECHOON
+I#      #echoon
+I       // eof
+        
+           repHdrL = "MF08_Individual Supply + Individual Exhaust (WSHP)"
+           runTitle = "MF08_Individual Supply + Individual Exhaust (WSHP)  /  Standard  /  EX03_MF08_Central-WSHP_CZ09.cibd25x"
+           wfName = "CA_Title24_2025_LOS-ANGELES-USC.epw"
+           ebTolHour = 0.001
+           ebTolDay = 0.001
+           ebTolMon = 0.001
+           ebTolSubHr = 0.001
+           tol = 0.01                           // Endtest convergence tolerance for internal iteration in models
+           jan1DOW = "THU"
+           skyModel = "anisotropic"
+           bldgAzm = 0
+           dt = "YES"
+           heatDsTDbO = 43.1                    // °F
+           coolDsCond = "ClgDC_0p4pct_Aug"
+           ventAvail = zonal
+           nSubSteps = 20
+           wuDays = 30
+           awTrigSlr = 0.1
+           anTolAbs = 0.005
+           anTolRel = 0.0005
+           auszTol = 0.01
+           awTrigT = 3
+           awTrigH = 0.3
+        
+         DELETE Report "eb"    // move from end of CSE file
+        
+        CONSTRUCTION   "cc-Attic Roof Cons"      // Cavity R-val: 0
+        
+           LAYER   "cl2-Attic Roof Cons"  
+              lrMat = "m-Wood layer"            // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl3-Attic Roof Cons"  
+              lrMat = "m-TileGap"               // Layer material
+              lrThk = 0.0625                    // Thickness (feet), ft
+        
+           LAYER   "cl4-Attic Roof Cons"  
+              lrMat = "m-10 PSF Roof"           // Layer material
+              lrThk = 0.083333                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "fc-Attic Roof Cons"  
+        
+           LAYER   "fl1-Attic Roof Cons"  
+              lrMat = "m-SoftWood"              // Layer material
+              lrThk = 0.291667                  // Thickness (feet), ft
+        
+           LAYER   "fl2-Attic Roof Cons"  
+              lrMat = "m-Wood layer"            // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "fl3-Attic Roof Cons"  
+              lrMat = "m-TileGap"               // Layer material
+              lrThk = 0.0625                    // Thickness (feet), ft
+        
+           LAYER   "fl4-Attic Roof Cons"  
+              lrMat = "m-10 PSF Roof"           // Layer material
+              lrThk = 0.083333                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "cc-Interior Floor"  
+        
+           LAYER   "cl1-Interior Floor"  
+              lrMat = "m-Carpet"                // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl2-Interior Floor"  
+              lrMat = "m-Wood layer"            // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl4-Interior Floor"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "fc-Interior Floor"  
+        
+           LAYER   "fl1-Interior Floor"  
+              lrMat = "m-Carpet"                // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "fl2-Interior Floor"  
+              lrMat = "m-Wood layer"            // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "fl3-Interior Floor"  
+              lrMat = "m-SoftWood"              // Layer material
+              lrThk = 0.9375                    // Thickness (feet), ft
+        
+           LAYER   "fl4-Interior Floor"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "cc-T24-2013 Ceiling 2x4 24oc R30"      // Cavity R-val: 30
+        
+           LAYER   "cl1-T24-2013 Ceiling 2x4 24oc R30"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl2-T24-2013 Ceiling 2x4 24oc R30"  
+              lrMat = "m-Ins-R9.1-D1.5-SH0.2-C0.03205"    // Layer material
+              lrThk = 0.291667                  // Thickness (feet), ft
+        
+           LAYER   "cl3-T24-2013 Ceiling 2x4 24oc R30"  
+              lrMat = "m-Ins-R9.1-D1.5-SH0.2-C0.03205"    // Layer material
+              lrThk = 0.669872                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "fc-T24-2013 Ceiling 2x4 24oc R30"  
+        
+           LAYER   "fl1-T24-2013 Ceiling 2x4 24oc R30"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "fl2-T24-2013 Ceiling 2x4 24oc R30"  
+              lrMat = "m-SoftWood"              // Layer material
+              lrThk = 0.291667                  // Thickness (feet), ft
+        
+           LAYER   "fl3-T24-2013 Ceiling 2x4 24oc R30"  
+              lrMat = "m-Ins-R9.1-D1.5-SH0.2-C0.03205"    // Layer material
+              lrThk = 0.669872                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "cc-T24-2022 ExtWall 2x6 16oc U=0.051"      // Cavity R-val: 18
+        
+           LAYER   "cl1-T24-2022 ExtWall 2x6 16oc U=0.051"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl2-T24-2022 ExtWall 2x6 16oc U=0.051"  
+              lrMat = "m-Ins-R18-D1.5-SH0.2-C0.02546"    // Layer material
+              lrThk = 0.458333                  // Thickness (feet), ft
+        
+           LAYER   "cl3-T24-2022 ExtWall 2x6 16oc U=0.051"  
+              lrMat = "m-Insul-R5-D1.5-SH0.35-C0.01667"    // Layer material
+              lrThk = 0.083333                  // Thickness (feet), ft
+        
+           LAYER   "cl4-T24-2022 ExtWall 2x6 16oc U=0.051"  
+              lrMat = "m-Synthetic Stucco"      // Layer material
+              lrThk = 0.03125                   // Thickness (feet), ft
+        
+        CONSTRUCTION   "fc-T24-2022 ExtWall 2x6 16oc U=0.051"  
+        
+           LAYER   "fl1-T24-2022 ExtWall 2x6 16oc U=0.051"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "fl2-T24-2022 ExtWall 2x6 16oc U=0.051"  
+              lrMat = "m-SoftWood"              // Layer material
+              lrThk = 0.458333                  // Thickness (feet), ft
+        
+           LAYER   "fl3-T24-2022 ExtWall 2x6 16oc U=0.051"  
+              lrMat = "m-Insul-R5-D1.5-SH0.35-C0.01667"    // Layer material
+              lrThk = 0.083333                  // Thickness (feet), ft
+        
+           LAYER   "fl4-T24-2022 ExtWall 2x6 16oc U=0.051"  
+              lrMat = "m-Synthetic Stucco"      // Layer material
+              lrThk = 0.03125                   // Thickness (feet), ft
+        
+        CONSTRUCTION   "cc-Zone2ToAtticCeiling-AtcEdgWA"  
+        
+           LAYER   "cl1-Zone2ToAtticCeiling-AtcEdgWA"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl2-Zone2ToAtticCeiling-AtcEdgWA"  
+              lrMat = "m-Ins-R9.1-D1.5-SH0.2-C0.03205"    // Layer material
+              lrThk = 0.449653                  // Thickness (feet), ft
+        
+           LAYER   "cl3-Zone2ToAtticCeiling-AtcEdgWA"  
+              lrMat = "m-Wood layer"            // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl4-Zone2ToAtticCeiling-AtcEdgWA"  
+              lrMat = "m-TileGap"               // Layer material
+              lrThk = 0.0625                    // Thickness (feet), ft
+        
+           LAYER   "cl5-Zone2ToAtticCeiling-AtcEdgWA"  
+              lrMat = "m-10 PSF Roof"           // Layer material
+              lrThk = 0.083333                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "fc-Zone2ToAtticCeiling-AtcEdgWA"  
+        
+           LAYER   "fl1-Zone2ToAtticCeiling-AtcEdgWA"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "fl2-Zone2ToAtticCeiling-AtcEdgWA"  
+              lrMat = "m-SoftWood"              // Layer material
+              lrThk = 0.449653                  // Thickness (feet), ft
+        
+           LAYER   "fl3-Zone2ToAtticCeiling-AtcEdgWA"  
+              lrMat = "m-Wood layer"            // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "fl4-Zone2ToAtticCeiling-AtcEdgWA"  
+              lrMat = "m-TileGap"               // Layer material
+              lrThk = 0.0625                    // Thickness (feet), ft
+        
+           LAYER   "fl5-Zone2ToAtticCeiling-AtcEdgWA"  
+              lrMat = "m-10 PSF Roof"           // Layer material
+              lrThk = 0.083333                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "cc-Zone2ToAtticCeiling-AtcEdgWB"  
+        
+           LAYER   "cl1-Zone2ToAtticCeiling-AtcEdgWB"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl2-Zone2ToAtticCeiling-AtcEdgWB"  
+              lrMat = "m-Ins-R9.1-D1.5-SH0.2-C0.03205"    // Layer material
+              lrThk = 0.291667                  // Thickness (feet), ft
+        
+           LAYER   "cl3-Zone2ToAtticCeiling-AtcEdgWB"  
+              lrMat = "m-Ins-R9.1-D1.5-SH0.2-C0.03205"    // Layer material
+              lrThk = 0.17695                   // Thickness (feet), ft
+        
+           LAYER   "cl4-Zone2ToAtticCeiling-AtcEdgWB"  
+              lrMat = "m-Ins-R9.1-D1.5-SH0.2-C0.03205"    // Layer material
+              lrThk = 0.607639                  // Thickness (feet), ft
+        
+           LAYER   "cl5-Zone2ToAtticCeiling-AtcEdgWB"  
+              lrMat = "m-Wood layer"            // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl6-Zone2ToAtticCeiling-AtcEdgWB"  
+              lrMat = "m-TileGap"               // Layer material
+              lrThk = 0.0625                    // Thickness (feet), ft
+        
+           LAYER   "cl7-Zone2ToAtticCeiling-AtcEdgWB"  
+              lrMat = "m-10 PSF Roof"           // Layer material
+              lrThk = 0.083333                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "fc-Zone2ToAtticCeiling-AtcEdgWB"  
+        
+           LAYER   "fl1-Zone2ToAtticCeiling-AtcEdgWB"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "fl2-Zone2ToAtticCeiling-AtcEdgWB"  
+              lrMat = "m-SoftWood"              // Layer material
+              lrThk = 0.291667                  // Thickness (feet), ft
+        
+           LAYER   "fl3-Zone2ToAtticCeiling-AtcEdgWB"  
+              lrMat = "m-Ins-R9.1-D1.5-SH0.2-C0.03205"    // Layer material
+              lrThk = 0.17695                   // Thickness (feet), ft
+        
+           LAYER   "fl4-Zone2ToAtticCeiling-AtcEdgWB"  
+              lrMat = "m-SoftWood"              // Layer material
+              lrThk = 0.607639                  // Thickness (feet), ft
+        
+           LAYER   "fl5-Zone2ToAtticCeiling-AtcEdgWB"  
+              lrMat = "m-Wood layer"            // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "fl6-Zone2ToAtticCeiling-AtcEdgWB"  
+              lrMat = "m-TileGap"               // Layer material
+              lrThk = 0.0625                    // Thickness (feet), ft
+        
+           LAYER   "fl7-Zone2ToAtticCeiling-AtcEdgWB"  
+              lrMat = "m-10 PSF Roof"           // Layer material
+              lrThk = 0.083333                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "scn-SlabConsCarpet"  
+        
+           LAYER   "cl1-SNEICCCarpet"  
+              lrMat = "m-SNEICCarpet"           // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl2-SNEICCConcrete"  
+              lrMat = "m-SNEICConcrete"         // Layer material
+              lrThk = 0.291667                  // Thickness (feet), ft
+        
+           LAYER   "cl3-SNEICCEarth"  
+              lrMat = "m-SNEICEarth"            // Layer material
+              lrThk = 2                         // Thickness (feet), ft
+        
+        CONSTRUCTION   "scn-SlabConsExposed"  
+        
+           LAYER   "cl1-SNEIXCConcrete"  
+              lrMat = "m-SNEICConcrete"         // Layer material
+              lrThk = 0.291667                  // Thickness (feet), ft
+        
+           LAYER   "cl2-SNEIXCEarth"  
+              lrMat = "m-SNEICEarth"            // Layer material
+              lrThk = 2                         // Thickness (feet), ft
+        
+        CONSTRUCTION   "c-Zone1DoorFront-dr"  
+        
+           LAYER   "l-Zone1DoorFront-dr"  
+              lrMat = "m-Zone1DoorFront-dr"     // Layer material
+        
+        CONSTRUCTION   "c-Zone2DoorFront-dr"  
+        
+           LAYER   "l-Zone2DoorFront-dr"  
+              lrMat = "m-Zone2DoorFront-dr"     // Layer material
+        
+        CONSTRUCTION   "con-AtticTruss"  
+        
+           LAYER   "lyr-AtticTruss"  
+              lrMat = "m-AtticTruss"            // Layer material
+              lrThk = 0.0625                    // Thickness (feet), ft
+        
+        CONSTRUCTION   "con-FurnIMass"  
+        
+           LAYER   "cl1-FurnIMass"  
+              lrMat = "IntMassMat-SoftWood"     // Layer material
+              lrThk = 0.208333                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "con-WallFrmIMass"  
+        
+           LAYER   "cl1-WallFrmIMass"  
+              lrMat = "IntMassMat-Gypsum"       // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl2-WallFrmIMass"  
+              lrMat = "IntMassMat-SoftWood"     // Layer material
+              lrThk = 0.291667                  // Thickness (feet), ft
+        
+           LAYER   "cl3-WallFrmIMass"  
+              lrMat = "IntMassMat-Gypsum"       // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "con-WallCavIMass"  
+        
+           LAYER   "cl1-WallCavIMass"  
+              lrMat = "IntMassMat-Gypsum"       // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl2-WallCavIMass"  
+              lrMat = "IntMassMat-Gypsum"       // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+        MATERIAL   "m-SoftWood"  
+           matDens = 35                         // Density, lb/ft3
+           matSpHt = 0.39                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.08167                    // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.0012                   // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "m-Steel"  
+           matDens = 489                        // Density, lb/ft3
+           matSpHt = 0.12                       // Specific heat of material, Btu/lb-°F
+           matCond = 26.2                       // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+        
+        MATERIAL   "m-SIPSskin"  
+           matDens = 41                         // Density, lb/ft3
+           matSpHt = 0.45                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.06127                    // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.0012                   // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "m-Gypsum Board"  
+           matDens = 40                         // Density, lb/ft3
+           matSpHt = 0.27                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.09167                    // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.000122                 // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "m-Synthetic Stucco"  
+           matDens = 58                         // Density, lb/ft3
+           matSpHt = 0.2                        // Specific heat of material, Btu/lb-°F
+           matCond = 0.2                        // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+        
+        MATERIAL   "m-Carpet"  
+           matDens = 12.3                       // Density, lb/ft3
+           matSpHt = 0.34                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.02                       // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+        
+        MATERIAL   "m-Wood layer"  
+           matDens = 41                         // Density, lb/ft3
+           matSpHt = 0.45                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.06127                    // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.0012                   // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "m-TileGap"  
+           matDens = 0.075                      // Density, lb/ft3
+           matSpHt = 0.24                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.07353                    // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+        
+        MATERIAL   "m-10 PSF Roof"  
+           matDens = 120                        // Density, lb/ft3
+           matSpHt = 0.2                        // Specific heat of material, Btu/lb-°F
+           matCond = 1                          // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+        
+        MATERIAL   "m-VertWallCavity"  
+           matDens = 0.075                      // Density, lb/ft3
+           matSpHt = 0.24                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.314                      // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.00397                  // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "m-Ins-R9.1-D1.5-SH0.2-C0.03205"  
+           matDens = 1.5                        // Density, lb/ft3
+           matSpHt = 0.2                        // Specific heat of material, Btu/lb-°F
+           matCond = 0.032051                   // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.00418                  // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "m-Insul-R5-D1.5-SH0.35-C0.01667"  
+           matDens = 1.5                        // Density, lb/ft3
+           matSpHt = 0.35                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.016666                   // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.00175                  // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "m-Ins-R18-D1.5-SH0.2-C0.02546"  
+           matDens = 1.5                        // Density, lb/ft3
+           matSpHt = 0.2                        // Specific heat of material, Btu/lb-°F
+           matCond = 0.025463                   // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.003254                 // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "m-SNEICConcrete"  
+           matDens = 144                        // Density, lb/ft3
+           matSpHt = 0.2                        // Specific heat of material, Btu/lb-°F
+           matCond = 1                          // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+        
+        MATERIAL   "m-SNEICEarth"  
+           matDens = 115                        // Density, lb/ft3
+           matSpHt = 0.2                        // Specific heat of material, Btu/lb-°F
+           matCond = 1                          // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+        
+        MATERIAL   "m-SNEICCarpet"  
+           matDens = 12.3                       // Density, lb/ft3
+           matSpHt = 0.34                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.02                       // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+        
+        MATERIAL   "m-Zone1DoorFront-dr"  
+           matThk = 0.041667                    // Thickness (feet), ft
+           matDens = 41                         // Density, lb/ft3
+           matSpHt = 0.39                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.01004                    // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+        
+        MATERIAL   "m-Zone2DoorFront-dr"  
+           matThk = 0.041667                    // Thickness (feet), ft
+           matDens = 41                         // Density, lb/ft3
+           matSpHt = 0.39                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.01004                    // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+        
+        MATERIAL   "m-AtticTruss"  
+           matDens = 35                         // Density, lb/ft3
+           matSpHt = 0.39                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.08167                    // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.0012                   // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "IntMassMat-SoftWood"  
+           matDens = 35                         // Density, lb/ft3
+           matSpHt = 0.39                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.08167                    // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.0012                   // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "IntMassMat-Gypsum"  
+           matDens = 40                         // Density, lb/ft3
+           matSpHt = 0.27                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.09167                    // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.000122                 // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        DESCOND   "ClgDC_0p4pct_Aug"  
+           dcDB = 92.7                          // Cooling design dry-bulb temperature, °F
+           dcDay = Aug 21                       // Calendar date for this design cooling conditions
+           dcMCDBR = 20.7                       // Coincident daily dry-bulb range, °F
+           dcMCWB = 70.2                        // Coincident wet-bulb temperature, °F
+           dcMCWBR = 7.8                        // Coincident daily wet-bulb range, °F
+           dcTauB = 0.383                       // ASHRAE beam 'pseudo optical depth'
+           dcTauD = 2.433                       // ASHRAE diffuse 'pseudo optical depth'
+           dcWindSpeed = 2                      // Wind speed for design conditions, mph
+        
+        METER   "MtrElec"  
+        
+        METER   "MtrNatGas"  
+        
+        DHWMETER   "DHWMtrFXMix"  
+        
+        DHWMETER   "DHWMtrWH"  
+        
+        DHWSYS   "dhwsys-1BR - First Floor DU"  
+           wsDayUse = DHWMF1BR01                // Day use profile object
+           wsTUse = 115                         // Water use temperature (at the point of use), °F
+           wsTSetpoint = 125                    // Setpoint temperature for HPWHs (whHeatSrc = ASHPX), °F
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.130906                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+           wsElecMtr = "MtrElec"                // Electric use meter
+           wsFuelMtr = "MtrNatGas"              // Fuel use meter
+           wsFXHwMtr = "DHWMtrFXMix"
+           wsWHHwMtr = "DHWMtrWH"
+           wsCalcMode = "Simulate"              // specifies PreRun vs. Simulate
+        
+           DHWHEATER   "dhwhtr1-Std UEF2 NEEA HPWH"  
+              whType = "SmallStorage"           // Type of water heater
+              whHeatSrc = "ASHPX"               // Fuel source for water heater
+              whASHPType = "GE2012"             // ASHP type (for new HPWH model)
+              whMult = 1                        // Water heater multiplier
+              whXBUEndUse = "User2"             // enduse to accumulate ASHPX backup heat elec use
+              whZone = "Zone1-zn"               // Zone tank located in (currently active only for ASHPX model)
+              whASHPSrcT = $tDbO                // Temperature source for compressor (currently active only for ASHPX model, when no whASHPSrcZn specified), °F
+        
+        DHWSYS   "dhwsys-1BR - First Floor DU 2"  
+           wsDayUse = DHWMF1BR02                // Day use profile object
+           wsTUse = 115                         // Water use temperature (at the point of use), °F
+           wsTSetpoint = 125                    // Setpoint temperature for HPWHs (whHeatSrc = ASHPX), °F
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.130906                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+           wsElecMtr = "MtrElec"                // Electric use meter
+           wsFuelMtr = "MtrNatGas"              // Fuel use meter
+           wsFXHwMtr = "DHWMtrFXMix"
+           wsWHHwMtr = "DHWMtrWH"
+           wsCalcMode = "Simulate"              // specifies PreRun vs. Simulate
+        
+           DHWHEATER   "dhwhtr1-Std UEF2 NEEA HPWH 2"  
+              whType = "SmallStorage"           // Type of water heater
+              whHeatSrc = "ASHPX"               // Fuel source for water heater
+              whASHPType = "GE2012"             // ASHP type (for new HPWH model)
+              whMult = 1                        // Water heater multiplier
+              whXBUEndUse = "User2"             // enduse to accumulate ASHPX backup heat elec use
+              whZone = "Zone1-zn"               // Zone tank located in (currently active only for ASHPX model)
+              whASHPSrcT = $tDbO                // Temperature source for compressor (currently active only for ASHPX model, when no whASHPSrcZn specified), °F
+        
+        DHWSYS   "dhwsys-2BR - First Floor DU"  
+           wsDayUse = DHWMF2BR01                // Day use profile object
+           wsTUse = 115                         // Water use temperature (at the point of use), °F
+           wsTSetpoint = 125                    // Setpoint temperature for HPWHs (whHeatSrc = ASHPX), °F
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 2                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+           wsElecMtr = "MtrElec"                // Electric use meter
+           wsFuelMtr = "MtrNatGas"              // Fuel use meter
+           wsFXHwMtr = "DHWMtrFXMix"
+           wsWHHwMtr = "DHWMtrWH"
+           wsCalcMode = "Simulate"              // specifies PreRun vs. Simulate
+        
+           DHWHEATER   "dhwhtr1-Std UEF2 NEEA HPWH 3"  
+              whType = "SmallStorage"           // Type of water heater
+              whHeatSrc = "ASHPX"               // Fuel source for water heater
+              whASHPType = "GE2012"             // ASHP type (for new HPWH model)
+              whMult = 1                        // Water heater multiplier
+              whXBUEndUse = "User2"             // enduse to accumulate ASHPX backup heat elec use
+              whZone = "Zone1-zn"               // Zone tank located in (currently active only for ASHPX model)
+              whASHPSrcT = $tDbO                // Temperature source for compressor (currently active only for ASHPX model, when no whASHPSrcZn specified), °F
+        
+        DHWSYS   "dhwsys-2BR - First Floor DU 4"  
+           wsDayUse = DHWMF2BR02                // Day use profile object
+           wsTUse = 115                         // Water use temperature (at the point of use), °F
+           wsTSetpoint = 125                    // Setpoint temperature for HPWHs (whHeatSrc = ASHPX), °F
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 2                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+           wsElecMtr = "MtrElec"                // Electric use meter
+           wsFuelMtr = "MtrNatGas"              // Fuel use meter
+           wsFXHwMtr = "DHWMtrFXMix"
+           wsWHHwMtr = "DHWMtrWH"
+           wsCalcMode = "Simulate"              // specifies PreRun vs. Simulate
+        
+           DHWHEATER   "dhwhtr1-Std UEF2 NEEA HPWH 4"  
+              whType = "SmallStorage"           // Type of water heater
+              whHeatSrc = "ASHPX"               // Fuel source for water heater
+              whASHPType = "GE2012"             // ASHP type (for new HPWH model)
+              whMult = 1                        // Water heater multiplier
+              whXBUEndUse = "User2"             // enduse to accumulate ASHPX backup heat elec use
+              whZone = "Zone1-zn"               // Zone tank located in (currently active only for ASHPX model)
+              whASHPSrcT = $tDbO                // Temperature source for compressor (currently active only for ASHPX model, when no whASHPSrcZn specified), °F
+        
+        DHWSYS   "dhwsys-1BR - Second Floor DU"  
+           wsDayUse = DHWMF1BR03                // Day use profile object
+           wsTUse = 115                         // Water use temperature (at the point of use), °F
+           wsTSetpoint = 125                    // Setpoint temperature for HPWHs (whHeatSrc = ASHPX), °F
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.130906                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+           wsElecMtr = "MtrElec"                // Electric use meter
+           wsFuelMtr = "MtrNatGas"              // Fuel use meter
+           wsFXHwMtr = "DHWMtrFXMix"
+           wsWHHwMtr = "DHWMtrWH"
+           wsCalcMode = "Simulate"              // specifies PreRun vs. Simulate
+        
+           DHWHEATER   "dhwhtr1-Std UEF2 NEEA HPWH 5"  
+              whType = "SmallStorage"           // Type of water heater
+              whHeatSrc = "ASHPX"               // Fuel source for water heater
+              whASHPType = "GE2012"             // ASHP type (for new HPWH model)
+              whMult = 1                        // Water heater multiplier
+              whXBUEndUse = "User2"             // enduse to accumulate ASHPX backup heat elec use
+              whZone = "Zone1-zn"               // Zone tank located in (currently active only for ASHPX model)
+              whASHPSrcT = $tDbO                // Temperature source for compressor (currently active only for ASHPX model, when no whASHPSrcZn specified), °F
+        
+        DHWSYS   "dhwsys-1BR - Second Floor DU 6"  
+           wsDayUse = DHWMF1BR04                // Day use profile object
+           wsTUse = 115                         // Water use temperature (at the point of use), °F
+           wsTSetpoint = 125                    // Setpoint temperature for HPWHs (whHeatSrc = ASHPX), °F
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.130906                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+           wsElecMtr = "MtrElec"                // Electric use meter
+           wsFuelMtr = "MtrNatGas"              // Fuel use meter
+           wsFXHwMtr = "DHWMtrFXMix"
+           wsWHHwMtr = "DHWMtrWH"
+           wsCalcMode = "Simulate"              // specifies PreRun vs. Simulate
+        
+           DHWHEATER   "dhwhtr1-Std UEF2 NEEA HPWH 6"  
+              whType = "SmallStorage"           // Type of water heater
+              whHeatSrc = "ASHPX"               // Fuel source for water heater
+              whASHPType = "GE2012"             // ASHP type (for new HPWH model)
+              whMult = 1                        // Water heater multiplier
+              whXBUEndUse = "User2"             // enduse to accumulate ASHPX backup heat elec use
+              whZone = "Zone1-zn"               // Zone tank located in (currently active only for ASHPX model)
+              whASHPSrcT = $tDbO                // Temperature source for compressor (currently active only for ASHPX model, when no whASHPSrcZn specified), °F
+        
+        DHWSYS   "dhwsys-2BR - Second Floor DU"  
+           wsDayUse = DHWMF2BR03                // Day use profile object
+           wsTUse = 115                         // Water use temperature (at the point of use), °F
+           wsTSetpoint = 125                    // Setpoint temperature for HPWHs (whHeatSrc = ASHPX), °F
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 2                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+           wsElecMtr = "MtrElec"                // Electric use meter
+           wsFuelMtr = "MtrNatGas"              // Fuel use meter
+           wsFXHwMtr = "DHWMtrFXMix"
+           wsWHHwMtr = "DHWMtrWH"
+           wsCalcMode = "Simulate"              // specifies PreRun vs. Simulate
+        
+           DHWHEATER   "dhwhtr1-Std UEF2 NEEA HPWH 7"  
+              whType = "SmallStorage"           // Type of water heater
+              whHeatSrc = "ASHPX"               // Fuel source for water heater
+              whASHPType = "GE2012"             // ASHP type (for new HPWH model)
+              whMult = 1                        // Water heater multiplier
+              whXBUEndUse = "User2"             // enduse to accumulate ASHPX backup heat elec use
+              whZone = "Zone1-zn"               // Zone tank located in (currently active only for ASHPX model)
+              whASHPSrcT = $tDbO                // Temperature source for compressor (currently active only for ASHPX model, when no whASHPSrcZn specified), °F
+        
+        DHWSYS   "dhwsys-2BR - Second Floor DU 8"  
+           wsDayUse = DHWMF2BR04                // Day use profile object
+           wsTUse = 115                         // Water use temperature (at the point of use), °F
+           wsTSetpoint = 125                    // Setpoint temperature for HPWHs (whHeatSrc = ASHPX), °F
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 2                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+           wsElecMtr = "MtrElec"                // Electric use meter
+           wsFuelMtr = "MtrNatGas"              // Fuel use meter
+           wsFXHwMtr = "DHWMtrFXMix"
+           wsWHHwMtr = "DHWMtrWH"
+           wsCalcMode = "Simulate"              // specifies PreRun vs. Simulate
+        
+           DHWHEATER   "dhwhtr1-Std UEF2 NEEA HPWH 8"  
+              whType = "SmallStorage"           // Type of water heater
+              whHeatSrc = "ASHPX"               // Fuel source for water heater
+              whASHPType = "GE2012"             // ASHP type (for new HPWH model)
+              whMult = 1                        // Water heater multiplier
+              whXBUEndUse = "User2"             // enduse to accumulate ASHPX backup heat elec use
+              whZone = "Zone1-zn"               // Zone tank located in (currently active only for ASHPX model)
+              whASHPSrcT = $tDbO                // Temperature source for compressor (currently active only for ASHPX model, when no whASHPSrcZn specified), °F
+        
+        IZXFER   "Zone2ToAtticCeiling-BypassxA"  
+           izNVType = "NONE"                    // Choice determining interzone ventilation
+           izZn1 = "Zone2-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izZn2 = "Attic-atc"                  // Name of secondary zone
+           izHConst = 0 * 3660 * select(@znRes["Zone2-zn"].prior.H.tAir - @znRes["Attic-atc"].prior.H.tAir > 0., 1., default 0.)    // expression describing Conductance between zones, Btu/°F
+        
+        IZXFER   "Zone1-InfLU"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone1-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0.137534                     // Area of low or only vent (typically VentOff), ft2
+           izHD = 2.7                           // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 1                          // Vent discharge coefficient coefficient
+           izCpr = 0.6                          // Wind pressure coefficient (for AIRNETEXT)
+           izExp = 0.65                         // Opening exponent
+        
+        IZXFER   "Zone1-InfLS"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone1-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0.275067                     // Area of low or only vent (typically VentOff), ft2
+           izHD = 2.7                           // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 1                          // Vent discharge coefficient coefficient
+           izCpr = -0.65                        // Wind pressure coefficient (for AIRNETEXT)
+           izExp = 0.65                         // Opening exponent
+        
+        IZXFER   "Zone1-InfLD"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone1-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0.137534                     // Area of low or only vent (typically VentOff), ft2
+           izHD = 2.7                           // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 1                          // Vent discharge coefficient coefficient
+           izCpr = -0.3                         // Wind pressure coefficient (for AIRNETEXT)
+           izExp = 0.65                         // Opening exponent
+        
+        IZXFER   "Zone1-InfHU"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone1-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0.137534                     // Area of low or only vent (typically VentOff), ft2
+           izHD = 6.7                           // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 1                          // Vent discharge coefficient coefficient
+           izCpr = 0.6                          // Wind pressure coefficient (for AIRNETEXT)
+           izExp = 0.65                         // Opening exponent
+        
+        IZXFER   "Zone1-InfHS"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone1-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0.275067                     // Area of low or only vent (typically VentOff), ft2
+           izHD = 6.7                           // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 1                          // Vent discharge coefficient coefficient
+           izCpr = -0.65                        // Wind pressure coefficient (for AIRNETEXT)
+           izExp = 0.65                         // Opening exponent
+        
+        IZXFER   "Zone1-InfHD"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone1-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0.137534                     // Area of low or only vent (typically VentOff), ft2
+           izHD = 6.7                           // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 1                          // Vent discharge coefficient coefficient
+           izCpr = -0.3                         // Wind pressure coefficient (for AIRNETEXT)
+           izExp = 0.65                         // Opening exponent
+        
+        IZXFER   "Zone1-NVLU"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone1-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0                            // Area of low or only vent (typically VentOff), ft2
+           izAHi = 2.565 * WINDOWVENTAVAIL      // Additional vent area (high vent or VentOn)  (expression/formula), ft2
+           izHD = 4.4                           // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 0.5                        // Vent discharge coefficient coefficient
+           izCpr = 0.6                          // Wind pressure coefficient (for AIRNETEXT)
+           izAFCat = "VentEx"                   // Air flow (infiltration) reporting category
+        
+        IZXFER   "Zone1-NVLS"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone1-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0                            // Area of low or only vent (typically VentOff), ft2
+           izAHi = 5.130 * WINDOWVENTAVAIL      // Additional vent area (high vent or VentOn)  (expression/formula), ft2
+           izHD = 4.4                           // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 0.5                        // Vent discharge coefficient coefficient
+           izCpr = -0.65                        // Wind pressure coefficient (for AIRNETEXT)
+           izAFCat = "VentEx"                   // Air flow (infiltration) reporting category
+        
+        IZXFER   "Zone1-NVLD"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone1-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0                            // Area of low or only vent (typically VentOff), ft2
+           izAHi = 2.565 * WINDOWVENTAVAIL      // Additional vent area (high vent or VentOn)  (expression/formula), ft2
+           izHD = 4.4                           // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 0.5                        // Vent discharge coefficient coefficient
+           izCpr = -0.3                         // Wind pressure coefficient (for AIRNETEXT)
+           izAFCat = "VentEx"                   // Air flow (infiltration) reporting category
+        
+        IZXFER   "Zone1-NVHU"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone1-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0                            // Area of low or only vent (typically VentOff), ft2
+           izAHi = 2.565 * WINDOWVENTAVAIL      // Additional vent area (high vent or VentOn)  (expression/formula), ft2
+           izHD = 6.4                           // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 0.5                        // Vent discharge coefficient coefficient
+           izCpr = 0.6                          // Wind pressure coefficient (for AIRNETEXT)
+           izAFCat = "VentEx"                   // Air flow (infiltration) reporting category
+        
+        IZXFER   "Zone1-NVHS"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone1-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0                            // Area of low or only vent (typically VentOff), ft2
+           izAHi = 5.130 * WINDOWVENTAVAIL      // Additional vent area (high vent or VentOn)  (expression/formula), ft2
+           izHD = 6.4                           // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 0.5                        // Vent discharge coefficient coefficient
+           izCpr = -0.65                        // Wind pressure coefficient (for AIRNETEXT)
+           izAFCat = "VentEx"                   // Air flow (infiltration) reporting category
+        
+        IZXFER   "Zone1-NVHD"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone1-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0                            // Area of low or only vent (typically VentOff), ft2
+           izAHi = 2.565 * WINDOWVENTAVAIL      // Additional vent area (high vent or VentOn)  (expression/formula), ft2
+           izHD = 6.4                           // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 0.5                        // Vent discharge coefficient coefficient
+           izCpr = -0.3                         // Wind pressure coefficient (for AIRNETEXT)
+           izAFCat = "VentEx"                   // Air flow (infiltration) reporting category
+        
+        IZXFER   "Zone1-IAQHRV"  
+           izNVType = "AIRNETHERV"              // Choice determining interzone ventilation
+           izZn1 = "Zone1-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izFanVfDs = 184.8                    // Fan design or rated flow at rated pressure, cfm
+           izFanElecPwr = 0.4                   // Fan input power per unit air flow (at design flow and pressure), W/cfm
+           izFanMtr = "MtrElec"                 // Name of meter, if any, to record energy used by supply fan (enduse = 'Fan')
+           izFanEndUse = "FANV"                 // Enduse to apply fan energy usage to
+        
+        IZXFER   "Zone2-InfLU"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone2-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0.137534                     // Area of low or only vent (typically VentOff), ft2
+           izHD = 11.7                          // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 1                          // Vent discharge coefficient coefficient
+           izCpr = 0.6                          // Wind pressure coefficient (for AIRNETEXT)
+           izExp = 0.65                         // Opening exponent
+        
+        IZXFER   "Zone2-InfLS"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone2-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0.275067                     // Area of low or only vent (typically VentOff), ft2
+           izHD = 11.7                          // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 1                          // Vent discharge coefficient coefficient
+           izCpr = -0.65                        // Wind pressure coefficient (for AIRNETEXT)
+           izExp = 0.65                         // Opening exponent
+        
+        IZXFER   "Zone2-InfLD"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone2-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0.137534                     // Area of low or only vent (typically VentOff), ft2
+           izHD = 11.7                          // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 1                          // Vent discharge coefficient coefficient
+           izCpr = -0.3                         // Wind pressure coefficient (for AIRNETEXT)
+           izExp = 0.65                         // Opening exponent
+        
+        IZXFER   "Zone2-InfHU"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone2-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0.137534                     // Area of low or only vent (typically VentOff), ft2
+           izHD = 15.7                          // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 1                          // Vent discharge coefficient coefficient
+           izCpr = 0.6                          // Wind pressure coefficient (for AIRNETEXT)
+           izExp = 0.65                         // Opening exponent
+        
+        IZXFER   "Zone2-InfHS"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone2-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0.275067                     // Area of low or only vent (typically VentOff), ft2
+           izHD = 15.7                          // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 1                          // Vent discharge coefficient coefficient
+           izCpr = -0.65                        // Wind pressure coefficient (for AIRNETEXT)
+           izExp = 0.65                         // Opening exponent
+        
+        IZXFER   "Zone2-InfHD"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone2-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0.137534                     // Area of low or only vent (typically VentOff), ft2
+           izHD = 15.7                          // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 1                          // Vent discharge coefficient coefficient
+           izCpr = -0.3                         // Wind pressure coefficient (for AIRNETEXT)
+           izExp = 0.65                         // Opening exponent
+        
+        IZXFER   "Zone2-NVLU"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone2-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0                            // Area of low or only vent (typically VentOff), ft2
+           izAHi = 2.565 * WINDOWVENTAVAIL      // Additional vent area (high vent or VentOn)  (expression/formula), ft2
+           izHD = 13.4                          // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 0.5                        // Vent discharge coefficient coefficient
+           izCpr = 0.6                          // Wind pressure coefficient (for AIRNETEXT)
+           izAFCat = "VentEx"                   // Air flow (infiltration) reporting category
+        
+        IZXFER   "Zone2-NVLS"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone2-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0                            // Area of low or only vent (typically VentOff), ft2
+           izAHi = 5.130 * WINDOWVENTAVAIL      // Additional vent area (high vent or VentOn)  (expression/formula), ft2
+           izHD = 13.4                          // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 0.5                        // Vent discharge coefficient coefficient
+           izCpr = -0.65                        // Wind pressure coefficient (for AIRNETEXT)
+           izAFCat = "VentEx"                   // Air flow (infiltration) reporting category
+        
+        IZXFER   "Zone2-NVLD"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone2-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0                            // Area of low or only vent (typically VentOff), ft2
+           izAHi = 2.565 * WINDOWVENTAVAIL      // Additional vent area (high vent or VentOn)  (expression/formula), ft2
+           izHD = 13.4                          // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 0.5                        // Vent discharge coefficient coefficient
+           izCpr = -0.3                         // Wind pressure coefficient (for AIRNETEXT)
+           izAFCat = "VentEx"                   // Air flow (infiltration) reporting category
+        
+        IZXFER   "Zone2-NVHU"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone2-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0                            // Area of low or only vent (typically VentOff), ft2
+           izAHi = 2.565 * WINDOWVENTAVAIL      // Additional vent area (high vent or VentOn)  (expression/formula), ft2
+           izHD = 15.4                          // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 0.5                        // Vent discharge coefficient coefficient
+           izCpr = 0.6                          // Wind pressure coefficient (for AIRNETEXT)
+           izAFCat = "VentEx"                   // Air flow (infiltration) reporting category
+        
+        IZXFER   "Zone2-NVHS"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone2-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0                            // Area of low or only vent (typically VentOff), ft2
+           izAHi = 5.130 * WINDOWVENTAVAIL      // Additional vent area (high vent or VentOn)  (expression/formula), ft2
+           izHD = 15.4                          // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 0.5                        // Vent discharge coefficient coefficient
+           izCpr = -0.65                        // Wind pressure coefficient (for AIRNETEXT)
+           izAFCat = "VentEx"                   // Air flow (infiltration) reporting category
+        
+        IZXFER   "Zone2-NVHD"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Zone2-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 0                            // Area of low or only vent (typically VentOff), ft2
+           izAHi = 2.565 * WINDOWVENTAVAIL      // Additional vent area (high vent or VentOn)  (expression/formula), ft2
+           izHD = 15.4                          // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 0.5                        // Vent discharge coefficient coefficient
+           izCpr = -0.3                         // Wind pressure coefficient (for AIRNETEXT)
+           izAFCat = "VentEx"                   // Air flow (infiltration) reporting category
+        
+        IZXFER   "Zone2-IAQHRV"  
+           izNVType = "AIRNETHERV"              // Choice determining interzone ventilation
+           izZn1 = "Zone2-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izFanVfDs = 184.8                    // Fan design or rated flow at rated pressure, cfm
+           izFanElecPwr = 0.4                   // Fan input power per unit air flow (at design flow and pressure), W/cfm
+           izFanMtr = "MtrElec"                 // Name of meter, if any, to record energy used by supply fan (enduse = 'Fan')
+           izFanEndUse = "FANV"                 // Enduse to apply fan energy usage to
+        
+        IZXFER   "Zone2ToAtticCeiling-xAttic"  
+           izNVType = "AIRNETIZ"                // Choice determining interzone ventilation
+           izZn1 = "Zone2-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izZn2 = "Attic-atc"                  // Name of secondary zone
+           izALo = 1.55843                      // Area of low or only vent (typically VentOff), ft2
+           izHD = 17.7                          // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 1                          // Vent discharge coefficient coefficient
+           izExp = 0.65                         // Opening exponent
+        
+        IZXFER   "Attic-SU"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Attic-atc"                  // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 1.525                        // Area of low or only vent (typically VentOff), ft2
+           izHD = 17.7                          // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 0.6                        // Vent discharge coefficient coefficient
+           izCpr = 0.6                          // Wind pressure coefficient (for AIRNETEXT)
+           izExp = 0.65                         // Opening exponent
+        
+        IZXFER   "Attic-SS"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Attic-atc"                  // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 3.05                         // Area of low or only vent (typically VentOff), ft2
+           izHD = 17.7                          // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 0.6                        // Vent discharge coefficient coefficient
+           izCpr = -0.65                        // Wind pressure coefficient (for AIRNETEXT)
+           izExp = 0.65                         // Opening exponent
+        
+        IZXFER   "Attic-SD"  
+           izNVType = "AIRNETEXT"               // Choice determining interzone ventilation
+           izZn1 = "Attic-atc"                  // Name of primary zone (flow rates > 0 are into the primary zone)
+           izALo = 1.525                        // Area of low or only vent (typically VentOff), ft2
+           izHD = 17.7                          // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 0.6                        // Vent discharge coefficient coefficient
+           izCpr = -0.3                         // Wind pressure coefficient (for AIRNETEXT)
+           izExp = 0.65                         // Opening exponent
+        
+        IZXFER   "Zone1PSxZone2ToZone1InteriorFloorPS"  
+           izNVType = "AIRNETIZ"                // Choice determining interzone ventilation
+           izZn1 = "Zone1-zn"                   // Name of primary zone (flow rates > 0 are into the primary zone)
+           izZn2 = "Zone2-zn"                   // Name of secondary zone
+           izALo = 0.013176                     // Area of low or only vent (typically VentOff), ft2
+           izHD = 9.7                           // Vent center-to-center height difference (for TWOWAY) or vent height above nominal 0 level (for AirNet types), ft
+           izNVEff = 1                          // Vent discharge coefficient coefficient
+           izExp = 0.65                         // Opening exponent
+        
+        ZONE   "Zone1-zn"  
+           znModel = "CZM"                      // Zone model (CNE, CSE, CZM, UZM)
+           znArea = 3660                        // Zone area, ft2
+           znVol = 29280                        // Zone volume, ft3
+           znEaveZ = 8.7                        // Height of top of the wall in this zone above the ground, ft
+           znCeilingHt = 8                      // Nominal zone ceiling height relative to zone floor (typically 8-10 ft), ft
+           znFloorZ = 0.7                       // Nominal zone floor height relative to arbitrary 0 level, ft
+           znCAir = 7320                        // Zone 'air' heat capacity: represents heat capacity of air, furniture, 'light' walls, and everything in zone except nonQUICK surfaces
+           znSC = select( $radDiff >1., 0.5, default 0.8 )    // Expression representing zone shade closure
+           znTH = select( $dsDay==1, 70, $dsDay==2, 60, ISSEASONCOOLING, 60, default 68)     // Expression representing heating setpoint, °F
+           znTC = select( $dsDay==1, 83, $dsDay==2, 75, default 78)    // Expression representing cooling setpoint, °F
+           znTD = select( $dsDay==1, 77, $dsDay==2, 99, ISSEASONCOOLING, 68, default 77 )    // Expression representing desired setpoint, °F
+           znHIRatio = 10                       // Zone hygric inertia ratio
+           infAC = 0                            // Zone infiltration air changes per hour, 1/hr
+           infELA = 0                           // Zone effective leakage area (ELA), in2
+           infShld = 4                          // Zone local shielding class, used in ELA model
+           znRSys = "rsys-Zone1 HVACSys"        // RSYS component conditioning this ZONE
+        
+           GAIN   "Zone1-znLtg"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Lit"                  // Internal gain enduse
+              gnPower = 2.68089 * 3660 * select( $dsDay==1, 0., $ISWEHOL, IntLight_WEH, Default IntLight_WD) * Other_SM    // Expression representing internal gain power, Btuh
+              gnFrRad = 0.2                     // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+        
+           GAIN   "Zone1-znPpl"  
+              gnPower = 17.4806 * 3660 * select( $dsDay==1, 0., default hourval(0.035,0.035,0.035,0.035,0.035,0.059,0.082,0.055,0.027,0.014,0.014,0.014,0.014,0.014,0.019,0.027,0.041,0.055,0.068,0.082,0.082,0.07,0.053,0.035)  * choose1($month, 1.19,1.11,1.02,0.93,0.84,0.8,0.82,0.88,0.98,1.07,1.16,1.21))    // Expression representing internal gain power, Btuh
+              gnFrRad = 0.3                     // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.427                   // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+        
+           GAIN   "Zone1-znTV"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Rcp"                  // Internal gain enduse
+              gnPower = 11692.4 * select( $dsDay==1, 0., $ISWEHOL, TV_WEH, Default TV_WD) * TV_SM    // Expression representing internal gain power, Btuh
+              gnFrRad = 0.4                     // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+        
+           GAIN   "Zone1-znSTB"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Rcp"                  // Internal gain enduse
+              gnPower = 6173.38 * select( $dsDay==1, 0., $ISWEHOL, STB_WEH, Default STB_WD) * STB_SM    // Expression representing internal gain power, Btuh
+              gnFrRad = 0.2                     // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+        
+           GAIN   "Zone1-znComp"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Rcp"                  // Internal gain enduse
+              gnPower = 6061.21 * select( $dsDay==1, 0., $ISWEHOL, Comp_WEH, Default Comp_WD) * Comp_SM    // Expression representing internal gain power, Btuh
+              gnFrRad = 0.2                     // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+        
+           GAIN   "Zone1-znMEL"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Rcp"                  // Internal gain enduse
+              gnPower = 32469.2 * select( $dsDay==1, 0., $ISWEHOL, RMEL_WEH, Default RMEL_WD) * Other_SM    // Expression representing internal gain power, Btuh
+              gnFrRad = 0.3                     // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.03                    // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+        
+           GAIN   "Zone1-znRfrg"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Refr"                 // Internal gain enduse
+              gnPower = (5.58356 * 3412 / 24) * ( select( $isWeHol, RefrConst_WEH, default RefrConst_WD ) + select( $isWeHol, RefrTemp_WEH, default RefrTemp_WD ) * @znRes["Zone1-zn"].prior.H.tAir)    // Expression representing internal gain power, Btuh
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+        
+           GAIN   "1BR - First Floor DU-znDshwshr"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Dish"                 // Internal gain enduse
+              gnPower = 0.14507 * 3412 / 1      // Expression representing internal gain power, Btuh
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.25                    // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+              gnCtrlDHWSYS = "dhwsys-1BR - First Floor DU"    // DHW system serving the gain
+              gnCtrlDHWEndUse = "DWashr"        // DHW system water heating enduse
+        
+           GAIN   "1BR - First Floor DU 2-znDshwshr"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Dish"                 // Internal gain enduse
+              gnPower = 0.14507 * 3412 / 1      // Expression representing internal gain power, Btuh
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.25                    // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+              gnCtrlDHWSYS = "dhwsys-1BR - First Floor DU 2"    // DHW system serving the gain
+              gnCtrlDHWEndUse = "DWashr"        // DHW system water heating enduse
+        
+           GAIN   "2BR - First Floor DU-znDshwshr"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Dish"                 // Internal gain enduse
+              gnPower = 0.14507 * 3412 / 1      // Expression representing internal gain power, Btuh
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.25                    // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+              gnCtrlDHWSYS = "dhwsys-2BR - First Floor DU"    // DHW system serving the gain
+              gnCtrlDHWEndUse = "DWashr"        // DHW system water heating enduse
+        
+           GAIN   "2BR - First Floor DU 4-znDshwshr"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Dish"                 // Internal gain enduse
+              gnPower = 0.14507 * 3412 / 1      // Expression representing internal gain power, Btuh
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.25                    // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+              gnCtrlDHWSYS = "dhwsys-2BR - First Floor DU 4"    // DHW system serving the gain
+              gnCtrlDHWEndUse = "DWashr"        // DHW system water heating enduse
+        
+           GAIN   "Zone1-znCkE"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Cook"                 // Internal gain enduse
+              gnPower = 9439.56 * select( $dsDay==1, 0., $ISWEHOL, Cook_WEH, Default Cook_WD) * Cook_SM    // Expression representing internal gain power, Btuh
+              gnFrZn = 0.9                      // Fraction of internal gain to Zone (single value or hourly profile)
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.67                    // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+        
+           GAIN   "1BR - First Floor DU-znCWshr"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Wash"                 // Internal gain enduse
+              gnPower = 0.010067 * 3412 / 1     // Expression representing internal gain power, Btuh
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnCtrlDHWSYS = "dhwsys-1BR - First Floor DU"    // DHW system serving the gain
+              gnCtrlDHWEndUse = "CWashr"        // DHW system water heating enduse
+        
+           GAIN   "1BR - First Floor DU 2-znCWshr"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Wash"                 // Internal gain enduse
+              gnPower = 0.010067 * 3412 / 1     // Expression representing internal gain power, Btuh
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnCtrlDHWSYS = "dhwsys-1BR - First Floor DU 2"    // DHW system serving the gain
+              gnCtrlDHWEndUse = "CWashr"        // DHW system water heating enduse
+        
+           GAIN   "2BR - First Floor DU-znCWshr"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Wash"                 // Internal gain enduse
+              gnPower = 0.010067 * 3412 / 1     // Expression representing internal gain power, Btuh
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnCtrlDHWSYS = "dhwsys-2BR - First Floor DU"    // DHW system serving the gain
+              gnCtrlDHWEndUse = "CWashr"        // DHW system water heating enduse
+        
+           GAIN   "2BR - First Floor DU 4-znCWshr"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Wash"                 // Internal gain enduse
+              gnPower = 0.010067 * 3412 / 1     // Expression representing internal gain power, Btuh
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnCtrlDHWSYS = "dhwsys-2BR - First Floor DU 4"    // DHW system serving the gain
+              gnCtrlDHWEndUse = "CWashr"        // DHW system water heating enduse
+        
+           GAIN   "1BR - First Floor DU-znCDryE"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Dry"                  // Internal gain enduse
+              gnPower = 0.08509 * 3412 * @DHWSYS["dhwsys-1BR - First Floor DU"].FxUseMixLH.CWashr / 1    // Expression representing internal gain power, Btuh
+              gnFrZn = 0.3                      // Fraction of internal gain to Zone (single value or hourly profile)
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.5                     // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+        
+           GAIN   "1BR - First Floor DU 2-znCDryE"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Dry"                  // Internal gain enduse
+              gnPower = 0.08509 * 3412 * @DHWSYS["dhwsys-1BR - First Floor DU 2"].FxUseMixLH.CWashr / 1    // Expression representing internal gain power, Btuh
+              gnFrZn = 0.3                      // Fraction of internal gain to Zone (single value or hourly profile)
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.5                     // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+        
+           GAIN   "2BR - First Floor DU-znCDryE"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Dry"                  // Internal gain enduse
+              gnPower = 0.08509 * 3412 * @DHWSYS["dhwsys-2BR - First Floor DU"].FxUseMixLH.CWashr / 1    // Expression representing internal gain power, Btuh
+              gnFrZn = 0.3                      // Fraction of internal gain to Zone (single value or hourly profile)
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.5                     // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+        
+           GAIN   "2BR - First Floor DU 4-znCDryE"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Dry"                  // Internal gain enduse
+              gnPower = 0.08509 * 3412 * @DHWSYS["dhwsys-2BR - First Floor DU 4"].FxUseMixLH.CWashr / 1    // Expression representing internal gain power, Btuh
+              gnFrZn = 0.3                      // Fraction of internal gain to Zone (single value or hourly profile)
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.5                     // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+        
+           SURFACE   "Zone1WallFront-Frm"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "fc-T24-2022 ExtWall 2x6 16oc U=0.051"    // Surface construction
+              sfArea = 198.075                  // Wall area, ft2
+              sfTilt = 90                       // Surface tilt, deg
+              sfAzm = 0                         // Surface azimuth, deg
+              sfExAbs = 0.5                     // Surface exterior solar absorptivity
+              sfModel = "Forward_Difference"    // Modeling option
+        
+           SURFACE   "Zone1WallLeft-Frm"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "fc-T24-2022 ExtWall 2x6 16oc U=0.051"    // Surface construction
+              sfArea = 53.625                   // Wall area, ft2
+              sfTilt = 90                       // Surface tilt, deg
+              sfAzm = 90                        // Surface azimuth, deg
+              sfExAbs = 0.5                     // Surface exterior solar absorptivity
+              sfModel = "Forward_Difference"    // Modeling option
+        
+           SURFACE   "Zone1WallBack-Frm"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "fc-T24-2022 ExtWall 2x6 16oc U=0.051"    // Surface construction
+              sfArea = 218.075                  // Wall area, ft2
+              sfTilt = 90                       // Surface tilt, deg
+              sfAzm = 180                       // Surface azimuth, deg
+              sfExAbs = 0.5                     // Surface exterior solar absorptivity
+              sfModel = "Forward_Difference"    // Modeling option
+        
+           SURFACE   "Zone1WallRight-Frm"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "fc-T24-2022 ExtWall 2x6 16oc U=0.051"    // Surface construction
+              sfArea = 53.625                   // Wall area, ft2
+              sfTilt = 90                       // Surface tilt, deg
+              sfAzm = 270                       // Surface azimuth, deg
+              sfExAbs = 0.5                     // Surface exterior solar absorptivity
+              sfModel = "Forward_Difference"    // Modeling option
+        
+           SURFACE   "Zone1WallFront-Cav"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "cc-T24-2022 ExtWall 2x6 16oc U=0.051"    // Surface construction, Cavity R-val: 18
+              sfArea = 838.925                  // Wall area, ft2
+              sfTilt = 90                       // Surface tilt, deg
+              sfAzm = 0                         // Surface azimuth, deg
+              sfExAbs = 0.5                     // Surface exterior solar absorptivity
+              sfModel = "Forward_Difference"    // Modeling option
+        
+              WINDOW   "Zone1WinFront-NoScrn"  
+                 wnArea = 82.35                 // Area, ft2
+                 wnHeight = 5                   // Height, ft
+                 wnWidth = 3                    // Width, ft
+                 wnMult = 1                     // Multiplier
+                 wnModel = "ASHWAT"             // Window model
+                 wnFMult = 0.85                 // F? multiplier
+                 wnNGlz = 2                     // Number of glazing layers
+                 wnUnfrc = 0.3                  // NFRC U-factor, Btuh/ft2-°F
+                 wnSHGC = 0.23                  // NFRC solar heat gain coefficient
+                 wnDirtLoss = 0.1               // Dirt loss factor
+                 wnExShd = "None"               // Exterior shade type
+                 wnInShd = "DrapeMed"           // Interior shade type
+        
+              WINDOW   "Zone1WinFront-Scrn"  
+                 wnArea = 82.35                 // Area, ft2
+                 wnHeight = 5                   // Height, ft
+                 wnWidth = 3                    // Width, ft
+                 wnMult = 1                     // Multiplier
+                 wnModel = "ASHWAT"             // Window model
+                 wnFMult = 0.85                 // F? multiplier
+                 wnNGlz = 2                     // Number of glazing layers
+                 wnUnfrc = 0.3                  // NFRC U-factor, Btuh/ft2-°F
+                 wnSHGC = 0.23                  // NFRC solar heat gain coefficient
+                 wnDirtLoss = 0.1               // Dirt loss factor
+                 wnExShd = "Inscrn"             // Exterior shade type
+                 wnInShd = "DrapeMed"           // Interior shade type
+        
+              DOOR   "Zone1DoorFront-Sim"  
+                 drArea = 80                    // Area, ft2
+                 drModel = "Forward_Difference"    // Modeling option
+                 drCon = "c-Zone1DoorFront-dr"    // Door construction
+        
+           SURFACE   "Zone1WallLeft-Cav"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "cc-T24-2022 ExtWall 2x6 16oc U=0.051"    // Surface construction, Cavity R-val: 18
+              sfArea = 201.375                  // Wall area, ft2
+              sfTilt = 90                       // Surface tilt, deg
+              sfAzm = 90                        // Surface azimuth, deg
+              sfExAbs = 0.5                     // Surface exterior solar absorptivity
+              sfModel = "Forward_Difference"    // Modeling option
+        
+              WINDOW   "Zone1WinLeft-NoScrn"  
+                 wnArea = 20.25                 // Area, ft2
+                 wnHeight = 5                   // Height, ft
+                 wnWidth = 3                    // Width, ft
+                 wnMult = 1                     // Multiplier
+                 wnModel = "ASHWAT"             // Window model
+                 wnFMult = 0.85                 // F? multiplier
+                 wnNGlz = 2                     // Number of glazing layers
+                 wnUnfrc = 0.3                  // NFRC U-factor, Btuh/ft2-°F
+                 wnSHGC = 0.23                  // NFRC solar heat gain coefficient
+                 wnDirtLoss = 0.1               // Dirt loss factor
+                 wnExShd = "None"               // Exterior shade type
+                 wnInShd = "DrapeMed"           // Interior shade type
+        
+              WINDOW   "Zone1WinLeft-Scrn"  
+                 wnArea = 20.25                 // Area, ft2
+                 wnHeight = 5                   // Height, ft
+                 wnWidth = 3                    // Width, ft
+                 wnMult = 1                     // Multiplier
+                 wnModel = "ASHWAT"             // Window model
+                 wnFMult = 0.85                 // F? multiplier
+                 wnNGlz = 2                     // Number of glazing layers
+                 wnUnfrc = 0.3                  // NFRC U-factor, Btuh/ft2-°F
+                 wnSHGC = 0.23                  // NFRC solar heat gain coefficient
+                 wnDirtLoss = 0.1               // Dirt loss factor
+                 wnExShd = "Inscrn"             // Exterior shade type
+                 wnInShd = "DrapeMed"           // Interior shade type
+        
+           SURFACE   "Zone1WallBack-Cav"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "cc-T24-2022 ExtWall 2x6 16oc U=0.051"    // Surface construction, Cavity R-val: 18
+              sfArea = 818.925                  // Wall area, ft2
+              sfTilt = 90                       // Surface tilt, deg
+              sfAzm = 180                       // Surface azimuth, deg
+              sfExAbs = 0.5                     // Surface exterior solar absorptivity
+              sfModel = "Forward_Difference"    // Modeling option
+        
+              WINDOW   "Zone1WinBack-NoScrn"  
+                 wnArea = 82.35                 // Area, ft2
+                 wnHeight = 5                   // Height, ft
+                 wnWidth = 3                    // Width, ft
+                 wnMult = 1                     // Multiplier
+                 wnModel = "ASHWAT"             // Window model
+                 wnFMult = 0.85                 // F? multiplier
+                 wnNGlz = 2                     // Number of glazing layers
+                 wnUnfrc = 0.3                  // NFRC U-factor, Btuh/ft2-°F
+                 wnSHGC = 0.23                  // NFRC solar heat gain coefficient
+                 wnDirtLoss = 0.1               // Dirt loss factor
+                 wnExShd = "None"               // Exterior shade type
+                 wnInShd = "DrapeMed"           // Interior shade type
+        
+              WINDOW   "Zone1WinBack-Scrn"  
+                 wnArea = 82.35                 // Area, ft2
+                 wnHeight = 5                   // Height, ft
+                 wnWidth = 3                    // Width, ft
+                 wnMult = 1                     // Multiplier
+                 wnModel = "ASHWAT"             // Window model
+                 wnFMult = 0.85                 // F? multiplier
+                 wnNGlz = 2                     // Number of glazing layers
+                 wnUnfrc = 0.3                  // NFRC U-factor, Btuh/ft2-°F
+                 wnSHGC = 0.23                  // NFRC solar heat gain coefficient
+                 wnDirtLoss = 0.1               // Dirt loss factor
+                 wnExShd = "Inscrn"             // Exterior shade type
+                 wnInShd = "DrapeMed"           // Interior shade type
+        
+           SURFACE   "Zone1WallRight-Cav"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "cc-T24-2022 ExtWall 2x6 16oc U=0.051"    // Surface construction, Cavity R-val: 18
+              sfArea = 201.375                  // Wall area, ft2
+              sfTilt = 90                       // Surface tilt, deg
+              sfAzm = 270                       // Surface azimuth, deg
+              sfExAbs = 0.5                     // Surface exterior solar absorptivity
+              sfModel = "Forward_Difference"    // Modeling option
+        
+              WINDOW   "Zone1WinRight-NoScrn"  
+                 wnArea = 20.25                 // Area, ft2
+                 wnHeight = 5                   // Height, ft
+                 wnWidth = 3                    // Width, ft
+                 wnMult = 1                     // Multiplier
+                 wnModel = "ASHWAT"             // Window model
+                 wnFMult = 0.85                 // F? multiplier
+                 wnNGlz = 2                     // Number of glazing layers
+                 wnUnfrc = 0.3                  // NFRC U-factor, Btuh/ft2-°F
+                 wnSHGC = 0.23                  // NFRC solar heat gain coefficient
+                 wnDirtLoss = 0.1               // Dirt loss factor
+                 wnExShd = "None"               // Exterior shade type
+                 wnInShd = "DrapeMed"           // Interior shade type
+        
+              WINDOW   "Zone1WinRight-Scrn"  
+                 wnArea = 20.25                 // Area, ft2
+                 wnHeight = 5                   // Height, ft
+                 wnWidth = 3                    // Width, ft
+                 wnMult = 1                     // Multiplier
+                 wnModel = "ASHWAT"             // Window model
+                 wnFMult = 0.85                 // F? multiplier
+                 wnNGlz = 2                     // Number of glazing layers
+                 wnUnfrc = 0.3                  // NFRC U-factor, Btuh/ft2-°F
+                 wnSHGC = 0.23                  // NFRC solar heat gain coefficient
+                 wnDirtLoss = 0.1               // Dirt loss factor
+                 wnExShd = "Inscrn"             // Exterior shade type
+                 wnInShd = "DrapeMed"           // Interior shade type
+        
+           SURFACE   "Zone1Slab-Prm"  
+              sfType = "Floor"                  // Type of opaque surface
+              sfCon = "scn-SlabConsCarpet"      // Surface construction
+              sfArea = 486.4                    // Wall area, ft2
+              sfTilt = 180                      // Surface tilt, deg
+              sfModel = "Forward_Difference"    // Modeling option
+              sfExCnd = "Ground"                // Exterior condition description
+              sfExCTGrnd = 0.0551               // Surface ???
+              sfExCTaDbAvgYr = 0.0028           // Surface ???
+              sfExCTaDbAvg14 = 0.0852           // Surface ???
+              sfExRConGrnd = 5.267              // Surface ???
+              sfInHcModel = "Unified"           // Surface ???
+        
+           SURFACE   "Zone1Slab-Int"  
+              sfType = "Floor"                  // Type of opaque surface
+              sfCon = "scn-SlabConsCarpet"      // Surface construction
+              sfArea = 2441.6                   // Wall area, ft2
+              sfTilt = 180                      // Surface tilt, deg
+              sfModel = "Forward_Difference"    // Modeling option
+              sfExCnd = "Ground"                // Exterior condition description
+              sfExCTGrnd = 0.0446               // Surface ???
+              sfExCTaDbAvgYr = 0.0238           // Surface ???
+              sfExRConGrnd = 5.267              // Surface ???
+              sfInHcModel = "Unified"           // Surface ???
+        
+           SURFACE   "Zone1Slab-Prm 27"  
+              sfType = "Floor"                  // Type of opaque surface
+              sfCon = "scn-SlabConsExposed"     // Surface construction
+              sfArea = 121.6                    // Wall area, ft2
+              sfTilt = 180                      // Surface tilt, deg
+              sfModel = "Forward_Difference"    // Modeling option
+              sfExCnd = "Ground"                // Exterior condition description
+              sfExCTGrnd = 0.0737               // Surface ???
+              sfExCTaDbAvgYr = 0.0014           // Surface ???
+              sfExCTaDbAvg14 = 0.1692           // Surface ???
+              sfExRConGrnd = 3.187              // Surface ???
+              sfInHcModel = "Unified"           // Surface ???
+        
+           SURFACE   "Zone1Slab-Int 28"  
+              sfType = "Floor"                  // Type of opaque surface
+              sfCon = "scn-SlabConsExposed"     // Surface construction
+              sfArea = 610.4                    // Wall area, ft2
+              sfTilt = 180                      // Surface tilt, deg
+              sfModel = "Forward_Difference"    // Modeling option
+              sfExCnd = "Ground"                // Exterior condition description
+              sfExCTGrnd = 0.0521               // Surface ???
+              sfExCTaDbAvgYr = 0.0251           // Surface ???
+              sfExRConGrnd = 3.187              // Surface ???
+              sfInHcModel = "Unified"           // Surface ???
+        
+           SURFACE   "Furniture-imass"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "con-FurnIMass"           // Surface construction
+              sfArea = 7320                     // Wall area, ft2
+              sfAzm = 0                         // Surface azimuth, deg
+              sfModel = "Forward_Difference"    // Modeling option
+              sfExCnd = "AdjZn"                 // Exterior condition description
+              sfAdjZn = "Zone1-zn"              // Zone that lies on the other side of this surface
+        
+           SURFACE   "WallFrm-imass"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "con-WallFrmIMass"        // Surface construction
+              sfArea = 915                      // Wall area, ft2
+              sfAzm = 0                         // Surface azimuth, deg
+              sfModel = "Forward_Difference"    // Modeling option
+              sfExCnd = "AdjZn"                 // Exterior condition description
+              sfAdjZn = "Zone1-zn"              // Zone that lies on the other side of this surface
+        
+           SURFACE   "WallCav-imass"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "con-WallCavIMass"        // Surface construction
+              sfArea = 2745                     // Wall area, ft2
+              sfAzm = 0                         // Surface azimuth, deg
+              sfModel = "Forward_Difference"    // Modeling option
+              sfExCnd = "AdjZn"                 // Exterior condition description
+              sfAdjZn = "Zone1-zn"              // Zone that lies on the other side of this surface
+        
+        ZONE   "Zone2-zn"  
+           znModel = "CZM"                      // Zone model (CNE, CSE, CZM, UZM)
+           znArea = 3660                        // Zone area, ft2
+           znVol = 29280                        // Zone volume, ft3
+           znEaveZ = 17.7                       // Height of top of the wall in this zone above the ground, ft
+           znCeilingHt = 8                      // Nominal zone ceiling height relative to zone floor (typically 8-10 ft), ft
+           znFloorZ = 9.7                       // Nominal zone floor height relative to arbitrary 0 level, ft
+           znCAir = 7320                        // Zone 'air' heat capacity: represents heat capacity of air, furniture, 'light' walls, and everything in zone except nonQUICK surfaces
+           znSC = select( $radDiff >1., 0.5, default 0.8 )    // Expression representing zone shade closure
+           znTH = select( $dsDay==1, 70, $dsDay==2, 60, ISSEASONCOOLING, 60, default 68)     // Expression representing heating setpoint, °F
+           znTC = select( $dsDay==1, 83, $dsDay==2, 75, default 78)    // Expression representing cooling setpoint, °F
+           znTD = select( $dsDay==1, 77, $dsDay==2, 99, ISSEASONCOOLING, 68, default 77 )    // Expression representing desired setpoint, °F
+           znHIRatio = 10                       // Zone hygric inertia ratio
+           infAC = 0                            // Zone infiltration air changes per hour, 1/hr
+           infELA = 0                           // Zone effective leakage area (ELA), in2
+           infShld = 4                          // Zone local shielding class, used in ELA model
+           znRSys = "rsys-Zone2 HVACSys"        // RSYS component conditioning this ZONE
+        
+           GAIN   "Zone2-znLtg"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Lit"                  // Internal gain enduse
+              gnPower = 2.68089 * 3660 * select( $dsDay==1, 0., $ISWEHOL, IntLight_WEH, Default IntLight_WD) * Other_SM    // Expression representing internal gain power, Btuh
+              gnFrRad = 0.2                     // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+        
+           GAIN   "Zone2-znPpl"  
+              gnPower = 17.4806 * 3660 * select( $dsDay==1, 0., default hourval(0.035,0.035,0.035,0.035,0.035,0.059,0.082,0.055,0.027,0.014,0.014,0.014,0.014,0.014,0.019,0.027,0.041,0.055,0.068,0.082,0.082,0.07,0.053,0.035)  * choose1($month, 1.19,1.11,1.02,0.93,0.84,0.8,0.82,0.88,0.98,1.07,1.16,1.21))    // Expression representing internal gain power, Btuh
+              gnFrRad = 0.3                     // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.427                   // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+        
+           GAIN   "Zone2-znTV"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Rcp"                  // Internal gain enduse
+              gnPower = 11692.4 * select( $dsDay==1, 0., $ISWEHOL, TV_WEH, Default TV_WD) * TV_SM    // Expression representing internal gain power, Btuh
+              gnFrRad = 0.4                     // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+        
+           GAIN   "Zone2-znSTB"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Rcp"                  // Internal gain enduse
+              gnPower = 6173.38 * select( $dsDay==1, 0., $ISWEHOL, STB_WEH, Default STB_WD) * STB_SM    // Expression representing internal gain power, Btuh
+              gnFrRad = 0.2                     // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+        
+           GAIN   "Zone2-znComp"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Rcp"                  // Internal gain enduse
+              gnPower = 6061.21 * select( $dsDay==1, 0., $ISWEHOL, Comp_WEH, Default Comp_WD) * Comp_SM    // Expression representing internal gain power, Btuh
+              gnFrRad = 0.2                     // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+        
+           GAIN   "Zone2-znMEL"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Rcp"                  // Internal gain enduse
+              gnPower = 32469.2 * select( $dsDay==1, 0., $ISWEHOL, RMEL_WEH, Default RMEL_WD) * Other_SM    // Expression representing internal gain power, Btuh
+              gnFrRad = 0.3                     // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.03                    // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+        
+           GAIN   "Zone2-znRfrg"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Refr"                 // Internal gain enduse
+              gnPower = (5.58356 * 3412 / 24) * ( select( $isWeHol, RefrConst_WEH, default RefrConst_WD ) + select( $isWeHol, RefrTemp_WEH, default RefrTemp_WD ) * @znRes["Zone2-zn"].prior.H.tAir)    // Expression representing internal gain power, Btuh
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+        
+           GAIN   "1BR - Second Floor DU-znDshwshr"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Dish"                 // Internal gain enduse
+              gnPower = 0.14507 * 3412 / 1      // Expression representing internal gain power, Btuh
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.25                    // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+              gnCtrlDHWSYS = "dhwsys-1BR - Second Floor DU"    // DHW system serving the gain
+              gnCtrlDHWEndUse = "DWashr"        // DHW system water heating enduse
+        
+           GAIN   "1BR - Second Floor DU 6-znDshwshr"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Dish"                 // Internal gain enduse
+              gnPower = 0.14507 * 3412 / 1      // Expression representing internal gain power, Btuh
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.25                    // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+              gnCtrlDHWSYS = "dhwsys-1BR - Second Floor DU 6"    // DHW system serving the gain
+              gnCtrlDHWEndUse = "DWashr"        // DHW system water heating enduse
+        
+           GAIN   "2BR - Second Floor DU-znDshwshr"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Dish"                 // Internal gain enduse
+              gnPower = 0.14507 * 3412 / 1      // Expression representing internal gain power, Btuh
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.25                    // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+              gnCtrlDHWSYS = "dhwsys-2BR - Second Floor DU"    // DHW system serving the gain
+              gnCtrlDHWEndUse = "DWashr"        // DHW system water heating enduse
+        
+           GAIN   "2BR - Second Floor DU 8-znDshwshr"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Dish"                 // Internal gain enduse
+              gnPower = 0.14507 * 3412 / 1      // Expression representing internal gain power, Btuh
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.25                    // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+              gnCtrlDHWSYS = "dhwsys-2BR - Second Floor DU 8"    // DHW system serving the gain
+              gnCtrlDHWEndUse = "DWashr"        // DHW system water heating enduse
+        
+           GAIN   "Zone2-znCkE"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Cook"                 // Internal gain enduse
+              gnPower = 9439.56 * select( $dsDay==1, 0., $ISWEHOL, Cook_WEH, Default Cook_WD) * Cook_SM    // Expression representing internal gain power, Btuh
+              gnFrZn = 0.9                      // Fraction of internal gain to Zone (single value or hourly profile)
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.67                    // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+        
+           GAIN   "1BR - Second Floor DU-znCWshr"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Wash"                 // Internal gain enduse
+              gnPower = 0.010067 * 3412 / 1     // Expression representing internal gain power, Btuh
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnCtrlDHWSYS = "dhwsys-1BR - Second Floor DU"    // DHW system serving the gain
+              gnCtrlDHWEndUse = "CWashr"        // DHW system water heating enduse
+        
+           GAIN   "1BR - Second Floor DU 6-znCWshr"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Wash"                 // Internal gain enduse
+              gnPower = 0.010067 * 3412 / 1     // Expression representing internal gain power, Btuh
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnCtrlDHWSYS = "dhwsys-1BR - Second Floor DU 6"    // DHW system serving the gain
+              gnCtrlDHWEndUse = "CWashr"        // DHW system water heating enduse
+        
+           GAIN   "2BR - Second Floor DU-znCWshr"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Wash"                 // Internal gain enduse
+              gnPower = 0.010067 * 3412 / 1     // Expression representing internal gain power, Btuh
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnCtrlDHWSYS = "dhwsys-2BR - Second Floor DU"    // DHW system serving the gain
+              gnCtrlDHWEndUse = "CWashr"        // DHW system water heating enduse
+        
+           GAIN   "2BR - Second Floor DU 8-znCWshr"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Wash"                 // Internal gain enduse
+              gnPower = 0.010067 * 3412 / 1     // Expression representing internal gain power, Btuh
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnCtrlDHWSYS = "dhwsys-2BR - Second Floor DU 8"    // DHW system serving the gain
+              gnCtrlDHWEndUse = "CWashr"        // DHW system water heating enduse
+        
+           GAIN   "1BR - Second Floor DU-znCDryE"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Dry"                  // Internal gain enduse
+              gnPower = 0.08509 * 3412 * @DHWSYS["dhwsys-1BR - Second Floor DU"].FxUseMixLH.CWashr / 1    // Expression representing internal gain power, Btuh
+              gnFrZn = 0.3                      // Fraction of internal gain to Zone (single value or hourly profile)
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.5                     // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+        
+           GAIN   "1BR - Second Floor DU 6-znCDryE"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Dry"                  // Internal gain enduse
+              gnPower = 0.08509 * 3412 * @DHWSYS["dhwsys-1BR - Second Floor DU 6"].FxUseMixLH.CWashr / 1    // Expression representing internal gain power, Btuh
+              gnFrZn = 0.3                      // Fraction of internal gain to Zone (single value or hourly profile)
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.5                     // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+        
+           GAIN   "2BR - Second Floor DU-znCDryE"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Dry"                  // Internal gain enduse
+              gnPower = 0.08509 * 3412 * @DHWSYS["dhwsys-2BR - Second Floor DU"].FxUseMixLH.CWashr / 1    // Expression representing internal gain power, Btuh
+              gnFrZn = 0.3                      // Fraction of internal gain to Zone (single value or hourly profile)
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.5                     // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+        
+           GAIN   "2BR - Second Floor DU 8-znCDryE"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "Dry"                  // Internal gain enduse
+              gnPower = 0.08509 * 3412 * @DHWSYS["dhwsys-2BR - Second Floor DU 8"].FxUseMixLH.CWashr / 1    // Expression representing internal gain power, Btuh
+              gnFrZn = 0.3                      // Fraction of internal gain to Zone (single value or hourly profile)
+              gnFrRad = 0                       // Fraction of internal gain to Zone that is Radiant (single value or hourly profile)
+              gnFrLat = 0.5                     // Fraction of internal gain to Zone that is Latent (single value or hourly profile)
+        
+           SURFACE   "Zone2ToAtticCeiling-Frm"  
+              sfType = "Ceiling"                // Type of opaque surface
+              sfCon = "fc-T24-2013 Ceiling 2x4 24oc R30"    // Surface construction
+              sfArea = 237.136636               // Wall area, ft2
+              sfModel = "Forward_Difference"    // Modeling option
+              sfExCnd = "AdjZn"                 // Exterior condition description
+              sfAdjZn = "Attic-atc"             // Zone that lies on the other side of this surface
+        
+           SURFACE   "Zone2ToAtticCeiling-Cav"  
+              sfType = "Ceiling"                // Type of opaque surface
+              sfCon = "cc-T24-2013 Ceiling 2x4 24oc R30"    // Surface construction, Cavity R-val: 30
+              sfArea = 3150.529588              // Wall area, ft2
+              sfModel = "Forward_Difference"    // Modeling option
+              sfExCnd = "AdjZn"                 // Exterior condition description
+              sfAdjZn = "Attic-atc"             // Zone that lies on the other side of this surface
+        
+           SURFACE   "Zone2ToAtticCeiling-WAFrm"  
+              sfType = "Ceiling"                // Type of opaque surface
+              sfCon = "fc-Zone2ToAtticCeiling-AtcEdgWA"    // Surface construction
+              sfArea = 8.99201                  // Wall area, ft2
+              sfExAbs = 0.8                     // Surface exterior solar absorptivity
+              sfExEpsLW = 0.75                  // Surface exterior long wave (thermal) emittance
+              sfInEpsLW = 0.9                   // Surface interior long wave (thermal) emittance
+              sfModel = "Forward_Difference"    // Modeling option
+        
+           SURFACE   "Zone2ToAtticCeiling-WACav"  
+              sfType = "Ceiling"                // Type of opaque surface
+              sfCon = "cc-Zone2ToAtticCeiling-AtcEdgWA"    // Surface construction
+              sfArea = 119.46527                // Wall area, ft2
+              sfExAbs = 0.8                     // Surface exterior solar absorptivity
+              sfExEpsLW = 0.75                  // Surface exterior long wave (thermal) emittance
+              sfInEpsLW = 0.9                   // Surface interior long wave (thermal) emittance
+              sfModel = "Forward_Difference"    // Modeling option
+        
+           SURFACE   "Zone2ToAtticCeiling-WBFrm"  
+              sfType = "Ceiling"                // Type of opaque surface
+              sfCon = "fc-Zone2ToAtticCeiling-AtcEdgWB"    // Surface construction
+              sfArea = 10.071355                // Wall area, ft2
+              sfExAbs = 0.8                     // Surface exterior solar absorptivity
+              sfExEpsLW = 0.75                  // Surface exterior long wave (thermal) emittance
+              sfInEpsLW = 0.9                   // Surface interior long wave (thermal) emittance
+              sfModel = "Forward_Difference"    // Modeling option
+        
+           SURFACE   "Zone2ToAtticCeiling-WBCav"  
+              sfType = "Ceiling"                // Type of opaque surface
+              sfCon = "cc-Zone2ToAtticCeiling-AtcEdgWB"    // Surface construction
+              sfArea = 133.805142               // Wall area, ft2
+              sfExAbs = 0.8                     // Surface exterior solar absorptivity
+              sfExEpsLW = 0.75                  // Surface exterior long wave (thermal) emittance
+              sfInEpsLW = 0.9                   // Surface interior long wave (thermal) emittance
+              sfModel = "Forward_Difference"    // Modeling option
+        
+           SURFACE   "Zone2WallFront-Frm"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "fc-T24-2022 ExtWall 2x6 16oc U=0.051"    // Surface construction
+              sfArea = 198.075                  // Wall area, ft2
+              sfTilt = 90                       // Surface tilt, deg
+              sfAzm = 0                         // Surface azimuth, deg
+              sfExAbs = 0.5                     // Surface exterior solar absorptivity
+              sfModel = "Forward_Difference"    // Modeling option
+        
+           SURFACE   "Zone2WallLeft-Frm"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "fc-T24-2022 ExtWall 2x6 16oc U=0.051"    // Surface construction
+              sfArea = 53.625                   // Wall area, ft2
+              sfTilt = 90                       // Surface tilt, deg
+              sfAzm = 90                        // Surface azimuth, deg
+              sfExAbs = 0.5                     // Surface exterior solar absorptivity
+              sfModel = "Forward_Difference"    // Modeling option
+        
+           SURFACE   "Zone2WallBack-Frm"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "fc-T24-2022 ExtWall 2x6 16oc U=0.051"    // Surface construction
+              sfArea = 218.075                  // Wall area, ft2
+              sfTilt = 90                       // Surface tilt, deg
+              sfAzm = 180                       // Surface azimuth, deg
+              sfExAbs = 0.5                     // Surface exterior solar absorptivity
+              sfModel = "Forward_Difference"    // Modeling option
+        
+           SURFACE   "Zone2WallRight-Frm"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "fc-T24-2022 ExtWall 2x6 16oc U=0.051"    // Surface construction
+              sfArea = 53.625                   // Wall area, ft2
+              sfTilt = 90                       // Surface tilt, deg
+              sfAzm = 270                       // Surface azimuth, deg
+              sfExAbs = 0.5                     // Surface exterior solar absorptivity
+              sfModel = "Forward_Difference"    // Modeling option
+        
+           SURFACE   "Zone2WallFront-Cav"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "cc-T24-2022 ExtWall 2x6 16oc U=0.051"    // Surface construction, Cavity R-val: 18
+              sfArea = 838.925                  // Wall area, ft2
+              sfTilt = 90                       // Surface tilt, deg
+              sfAzm = 0                         // Surface azimuth, deg
+              sfExAbs = 0.5                     // Surface exterior solar absorptivity
+              sfModel = "Forward_Difference"    // Modeling option
+        
+              WINDOW   "Zone2WinFront-NoScrn"  
+                 wnArea = 82.35                 // Area, ft2
+                 wnHeight = 5                   // Height, ft
+                 wnWidth = 3                    // Width, ft
+                 wnMult = 1                     // Multiplier
+                 wnModel = "ASHWAT"             // Window model
+                 wnFMult = 0.85                 // F? multiplier
+                 wnNGlz = 2                     // Number of glazing layers
+                 wnUnfrc = 0.3                  // NFRC U-factor, Btuh/ft2-°F
+                 wnSHGC = 0.23                  // NFRC solar heat gain coefficient
+                 wnDirtLoss = 0.1               // Dirt loss factor
+                 wnExShd = "None"               // Exterior shade type
+                 wnInShd = "DrapeMed"           // Interior shade type
+        
+              WINDOW   "Zone2WinFront-Scrn"  
+                 wnArea = 82.35                 // Area, ft2
+                 wnHeight = 5                   // Height, ft
+                 wnWidth = 3                    // Width, ft
+                 wnMult = 1                     // Multiplier
+                 wnModel = "ASHWAT"             // Window model
+                 wnFMult = 0.85                 // F? multiplier
+                 wnNGlz = 2                     // Number of glazing layers
+                 wnUnfrc = 0.3                  // NFRC U-factor, Btuh/ft2-°F
+                 wnSHGC = 0.23                  // NFRC solar heat gain coefficient
+                 wnDirtLoss = 0.1               // Dirt loss factor
+                 wnExShd = "Inscrn"             // Exterior shade type
+                 wnInShd = "DrapeMed"           // Interior shade type
+        
+              DOOR   "Zone2DoorFront-Sim"  
+                 drArea = 80                    // Area, ft2
+                 drModel = "Forward_Difference"    // Modeling option
+                 drCon = "c-Zone2DoorFront-dr"    // Door construction
+        
+           SURFACE   "Zone2WallLeft-Cav"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "cc-T24-2022 ExtWall 2x6 16oc U=0.051"    // Surface construction, Cavity R-val: 18
+              sfArea = 201.375                  // Wall area, ft2
+              sfTilt = 90                       // Surface tilt, deg
+              sfAzm = 90                        // Surface azimuth, deg
+              sfExAbs = 0.5                     // Surface exterior solar absorptivity
+              sfModel = "Forward_Difference"    // Modeling option
+        
+              WINDOW   "Zone2WinLeft-NoScrn"  
+                 wnArea = 20.25                 // Area, ft2
+                 wnHeight = 5                   // Height, ft
+                 wnWidth = 3                    // Width, ft
+                 wnMult = 1                     // Multiplier
+                 wnModel = "ASHWAT"             // Window model
+                 wnFMult = 0.85                 // F? multiplier
+                 wnNGlz = 2                     // Number of glazing layers
+                 wnUnfrc = 0.3                  // NFRC U-factor, Btuh/ft2-°F
+                 wnSHGC = 0.23                  // NFRC solar heat gain coefficient
+                 wnDirtLoss = 0.1               // Dirt loss factor
+                 wnExShd = "None"               // Exterior shade type
+                 wnInShd = "DrapeMed"           // Interior shade type
+        
+              WINDOW   "Zone2WinLeft-Scrn"  
+                 wnArea = 20.25                 // Area, ft2
+                 wnHeight = 5                   // Height, ft
+                 wnWidth = 3                    // Width, ft
+                 wnMult = 1                     // Multiplier
+                 wnModel = "ASHWAT"             // Window model
+                 wnFMult = 0.85                 // F? multiplier
+                 wnNGlz = 2                     // Number of glazing layers
+                 wnUnfrc = 0.3                  // NFRC U-factor, Btuh/ft2-°F
+                 wnSHGC = 0.23                  // NFRC solar heat gain coefficient
+                 wnDirtLoss = 0.1               // Dirt loss factor
+                 wnExShd = "Inscrn"             // Exterior shade type
+                 wnInShd = "DrapeMed"           // Interior shade type
+        
+           SURFACE   "Zone2WallBack-Cav"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "cc-T24-2022 ExtWall 2x6 16oc U=0.051"    // Surface construction, Cavity R-val: 18
+              sfArea = 818.925                  // Wall area, ft2
+              sfTilt = 90                       // Surface tilt, deg
+              sfAzm = 180                       // Surface azimuth, deg
+              sfExAbs = 0.5                     // Surface exterior solar absorptivity
+              sfModel = "Forward_Difference"    // Modeling option
+        
+              WINDOW   "Zone2WinBack-NoScrn"  
+                 wnArea = 82.35                 // Area, ft2
+                 wnHeight = 5                   // Height, ft
+                 wnWidth = 3                    // Width, ft
+                 wnMult = 1                     // Multiplier
+                 wnModel = "ASHWAT"             // Window model
+                 wnFMult = 0.85                 // F? multiplier
+                 wnNGlz = 2                     // Number of glazing layers
+                 wnUnfrc = 0.3                  // NFRC U-factor, Btuh/ft2-°F
+                 wnSHGC = 0.23                  // NFRC solar heat gain coefficient
+                 wnDirtLoss = 0.1               // Dirt loss factor
+                 wnExShd = "None"               // Exterior shade type
+                 wnInShd = "DrapeMed"           // Interior shade type
+        
+              WINDOW   "Zone2WinBack-Scrn"  
+                 wnArea = 82.35                 // Area, ft2
+                 wnHeight = 5                   // Height, ft
+                 wnWidth = 3                    // Width, ft
+                 wnMult = 1                     // Multiplier
+                 wnModel = "ASHWAT"             // Window model
+                 wnFMult = 0.85                 // F? multiplier
+                 wnNGlz = 2                     // Number of glazing layers
+                 wnUnfrc = 0.3                  // NFRC U-factor, Btuh/ft2-°F
+                 wnSHGC = 0.23                  // NFRC solar heat gain coefficient
+                 wnDirtLoss = 0.1               // Dirt loss factor
+                 wnExShd = "Inscrn"             // Exterior shade type
+                 wnInShd = "DrapeMed"           // Interior shade type
+        
+           SURFACE   "Zone2WallRight-Cav"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "cc-T24-2022 ExtWall 2x6 16oc U=0.051"    // Surface construction, Cavity R-val: 18
+              sfArea = 201.375                  // Wall area, ft2
+              sfTilt = 90                       // Surface tilt, deg
+              sfAzm = 270                       // Surface azimuth, deg
+              sfExAbs = 0.5                     // Surface exterior solar absorptivity
+              sfModel = "Forward_Difference"    // Modeling option
+        
+              WINDOW   "Zone2WinRight-NoScrn"  
+                 wnArea = 20.25                 // Area, ft2
+                 wnHeight = 5                   // Height, ft
+                 wnWidth = 3                    // Width, ft
+                 wnMult = 1                     // Multiplier
+                 wnModel = "ASHWAT"             // Window model
+                 wnFMult = 0.85                 // F? multiplier
+                 wnNGlz = 2                     // Number of glazing layers
+                 wnUnfrc = 0.3                  // NFRC U-factor, Btuh/ft2-°F
+                 wnSHGC = 0.23                  // NFRC solar heat gain coefficient
+                 wnDirtLoss = 0.1               // Dirt loss factor
+                 wnExShd = "None"               // Exterior shade type
+                 wnInShd = "DrapeMed"           // Interior shade type
+        
+              WINDOW   "Zone2WinRight-Scrn"  
+                 wnArea = 20.25                 // Area, ft2
+                 wnHeight = 5                   // Height, ft
+                 wnWidth = 3                    // Width, ft
+                 wnMult = 1                     // Multiplier
+                 wnModel = "ASHWAT"             // Window model
+                 wnFMult = 0.85                 // F? multiplier
+                 wnNGlz = 2                     // Number of glazing layers
+                 wnUnfrc = 0.3                  // NFRC U-factor, Btuh/ft2-°F
+                 wnSHGC = 0.23                  // NFRC solar heat gain coefficient
+                 wnDirtLoss = 0.1               // Dirt loss factor
+                 wnExShd = "Inscrn"             // Exterior shade type
+                 wnInShd = "DrapeMed"           // Interior shade type
+        
+           SURFACE   "Zone2ToZone1InteriorFloor-Frm"  
+              sfType = "Floor"                  // Type of opaque surface
+              sfCon = "fc-Interior Floor"       // Surface construction
+              sfArea = 366                      // Wall area, ft2
+              sfTilt = 180                      // Surface tilt, deg
+              sfModel = "Forward_Difference"    // Modeling option
+              sfExCnd = "AdjZn"                 // Exterior condition description
+              sfAdjZn = "Zone1-zn"              // Zone that lies on the other side of this surface
+        
+           SURFACE   "Zone2ToZone1InteriorFloor-Cav"  
+              sfType = "Floor"                  // Type of opaque surface
+              sfCon = "cc-Interior Floor"       // Surface construction
+              sfArea = 3294                     // Wall area, ft2
+              sfTilt = 180                      // Surface tilt, deg
+              sfModel = "Forward_Difference"    // Modeling option
+              sfExCnd = "AdjZn"                 // Exterior condition description
+              sfAdjZn = "Zone1-zn"              // Zone that lies on the other side of this surface
+        
+           SURFACE   "Furniture-imass 41"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "con-FurnIMass"           // Surface construction
+              sfArea = 7320                     // Wall area, ft2
+              sfAzm = 0                         // Surface azimuth, deg
+              sfModel = "Forward_Difference"    // Modeling option
+              sfExCnd = "AdjZn"                 // Exterior condition description
+              sfAdjZn = "Zone2-zn"              // Zone that lies on the other side of this surface
+        
+           SURFACE   "WallFrm-imass 44"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "con-WallFrmIMass"        // Surface construction
+              sfArea = 915                      // Wall area, ft2
+              sfAzm = 0                         // Surface azimuth, deg
+              sfModel = "Forward_Difference"    // Modeling option
+              sfExCnd = "AdjZn"                 // Exterior condition description
+              sfAdjZn = "Zone2-zn"              // Zone that lies on the other side of this surface
+        
+           SURFACE   "WallCav-imass 45"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "con-WallCavIMass"        // Surface construction
+              sfArea = 2745                     // Wall area, ft2
+              sfAzm = 0                         // Surface azimuth, deg
+              sfModel = "Forward_Difference"    // Modeling option
+              sfExCnd = "AdjZn"                 // Exterior condition description
+              sfAdjZn = "Zone2-zn"              // Zone that lies on the other side of this surface
+        
+        ZONE   "Attic-atc"  
+           znModel = "UZX"                      // Zone model (CNE, CSE, CZM, UZM)
+           znArea = 3387.666224                 // Zone area, ft2
+           znVol = 14232.417161                 // Zone volume, ft3
+           znEaveZ = 17.7                       // Height of top of the wall in this zone above the ground, ft
+           znCAir = 0.01                        // Zone 'air' heat capacity: represents heat capacity of air, furniture, 'light' walls, and everything in zone except nonQUICK surfaces
+           znHIRatio = 10                       // Zone hygric inertia ratio
+           infAC = 0                            // Zone infiltration air changes per hour, 1/hr
+           infELA = 0                           // Zone effective leakage area (ELA), in2
+           infShld = 4                          // Zone local shielding class, used in ELA model
+        
+           SURFACE   "Attic-atc-rfNF"  
+              sfType = "Ceiling"                // Type of opaque surface
+              sfCon = "fc-Attic Roof Cons"      // Surface construction
+              sfArea = 64.224505                // Wall area, ft2
+              sfTilt = 22.619865                // Surface tilt, deg
+              sfAzm = 0                         // Surface azimuth, deg
+              sfExAbs = 0.8                     // Surface exterior solar absorptivity
+              sfExEpsLW = 0.75                  // Surface exterior long wave (thermal) emittance
+              sfInEpsLW = 0.9                   // Surface interior long wave (thermal) emittance
+              sfModel = "Forward_Difference"    // Modeling option
+        
+           SURFACE   "Attic-atc-rfNC"  
+              sfType = "Ceiling"                // Type of opaque surface
+              sfCon = "cc-Attic Roof Cons"      // Surface construction, Cavity R-val: 0
+              sfArea = 853.26843                // Wall area, ft2
+              sfTilt = 22.619865                // Surface tilt, deg
+              sfAzm = 0                         // Surface azimuth, deg
+              sfExAbs = 0.8                     // Surface exterior solar absorptivity
+              sfExEpsLW = 0.75                  // Surface exterior long wave (thermal) emittance
+              sfInEpsLW = 0.05                  // Surface interior long wave (thermal) emittance
+              sfModel = "Forward_Difference"    // Modeling option
+        
+           SURFACE   "Attic-atc-rfEF"  
+              sfType = "Ceiling"                // Type of opaque surface
+              sfCon = "fc-Attic Roof Cons"      // Surface construction
+              sfArea = 64.224505                // Wall area, ft2
+              sfTilt = 22.619865                // Surface tilt, deg
+              sfAzm = 90                        // Surface azimuth, deg
+              sfExAbs = 0.8                     // Surface exterior solar absorptivity
+              sfExEpsLW = 0.75                  // Surface exterior long wave (thermal) emittance
+              sfInEpsLW = 0.9                   // Surface interior long wave (thermal) emittance
+              sfModel = "Forward_Difference"    // Modeling option
+        
+           SURFACE   "Attic-atc-rfEC"  
+              sfType = "Ceiling"                // Type of opaque surface
+              sfCon = "cc-Attic Roof Cons"      // Surface construction, Cavity R-val: 0
+              sfArea = 853.26843                // Wall area, ft2
+              sfTilt = 22.619865                // Surface tilt, deg
+              sfAzm = 90                        // Surface azimuth, deg
+              sfExAbs = 0.8                     // Surface exterior solar absorptivity
+              sfExEpsLW = 0.75                  // Surface exterior long wave (thermal) emittance
+              sfInEpsLW = 0.05                  // Surface interior long wave (thermal) emittance
+              sfModel = "Forward_Difference"    // Modeling option
+        
+           SURFACE   "Attic-atc-rfSF"  
+              sfType = "Ceiling"                // Type of opaque surface
+              sfCon = "fc-Attic Roof Cons"      // Surface construction
+              sfArea = 64.224505                // Wall area, ft2
+              sfTilt = 22.619865                // Surface tilt, deg
+              sfAzm = 180                       // Surface azimuth, deg
+              sfExAbs = 0.8                     // Surface exterior solar absorptivity
+              sfExEpsLW = 0.75                  // Surface exterior long wave (thermal) emittance
+              sfInEpsLW = 0.9                   // Surface interior long wave (thermal) emittance
+              sfModel = "Forward_Difference"    // Modeling option
+        
+           SURFACE   "Attic-atc-rfSC"  
+              sfType = "Ceiling"                // Type of opaque surface
+              sfCon = "cc-Attic Roof Cons"      // Surface construction, Cavity R-val: 0
+              sfArea = 853.26843                // Wall area, ft2
+              sfTilt = 22.619865                // Surface tilt, deg
+              sfAzm = 180                       // Surface azimuth, deg
+              sfExAbs = 0.8                     // Surface exterior solar absorptivity
+              sfExEpsLW = 0.75                  // Surface exterior long wave (thermal) emittance
+              sfInEpsLW = 0.05                  // Surface interior long wave (thermal) emittance
+              sfModel = "Forward_Difference"    // Modeling option
+        
+           SURFACE   "Attic-atc-rfWF"  
+              sfType = "Ceiling"                // Type of opaque surface
+              sfCon = "fc-Attic Roof Cons"      // Surface construction
+              sfArea = 64.224505                // Wall area, ft2
+              sfTilt = 22.619865                // Surface tilt, deg
+              sfAzm = 270                       // Surface azimuth, deg
+              sfExAbs = 0.8                     // Surface exterior solar absorptivity
+              sfExEpsLW = 0.75                  // Surface exterior long wave (thermal) emittance
+              sfInEpsLW = 0.9                   // Surface interior long wave (thermal) emittance
+              sfModel = "Forward_Difference"    // Modeling option
+        
+           SURFACE   "Attic-atc-rfWC"  
+              sfType = "Ceiling"                // Type of opaque surface
+              sfCon = "cc-Attic Roof Cons"      // Surface construction, Cavity R-val: 0
+              sfArea = 853.26843                // Wall area, ft2
+              sfTilt = 22.619865                // Surface tilt, deg
+              sfAzm = 270                       // Surface azimuth, deg
+              sfExAbs = 0.8                     // Surface exterior solar absorptivity
+              sfExEpsLW = 0.75                  // Surface exterior long wave (thermal) emittance
+              sfInEpsLW = 0.05                  // Surface interior long wave (thermal) emittance
+              sfModel = "Forward_Difference"    // Modeling option
+        
+           SURFACE   "Attic-atc-rfT1"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "con-AtticTruss"          // Surface construction
+              sfArea = 2258.444149              // Wall area, ft2
+              sfAzm = 0                         // Surface azimuth, deg
+              sfModel = "Forward_Difference"    // Modeling option
+              sfExCnd = "Adiabatic"             // Exterior condition description
+        
+           SURFACE   "Attic-atc-rfT2"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "con-AtticTruss"          // Surface construction
+              sfArea = 2258.444149              // Wall area, ft2
+              sfAzm = 0                         // Surface azimuth, deg
+              sfModel = "Forward_Difference"    // Modeling option
+              sfExCnd = "Adiabatic"             // Exterior condition description
+        
+           SURFACE   "Attic-atc-rfT3"  
+              sfType = "Wall"                   // Type of opaque surface
+              sfCon = "con-AtticTruss"          // Surface construction
+              sfArea = 2258.444149              // Wall area, ft2
+              sfAzm = 0                         // Surface azimuth, deg
+              sfModel = "Forward_Difference"    // Modeling option
+              sfExCnd = "Adiabatic"             // Exterior condition description
+        
+        PERFORMANCEMAP   "t24-SplitHeatPumpPM-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+        
+           PMGRIDAXIS   "t24-SplitHeatPumpPM-htgdbtaxis"  
+              pmGXType = "DBT"
+              pmGXValues = 0, 5, 17, 47
+              pmGXRefValue = 47
+        
+           PMGRIDAXIS   "t24-SplitHeatPumpPM-htgspdaxis"  
+              pmGXType = "Speed"
+              pmGXValues = 1
+              pmGXRefValue = 1
+        
+           PMLOOKUPDATA   "t24-SplitHeatPumpPM-htgcapdata"  
+              pmLUType = "CapRat"
+              pmLUValues = 0.414067,            // 0F
+                           0.4764,              // 5F
+                           0.626,               // 17F
+                           1                    // 47F
+        
+           PMLOOKUPDATA   "t24-SplitHeatPumpPM-htgcopdata"  
+              pmLUType = "COP"
+              pmLUValues = 1.776497,            // 0F
+                           1.97852,             // 5F
+                           2.414382,            // 17F
+                           3.273178             // 47F
+        
+        PERFORMANCEMAP   "t24-SplitHeatPumpPM-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+        
+           PMGRIDAXIS   "t24-SplitHeatPumpPM-clgdbtaxis"  
+              pmGXType = "DBT"
+              pmGXValues = 40, 48, 82, 95, 125
+              pmGXRefValue = 95
+        
+           PMGRIDAXIS   "t24-SplitHeatPumpPM-clgspdaxis"  
+              pmGXType = "Speed"
+              pmGXValues = 1
+              pmGXRefValue = 1
+        
+           PMLOOKUPDATA   "t24-SplitHeatPumpPM-clgcapdata"  
+              pmLUType = "CapRat"
+              pmLUValues = 1.290231,            // 40F
+                           1.24779,             // 48.0F
+                           1.0686,              // 82F
+                           1,                   // 95F
+                           0.841692             // 125F
+        
+           PMLOOKUPDATA   "t24-SplitHeatPumpPM-clgcopdata"  
+              pmLUType = "COP"
+              pmLUValues = 10.541931,           // 40F
+                           10.195166,           // 48.0F
+                           4.36554,             // 82F
+                           3.428933,            // 95F
+                           2.105477             // 125F
+        
+        PERFORMANCEMAP   "t24-SplitHeatPumpPM-2-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+        
+           PMGRIDAXIS   "t24-SplitHeatPumpPM-2-htgdbtaxis"  
+              pmGXType = "DBT"
+              pmGXValues = 0, 5, 17, 47
+              pmGXRefValue = 47
+        
+           PMGRIDAXIS   "t24-SplitHeatPumpPM-2-htgspdaxis"  
+              pmGXType = "Speed"
+              pmGXValues = 1
+              pmGXRefValue = 1
+        
+           PMLOOKUPDATA   "t24-SplitHeatPumpPM-2-htgcapdata"  
+              pmLUType = "CapRat"
+              pmLUValues = 0.414067,            // 0F
+                           0.4764,              // 5F
+                           0.626,               // 17F
+                           1                    // 47F
+        
+           PMLOOKUPDATA   "t24-SplitHeatPumpPM-2-htgcopdata"  
+              pmLUType = "COP"
+              pmLUValues = 1.776497,            // 0F
+                           1.97852,             // 5F
+                           2.414382,            // 17F
+                           3.273178             // 47F
+        
+        PERFORMANCEMAP   "t24-SplitHeatPumpPM-2-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+        
+           PMGRIDAXIS   "t24-SplitHeatPumpPM-2-clgdbtaxis"  
+              pmGXType = "DBT"
+              pmGXValues = 40, 48, 82, 95, 125
+              pmGXRefValue = 95
+        
+           PMGRIDAXIS   "t24-SplitHeatPumpPM-2-clgspdaxis"  
+              pmGXType = "Speed"
+              pmGXValues = 1
+              pmGXRefValue = 1
+        
+           PMLOOKUPDATA   "t24-SplitHeatPumpPM-2-clgcapdata"  
+              pmLUType = "CapRat"
+              pmLUValues = 1.290231,            // 40F
+                           1.24779,             // 48.0F
+                           1.0686,              // 82F
+                           1,                   // 95F
+                           0.841692             // 125F
+        
+           PMLOOKUPDATA   "t24-SplitHeatPumpPM-2-clgcopdata"  
+              pmLUType = "COP"
+              pmLUValues = 10.541931,           // 40F
+                           10.195166,           // 48.0F
+                           4.36554,             // 82F
+                           3.428933,            // 95F
+                           2.105477             // 125F
+        
+        RSYS   "rsys-Zone1 HVACSys"  
+           rsType = "ASHPPM"                    // System type
+           AUTOSIZE rsCapC
+           AUTOSIZE rsCap47
+           rsFxCapC = 1.2                       // Cooling sizing factor
+           rsFChgC = 0.96                       // Refrigerant charge adjustment factor (for cooling)
+           rsSEER = 15.052632                   // Cooling SEER
+           rsVfPerTon = 350                     // CFM per Ton (default = 350)
+           rsFanMotTy = "PSC"                   // Fan motor type
+           rsFanPwrH = 0.45                     // Heating fan power.  Heating air flow is estimated based on a 50 ?F temperature rise.
+           rsFanPwrC = 0.45                     // Cooling fan power.
+           rsParElec = ($tdboHrAv < 50.) * (1.-@RSYSRes["rsys-Zone1 HVACSys"].prior.H.hrsOn) * max( 36000, @RSYS["rsys-Zone1 HVACSys"].capNomC ) * 11./12000.    // Parasitic electric use, W
+           rsDefrostModel = "RevCycleAux"       // Modeling options for ASHP outdoor coil defrosting when 17°F < TDbO < 45°F
+           rsFxCapH = 1.2                       // Heating sizing factor
+           rsFChgH = 0.96                       // Refrigerant charge adjustment factor (for heating)
+           rsHSPF = 8.823529                    // ratio of BTU heat output over the heating season to watt-hours of electricity used, ratio
+           rsTypeAuxH = "Resistance"            // type of aux heating equipment
+           rsCtrlAuxH = "Cycle"                 // aux heating equipment control
+           rsCapAuxH = 260000                   // Auxiliary (backup) heating capacity, Btuh
+           rsASHPLockOutT = 0                   // Temperature below which the ASHP compressor is disabled, °F
+           rsCdH = 0.08                         // Heating cyclic degradation coefficient, ratio
+           rsCdC = 0.08                         // Cooling cyclic degradation coefficient, ratio
+           rsOAVType = "None"                   // OAV system type
+           rsElecMtr = "MtrElec"                // Electric use meter
+           rsFuelMtr = "MtrNatGas"              // Natural gas use meter
+           rsPerfMapHtg = "t24-SplitHeatPumpPM-htgperfmap"    // Heating performance map, Single speed: Autosized / HSPF2 7.5
+           rsPerfMapClg = "t24-SplitHeatPumpPM-clgperfmap"    // Cooling performance map, Single speed: Autosized / EER2 11.7 / SEER2 14.3
+        
+           DUCTSEG   "SupplyDuct-rsys-Zone1 HVACSys"  
+              dsTy = "SUPPLY"
+              dsInArea = 0                      // Duct segment inside surface area (at duct wall, duct wall thickness assumed negligible) for round shaped duct., ft2
+              dsDiameter = 0.666667             // Duct segment round duct diameter (duct wall thickness assumed negligible), ft
+              dsInsulR = 4.2
+              dsLeakF = 0.04095
+              dsExCnd = "AMBIENT"               // Conditions surrounding duct segment
+        
+           DUCTSEG   "ReturnDuct-rsys-Zone1 HVACSys"  
+              dsTy = "RETURN"
+              dsInArea = 0                      // Duct segment inside surface area (at duct wall, duct wall thickness assumed negligible) for round shaped duct., ft2
+              dsDiameter = 1.333333             // Duct segment round duct diameter (duct wall thickness assumed negligible), ft
+              dsInsulR = 4.2
+              dsLeakF = 0.02905
+              dsExCnd = "AMBIENT"               // Conditions surrounding duct segment
+        
+        RSYS   "rsys-Zone2 HVACSys"  
+           rsType = "ASHPPM"                    // System type
+           AUTOSIZE rsCapC
+           AUTOSIZE rsCap47
+           rsFxCapC = 1.2                       // Cooling sizing factor
+           rsFChgC = 0.96                       // Refrigerant charge adjustment factor (for cooling)
+           rsSEER = 15.052632                   // Cooling SEER
+           rsVfPerTon = 350                     // CFM per Ton (default = 350)
+           rsFanMotTy = "PSC"                   // Fan motor type
+           rsFanPwrH = 0.45                     // Heating fan power.  Heating air flow is estimated based on a 50 ?F temperature rise.
+           rsFanPwrC = 0.45                     // Cooling fan power.
+           rsParElec = ($tdboHrAv < 50.) * (1.-@RSYSRes["rsys-Zone2 HVACSys"].prior.H.hrsOn) * max( 36000, @RSYS["rsys-Zone2 HVACSys"].capNomC ) * 11./12000.    // Parasitic electric use, W
+           rsDefrostModel = "RevCycleAux"       // Modeling options for ASHP outdoor coil defrosting when 17°F < TDbO < 45°F
+           rsFxCapH = 1.2                       // Heating sizing factor
+           rsFChgH = 0.96                       // Refrigerant charge adjustment factor (for heating)
+           rsHSPF = 8.823529                    // ratio of BTU heat output over the heating season to watt-hours of electricity used, ratio
+           rsTypeAuxH = "Resistance"            // type of aux heating equipment
+           rsCtrlAuxH = "Cycle"                 // aux heating equipment control
+           rsCapAuxH = 260000                   // Auxiliary (backup) heating capacity, Btuh
+           rsASHPLockOutT = 0                   // Temperature below which the ASHP compressor is disabled, °F
+           rsCdH = 0.08                         // Heating cyclic degradation coefficient, ratio
+           rsCdC = 0.08                         // Cooling cyclic degradation coefficient, ratio
+           rsOAVType = "None"                   // OAV system type
+           rsElecMtr = "MtrElec"                // Electric use meter
+           rsFuelMtr = "MtrNatGas"              // Natural gas use meter
+           rsPerfMapHtg = "t24-SplitHeatPumpPM-2-htgperfmap"    // Heating performance map, Single speed: Autosized / HSPF2 7.5
+           rsPerfMapClg = "t24-SplitHeatPumpPM-2-clgperfmap"    // Cooling performance map, Single speed: Autosized / EER2 11.7 / SEER2 14.3
+        
+           DUCTSEG   "SupplyDuct-rsys-Zone2 HVACSys"  
+              dsTy = "SUPPLY"
+              dsInArea = 0                      // Duct segment inside surface area (at duct wall, duct wall thickness assumed negligible) for round shaped duct., ft2
+              dsDiameter = 0.666667             // Duct segment round duct diameter (duct wall thickness assumed negligible), ft
+              dsInsulR = 4.2
+              dsLeakF = 0.04095
+              dsExCnd = "AMBIENT"               // Conditions surrounding duct segment
+        
+           DUCTSEG   "ReturnDuct-rsys-Zone2 HVACSys"  
+              dsTy = "RETURN"
+              dsInArea = 0                      // Duct segment inside surface area (at duct wall, duct wall thickness assumed negligible) for round shaped duct., ft2
+              dsDiameter = 1.333333             // Duct segment round duct diameter (duct wall thickness assumed negligible), ft
+              dsInsulR = 4.2
+              dsLeakF = 0.02905
+              dsExCnd = "AMBIENT"               // Conditions surrounding duct segment
+        
+        PVARRAY   "T24 PVArray-sim"  
+           pvDCSysSize = 15.36716               // kW
+           pvModuleType = "Standard"
+           pvArrayType = "FixedOpenRack"
+           pvTilt = 22.619884                   // deg
+           pvAzm = 170                          // deg
+           pvSIF = 2                            // frac
+           pvInverterEff = 0.96                 // frac
+           pvSysLosses = 0.1744                 // frac
+           pvElecMtr = "MtrElec"
+        
+        EXPORTFILE   "xf-hvacCaps"  
+           xfFileName = "EX03_MF08_Central-WSHP_CZ09 - ab-hvacCaps.csv"    // Name of file to write simulation results to
+           endEXPORTFILE
+        
+        EXPORTFILE   "xf-znUMLHs"  
+           xfFileName = "EX03_MF08_Central-WSHP_CZ09 - ab-znUMLHs.csv"    // Name of file to write simulation results to
+           endEXPORTFILE
+        
+        EXPORT   "ExportElec"  
+           exExportfile = "Primary"             // Name of EXPORTFILE to write simulation results to
+           exType = "MTR"                       // Export type
+           exFreq = "HOUR"                      // Time interval for generating rows of export data
+           exMeter = "MtrElec"                  // Meter to report
+           exBtuSf = 1000                       // Result scaling factor (1,000 reports kBtu)
+           exDayBeg = Jan 1                     // initial day of export period
+           exDayEnd = Dec 31                    // final day of export period
+        
+        EXPORT   "ExportNatGas"  
+           exExportfile = "Primary"             // Name of EXPORTFILE to write simulation results to
+           exType = "MTR"                       // Export type
+           exFreq = "HOUR"                      // Time interval for generating rows of export data
+           exMeter = "MtrNatGas"                // Meter to report
+           exBtuSf = 1000                       // Result scaling factor (1,000 reports kBtu)
+           exDayBeg = Jan 1                     // initial day of export period
+           exDayEnd = Dec 31                    // final day of export period
+        
+        EXPORT   "x-hvacCaps"  
+           exExportfile = "xf-hvacCaps"         // Name of EXPORTFILE to write simulation results to
+           exType = "UDT"                       // Export type
+           exFreq = "YEAR"                      // Time interval for generating rows of export data
+           exHeader = "COLUMNSONLY"             // export header which gives the export type, object being exported, time interval, column headings, etc.
+        
+           EXPORTCOL   "xc-hvacCaps"  
+              colVal = @top.runDateTime         // Value to show in this position in each row of export
+              colHead = "runDateTime"           // Text used for field name in export header
+        
+           EXPORTCOL   "xc1-Zone1 HVACSys-Name"  
+              colVal = "Zone1 HVACSys"          // Value to show in this position in each row of export
+              colHead = "SysName"               // Text used for field name in export header
+        
+           EXPORTCOL   "xc1-Zone1 HVACSys-HtgCap"  
+              colVal = @Rsys["rsys-Zone1 HVACSys"].Cap47/1000    // Value to show in this position in each row of export
+              colHead = "HtgCap"                // Text used for field name in export header
+        
+           EXPORTCOL   "xc1-Zone1 HVACSys-ClgCap"  
+              colVal = @Rsys["rsys-Zone1 HVACSys"].Cap95/1000    // Value to show in this position in each row of export
+              colHead = "ClgCap"                // Text used for field name in export header
+        
+           EXPORTCOL   "xc1-Zone2 HVACSys-Name"  
+              colVal = "Zone2 HVACSys"          // Value to show in this position in each row of export
+              colHead = "SysName"               // Text used for field name in export header
+        
+           EXPORTCOL   "xc1-Zone2 HVACSys-HtgCap"  
+              colVal = @Rsys["rsys-Zone2 HVACSys"].Cap47/1000    // Value to show in this position in each row of export
+              colHead = "HtgCap"                // Text used for field name in export header
+        
+           EXPORTCOL   "xc1-Zone2 HVACSys-ClgCap"  
+              colVal = @Rsys["rsys-Zone2 HVACSys"].Cap95/1000    // Value to show in this position in each row of export
+              colHead = "ClgCap"                // Text used for field name in export header
+        
+        EXPORT   "x-znUMLHs"  
+           exExportfile = "xf-znUMLHs"          // Name of EXPORTFILE to write simulation results to
+           exType = "UDT"                       // Export type
+           exFreq = "YEAR"                      // Time interval for generating rows of export data
+           exHeader = "COLUMNSONLY"             // export header which gives the export type, object being exported, time interval, column headings, etc.
+        
+           EXPORTCOL   "xc-znUMLHs"  
+              colVal = @top.runDateTime         // Value to show in this position in each row of export
+              colHead = "runDateTime"           // Text used for field name in export header
+        
+           EXPORTCOL   "xcz-Zone1-Name"  
+              colVal = "Zone1"                  // Value to show in this position in each row of export
+              colHead = "ZnName"                // Text used for field name in export header
+        
+           EXPORTCOL   "xcz-Zone1-Clg"  
+              colVal = @Znres["Zone1-zn"].Y.unMetHrsTol[1]    // Value to show in this position in each row of export
+              colHead = "Clg"                   // Text used for field name in export header
+        
+           EXPORTCOL   "xcz-Zone1-Htg"  
+              colVal = @Znres["Zone1-zn"].Y.unMetHrsTol[0]    // Value to show in this position in each row of export
+              colHead = "Htg"                   // Text used for field name in export header
+        
+           EXPORTCOL   "xcz-Zone2-Name"  
+              colVal = "Zone2"                  // Value to show in this position in each row of export
+              colHead = "ZnName"                // Text used for field name in export header
+        
+           EXPORTCOL   "xcz-Zone2-Clg"  
+              colVal = @Znres["Zone2-zn"].Y.unMetHrsTol[1]    // Value to show in this position in each row of export
+              colHead = "Clg"                   // Text used for field name in export header
+        
+           EXPORTCOL   "xcz-Zone2-Htg"  
+              colVal = @Znres["Zone2-zn"].Y.unMetHrsTol[0]    // Value to show in this position in each row of export
+              colHead = "Htg"                   // Text used for field name in export header
+        
+        
+         RUN
+         $EOF
+
+
+
+CSE 0.927.0 for Win32 console run(s) done: Thu 11-Jun-26  10: pm
+
+Executable:   c:\program files\cbecc 2025.2.0.1\cse\cse.exe
+              03-Nov-25   3:3 pm   (VS 14.29    3377664 bytes)  (HPWH 1.26.0)
+Command line: -b
+              C:\github\P-SCE-Complex_HVAC\Final Data Set\EX03_MF_Central-WSHP\EX03_MF08_Central-WSHP_CZ09\EX03_MF08_Central-WSHP_CZ09 - run\EX03_MF08_Central-WSHP_CZ09 - ab-cse
+Input file:   C:\github\P-SCE-Complex_HVAC\Final Data Set\EX03_MF_Central-WSHP\EX03_MF08_Central-WSHP_CZ09\EX03_MF08_Central-WSHP_CZ09 - run\EX03_MF08_Central-WSHP_CZ09 - ab-cse.cse
+Report file:  C:\GITHUB\P-SCE-COMPLEX_HVAC\FINAL DATA SET\EX03_MF_CENTRAL-WSHP\EX03_MF08_CENTRAL-WSHP_CZ09\EX03_MF08_CENTRAL-WSHP_CZ09 - RUN\EX03_MF08_CENTRAL-WSHP_CZ09 - AB-CSE.REP
+
+Timing info --
+
+               Input:  Time = 0.35     Calls = 2         T/C = 0.1770
+          AutoSizing:  Time = 0.75     Calls = 1         T/C = 0.7470
+          Simulation:  Time = 9.83     Calls = 1         T/C = 9.8340
+             Reports:  Time = 0.03     Calls = 1         T/C = 0.0280
+               Total:  Time = 10.96    Calls = 1         T/C = 10.9640

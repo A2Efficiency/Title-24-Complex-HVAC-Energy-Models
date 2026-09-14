@@ -1,0 +1,13 @@
+PV Array & Battery Report
+,"PV Capacity required based on Prescriptive tables:  15.4 kWdc  (no prescriptive battery requirement)"
+,"Standard Design PV Capacity: 15.4 kWdc  /  (no battery)"
+,"User-specified PV array capacity:  15.4 kWdc  (no battery equipment defined)"
+
+Prescriptive PV/Battery Requirements:
+Space/ResOtherZn/ResZn,,,,,,NonRes & HiRiseRes Multiplied Areas by PVBattery Bldg Type,,,,,,,,,,,,,LowRiseRes,,Prescriptive Capacities:
+Name,Conditioning Type,Space Function,PV/Batt Bldg Type,Floor Area,Multiplier,"Events, Exhibits",Library,Hotel/Motel,"Office, Financial, Unleased, Med Office/Clinic",Restaurants,"Retail, Grocery",School,Warehouse,Religious Worship,"Sports, Recreation",Highrise Multifamily,none,# Res Dwellings,MultArea,,PV,Batt Energy,Batt Power
+,,,,(ft2),,(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),,(ft2),,(kWdc),(kWh),(kW)
+"Zone1","Conditioned",,,3660,1,,,,,,,,,,,,,4,3660,,7.68358,0,0,
+"Zone2","Conditioned",,,3660,1,,,,,,,,,,,,,4,3660,,7.68358,0,0,
+,,,,,Sums:,0,0,0,0,0,0,0,0,0,0,0,0,8,7320,,15.3672,0,0,
+,,Bldg Cond Area:,7320,,Pcts:,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,100.0,

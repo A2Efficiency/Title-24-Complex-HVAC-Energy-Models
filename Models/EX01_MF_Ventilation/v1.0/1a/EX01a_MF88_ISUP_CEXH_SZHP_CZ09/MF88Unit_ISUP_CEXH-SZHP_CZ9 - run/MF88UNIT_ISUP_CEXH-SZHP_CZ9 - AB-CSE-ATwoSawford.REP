@@ -1,0 +1,1731 @@
+
+
+Log for Run 001: MF88 Individual Supply + Central Exhaust (SZHP)  /  Standard 
+
+CSE 0.927.0 for Win32 console
+
+
+
+Input for Run 001:
+
+#        #define  RunDateFmt  11:32, Sat, May 23, 2026
+#        #define  RunID               12   // Standard
+#        #define  AnalysisType        13   // Proposed and Standard
+#        #define  CompCodeBase      2025   // CA2025
+#        #define  StdDesignBase     2025   // CA2025
+#        #define  StandardsVersion  2026   // Compliance2025
+#        #define  DesignRatingBase     0   // n/a
+#        #define  ClimateZone          9   // ClimateZone9
+#        #define  DD1  Aug 14
+#        #define  CD1  Jun 20
+#        #define  HD1  Dec 01
+#        #define  SEASONCHANGESETPT  60
+#        #define  FANVENTLOCKOUTTEMP  68
+#        #define  ISSEASONCOOLING  (@weather.taDbAvg07 > SEASONCHANGESETPT)
+#        #define  FANVENTAVAIL  (@weather.taDbAvg07 > FANVENTLOCKOUTTEMP)
+#        #define  WINDOWVENTAVAIL  (!@Top.autoSizing && ($hour < 24 && ($hour > 12 || $radDiff+$radbeam > .01)))
+#        #define  HWUSEF_WD  hourval( 0.014, 0.008, 0.009, 0.011, 0.020, 0.044, 0.089, 0.107, 0.089, 0.066, 0.052, 0.038, 0.036, 0.033, 0.032, 0.026, 0.042, 0.048, 0.052, 0.047, 0.042, 0.039, 0.036, 0.022 )
+#        #define  HWUSEF_WE  hourval( 0.018, 0.010, 0.009, 0.008, 0.015, 0.023, 0.026, 0.047, 0.077, 0.083, 0.074, 0.061, 0.051, 0.043, 0.039, 0.039, 0.052, 0.058, 0.056, 0.052, 0.047, 0.044, 0.040, 0.028 )
+#        #define  ShwrFLOWF  1
+#        #define  ShwrDRAINHREFF  0
+#        #define  CwshHOTF  0.22
+#        #define  CwshUSEF  2.03
+#        #define  FaucHOTF  0.5
+#        #define  FaucFlowF  1
+#        #define  BathFLOWF  1
+#        #define  BathDRAINHREFF  0
+#        #define  DwshFLOWF  1
+#        #define  Cook_WD       hourval( .005,.004,.004,.004,.004,.014,.019,.025,.026,.022,.021,.029,.035,.032,.034,.052,.115,.193,.180,.098,.042,.020,.012,.010)
+#        #define  Cook_WEH      hourval( .005,.004,.003,.003,.003,.005,.010,.027,.048,.048,.046,.055,.063,.059,.062,.068,.091,.139,.129,.072,.032,.014,.009,.005)
+#        #define  TV_WD         hourval( .035,.026,.023,.022,.021,.021,.025,.032,.038,.040,.038,.038,.041,.042,.042,.041,.044,.049,.056,.064,.070,.074,.067,.051)
+#        #define  TV_WEH        hourval( .035,.027,.022,.021,.020,.020,.022,.029,.037,.043,.042,.039,.040,.042,.045,.048,.051,.052,.056,.061,.065,.069,.064,.050)
+#        #define  STB_WD        hourval( .040,.040,.040,.040,.040,.040,.040,.041,.040,.040,.040,.040,.040,.040,.041,.041,.042,.043,.044,.045,.046,.047,.045,.045)
+#        #define  STB_WEH       hourval( .041,.041,.040,.041,.040,.040,.040,.040,.041,.042,.042,.041,.041,.041,.041,.042,.042,.043,.044,.044,.045,.045,.044,.039)
+#        #define  Comp_WD       hourval( .036,.033,.032,.032,.031,.032,.034,.036,.039,.043,.045,.045,.046,.046,.046,.047,.048,.049,.049,.049,.049,.048,.044,.041)
+#        #define  Comp_WEH      hourval( .036,.034,.033,.033,.032,.033,.033,.035,.038,.042,.044,.045,.046,.047,.047,.048,.049,.049,.048,.048,.048,.047,.044,.041)
+#        #define  RMEL_WD       hourval( .037,.035,.034,.034,.032,.036,.042,.044,.037,.032,.033,.033,.032,.033,.035,.037,.044,.053,.058,.060,.062,.060,.052,.045)
+#        #define  RMEL_WEH      hourval( .037,.035,.034,.034,.032,.036,.042,.044,.037,.032,.033,.033,.032,.033,.035,.037,.044,.053,.058,.060,.062,.060,.052,.045)
+#        #define  IntLight_WD   hourval( .023,.019,.015,.017,.021,.031,.042,.041,.034,.029,.027,.025,.021,.021,.021,.026,.031,.044,.084,.117,.113,.096,.063,.039)
+#        #define  IntLight_WEH  hourval( .023,.019,.015,.017,.021,.031,.042,.041,.034,.029,.027,.025,.021,.021,.021,.026,.031,.044,.084,.117,.113,.096,.063,.039)
+#        #define  ExtLight_WD   hourval( .046,.046,.046,.046,.046,.037,.035,.034,.033,.028,.022,.015,.012,.011,.011,.012,.019,.037,.049,.065,.091,.105,.091,.063)
+#        #define  ExtLight_WEH  hourval( .046,.046,.045,.045,.046,.045,.044,.041,.036,.030,.024,.016,.012,.011,.011,.012,.019,.038,.048,.060,.083,.098,.085,.059)
+#        #define  Cook_SM    choose1( $month, 1.094,1.065,1.074,0.889,0.891,0.935,0.993,0.92,0.923,0.92,1.128,1.168)
+#        #define  TV_SM      choose1( $month, 1.032,.991,.986,.99,.971,.971,1.002,1.013,1.008,1.008,1.02,1.008)
+#        #define  STB_SM     choose1( $month, 1.02,.84,.92,.98,.91,.94,1.05,1.06,1.06,1.14,1.03,1.050)
+#        #define  Comp_SM    choose1( $month, 0.98,0.87,0.89,1.11,1.14,0.99,1.05,1.01,0.96,0.97,0.99,1.04)
+#        #define  Other_SM   choose1( $month,  1.19,1.11,1.02,.93,.84,.8,.82,.88,.98,1.07,1.16,1.2)
+#        #define  RefrConst_WD   hourval( -0.5436,-0.3646,-0.4044,-0.3871,-0.5341,-0.7521,-0.3747,0.0041,-0.1293,-0.4644,-0.4800,-0.4351,-0.2195,-0.3301,-0.0919,-0.1686,-0.4819,-0.4731,-0.2223,0.0604,-0.1466,-0.3214,-0.4113,-0.7701)
+#        #define  RefrConst_WEH  hourval( -0.3467,-0.2779,-0.2844,-0.2954,-0.4680,-0.5127,-0.7110,-0.5662,0.0463,-0.2995,-0.2388,-0.2646,-0.2905,-0.2730,-0.3306,-0.0031,-0.4356,-0.2580,0.2384,0.1176,-0.0458,-0.0596,-0.5300,0.0197 )
+#        #define  RefrTemp_WD    hourval( 0.0195,0.0167,0.0169,0.0165,0.0183,0.0218,0.0178,0.0136,0.0151,0.0189,0.0188,0.0183,0.0156,0.0169,0.0137,0.0149,0.0197,0.0208,0.0184,0.0144,0.0166,0.0184,0.0188,0.0229)
+#        #define  RefrTemp_WEH   hourval( 0.0171,0.0156,0.0155,0.0154,0.0175,0.0181,0.0212,0.0201,0.0130,0.0176,0.0165,0.0171,0.0177,0.0176,0.0182,0.0139,0.0197,0.0180,0.0121,0.0135,0.0154,0.0150,0.0205,0.0129)
+#        #define  FVCHPC  0.95		// VCHP cooling input energy factor
+#        #define  FVCHPH  0.88		// VCHP heating input energy factor
+#        #define  NumCntrlWHtrs( s)  tofloat( 1+fix(@DHWSYS[ s].loadMax / (15400. * @DHWSYS[ s].loadMaxDur)))
+#        #define  RunFileName  MF88Unit_ISUP_CEXH-SZHP_CZ9 - ab
+        
+#       #include "DHWDU2.txt"
+I       //File generated at 2021-02-15 20:16:40.066349
+I#      #echooff
+I#      ... Suppressing input echo until matching #ECHOON
+I#      #echoon
+I       // eof
+        
+           repHdrL = "MF88 Individual Supply + Central Exhaust (SZHP)"
+           runTitle = "MF88 Individual Supply + Central Exhaust (SZHP)  /  Standard  /  MF88Unit_ISUP_CEXH-SZHP_CZ9.cibd25x"
+           wfName = "CA_Title24_2025_LOS-ANGELES-USC.epw"
+           ebTolHour = 0.001
+           ebTolDay = 0.001
+           ebTolMon = 0.001
+           ebTolSubHr = 0.001
+           tol = 0.01                           // Endtest convergence tolerance for internal iteration in models
+           jan1DOW = "THU"
+           skyModel = "anisotropic"
+           bldgAzm = 0
+           dt = "YES"
+           heatDsTDbO = 43.1                    // °F
+           coolDsCond = "ClgDC_0p4pct_Aug"
+           ventAvail = zonal
+           nSubSteps = 6
+           wuDays = 15
+           awTrigSlr = 0.3
+           anTolAbs = 0.03
+           anTolRel = 0.003
+           auszTol = 0.05
+           awTrigT = 15
+           awTrigH = 1
+        
+         DELETE Report "eb"    // move from end of CSE file
+        
+        CONSTRUCTION   "cc-Int Wall Cons"  
+        
+           LAYER   "cl1-Int Wall Cons"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl2-Int Wall Cons"  
+              lrMat = "m-VertWallCavity"        // Layer material
+              lrThk = 0.291667                  // Thickness (feet), ft
+        
+           LAYER   "cl3-Int Wall Cons"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "fc-Int Wall Cons"  
+        
+           LAYER   "fl1-Int Wall Cons"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "fl2-Int Wall Cons"  
+              lrMat = "m-SoftWood"              // Layer material
+              lrThk = 0.458333                  // Thickness (feet), ft
+        
+           LAYER   "fl3-Int Wall Cons"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "cc-Interior Floor Cons"  
+        
+           LAYER   "cl1-Interior Floor Cons"  
+              lrMat = "m-Carpet"                // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl2-Interior Floor Cons"  
+              lrMat = "m-Wood layer"            // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl4-Interior Floor Cons"  
+              lrMat = "m-Insul-R0.29-D1.5-SH0.35-C0.28734"    // Layer material
+              lrThk = 0.083333                  // Thickness (feet), ft
+        
+           LAYER   "cl5-Interior Floor Cons"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "fc-Interior Floor Cons"  
+        
+           LAYER   "fl1-Interior Floor Cons"  
+              lrMat = "m-Carpet"                // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "fl2-Interior Floor Cons"  
+              lrMat = "m-Wood layer"            // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "fl3-Interior Floor Cons"  
+              lrMat = "m-SoftWood"              // Layer material
+              lrThk = 0.9375                    // Thickness (feet), ft
+        
+           LAYER   "fl4-Interior Floor Cons"  
+              lrMat = "m-Insul-R0.29-D1.5-SH0.35-C0.28734"    // Layer material
+              lrThk = 0.083333                  // Thickness (feet), ft
+        
+           LAYER   "fl5-Interior Floor Cons"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "cc-Below Grade Wall Cons"  
+        
+           LAYER   "cl1-Below Grade Wall Cons"  
+              lrMat = "m-Concrete"              // Layer material
+              lrThk = 0.833333                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "cc-Interior Mass Floor above Garage"  
+        
+           LAYER   "cl1-Interior Mass Floor above Garage"  
+              lrMat = "m-Hardwood"              // Layer material
+              lrThk = 0.0625                    // Thickness (feet), ft
+        
+           LAYER   "cl2-Interior Mass Floor above Garage"  
+              lrMat = "m-Concrete"              // Layer material
+              lrThk = 0.5                       // Thickness (feet), ft
+        
+           LAYER   "cl3-Interior Mass Floor above Garage"  
+              lrMat = "m-Ins-R4-D1.5-SH0.2-C0.02083"    // Layer material
+              lrThk = 0.083333                  // Thickness (feet), ft
+        
+           LAYER   "cl4-Interior Mass Floor above Garage"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "cc-Interior Wall adjacent Unconditioned"  
+        
+           LAYER   "cl1-Interior Wall adjacent Unconditioned"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl2-Interior Wall adjacent Unconditioned"  
+              lrMat = "m-Ins-R11-D1.5-SH0.2-C0.02652"    // Layer material
+              lrThk = 0.291667                  // Thickness (feet), ft
+        
+           LAYER   "cl3-Interior Wall adjacent Unconditioned"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "fc-Interior Wall adjacent Unconditioned"  
+        
+           LAYER   "fl1-Interior Wall adjacent Unconditioned"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "fl2-Interior Wall adjacent Unconditioned"  
+              lrMat = "m-SoftWood"              // Layer material
+              lrThk = 0.291667                  // Thickness (feet), ft
+        
+           LAYER   "fl3-Interior Wall adjacent Unconditioned"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "cc-T24-22MF Framed Roof U=0.028"      // Cavity R-val: 38
+        
+           LAYER   "cl1-T24-22MF Framed Roof U=0.028"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl2-T24-22MF Framed Roof U=0.028"  
+              lrMat = "m-Ins-R38-D1.5-SH0.2-C0.02467 83"    // Layer material
+              lrThk = 0.9375                    // Thickness (feet), ft
+        
+           LAYER   "cl3-T24-22MF Framed Roof U=0.028"  
+              lrMat = "m-Wood layer"            // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl4-T24-22MF Framed Roof U=0.028"  
+              lrMat = "m-5 PSF Roof"            // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "fc-T24-22MF Framed Roof U=0.028"  
+        
+           LAYER   "fl1-T24-22MF Framed Roof U=0.028"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "fl2-T24-22MF Framed Roof U=0.028"  
+              lrMat = "m-SoftWood"              // Layer material
+              lrThk = 0.9375                    // Thickness (feet), ft
+        
+           LAYER   "fl3-T24-22MF Framed Roof U=0.028"  
+              lrMat = "m-Wood layer"            // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "fl4-T24-22MF Framed Roof U=0.028"  
+              lrMat = "m-5 PSF Roof"            // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "cc-T24-2022 IntWall 2x4 16oc R11"  
+        
+           LAYER   "cl1-T24-2022 IntWall 2x4 16oc R11"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl2-T24-2022 IntWall 2x4 16oc R11"  
+              lrMat = "m-Ins-R11-D1.5-SH0.2-C0.02652"    // Layer material
+              lrThk = 0.291667                  // Thickness (feet), ft
+        
+           LAYER   "cl3-T24-2022 IntWall 2x4 16oc R11"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "fc-T24-2022 IntWall 2x4 16oc R11"  
+        
+           LAYER   "fl1-T24-2022 IntWall 2x4 16oc R11"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "fl2-T24-2022 IntWall 2x4 16oc R11"  
+              lrMat = "m-SoftWood"              // Layer material
+              lrThk = 0.291667                  // Thickness (feet), ft
+        
+           LAYER   "fl3-T24-2022 IntWall 2x4 16oc R11"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "cc-T24-2022 IntFlr RaisedMass R-0 Cons"  
+        
+           LAYER   "cl1-T24-2022 IntFlr RaisedMass R-0 Cons"  
+              lrMat = "m-Hardwood"              // Layer material
+              lrThk = 0.0625                    // Thickness (feet), ft
+        
+           LAYER   "cl2-T24-2022 IntFlr RaisedMass R-0 Cons"  
+              lrMat = "m-Concrete"              // Layer material
+              lrThk = 0.5                       // Thickness (feet), ft
+        
+           LAYER   "cl3-T24-2022 IntFlr RaisedMass R-0 Cons"  
+              lrMat = "m-Ins-R1-D1.5-SH0.2-C0.08333"    // Layer material
+              lrThk = 0.083333                  // Thickness (feet), ft
+        
+           LAYER   "cl4-T24-2022 IntFlr RaisedMass R-0 Cons"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "cc-T24-2013 R19 IntFloor Cons"  
+        
+           LAYER   "cl1-T24-2013 R19 IntFloor Cons"  
+              lrMat = "m-Carpet"                // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl2-T24-2013 R19 IntFloor Cons"  
+              lrMat = "m-Wood layer"            // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl3-T24-2013 R19 IntFloor Cons"  
+              lrMat = "m-Ins-R18-D1.5-SH0.2-C0.02546"    // Layer material
+              lrThk = 0.458333                  // Thickness (feet), ft
+        
+           LAYER   "cl4-T24-2013 R19 IntFloor Cons"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "fc-T24-2013 R19 IntFloor Cons"  
+        
+           LAYER   "fl1-T24-2013 R19 IntFloor Cons"  
+              lrMat = "m-Carpet"                // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "fl2-T24-2013 R19 IntFloor Cons"  
+              lrMat = "m-Wood layer"            // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "fl3-T24-2013 R19 IntFloor Cons"  
+              lrMat = "m-SoftWood"              // Layer material
+              lrThk = 0.458333                  // Thickness (feet), ft
+        
+           LAYER   "fl4-T24-2013 R19 IntFloor Cons"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "cc-T24-2022 ExtWall 6in Conc R13"  
+        
+           LAYER   "cl1-T24-2022 ExtWall 6in Conc R13"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl2-T24-2022 ExtWall 6in Conc R13"  
+              lrMat = "m-T24-2022 ExtWall 6in Conc R13 InsFur2-R13"    // Layer material
+              lrThk = 0.291667                  // Thickness (feet), ft
+        
+           LAYER   "cl3-T24-2022 ExtWall 6in Conc R13"  
+              lrMat = "m-Concrete"              // Layer material
+              lrThk = 0.5                       // Thickness (feet), ft
+        
+        CONSTRUCTION   "cc-T24-2022 ExtWall 2x6 16oc U=0.051"      // Cavity R-val: 18
+        
+           LAYER   "cl1-T24-2022 ExtWall 2x6 16oc U=0.051"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl2-T24-2022 ExtWall 2x6 16oc U=0.051"  
+              lrMat = "m-Ins-R18-D1.5-SH0.2-C0.02546"    // Layer material
+              lrThk = 0.458333                  // Thickness (feet), ft
+        
+           LAYER   "cl3-T24-2022 ExtWall 2x6 16oc U=0.051"  
+              lrMat = "m-Insul-R5-D1.5-SH0.35-C0.01667"    // Layer material
+              lrThk = 0.083333                  // Thickness (feet), ft
+        
+           LAYER   "cl4-T24-2022 ExtWall 2x6 16oc U=0.051"  
+              lrMat = "m-Synthetic Stucco"      // Layer material
+              lrThk = 0.03125                   // Thickness (feet), ft
+        
+        CONSTRUCTION   "fc-T24-2022 ExtWall 2x6 16oc U=0.051"  
+        
+           LAYER   "fl1-T24-2022 ExtWall 2x6 16oc U=0.051"  
+              lrMat = "m-Gypsum Board"          // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "fl2-T24-2022 ExtWall 2x6 16oc U=0.051"  
+              lrMat = "m-SoftWood"              // Layer material
+              lrThk = 0.458333                  // Thickness (feet), ft
+        
+           LAYER   "fl3-T24-2022 ExtWall 2x6 16oc U=0.051"  
+              lrMat = "m-Insul-R5-D1.5-SH0.35-C0.01667"    // Layer material
+              lrThk = 0.083333                  // Thickness (feet), ft
+        
+           LAYER   "fl4-T24-2022 ExtWall 2x6 16oc U=0.051"  
+              lrMat = "m-Synthetic Stucco"      // Layer material
+              lrThk = 0.03125                   // Thickness (feet), ft
+        
+        CONSTRUCTION   "scn-UFlrConsExposed"  
+        
+           LAYER   "cl1-UFlrXCConcrete"  
+              lrMat = "m-UFlrCConcrete"         // Layer material
+              lrThk = 0.291667                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "c-F1 Fitness Center Door Right-dr"  
+        
+           LAYER   "l-F1 Fitness Center Door Right-dr"  
+              lrMat = "m-F1 Fitness Center Door Right-dr"    // Layer material
+        
+        CONSTRUCTION   "con-FurnIMass"  
+        
+           LAYER   "cl1-FurnIMass"  
+              lrMat = "IntMassMat-SoftWood"     // Layer material
+              lrThk = 0.208333                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "con-WallFrmIMass"  
+        
+           LAYER   "cl1-WallFrmIMass"  
+              lrMat = "IntMassMat-Gypsum"       // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl2-WallFrmIMass"  
+              lrMat = "IntMassMat-SoftWood"     // Layer material
+              lrThk = 0.291667                  // Thickness (feet), ft
+        
+           LAYER   "cl3-WallFrmIMass"  
+              lrMat = "IntMassMat-Gypsum"       // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+        CONSTRUCTION   "con-WallCavIMass"  
+        
+           LAYER   "cl1-WallCavIMass"  
+              lrMat = "IntMassMat-Gypsum"       // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+           LAYER   "cl2-WallCavIMass"  
+              lrMat = "IntMassMat-Gypsum"       // Layer material
+              lrThk = 0.041667                  // Thickness (feet), ft
+        
+        MATERIAL   "m-SoftWood"  
+           matDens = 35                         // Density, lb/ft3
+           matSpHt = 0.39                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.08167                    // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.0012                   // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "m-Steel"  
+           matDens = 489                        // Density, lb/ft3
+           matSpHt = 0.12                       // Specific heat of material, Btu/lb-°F
+           matCond = 26.2                       // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+        
+        MATERIAL   "m-SIPSskin"  
+           matDens = 41                         // Density, lb/ft3
+           matSpHt = 0.45                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.06127                    // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.0012                   // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "m-Gypsum Board"  
+           matDens = 40                         // Density, lb/ft3
+           matSpHt = 0.27                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.09167                    // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.000122                 // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "m-Synthetic Stucco"  
+           matDens = 58                         // Density, lb/ft3
+           matSpHt = 0.2                        // Specific heat of material, Btu/lb-°F
+           matCond = 0.2                        // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+        
+        MATERIAL   "m-Carpet"  
+           matDens = 12.3                       // Density, lb/ft3
+           matSpHt = 0.34                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.02                       // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+        
+        MATERIAL   "m-Wood layer"  
+           matDens = 41                         // Density, lb/ft3
+           matSpHt = 0.45                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.06127                    // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.0012                   // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "m-5 PSF Roof"  
+           matDens = 120                        // Density, lb/ft3
+           matSpHt = 0.2                        // Specific heat of material, Btu/lb-°F
+           matCond = 1                          // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+        
+        MATERIAL   "m-VertWallCavity"  
+           matDens = 0.075                      // Density, lb/ft3
+           matSpHt = 0.24                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.314                      // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.00397                  // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "m-Ins-R18-D1.5-SH0.2-C0.02546"  
+           matDens = 1.5                        // Density, lb/ft3
+           matSpHt = 0.2                        // Specific heat of material, Btu/lb-°F
+           matCond = 0.025463                   // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.003254                 // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "m-Concrete"  
+           matDens = 144                        // Density, lb/ft3
+           matSpHt = 0.2                        // Specific heat of material, Btu/lb-°F
+           matCond = 1                          // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+        
+        MATERIAL   "m-Insul-R0.29-D1.5-SH0.35-C0.28734"  
+           matDens = 1.5                        // Density, lb/ft3
+           matSpHt = 0.35                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.287345                   // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.00175                  // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "m-Ins-R11-D1.5-SH0.2-C0.02652"  
+           matDens = 1.5                        // Density, lb/ft3
+           matSpHt = 0.2                        // Specific heat of material, Btu/lb-°F
+           matCond = 0.026515                   // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.003254                 // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "m-Ins-R4-D1.5-SH0.2-C0.02083"  
+           matDens = 1.5                        // Density, lb/ft3
+           matSpHt = 0.2                        // Specific heat of material, Btu/lb-°F
+           matCond = 0.020833                   // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.003254                 // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "m-Hardwood"  
+           matDens = 45                         // Density, lb/ft3
+           matSpHt = 0.3                        // Specific heat of material, Btu/lb-°F
+           matCond = 0.0916                     // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+        
+        MATERIAL   "m-Ins-R38-D1.5-SH0.2-C0.02467 83"  
+           matDens = 1.5                        // Density, lb/ft3
+           matSpHt = 0.2                        // Specific heat of material, Btu/lb-°F
+           matCond = 0.024671                   // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.00418                  // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "m-Insul-R5-D1.5-SH0.35-C0.01667"  
+           matDens = 1.5                        // Density, lb/ft3
+           matSpHt = 0.35                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.016666                   // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.00175                  // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "m-Ins-R1-D1.5-SH0.2-C0.08333"  
+           matDens = 1.5                        // Density, lb/ft3
+           matSpHt = 0.2                        // Specific heat of material, Btu/lb-°F
+           matCond = 0.083333                   // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.003254                 // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "m-T24-2022 ExtWall 6in Conc R13 InsFur2-R13"  
+           matDens = 3.59375                    // Density, lb/ft3
+           matSpHt = 0.315652                   // Specific heat of material, Btu/lb-°F
+           matCond = 0.026138                   // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.003125                 // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "m-UFlrCConcrete"  
+           matDens = 144                        // Density, lb/ft3
+           matSpHt = 0.2                        // Specific heat of material, Btu/lb-°F
+           matCond = 1                          // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+        
+        MATERIAL   "m-F1 Fitness Center Door Right-dr"  
+           matThk = 0.041667                    // Thickness (feet), ft
+           matDens = 41                         // Density, lb/ft3
+           matSpHt = 0.39                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.072016                   // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+        
+        MATERIAL   "IntMassMat-SoftWood"  
+           matDens = 35                         // Density, lb/ft3
+           matSpHt = 0.39                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.08167                    // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.0012                   // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        MATERIAL   "IntMassMat-Gypsum"  
+           matDens = 40                         // Density, lb/ft3
+           matSpHt = 0.27                       // Specific heat of material, Btu/lb-°F
+           matCond = 0.09167                    // Conductivity (always per foot of thickness), Btuh-ft/ft2-°F
+           matCondCT = 0.000122                 // Coefficient for temperature adjustment of matCond in the forward difference surface conduction model, F(-1)
+        
+        DESCOND   "ClgDC_0p4pct_Aug"  
+           dcDB = 92.7                          // Cooling design dry-bulb temperature, °F
+           dcDay = Aug 21                       // Calendar date for this design cooling conditions
+           dcMCDBR = 20.7                       // Coincident daily dry-bulb range, °F
+           dcMCWB = 70.2                        // Coincident wet-bulb temperature, °F
+           dcMCWBR = 7.8                        // Coincident daily wet-bulb range, °F
+           dcTauB = 0.383                       // ASHRAE beam 'pseudo optical depth'
+           dcTauD = 2.433                       // ASHRAE diffuse 'pseudo optical depth'
+           dcWindSpeed = 2                      // Wind speed for design conditions, mph
+        
+        METER   "MtrElec"  
+        
+        METER   "MtrElec2"  
+        
+        METER   "MtrNatGas"  
+        
+        DHWMETER   "DHWMtrFXMix"  
+        
+        DHWMETER   "DHWMtrWH"  
+        
+        DHWSYS   "dhwsys-DHW Heat Pump"  
+           wsTUse = 125                         // Water use temperature (at the point of use), °F
+           wsTSetpoint = 140                    // Setpoint temperature for HPWHs (whHeatSrc = ASHPX), °F
+           wsTSetPointLH = 130                  // Setpoint temperature for loop heater, °F
+           wsBranchModel = "DayWaste"           // Model used to simulate DHW branch losses
+           wsShowerDayWasteF = 3                // used to determine ratio of Shower/Faucet water waste
+           wsFaucetDayWasteF = 1                // used to determine ratio of Shower/Faucet water waste
+           wsDayWasteBranchVolF = 1.4 * 19.84 * exp( -0.554 * 4/2)    // Number of branch volumes discarded per day (wsBranchModel = DayWaste) (expression)
+           wsElecMtr = "MtrElec"                // Electric use meter
+           wsFuelMtr = "MtrNatGas"              // Fuel use meter
+           wsFXHwMtr = "DHWMtrFXMix"
+           wsWHHwMtr = "DHWMtrWH"
+           wsCalcMode = "PreRun"                // specifies PreRun vs. Simulate
+        
+           DHWLOOPHEATER   "dhwlphtr-DHW Heat Pump"  
+              whType = "BuiltUp"                // Type of water heater
+              whHeatSrc = "ResistanceX"         // Fuel source for water heater
+              whResType = "Typical"             // Control scheme for resistance loop tank heaters
+              whMult = 1                        // Water heater multiplier
+              whXBUEndUse = "User2"             // enduse to accumulate ASHPX backup heat elec use
+              whInsulR = 16                     // Water heater tank insulation R-value (interior + exterior insulation), ft2-°F/Btuh
+              whResHtPwr = 15400                // Water heater resistance heat power (upper element watts), W
+              whResHtPwr2 = 15400               // Water heater resistance heat power (lower element watts), W
+              whVol = 120                       // Water heater tank volume per compressor (mult) (must be 0 or undefined for instantaneous), gal
+              whTankCount = 1                   // Number of primary water heater tanks per compressor (mult)
+        
+           DHWHEATER   "dhwhtr1-t24std-CHPWH"  
+              whType = "BuiltUp"                // Type of water heater
+              whHeatSrc = "ASHPX"               // Fuel source for water heater
+              whASHPType = "Scalable_SP"        // ASHP type (for new HPWH model)
+              whXBUEndUse = "User2"             // enduse to accumulate ASHPX backup heat elec use
+              whInsulR = 16                     // Water heater tank insulation R-value (interior + exterior insulation), ft2-°F/Btuh
+        
+           DHWLOOP   "dhwlp-DHW Heat Pump"  
+              wlMult = 1                        // DHW loop multiplier
+              wlFlow = 14.96                    // DHW loop flow (gpm), gpm
+              wlRunF = 1                        // Hourly fraction that recirc is assumed to operate in the DHW loop, frac
+              wlFUA = 2                         // DHW loop imperfect insulation correction factor
+        
+              DHWLOOPPUMP   "dhwlppmp-DHW Heat Pump"  
+                 wlpPwr = 48                    // DHW loop pump power (W), W
+                 wlpElecMtr = "MtrElec"         // Electric use meter
+        
+              DHWLOOPSEG   "dhwlpseg1-DHW Heat Pump"  
+                 wgTy = "Supply"                // DHW loop segment type
+                 wgSize = 3.5                   // DHW loop segment nominal pipe size (diameter), in
+                 wgLength = 28                  // DHW loop segment length, ft
+                 wgInsulThk = 1.5               // DHW loop segment insulation thickness, in
+                 wgInsulK = 0.02167             // DHW loop segment insulation conductivity, Btuh-ft/ft2-°F
+                 wgFNoDraw = 0.2                // DHW loop segment fraction of hour when no draw flow occurs, frac
+                 wgExT = 70                     // ambient temperature around DHW loop segment, °F
+                 wgExH = 1.5                    // DHW loop pipe exterior surface conductance, Btuh/ft2-°F
+        
+              DHWLOOPSEG   "dhwlpseg2-DHW Heat Pump"  
+                 wgTy = "Supply"                // DHW loop segment type
+                 wgSize = 3.5                   // DHW loop segment nominal pipe size (diameter), in
+                 wgLength = 164.74981           // DHW loop segment length, ft
+                 wgInsulThk = 1.5               // DHW loop segment insulation thickness, in
+                 wgInsulK = 0.02167             // DHW loop segment insulation conductivity, Btuh-ft/ft2-°F
+                 wgFNoDraw = 0.4                // DHW loop segment fraction of hour when no draw flow occurs, frac
+                 wgExT = 70                     // ambient temperature around DHW loop segment, °F
+                 wgExH = 1.5                    // DHW loop pipe exterior surface conductance, Btuh/ft2-°F
+        
+                 DHWLOOPBRANCH   "dhwlpbr2-DHW Heat Pump"  
+                    wbMult = 22                 // DHW loop branch multiplier
+                    wbSize = 1.5                // DHW loop branch nominal pipe size (diameter), in
+                    wbLength = 24               // DHW loop branch length, ft
+                    wbFlow = 2                  // DHW loop branch flow (gpm), gpm
+                    wbInsulThk = 1.5            // DHW loop branch insulation thickness, in
+                    wbInsulK = 0.02167          // DHW loop branch insulation conductivity, Btuh-ft/ft2-°F
+                    wbExH = 1.5                 // DHW loop pipe exterior surface conductance, Btuh/ft2-°F
+                    wbExT = 70                  // ambient temperature around DHW loop branch, °F
+                    wbFWaste = 1.4 * 19.84 * exp( -0.544 * 2 ) * hourval( 0.01, 0.02, 0.05, 0.22, 0.25, 0.22, 0.06, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01)    // DHW loop branch waste factor (expression), vol/hr
+        
+              DHWLOOPSEG   "dhwlpseg3-DHW Heat Pump"  
+                 wgTy = "Supply"                // DHW loop segment type
+                 wgSize = 3                     // DHW loop segment nominal pipe size (diameter), in
+                 wgLength = 164.74981           // DHW loop segment length, ft
+                 wgInsulThk = 1.5               // DHW loop segment insulation thickness, in
+                 wgInsulK = 0.02167             // DHW loop segment insulation conductivity, Btuh-ft/ft2-°F
+                 wgFNoDraw = 0.6                // DHW loop segment fraction of hour when no draw flow occurs, frac
+                 wgExT = 70                     // ambient temperature around DHW loop segment, °F
+                 wgExH = 1.5                    // DHW loop pipe exterior surface conductance, Btuh/ft2-°F
+        
+                 DHWLOOPBRANCH   "dhwlpbr3-DHW Heat Pump"  
+                    wbMult = 22                 // DHW loop branch multiplier
+                    wbSize = 1.5                // DHW loop branch nominal pipe size (diameter), in
+                    wbLength = 24               // DHW loop branch length, ft
+                    wbFlow = 2                  // DHW loop branch flow (gpm), gpm
+                    wbInsulThk = 1.5            // DHW loop branch insulation thickness, in
+                    wbInsulK = 0.02167          // DHW loop branch insulation conductivity, Btuh-ft/ft2-°F
+                    wbExH = 1.5                 // DHW loop pipe exterior surface conductance, Btuh/ft2-°F
+                    wbExT = 70                  // ambient temperature around DHW loop branch, °F
+                    wbFWaste = 1.4 * 19.84 * exp( -0.544 * 2 ) * hourval( 0.01, 0.02, 0.05, 0.22, 0.25, 0.22, 0.06, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01)    // DHW loop branch waste factor (expression), vol/hr
+        
+              DHWLOOPSEG   "dhwlpseg4-DHW Heat Pump"  
+                 wgTy = "Return"                // DHW loop segment type
+                 wgSize = 1                     // DHW loop segment nominal pipe size (diameter), in
+                 wgLength = 164.74981           // DHW loop segment length, ft
+                 wgInsulThk = 1.5               // DHW loop segment insulation thickness, in
+                 wgInsulK = 0.02167             // DHW loop segment insulation conductivity, Btuh-ft/ft2-°F
+                 wgFNoDraw = 1                  // DHW loop segment fraction of hour when no draw flow occurs, frac
+                 wgExT = 70                     // ambient temperature around DHW loop segment, °F
+                 wgExH = 1.5                    // DHW loop pipe exterior surface conductance, Btuh/ft2-°F
+        
+              DHWLOOPSEG   "dhwlpseg5-DHW Heat Pump"  
+                 wgTy = "Return"                // DHW loop segment type
+                 wgSize = 1                     // DHW loop segment nominal pipe size (diameter), in
+                 wgLength = 164.74981           // DHW loop segment length, ft
+                 wgInsulThk = 1.5               // DHW loop segment insulation thickness, in
+                 wgInsulK = 0.02167             // DHW loop segment insulation conductivity, Btuh-ft/ft2-°F
+                 wgFNoDraw = 1                  // DHW loop segment fraction of hour when no draw flow occurs, frac
+                 wgExT = 70                     // ambient temperature around DHW loop segment, °F
+                 wgExH = 1.5                    // DHW loop pipe exterior surface conductance, Btuh/ft2-°F
+        
+              DHWLOOPSEG   "dhwlpseg6-DHW Heat Pump"  
+                 wgTy = "Return"                // DHW loop segment type
+                 wgSize = 1                     // DHW loop segment nominal pipe size (diameter), in
+                 wgLength = 28                  // DHW loop segment length, ft
+                 wgInsulThk = 1.5               // DHW loop segment insulation thickness, in
+                 wgInsulK = 0.02167             // DHW loop segment insulation conductivity, Btuh-ft/ft2-°F
+                 wgFNoDraw = 1                  // DHW loop segment fraction of hour when no draw flow occurs, frac
+                 wgExT = 70                     // ambient temperature around DHW loop segment, °F
+                 wgExH = 1.5                    // DHW loop pipe exterior surface conductance, Btuh/ft2-°F
+        
+        DHWSYS   "dhwsys-F1 Business Center"  
+           wsUse = 1.0692 * select( $dayOfWeek==7, hourval( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.05, 0.2, 0, 0, 0, 0, 0, 0, 0, 0.65, 0.3, 0, 0, 0 ),  // Sat
+                     $isWeHol,      hourval( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.05, 0.1, 0, 0, 0, 0, 0, 0, 0, 0.65, 0.3, 0, 0, 0 ),  // Sun/Hol
+                     Default        hourval( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.05, 0.35, 0.05, 0.05, 0.05, 0.05, 0.05, 0, 0, 0, 0, 0, 0, 0 ) )    // Water usage (at the point of use), gal
+           wsTUse = 115                         // Water use temperature (at the point of use), °F
+           wsTSetpoint = 125                    // Setpoint temperature for HPWHs (whHeatSrc = ASHPX), °F
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.067518                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsCWashrDrawDurF = 0                 // mult
+           wsDWashrDurF = 0                     // mult
+           wsElecMtr = "MtrElec"                // Electric use meter
+           wsFuelMtr = "MtrNatGas"              // Fuel use meter
+           wsFXHwMtr = "DHWMtrFXMix"
+           wsWHHwMtr = "DHWMtrWH"
+           wsCalcMode = "Simulate"              // specifies PreRun vs. Simulate
+        
+           DHWHEATER   "dhwhtr1-Std UEF2 NEEA HPWH"  
+              whType = "SmallStorage"           // Type of water heater
+              whHeatSrc = "ASHPX"               // Fuel source for water heater
+              whASHPType = "GE2012"             // ASHP type (for new HPWH model)
+              whMult = 1                        // Water heater multiplier
+              whXBUEndUse = "User2"             // enduse to accumulate ASHPX backup heat elec use
+        
+        DHWSYS   "dhwsys-F1 Fitness Center"  
+           wsUse = 1.62 * select( $dayOfWeek==7, hourval( 0.11, 0.1, 0.08, 0.06, 0.06, 0.06, 0.07, 0.2, 0.24, 0.27, 0.42, 0.54, 0.59, 0.6, 0.49, 0.48, 0.47, 0.46, 0.44, 0.36, 0.29, 0.22, 0.16, 0.13 ),  // Sat
+                     $isWeHol,      hourval( 0.07, 0.07, 0.07, 0.06, 0.06, 0.06, 0.07, 0.1, 0.12, 0.14, 0.29, 0.31, 0.36, 0.36, 0.34, 0.35, 0.37, 0.34, 0.25, 0.27, 0.21, 0.16, 0.1, 0.06 ),  // Sun/Hol
+                     Default        hourval( 0.04, 0.05, 0.05, 0.04, 0.04, 0.04, 0.04, 0.15, 0.23, 0.32, 0.41, 0.57, 0.62, 0.61, 0.5, 0.45, 0.46, 0.47, 0.42, 0.34, 0.33, 0.23, 0.13, 0.08 ) )    // Water usage (at the point of use), gal
+           wsTUse = 115                         // Water use temperature (at the point of use), °F
+           wsTSetpoint = 125                    // Setpoint temperature for HPWHs (whHeatSrc = ASHPX), °F
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.153545                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsCWashrDrawDurF = 0                 // mult
+           wsDWashrDurF = 0                     // mult
+           wsElecMtr = "MtrElec"                // Electric use meter
+           wsFuelMtr = "MtrNatGas"              // Fuel use meter
+           wsFXHwMtr = "DHWMtrFXMix"
+           wsWHHwMtr = "DHWMtrWH"
+           wsCalcMode = "Simulate"              // specifies PreRun vs. Simulate
+        
+           DHWHEATER   "dhwhtr1-Std UEF2 NEEA HPWH 3"  
+              whType = "SmallStorage"           // Type of water heater
+              whHeatSrc = "ASHPX"               // Fuel source for water heater
+              whASHPType = "GE2012"             // ASHP type (for new HPWH model)
+              whMult = 1                        // Water heater multiplier
+              whXBUEndUse = "User2"             // enduse to accumulate ASHPX backup heat elec use
+        
+        DHWSYS   "dhwsys-F1 Leasing Office"  
+           wsUse = 0.3726 * select( $dayOfWeek==7, hourval( 0.05, 0.05, 0.05, 0.05, 0.05, 0.08, 0.07, 0.11, 0.15, 0.21, 0.19, 0.23, 0.2, 0.19, 0.15, 0.12, 0.14, 0.07, 0.07, 0.07, 0.07, 0.09, 0.05, 0.05 ),  // Sat
+                     $isWeHol,      hourval( 0.04, 0.04, 0.04, 0.04, 0.04, 0.07, 0.04, 0.04, 0.04, 0.04, 0.04, 0.06, 0.06, 0.09, 0.06, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.07, 0.04, 0.04 ),  // Sun/Hol
+                     Default        hourval( 0.05, 0.05, 0.05, 0.05, 0.05, 0.08, 0.07, 0.19, 0.35, 0.38, 0.39, 0.47, 0.57, 0.54, 0.34, 0.33, 0.44, 0.26, 0.21, 0.15, 0.17, 0.08, 0.05, 0.05 ) )    // Water usage (at the point of use), gal
+           wsTUse = 115                         // Water use temperature (at the point of use), °F
+           wsTSetpoint = 125                    // Setpoint temperature for HPWHs (whHeatSrc = ASHPX), °F
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.076685                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsCWashrDrawDurF = 0                 // mult
+           wsDWashrDurF = 0                     // mult
+           wsElecMtr = "MtrElec"                // Electric use meter
+           wsFuelMtr = "MtrNatGas"              // Fuel use meter
+           wsFXHwMtr = "DHWMtrFXMix"
+           wsWHHwMtr = "DHWMtrWH"
+           wsCalcMode = "Simulate"              // specifies PreRun vs. Simulate
+        
+           DHWHEATER   "dhwhtr1-Std UEF2 NEEA HPWH 4"  
+              whType = "SmallStorage"           // Type of water heater
+              whHeatSrc = "ASHPX"               // Fuel source for water heater
+              whASHPType = "GE2012"             // ASHP type (for new HPWH model)
+              whMult = 1                        // Water heater multiplier
+              whXBUEndUse = "User2"             // enduse to accumulate ASHPX backup heat elec use
+        
+        DHWSYS   "dhwsys-F1 Lobby"  
+           wsUse = 0.4725 * select( $dayOfWeek==7, hourval( 0, 0, 0, 0.05, 0.05, 0.05, 0.8, 0.7, 0.5, 0.4, 0.25, 0.25, 0.25, 0.25, 0.5, 0.6, 0.7, 0.7, 0.4, 0.25, 0.2, 0.2, 0.05, 0.05 ),  // Sat
+                     $isWeHol,      hourval( 0, 0, 0, 0.05, 0.05, 0.05, 0.8, 0.7, 0.5, 0.4, 0.25, 0.25, 0.25, 0.25, 0.5, 0.6, 0.7, 0.7, 0.4, 0.25, 0.2, 0.2, 0.05, 0.05 ),  // Sun/Hol
+                     Default        hourval( 0, 0, 0, 0.05, 0.05, 0.05, 0.8, 0.7, 0.5, 0.4, 0.25, 0.25, 0.25, 0.25, 0.5, 0.6, 0.7, 0.7, 0.4, 0.25, 0.2, 0.2, 0.05, 0.05 ) )    // Water usage (at the point of use), gal
+           wsTUse = 115                         // Water use temperature (at the point of use), °F
+           wsTSetpoint = 125                    // Setpoint temperature for HPWHs (whHeatSrc = ASHPX), °F
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.175216                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsCWashrDrawDurF = 0                 // mult
+           wsDWashrDurF = 0                     // mult
+           wsElecMtr = "MtrElec"                // Electric use meter
+           wsFuelMtr = "MtrNatGas"              // Fuel use meter
+           wsFXHwMtr = "DHWMtrFXMix"
+           wsWHHwMtr = "DHWMtrWH"
+           wsCalcMode = "Simulate"              // specifies PreRun vs. Simulate
+        
+           DHWHEATER   "dhwhtr1-Std UEF2 NEEA HPWH 5"  
+              whType = "SmallStorage"           // Type of water heater
+              whHeatSrc = "ASHPX"               // Fuel source for water heater
+              whASHPType = "GE2012"             // ASHP type (for new HPWH model)
+              whMult = 1                        // Water heater multiplier
+              whXBUEndUse = "User2"             // enduse to accumulate ASHPX backup heat elec use
+        
+        DHWSYS   "dhwsys-F1 Mech Rm"  
+           wsUse = 0.3456 * select( $dayOfWeek==7, hourval( 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.06, 0.12, 0.12, 0.17, 0.04, 0.04, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02 ),  // Sat
+                     $isWeHol,      hourval( 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.04, 0.04, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02 ),  // Sun/Hol
+                     Default        hourval( 0.02, 0.02, 0.02, 0.02, 0.05, 0.07, 0.07, 0.1, 0.3, 0.36, 0.36, 0.46, 0.57, 0.43, 0.38, 0.4, 0.3, 0.18, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03 ) )    // Water usage (at the point of use), gal
+           wsTUse = 115                         // Water use temperature (at the point of use), °F
+           wsTSetpoint = 125                    // Setpoint temperature for HPWHs (whHeatSrc = ASHPX), °F
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.334825                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsCWashrDrawDurF = 0                 // mult
+           wsDWashrDurF = 0                     // mult
+           wsElecMtr = "MtrElec"                // Electric use meter
+           wsFuelMtr = "MtrNatGas"              // Fuel use meter
+           wsFXHwMtr = "DHWMtrFXMix"
+           wsWHHwMtr = "DHWMtrWH"
+           wsCalcMode = "Simulate"              // specifies PreRun vs. Simulate
+        
+           DHWHEATER   "dhwhtr1-Std UEF2 NEEA HPWH 6"  
+              whType = "SmallStorage"           // Type of water heater
+              whHeatSrc = "ASHPX"               // Fuel source for water heater
+              whASHPType = "GE2012"             // ASHP type (for new HPWH model)
+              whMult = 1                        // Water heater multiplier
+              whXBUEndUse = "User2"             // enduse to accumulate ASHPX backup heat elec use
+        
+        DHWSYS   "dhwsys-F2 Break Room"  
+           wsUse = 0.5346 * select( $dayOfWeek==7, hourval( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.05, 0.2, 0, 0, 0, 0, 0, 0, 0, 0.65, 0.3, 0, 0, 0 ),  // Sat
+                     $isWeHol,      hourval( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.05, 0.1, 0, 0, 0, 0, 0, 0, 0, 0.65, 0.3, 0, 0, 0 ),  // Sun/Hol
+                     Default        hourval( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.05, 0.35, 0.05, 0.05, 0.05, 0.05, 0.05, 0, 0, 0, 0, 0, 0, 0 ) )    // Water usage (at the point of use), gal
+           wsTUse = 115                         // Water use temperature (at the point of use), °F
+           wsTSetpoint = 125                    // Setpoint temperature for HPWHs (whHeatSrc = ASHPX), °F
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.036055                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsCWashrDrawDurF = 0                 // mult
+           wsDWashrDurF = 0                     // mult
+           wsElecMtr = "MtrElec"                // Electric use meter
+           wsFuelMtr = "MtrNatGas"              // Fuel use meter
+           wsFXHwMtr = "DHWMtrFXMix"
+           wsWHHwMtr = "DHWMtrWH"
+           wsCalcMode = "Simulate"              // specifies PreRun vs. Simulate
+        
+           DHWHEATER   "dhwhtr1-Std UEF2 NEEA HPWH 7"  
+              whType = "SmallStorage"           // Type of water heater
+              whHeatSrc = "ASHPX"               // Fuel source for water heater
+              whASHPType = "GE2012"             // ASHP type (for new HPWH model)
+              whMult = 1                        // Water heater multiplier
+              whXBUEndUse = "User2"             // enduse to accumulate ASHPX backup heat elec use
+        
+        DHWSYS   "dhwsys-F3 Break Room"  
+           wsUse = 0.5346 * select( $dayOfWeek==7, hourval( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.05, 0.2, 0, 0, 0, 0, 0, 0, 0, 0.65, 0.3, 0, 0, 0 ),  // Sat
+                     $isWeHol,      hourval( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.05, 0.1, 0, 0, 0, 0, 0, 0, 0, 0.65, 0.3, 0, 0, 0 ),  // Sun/Hol
+                     Default        hourval( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.05, 0.35, 0.05, 0.05, 0.05, 0.05, 0.05, 0, 0, 0, 0, 0, 0, 0 ) )    // Water usage (at the point of use), gal
+           wsTUse = 115                         // Water use temperature (at the point of use), °F
+           wsTSetpoint = 125                    // Setpoint temperature for HPWHs (whHeatSrc = ASHPX), °F
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.036055                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsCWashrDrawDurF = 0                 // mult
+           wsDWashrDurF = 0                     // mult
+           wsElecMtr = "MtrElec"                // Electric use meter
+           wsFuelMtr = "MtrNatGas"              // Fuel use meter
+           wsFXHwMtr = "DHWMtrFXMix"
+           wsWHHwMtr = "DHWMtrWH"
+           wsCalcMode = "Simulate"              // specifies PreRun vs. Simulate
+        
+           DHWHEATER   "dhwhtr1-Std UEF2 NEEA HPWH 8"  
+              whType = "SmallStorage"           // Type of water heater
+              whHeatSrc = "ASHPX"               // Fuel source for water heater
+              whASHPType = "GE2012"             // ASHP type (for new HPWH model)
+              whMult = 1                        // Water heater multiplier
+              whXBUEndUse = "User2"             // enduse to accumulate ASHPX backup heat elec use
+        
+        DHWSYS   "dhwsys-F4 Break Room"  
+           wsUse = 0.5346 * select( $dayOfWeek==7, hourval( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.05, 0.2, 0, 0, 0, 0, 0, 0, 0, 0.65, 0.3, 0, 0, 0 ),  // Sat
+                     $isWeHol,      hourval( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.05, 0.1, 0, 0, 0, 0, 0, 0, 0, 0.65, 0.3, 0, 0, 0 ),  // Sun/Hol
+                     Default        hourval( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.05, 0.35, 0.05, 0.05, 0.05, 0.05, 0.05, 0, 0, 0, 0, 0, 0, 0 ) )    // Water usage (at the point of use), gal
+           wsTUse = 115                         // Water use temperature (at the point of use), °F
+           wsTSetpoint = 125                    // Setpoint temperature for HPWHs (whHeatSrc = ASHPX), °F
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.036055                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsCWashrDrawDurF = 0                 // mult
+           wsDWashrDurF = 0                     // mult
+           wsElecMtr = "MtrElec"                // Electric use meter
+           wsFuelMtr = "MtrNatGas"              // Fuel use meter
+           wsFXHwMtr = "DHWMtrFXMix"
+           wsWHHwMtr = "DHWMtrWH"
+           wsCalcMode = "Simulate"              // specifies PreRun vs. Simulate
+        
+           DHWHEATER   "dhwhtr1-Std UEF2 NEEA HPWH 9"  
+              whType = "SmallStorage"           // Type of water heater
+              whHeatSrc = "ASHPX"               // Fuel source for water heater
+              whASHPType = "GE2012"             // ASHP type (for new HPWH model)
+              whMult = 1                        // Water heater multiplier
+              whXBUEndUse = "User2"             // enduse to accumulate ASHPX backup heat elec use
+        
+        DHWSYS   "dhwsys-F5 Break Room"  
+           wsUse = 0.5346 * select( $dayOfWeek==7, hourval( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.05, 0.2, 0, 0, 0, 0, 0, 0, 0, 0.65, 0.3, 0, 0, 0 ),  // Sat
+                     $isWeHol,      hourval( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.05, 0.1, 0, 0, 0, 0, 0, 0, 0, 0.65, 0.3, 0, 0, 0 ),  // Sun/Hol
+                     Default        hourval( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.05, 0.35, 0.05, 0.05, 0.05, 0.05, 0.05, 0, 0, 0, 0, 0, 0, 0 ) )    // Water usage (at the point of use), gal
+           wsTUse = 115                         // Water use temperature (at the point of use), °F
+           wsTSetpoint = 125                    // Setpoint temperature for HPWHs (whHeatSrc = ASHPX), °F
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.036055                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsCWashrDrawDurF = 0                 // mult
+           wsDWashrDurF = 0                     // mult
+           wsElecMtr = "MtrElec"                // Electric use meter
+           wsFuelMtr = "MtrNatGas"              // Fuel use meter
+           wsFXHwMtr = "DHWMtrFXMix"
+           wsWHHwMtr = "DHWMtrWH"
+           wsCalcMode = "Simulate"              // specifies PreRun vs. Simulate
+        
+           DHWHEATER   "dhwhtr1-Std UEF2 NEEA HPWH 10"  
+              whType = "SmallStorage"           // Type of water heater
+              whHeatSrc = "ASHPX"               // Fuel source for water heater
+              whASHPType = "GE2012"             // ASHP type (for new HPWH model)
+              whMult = 1                        // Water heater multiplier
+              whXBUEndUse = "User2"             // enduse to accumulate ASHPX backup heat elec use
+        
+        DHWSYS   "dhwsys-F2 1-Bed E Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR01                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F2 1-Bed E Court DU 2"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR02                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F2 2-Bed E Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR01                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F2 2-Bed E Perim DU 4"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR02                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F2 1-Bed N Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR03                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F2 1-Bed N Perim DU 6"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR04                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F2 1-Bed N Perim DU 7"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR05                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F2 1-Bed N Perim DU 8"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR06                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F2 1-Bed N Perim DU 9"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR07                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F2 3-Bed NE Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF3BR01                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.22328                     // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F2 3-Bed NW Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF3BR02                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.22328                     // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F2 1-Bed S Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR08                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F2 2-Bed S Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR03                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F2 2-Bed S Court DU 14"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR04                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F2 Studio SE Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF0BR01                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.097587                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F2 Studio SW Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF0BR02                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.097587                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F2 2-Bed SE Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR05                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F2 2-Bed SW Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR06                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F2 1-Bed W Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR09                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F2 1-Bed W Court DU 20"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR10                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F2 2-Bed W Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR07                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F2 2-Bed W Perim DU 22"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR08                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 1-Bed E Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR11                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 1-Bed E Court DU 24"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR12                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 2-Bed E Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR09                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 2-Bed E Perim DU 26"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR10                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 1-Bed N Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR13                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 1-Bed N Perim DU 28"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR14                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 1-Bed N Perim DU 29"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR15                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 1-Bed N Perim DU 30"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR16                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 1-Bed N Perim DU 31"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR17                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 3-Bed NE Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF3BR03                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.22328                     // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 3-Bed NW Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF3BR04                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.22328                     // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 1-Bed S Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR18                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 2-Bed S Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR11                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 2-Bed S Court DU 36"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR12                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 Studio SE Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF0BR03                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.097587                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 Studio SW Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF0BR04                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.097587                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 2-Bed SE Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR13                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 2-Bed SW Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR14                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 1-Bed W Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR19                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 1-Bed W Court DU 42"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR20                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 2-Bed W Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR15                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F3 2-Bed W Perim DU 44"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR16                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 1-Bed E Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR21                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 1-Bed E Court DU 46"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR22                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 2-Bed E Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR17                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 2-Bed E Perim DU 48"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR18                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 1-Bed N Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR23                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 1-Bed N Perim DU 50"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR24                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 1-Bed N Perim DU 51"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR25                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 1-Bed N Perim DU 52"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR26                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 1-Bed N Perim DU 53"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR27                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 3-Bed NE Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF3BR05                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.22328                     // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 3-Bed NW Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF3BR06                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.22328                     // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 1-Bed S Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR28                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 2-Bed S Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR19                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 2-Bed S Court DU 58"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR20                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 Studio SE Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF0BR05                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.097587                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 Studio SW Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF0BR06                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.097587                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 2-Bed SE Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR21                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 2-Bed SW Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR22                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 1-Bed W Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR29                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 1-Bed W Court DU 64"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR30                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 2-Bed W Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR23                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F4 2-Bed W Perim DU 66"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR24                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 1-Bed E Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR31                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 1-Bed E Court DU 68"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR32                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 2-Bed E Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR25                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 2-Bed E Perim DU 70"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR26                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 1-Bed N Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR33                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 1-Bed N Perim DU 72"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR34                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 1-Bed N Perim DU 73"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR35                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 1-Bed N Perim DU 74"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR36                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 1-Bed N Perim DU 75"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR37                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 3-Bed NE Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF3BR07                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.22328                     // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 3-Bed NW Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF3BR08                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.22328                     // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 1-Bed S Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR38                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 2-Bed S Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR27                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 2-Bed S Court DU 80"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR28                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 Studio SE Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF0BR07                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.097587                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 Studio SW Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF0BR08                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.097587                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 2-Bed SE Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR29                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 2-Bed SW Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR30                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 1-Bed W Court DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR39                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 1-Bed W Court DU 86"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF1BR40                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.126262                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 2-Bed W Perim DU"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR31                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+        DHWSYS   "dhwsys-F5 2-Bed W Perim DU 88"  
+           wsCentralDHWSYS = "dhwsys-DHW Heat Pump"    // Central DHWSYS that this DHWSYS provides load info for
+           wsDayUse = DHWMF2BR32                // Day use profile object
+           wsWF = 1                             // Water usage waste factor (applies to both old and new style use/profiles), frac
+           wsSDLM = 1.179434                    // Standard distribution loss multiplier
+           wsDSM = 1                            // Distribution system multiplier
+           wsShowerCount = 1                    // Total number of showers served by this DHWSYS
+           wsBathCount = 1                      // Total number of bathtubs served by this DHWSYS
+        
+         verbose = -1          // suppress progress messages
+         RUN                   // prerun #1: find daywaste fraction
+
+
+
+Log for Run 002: MF88 Individual Supply + Central Exhaust (SZHP)  /  Standard 
+
+CSE 0.927.0 for Win32 console
+
+
+
+Input for Run 002: MF88 Individual Supply + Central Exhaust (SZHP)  /  Standar
+
+        
+        ALTER  DHWSYS  "dhwsys-DHW Heat Pump"
+           wsCalcMode = PreRun
+        endDHWSYS
+        
+         RUN                   // prerun #2: Ecosizer load
+

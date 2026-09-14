@@ -1,0 +1,19 @@
+FluidSystems
+,,,,,Controls,,,,,,Supply Side Components,,,Demand Side Components,,,
+Name,Type,Status,Design SupplyT,Design DelT,TempCtrl,FixedT,Supply HiT,At Outdoor,Supply LowT,At OutdoorT,Num Comps,Total Capacity,Flow Rate,Num Comps,Total Capacity,Sensible Capacity,Flow Rate,
+,,,(degF),(degF),,(degF),(degF),(degF),(degF),(degF),,(Btu/hr),(gpm),,(Btu/hr),(Btu/hr),( gpm),
+"CHW Plant 1","ChilledWater","New",44,12,"Fixed",44,-99996,-99996,-99996,-99996,1,648000,0,26,1.40139e+06,0,0
+"HHW Plant 1","HotWater","New",130,10,"Fixed",130,-99996,-99996,-99996,-99996,0,0,0,26,1.11898e+06,0,0
+
+
+Chiller
+Name,Fluid System Name,Status,Type,Fuel,Condenser Type,Rated Capacity,EER,COP,KW/ton,IPLV,Unloading Ratio,Min. Part-Load Ratio
+,,,,,,(Btu/h),,,,,,
+"Air Cooled Chiller","CHW Plant 1","New","Screw","Electric","Air",648000,15,4.39625,-99996,-99996,0.15,0.15
+
+
+Pump
+Name,Serving Equipment,Status,Count,Operation,Speed Type,Design Flow Rate,Nameplate HP,Power,Power Per Flow,Break Horse Power,Head,Motor Efficiency,Impeller Efficiency,Minimum Flow Rate
+,,,,,,(gpm),(hp),(kW),(W/gpm),(bhp),(ft. H20),,,(gpm)
+"CHW Primary Pump","CHW Supply","New",1,"OnDemand","VariableSpeed",-99996,4,-99996,23.1565,2.85,94.0857,0.85,0.9
+"HHW Primary Pump","HHW Supply","New",1,"OnDemand","VariableSpeed",-99996,4,-99996,28.9456,2.85,117.607,0.85,0.9

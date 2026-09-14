@@ -1,0 +1,60 @@
+; Tables for Std model AutoHardSize capacity look-up rules
+TABLE EX05a_NR_SmOff_DOAS-HRV-VRF_CZ0925TrmlUnit
+PropName,BaseName,Type,System,Zone,PriAirFlowMax,PriAirFlowMin,HtgAirFlowMax,ReheatCtrlMthd
+;,,,,,(cfm),(cfm),( cfm)
+,"BaseVAVNoReheatTrmlUnit","VAVNoReheatBox","BaseAirSys7or3b","Zn Sys 1 Reception",-99996.000,329.973,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-2","VAVNoReheatBox","BaseAirSys7or3b-2","Zn Sys 2 Conference",-99996.000,418.689,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-3","VAVNoReheatBox","BaseAirSys7or3b-3","Zn Sys 3 Break Room",-99996.000,591.029,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-4","VAVNoReheatBox","BaseAirSys7or3b-4","Zn Sys 4 Open Office",-99996.000,928.369,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-5","VAVNoReheatBox","BaseAirSys7or3b-5","Zn Sys 5 Conference-Office",-99996.000,121.011,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-6","VAVNoReheatBox","BaseAirSys7or3b-6","Zn Sys 6 Conference-Support",-99996.000,672.813,-99996.000,""
+,"BaseUnctrl TrmlUnit","Uncontrolled","BaseAirSys11","Zn Sys 8 IT and Elec",-99996.000,-99996.000,-99996.000,""
+,"BaseVAVNoReheatTrmlUnit-7","VAVNoReheatBox","BaseAirSys7or3b-7","Zn Sys 9 Library",-99996.000,272.706,-99996.000,""
+ENDTABLE
+TABLE EX05a_NR_SmOff_DOAS-HRV-VRF_CZ0925CoilClg
+PropName,BaseName,Type,System,Zone,CapTotNetRtd,CapTotGrossRtd,FluidFlowRtDsgn,DXSEER,DXEER,NumClgStages
+;,,,,,(Btu/hr),(Btu/hr),( gpm),
+,"BaseSys7or3b CoilClg","DirectExpansion","BaseAirSys7or3b","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-2","DirectExpansion","BaseAirSys7or3b-2","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-3","DirectExpansion","BaseAirSys7or3b-3","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-4","DirectExpansion","BaseAirSys7or3b-4","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-5","DirectExpansion","BaseAirSys7or3b-5","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-6","DirectExpansion","BaseAirSys7or3b-6","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys11 CoilClg","DirectExpansion","BaseAirSys11","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+,"BaseSys7or3b CoilClg-7","DirectExpansion","BaseAirSys7or3b-7","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000,1
+ENDTABLE
+TABLE EX05a_NR_SmOff_DOAS-HRV-VRF_CZ0925CoilHtg
+PropName,BaseName,Type,System,Zone,CapTotNetRtd,CapTotGrossRtd,FluidFlowRtDsgn,FurnAFUE,FurnThrmlEff,
+;,,,,,(Btu/hr),(Btu/hr),( gpm),
+,"BaseSys7or3b CoilHtg","Resistance","BaseAirSys7or3b","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-2","Resistance","BaseAirSys7or3b-2","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-3","Resistance","BaseAirSys7or3b-3","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-4","Resistance","BaseAirSys7or3b-4","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-5","Resistance","BaseAirSys7or3b-5","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-6","Resistance","BaseAirSys7or3b-6","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+,"BaseSys7or3b CoilHtg-7","Resistance","BaseAirSys7or3b-7","n/a",-99996.000,-99996.000,-99996.00000,-99996.000,-99996.000
+ENDTABLE
+TABLE EX05a_NR_SmOff_DOAS-HRV-VRF_CZ0925Fan
+PropName,BaseName,CtrlMthd,System,Zone,FlowCap,FlowMin,FlowEff,ModelingMthd,TotStaticPress,MtrBHP,MtrHP,MtrPos,MtrEff,PwrIdx
+;,,,,,(cfm),(cfm),,,(inH2O),(hp),(hp),,(W/cfm)
+,"BaseSys7or3b SupFan","VariableSpeedDrive","BaseAirSys7or3b","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-2","VariableSpeedDrive","BaseAirSys7or3b-2","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-3","VariableSpeedDrive","BaseAirSys7or3b-3","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-4","VariableSpeedDrive","BaseAirSys7or3b-4","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-5","VariableSpeedDrive","BaseAirSys7or3b-5","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-6","VariableSpeedDrive","BaseAirSys7or3b-6","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys11 SupFan","ConstantVolume","BaseAirSys11","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+,"BaseSys7or3b SupFan-7","VariableSpeedDrive","BaseAirSys7or3b-7","n/a",0.000,-99996.000,1.000,"PowerPerUnitFlow",0.000,0.000,-99996.000,"InAirStream",1.000,0.0000
+ENDTABLE
+TABLE EX05a_NR_SmOff_DOAS-HRV-VRF_CZ0925OACtrl
+PropName,BaseName,EconoCtrlMthd,System,EconoIntegration
+;
+,"BaseSys7or3b OACtrl","NoEconomizer","BaseAirSys7or3b","UNDEFINED"
+,"BaseSys7or3b OACtrl-2","NoEconomizer","BaseAirSys7or3b-2","UNDEFINED"
+,"BaseSys7or3b OACtrl-3","NoEconomizer","BaseAirSys7or3b-3","UNDEFINED"
+,"BaseSys7or3b OACtrl-4","NoEconomizer","BaseAirSys7or3b-4","UNDEFINED"
+,"BaseSys7or3b OACtrl-5","NoEconomizer","BaseAirSys7or3b-5","UNDEFINED"
+,"BaseSys7or3b OACtrl-6","NoEconomizer","BaseAirSys7or3b-6","UNDEFINED"
+,"BaseSys11 OACtrl","NoEconomizer","BaseAirSys11","UNDEFINED"
+,"BaseSys7or3b OACtrl-7","NoEconomizer","BaseAirSys7or3b-7","UNDEFINED"
+ENDTABLE

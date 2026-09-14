@@ -1,0 +1,12 @@
+1,CSE Zone Surface Areas file format version number,
+CompMgr:,,"BEMCmpMgr 2025.2.0.1 (625)",
+Ruleset:,,"CA 2025 Nonresidential, Vers. 1.0 (T24_2025.bin)",
+CSE:,,-,
+Calculation Date/Time:,,,"2026-05-23T11:33:19-04:00",
+Input File Name:,,,"MF8Unit_CSUP_IEXH_SZHP_CZ09",,,,,Areas include all sides exposed to the zone
+,
+Zone,,Zone,Num of,Exterior/Underground Surface Areas,,,,,Zone Boundary Areas Added,,,Interior Mass,,Other Interior Surface Areas,
+Name,Conditioning,Area ft2,Exposures,Gr Wall ft2,Win Ft2,Floor ft2,Gr Ceiling ft2,Skylt ft2,Wall ft2,Floor ft2,Ceiling ft2,Wall ft2,Furn ft2,Wall ft2,Floor ft2,Ceiling ft2,
+"Zone1-zn",Conditioned,3660,4,2584,410.4,3660,0,0,0,0,0,7320,14640,0,0,3660,
+"Zone2-zn",Conditioned,3660,4,2584,410.4,0,3660,0,0,0,0,7320,14640,0,3660,0,
+"Attic-atc",Unconditioned,3387.67,0,0,0,0,0,0,0,0,0,0,0,6775.33,0,3669.97,

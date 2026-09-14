@@ -1,0 +1,214 @@
+General Information
+Project Address,City,ZipCode,ClimateZone,Compliance Software,Compliance Manager,RulesetFile Name,Compliance Type
+"Street","Los Angeles",95837,"ClimateZone9","CBECC 2025.2.0.1 (1395)","BEMCmpMgr 2025.2.0.1 (625)","CA 2025 Nonresidential, Vers. 1.0 (T24_2025.bin)","NewComplete"
+
+No. of Thermal Zones,No. of Thermal Zones (cond),No. of Air Systems,No. of Zonal Systems,No. of Terminal Units
+4,4,24,0,4
+
+No. of Stories
+Total,New,Existing,Altered
+6,6,0,0
+
+No. of Above Grade Stories
+Total,New,Existing,Altered
+5,5,0,0
+
+No. of Dwelling Units (Conditioned)
+Total,New,Existing,Altered
+88,88,0,0
+
+NonRes Floor Area (Conditioned)
+Total,New,Existing,Altered
+6,6,0,0
+
+Res Floor Area (Conditioned)
+Total,New,Existing,Altered
+95028,0,95028,0
+
+,Conditioned Floor Area
+Total Floor Area,Total,New,Existing,Altered
+140925,112641,0,95028,0
+
+
+
+Building Wall Area
+Total ExtWall,N ExtWall,E ExtWall,S ExtWall,W ExtWall,
+(ft2),(ft2),(ft2),(ft2),(ft2)
+42300.00,9530.00,12210.00,8470.00,12090.00
+
+Building New Wall Area
+Total ExtWall,N ExtWall,E ExtWall,S ExtWall,W ExtWall,
+(ft2),(ft2),(ft2),(ft2),(ft2)
+6590.00,1730.00,1860.00,1200.00,1800.00
+Building Existing or Altered Wall Area
+Total ExtWall,N ExtWall,E ExtWall,S ExtWall,W ExtWall,
+(ft2),(ft2),(ft2),(ft2),(ft2)
+0.00,0.00,0.00,0.00,0.00
+
+
+Building Window Area,
+Total Window Area,North Window,E Window,S Window,W Window
+(ft2),(ft2),(ft2),(ft2),(ft2)
+10842.44,2361.19,3129.56,2257.59,3094.11
+
+Building New Window Area on New Walls,
+Total Window Area,North Window,E Window,S Window,W Window
+(ft2),(ft2),(ft2),(ft2),(ft2)
+659.00,173.00,186.00,120.00,180.00
+Building New Window Area on Existing or Altered Walls,
+Total Window Area,North Window,E Window,S Window,W Window
+(ft2),(ft2),(ft2),(ft2),(ft2)
+0.00,0.00,0.00,0.00,0.00
+Building Existing or Altered Window Area on Existing or Altered Walls,
+Total Window Area,North Window,E Window,S Window,W Window
+(ft2),(ft2),(ft2),(ft2),(ft2)
+0.00,0.00,0.00,0.00,0.00
+
+
+Window to Wall Ratio
+Bldg. WWR,North WWR,East WWR,South WWR,West WWR
+(frac.),(frac.),(frac.),(frac.),(frac.)
+0.2563,0.2478,0.2563,0.2665,0.2559
+
+New Window to New Wall Ratio
+Bldg. WWR,North WWR,East WWR,South WWR,West WWR
+(frac.),(frac.),(frac.),(frac.),(frac.)
+0.1000,0.1000,0.1000,0.1000,0.1000
+New Window to Existing or Altered Wall Ratio
+Bldg. WWR,North WWR,East WWR,South WWR,West WWR
+(frac.),(frac.),(frac.),(frac.),(frac.)
+0.0000,0.0000,0.0000,0.0000,0.0000
+Existing or Altered Window to Existing or Altered Wall Ratio
+Bldg. WWR,North WWR,East WWR,South WWR,West WWR
+(frac.),(frac.),(frac.),(frac.),(frac.)
+0.0000,0.0000,0.0000,0.0000,0.0000
+
+
+Skylight to Roof Ratio (SRR),Display Perimeter\SRR,West,Total
+(frac.),(ft),(ft)
+0.0000,0.00,0.00
+
+New Skylight to New Roof Ratio (SRR)
+(frac.)
+0.0000
+New Skylight to Existing or Altered Roof Ratio (SRR)
+(frac.)
+0.0000
+Existing or Altered Skylight to Existing or Altered Roof Ratio (SRR)
+(frac.)
+0.0000
+
+
+
+Exterior Wall
+,,Space
+Name,Status,Name,Occupancy Classification,Conditioning Status,Building Type,Area,Azimuth,Cons Name,Construction Type,U Factor,Window Area
+,,,,,,(ft2),(deg),,,(Btu/h-?F-ft2),(ft2)
+"Surface 128","New","F1 Retail N Core","Nonresidential","DirectlyConditioned","NonResidential",290.00,0,"MetalFrameWallU055","MetalFrameWall",0.055,29.00
+"Surface 144","New","F1 Retail NE Core","Nonresidential","DirectlyConditioned","NonResidential",240.00,0,"MetalFrameWallU055","MetalFrameWall",0.055,24.00
+"Surface 137","New","F1 Retail NE Inner","Nonresidential","DirectlyConditioned","NonResidential",240.00,0,"MetalFrameWallU055","MetalFrameWall",0.055,24.00
+"Surface 150","New","F1 Retail NE Outer","Nonresidential","DirectlyConditioned","NonResidential",240.00,0,"MetalFrameWallU055","MetalFrameWall",0.055,24.00
+"Surface 151","New","F1 Retail NE Outer","Nonresidential","DirectlyConditioned","NonResidential",600.00,90,"MetalFrameWallU055","MetalFrameWall",0.055,60.00
+"Surface 119","New","F1 Retail NW Inner Core","Nonresidential","DirectlyConditioned","NonResidential",240.00,0,"MetalFrameWallU055","MetalFrameWall",0.055,24.00
+"Surface 105","New","F1 Retail NW Outer","Nonresidential","DirectlyConditioned","NonResidential",600.00,270,"MetalFrameWallU055","MetalFrameWall",0.055,60.00
+"Surface 106","New","F1 Retail NW Outer","Nonresidential","DirectlyConditioned","NonResidential",240.00,0,"MetalFrameWallU055","MetalFrameWall",0.055,24.00
+"Surface 111","New","F1 Retail NW Outer Core","Nonresidential","DirectlyConditioned","NonResidential",240.00,0,"MetalFrameWallU055","MetalFrameWall",0.055,24.00
+"Surface 10","New","F1 Retail SE Bottom","Nonresidential","DirectlyConditioned","NonResidential",600.00,180,"MetalFrameWallU055","MetalFrameWall",0.055,60.00
+"Surface 11","New","F1 Retail SE Bottom","Nonresidential","DirectlyConditioned","NonResidential",240.00,270,"MetalFrameWallU055","MetalFrameWall",0.055,24.00
+"Surface 9","New","F1 Retail SE Bottom","Nonresidential","DirectlyConditioned","NonResidential",240.00,90,"MetalFrameWallU055","MetalFrameWall",0.055,24.00
+"Surface 20","New","F1 Retail SE Top","Nonresidential","DirectlyConditioned","NonResidential",240.00,90,"MetalFrameWallU055","MetalFrameWall",0.055,24.00
+"Surface 22","New","F1 Retail SE Top","Nonresidential","DirectlyConditioned","NonResidential",240.00,270,"MetalFrameWallU055","MetalFrameWall",0.055,24.00
+"Surface 2","New","F1 Retail SW Bottom","Nonresidential","DirectlyConditioned","NonResidential",240.00,270,"MetalFrameWallU055","MetalFrameWall",0.055,24.00
+"Surface 4","New","F1 Retail SW Bottom","Nonresidential","DirectlyConditioned","NonResidential",240.00,90,"MetalFrameWallU055","MetalFrameWall",0.055,24.00
+"Surface 5","New","F1 Retail SW Bottom","Nonresidential","DirectlyConditioned","NonResidential",600.00,180,"MetalFrameWallU055","MetalFrameWall",0.055,60.00
+"Surface 15","New","F1 Retail SW Core","Nonresidential","DirectlyConditioned","NonResidential",240.00,270,"MetalFrameWallU055","MetalFrameWall",0.055,24.00
+"Surface 17","New","F1 Retail SW Core","Nonresidential","DirectlyConditioned","NonResidential",240.00,90,"MetalFrameWallU055","MetalFrameWall",0.055,24.00
+"Surface 30","New","F1 Retail SW Top","Nonresidential","DirectlyConditioned","NonResidential",300.00,90,"MetalFrameWallU055","MetalFrameWall",0.055,30.00
+"Surface 32","New","F1 Retail SW Top","Nonresidential","DirectlyConditioned","NonResidential",240.00,270,"MetalFrameWallU055","MetalFrameWall",0.055,24.00
+
+
+
+Window
+,,,,Exterior Wall,Window
+Name,Status,Occupancy Classification,Conditioning Status,Name,Area,Azimuth,Product Type,Cert Method,Cons Name,Frame Type,Glazing Type,U Factor,SHGC,Visual Transmittance, U Factor Simulated,Inside Convection Coefficient
+,,,,,(ft2),(Deg),,,,,,(Btu/h-?F-ft2),,,(Btu/h-?F-ft2),(Btu/h-?F-ft2)
+"Sub Surface 3","New","Nonresidential","DirectlyConditioned","Surface 128",29.00,0,"FixedWindow","NFRCRated","Nonres Fixed Window","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Sub Surface 19","New","Nonresidential","DirectlyConditioned","Surface 144",24.00,0,"FixedWindow","NFRCRated","Nonres Fixed Window","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Sub Surface 27","New","Nonresidential","DirectlyConditioned","Surface 137",24.00,0,"FixedWindow","NFRCRated","Nonres Fixed Window","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Sub Surface 9","New","Nonresidential","DirectlyConditioned","Surface 150",24.00,0,"FixedWindow","NFRCRated","Nonres Fixed Window","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Sub Surface 1","New","Nonresidential","DirectlyConditioned","Surface 151",60.00,90,"FixedWindow","NFRCRated","Nonres Fixed Window","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Sub Surface 14","New","Nonresidential","DirectlyConditioned","Surface 119",24.00,0,"FixedWindow","NFRCRated","Nonres Fixed Window","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Sub Surface 11","New","Nonresidential","DirectlyConditioned","Surface 105",60.00,270,"FixedWindow","NFRCRated","Nonres Fixed Window","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Sub Surface 21","New","Nonresidential","DirectlyConditioned","Surface 106",24.00,0,"FixedWindow","NFRCRated","Nonres Fixed Window","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Sub Surface 17","New","Nonresidential","DirectlyConditioned","Surface 111",24.00,0,"FixedWindow","NFRCRated","Nonres Fixed Window","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Sub Surface 26","New","Nonresidential","DirectlyConditioned","Surface 10",60.00,180,"FixedWindow","NFRCRated","Nonres Fixed Window","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Sub Surface 22","New","Nonresidential","DirectlyConditioned","Surface 11",24.00,270,"FixedWindow","NFRCRated","Nonres Fixed Window","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Sub Surface 7","New","Nonresidential","DirectlyConditioned","Surface 9",24.00,90,"FixedWindow","NFRCRated","Nonres Fixed Window","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Sub Surface 24","New","Nonresidential","DirectlyConditioned","Surface 20",24.00,90,"FixedWindow","NFRCRated","Nonres Fixed Window","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Sub Surface 15","New","Nonresidential","DirectlyConditioned","Surface 22",24.00,270,"FixedWindow","NFRCRated","Nonres Fixed Window","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Sub Surface 30","New","Nonresidential","DirectlyConditioned","Surface 2",24.00,270,"FixedWindow","NFRCRated","Nonres Fixed Window","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Sub Surface 25","New","Nonresidential","DirectlyConditioned","Surface 4",24.00,90,"FixedWindow","NFRCRated","Nonres Fixed Window","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Sub Surface 5","New","Nonresidential","DirectlyConditioned","Surface 5",60.00,180,"FixedWindow","NFRCRated","Nonres Fixed Window","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Sub Surface 10","New","Nonresidential","DirectlyConditioned","Surface 15",24.00,270,"FixedWindow","NFRCRated","Nonres Fixed Window","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Sub Surface 20","New","Nonresidential","DirectlyConditioned","Surface 17",24.00,90,"FixedWindow","NFRCRated","Nonres Fixed Window","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Sub Surface 2","New","Nonresidential","DirectlyConditioned","Surface 30",30.00,90,"FixedWindow","NFRCRated","Nonres Fixed Window","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Sub Surface 13","New","Nonresidential","DirectlyConditioned","Surface 32",24.00,270,"FixedWindow","NFRCRated","Nonres Fixed Window","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+
+
+
+Interior Wall
+,,Space
+Name,Status,Name,Occupancy Classification,Conditioning Status,Area,Azimuth,Cons Name,Construction Type,U Factor
+,,,,,(ft2),(deg),,,(Btu/h-?F-ft2)
+"Surface 127","New","F1 Retail N Core","Nonresidential","DirectlyConditioned",600.00,-99996,"MetalFrameWallInterior","UNDEFINED",0.319
+"Surface 143","New","F1 Retail NE Core","Nonresidential","DirectlyConditioned",600.00,-99996,"MetalFrameWallInterior","UNDEFINED",0.319
+"Surface 145","New","F1 Retail NE Core","Nonresidential","DirectlyConditioned",600.00,-99996,"MetalFrameWallInterior","UNDEFINED",0.319
+"Surface 118","New","F1 Retail NW Inner Core","Nonresidential","DirectlyConditioned",600.00,-99996,"MetalFrameWallInterior","UNDEFINED",0.319
+"Surface 107","New","F1 Retail NW Outer","Nonresidential","DirectlyConditioned",600.00,-99996,"MetalFrameWallInterior","UNDEFINED",0.319
+"Surface 8","New","F1 Retail SE Bottom","Nonresidential","DirectlyConditioned",600.00,-99996,"MetalFrameWallInterior","UNDEFINED",0.319
+"Surface 3","New","F1 Retail SW Bottom","Nonresidential","DirectlyConditioned",600.00,-99996,"MetalFrameWallInterior","UNDEFINED",0.319
+"Surface 16","New","F1 Retail SW Core","Nonresidential","DirectlyConditioned",600.00,-99996,"MetalFrameWallInterior","UNDEFINED",0.319
+"Surface 29","New","F1 Retail SW Top","Nonresidential","DirectlyConditioned",180.00,-99996,"MetalFrameWallInterior","UNDEFINED",0.319
+
+
+
+Interior Floor
+,,Space
+Name,Status,Name,Occupancy Classification,Conditioning Status,Area,Cons Name,Construction Type,U Factor
+,,,,,(ft2),,,(Btu/h-?F-ft2)
+"Surface 122","New","F1 Retail N Core","Nonresidential","DirectlyConditioned",1665.00,"OtherFloorU071","OtherFloor",-99996.000
+"Surface 140","New","F1 Retail NE Core","Nonresidential","DirectlyConditioned",1440.00,"OtherFloorU071","OtherFloor",-99996.000
+"Surface 134","New","F1 Retail NE Inner","Nonresidential","DirectlyConditioned",1440.00,"OtherFloorU071","OtherFloor",-99996.000
+"Surface 147","New","F1 Retail NE Outer","Nonresidential","DirectlyConditioned",1440.00,"OtherFloorU071","OtherFloor",-99996.000
+"Surface 116","New","F1 Retail NW Inner Core","Nonresidential","DirectlyConditioned",1440.00,"OtherFloorU071","OtherFloor",-99996.000
+"Surface 103","New","F1 Retail NW Outer","Nonresidential","DirectlyConditioned",1440.00,"OtherFloorU071","OtherFloor",-99996.000
+"Surface 110","New","F1 Retail NW Outer Core","Nonresidential","DirectlyConditioned",1440.00,"OtherFloorU071","OtherFloor",-99996.000
+"Surface 7","New","F1 Retail SE Bottom","Nonresidential","DirectlyConditioned",1440.00,"OtherFloorU071","OtherFloor",-99996.000
+"Surface 19","New","F1 Retail SE Top","Nonresidential","DirectlyConditioned",1440.00,"OtherFloorU071","OtherFloor",-99996.000
+"Surface 1","New","F1 Retail SW Bottom","Nonresidential","DirectlyConditioned",1440.00,"OtherFloorU071","OtherFloor",-99996.000
+"Surface 13","New","F1 Retail SW Core","Nonresidential","DirectlyConditioned",1440.00,"OtherFloorU071","OtherFloor",-99996.000
+"Surface 26","New","F1 Retail SW Top","Nonresidential","DirectlyConditioned",1548.00,"OtherFloorU071","OtherFloor",-99996.000
+
+
+
+Construction Assembly
+Name,Surface Type,Material Layer 1,Material Layer 2,Material Layer 3,Material Layer 4,Material Layer 5, Material Layer 6, Material Layer 7, Material Layer 8, Material Layer 9, Material Layer 10
+"MetalFrameWallU055","ExteriorWall","","","","","","","","","",""
+"MetalFrameWallInterior","InteriorWall","","","","","","","","","",""
+"OtherFloorU071","ExteriorFloor","","","","","","","","","",""
+
+
+
+Construction Materials
+Name,Code Item,Type,R-value,Thickness,Frame Type,Frame Configuration,Frame Depth, Frame Cavity Insulation(for composite material)
+,,,(?F-ft2-h/Btuh),(in),,,,(?F-ft2-h/Btuh)
+"Plywood - 5/8 in.","UNDEFINED","Bldg Board and Siding",0.780,0.630,"- specify -","- specify -","- specify -",0.000
+"Carpet - 3/4 in.","UNDEFINED","Finish Materials",2.380,0.750,"- specify -","- specify -","- specify -",0.000
+"Stucco - 7/8 in.","UNDEFINED","Plastering Materials",0.180,0.880,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation R0.02","UNDEFINED","Insulation Board",0.020,0.003,"- specify -","- specify -","- specify -",0.000
+"Gypsum Board - 1/2 in.","UNDEFINED","Bldg Board and Siding",0.450,0.500,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation R14.60","UNDEFINED","Insulation Board",14.600,2.330,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation R1.41","UNDEFINED","Insulation Board",1.410,0.225,"- specify -","- specify -","- specify -",0.000
+"Air - Metal Wall Framing - 16 or 24 in. OC","UNDEFINED","Air",0.650,5.500,"- specify -","- specify -","- specify -",0.000
+"Gypsum Board - 5/8 in.","UNDEFINED","Bldg Board and Siding",0.560,0.630,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation R9.83","UNDEFINED","Insulation Board",9.830,1.570,"- specify -","- specify -","- specify -",0.000

@@ -1,0 +1,185 @@
+General Information
+Project Address,City,ZipCode,ClimateZone,Compliance Software,Compliance Manager,RulesetFile Name,Compliance Type
+" - specify - "," - specify - ",95857,"ClimateZone9","CBECC 2025.2.0.1 (1395)","BEMCmpMgr 2025.2.0.1 (625)","CA 2025 Nonresidential, Vers. 1.0 (T24_2025.bin)","NewComplete"
+
+No. of Thermal Zones,No. of Thermal Zones (cond),No. of Air Systems,No. of Zonal Systems,No. of Terminal Units
+3,2,2,1,2
+
+No. of Stories
+Total,New,Existing,Altered
+1,1,0,0
+
+No. of Above Grade Stories
+Total,New,Existing,Altered
+1,1,0,0
+
+No. of Dwelling Units (Conditioned)
+Total,New,Existing,Altered
+0,0,0,0
+
+NonRes Floor Area (Conditioned)
+Total,New,Existing,Altered
+1,1,0,0
+
+Res Floor Area (Conditioned)
+Total,New,Existing,Altered
+0,0,0,0
+
+,Conditioned Floor Area
+Total Floor Area,Total,New,Existing,Altered
+2500.92,2500.92,0,0,0
+
+
+
+Building Wall Area
+Total ExtWall,N ExtWall,E ExtWall,S ExtWall,W ExtWall,
+(ft2),(ft2),(ft2),(ft2),(ft2)
+2000.89,500.22,500.22,500.22,500.22
+
+Building New Wall Area
+Total ExtWall,N ExtWall,E ExtWall,S ExtWall,W ExtWall,
+(ft2),(ft2),(ft2),(ft2),(ft2)
+2000.89,500.22,500.22,500.22,500.22
+Building Existing or Altered Wall Area
+Total ExtWall,N ExtWall,E ExtWall,S ExtWall,W ExtWall,
+(ft2),(ft2),(ft2),(ft2),(ft2)
+0.00,0.00,0.00,0.00,0.00
+
+
+Building Window Area,
+Total Window Area,North Window,E Window,S Window,W Window
+(ft2),(ft2),(ft2),(ft2),(ft2)
+280.12,0.00,70.03,140.06,70.03
+
+Building New Window Area on New Walls,
+Total Window Area,North Window,E Window,S Window,W Window
+(ft2),(ft2),(ft2),(ft2),(ft2)
+280.12,0.00,70.03,140.06,70.03
+Building New Window Area on Existing or Altered Walls,
+Total Window Area,North Window,E Window,S Window,W Window
+(ft2),(ft2),(ft2),(ft2),(ft2)
+0.00,0.00,0.00,0.00,0.00
+Building Existing or Altered Window Area on Existing or Altered Walls,
+Total Window Area,North Window,E Window,S Window,W Window
+(ft2),(ft2),(ft2),(ft2),(ft2)
+0.00,0.00,0.00,0.00,0.00
+
+
+Window to Wall Ratio
+Bldg. WWR,North WWR,East WWR,South WWR,West WWR
+(frac.),(frac.),(frac.),(frac.),(frac.)
+0.1400,0.0000,0.1400,0.2800,0.1400
+
+New Window to New Wall Ratio
+Bldg. WWR,North WWR,East WWR,South WWR,West WWR
+(frac.),(frac.),(frac.),(frac.),(frac.)
+0.1400,0.0000,0.1400,0.2800,0.1400
+New Window to Existing or Altered Wall Ratio
+Bldg. WWR,North WWR,East WWR,South WWR,West WWR
+(frac.),(frac.),(frac.),(frac.),(frac.)
+0.0000,0.0000,0.0000,0.0000,0.0000
+Existing or Altered Window to Existing or Altered Wall Ratio
+Bldg. WWR,North WWR,East WWR,South WWR,West WWR
+(frac.),(frac.),(frac.),(frac.),(frac.)
+0.0000,0.0000,0.0000,0.0000,0.0000
+
+
+Skylight to Roof Ratio (SRR),Display Perimeter\SRR,West,Total
+(frac.),(ft),(ft)
+0.0000,0.00,0.00
+
+New Skylight to New Roof Ratio (SRR)
+(frac.)
+0.0000
+New Skylight to Existing or Altered Roof Ratio (SRR)
+(frac.)
+0.0000
+Existing or Altered Skylight to Existing or Altered Roof Ratio (SRR)
+(frac.)
+0.0000
+
+
+
+Exterior Roofs
+,,,,,,,,,,,,Aged Thermal Emittance,,ThrmlAbs,,Aged Solar Reflectance,,SolAbs,
+Name,Status,Name,Occupancy Classification,Conditioning Status,Assigned Occ Class (Ref),Area,Tilt,Slope Category,Cons Name,Construction Type,U-Factor,Roof,Cons,Roof,Cons,Roof,Cons,Roof,Cons
+,,,,,,(ft2),(deg),,,,(Btu/h-?F-ft2),(frac.),(frac.),(frac.),(frac.),(frac.),(frac.),(frac.),(frac.),
+"east-roof","New","Attic Space","Nonresidential","IndirectlyConditioned","NonResidential",294.74,45,"Steep","SteepNonresWoodFramingAndOtherRoofU028HiRefl","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.8,0.8,0.25,0.25,0.75,0.75
+"north-roof","New","Attic Space","Nonresidential","IndirectlyConditioned","NonResidential",1098.42,18.4352,"Steep","SteepNonresWoodFramingAndOtherRoofU028HiRefl","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.8,0.8,0.25,0.25,0.75,0.75
+"south-roof","New","Attic Space","Nonresidential","IndirectlyConditioned","NonResidential",1098.42,18.4352,"Steep","SteepNonresWoodFramingAndOtherRoofU028HiRefl","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.8,0.8,0.25,0.25,0.75,0.75
+"west-roof","New","Attic Space","Nonresidential","IndirectlyConditioned","NonResidential",294.74,45.0001,"Steep","SteepNonresWoodFramingAndOtherRoofU028HiRefl","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.8,0.8,0.25,0.25,0.75,0.75
+
+
+
+Exterior Wall
+,,Space
+Name,Status,Name,Occupancy Classification,Conditioning Status,Building Type,Area,Azimuth,Cons Name,Construction Type,U Factor,Window Area
+,,,,,,(ft2),(deg),,,(Btu/h-?F-ft2),(ft2)
+"Dining_Wall_East","New","Dining","Nonresidential","DirectlyConditioned","NonResidential",250.11,90,"MetalFrameWallU055","MetalFrameWall",-99996.000,70.03
+"Dining_Wall_South","New","Dining","Nonresidential","DirectlyConditioned","NonResidential",500.22,180,"MetalFrameWallU055","MetalFrameWall",-99996.000,140.06
+"Dining_Wall_West","New","Dining","Nonresidential","DirectlyConditioned","NonResidential",250.11,270,"MetalFrameWallU055","MetalFrameWall",-99996.000,70.03
+"Kitchen_Wall_East","New","Kitchen","Nonresidential","DirectlyConditioned","NonResidential",250.11,90,"MetalFrameWallU055","MetalFrameWall",-99996.000,0.00
+"Kitchen_Wall_North","New","Kitchen","Nonresidential","DirectlyConditioned","NonResidential",500.22,0,"MetalFrameWallU055","MetalFrameWall",-99996.000,0.00
+"Kitchen_Wall_West","New","Kitchen","Nonresidential","DirectlyConditioned","NonResidential",250.11,270,"MetalFrameWallU055","MetalFrameWall",-99996.000,0.00
+
+
+
+Underground Floor
+,,Space
+Name,Status,Name,Occupancy Classification,Conditioning Status,Slab Type,Area,Exposed Perimeter,Cons Name,Slab Insulation Orientation,Overall 'F' Factor
+,,,,,(Heated/Unheated),(ft2),(ft),,,(Btu/h-?F-ft2)
+"Dining_Floor","New","Dining","Nonresidential","DirectlyConditioned","UNDEFINED",1250.46,100.02,"SlabOnOrBelowGradeF073","None",0.730
+"Kitchen_Floor","New","Kitchen","Nonresidential","DirectlyConditioned","UNDEFINED",1250.46,100.02,"SlabOnOrBelowGradeF073","None",0.730
+
+
+
+Window
+,,,,Exterior Wall,Window
+Name,Status,Occupancy Classification,Conditioning Status,Name,Area,Azimuth,Product Type,Cert Method,Cons Name,Frame Type,Glazing Type,U Factor,SHGC,Visual Transmittance, U Factor Simulated,Inside Convection Coefficient
+,,,,,(ft2),(Deg),,,,,,(Btu/h-?F-ft2),,,(Btu/h-?F-ft2),(Btu/h-?F-ft2)
+"Dining_Wall_East_Window","New","Nonresidential","DirectlyConditioned","Dining_Wall_East",70.03,90,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Dining_Wall_South_Window","New","Nonresidential","DirectlyConditioned","Dining_Wall_South",140.06,180,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"Dining_Wall_West_Window","New","Nonresidential","DirectlyConditioned","Dining_Wall_West",70.03,270,"FixedWindow","NFRCRated","Base_AllCZ_FixedWindowU34","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+
+
+
+Interior Wall
+,,Space
+Name,Status,Name,Occupancy Classification,Conditioning Status,Area,Azimuth,Cons Name,Construction Type,U Factor
+,,,,,(ft2),(deg),,,(Btu/h-?F-ft2)
+"Dining_Wall_North","New","Dining","Nonresidential","DirectlyConditioned",500.22,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+
+
+
+Interior Floor
+,,Space
+Name,Status,Name,Occupancy Classification,Conditioning Status,Area,Cons Name,Construction Type,U Factor
+,,,,,(ft2),,,(Btu/h-?F-ft2)
+"attic-floor-dinning","New","Attic Space","Nonresidential","IndirectlyConditioned",1250.46,"TypicalPlenumFloorInterior","UNDEFINED",-99996.000
+"attic-floor-kitchen","New","Attic Space","Nonresidential","IndirectlyConditioned",1250.46,"TypicalPlenumFloorInterior","UNDEFINED",-99996.000
+
+
+
+Construction Assembly
+Name,Surface Type,Material Layer 1,Material Layer 2,Material Layer 3,Material Layer 4,Material Layer 5, Material Layer 6, Material Layer 7, Material Layer 8, Material Layer 9, Material Layer 10
+"SlabOnOrBelowGradeF073","UndergroundFloor","","","","","","","","","",""
+"MetalFrameWallU055","ExteriorWall","","","","","","","","","",""
+"MetalFrameWallInterior","InteriorWall","","","","","","","","","",""
+"SteepNonresWoodFramingAndOtherRoofU028HiRefl","Roof","","","","","","","","","",""
+"TypicalPlenumFloorInterior","InteriorFloor","","","","","","","","","",""
+
+
+
+Construction Materials
+Name,Code Item,Type,R-value,Thickness,Frame Type,Frame Configuration,Frame Depth, Frame Cavity Insulation(for composite material)
+,,,(?F-ft2-h/Btuh),(in),,,,(?F-ft2-h/Btuh)
+"Stucco - 7/8 in.","UNDEFINED","Plastering Materials",0.180,0.880,"- specify -","- specify -","- specify -",0.000
+"Air - Metal Wall Framing - 16 or 24 in. OC","UNDEFINED","Air",0.650,5.500,"- specify -","- specify -","- specify -",0.000
+"Gypsum Board - 1/2 in.","UNDEFINED","Bldg Board and Siding",0.450,0.500,"- specify -","- specify -","- specify -",0.000
+"Gypsum Board - 5/8 in.","UNDEFINED","Bldg Board and Siding",0.560,0.630,"- specify -","- specify -","- specify -",0.000
+"Metal Standing Seam - 1/16 in.","UNDEFINED","Roofing",0.000,0.063,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation R34.93","UNDEFINED","Insulation Board",34.930,5.575,"- specify -","- specify -","- specify -",0.000
+"Acoustic Tile - 3/4 in.","UNDEFINED","Finish Materials",1.890,0.750,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation R14.60","UNDEFINED","Insulation Board",14.600,2.330,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation R1.41","UNDEFINED","Insulation Board",1.410,0.225,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation R0.02","UNDEFINED","Insulation Board",0.020,0.003,"- specify -","- specify -","- specify -",0.000

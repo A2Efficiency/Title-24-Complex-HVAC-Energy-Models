@@ -1,0 +1,59 @@
+; Tables for Std model AutoHardSize capacity look-up rules
+TABLE Small Office - DOAS-VRF25TrmlUnit
+PropName,BaseName,Type,System,Zone,PriAirFlowMax,PriAirFlowMin,HtgAirFlowMax,ReheatCtrlMthd
+;,,,,,(cfm),(cfm),( cfm)
+,"Terminal Unit 1 (CV)","VAVNoReheatBox","DX-DOASHRV - Sys 1","Zn Sys 1 Reception",329.973,329.973,-99996.000,""
+,"Terminal Unit 2 (VAV)","VAVNoReheatBox","DX-DOASHRV - Sys 1","Zn Sys 2 Conference",418.689,139.330,-99996.000,""
+,"Terminal Unit 3 (VAV)","VAVNoReheatBox","DX-DOASHRV - Sys 1","Zn Sys 3 Break Room",591.029,212.145,-99996.000,""
+,"Terminal Unit 5 (CV)","VAVNoReheatBox","DX-DOASHRV - Sys 1","Zn Sys 5 Conference-Office",121.011,121.011,-99996.000,""
+,"Terminal Unit 6 (VAV)","VAVNoReheatBox","DX-DOASHRV - Sys 1","Zn Sys 6 Conference-Support",672.813,203.883,-99996.000,""
+,"Terminal Unit 7 (CV)","VAVNoReheatBox","DX-DOASHRV - Sys 1","Zn Sys 9 Library",272.706,272.706,-99996.000,""
+,"Terminal Unit 4 (CV)","VAVNoReheatBox","DX-DOASHRV - Sys 1","Zn Sys 4 Open Office",928.369,928.369,-99996.000,""
+,"CoreZn TU 8 (uncontrolled)","Uncontrolled","CoreZnPSZ AirSys 8","Zn Sys 8 IT and Elec",1026.700,-99996.000,-99996.000,""
+ENDTABLE
+TABLE Small Office - DOAS-VRF25CoilClg
+PropName,BaseName,Type,System,Zone,CapTotNetRtd,CapTotGrossRtd,FluidFlowRtDsgn,DXSEER,DXEER,NumClgStages
+;,,,,,(Btu/hr),(Btu/hr),( gpm),
+,"CoreZnCoolingCoil-1","VRF","CoreZn VRF Terminal 1","Zn Sys 1 Reception",18369.000,19164.573,-99996.00000,-99996.000,-99996.000,-99996
+,"DX Clg Coil 1","DirectExpansion","DX-DOASHRV - Sys 1","UNDEFINED",156169.000,162932.774,-99996.00000,-99996.000,11.500,2
+,"CoreZnCoolingCoil-2","VRF","CoreZn VRF Terminal 2","Zn Sys 2 Conference",18928.000,19747.783,-99996.00000,-99996.000,-99996.000,-99996
+,"CoreZnCoolingCoil-3","VRF","CoreZn VRF Terminal 3","Zn Sys 3 Break Room",16747.000,17472.323,-99996.00000,-99996.000,-99996.000,-99996
+,"CoreZnCoolingCoil-4","VRF","CoreZn VRF Terminal 4","Zn Sys 4 Open Office",93705.000,97763.420,-99996.00000,-99996.000,-99996.000,-99996
+,"CoreZnCoolingCoil-5","VRF","CoreZn VRF Terminal 5","Zn Sys 5 Conference-Office",9117.000,9511.863,-99996.00000,-99996.000,-99996.000,-99996
+,"CoreZnCoolingCoil-6","VRF","CoreZn VRF Terminal 6","Zn Sys 6 Conference-Support",80000.000,83464.848,-99996.00000,-99996.000,-99996.000,-99996
+,"CoreZnCoolingCoil-7","VRF","CoreZn VRF Terminal 7","Zn Sys 9 Library",34285.000,35769.904,-99996.00000,-99996.000,-99996.000,-99996
+,"CoreZnCoolingCoil 8","DirectExpansion","CoreZnPSZ AirSys 8","n/a",28000.000,29226.085,-99996.00000,-99996.000,-99996.000,1
+ENDTABLE
+TABLE Small Office - DOAS-VRF25CoilHtg
+PropName,BaseName,Type,System,Zone,CapTotNetRtd,CapTotGrossRtd,FluidFlowRtDsgn,FurnAFUE,FurnThrmlEff,
+;,,,,,(Btu/hr),(Btu/hr),( gpm),
+,"CoreZnHeatingCoil-1","VRF","CoreZn VRF Terminal 1","Zn Sys 1 Reception",27820.000,27024.427,-99996.00000,-99996.000,-99996.000
+,"Heating Heat Pump","HeatPump","DX-DOASHRV - Sys 1","UNDEFINED",120000.000,113236.226,-99996.00000,-99996.000,-99996.000
+,"CoreZnHeatingCoil-2","VRF","CoreZn VRF Terminal 2","Zn Sys 2 Conference",25749.000,24929.217,-99996.00000,-99996.000,-99996.000
+,"CoreZnHeatingCoil-3","VRF","CoreZn VRF Terminal 3","Zn Sys 3 Break Room",30713.000,29987.677,-99996.00000,-99996.000,-99996.000
+,"CoreZnHeatingCoil-4","VRF","CoreZn VRF Terminal 4","Zn Sys 4 Open Office",89761.000,85702.580,-99996.00000,-99996.000,-99996.000
+,"CoreZnHeatingCoil-5","VRF","CoreZn VRF Terminal 5","Zn Sys 5 Conference-Office",11618.000,11223.137,-99996.00000,-99996.000,-99996.000
+,"CoreZnHeatingCoil-6","VRF","CoreZn VRF Terminal 6","Zn Sys 6 Conference-Support",90000.000,86535.152,-99996.00000,-99996.000,-99996.000
+,"CoreZnHeatingCoil-7","VRF","CoreZn VRF Terminal 7","Zn Sys 9 Library",31086.000,29601.096,-99996.00000,-99996.000,-99996.000
+ENDTABLE
+TABLE Small Office - DOAS-VRF25Fan
+PropName,BaseName,CtrlMthd,System,Zone,FlowCap,FlowMin,FlowEff,ModelingMthd,TotStaticPress,MtrBHP,MtrHP,MtrPos,MtrEff,PwrIdx
+;,,,,,(cfm),(cfm),,,(inH2O),(hp),(hp),,(W/cfm)
+,"CoreZnSupplyFan-1","ConstantVolume","CoreZn VRF Terminal 1","Zn Sys 1 Reception",1013.000,-99996.000,0.500,"PowerPerUnitFlow",2.232,0.712,1.000,"InAirStream",0.855,0.6134
+,"Supply Fan 1","VariableSpeedDrive","DX-DOASHRV - Sys 1","UNDEFINED",3354.000,3335.000,0.650,"PowerPerUnitFlow",2.249,1.829,2.000,"InAirStream",0.665,0.6110
+,"Exhaust Fan 1","ConstantVolume","DX-DOASHRV - Sys 1","UNDEFINED",3354.000,-99996.000,0.650,"PowerPerUnitFlow",1.436,1.167,1.500,"InAirStream",0.665,0.3900
+,"CoreZnSupplyFan-2","VariableSpeedDrive","CoreZn VRF Terminal 2","Zn Sys 2 Conference",938.000,469.000,0.500,"PowerPerUnitFlow",2.410,0.713,1.000,"InAirStream",0.855,0.6624
+,"CoreZnSupplyFan-3","VariableSpeedDrive","CoreZn VRF Terminal 3","Zn Sys 3 Break Room",1119.000,559.500,0.500,"PowerPerUnitFlow",1.273,0.449,0.500,"InAirStream",0.855,0.3500
+,"CoreZnSupplyFan-4","ConstantVolume","CoreZn VRF Terminal 4","Zn Sys 4 Open Office",4263.000,-99996.000,0.500,"PowerPerUnitFlow",2.121,2.850,5.000,"InAirStream",0.895,0.5569
+,"CoreZnSupplyFan-5","ConstantVolume","CoreZn VRF Terminal 5","Zn Sys 5 Conference-Office",423.000,-99996.000,0.500,"PowerPerUnitFlow",1.781,0.237,0.500,"InAirStream",0.855,0.4896
+,"CoreZnSupplyFan-6","VariableSpeedDrive","CoreZn VRF Terminal 6","Zn Sys 6 Conference-Support",1152.000,576.000,0.500,"PowerPerUnitFlow",1.273,0.462,0.500,"InAirStream",0.855,0.3500
+,"CoreZnSupplyFan-7","ConstantVolume","CoreZn VRF Terminal 7","Zn Sys 9 Library",1560.000,-99996.000,0.500,"PowerPerUnitFlow",1.932,0.950,1.500,"InAirStream",0.865,0.5249
+,"CoreZnSupplyFan 8","ConstantVolume","CoreZnPSZ AirSys 8","n/a",1026.700,-99996.000,0.650,"PowerPerUnitFlow",1.655,0.412,0.125,"InAirStream",0.855,0.3500
+,"Exhaust Fan restroom","ConstantVolume","ZoneSystem - Restrooms","UNDEFINED",250.000,-99996.000,0.650,"PowerPerUnitFlow",1.655,0.100,0.083,"InAirStream",0.855,0.3500
+ENDTABLE
+TABLE Small Office - DOAS-VRF25OACtrl
+PropName,BaseName,EconoCtrlMthd,System,EconoIntegration
+;
+,"OutsideAirControl 1","FixedDryBulb","DX-DOASHRV - Sys 1","NonIntegrated"
+,"OutsideAirControl 2","NoEconomizer","CoreZnPSZ AirSys 8","UNDEFINED"
+ENDTABLE

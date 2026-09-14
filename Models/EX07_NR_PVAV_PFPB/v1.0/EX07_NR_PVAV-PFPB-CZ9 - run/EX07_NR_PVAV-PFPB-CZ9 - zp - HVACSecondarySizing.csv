@@ -1,0 +1,66 @@
+; Tables for Std model AutoHardSize capacity look-up rules
+TABLE EX07_NR_PVAV-PFPB-CZ925TrmlUnit
+PropName,BaseName,Type,System,Zone,PriAirFlowMax,PriAirFlowMin,HtgAirFlowMax,ReheatCtrlMthd
+;,,,,,(cfm),(cfm),( cfm)
+,"CoreBottomZn TU","VAVReheatBox","BottomVAV","Core_bottom Thermal Zone",7510.680,1588.010,3755.340,"DualMaximum"
+,"PerimeterBottomZn1 TU","VAVReheatBox","BottomVAV","Perimeter_bot_ZN_1 Thermal Zone",2025.420,334.765,1012.710,"DualMaximum"
+,"PerimeterBottomZn2 TU","VAVReheatBox","BottomVAV","Perimeter_bot_ZN_2 Thermal Zone",1220.570,211.935,610.285,"DualMaximum"
+,"PerimeterBottomZn3 TU","ParallelFanBox","BottomVAV","Perimeter_bot_ZN_3 Thermal Zone",1391.170,334.765,-99996.000,""
+,"PerimeterBottomZn4 TU","VAVReheatBox","BottomVAV","Perimeter_bot_ZN_4 Thermal Zone",1264.810,211.920,632.407,"DualMaximum"
+,"CoreMidZn TU","VAVReheatBox","Mid VAV","Core_mid Thermal Zone",7889.540,1588.010,3944.770,"DualMaximum"
+,"PerimeterMidZn1 TU","ParallelFanBox","Mid VAV","Perimeter_mid_ZN_1 Thermal Zone",2440.550,334.765,-99996.000,""
+,"PerimeterMidZn2 TU","VAVReheatBox","Mid VAV","Perimeter_mid_ZN_2 Thermal Zone",1463.210,211.935,731.603,"DualMaximum"
+,"PerimeterMidZn3 TU","VAVReheatBox","Mid VAV","Perimeter_mid_ZN_3 Thermal Zone",1532.720,334.765,766.361,"DualMaximum"
+,"PerimeterMidZn4 TU","VAVReheatBox","Mid VAV","Perimeter_mid_ZN_4 Thermal Zone",1555.380,211.920,777.689,"DualMaximum"
+,"Core Top Zn TU","VAVReheatBox","Top VAV","Core_top Thermal Zone",8145.460,1588.010,4072.730,"DualMaximum"
+,"PerimeterTopZn1 TU","ParallelFanBox","Top VAV","Perimeter_top_ZN_1 Thermal Zone",2499.790,334.765,-99996.000,""
+,"PerimeterTopZn2 TU","VAVReheatBox","Top VAV","Perimeter_top_ZN_2 Thermal Zone",1456.830,211.935,728.413,"DualMaximum"
+,"PerimeterTopZn3 TU","VAVReheatBox","Top VAV","Perimeter_top_ZN_3 Thermal Zone",1590.300,334.765,795.151,"DualMaximum"
+,"PerimeterTopZn4 TU","VAVReheatBox","Top VAV","Perimeter_top_ZN_4 Thermal Zone",1637.780,211.920,818.891,"DualMaximum"
+ENDTABLE
+TABLE EX07_NR_PVAV-PFPB-CZ925CoilClg
+PropName,BaseName,Type,System,Zone,CapTotNetRtd,CapTotGrossRtd,FluidFlowRtDsgn,DXSEER,DXEER,NumClgStages
+;,,,,,(Btu/hr),(Btu/hr),( gpm),
+,"Bottom VAV CoilCooling","DirectExpansion","BottomVAV","UNDEFINED",447107.000,466471.475,-99996.00000,-99996.000,9.800,2
+,"Mid VAV CoilCooling","DirectExpansion","Mid VAV","UNDEFINED",469241.000,489564.112,-99996.00000,-99996.000,9.800,2
+,"Top VAV CoilCooling","DirectExpansion","Top VAV","UNDEFINED",487700.000,508822.582,-99996.00000,-99996.000,9.800,2
+ENDTABLE
+TABLE EX07_NR_PVAV-PFPB-CZ925CoilHtg
+PropName,BaseName,Type,System,Zone,CapTotNetRtd,CapTotGrossRtd,FluidFlowRtDsgn,FurnAFUE,FurnThrmlEff,
+;,,,,,(Btu/hr),(Btu/hr),( gpm),
+,"Bottom VAV CoilHeating","HotWater","BottomVAV","UNDEFINED",62808.163,62808.163,6.27843,-99996.000,-99996.000
+,"CoreBottomReheatCoil","HotWater","BottomVAV","Core_bottom Thermal Zone",128432.628,128432.628,12.83838,-99996.000,-99996.000
+,"PerimeterBottom1ReheatCoil","HotWater","BottomVAV","Perimeter_bot_ZN_1 Thermal Zone",34634.682,34634.682,3.46215,-99996.000,-99996.000
+,"PerimeterBottom2ReheatCoil","HotWater","BottomVAV","Perimeter_bot_ZN_2 Thermal Zone",20871.747,20871.747,2.08638,-99996.000,-99996.000
+,"PerimeterBottom3ReheatCoil","HotWater","BottomVAV","Perimeter_bot_ZN_3 Thermal Zone",11448.963,11448.963,1.14446,-99996.000,-99996.000
+,"PerimeterBottom4ReheatCoil","HotWater","BottomVAV","Perimeter_bot_ZN_4 Thermal Zone",21628.319,21628.319,2.16201,-99996.000,-99996.000
+,"Mid VAV CoilHeating","HotWater","Mid VAV","UNDEFINED",66299.299,66299.299,6.62741,-99996.000,-99996.000
+,"CoreMidReheatCoil","HotWater","Mid VAV","Core_mid Thermal Zone",134911.134,134911.134,13.48599,-99996.000,-99996.000
+,"PerimeterMid1ReheatCoil","HotWater","Mid VAV","Perimeter_mid_ZN_1 Thermal Zone",11448.963,11448.963,1.14446,-99996.000,-99996.000
+,"PerimeterMid2ReheatCoil","HotWater","Mid VAV","Perimeter_mid_ZN_2 Thermal Zone",25020.823,25020.823,2.50113,-99996.000,-99996.000
+,"PerimeterMid3ReheatCoil","HotWater","Mid VAV","Perimeter_mid_ZN_3 Thermal Zone",26209.546,26209.546,2.61996,-99996.000,-99996.000
+,"PerimeterMid4ReheatCoil","HotWater","Mid VAV","Perimeter_mid_ZN_4 Thermal Zone",26596.964,26596.964,2.65869,-99996.000,-99996.000
+,"Top VAV CoilHeating","HotWater","Top VAV","UNDEFINED",69978.125,69978.125,6.99515,-99996.000,-99996.000
+,"CoreTopReheatCoil","HotWater","Top VAV","Core_top Thermal Zone",139287.366,139287.366,13.92345,-99996.000,-99996.000
+,"PerimeterTop1ReheatCoil","HotWater","Top VAV","Perimeter_top_ZN_1 Thermal Zone",11448.963,11448.963,1.14446,-99996.000,-99996.000
+,"PerimeterTop2ReheatCoil","HotWater","Top VAV","Perimeter_top_ZN_2 Thermal Zone",24911.725,24911.725,2.49023,-99996.000,-99996.000
+,"PerimeterTop3ReheatCoil","HotWater","Top VAV","Perimeter_top_ZN_3 Thermal Zone",27194.164,27194.164,2.71838,-99996.000,-99996.000
+,"PerimeterTop4ReheatCoil","HotWater","Top VAV","Perimeter_top_ZN_4 Thermal Zone",28006.072,28006.072,2.79954,-99996.000,-99996.000
+ENDTABLE
+TABLE EX07_NR_PVAV-PFPB-CZ925Fan
+PropName,BaseName,CtrlMthd,System,Zone,FlowCap,FlowMin,FlowEff,ModelingMthd,TotStaticPress,MtrBHP,MtrHP,MtrPos,MtrEff,PwrIdx
+;,,,,,(cfm),(cfm),,,(inH2O),(hp),(hp),,(W/cfm)
+,"BottomVAV SupplyFan","VariableSpeedDrive","BottomVAV","UNDEFINED",11478.100,2681.390,0.650,"StaticPressure",4.835,13.456,15.000,"InAirStream",0.924,0.9460
+,"Fan 4","ConstantVolume","BottomVAV","Perimeter_bot_ZN_3 Thermal Zone",695.585,-99996.000,0.500,"PowerPerUnitFlow",1.091,0.239,0.083,"InAirStream",0.855,0.3000
+,"MidVAV SupplyFan","VariableSpeedDrive","Mid VAV","UNDEFINED",12116.100,2681.390,0.650,"StaticPressure",4.835,14.204,15.000,"InAirStream",0.924,0.9460
+,"Fan 5","ConstantVolume","Mid VAV","Perimeter_mid_ZN_1 Thermal Zone",1220.275,-99996.000,0.500,"PowerPerUnitFlow",1.091,0.420,0.083,"InAirStream",0.855,0.3000
+,"TopVAV SupplyFan","VariableSpeedDrive","Top VAV","UNDEFINED",12788.400,2681.390,0.650,"StaticPressure",4.867,15.090,20.000,"InAirStream",0.930,0.9460
+,"Fan 6","ConstantVolume","Top VAV","Perimeter_top_ZN_1 Thermal Zone",1249.895,-99996.000,0.500,"PowerPerUnitFlow",1.091,0.430,0.083,"InAirStream",0.855,0.3000
+ENDTABLE
+TABLE EX07_NR_PVAV-PFPB-CZ925OACtrl
+PropName,BaseName,EconoCtrlMthd,System,EconoIntegration
+;
+,"BottomVAV Economizer","FixedDryBulb","BottomVAV","Integrated"
+,"MidVAV OACtrl","FixedDryBulb","Mid VAV","Integrated"
+,"Top VAV OACtrl","FixedDryBulb","Top VAV","Integrated"
+ENDTABLE

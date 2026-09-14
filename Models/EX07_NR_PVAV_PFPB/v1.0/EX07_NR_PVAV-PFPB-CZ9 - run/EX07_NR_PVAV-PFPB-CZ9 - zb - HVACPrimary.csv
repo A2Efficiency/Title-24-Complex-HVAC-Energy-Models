@@ -1,0 +1,25 @@
+FluidSystems
+,,,,,Controls,,,,,,Supply Side Components,,,Demand Side Components,,,
+Name,Type,Status,Design SupplyT,Design DelT,TempCtrl,FixedT,Supply HiT,At Outdoor,Supply LowT,At OutdoorT,Num Comps,Total Capacity,Flow Rate,Num Comps,Total Capacity,Sensible Capacity,Flow Rate,
+,,,(degF),(degF),,(degF),(degF),(degF),(degF),(degF),,(Btu/hr),(gpm),,(Btu/hr),(Btu/hr),( gpm),
+"NonResBaseElecSHWSystem","ServiceHotWater","New",135,80,"Fixed",135,-99996,-99996,-99996,-99996,0,0,0,0,0,0,0
+"BaseHPHWSystem","HotWater","New",130,10,"Fixed",130,-99996,-99996,-99996,-99996,1,426517,0,0,-99996,0,0
+
+
+Boiler
+Name,Fluid System Name,Status,Type,Fuel,Draft Type,Rated Capacity,AFUE,Thermal Efficiency,Forced Draft Power,Minimum Unload Ratio
+,,,,,,(Btu/h),,,hp
+"Base SupBlr","BaseHPHWSystem","New","HotWater","Electric","UNDEFINED",426517,-99996,0.98,0,0.01
+
+
+Pump
+Name,Serving Equipment,Status,Count,Operation,Speed Type,Design Flow Rate,Nameplate HP,Power,Power Per Flow,Break Horse Power,Head,Motor Efficiency,Impeller Efficiency,Minimum Flow Rate
+,,,,,,(gpm),(hp),(kW),(W/gpm),(bhp),(ft. H20),,,(gpm)
+"Base HPHW Pump","Base AWHP","New",1,"OnDemand","VariableSpeed",89.6696,-99996,-99996,-99996,0,0,1,1
+
+
+Water Heater
+,System,,,Water Heater
+Name,System Name,System Type,System Count,Status,Type,Fuel,Count,Thermal Efficiency,StandbyLoss Fraction,Storage Capacity,Rated Capacity,Energy Factor
+,,,,,,,,,,(gal),(Btu/h),
+"NonResBaseElecWaterHeater","NonResBaseElecSHWSystem","ServiceHotWater",1,"New","Conventional","Electricity",1,1,0.012,30,29835.7,0.951

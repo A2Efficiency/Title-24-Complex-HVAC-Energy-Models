@@ -1,0 +1,137 @@
+; Tables for Std model AutoHardSize capacity look-up rules
+TABLE EX06_NR_Class-Lab-DOAS-FPFC25TrmlUnit
+PropName,BaseName,Type,System,Zone,PriAirFlowMax,PriAirFlowMin,HtgAirFlowMax,ReheatCtrlMthd
+;,,,,,(cfm),(cfm),( cfm)
+,"AT-L2_ZN02_Core Classroom","VAVNoReheatBox","DOAS-AHU","L2_ZN02_Core Classroom",655.996,188.300,-99996.000,""
+,"AT-L2_ZN07_Huddle Area","VAVNoReheatBox","DOAS-AHU","L2_ZN07_Huddle Area",600.000,177.650,-99996.000,""
+,"AT-L2_ZN04_Huddle Offices","VAVNoReheatBox","DOAS-AHU","L2_ZN04_Huddle Offices",250.000,250.000,-99996.000,""
+,"AT-L2_ZN07 North Conf","VAVNoReheatBox","DOAS-AHU","L2_ZN07 North Conf",400.000,118.576,-99996.000,""
+,"AT-L2_ZN01_Core Conf Room","VAVNoReheatBox","DOAS-AHU","L2_ZN01_Core Conf Room",429.689,156.880,-99996.000,""
+,"AT-L2_ZN06 Corner Conf","VAVNoReheatBox","DOAS-AHU","L2_ZN06 Corner Conf",250.000,54.172,-99996.000,""
+,"AT-L1_ZN09 N Conf Room","VAVNoReheatBox","DOAS-AHU","L1_ZN09 N Conf Room",2000.000,227.549,-99996.000,""
+,"AT-L2_ZN13 Core Conf Room","VAVNoReheatBox","DOAS-AHU","L2_ZN13 Core Conf Room",179.689,156.880,-99996.000,""
+,"AT-L1_ZN08 NE Corridor","VAVNoReheatBox","DOAS-AHU","L1_ZN08 NE Corridor",341.818,341.818,-99996.000,""
+,"AT-L1_ZN12 SE Corridor Corner","VAVNoReheatBox","DOAS-AHU","L1_ZN12 SE Corridor Corner",73.642,73.642,-99996.000,""
+,"AT-L1_ZN04_South Corridor","VAVNoReheatBox","DOAS-AHU","L1_ZN04_South Corridor",106.112,106.112,-99996.000,""
+,"AT-L1_ZN05_Core Corridor","VAVNoReheatBox","DOAS-AHU","L1_ZN05_Core Corridor",287.198,287.198,-99996.000,""
+,"AT-L2_ZN09 NE Corridor","VAVNoReheatBox","DOAS-AHU","L2_ZN09 NE Corridor",135.042,135.042,-99996.000,""
+,"AT-L2_ZN08_Recep Corridor","VAVNoReheatBox","DOAS-AHU","L2_ZN08_Recep Corridor",404.887,404.887,-99996.000,""
+,"AT-L1_ZN13 Elec Room","VAVNoReheatBox","DOAS-AHU","L1_ZN13 Elec Room",9.813,9.813,-99996.000,""
+,"AT-L2_ZN11_Breakroom","VAVNoReheatBox","DOAS-AHU","L2_ZN11_Breakroom",236.227,71.584,-99996.000,""
+,"AT-L1_ZN13 Lobby NW","VAVNoReheatBox","DOAS-AHU","L1_ZN13 Lobby NW",182.513,55.307,-99996.000,""
+,"AT-L1_ZN03_South Open Office","VAVNoReheatBox","DOAS-AHU","L1_ZN03_South Open Office",1021.515,685.373,-99996.000,""
+,"AT-L1_ZN02 Core_Open Office","VAVNoReheatBox","DOAS-AHU","L1_ZN02 Core_Open Office",2637.124,1769.353,-99996.000,""
+,"AT-L2_ZN03_South Open Office","VAVNoReheatBox","DOAS-AHU","L2_ZN03_South Open Office",1817.029,1141.467,-99996.000,""
+,"AT-L2_ZN05_Core Open Office Cor","VAVNoReheatBox","DOAS-AHU","L2_ZN05_Core Open Office Cor",2662.784,1672.780,-99996.000,""
+,"AT-L1_ZN14_Core Open Office","VAVNoReheatBox","DOAS-AHU","L1_ZN14_Core Open Office",1672.031,1121.840,-99996.000,""
+,"AT-L2_ZN12 Storage","VAVNoReheatBox","DOAS-AHU","L2_ZN12 Storage",90.036,90.036,-99996.000,""
+,"AT-L1_ZN05_Fitness Center","VAVNoReheatBox","DOAS-AHU","L1_ZN05_Fitness Center",360.732,360.732,-99996.000,""
+,"AT-L1_ZN01_SE_Open Office","VAVNoReheatBox","DOAS-AHU","L1_ZN01_SE_Open Office",774.631,519.729,-99996.000,""
+,"CoreZn TU 8 (uncontrolled)","Uncontrolled","AirSys 8 L1 IT","L1_ZN06_IT Room",157.551,-99996.000,-99996.000,""
+,"CoreZn TU 8 (uncontrolled)-2","Uncontrolled","AirSys 8 L2 IT","L2_ZN10_IT Room",157.551,-99996.000,-99996.000,""
+ENDTABLE
+TABLE EX06_NR_Class-Lab-DOAS-FPFC25CoilClg
+PropName,BaseName,Type,System,Zone,CapTotNetRtd,CapTotGrossRtd,FluidFlowRtDsgn,DXSEER,DXEER,NumClgStages
+;,,,,,(Btu/hr),(Btu/hr),( gpm),
+,"FC-L2_ZN02_Core Classroom CoolingCoil","ChilledWater","FC-L2_ZN02_Core Classroom","L2_ZN02_Core Classroom",56489.956,56489.956,9.41142,-99996.000,-99996.000,-99996
+,"FC-L2_ZN07_Huddle Area CoolingCoil","ChilledWater","FC-L2_ZN07_Huddle Area","L2_ZN07_Huddle Area",38590.900,38590.900,6.42937,-99996.000,-99996.000,-99996
+,"FC-L2_ZN04_Huddle Offices CoolingCoil","ChilledWater","FC-L2_ZN04_Huddle Offices","L2_ZN04_Huddle Offices",10560.000,10560.000,1.75933,-99996.000,-99996.000,-99996
+,"FC-L2_ZN07 North Conf CoolingCoil","ChilledWater","FC-L2_ZN07 North Conf","L2_ZN07 North Conf",39082.000,39082.000,6.51119,-99996.000,-99996.000,-99996
+,"FC-L2_ZN01_Core Conf Room CoolingCoil","ChilledWater","FC-L2_ZN01_Core Conf Room","L2_ZN01_Core Conf Room",47063.951,47063.951,7.84101,-99996.000,-99996.000,-99996
+,"FC-L2_ZN06 Corner Conf CoolingCoil","ChilledWater","FC-L2_ZN06 Corner Conf","L2_ZN06 Corner Conf",20902.800,20902.800,3.48248,-99996.000,-99996.000,-99996
+,"FC-L1_ZN09 N Conf Room CoolingCoil","ChilledWater","FC-L1_ZN09 N Conf Room","L1_ZN09 N Conf Room",51430.600,51430.600,8.56851,-99996.000,-99996.000,-99996
+,"FC-L2_ZN13 Core Conf Room CoolingCoil","ChilledWater","FC-L2_ZN13 Core Conf Room","L2_ZN13 Core Conf Room",47063.951,47063.951,7.84101,-99996.000,-99996.000,-99996
+,"FC-L1_ZN08 NE Corridor CoolingCoil","ChilledWater","FC-L1_ZN08 NE Corridor","L1_ZN08 NE Corridor",102545.373,102545.373,17.08440,-99996.000,-99996.000,-99996
+,"FC-L1_ZN12 SE Corridor Corner CoolingCoil","ChilledWater","FC-L1_ZN12 SE Corridor Corner","L1_ZN12 SE Corridor Corner",22092.460,22092.460,3.68068,-99996.000,-99996.000,-99996
+,"FC-L1_ZN04_South Corridor CoolingCoil","ChilledWater","FC-L1_ZN04_South Corridor","L1_ZN04_South Corridor",31833.501,31833.501,5.30357,-99996.000,-99996.000,-99996
+,"FC-L1_ZN05_Core Corridor CoolingCoil","ChilledWater","FC-L1_ZN05_Core Corridor","L1_ZN05_Core Corridor",86159.326,86159.326,14.35443,-99996.000,-99996.000,-99996
+,"FC-L2_ZN09 NE Corridor CoolingCoil","ChilledWater","FC-L2_ZN09 NE Corridor","L2_ZN09 NE Corridor",45712.500,45712.500,7.61586,-99996.000,-99996.000,-99996
+,"FC-L2_ZN08_Recep Corridor CoolingCoil","ChilledWater","FC-L2_ZN08_Recep Corridor","L2_ZN08_Recep Corridor",107457.661,107457.661,17.90281,-99996.000,-99996.000,-99996
+,"FC-L1_ZN13 Elec Room CoolingCoil","ChilledWater","FC-L1_ZN13 Elec Room","L1_ZN13 Elec Room",2309.800,2309.800,0.38482,-99996.000,-99996.000,-99996
+,"FC-L2_ZN11_Breakroom CoolingCoil","ChilledWater","FC-L2_ZN11_Breakroom","L2_ZN11_Breakroom",16476.100,16476.100,2.74497,-99996.000,-99996.000,-99996
+,"FC-L1_ZN13 Lobby NW CoolingCoil","ChilledWater","FC-L1_ZN13 Lobby NW","L1_ZN13 Lobby NW",15070.000,15070.000,2.51071,-99996.000,-99996.000,-99996
+,"FC-L1_ZN03_South Open Office CoolingCoil","ChilledWater","FC-L1_ZN03_South Open Office","L1_ZN03_South Open Office",32897.100,32897.100,5.48077,-99996.000,-99996.000,-99996
+,"FC-L1_ZN02 Core_Open Office CoolingCoil","ChilledWater","FC-L1_ZN02 Core_Open Office","L1_ZN02 Core_Open Office",59189.400,59189.400,9.86115,-99996.000,-99996.000,-99996
+,"FC-L2_ZN03_South Open Office CoolingCoil","ChilledWater","FC-L2_ZN03_South Open Office","L2_ZN03_South Open Office",68194.000,68194.000,11.36135,-99996.000,-99996.000,-99996
+,"FC-L2_ZN05_Core Open Office Cor CoolingCoil","ChilledWater","FC-L2_ZN05_Core Open Office Cor","L2_ZN05_Core Open Office Cor",79559.100,79559.100,13.25481,-99996.000,-99996.000,-99996
+,"FC-L1_ZN14_Core Open Office CoolingCoil","ChilledWater","FC-L1_ZN14_Core Open Office","L1_ZN14_Core Open Office",37098.500,37098.500,6.18073,-99996.000,-99996.000,-99996
+,"FC-L2_ZN12 Storage CoolingCoil","ChilledWater","FC-L2_ZN12 Storage","L2_ZN12 Storage",27010.920,27010.920,4.50011,-99996.000,-99996.000,-99996
+,"FC-L1_ZN05_Fitness Center CoolingCoil","ChilledWater","FC-L1_ZN05_Fitness Center","L1_ZN05_Fitness Center",27121.600,27121.600,4.51855,-99996.000,-99996.000,-99996
+,"FC-L1_ZN01_SE_Open Office CoolingCoil","ChilledWater","FC-L1_ZN01_SE_Open Office","L1_ZN01_SE_Open Office",19480.600,19480.600,3.24553,-99996.000,-99996.000,-99996
+,"DOAS-AHU CHW Coil","ChilledWater","DOAS-AHU","UNDEFINED",310000.000,310000.000,51.64704,-99996.000,-99996.000,-99996
+,"CoreZnCoolingCoil 8","DirectExpansion","AirSys 8 L1 IT","n/a",70031.000,70303.960,-99996.00000,-99996.000,-99996.000,1
+,"CoreZnCoolingCoil 8-2","DirectExpansion","AirSys 8 L2 IT","n/a",70031.000,70303.960,-99996.00000,-99996.000,-99996.000,1
+ENDTABLE
+TABLE EX06_NR_Class-Lab-DOAS-FPFC25CoilHtg
+PropName,BaseName,Type,System,Zone,CapTotNetRtd,CapTotGrossRtd,FluidFlowRtDsgn,FurnAFUE,FurnThrmlEff,
+;,,,,,(Btu/hr),(Btu/hr),( gpm),
+,"FC-L2_ZN02_Core Classroom HeatingCoil","HotWater","FC-L2_ZN02_Core Classroom","L2_ZN02_Core Classroom",41215.072,41215.072,8.23988,-99996.000,-99996.000
+,"FC-L2_ZN07_Huddle Area HeatingCoil","HotWater","FC-L2_ZN07_Huddle Area","L2_ZN07_Huddle Area",34182.100,34182.100,6.83382,-99996.000,-99996.000
+,"FC-L2_ZN04_Huddle Offices HeatingCoil","HotWater","FC-L2_ZN04_Huddle Offices","L2_ZN04_Huddle Offices",10770.400,10770.400,2.15326,-99996.000,-99996.000
+,"FC-L2_ZN07 North Conf HeatingCoil","HotWater","FC-L2_ZN07 North Conf","L2_ZN07 North Conf",24270.000,24270.000,4.85216,-99996.000,-99996.000
+,"FC-L2_ZN01_Core Conf Room HeatingCoil","HotWater","FC-L2_ZN01_Core Conf Room","L2_ZN01_Core Conf Room",34337.858,34337.858,6.86496,-99996.000,-99996.000
+,"FC-L2_ZN06 Corner Conf HeatingCoil","HotWater","FC-L2_ZN06 Corner Conf","L2_ZN06 Corner Conf",12001.300,12001.300,2.39935,-99996.000,-99996.000
+,"FC-L1_ZN09 N Conf Room HeatingCoil","HotWater","FC-L1_ZN09 N Conf Room","L1_ZN09 N Conf Room",31413.200,31413.200,6.28025,-99996.000,-99996.000
+,"FC-L2_ZN13 Core Conf Room HeatingCoil","HotWater","FC-L2_ZN13 Core Conf Room","L2_ZN13 Core Conf Room",34337.858,34337.858,6.86496,-99996.000,-99996.000
+,"FC-L1_ZN08 NE Corridor HeatingCoil","HotWater","FC-L1_ZN08 NE Corridor","L1_ZN08 NE Corridor",74817.104,74817.104,14.95774,-99996.000,-99996.000
+,"FC-L1_ZN12 SE Corridor Corner HeatingCoil","HotWater","FC-L1_ZN12 SE Corridor Corner","L1_ZN12 SE Corridor Corner",16118.659,16118.659,3.22251,-99996.000,-99996.000
+,"FC-L1_ZN04_South Corridor HeatingCoil","HotWater","FC-L1_ZN04_South Corridor","L1_ZN04_South Corridor",23225.723,23225.723,4.64338,-99996.000,-99996.000
+,"FC-L1_ZN05_Core Corridor HeatingCoil","HotWater","FC-L1_ZN05_Core Corridor","L1_ZN05_Core Corridor",62861.844,62861.844,12.56759,-99996.000,-99996.000
+,"FC-L2_ZN09 NE Corridor HeatingCoil","HotWater","FC-L2_ZN09 NE Corridor","L2_ZN09 NE Corridor",27742.300,27742.300,5.54635,-99996.000,-99996.000
+,"FC-L2_ZN08_Recep Corridor HeatingCoil","HotWater","FC-L2_ZN08_Recep Corridor","L2_ZN08_Recep Corridor",78401.109,78401.109,15.67427,-99996.000,-99996.000
+,"FC-L1_ZN13 Elec Room HeatingCoil","HotWater","FC-L1_ZN13 Elec Room","L1_ZN13 Elec Room",2338.600,2338.600,0.46754,-99996.000,-99996.000
+,"FC-L2_ZN11_Breakroom HeatingCoil","HotWater","FC-L2_ZN11_Breakroom","L2_ZN11_Breakroom",14424.100,14424.100,2.88372,-99996.000,-99996.000
+,"FC-L1_ZN13 Lobby NW HeatingCoil","HotWater","FC-L1_ZN13 Lobby NW","L1_ZN13 Lobby NW",11851.600,11851.600,2.36942,-99996.000,-99996.000
+,"FC-L1_ZN03_South Open Office HeatingCoil","HotWater","FC-L1_ZN03_South Open Office","L1_ZN03_South Open Office",28411.200,28411.200,5.68008,-99996.000,-99996.000
+,"FC-L1_ZN02 Core_Open Office HeatingCoil","HotWater","FC-L1_ZN02 Core_Open Office","L1_ZN02 Core_Open Office",60129.000,60129.000,12.02123,-99996.000,-99996.000
+,"FC-L2_ZN03_South Open Office HeatingCoil","HotWater","FC-L2_ZN03_South Open Office","L2_ZN03_South Open Office",52609.700,52609.700,10.51794,-99996.000,-99996.000
+,"FC-L2_ZN05_Core Open Office Cor HeatingCoil","HotWater","FC-L2_ZN05_Core Open Office Cor","L2_ZN05_Core Open Office Cor",62897.400,62897.400,12.57470,-99996.000,-99996.000
+,"FC-L1_ZN14_Core Open Office HeatingCoil","HotWater","FC-L1_ZN14_Core Open Office","L1_ZN14_Core Open Office",39875.000,39875.000,7.97197,-99996.000,-99996.000
+,"FC-L2_ZN12 Storage HeatingCoil","HotWater","FC-L2_ZN12 Storage","L2_ZN12 Storage",19707.167,19707.167,3.93994,-99996.000,-99996.000
+,"FC-L1_ZN05_Fitness Center HeatingCoil","HotWater","FC-L1_ZN05_Fitness Center","L1_ZN05_Fitness Center",3509.000,3509.000,0.70153,-99996.000,-99996.000
+,"FC-L1_ZN01_SE_Open Office HeatingCoil","HotWater","FC-L1_ZN01_SE_Open Office","L1_ZN01_SE_Open Office",7533.000,7533.000,1.50603,-99996.000,-99996.000
+,"DOAS-AHU HHW Coil","HotWater","DOAS-AHU","UNDEFINED",310000.000,310000.000,61.97645,-99996.000,-99996.000
+ENDTABLE
+TABLE EX06_NR_Class-Lab-DOAS-FPFC25Fan
+PropName,BaseName,CtrlMthd,System,Zone,FlowCap,FlowMin,FlowEff,ModelingMthd,TotStaticPress,MtrBHP,MtrHP,MtrPos,MtrEff,PwrIdx
+;,,,,,(cfm),(cfm),,,(inH2O),(hp),(hp),,(W/cfm)
+,"Exh_Fan_1","ConstantVolume","Exhaust_RR1","UNDEFINED",350.000,-99996.000,0.650,"PowerPerUnitFlow",2.799,0.237,0.500,"InAirStream",0.900,0.5622
+,"Exh_Fan_2","ConstantVolume","Exhaust_RR2","UNDEFINED",400.000,-99996.000,0.650,"PowerPerUnitFlow",2.449,0.237,0.500,"InAirStream",0.900,0.4919
+,"FC-L2_ZN02_Core Classroom Fan","VariableSpeedDrive","FC-L2_ZN02_Core Classroom","L2_ZN02_Core Classroom",1882.999,564.900,0.500,"PowerPerUnitFlow",1.273,0.756,1.000,"InAirStream",0.855,0.3500
+,"FC-L2_ZN07_Huddle Area Fan","VariableSpeedDrive","FC-L2_ZN07_Huddle Area","L2_ZN07_Huddle Area",1776.495,532.949,0.500,"PowerPerUnitFlow",1.273,0.713,1.000,"InAirStream",0.855,0.3500
+,"FC-L2_ZN04_Huddle Offices Fan","VariableSpeedDrive","FC-L2_ZN04_Huddle Offices","L2_ZN04_Huddle Offices",532.271,159.681,0.500,"PowerPerUnitFlow",4.247,0.712,1.000,"InAirStream",0.855,1.1673
+,"FC-L2_ZN07 North Conf Fan","VariableSpeedDrive","FC-L2_ZN07 North Conf","L2_ZN07 North Conf",1185.756,355.727,0.500,"PowerPerUnitFlow",2.542,0.950,1.500,"InAirStream",0.855,0.6987
+,"FC-L2_ZN01_Core Conf Room Fan","VariableSpeedDrive","FC-L2_ZN01_Core Conf Room","L2_ZN01_Core Conf Room",1568.798,470.640,0.500,"PowerPerUnitFlow",1.441,0.713,1.000,"InAirStream",0.855,0.3961
+,"FC-L2_ZN06 Corner Conf Fan","VariableSpeedDrive","FC-L2_ZN06 Corner Conf","L2_ZN06 Corner Conf",541.720,162.516,0.500,"PowerPerUnitFlow",8.346,1.425,2.000,"InAirStream",0.855,2.2939
+,"FC-L1_ZN09 N Conf Room Fan","VariableSpeedDrive","FC-L1_ZN09 N Conf Room","L1_ZN09 N Conf Room",2275.491,682.647,0.500,"PowerPerUnitFlow",1.325,0.950,1.500,"InAirStream",0.855,0.3641
+,"FC-L2_ZN13 Core Conf Room Fan","VariableSpeedDrive","FC-L2_ZN13 Core Conf Room","L2_ZN13 Core Conf Room",1568.798,470.640,0.500,"PowerPerUnitFlow",1.441,0.713,1.000,"InAirStream",0.855,0.3961
+,"FC-L1_ZN08 NE Corridor Fan","VariableSpeedDrive","FC-L1_ZN08 NE Corridor","L1_ZN08 NE Corridor",3418.179,1025.454,0.500,"PowerPerUnitFlow",1.273,1.372,1.000,"InAirStream",0.855,0.3500
+,"FC-L1_ZN12 SE Corridor Corner Fan","VariableSpeedDrive","FC-L1_ZN12 SE Corridor Corner","L1_ZN12 SE Corridor Corner",736.415,220.925,0.500,"PowerPerUnitFlow",3.070,0.713,1.000,"InAirStream",0.855,0.8437
+,"FC-L1_ZN04_South Corridor Fan","VariableSpeedDrive","FC-L1_ZN04_South Corridor","L1_ZN04_South Corridor",1061.117,318.335,0.500,"PowerPerUnitFlow",2.130,0.713,1.000,"InAirStream",0.855,0.5855
+,"FC-L1_ZN05_Core Corridor Fan","VariableSpeedDrive","FC-L1_ZN05_Core Corridor","L1_ZN05_Core Corridor",2871.978,861.593,0.500,"PowerPerUnitFlow",1.273,1.153,1.000,"InAirStream",0.855,0.3500
+,"FC-L2_ZN09 NE Corridor Fan","VariableSpeedDrive","FC-L2_ZN09 NE Corridor","L2_ZN09 NE Corridor",1350.421,405.126,0.500,"PowerPerUnitFlow",3.348,1.425,2.000,"InAirStream",0.855,0.9202
+,"FC-L2_ZN08_Recep Corridor Fan","VariableSpeedDrive","FC-L2_ZN08_Recep Corridor","L2_ZN08_Recep Corridor",3581.922,1074.577,0.500,"PowerPerUnitFlow",1.273,1.438,1.000,"InAirStream",0.855,0.3500
+,"FC-L1_ZN13 Elec Room Fan","VariableSpeedDrive","FC-L1_ZN13 Elec Room","L1_ZN13 Elec Room",98.135,29.440,0.500,"PowerPerUnitFlow",30.714,0.950,1.500,"InAirStream",0.855,8.4419
+,"FC-L2_ZN11_Breakroom Fan","VariableSpeedDrive","FC-L2_ZN11_Breakroom","L2_ZN11_Breakroom",715.838,214.751,0.500,"PowerPerUnitFlow",4.211,0.950,1.500,"InAirStream",0.855,1.1573
+,"FC-L1_ZN13 Lobby NW Fan","VariableSpeedDrive","FC-L1_ZN13 Lobby NW","L1_ZN13 Lobby NW",553.070,165.921,0.500,"PowerPerUnitFlow",5.450,0.950,1.500,"InAirStream",0.855,1.4979
+,"FC-L1_ZN03_South Open Office Fan","VariableSpeedDrive","FC-L1_ZN03_South Open Office","L1_ZN03_South Open Office",1178.671,353.601,0.500,"PowerPerUnitFlow",2.557,0.950,1.500,"InAirStream",0.855,0.7029
+,"FC-L1_ZN02 Core_Open Office Fan","VariableSpeedDrive","FC-L1_ZN02 Core_Open Office","L1_ZN02 Core_Open Office",3042.835,912.850,0.500,"PowerPerUnitFlow",1.273,1.221,1.500,"InAirStream",0.855,0.3500
+,"FC-L2_ZN03_South Open Office Fan","VariableSpeedDrive","FC-L2_ZN03_South Open Office","L2_ZN03_South Open Office",2096.572,628.972,0.500,"PowerPerUnitFlow",1.438,0.950,1.500,"InAirStream",0.855,0.3951
+,"FC-L2_ZN05_Core Open Office Cor Fan","VariableSpeedDrive","FC-L2_ZN05_Core Open Office Cor","L2_ZN05_Core Open Office Cor",3072.443,921.733,0.500,"PowerPerUnitFlow",1.273,1.233,1.500,"InAirStream",0.855,0.3500
+,"FC-L1_ZN14_Core Open Office Fan","VariableSpeedDrive","FC-L1_ZN14_Core Open Office","L1_ZN14_Core Open Office",1929.267,578.780,0.500,"PowerPerUnitFlow",1.273,0.774,1.000,"InAirStream",0.855,0.3500
+,"FC-L2_ZN12 Storage Fan","VariableSpeedDrive","FC-L2_ZN12 Storage","L2_ZN12 Storage",900.364,270.109,0.500,"PowerPerUnitFlow",2.511,0.713,1.000,"InAirStream",0.855,0.6901
+,"FC-L1_ZN05_Fitness Center Fan","VariableSpeedDrive","FC-L1_ZN05_Fitness Center","L1_ZN05_Fitness Center",1412.222,423.667,0.500,"PowerPerUnitFlow",1.601,0.713,1.000,"InAirStream",0.855,0.4400
+,"FC-L1_ZN01_SE_Open Office Fan","VariableSpeedDrive","FC-L1_ZN01_SE_Open Office","L1_ZN01_SE_Open Office",893.805,268.142,0.500,"PowerPerUnitFlow",2.529,0.713,1.000,"InAirStream",0.855,0.6952
+,"DOAS-AHU Supply Fan","VariableSpeedDrive","DOAS-AHU","UNDEFINED",18568.693,10176.719,0.650,"PowerPerUnitFlow",2.556,11.506,15.000,"InAirStream",0.924,0.5000
+,"DOAS Aux Exhaust","VariableSpeedDrive","DOAS-AHU","UNDEFINED",5294.000,5294.000,0.650,"PowerPerUnitFlow",1.436,1.843,2.000,"InAirStream",0.865,0.3000
+,"CoreZnSupplyFan 8","ConstantVolume","AirSys 8 L1 IT","n/a",157.551,-99996.000,0.650,"PowerPerUnitFlow",2.743,0.105,0.125,"InAirStream",0.855,0.5800
+,"CoreZnSupplyFan 8-2","ConstantVolume","AirSys 8 L2 IT","n/a",157.551,-99996.000,0.650,"PowerPerUnitFlow",2.743,0.105,0.125,"InAirStream",0.855,0.5800
+,"Lab Exhaust Air System 1 Exhaust Fan","VariableSpeedDrive","Exhaust Lab 1","UNDEFINED",10585.114,4883.000,0.620,"PowerPerUnitFlow",3.145,8.462,10.000,"InAirStream",0.917,0.6500
+ENDTABLE
+TABLE EX06_NR_Class-Lab-DOAS-FPFC25OACtrl
+PropName,BaseName,EconoCtrlMthd,System,EconoIntegration
+;
+,"OutsideAirControl 1","NoEconomizer","DOAS-AHU","UNDEFINED"
+,"CoreZnOAControl 8","NoEconomizer","AirSys 8 L1 IT","UNDEFINED"
+,"CoreZnOAControl 8-2","NoEconomizer","AirSys 8 L2 IT","UNDEFINED"
+ENDTABLE

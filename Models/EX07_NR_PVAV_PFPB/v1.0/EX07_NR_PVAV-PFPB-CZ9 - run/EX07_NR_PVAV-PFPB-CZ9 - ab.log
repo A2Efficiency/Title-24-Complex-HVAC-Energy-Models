@@ -1,0 +1,481 @@
+2026-05-27 14:59:55 - -----------------------------------------------------------------------------
+2026-05-27 14:59:55 - Opening Project 'EX07_NR_PVAV-PFPB-CZ9 - run\EX07_NR_PVAV-PFPB-CZ9 - ab.xml'...
+2026-05-27 14:59:55 -    Blr:HasBypass no longer an allowed input as of version 2022.2.1 SP1  (Blr 'Base SupBlr' HasBypass)
+2026-05-27 14:59:55 -    Model load successful into CBECC 2025.2.0.1 (1395)
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'SlabOnOrBelowGradeF073' has a user-defined property 'ExtSolAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'MetalFrameWallU055' has a user-defined property 'ExtSolAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'MetalFrameWallInterior' has a user-defined property 'ExtSolAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'FlatNonresWoodFramingAndOtherRoofU028' has a user-defined property 'ExtSolAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'TypicalPlenumFloorInterior' has a user-defined property 'ExtSolAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'TypicalFloorInterior' has a user-defined property 'ExtSolAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'SlabOnOrBelowGradeF073' has a user-defined property 'ExtThrmlAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'MetalFrameWallU055' has a user-defined property 'ExtThrmlAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'MetalFrameWallInterior' has a user-defined property 'ExtThrmlAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'FlatNonresWoodFramingAndOtherRoofU028' has a user-defined property 'ExtThrmlAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'TypicalPlenumFloorInterior' has a user-defined property 'ExtThrmlAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'TypicalFloorInterior' has a user-defined property 'ExtThrmlAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'SlabOnOrBelowGradeF073' has a user-defined property 'ExtVisAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'MetalFrameWallU055' has a user-defined property 'ExtVisAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'MetalFrameWallInterior' has a user-defined property 'ExtVisAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'FlatNonresWoodFramingAndOtherRoofU028' has a user-defined property 'ExtVisAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'TypicalPlenumFloorInterior' has a user-defined property 'ExtVisAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'TypicalFloorInterior' has a user-defined property 'ExtVisAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'SlabOnOrBelowGradeF073' has a user-defined property 'IntSolAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'MetalFrameWallU055' has a user-defined property 'IntSolAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'MetalFrameWallInterior' has a user-defined property 'IntSolAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'FlatNonresWoodFramingAndOtherRoofU028' has a user-defined property 'IntSolAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'TypicalPlenumFloorInterior' has a user-defined property 'IntSolAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'TypicalFloorInterior' has a user-defined property 'IntSolAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'SlabOnOrBelowGradeF073' has a user-defined property 'IntThrmlAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'MetalFrameWallU055' has a user-defined property 'IntThrmlAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'MetalFrameWallInterior' has a user-defined property 'IntThrmlAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'FlatNonresWoodFramingAndOtherRoofU028' has a user-defined property 'IntThrmlAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'TypicalPlenumFloorInterior' has a user-defined property 'IntThrmlAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'TypicalFloorInterior' has a user-defined property 'IntThrmlAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'SlabOnOrBelowGradeF073' has a user-defined property 'IntVisAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'MetalFrameWallU055' has a user-defined property 'IntVisAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'MetalFrameWallInterior' has a user-defined property 'IntVisAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'FlatNonresWoodFramingAndOtherRoofU028' has a user-defined property 'IntVisAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'TypicalPlenumFloorInterior' has a user-defined property 'IntVisAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ConsAssm 'TypicalFloorInterior' has a user-defined property 'IntVisAbs' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Core_bottom Thermal Zone' has a user-defined property 'Mult' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_bot_ZN_1 Thermal Zone' has a user-defined property 'Mult' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_bot_ZN_2 Thermal Zone' has a user-defined property 'Mult' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_bot_ZN_3 Thermal Zone' has a user-defined property 'Mult' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_bot_ZN_4 Thermal Zone' has a user-defined property 'Mult' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'FirstFloor_Plenum Thermal Zone' has a user-defined property 'Mult' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Core_mid Thermal Zone' has a user-defined property 'Mult' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_mid_ZN_1 Thermal Zone' has a user-defined property 'Mult' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_mid_ZN_2 Thermal Zone' has a user-defined property 'Mult' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_mid_ZN_3 Thermal Zone' has a user-defined property 'Mult' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_mid_ZN_4 Thermal Zone' has a user-defined property 'Mult' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'MidFloor_Plenum Thermal Zone' has a user-defined property 'Mult' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Core_top Thermal Zone' has a user-defined property 'Mult' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_top_ZN_1 Thermal Zone' has a user-defined property 'Mult' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_top_ZN_2 Thermal Zone' has a user-defined property 'Mult' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_top_ZN_3 Thermal Zone' has a user-defined property 'Mult' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_top_ZN_4 Thermal Zone' has a user-defined property 'Mult' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'TopFloor_Plenum Thermal Zone' has a user-defined property 'Mult' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Core_bottom Thermal Zone' has a user-defined property 'ClgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_bot_ZN_1 Thermal Zone' has a user-defined property 'ClgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_bot_ZN_2 Thermal Zone' has a user-defined property 'ClgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_bot_ZN_3 Thermal Zone' has a user-defined property 'ClgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_bot_ZN_4 Thermal Zone' has a user-defined property 'ClgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Core_mid Thermal Zone' has a user-defined property 'ClgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_mid_ZN_1 Thermal Zone' has a user-defined property 'ClgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_mid_ZN_2 Thermal Zone' has a user-defined property 'ClgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_mid_ZN_3 Thermal Zone' has a user-defined property 'ClgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_mid_ZN_4 Thermal Zone' has a user-defined property 'ClgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Core_top Thermal Zone' has a user-defined property 'ClgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_top_ZN_1 Thermal Zone' has a user-defined property 'ClgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_top_ZN_2 Thermal Zone' has a user-defined property 'ClgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_top_ZN_3 Thermal Zone' has a user-defined property 'ClgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_top_ZN_4 Thermal Zone' has a user-defined property 'ClgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Core_bottom Thermal Zone' has a user-defined property 'HtgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_bot_ZN_1 Thermal Zone' has a user-defined property 'HtgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_bot_ZN_2 Thermal Zone' has a user-defined property 'HtgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_bot_ZN_3 Thermal Zone' has a user-defined property 'HtgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_bot_ZN_4 Thermal Zone' has a user-defined property 'HtgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Core_mid Thermal Zone' has a user-defined property 'HtgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_mid_ZN_1 Thermal Zone' has a user-defined property 'HtgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_mid_ZN_2 Thermal Zone' has a user-defined property 'HtgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_mid_ZN_3 Thermal Zone' has a user-defined property 'HtgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_mid_ZN_4 Thermal Zone' has a user-defined property 'HtgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Core_top Thermal Zone' has a user-defined property 'HtgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_top_ZN_1 Thermal Zone' has a user-defined property 'HtgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_top_ZN_2 Thermal Zone' has a user-defined property 'HtgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_top_ZN_3 Thermal Zone' has a user-defined property 'HtgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  ThrmlZn 'Perimeter_top_ZN_4 Thermal Zone' has a user-defined property 'HtgDsgnSizingFac' defined that is being re-defaulted.
+2026-05-27 14:59:55 - Backward compatibility note:  Pump 'Base HPHW Pump' has a user-defined property 'Cnt' defined that is being re-defaulted.
+2026-05-27 14:59:57 - Performing Building Database check...
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Project 'Med Office PVAV PFPB': Proj:SolDistribution.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Project 'Med Office PVAV PFPB': Proj:ClgUnmetLdHrTol.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Project 'Med Office PVAV PFPB': Proj:HtgUnmetLdHrTol.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Project 'Med Office PVAV PFPB': Proj:BldgTerrain.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Project 'Med Office PVAV PFPB': Proj:WtrMnTempSchRef.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Project 'Med Office PVAV PFPB': Proj:DsgnDBT.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Project 'Med Office PVAV PFPB': Proj:MCWBT.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Project 'Med Office PVAV PFPB': Proj:DsgnWBT.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Project 'Med Office PVAV PFPB': Proj:DsgnHtgDBT.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Project 'Med Office PVAV PFPB': Proj:SimFlag.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Project 'Med Office PVAV PFPB': Proj:SHWWtrHtrCnt.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: FenestrationConstruction 'Base_AllCZ_FixedWindowU34': FenCons:UFactorSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: PhotovoltaicArray 'T24 PVArray': PVArray:PwrElecEffAdj.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: PhotovoltaicArray 'T24 PVArray': PVArray:ShdgImpactFac.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_bottom': Spc:OccDensSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_bottom': Spc:IntLPDRegSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_bottom': Spc:IntLtgRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_bottom': Spc:IntLtgNonRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_bottom': Spc:IntLtgRegHtGnSpcFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_bottom': Spc:IntLtgRegHtGnRadFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_bottom': Spc:HotWtrHtgRtSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_bottom': Spc:HotWtrSupTemp.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_1': Spc:OccDensSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_1': Spc:IntLPDRegSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_1': Spc:IntLtgRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_1': Spc:IntLtgNonRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_1': Spc:IntLtgRegHtGnSpcFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_1': Spc:IntLtgRegHtGnRadFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_1': Spc:HotWtrHtgRtSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_1': Spc:HotWtrSupTemp.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_2': Spc:OccDensSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_2': Spc:IntLPDRegSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_2': Spc:IntLtgRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_2': Spc:IntLtgNonRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_2': Spc:IntLtgRegHtGnSpcFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_2': Spc:IntLtgRegHtGnRadFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_2': Spc:HotWtrHtgRtSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_2': Spc:HotWtrSupTemp.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_3': Spc:OccDensSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_3': Spc:IntLPDRegSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_3': Spc:IntLtgRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_3': Spc:IntLtgNonRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_3': Spc:IntLtgRegHtGnSpcFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_3': Spc:IntLtgRegHtGnRadFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_3': Spc:HotWtrHtgRtSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_3': Spc:HotWtrSupTemp.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_4': Spc:OccDensSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_4': Spc:IntLPDRegSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_4': Spc:IntLtgRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_4': Spc:IntLtgNonRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_4': Spc:IntLtgRegHtGnSpcFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_4': Spc:IntLtgRegHtGnRadFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_4': Spc:HotWtrHtgRtSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_bot_ZN_4': Spc:HotWtrSupTemp.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'FirstFloor_Plenum': Spc:IntLPDRegSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'FirstFloor_Plenum': Spc:IntLtgRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'FirstFloor_Plenum': Spc:IntLtgNonRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'FirstFloor_Plenum': Spc:IntLtgRegHtGnSpcFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'FirstFloor_Plenum': Spc:IntLtgRegHtGnRadFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'FirstFloor_Plenum': Spc:HotWtrHtgRtSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'FirstFloor_Plenum': Spc:HotWtrSupTemp.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_mid': Spc:OccDensSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_mid': Spc:IntLPDRegSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_mid': Spc:IntLtgRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_mid': Spc:IntLtgNonRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_mid': Spc:IntLtgRegHtGnSpcFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_mid': Spc:IntLtgRegHtGnRadFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_mid': Spc:HotWtrHtgRtSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_mid': Spc:HotWtrSupTemp.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_1': Spc:OccDensSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_1': Spc:IntLPDRegSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_1': Spc:IntLtgRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_1': Spc:IntLtgNonRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_1': Spc:IntLtgRegHtGnSpcFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_1': Spc:IntLtgRegHtGnRadFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_1': Spc:HotWtrHtgRtSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_1': Spc:HotWtrSupTemp.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_2': Spc:OccDensSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_2': Spc:IntLPDRegSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_2': Spc:IntLtgRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_2': Spc:IntLtgNonRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_2': Spc:IntLtgRegHtGnSpcFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_2': Spc:IntLtgRegHtGnRadFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_2': Spc:HotWtrHtgRtSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_2': Spc:HotWtrSupTemp.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_3': Spc:OccDensSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_3': Spc:IntLPDRegSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_3': Spc:IntLtgRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_3': Spc:IntLtgNonRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_3': Spc:IntLtgRegHtGnSpcFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_3': Spc:IntLtgRegHtGnRadFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_3': Spc:HotWtrHtgRtSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_3': Spc:HotWtrSupTemp.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_4': Spc:OccDensSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_4': Spc:IntLPDRegSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_4': Spc:IntLtgRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_4': Spc:IntLtgNonRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_4': Spc:IntLtgRegHtGnSpcFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_4': Spc:IntLtgRegHtGnRadFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_4': Spc:HotWtrHtgRtSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_mid_ZN_4': Spc:HotWtrSupTemp.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'MidFloor_Plenum': Spc:IntLPDRegSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'MidFloor_Plenum': Spc:IntLtgRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'MidFloor_Plenum': Spc:IntLtgNonRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'MidFloor_Plenum': Spc:IntLtgRegHtGnSpcFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'MidFloor_Plenum': Spc:IntLtgRegHtGnRadFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'MidFloor_Plenum': Spc:HotWtrHtgRtSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'MidFloor_Plenum': Spc:HotWtrSupTemp.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_top': Spc:OccDensSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_top': Spc:IntLPDRegSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_top': Spc:IntLtgRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_top': Spc:IntLtgNonRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_top': Spc:IntLtgRegHtGnSpcFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_top': Spc:IntLtgRegHtGnRadFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_top': Spc:HotWtrHtgRtSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Core_top': Spc:HotWtrSupTemp.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_1': Spc:OccDensSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_1': Spc:IntLPDRegSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_1': Spc:IntLtgRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_1': Spc:IntLtgNonRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_1': Spc:IntLtgRegHtGnSpcFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_1': Spc:IntLtgRegHtGnRadFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_1': Spc:HotWtrHtgRtSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_1': Spc:HotWtrSupTemp.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_2': Spc:OccDensSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_2': Spc:IntLPDRegSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_2': Spc:IntLtgRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_2': Spc:IntLtgNonRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_2': Spc:IntLtgRegHtGnSpcFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_2': Spc:IntLtgRegHtGnRadFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_2': Spc:HotWtrHtgRtSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_2': Spc:HotWtrSupTemp.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_3': Spc:OccDensSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_3': Spc:IntLPDRegSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_3': Spc:IntLtgRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_3': Spc:IntLtgNonRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_3': Spc:IntLtgRegHtGnSpcFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_3': Spc:IntLtgRegHtGnRadFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_3': Spc:HotWtrHtgRtSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_3': Spc:HotWtrSupTemp.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_4': Spc:OccDensSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_4': Spc:IntLPDRegSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_4': Spc:IntLtgRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_4': Spc:IntLtgNonRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_4': Spc:IntLtgRegHtGnSpcFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_4': Spc:IntLtgRegHtGnRadFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_4': Spc:HotWtrHtgRtSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'Perimeter_top_ZN_4': Spc:HotWtrSupTemp.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'TopFloor_Plenum': Spc:IntLPDRegSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'TopFloor_Plenum': Spc:IntLtgRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'TopFloor_Plenum': Spc:IntLtgNonRegEndUseCat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'TopFloor_Plenum': Spc:IntLtgRegHtGnSpcFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'TopFloor_Plenum': Spc:IntLtgRegHtGnRadFracSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'TopFloor_Plenum': Spc:HotWtrHtgRtSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Space 'TopFloor_Plenum': Spc:HotWtrSupTemp.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Core_bottom Thermal Zone': ThrmlZn:ThrtlgRng.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Core_bottom Thermal Zone': ThrmlZn:VentSpecMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Core_bottom Thermal Zone': ThrmlZn:VentPerPersonSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Core_bottom Thermal Zone': ThrmlZn:VentPerAreaSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_bot_ZN_1 Thermal Zone': ThrmlZn:ThrtlgRng.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_bot_ZN_1 Thermal Zone': ThrmlZn:VentSpecMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_bot_ZN_1 Thermal Zone': ThrmlZn:VentPerPersonSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_bot_ZN_1 Thermal Zone': ThrmlZn:VentPerAreaSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_bot_ZN_2 Thermal Zone': ThrmlZn:ThrtlgRng.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_bot_ZN_2 Thermal Zone': ThrmlZn:VentSpecMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_bot_ZN_2 Thermal Zone': ThrmlZn:VentPerPersonSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_bot_ZN_2 Thermal Zone': ThrmlZn:VentPerAreaSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_bot_ZN_3 Thermal Zone': ThrmlZn:ThrtlgRng.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_bot_ZN_3 Thermal Zone': ThrmlZn:VentSpecMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_bot_ZN_3 Thermal Zone': ThrmlZn:VentPerPersonSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_bot_ZN_3 Thermal Zone': ThrmlZn:VentPerAreaSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_bot_ZN_4 Thermal Zone': ThrmlZn:ThrtlgRng.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_bot_ZN_4 Thermal Zone': ThrmlZn:VentSpecMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_bot_ZN_4 Thermal Zone': ThrmlZn:VentPerPersonSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_bot_ZN_4 Thermal Zone': ThrmlZn:VentPerAreaSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'FirstFloor_Plenum Thermal Zone': ThrmlZn:VentSpecMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'FirstFloor_Plenum Thermal Zone': ThrmlZn:VentPerPersonSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'FirstFloor_Plenum Thermal Zone': ThrmlZn:VentPerAreaSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Core_mid Thermal Zone': ThrmlZn:ThrtlgRng.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Core_mid Thermal Zone': ThrmlZn:VentSpecMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Core_mid Thermal Zone': ThrmlZn:VentPerPersonSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Core_mid Thermal Zone': ThrmlZn:VentPerAreaSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_mid_ZN_1 Thermal Zone': ThrmlZn:ThrtlgRng.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_mid_ZN_1 Thermal Zone': ThrmlZn:VentSpecMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_mid_ZN_1 Thermal Zone': ThrmlZn:VentPerPersonSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_mid_ZN_1 Thermal Zone': ThrmlZn:VentPerAreaSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_mid_ZN_2 Thermal Zone': ThrmlZn:ThrtlgRng.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_mid_ZN_2 Thermal Zone': ThrmlZn:VentSpecMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_mid_ZN_2 Thermal Zone': ThrmlZn:VentPerPersonSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_mid_ZN_2 Thermal Zone': ThrmlZn:VentPerAreaSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_mid_ZN_3 Thermal Zone': ThrmlZn:ThrtlgRng.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_mid_ZN_3 Thermal Zone': ThrmlZn:VentSpecMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_mid_ZN_3 Thermal Zone': ThrmlZn:VentPerPersonSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_mid_ZN_3 Thermal Zone': ThrmlZn:VentPerAreaSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_mid_ZN_4 Thermal Zone': ThrmlZn:ThrtlgRng.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_mid_ZN_4 Thermal Zone': ThrmlZn:VentSpecMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_mid_ZN_4 Thermal Zone': ThrmlZn:VentPerPersonSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_mid_ZN_4 Thermal Zone': ThrmlZn:VentPerAreaSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'MidFloor_Plenum Thermal Zone': ThrmlZn:VentSpecMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'MidFloor_Plenum Thermal Zone': ThrmlZn:VentPerPersonSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'MidFloor_Plenum Thermal Zone': ThrmlZn:VentPerAreaSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Core_top Thermal Zone': ThrmlZn:ThrtlgRng.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Core_top Thermal Zone': ThrmlZn:VentSpecMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Core_top Thermal Zone': ThrmlZn:VentPerPersonSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Core_top Thermal Zone': ThrmlZn:VentPerAreaSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_top_ZN_1 Thermal Zone': ThrmlZn:ThrtlgRng.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_top_ZN_1 Thermal Zone': ThrmlZn:VentSpecMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_top_ZN_1 Thermal Zone': ThrmlZn:VentPerPersonSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_top_ZN_1 Thermal Zone': ThrmlZn:VentPerAreaSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_top_ZN_2 Thermal Zone': ThrmlZn:ThrtlgRng.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_top_ZN_2 Thermal Zone': ThrmlZn:VentSpecMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_top_ZN_2 Thermal Zone': ThrmlZn:VentPerPersonSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_top_ZN_2 Thermal Zone': ThrmlZn:VentPerAreaSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_top_ZN_3 Thermal Zone': ThrmlZn:ThrtlgRng.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_top_ZN_3 Thermal Zone': ThrmlZn:VentSpecMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_top_ZN_3 Thermal Zone': ThrmlZn:VentPerPersonSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_top_ZN_3 Thermal Zone': ThrmlZn:VentPerAreaSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_top_ZN_4 Thermal Zone': ThrmlZn:ThrtlgRng.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_top_ZN_4 Thermal Zone': ThrmlZn:VentSpecMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_top_ZN_4 Thermal Zone': ThrmlZn:VentPerPersonSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'Perimeter_top_ZN_4 Thermal Zone': ThrmlZn:VentPerAreaSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'TopFloor_Plenum Thermal Zone': ThrmlZn:VentSpecMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'TopFloor_Plenum Thermal Zone': ThrmlZn:VentPerPersonSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: ThermalZone 'TopFloor_Plenum Thermal Zone': ThrmlZn:VentPerAreaSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: AirSystem 'BaseAirSys15': AirSys:TypeSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: AirSystem 'BaseAirSys15': AirSys:RetAirFlowRat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: AirSystem 'BaseAirSys15': AirSys:NightCycleTstatTolerance.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: AirSystem 'BaseAirSys15': AirSys:NightCycleRunTime.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: AirSystem 'BaseAirSys15': AirSys:OptStartCtrl.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: AirSystem 'BaseAirSys15-2': AirSys:TypeSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: AirSystem 'BaseAirSys15-2': AirSys:RetAirFlowRat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: AirSystem 'BaseAirSys15-2': AirSys:NightCycleTstatTolerance.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: AirSystem 'BaseAirSys15-2': AirSys:NightCycleRunTime.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: AirSystem 'BaseAirSys15-2': AirSys:OptStartCtrl.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: AirSystem 'BaseAirSys15-3': AirSys:TypeSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: AirSystem 'BaseAirSys15-3': AirSys:RetAirFlowRat.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: AirSystem 'BaseAirSys15-3': AirSys:NightCycleTstatTolerance.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: AirSystem 'BaseAirSys15-3': AirSys:NightCycleRunTime.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: AirSystem 'BaseAirSys15-3': AirSys:OptStartCtrl.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit': TrmlUnit:TypeSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit': TrmlUnit:PriAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit': TrmlUnit:PriAirFlowMinSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit': TrmlUnit:HtgAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit': TrmlUnit:CtrlForOA.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-2': TrmlUnit:TypeSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-2': TrmlUnit:PriAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-2': TrmlUnit:PriAirFlowMinSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-2': TrmlUnit:HtgAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-2': TrmlUnit:CtrlForOA.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-3': TrmlUnit:TypeSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-3': TrmlUnit:PriAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-3': TrmlUnit:PriAirFlowMinSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-3': TrmlUnit:HtgAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-3': TrmlUnit:CtrlForOA.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-4': TrmlUnit:TypeSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-4': TrmlUnit:PriAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-4': TrmlUnit:PriAirFlowMinSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-4': TrmlUnit:CtrlForOA.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-4': TrmlUnit:ParallelBoxFanCtrlMthd.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-5': TrmlUnit:TypeSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-5': TrmlUnit:PriAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-5': TrmlUnit:PriAirFlowMinSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-5': TrmlUnit:HtgAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-5': TrmlUnit:CtrlForOA.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-6': TrmlUnit:TypeSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-6': TrmlUnit:PriAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-6': TrmlUnit:PriAirFlowMinSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-6': TrmlUnit:HtgAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-6': TrmlUnit:CtrlForOA.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-7': TrmlUnit:TypeSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-7': TrmlUnit:PriAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-7': TrmlUnit:PriAirFlowMinSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-7': TrmlUnit:CtrlForOA.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-7': TrmlUnit:ParallelBoxFanCtrlMthd.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-8': TrmlUnit:TypeSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-8': TrmlUnit:PriAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-8': TrmlUnit:PriAirFlowMinSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-8': TrmlUnit:HtgAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-8': TrmlUnit:CtrlForOA.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-9': TrmlUnit:TypeSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-9': TrmlUnit:PriAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-9': TrmlUnit:PriAirFlowMinSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-9': TrmlUnit:HtgAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-9': TrmlUnit:CtrlForOA.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-10': TrmlUnit:TypeSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-10': TrmlUnit:PriAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-10': TrmlUnit:PriAirFlowMinSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-10': TrmlUnit:HtgAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-10': TrmlUnit:CtrlForOA.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-11': TrmlUnit:TypeSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-11': TrmlUnit:PriAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-11': TrmlUnit:PriAirFlowMinSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-11': TrmlUnit:HtgAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-11': TrmlUnit:CtrlForOA.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-12': TrmlUnit:TypeSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-12': TrmlUnit:PriAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-12': TrmlUnit:PriAirFlowMinSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-12': TrmlUnit:CtrlForOA.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-12': TrmlUnit:ParallelBoxFanCtrlMthd.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-13': TrmlUnit:TypeSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-13': TrmlUnit:PriAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-13': TrmlUnit:PriAirFlowMinSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-13': TrmlUnit:HtgAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-13': TrmlUnit:CtrlForOA.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-14': TrmlUnit:TypeSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-14': TrmlUnit:PriAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-14': TrmlUnit:PriAirFlowMinSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-14': TrmlUnit:HtgAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-14': TrmlUnit:CtrlForOA.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-15': TrmlUnit:TypeSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-15': TrmlUnit:PriAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-15': TrmlUnit:PriAirFlowMinSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-15': TrmlUnit:HtgAirFlowMaxSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: TerminalUnit 'BaseVAVBox TrmlUnit-15': TrmlUnit:CtrlForOA.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilCooling 'BaseSys15 CoilClg': CoilClg:CapTotGrossRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilCooling 'BaseSys15 CoilClg': CoilClg:DXEIR.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilCooling 'BaseSys15 CoilClg': CoilClg:DXCrankcaseHtrCapSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilCooling 'BaseSys15 CoilClg-2': CoilClg:CapTotGrossRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilCooling 'BaseSys15 CoilClg-2': CoilClg:DXEIR.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilCooling 'BaseSys15 CoilClg-2': CoilClg:DXCrankcaseHtrCapSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilCooling 'BaseSys15 CoilClg-3': CoilClg:CapTotGrossRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilCooling 'BaseSys15 CoilClg-3': CoilClg:DXEIR.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilCooling 'BaseSys15 CoilClg-3': CoilClg:DXCrankcaseHtrCapSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilHeating 'BaseSys15 CoilHtg': CoilHtg:CapTotGrossRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilHeating 'BaseVAVBox CoilHtg': CoilHtg:CapTotGrossRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilHeating 'BaseVAVBox CoilHtg-2': CoilHtg:CapTotGrossRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilHeating 'BaseVAVBox CoilHtg-3': CoilHtg:CapTotGrossRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilHeating 'BaseVAVBox CoilHtg-4': CoilHtg:CapTotGrossRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilHeating 'BaseVAVBox CoilHtg-5': CoilHtg:CapTotGrossRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilHeating 'BaseSys15 CoilHtg-2': CoilHtg:CapTotGrossRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilHeating 'BaseVAVBox CoilHtg-6': CoilHtg:CapTotGrossRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilHeating 'BaseVAVBox CoilHtg-7': CoilHtg:CapTotGrossRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilHeating 'BaseVAVBox CoilHtg-8': CoilHtg:CapTotGrossRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilHeating 'BaseVAVBox CoilHtg-9': CoilHtg:CapTotGrossRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilHeating 'BaseVAVBox CoilHtg-10': CoilHtg:CapTotGrossRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilHeating 'BaseSys15 CoilHtg-3': CoilHtg:CapTotGrossRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilHeating 'BaseVAVBox CoilHtg-11': CoilHtg:CapTotGrossRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilHeating 'BaseVAVBox CoilHtg-12': CoilHtg:CapTotGrossRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilHeating 'BaseVAVBox CoilHtg-13': CoilHtg:CapTotGrossRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilHeating 'BaseVAVBox CoilHtg-14': CoilHtg:CapTotGrossRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: CoilHeating 'BaseVAVBox CoilHtg-15': CoilHtg:CapTotGrossRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BaseSys15 SupFan': Fan:CtrlMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BaseSys15 SupFan': Fan:UseLegacyFanObj.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BaseSys15 SupFan': Fan:FlowCapSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BaseSys15 SupFan': Fan:FlowMinSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BaseSys15 SupFan': Fan:TotEff.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BasePFPB Fan': Fan:CtrlMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BasePFPB Fan': Fan:FlowCapSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BasePFPB Fan': Fan:TotEff.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BaseSys15 SupFan-2': Fan:CtrlMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BaseSys15 SupFan-2': Fan:UseLegacyFanObj.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BaseSys15 SupFan-2': Fan:FlowCapSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BaseSys15 SupFan-2': Fan:FlowMinSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BaseSys15 SupFan-2': Fan:TotEff.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BasePFPB Fan-2': Fan:CtrlMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BasePFPB Fan-2': Fan:FlowCapSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BasePFPB Fan-2': Fan:TotEff.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BaseSys15 SupFan-3': Fan:CtrlMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BaseSys15 SupFan-3': Fan:UseLegacyFanObj.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BaseSys15 SupFan-3': Fan:FlowCapSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BaseSys15 SupFan-3': Fan:FlowMinSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BaseSys15 SupFan-3': Fan:TotEff.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BasePFPB Fan-3': Fan:CtrlMthdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BasePFPB Fan-3': Fan:FlowCapSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Fan 'BasePFPB Fan-3': Fan:TotEff.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: OutsideAirControl 'BaseSys15 OACtrl': OACtrl:MinLimitType.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: OutsideAirControl 'BaseSys15 OACtrl-2': OACtrl:MinLimitType.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: OutsideAirControl 'BaseSys15 OACtrl-3': OACtrl:MinLimitType.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Boiler 'Base SupBlr': Blr:FlowMode.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Boiler 'Base SupBlr': Blr:CapRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Boiler 'Base SupBlr': Blr:ParasiticLdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Boiler 'Base SupBlr': Blr:WtrFlowCapSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: WaterHeater 'NonResBaseElecWaterHeater': WtrHtr:TypeSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: WaterHeater 'NonResBaseElecWaterHeater': WtrHtr:FluidSegInRefSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: WaterHeater 'NonResBaseElecWaterHeater': WtrHtr:StorCapSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: WaterHeater 'NonResBaseElecWaterHeater': WtrHtr:OffCyclePrstcLossSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: WaterHeater 'NonResBaseElecWaterHeater': WtrHtr:OnCyclePrstcLossSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: WaterHeater 'NonResBaseElecWaterHeater': WtrHtr:TankOffCycleLossCoefSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: WaterHeater 'NonResBaseElecWaterHeater': WtrHtr:TankOnCycleLossCoefSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: WaterHeater 'NonResBaseElecWaterHeater': WtrHtr:CapRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: WaterHeater 'NonResBaseElecWaterHeater': WtrHtr:MaxTempLimit.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: WaterHeater 'NonResBaseElecWaterHeater': WtrHtr:CtrlType.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: HeatPump 'Base AWHP': HtPump:CndsrType.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: HeatPump 'Base AWHP': HtPump:HtgCapRtdSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Pump 'Base HPHW Pump': Pump:FlowCapSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Pump 'Base HPHW Pump': Pump:FlowMinSim.
+2026-05-27 14:59:57 -    Error:  Data classified by the compliance ruleset as NotInput should not be user-specified: Pump 'Base HPHW Pump': Pump:PwrSim.
+2026-05-27 14:59:57 - Building Database check completed, 387 error(s) found.
+2026-05-27 14:59:58 - Error:  Table look-up failed: BaseVerticalFenPerformance:VT( OccupancyClass='Other', ProductType='- specify -', ClimateZone=9, EnergyCodeYear=2025 )  |  ERROR:  Table column match not found - evaluating run u, rule: Set DEFAULT FenCons:MinPresVT  (41:'Fenestration-Properties_T24N.rule' line 958)
+2026-05-27 14:59:58 - Error:  Table look-up failed: BaseVerticalFenPerformance:VT( OccupancyClass='Other', ProductType='- specify -', ClimateZone=9, EnergyCodeYear=2025 )  |  ERROR:  Table column match not found - evaluating run u, rule: Set DEFAULT FenCons:MinPresVT  (41:'Fenestration-Properties_T24N.rule' line 958)
+2026-05-27 14:59:58 - Error:  Table look-up failed: BaseVerticalFenPerformance:VT( OccupancyClass='Other', ProductType='- specify -', ClimateZone=9, EnergyCodeYear=2025 )  |  ERROR:  Table column match not found - evaluating run u, rule: Set DEFAULT FenCons:MinPresVT  (41:'Fenestration-Properties_T24N.rule' line 958)

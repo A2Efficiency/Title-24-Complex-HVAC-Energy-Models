@@ -1,0 +1,2941 @@
+ #define  RunDateFmt  11:36, Sat, May 23, 2026
+ #define  RunID               12   // Standard
+ #define  AnalysisType        13   // Proposed and Standard
+ #define  CompCodeBase      2025   // CA2025
+ #define  StdDesignBase     2025   // CA2025
+ #define  StandardsVersion  2026   // Compliance2025
+ #define  DesignRatingBase     0   // n/a
+ #define  ClimateZone          9   // ClimateZone9
+ #define  DD1  Aug 14
+ #define  CD1  Jun 20
+ #define  HD1  Dec 01
+ #define  SEASONCHANGESETPT  60
+ #define  FANVENTLOCKOUTTEMP  68
+ #define  ISSEASONCOOLING  (@weather.taDbAvg07 > SEASONCHANGESETPT)
+ #define  FANVENTAVAIL  (@weather.taDbAvg07 > FANVENTLOCKOUTTEMP)
+ #define  WINDOWVENTAVAIL  (!@Top.autoSizing && ($hour < 24 && ($hour > 12 || $radDiff+$radbeam > .01)))
+ #define  HWUSEF_WD  hourval( 0.014, 0.008, 0.009, 0.011, 0.020, 0.044, 0.089, 0.107, 0.089, 0.066, 0.052, 0.038, 0.036, 0.033, 0.032, 0.026, 0.042, 0.048, 0.052, 0.047, 0.042, 0.039, 0.036, 0.022 )
+ #define  HWUSEF_WE  hourval( 0.018, 0.010, 0.009, 0.008, 0.015, 0.023, 0.026, 0.047, 0.077, 0.083, 0.074, 0.061, 0.051, 0.043, 0.039, 0.039, 0.052, 0.058, 0.056, 0.052, 0.047, 0.044, 0.040, 0.028 )
+ #define  Cook_WD       hourval( .005,.004,.004,.004,.004,.014,.019,.025,.026,.022,.021,.029,.035,.032,.034,.052,.115,.193,.180,.098,.042,.020,.012,.010)
+ #define  Cook_WEH      hourval( .005,.004,.003,.003,.003,.005,.010,.027,.048,.048,.046,.055,.063,.059,.062,.068,.091,.139,.129,.072,.032,.014,.009,.005)
+ #define  TV_WD         hourval( .035,.026,.023,.022,.021,.021,.025,.032,.038,.040,.038,.038,.041,.042,.042,.041,.044,.049,.056,.064,.070,.074,.067,.051)
+ #define  TV_WEH        hourval( .035,.027,.022,.021,.020,.020,.022,.029,.037,.043,.042,.039,.040,.042,.045,.048,.051,.052,.056,.061,.065,.069,.064,.050)
+ #define  STB_WD        hourval( .040,.040,.040,.040,.040,.040,.040,.041,.040,.040,.040,.040,.040,.040,.041,.041,.042,.043,.044,.045,.046,.047,.045,.045)
+ #define  STB_WEH       hourval( .041,.041,.040,.041,.040,.040,.040,.040,.041,.042,.042,.041,.041,.041,.041,.042,.042,.043,.044,.044,.045,.045,.044,.039)
+ #define  Comp_WD       hourval( .036,.033,.032,.032,.031,.032,.034,.036,.039,.043,.045,.045,.046,.046,.046,.047,.048,.049,.049,.049,.049,.048,.044,.041)
+ #define  Comp_WEH      hourval( .036,.034,.033,.033,.032,.033,.033,.035,.038,.042,.044,.045,.046,.047,.047,.048,.049,.049,.048,.048,.048,.047,.044,.041)
+ #define  RMEL_WD       hourval( .037,.035,.034,.034,.032,.036,.042,.044,.037,.032,.033,.033,.032,.033,.035,.037,.044,.053,.058,.060,.062,.060,.052,.045)
+ #define  RMEL_WEH      hourval( .037,.035,.034,.034,.032,.036,.042,.044,.037,.032,.033,.033,.032,.033,.035,.037,.044,.053,.058,.060,.062,.060,.052,.045)
+ #define  IntLight_WD   hourval( .023,.019,.015,.017,.021,.031,.042,.041,.034,.029,.027,.025,.021,.021,.021,.026,.031,.044,.084,.117,.113,.096,.063,.039)
+ #define  IntLight_WEH  hourval( .023,.019,.015,.017,.021,.031,.042,.041,.034,.029,.027,.025,.021,.021,.021,.026,.031,.044,.084,.117,.113,.096,.063,.039)
+ #define  ExtLight_WD   hourval( .046,.046,.046,.046,.046,.037,.035,.034,.033,.028,.022,.015,.012,.011,.011,.012,.019,.037,.049,.065,.091,.105,.091,.063)
+ #define  ExtLight_WEH  hourval( .046,.046,.045,.045,.046,.045,.044,.041,.036,.030,.024,.016,.012,.011,.011,.012,.019,.038,.048,.060,.083,.098,.085,.059)
+ #define  Cook_SM    choose1( $month, 1.094,1.065,1.074,0.889,0.891,0.935,0.993,0.92,0.923,0.92,1.128,1.168)
+ #define  TV_SM      choose1( $month, 1.032,.991,.986,.99,.971,.971,1.002,1.013,1.008,1.008,1.02,1.008)
+ #define  STB_SM     choose1( $month, 1.02,.84,.92,.98,.91,.94,1.05,1.06,1.06,1.14,1.03,1.050)
+ #define  Comp_SM    choose1( $month, 0.98,0.87,0.89,1.11,1.14,0.99,1.05,1.01,0.96,0.97,0.99,1.04)
+ #define  Other_SM   choose1( $month,  1.19,1.11,1.02,.93,.84,.8,.82,.88,.98,1.07,1.16,1.2)
+ #define  RefrConst_WD   hourval( -0.5436,-0.3646,-0.4044,-0.3871,-0.5341,-0.7521,-0.3747,0.0041,-0.1293,-0.4644,-0.4800,-0.4351,-0.2195,-0.3301,-0.0919,-0.1686,-0.4819,-0.4731,-0.2223,0.0604,-0.1466,-0.3214,-0.4113,-0.7701)
+ #define  RefrConst_WEH  hourval( -0.3467,-0.2779,-0.2844,-0.2954,-0.4680,-0.5127,-0.7110,-0.5662,0.0463,-0.2995,-0.2388,-0.2646,-0.2905,-0.2730,-0.3306,-0.0031,-0.4356,-0.2580,0.2384,0.1176,-0.0458,-0.0596,-0.5300,0.0197 )
+ #define  RefrTemp_WD    hourval( 0.0195,0.0167,0.0169,0.0165,0.0183,0.0218,0.0178,0.0136,0.0151,0.0189,0.0188,0.0183,0.0156,0.0169,0.0137,0.0149,0.0197,0.0208,0.0184,0.0144,0.0166,0.0184,0.0188,0.0229)
+ #define  RefrTemp_WEH   hourval( 0.0171,0.0156,0.0155,0.0154,0.0175,0.0181,0.0212,0.0201,0.0130,0.0176,0.0165,0.0171,0.0177,0.0176,0.0182,0.0139,0.0197,0.0180,0.0121,0.0135,0.0154,0.0150,0.0205,0.0129)
+ #define  FVCHPC  0.95		// VCHP cooling input energy factor
+ #define  FVCHPH  0.88		// VCHP heating input energy factor
+ #define  NumCntrlWHtrs( s)  tofloat( 1+fix(@DHWSYS[ s].loadMax / (15400. * @DHWSYS[ s].loadMaxDur)))
+ #define  RunFileName  MF88Unit_CSUP_IEXH-SZHP_CZ09 - ab
+   repHdrL = "MF88 Central Supply + Individual Exhaust (SZHP)"
+   runTitle = "MF88 Central Supply + Individual Exhaust (SZHP)  /  Standard (PV-Batt only)  /  MF88Unit_CSUP_IEXH-SZHP_CZ09.cibd25x"
+   wfName = "CA_Title24_2025_LOS-ANGELES-USC.epw"
+   ebTolHour = 0.001
+   ebTolDay = 0.001
+   ebTolMon = 0.001
+   ebTolSubHr = 0.001
+   tol = 0.01                           // Endtest convergence tolerance for internal iteration in models
+   jan1DOW = "THU"
+   skyModel = "anisotropic"
+   bldgAzm = 0
+   dt = "YES"
+   heatDsTDbO = 43.1                    // °F
+   coolDsCond = "ClgDC_0p4pct_Aug"
+   ventAvail = zonal
+   nSubSteps = 6
+   wuDays = 15
+   awTrigSlr = 0.3
+   anTolAbs = 0.03
+   anTolRel = 0.003
+   auszTol = 0.05
+   awTrigT = 15
+   awTrigH = 1
+
+   IMPORTFILE   "EplusElecUseImportFile"  
+      imFileName = "MF88Unit_CSUP_IEXH-SZHP_CZ09 - ab-pvb-cse-elecuse.csv"    // Name of (path &) file to read data from
+      imTitle = "EplusElecUse"          // Title expected to be found on line 3 of the import file
+      imFreq = "Hour"                   // Specifies the interval at which CSE reads from the import file
+      imHeader = "Yes"                  // Indicates whether the import file include a 4 line header
+
+   GAIN   "EplusElecUseGain"  
+      gnMeter = "MtrElec"               // Meter that tracks internal gain
+      gnEndUse = "User1"                // Internal gain enduse
+      gnPower = 3412.14 * import( "EplusElecUseImportFile", "EplusTotalKWH" )    // Expression representing internal gain power, Btuh
+
+ DELETE Report "eb"    // move from end of CSE file
+
+DESCOND   "ClgDC_0p4pct_Aug"  
+   dcDB = 92.7                          // Cooling design dry-bulb temperature, °F
+   dcDay = Aug 21                       // Calendar date for this design cooling conditions
+   dcMCDBR = 20.7                       // Coincident daily dry-bulb range, °F
+   dcMCWB = 70.2                        // Coincident wet-bulb temperature, °F
+   dcMCWBR = 7.8                        // Coincident daily wet-bulb range, °F
+   dcTauB = 0.383                       // ASHRAE beam 'pseudo optical depth'
+   dcTauD = 2.433                       // ASHRAE diffuse 'pseudo optical depth'
+   dcWindSpeed = 2                      // Wind speed for design conditions, mph
+
+METER   "MtrElec"  
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-2-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-2-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-2-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-2-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-2-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-2-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-2-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-2-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-2-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-2-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-3-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-3-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-3-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-3-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-3-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-3-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-3-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-3-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-3-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-3-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-4-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-4-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-4-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-4-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-4-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-4-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-4-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-4-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-4-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-4-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-5-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-5-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-5-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-5-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-5-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-5-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-5-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-5-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-5-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-5-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-6-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-6-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-6-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-6-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-6-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-6-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-6-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-6-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-6-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-6-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-7-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-7-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-7-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-7-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-7-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-7-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-7-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-7-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-7-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-7-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-8-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-8-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-8-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-8-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-8-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-8-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-8-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-8-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-8-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-8-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-9-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-9-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-9-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-9-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-9-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-9-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-9-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-9-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-9-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-9-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-10-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-10-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-10-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-10-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-10-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-10-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-10-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-10-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-10-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-10-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-11-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-11-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-11-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-11-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-11-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-11-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-11-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-11-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-11-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-11-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-12-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-12-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-12-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-12-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-12-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-12-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-12-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-12-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-12-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-12-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-13-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-13-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-13-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-13-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-13-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-13-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-13-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-13-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-13-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-13-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-14-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-14-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-14-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-14-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-14-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-14-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-14-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-14-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-14-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-14-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-15-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-15-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-15-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-15-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-15-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-15-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-15-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-15-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-15-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-15-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-16-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-16-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-16-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-16-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-16-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-16-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-16-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-16-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-16-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-16-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-17-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-17-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-17-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-17-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-17-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-17-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-17-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-17-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-17-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-17-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-18-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-18-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-18-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-18-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-18-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-18-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-18-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-18-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-18-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-18-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-19-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-19-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-19-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-19-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-19-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-19-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-19-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-19-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-19-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-19-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-20-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-20-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-20-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-20-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-20-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-20-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-20-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-20-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-20-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-20-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-21-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-21-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-21-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-21-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-21-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-21-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-21-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-21-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-21-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-21-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-22-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-22-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-22-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-22-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-22-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-22-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-22-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-22-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-22-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-22-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-23-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-23-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-23-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-23-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-23-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-23-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-23-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-23-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-23-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-23-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-24-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-24-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-24-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-24-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-24-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-24-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-24-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-24-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-24-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-24-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-25-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-25-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-25-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-25-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-25-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-25-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-25-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-25-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-25-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-25-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-26-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-26-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-26-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-26-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-26-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-26-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-26-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-26-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-26-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-26-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-27-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-27-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-27-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-27-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-27-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-27-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-27-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-27-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-27-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-27-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-28-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-28-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-28-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-28-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-28-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-28-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-28-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-28-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-28-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-28-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-29-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-29-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-29-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-29-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-29-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-29-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-29-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-29-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-29-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-29-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-30-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-30-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-30-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-30-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-30-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-30-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-30-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-30-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-30-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-30-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-31-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-31-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-31-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-31-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-31-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-31-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-31-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-31-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-31-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-31-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-32-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-32-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-32-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-32-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-32-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-32-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-32-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-32-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-32-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-32-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-33-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-33-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-33-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-33-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-33-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-33-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-33-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-33-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-33-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-33-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-34-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-34-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-34-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-34-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-34-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-34-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-34-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-34-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-34-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-34-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-35-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-35-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-35-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-35-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-35-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-35-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-35-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-35-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-35-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-35-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-36-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-36-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-36-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-36-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-36-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-36-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-36-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-36-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-36-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-36-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-37-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-37-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-37-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-37-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-37-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-37-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-37-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-37-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-37-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-37-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-38-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-38-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-38-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-38-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-38-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-38-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-38-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-38-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-38-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-38-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-39-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-39-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-39-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-39-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-39-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-39-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-39-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-39-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-39-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-39-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-40-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-40-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-40-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-40-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-40-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-40-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-40-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-40-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-40-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-40-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-41-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-41-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-41-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-41-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-41-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-41-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-41-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-41-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-41-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-41-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-42-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-42-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-42-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-42-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-42-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-42-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-42-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-42-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-42-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-42-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-43-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-43-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-43-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-43-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-43-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-43-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-43-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-43-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-43-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-43-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-44-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-44-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-44-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-44-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-44-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-44-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-44-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-44-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-44-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-44-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-45-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-45-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-45-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-45-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-45-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-45-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-45-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-45-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-45-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-45-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-46-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-46-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-46-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-46-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-46-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-46-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-46-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-46-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-46-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-46-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-47-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-47-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-47-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-47-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-47-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-47-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-47-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-47-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-47-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-47-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-48-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-48-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-48-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-48-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-48-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-48-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-48-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-48-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-48-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-48-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-49-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-49-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-49-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-49-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-49-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-49-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-49-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-49-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-49-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-49-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-50-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-50-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-50-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-50-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-50-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-50-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-50-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-50-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-50-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-50-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-51-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-51-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-51-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-51-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-51-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-51-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-51-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-51-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-51-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-51-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-52-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-52-htgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 0, 5, 17, 47
+      pmGXRefValue = 47
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-52-htgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-52-htgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 0.414067,            // 0F
+                   0.4764,              // 5F
+                   0.626,               // 17F
+                   1                    // 47F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-52-htgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 1.776497,            // 0F
+                   1.97852,             // 5F
+                   2.414382,            // 17F
+                   3.273178             // 47F
+
+PERFORMANCEMAP   "t24-SplitHeatPumpPM-52-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-52-clgdbtaxis"  
+      pmGXType = "DBT"
+      pmGXValues = 40, 48, 82, 95, 125
+      pmGXRefValue = 95
+
+   PMGRIDAXIS   "t24-SplitHeatPumpPM-52-clgspdaxis"  
+      pmGXType = "Speed"
+      pmGXValues = 1
+      pmGXRefValue = 1
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-52-clgcapdata"  
+      pmLUType = "CapRat"
+      pmLUValues = 1.290231,            // 40F
+                   1.24779,             // 48.0F
+                   1.0686,              // 82F
+                   1,                   // 95F
+                   0.841692             // 125F
+
+   PMLOOKUPDATA   "t24-SplitHeatPumpPM-52-clgcopdata"  
+      pmLUType = "COP"
+      pmLUValues = 10.541931,           // 40F
+                   10.195166,           // 48.0F
+                   4.36554,             // 82F
+                   3.428933,            // 95F
+                   2.105477             // 125F
+
+DOAS   "doas-Res Central Supply (All Units)"  
+   oaSupFanElecPwr = 0.441              // Fan input power per unit air flow (at design flow and pressure), W/cfm
+   oaSupFanEndUse = "FANV"              // Enduse to apply fan energy usage to
+   oaExhFanElecPwr = 0.35               // Fan input power per unit air flow (at design flow and pressure), W/cfm
+   oaExhFanEndUse = "FANV"              // Enduse to exhaust fan energy usage to
+   oaHXBypass = "No"                    // This field denotes whether the heat exchanger is locked out when economizer is operating.
+
+PVARRAY   "T24 PVArray-sim"  
+   pvDCSysSize = 275.75505              // kW
+   pvModuleType = "Standard"
+   pvArrayType = "FixedOpenRack"
+   pvTilt = 22.619884                   // deg
+   pvAzm = 170                          // deg
+   pvSIF = 2                            // frac
+   pvInverterEff = 0.96                 // frac
+   pvSysLosses = 0.1744                 // frac
+   pvElecMtr = "MtrElec"
+
+BATTERY   "T24 Batt-sim"  
+   btChgEff = 0.95
+   btDschgEff = 0.95
+   btMaxCap = 222.422515                // kWh
+   btMaxChgPwr = 65.418387              // kW
+   btMaxDschgPwr = 65.418387            // kW
+   btChgReq = select( $dsDay>0, 0,   $month>(1-1) && $month<(12+1) && $hour<19 && $hour>(11-1),-min(@BATTERY[ 1].loadSeen, 0), default -max( @BATTERY[ 1].loadSeen, 0))    // kW
+   btMeter = "MtrElec"
+
+EXPORT   "ExportElec"  
+   exExportfile = "Primary"             // Name of EXPORTFILE to write simulation results to
+   exType = "MTR"                       // Export type
+   exFreq = "HOUR"                      // Time interval for generating rows of export data
+   exMeter = "MtrElec"                  // Meter to report
+   exBtuSf = 1000                       // Result scaling factor (1,000 reports kBtu)
+   exDayBeg = Jan 1                     // initial day of export period
+   exDayEnd = Dec 31                    // final day of export period
+
+
+ RUN
+ $EOF

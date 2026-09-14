@@ -1,0 +1,16 @@
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01E_MF VENTILATION\MF08_1E_CSUP_CEXH_SZ_CZ09\MF8UNIT_CSUP_CEXH_SZHP_CZ09 - RUN\MF8UNIT_CSUP_CEXH_SZHP_CZ09 - AB-CSE.CSE(2224): Info: 
+  doas 'doas-Central IAQ Balanced': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01E_MF VENTILATION\MF08_1E_CSUP_CEXH_SZ_CZ09\MF8UNIT_CSUP_CEXH_SZHP_CZ09 - RUN\MF8UNIT_CSUP_CEXH_SZHP_CZ09 - AB-CSE.CSE(2224): Info: 
+  doas 'doas-Central IAQ Balanced': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01E_MF VENTILATION\MF08_1E_CSUP_CEXH_SZ_CZ09\MF8UNIT_CSUP_CEXH_SZHP_CZ09 - RUN\MF8UNIT_CSUP_CEXH_SZHP_CZ09 - AB-CSE.CSE(2224): Info: 
+  doas 'doas-Central IAQ Balanced': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+Warning: Zone 'Attic-atc': Condensation occurred in 262 subhours of run.
+    Total condensation heat = 71.0083 kBtu.
+---------------

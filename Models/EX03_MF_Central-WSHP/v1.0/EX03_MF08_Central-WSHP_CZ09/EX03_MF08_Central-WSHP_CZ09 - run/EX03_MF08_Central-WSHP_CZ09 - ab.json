@@ -1,0 +1,3530 @@
+{
+	"Building" : 
+	{
+		"Building" : 
+		{
+			"maximum_number_of_warmup_days" : 50,
+			"north_axis" : 0.0,
+			"solar_distribution" : "FullExterior",
+			"terrain" : "Suburbs"
+		}
+	},
+	"GlobalGeometryRules" : 
+	{
+		"GlobalGeometryRules 1" : 
+		{
+			"coordinate_system" : "Relative",
+			"daylighting_reference_point_coordinate_system" : "Relative",
+			"rectangular_surface_coordinate_system" : "Relative",
+			"starting_vertex_position" : "UpperLeftCorner",
+			"vertex_entry_direction" : "Counterclockwise"
+		}
+	},
+	"OutdoorAir:Node" : 
+	{
+		"Model Outdoor Air Node" : {}
+	},
+	"Output:Meter:MeterFileOnly" : 
+	{
+		"Output:Meter:MeterFileOnly 1" : 
+		{
+			"key_name" : "Chillers:Coal",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 10" : 
+		{
+			"key_name" : "Cogeneration:NaturalGas",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 11" : 
+		{
+			"key_name" : "ComplianceLtg:InteriorLights:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 12" : 
+		{
+			"key_name" : "Cooling:Coal",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 13" : 
+		{
+			"key_name" : "Cooling:DistrictCooling",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 14" : 
+		{
+			"key_name" : "Cooling:DistrictHeatingWater",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 15" : 
+		{
+			"key_name" : "Cooling:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 16" : 
+		{
+			"key_name" : "Cooling:NaturalGas",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 17" : 
+		{
+			"key_name" : "ExteriorEquipment:Coal",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 18" : 
+		{
+			"key_name" : "ExteriorEquipment:DistrictCooling",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 19" : 
+		{
+			"key_name" : "ExteriorEquipment:DistrictHeatingWater",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 2" : 
+		{
+			"key_name" : "Chillers:DistrictCooling",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 20" : 
+		{
+			"key_name" : "ExteriorEquipment:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 21" : 
+		{
+			"key_name" : "ExteriorEquipment:NaturalGas",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 22" : 
+		{
+			"key_name" : "ExteriorLights:Coal",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 23" : 
+		{
+			"key_name" : "ExteriorLights:DistrictCooling",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 24" : 
+		{
+			"key_name" : "ExteriorLights:DistrictHeatingWater",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 25" : 
+		{
+			"key_name" : "ExteriorLights:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 26" : 
+		{
+			"key_name" : "ExteriorLights:NaturalGas",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 27" : 
+		{
+			"key_name" : "Fans:Coal",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 28" : 
+		{
+			"key_name" : "Fans:DistrictCooling",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 29" : 
+		{
+			"key_name" : "Fans:DistrictHeatingWater",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 3" : 
+		{
+			"key_name" : "Chillers:DistrictHeatingWater",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 30" : 
+		{
+			"key_name" : "Fans:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 31" : 
+		{
+			"key_name" : "Fans:NaturalGas",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 32" : 
+		{
+			"key_name" : "Heating:Coal",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 33" : 
+		{
+			"key_name" : "Heating:DistrictCooling",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 34" : 
+		{
+			"key_name" : "Heating:DistrictHeatingWater",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 35" : 
+		{
+			"key_name" : "Heating:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 36" : 
+		{
+			"key_name" : "Heating:NaturalGas",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 37" : 
+		{
+			"key_name" : "HeatRecovery:Coal",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 38" : 
+		{
+			"key_name" : "HeatRecovery:DistrictCooling",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 39" : 
+		{
+			"key_name" : "HeatRecovery:DistrictHeatingWater",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 4" : 
+		{
+			"key_name" : "Chillers:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 40" : 
+		{
+			"key_name" : "HeatRecovery:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 41" : 
+		{
+			"key_name" : "HeatRecovery:NaturalGas",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 42" : 
+		{
+			"key_name" : "HeatRejection:Coal",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 43" : 
+		{
+			"key_name" : "HeatRejection:DistrictCooling",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 44" : 
+		{
+			"key_name" : "HeatRejection:DistrictHeatingWater",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 45" : 
+		{
+			"key_name" : "HeatRejection:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 46" : 
+		{
+			"key_name" : "HeatRejection:NaturalGas",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 47" : 
+		{
+			"key_name" : "Humidifier:Coal",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 48" : 
+		{
+			"key_name" : "Humidifier:DistrictCooling",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 49" : 
+		{
+			"key_name" : "Humidifier:DistrictHeatingWater",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 5" : 
+		{
+			"key_name" : "Chillers:NaturalGas",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 50" : 
+		{
+			"key_name" : "Humidifier:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 51" : 
+		{
+			"key_name" : "Humidifier:NaturalGas",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 52" : 
+		{
+			"key_name" : "InteriorEquipment:Coal",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 53" : 
+		{
+			"key_name" : "InteriorEquipment:DistrictCooling",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 54" : 
+		{
+			"key_name" : "InteriorEquipment:DistrictHeatingWater",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 55" : 
+		{
+			"key_name" : "InteriorEquipment:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 56" : 
+		{
+			"key_name" : "InteriorEquipment:NaturalGas",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 57" : 
+		{
+			"key_name" : "InteriorLights:Coal",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 58" : 
+		{
+			"key_name" : "InteriorLights:DistrictCooling",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 59" : 
+		{
+			"key_name" : "InteriorLights:DistrictHeatingWater",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 6" : 
+		{
+			"key_name" : "Cogeneration:Coal",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 60" : 
+		{
+			"key_name" : "InteriorLights:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 61" : 
+		{
+			"key_name" : "InteriorLights:NaturalGas",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 62" : 
+		{
+			"key_name" : "Internal Transport:InteriorEquipment:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 63" : 
+		{
+			"key_name" : "NonComplianceLtg:InteriorLights:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 64" : 
+		{
+			"key_name" : "NonReg Ltg:ExteriorLights:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 65" : 
+		{
+			"key_name" : "Process:ExteriorEquipment:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 66" : 
+		{
+			"key_name" : "Process:ExteriorEquipment:NaturalGas",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 67" : 
+		{
+			"key_name" : "Process:InteriorEquipment:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 68" : 
+		{
+			"key_name" : "Process:InteriorEquipment:NaturalGas",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 69" : 
+		{
+			"key_name" : "Pumps:Coal",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 7" : 
+		{
+			"key_name" : "Cogeneration:DistrictCooling",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 70" : 
+		{
+			"key_name" : "Pumps:DistrictCooling",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 71" : 
+		{
+			"key_name" : "Pumps:DistrictHeatingWater",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 72" : 
+		{
+			"key_name" : "Pumps:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 73" : 
+		{
+			"key_name" : "Pumps:NaturalGas",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 74" : 
+		{
+			"key_name" : "Receptacle:ExteriorEquipment:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 75" : 
+		{
+			"key_name" : "Receptacle:ExteriorEquipment:NaturalGas",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 76" : 
+		{
+			"key_name" : "Receptacle:InteriorEquipment:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 77" : 
+		{
+			"key_name" : "Receptacle:InteriorEquipment:NaturalGas",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 78" : 
+		{
+			"key_name" : "Refrig:ExteriorEquipment:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 79" : 
+		{
+			"key_name" : "Refrig:InteriorEquipment:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 8" : 
+		{
+			"key_name" : "Cogeneration:DistrictHeatingWater",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 80" : 
+		{
+			"key_name" : "Refrigeration:Coal",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 81" : 
+		{
+			"key_name" : "Refrigeration:DistrictCooling",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 82" : 
+		{
+			"key_name" : "Refrigeration:DistrictHeatingWater",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 83" : 
+		{
+			"key_name" : "Refrigeration:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 84" : 
+		{
+			"key_name" : "Refrigeration:NaturalGas",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 85" : 
+		{
+			"key_name" : "Reg Ltg:ExteriorLights:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 86" : 
+		{
+			"key_name" : "WaterSystems:Coal",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 87" : 
+		{
+			"key_name" : "WaterSystems:DistrictCooling",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 88" : 
+		{
+			"key_name" : "WaterSystems:DistrictHeatingWater",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 89" : 
+		{
+			"key_name" : "WaterSystems:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 9" : 
+		{
+			"key_name" : "Cogeneration:Electricity",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 90" : 
+		{
+			"key_name" : "WaterSystems:NaturalGas",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 91" : 
+		{
+			"key_name" : "Coal:Facility",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 92" : 
+		{
+			"key_name" : "DistrictCooling:Facility",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 93" : 
+		{
+			"key_name" : "DistrictHeatingWater:Facility",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 94" : 
+		{
+			"key_name" : "Electricity:Facility",
+			"reporting_frequency" : "Hourly"
+		},
+		"Output:Meter:MeterFileOnly 95" : 
+		{
+			"key_name" : "NaturalGas:Facility",
+			"reporting_frequency" : "Hourly"
+		}
+	},
+	"Output:SQLite" : 
+	{
+		"Output:SQLite 1" : 
+		{
+			"option_type" : "SimpleAndTabular"
+		}
+	},
+	"Output:Table:SummaryReports" : 
+	{
+		"Output:Table:SummaryReports 1" : 
+		{
+			"reports" : 
+			[
+				{
+					"report_name" : "AllSummary"
+				}
+			]
+		}
+	},
+	"Output:Variable" : 
+	{
+		"Output:Variable 1" : 
+		{
+			"reporting_frequency" : "Hourly",
+			"variable_name" : "Chiller Evaporator Cooling Rate"
+		},
+		"Output:Variable 10" : 
+		{
+			"reporting_frequency" : "Hourly",
+			"variable_name" : "Boiler Heating Rate"
+		},
+		"Output:Variable 11" : 
+		{
+			"reporting_frequency" : "Hourly",
+			"variable_name" : "Plant Supply Side Inlet Temperature"
+		},
+		"Output:Variable 12" : 
+		{
+			"reporting_frequency" : "Hourly",
+			"variable_name" : "Cooling Tower Heat Transfer Rate"
+		},
+		"Output:Variable 13" : 
+		{
+			"reporting_frequency" : "Hourly",
+			"variable_name" : "Plant Supply Side Outlet Temperature"
+		},
+		"Output:Variable 14" : 
+		{
+			"reporting_frequency" : "Hourly",
+			"variable_name" : "Boiler Heating Rate"
+		},
+		"Output:Variable 15" : 
+		{
+			"reporting_frequency" : "Hourly",
+			"variable_name" : "Pump Electricity Rate"
+		},
+		"Output:Variable 16" : 
+		{
+			"reporting_frequency" : "Hourly",
+			"variable_name" : "Pump Mass Flow Rate"
+		},
+		"Output:Variable 17" : 
+		{
+			"reporting_frequency" : "Hourly",
+			"variable_name" : "Pump Outlet Temperature"
+		},
+		"Output:Variable 18" : 
+		{
+			"reporting_frequency" : "Hourly",
+			"variable_name" : "Debug Plant Loop Bypass Fraction"
+		},
+		"Output:Variable 19" : 
+		{
+			"reporting_frequency" : "Hourly",
+			"variable_name" : "Debug Plant Loop Bypass Fraction"
+		},
+		"Output:Variable 2" : 
+		{
+			"reporting_frequency" : "Hourly",
+			"variable_name" : "Chiller Electricity Rate"
+		},
+		"Output:Variable 20" : 
+		{
+			"reporting_frequency" : "Hourly",
+			"variable_name" : "Chiller Condenser Heat Transfer Rate"
+		},
+		"Output:Variable 21" : 
+		{
+			"key_value" : "*",
+			"reporting_frequency" : "Timestep",
+			"variable_name" : "Site Outdoor Air Drybulb Temperature"
+		},
+		"Output:Variable 3" : 
+		{
+			"reporting_frequency" : "Hourly",
+			"variable_name" : "Cooling Tower Heat Transfer Rate"
+		},
+		"Output:Variable 4" : 
+		{
+			"reporting_frequency" : "Hourly",
+			"variable_name" : "Cooling Tower Fan Electricity Rate"
+		},
+		"Output:Variable 5" : 
+		{
+			"reporting_frequency" : "Hourly",
+			"variable_name" : "Boiler NaturalGas Rate"
+		},
+		"Output:Variable 6" : 
+		{
+			"reporting_frequency" : "Hourly",
+			"variable_name" : "Boiler Ancillary Electricity Rate"
+		},
+		"Output:Variable 7" : 
+		{
+			"reporting_frequency" : "Hourly",
+			"variable_name" : "Plant Supply Side Cooling Demand Rate"
+		},
+		"Output:Variable 8" : 
+		{
+			"reporting_frequency" : "Hourly",
+			"variable_name" : "Plant Supply Side Heating Demand Rate"
+		},
+		"Output:Variable 9" : 
+		{
+			"reporting_frequency" : "Hourly",
+			"variable_name" : "Chiller Evaporator Cooling Rate"
+		}
+	},
+	"Output:VariableDictionary" : 
+	{
+		"Output:VariableDictionary 1" : 
+		{
+			"key_field" : "IDF",
+			"sort_option" : "Unsorted"
+		}
+	},
+	"OutputControl:ReportingTolerances" : 
+	{
+		"OutputControl:ReportingTolerances 1" : 
+		{
+			"tolerance_for_time_cooling_setpoint_not_met" : 0.56000000000000005,
+			"tolerance_for_time_heating_setpoint_not_met" : 0.56000000000000005
+		}
+	},
+	"OutputControl:Table:Style" : 
+	{
+		"OutputControl:Table:Style 1" : 
+		{
+			"column_separator" : "HTML",
+			"unit_conversion" : "InchPound"
+		}
+	},
+	"RunPeriod" : 
+	{
+		"CA_Title24_2025_LOS-ANGELES-USC" : 
+		{
+			"apply_weekend_holiday_rule" : "Yes",
+			"begin_day_of_month" : 1,
+			"begin_month" : 1,
+			"begin_year" : 2009.0,
+			"day_of_week_for_start_day" : "Thursday",
+			"end_day_of_month" : 31,
+			"end_month" : 12,
+			"end_year" : 2009.0,
+			"use_weather_file_daylight_saving_period" : "No",
+			"use_weather_file_holidays_and_special_days" : "No",
+			"use_weather_file_rain_indicators" : "Yes",
+			"use_weather_file_snow_indicators" : "Yes"
+		}
+	},
+	"RunPeriodControl:SpecialDays" : 
+	{
+		"Christmas Day" : 
+		{
+			"start_date" : "12/25"
+		},
+		"Columbus Day" : 
+		{
+			"start_date" : "2nd Monday in October"
+		},
+		"Independence Day" : 
+		{
+			"start_date" : "7/4"
+		},
+		"Labor Day" : 
+		{
+			"start_date" : "1st Monday in September"
+		},
+		"Martin Luther King Day" : 
+		{
+			"start_date" : "3rd Monday in January"
+		},
+		"Memorial Day" : 
+		{
+			"start_date" : "Last Monday in May"
+		},
+		"New Year's Day" : 
+		{
+			"start_date" : "1/1"
+		},
+		"Presidents Day" : 
+		{
+			"start_date" : "3rd Monday in February"
+		},
+		"Thanksgiving Day" : 
+		{
+			"start_date" : "4th Thursday in November"
+		},
+		"Veterans Day" : 
+		{
+			"start_date" : "11/11"
+		}
+	},
+	"Schedule:Constant" : 
+	{
+		"Always Off Discrete" : 
+		{
+			"hourly_value" : 0.0,
+			"schedule_type_limits_name" : "On Off Limits"
+		},
+		"Always On Continuous" : 
+		{
+			"hourly_value" : 1.0,
+			"schedule_type_limits_name" : "Fractional"
+		},
+		"Always On Discrete" : 
+		{
+			"hourly_value" : 1.0,
+			"schedule_type_limits_name" : "On Off Limits"
+		}
+	},
+	"Schedule:Day:Interval" : 
+	{
+		"CARes2013 Equipment Hrly" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 0.036999999999999998
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 0.035000000000000003
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 0.034000000000000002
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 0.034000000000000002
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 0.032000000000000001
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 0.035999999999999997
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 0.042000000000000003
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 0.043999999999999997
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 0.036999999999999998
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 0.032000000000000001
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 0.033000000000000002
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 0.033000000000000002
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 0.032000000000000001
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 0.033000000000000002
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 0.035000000000000003
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 0.036999999999999998
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 0.043999999999999997
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 0.052999999999999999
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 0.058000000000000003
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 0.059999999999999998
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 0.062
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 0.059999999999999998
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 0.051999999999999998
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 0.044999999999999998
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Fraction"
+		},
+		"CARes2013 ExtLighting Hrly" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 0.0
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 0.0
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 0.0
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 0.0
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 0.0
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 0.0
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 0.0
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 0.0
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 0.0
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 0.0
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 0.0
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 0.0
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 0.0
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 0.0
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 0.0
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 0.0
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 0.0
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 0.0
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 0.0
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 0.0
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 0.25
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 0.25
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 0.25
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 0.25
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Fraction"
+		},
+		"CARes2013 InsLighting Hrly" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 0.023
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 0.019
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 0.014999999999999999
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 0.017000000000000001
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 0.021000000000000001
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 0.031
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 0.042000000000000003
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 0.041000000000000002
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 0.034000000000000002
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 0.029000000000000001
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 0.027
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 0.025000000000000001
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 0.021000000000000001
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 0.021000000000000001
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 0.021000000000000001
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 0.025999999999999999
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 0.031
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 0.043999999999999997
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 0.084000000000000005
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 0.11799999999999999
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 0.113
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 0.096000000000000002
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 0.063
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 0.037999999999999999
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Fraction"
+		},
+		"CARes2013 Liv Cool Hrly" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 28.3333333333333
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 28.3333333333333
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 28.3333333333333
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 28.3333333333333
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 28.3333333333333
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 28.3333333333333
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 27.7777777777778
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 27.2222222222222
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 26.6666666666667
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 26.1111111111111
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 25.5555555555556
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Temperature"
+		},
+		"CARes2013 Liv Heat Hrly" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 19.1666666666667
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 18.3333333333333
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Temperature"
+		},
+		"CARes2013 Occupancy Hrly" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 0.035000000000000003
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 0.035000000000000003
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 0.035000000000000003
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 0.035000000000000003
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 0.035000000000000003
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 0.058999999999999997
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 0.082000000000000003
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 0.055
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 0.027
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 0.014
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 0.014
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 0.014
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 0.014
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 0.014
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 0.019
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 0.027
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 0.041000000000000002
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 0.055
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 0.068000000000000005
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 0.082000000000000003
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 0.082000000000000003
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 0.070000000000000007
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 0.052999999999999999
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 0.035000000000000003
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Fraction"
+		},
+		"CARes2013 SZ Cool Hrly" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 28.3333333333333
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 28.3333333333333
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 28.3333333333333
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 28.3333333333333
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 28.3333333333333
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 28.3333333333333
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 27.7777777777778
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 27.2222222222222
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 26.6666666666667
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 26.1111111111111
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 25.5555555555556
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Temperature"
+		},
+		"CARes2013 SZ Heat Hrly" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 19.1666666666667
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 18.3333333333333
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Temperature"
+		},
+		"CARes2013 Slp Cool Hrly" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 28.3333333333333
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 28.3333333333333
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 28.3333333333333
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 28.3333333333333
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 28.3333333333333
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 28.3333333333333
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 27.7777777777778
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 27.2222222222222
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 26.6666666666667
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 26.1111111111111
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 25.5555555555556
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 25.5555555555556
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Temperature"
+		},
+		"CARes2013 Slp Heat Hrly" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 19.1666666666667
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 18.3333333333333
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 20.0
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 18.3333333333333
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Temperature"
+		},
+		"WaterMainCZ09Apr" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 14.8333333333333
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 14.8333333333333
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Temperature"
+		},
+		"WaterMainCZ09Aug" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 17.7222222222222
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 17.7222222222222
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Temperature"
+		},
+		"WaterMainCZ09Dec" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 14.6111111111111
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 14.6111111111111
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Temperature"
+		},
+		"WaterMainCZ09Feb" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 14.2222222222222
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 14.2222222222222
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Temperature"
+		},
+		"WaterMainCZ09Jan" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 14.2777777777778
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 14.2777777777778
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Temperature"
+		},
+		"WaterMainCZ09Jul" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 16.8888888888889
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 16.8888888888889
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Temperature"
+		},
+		"WaterMainCZ09Jun" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 16.2222222222222
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 16.2222222222222
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Temperature"
+		},
+		"WaterMainCZ09Mar" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 14.4444444444444
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 14.4444444444444
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Temperature"
+		},
+		"WaterMainCZ09May" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 14.9444444444444
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 14.9444444444444
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Temperature"
+		},
+		"WaterMainCZ09Nov" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 16.2777777777778
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 16.2777777777778
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Temperature"
+		},
+		"WaterMainCZ09Oct" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 18.0
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 18.0
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Temperature"
+		},
+		"WaterMainCZ09Sep" : 
+		{
+			"data" : 
+			[
+				{
+					"time" : "01:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "02:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "03:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "04:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "05:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "06:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "07:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "08:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "09:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "10:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "11:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "12:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "13:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "14:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "15:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "16:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "17:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "18:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "19:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "20:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "21:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "22:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "23:00",
+					"value_until_time" : 18.0555555555556
+				},
+				{
+					"time" : "24:00",
+					"value_until_time" : 18.0555555555556
+				}
+			],
+			"interpolate_to_timestep" : "No",
+			"schedule_type_limits_name" : "Temperature"
+		}
+	},
+	"Schedule:Week:Daily" : 
+	{
+		"WaterMainCZ09AprWk" : 
+		{
+			"customday1_schedule_day_name" : "WaterMainCZ09Apr",
+			"customday2_schedule_day_name" : "WaterMainCZ09Apr",
+			"friday_schedule_day_name" : "WaterMainCZ09Apr",
+			"holiday_schedule_day_name" : "WaterMainCZ09Apr",
+			"monday_schedule_day_name" : "WaterMainCZ09Apr",
+			"saturday_schedule_day_name" : "WaterMainCZ09Apr",
+			"summerdesignday_schedule_day_name" : "WaterMainCZ09Apr",
+			"sunday_schedule_day_name" : "WaterMainCZ09Apr",
+			"thursday_schedule_day_name" : "WaterMainCZ09Apr",
+			"tuesday_schedule_day_name" : "WaterMainCZ09Apr",
+			"wednesday_schedule_day_name" : "WaterMainCZ09Apr",
+			"winterdesignday_schedule_day_name" : "WaterMainCZ09Apr"
+		},
+		"WaterMainCZ09AugWk" : 
+		{
+			"customday1_schedule_day_name" : "WaterMainCZ09Aug",
+			"customday2_schedule_day_name" : "WaterMainCZ09Aug",
+			"friday_schedule_day_name" : "WaterMainCZ09Aug",
+			"holiday_schedule_day_name" : "WaterMainCZ09Aug",
+			"monday_schedule_day_name" : "WaterMainCZ09Aug",
+			"saturday_schedule_day_name" : "WaterMainCZ09Aug",
+			"summerdesignday_schedule_day_name" : "WaterMainCZ09Aug",
+			"sunday_schedule_day_name" : "WaterMainCZ09Aug",
+			"thursday_schedule_day_name" : "WaterMainCZ09Aug",
+			"tuesday_schedule_day_name" : "WaterMainCZ09Aug",
+			"wednesday_schedule_day_name" : "WaterMainCZ09Aug",
+			"winterdesignday_schedule_day_name" : "WaterMainCZ09Aug"
+		},
+		"WaterMainCZ09DecWk" : 
+		{
+			"customday1_schedule_day_name" : "WaterMainCZ09Dec",
+			"customday2_schedule_day_name" : "WaterMainCZ09Dec",
+			"friday_schedule_day_name" : "WaterMainCZ09Dec",
+			"holiday_schedule_day_name" : "WaterMainCZ09Dec",
+			"monday_schedule_day_name" : "WaterMainCZ09Dec",
+			"saturday_schedule_day_name" : "WaterMainCZ09Dec",
+			"summerdesignday_schedule_day_name" : "WaterMainCZ09Dec",
+			"sunday_schedule_day_name" : "WaterMainCZ09Dec",
+			"thursday_schedule_day_name" : "WaterMainCZ09Dec",
+			"tuesday_schedule_day_name" : "WaterMainCZ09Dec",
+			"wednesday_schedule_day_name" : "WaterMainCZ09Dec",
+			"winterdesignday_schedule_day_name" : "WaterMainCZ09Dec"
+		},
+		"WaterMainCZ09FebWk" : 
+		{
+			"customday1_schedule_day_name" : "WaterMainCZ09Feb",
+			"customday2_schedule_day_name" : "WaterMainCZ09Feb",
+			"friday_schedule_day_name" : "WaterMainCZ09Feb",
+			"holiday_schedule_day_name" : "WaterMainCZ09Feb",
+			"monday_schedule_day_name" : "WaterMainCZ09Feb",
+			"saturday_schedule_day_name" : "WaterMainCZ09Feb",
+			"summerdesignday_schedule_day_name" : "WaterMainCZ09Feb",
+			"sunday_schedule_day_name" : "WaterMainCZ09Feb",
+			"thursday_schedule_day_name" : "WaterMainCZ09Feb",
+			"tuesday_schedule_day_name" : "WaterMainCZ09Feb",
+			"wednesday_schedule_day_name" : "WaterMainCZ09Feb",
+			"winterdesignday_schedule_day_name" : "WaterMainCZ09Feb"
+		},
+		"WaterMainCZ09JanWk" : 
+		{
+			"customday1_schedule_day_name" : "WaterMainCZ09Jan",
+			"customday2_schedule_day_name" : "WaterMainCZ09Jan",
+			"friday_schedule_day_name" : "WaterMainCZ09Jan",
+			"holiday_schedule_day_name" : "WaterMainCZ09Jan",
+			"monday_schedule_day_name" : "WaterMainCZ09Jan",
+			"saturday_schedule_day_name" : "WaterMainCZ09Jan",
+			"summerdesignday_schedule_day_name" : "WaterMainCZ09Jan",
+			"sunday_schedule_day_name" : "WaterMainCZ09Jan",
+			"thursday_schedule_day_name" : "WaterMainCZ09Jan",
+			"tuesday_schedule_day_name" : "WaterMainCZ09Jan",
+			"wednesday_schedule_day_name" : "WaterMainCZ09Jan",
+			"winterdesignday_schedule_day_name" : "WaterMainCZ09Jan"
+		},
+		"WaterMainCZ09JulWk" : 
+		{
+			"customday1_schedule_day_name" : "WaterMainCZ09Jul",
+			"customday2_schedule_day_name" : "WaterMainCZ09Jul",
+			"friday_schedule_day_name" : "WaterMainCZ09Jul",
+			"holiday_schedule_day_name" : "WaterMainCZ09Jul",
+			"monday_schedule_day_name" : "WaterMainCZ09Jul",
+			"saturday_schedule_day_name" : "WaterMainCZ09Jul",
+			"summerdesignday_schedule_day_name" : "WaterMainCZ09Jul",
+			"sunday_schedule_day_name" : "WaterMainCZ09Jul",
+			"thursday_schedule_day_name" : "WaterMainCZ09Jul",
+			"tuesday_schedule_day_name" : "WaterMainCZ09Jul",
+			"wednesday_schedule_day_name" : "WaterMainCZ09Jul",
+			"winterdesignday_schedule_day_name" : "WaterMainCZ09Jul"
+		},
+		"WaterMainCZ09JunWk" : 
+		{
+			"customday1_schedule_day_name" : "WaterMainCZ09Jun",
+			"customday2_schedule_day_name" : "WaterMainCZ09Jun",
+			"friday_schedule_day_name" : "WaterMainCZ09Jun",
+			"holiday_schedule_day_name" : "WaterMainCZ09Jun",
+			"monday_schedule_day_name" : "WaterMainCZ09Jun",
+			"saturday_schedule_day_name" : "WaterMainCZ09Jun",
+			"summerdesignday_schedule_day_name" : "WaterMainCZ09Jun",
+			"sunday_schedule_day_name" : "WaterMainCZ09Jun",
+			"thursday_schedule_day_name" : "WaterMainCZ09Jun",
+			"tuesday_schedule_day_name" : "WaterMainCZ09Jun",
+			"wednesday_schedule_day_name" : "WaterMainCZ09Jun",
+			"winterdesignday_schedule_day_name" : "WaterMainCZ09Jun"
+		},
+		"WaterMainCZ09MarWk" : 
+		{
+			"customday1_schedule_day_name" : "WaterMainCZ09Mar",
+			"customday2_schedule_day_name" : "WaterMainCZ09Mar",
+			"friday_schedule_day_name" : "WaterMainCZ09Mar",
+			"holiday_schedule_day_name" : "WaterMainCZ09Mar",
+			"monday_schedule_day_name" : "WaterMainCZ09Mar",
+			"saturday_schedule_day_name" : "WaterMainCZ09Mar",
+			"summerdesignday_schedule_day_name" : "WaterMainCZ09Mar",
+			"sunday_schedule_day_name" : "WaterMainCZ09Mar",
+			"thursday_schedule_day_name" : "WaterMainCZ09Mar",
+			"tuesday_schedule_day_name" : "WaterMainCZ09Mar",
+			"wednesday_schedule_day_name" : "WaterMainCZ09Mar",
+			"winterdesignday_schedule_day_name" : "WaterMainCZ09Mar"
+		},
+		"WaterMainCZ09MayWk" : 
+		{
+			"customday1_schedule_day_name" : "WaterMainCZ09May",
+			"customday2_schedule_day_name" : "WaterMainCZ09May",
+			"friday_schedule_day_name" : "WaterMainCZ09May",
+			"holiday_schedule_day_name" : "WaterMainCZ09May",
+			"monday_schedule_day_name" : "WaterMainCZ09May",
+			"saturday_schedule_day_name" : "WaterMainCZ09May",
+			"summerdesignday_schedule_day_name" : "WaterMainCZ09May",
+			"sunday_schedule_day_name" : "WaterMainCZ09May",
+			"thursday_schedule_day_name" : "WaterMainCZ09May",
+			"tuesday_schedule_day_name" : "WaterMainCZ09May",
+			"wednesday_schedule_day_name" : "WaterMainCZ09May",
+			"winterdesignday_schedule_day_name" : "WaterMainCZ09May"
+		},
+		"WaterMainCZ09NovWk" : 
+		{
+			"customday1_schedule_day_name" : "WaterMainCZ09Nov",
+			"customday2_schedule_day_name" : "WaterMainCZ09Nov",
+			"friday_schedule_day_name" : "WaterMainCZ09Nov",
+			"holiday_schedule_day_name" : "WaterMainCZ09Nov",
+			"monday_schedule_day_name" : "WaterMainCZ09Nov",
+			"saturday_schedule_day_name" : "WaterMainCZ09Nov",
+			"summerdesignday_schedule_day_name" : "WaterMainCZ09Nov",
+			"sunday_schedule_day_name" : "WaterMainCZ09Nov",
+			"thursday_schedule_day_name" : "WaterMainCZ09Nov",
+			"tuesday_schedule_day_name" : "WaterMainCZ09Nov",
+			"wednesday_schedule_day_name" : "WaterMainCZ09Nov",
+			"winterdesignday_schedule_day_name" : "WaterMainCZ09Nov"
+		},
+		"WaterMainCZ09OctWk" : 
+		{
+			"customday1_schedule_day_name" : "WaterMainCZ09Oct",
+			"customday2_schedule_day_name" : "WaterMainCZ09Oct",
+			"friday_schedule_day_name" : "WaterMainCZ09Oct",
+			"holiday_schedule_day_name" : "WaterMainCZ09Oct",
+			"monday_schedule_day_name" : "WaterMainCZ09Oct",
+			"saturday_schedule_day_name" : "WaterMainCZ09Oct",
+			"summerdesignday_schedule_day_name" : "WaterMainCZ09Oct",
+			"sunday_schedule_day_name" : "WaterMainCZ09Oct",
+			"thursday_schedule_day_name" : "WaterMainCZ09Oct",
+			"tuesday_schedule_day_name" : "WaterMainCZ09Oct",
+			"wednesday_schedule_day_name" : "WaterMainCZ09Oct",
+			"winterdesignday_schedule_day_name" : "WaterMainCZ09Oct"
+		},
+		"WaterMainCZ09SepWk" : 
+		{
+			"customday1_schedule_day_name" : "WaterMainCZ09Sep",
+			"customday2_schedule_day_name" : "WaterMainCZ09Sep",
+			"friday_schedule_day_name" : "WaterMainCZ09Sep",
+			"holiday_schedule_day_name" : "WaterMainCZ09Sep",
+			"monday_schedule_day_name" : "WaterMainCZ09Sep",
+			"saturday_schedule_day_name" : "WaterMainCZ09Sep",
+			"summerdesignday_schedule_day_name" : "WaterMainCZ09Sep",
+			"sunday_schedule_day_name" : "WaterMainCZ09Sep",
+			"thursday_schedule_day_name" : "WaterMainCZ09Sep",
+			"tuesday_schedule_day_name" : "WaterMainCZ09Sep",
+			"wednesday_schedule_day_name" : "WaterMainCZ09Sep",
+			"winterdesignday_schedule_day_name" : "WaterMainCZ09Sep"
+		}
+	},
+	"Schedule:Year" : 
+	{
+		"WaterMainCZ09" : 
+		{
+			"schedule_type_limits_name" : "Temperature",
+			"schedule_weeks" : 
+			[
+				{
+					"end_day" : 31,
+					"end_month" : 1,
+					"schedule_week_name" : "WaterMainCZ09JanWk",
+					"start_day" : 1,
+					"start_month" : 1
+				},
+				{
+					"end_day" : 28,
+					"end_month" : 2,
+					"schedule_week_name" : "WaterMainCZ09FebWk",
+					"start_day" : 1,
+					"start_month" : 2
+				},
+				{
+					"end_day" : 31,
+					"end_month" : 3,
+					"schedule_week_name" : "WaterMainCZ09MarWk",
+					"start_day" : 1,
+					"start_month" : 3
+				},
+				{
+					"end_day" : 30,
+					"end_month" : 4,
+					"schedule_week_name" : "WaterMainCZ09AprWk",
+					"start_day" : 1,
+					"start_month" : 4
+				},
+				{
+					"end_day" : 31,
+					"end_month" : 5,
+					"schedule_week_name" : "WaterMainCZ09MayWk",
+					"start_day" : 1,
+					"start_month" : 5
+				},
+				{
+					"end_day" : 30,
+					"end_month" : 6,
+					"schedule_week_name" : "WaterMainCZ09JunWk",
+					"start_day" : 1,
+					"start_month" : 6
+				},
+				{
+					"end_day" : 31,
+					"end_month" : 7,
+					"schedule_week_name" : "WaterMainCZ09JulWk",
+					"start_day" : 1,
+					"start_month" : 7
+				},
+				{
+					"end_day" : 31,
+					"end_month" : 8,
+					"schedule_week_name" : "WaterMainCZ09AugWk",
+					"start_day" : 1,
+					"start_month" : 8
+				},
+				{
+					"end_day" : 30,
+					"end_month" : 9,
+					"schedule_week_name" : "WaterMainCZ09SepWk",
+					"start_day" : 1,
+					"start_month" : 9
+				},
+				{
+					"end_day" : 31,
+					"end_month" : 10,
+					"schedule_week_name" : "WaterMainCZ09OctWk",
+					"start_day" : 1,
+					"start_month" : 10
+				},
+				{
+					"end_day" : 30,
+					"end_month" : 11,
+					"schedule_week_name" : "WaterMainCZ09NovWk",
+					"start_day" : 1,
+					"start_month" : 11
+				},
+				{
+					"end_day" : 31,
+					"end_month" : 12,
+					"schedule_week_name" : "WaterMainCZ09DecWk",
+					"start_day" : 1,
+					"start_month" : 12
+				}
+			]
+		}
+	},
+	"ScheduleTypeLimits" : 
+	{
+		"Fraction" : 
+		{
+			"lower_limit_value" : 0.0,
+			"numeric_type" : "Continuous",
+			"unit_type" : "Dimensionless",
+			"upper_limit_value" : 1.0
+		},
+		"Fractional" : 
+		{
+			"lower_limit_value" : 0.0,
+			"numeric_type" : "Continuous",
+			"upper_limit_value" : 1.0
+		},
+		"On Off Limits" : 
+		{
+			"lower_limit_value" : 0.0,
+			"numeric_type" : "Discrete",
+			"upper_limit_value" : 1.0
+		},
+		"Temperature" : 
+		{
+			"unit_type" : "Temperature"
+		}
+	},
+	"SimulationControl" : 
+	{
+		"SimulationControl 1" : 
+		{
+			"do_plant_sizing_calculation" : "No",
+			"do_system_sizing_calculation" : "No",
+			"do_zone_sizing_calculation" : "No",
+			"run_simulation_for_sizing_periods" : "No",
+			"run_simulation_for_weather_file_run_periods" : "Yes"
+		}
+	},
+	"Site:Location" : 
+	{
+		"LOS ANGELES USC" : 
+		{
+			"elevation" : 54.559199999999997,
+			"latitude" : 38.689999999999998,
+			"longitude" : -121.59999999999999,
+			"time_zone" : -8.0
+		}
+	},
+	"Site:WaterMainsTemperature" : 
+	{
+		"Site:WaterMainsTemperature 1" : 
+		{
+			"calculation_method" : "Schedule",
+			"temperature_schedule_name" : "WaterMainCZ09"
+		}
+	},
+	"Sizing:Parameters" : 
+	{
+		"Sizing:Parameters 1" : 
+		{
+			"cooling_sizing_factor" : 1.0,
+			"heating_sizing_factor" : 1.0
+		}
+	},
+	"SizingPeriod:DesignDay" : 
+	{
+		"LOS ANGELES USC  August .4ondns DB=>MCWB" : 
+		{
+			"ashrae_clear_sky_optical_depth_for_beam_irradiance_taub_" : 0.38300000000000001,
+			"ashrae_clear_sky_optical_depth_for_diffuse_irradiance_taud_" : 2.4329999999999998,
+			"barometric_pressure" : 100663.0,
+			"begin_environment_reset_mode" : "FullResetAtBeginEnvironment",
+			"daily_dry_bulb_temperature_range" : 9.5999999999999996,
+			"day_of_month" : 21,
+			"day_type" : "SummerDesignDay",
+			"daylight_saving_time_indicator" : "No",
+			"dry_bulb_temperature_range_modifier_type" : "DefaultMultipliers",
+			"humidity_condition_type" : "WetBulb",
+			"maximum_dry_bulb_temperature" : 33.700000000000003,
+			"month" : 8,
+			"rain_indicator" : "No",
+			"snow_indicator" : "No",
+			"solar_model_indicator" : "ASHRAETau",
+			"wetbulb_or_dewpoint_at_maximum_dry_bulb" : 21.199999999999999,
+			"wind_direction" : 260.0,
+			"wind_speed" : 0.59999999999999998
+		},
+		"LOS ANGELES USC  July .4ondns DB=>MCWB" : 
+		{
+			"ashrae_clear_sky_optical_depth_for_beam_irradiance_taub_" : 0.40200000000000002,
+			"ashrae_clear_sky_optical_depth_for_diffuse_irradiance_taud_" : 2.4009999999999998,
+			"barometric_pressure" : 100663.0,
+			"begin_environment_reset_mode" : "FullResetAtBeginEnvironment",
+			"daily_dry_bulb_temperature_range" : 9.1999999999999993,
+			"day_of_month" : 21,
+			"day_type" : "SummerDesignDay",
+			"daylight_saving_time_indicator" : "No",
+			"dry_bulb_temperature_range_modifier_type" : "DefaultMultipliers",
+			"humidity_condition_type" : "WetBulb",
+			"maximum_dry_bulb_temperature" : 33.799999999999997,
+			"month" : 7,
+			"rain_indicator" : "No",
+			"snow_indicator" : "No",
+			"solar_model_indicator" : "ASHRAETau",
+			"wetbulb_or_dewpoint_at_maximum_dry_bulb" : 22.100000000000001,
+			"wind_direction" : 260.0,
+			"wind_speed" : 0.59999999999999998
+		},
+		"LOS ANGELES USC  June .4 ondns DB=>MCWB" : 
+		{
+			"ashrae_clear_sky_optical_depth_for_beam_irradiance_taub_" : 0.40500000000000003,
+			"ashrae_clear_sky_optical_depth_for_diffuse_irradiance_taud_" : 2.3239999999999998,
+			"barometric_pressure" : 100663.0,
+			"begin_environment_reset_mode" : "FullResetAtBeginEnvironment",
+			"daily_dry_bulb_temperature_range" : 8.1999999999999993,
+			"day_of_month" : 21,
+			"day_type" : "SummerDesignDay",
+			"daylight_saving_time_indicator" : "No",
+			"dry_bulb_temperature_range_modifier_type" : "DefaultMultipliers",
+			"humidity_condition_type" : "WetBulb",
+			"maximum_dry_bulb_temperature" : 32.299999999999997,
+			"month" : 6,
+			"rain_indicator" : "No",
+			"snow_indicator" : "No",
+			"solar_model_indicator" : "ASHRAETau",
+			"wetbulb_or_dewpoint_at_maximum_dry_bulb" : 20.699999999999999,
+			"wind_direction" : 260.0,
+			"wind_speed" : 0.59999999999999998
+		},
+		"LOS ANGELES USC  November .4ondns DB=>MCWB" : 
+		{
+			"ashrae_clear_sky_optical_depth_for_beam_irradiance_taub_" : 0.32500000000000001,
+			"ashrae_clear_sky_optical_depth_for_diffuse_irradiance_taud_" : 2.5579999999999998,
+			"barometric_pressure" : 100663.0,
+			"begin_environment_reset_mode" : "FullResetAtBeginEnvironment",
+			"daily_dry_bulb_temperature_range" : 10.4,
+			"day_of_month" : 21,
+			"day_type" : "SummerDesignDay",
+			"daylight_saving_time_indicator" : "No",
+			"dry_bulb_temperature_range_modifier_type" : "DefaultMultipliers",
+			"humidity_condition_type" : "WetBulb",
+			"maximum_dry_bulb_temperature" : 31.899999999999999,
+			"month" : 11,
+			"rain_indicator" : "No",
+			"snow_indicator" : "No",
+			"solar_model_indicator" : "ASHRAETau",
+			"wetbulb_or_dewpoint_at_maximum_dry_bulb" : 15.4,
+			"wind_direction" : 260.0,
+			"wind_speed" : 0.59999999999999998
+		},
+		"LOS ANGELES USC  October .4$ondns DB=>MCWB" : 
+		{
+			"ashrae_clear_sky_optical_depth_for_beam_irradiance_taub_" : 0.38,
+			"ashrae_clear_sky_optical_depth_for_diffuse_irradiance_taud_" : 2.3969999999999998,
+			"barometric_pressure" : 100663.0,
+			"begin_environment_reset_mode" : "FullResetAtBeginEnvironment",
+			"daily_dry_bulb_temperature_range" : 9.9000000000000004,
+			"day_of_month" : 21,
+			"day_type" : "SummerDesignDay",
+			"daylight_saving_time_indicator" : "No",
+			"dry_bulb_temperature_range_modifier_type" : "DefaultMultipliers",
+			"humidity_condition_type" : "WetBulb",
+			"maximum_dry_bulb_temperature" : 35.200000000000003,
+			"month" : 10,
+			"rain_indicator" : "No",
+			"snow_indicator" : "No",
+			"solar_model_indicator" : "ASHRAETau",
+			"wetbulb_or_dewpoint_at_maximum_dry_bulb" : 16.800000000000001,
+			"wind_direction" : 260.0,
+			"wind_speed" : 0.59999999999999998
+		},
+		"LOS ANGELES USC  September .4ondns DB=>MCWB" : 
+		{
+			"ashrae_clear_sky_optical_depth_for_beam_irradiance_taub_" : 0.36899999999999999,
+			"ashrae_clear_sky_optical_depth_for_diffuse_irradiance_taud_" : 2.4649999999999999,
+			"barometric_pressure" : 100663.0,
+			"begin_environment_reset_mode" : "FullResetAtBeginEnvironment",
+			"daily_dry_bulb_temperature_range" : 9.8000000000000007,
+			"day_of_month" : 21,
+			"day_type" : "SummerDesignDay",
+			"daylight_saving_time_indicator" : "No",
+			"dry_bulb_temperature_range_modifier_type" : "DefaultMultipliers",
+			"humidity_condition_type" : "WetBulb",
+			"maximum_dry_bulb_temperature" : 36.299999999999997,
+			"month" : 9,
+			"rain_indicator" : "No",
+			"snow_indicator" : "No",
+			"solar_model_indicator" : "ASHRAETau",
+			"wetbulb_or_dewpoint_at_maximum_dry_bulb" : 20.100000000000001,
+			"wind_direction" : 260.0,
+			"wind_speed" : 0.59999999999999998
+		},
+		"LOS ANGELES USC Ann Htg 99.6ondns DB" : 
+		{
+			"barometric_pressure" : 100663.0,
+			"begin_environment_reset_mode" : "FullResetAtBeginEnvironment",
+			"daily_dry_bulb_temperature_range" : 0.0,
+			"day_of_month" : 21,
+			"day_type" : "WinterDesignDay",
+			"daylight_saving_time_indicator" : "No",
+			"dry_bulb_temperature_range_modifier_type" : "DefaultMultipliers",
+			"humidity_condition_type" : "WetBulb",
+			"maximum_dry_bulb_temperature" : 6.2000000000000002,
+			"month" : 12,
+			"rain_indicator" : "No",
+			"sky_clearness" : 0.0,
+			"snow_indicator" : "No",
+			"solar_model_indicator" : "ASHRAEClearSky",
+			"wetbulb_or_dewpoint_at_maximum_dry_bulb" : 6.2000000000000002,
+			"wind_direction" : 20.0,
+			"wind_speed" : 0.59999999999999998
+		}
+	},
+	"Timestep" : 
+	{
+		"Timestep 1" : 
+		{
+			"number_of_timesteps_per_hour" : 4
+		}
+	},
+	"Version" : 
+	{
+		"Version 1" : 
+		{
+			"version_identifier" : "25.1"
+		}
+	}
+}

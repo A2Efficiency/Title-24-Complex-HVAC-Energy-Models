@@ -1,0 +1,44 @@
+---------------
+C:\GITHUB\P-SCE-COMPLEX_HVAC\FINAL DATA SET\EX02_MF_CENTRAL-VRF-HP\EX02_MF08_CENTRAL_VRF_HP_CZ09\EX02_MF08_RES_VRF_TYPE 2_HP_CZ09 - RUN\EX02_MF08_RES_VRF_TYPE 2_HP_CZ09 - AP-CSE.CSE(2078): Info: 
+  RSYS 'rsys-Zone1 HVACSys': 
+    DUCTSEG 'SupplyDuct-rsys-Zone1 HVACSys' is unused (rsDSEH and rsDSEC both given)
+    and has no effect
+---------------
+C:\GITHUB\P-SCE-COMPLEX_HVAC\FINAL DATA SET\EX02_MF_CENTRAL-VRF-HP\EX02_MF08_CENTRAL_VRF_HP_CZ09\EX02_MF08_RES_VRF_TYPE 2_HP_CZ09 - RUN\EX02_MF08_RES_VRF_TYPE 2_HP_CZ09 - AP-CSE.CSE(2078): Info: 
+  RSYS 'rsys-Zone1 HVACSys': 
+    DUCTSEG 'ReturnDuct-rsys-Zone1 HVACSys' is unused (rsDSEH and rsDSEC both given)
+    and has no effect
+---------------
+C:\GITHUB\P-SCE-COMPLEX_HVAC\FINAL DATA SET\EX02_MF_CENTRAL-VRF-HP\EX02_MF08_CENTRAL_VRF_HP_CZ09\EX02_MF08_RES_VRF_TYPE 2_HP_CZ09 - RUN\EX02_MF08_RES_VRF_TYPE 2_HP_CZ09 - AP-CSE.CSE(2124): Info: 
+  RSYS 'rsys-Zone2 HVACSys': 
+    DUCTSEG 'SupplyDuct-rsys-Zone2 HVACSys' is unused (rsDSEH and rsDSEC both given)
+    and has no effect
+---------------
+C:\GITHUB\P-SCE-COMPLEX_HVAC\FINAL DATA SET\EX02_MF_CENTRAL-VRF-HP\EX02_MF08_CENTRAL_VRF_HP_CZ09\EX02_MF08_RES_VRF_TYPE 2_HP_CZ09 - RUN\EX02_MF08_RES_VRF_TYPE 2_HP_CZ09 - AP-CSE.CSE(2124): Info: 
+  RSYS 'rsys-Zone2 HVACSys': 
+    DUCTSEG 'ReturnDuct-rsys-Zone2 HVACSys' is unused (rsDSEH and rsDSEC both given)
+    and has no effect
+---------------
+C:\GITHUB\P-SCE-COMPLEX_HVAC\FINAL DATA SET\EX02_MF_CENTRAL-VRF-HP\EX02_MF08_CENTRAL_VRF_HP_CZ09\EX02_MF08_RES_VRF_TYPE 2_HP_CZ09 - RUN\EX02_MF08_RES_VRF_TYPE 2_HP_CZ09 - AP-CSE.CSE(2078): Info: 
+  RSYS 'rsys-Zone1 HVACSys': 
+    DUCTSEG 'SupplyDuct-rsys-Zone1 HVACSys' is unused (rsDSEH and rsDSEC both given)
+    and has no effect
+---------------
+C:\GITHUB\P-SCE-COMPLEX_HVAC\FINAL DATA SET\EX02_MF_CENTRAL-VRF-HP\EX02_MF08_CENTRAL_VRF_HP_CZ09\EX02_MF08_RES_VRF_TYPE 2_HP_CZ09 - RUN\EX02_MF08_RES_VRF_TYPE 2_HP_CZ09 - AP-CSE.CSE(2078): Info: 
+  RSYS 'rsys-Zone1 HVACSys': 
+    DUCTSEG 'ReturnDuct-rsys-Zone1 HVACSys' is unused (rsDSEH and rsDSEC both given)
+    and has no effect
+---------------
+C:\GITHUB\P-SCE-COMPLEX_HVAC\FINAL DATA SET\EX02_MF_CENTRAL-VRF-HP\EX02_MF08_CENTRAL_VRF_HP_CZ09\EX02_MF08_RES_VRF_TYPE 2_HP_CZ09 - RUN\EX02_MF08_RES_VRF_TYPE 2_HP_CZ09 - AP-CSE.CSE(2124): Info: 
+  RSYS 'rsys-Zone2 HVACSys': 
+    DUCTSEG 'SupplyDuct-rsys-Zone2 HVACSys' is unused (rsDSEH and rsDSEC both given)
+    and has no effect
+---------------
+C:\GITHUB\P-SCE-COMPLEX_HVAC\FINAL DATA SET\EX02_MF_CENTRAL-VRF-HP\EX02_MF08_CENTRAL_VRF_HP_CZ09\EX02_MF08_RES_VRF_TYPE 2_HP_CZ09 - RUN\EX02_MF08_RES_VRF_TYPE 2_HP_CZ09 - AP-CSE.CSE(2124): Info: 
+  RSYS 'rsys-Zone2 HVACSys': 
+    DUCTSEG 'ReturnDuct-rsys-Zone2 HVACSys' is unused (rsDSEH and rsDSEC both given)
+    and has no effect
+---------------
+Warning: Zone 'Attic-atc': Condensation occurred in 232 subhours of run.
+    Total condensation heat = 61.3849 kBtu.
+---------------

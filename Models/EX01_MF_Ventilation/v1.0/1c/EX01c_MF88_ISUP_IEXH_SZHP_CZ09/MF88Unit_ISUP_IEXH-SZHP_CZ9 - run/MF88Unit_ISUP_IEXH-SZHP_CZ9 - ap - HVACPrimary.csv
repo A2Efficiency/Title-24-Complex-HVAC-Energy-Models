@@ -1,0 +1,33 @@
+FluidSystems
+,,,,,Controls,,,,,,Supply Side Components,,,Demand Side Components,,,
+Name,Type,Status,Design SupplyT,Design DelT,TempCtrl,FixedT,Supply HiT,At Outdoor,Supply LowT,At OutdoorT,Num Comps,Total Capacity,Flow Rate,Num Comps,Total Capacity,Sensible Capacity,Flow Rate,
+,,,(degF),(degF),,(degF),(degF),(degF),(degF),(degF),,(Btu/hr),(gpm),,(Btu/hr),(Btu/hr),( gpm),
+"Nonresidential Elec DHW System","ServiceHotWater","New",135,80,"Fixed",135,-99996,-99996,-99996,-99996,0,0,0,0,0,0,0
+"Nonresidential Gas DHW System","ServiceHotWater","New",135,80,"Fixed",135,-99996,-99996,-99996,-99996,0,0,0,0,0,0,0
+"GF Retail HW Loop","HotWater","New",160,40,"Fixed",160,-99996,-99996,-99996,-99996,1,384678,19.2266,5,441930,0,0
+
+
+Boiler
+Name,Fluid System Name,Status,Type,Fuel,Draft Type,Rated Capacity,AFUE,Thermal Efficiency,Forced Draft Power,Minimum Unload Ratio
+,,,,,,(Btu/h),,,hp
+"GF Retail Boiler","GF Retail HW Loop","New","HotWater","Gas","Natural",384678,-99996,0.84,-99996,0.25
+
+
+Pump
+Name,Serving Equipment,Status,Count,Operation,Speed Type,Design Flow Rate,Nameplate HP,Power,Power Per Flow,Break Horse Power,Head,Motor Efficiency,Impeller Efficiency,Minimum Flow Rate
+,,,,,,(gpm),(hp),(kW),(W/gpm),(bhp),(ft. H20),,,(gpm)
+"GF Retail HW Pump","GF Retail Boiler","New",1,"OnDemand","ConstantSpeed",19.2266,0.5,0.36533,19.0013,0.418355,60.4,0.855,0.7
+
+
+Water Heater
+,System,,,Water Heater
+Name,System Name,System Type,System Count,Status,Type,Fuel,Count,Thermal Efficiency,StandbyLoss Fraction,Storage Capacity,Rated Capacity,Energy Factor
+,,,,,,,,,,(gal),(Btu/h),
+"Nonres Elec Water Heater","Nonresidential Elec DHW System","ServiceHotWater",1,"New","Conventional","Electricity",1,0.99,-99996.000,30,29684.4,0.951
+"Nonres Gas Water Heater","Nonresidential Gas DHW System","ServiceHotWater",1,"New","Conventional","Gas",1,0.83,-99996.000,30,35947,0.630
+
+
+Residential Water Heater
+,System,,,,Water Heater
+Name,System Name,System Type,System Count,Distribution Type,Status,Type,Fuel,Count,Thermal Efficiency,StandbyLoss Fraction,Storage Capacity,Rated Capacity,Energy Factor,Tank Exterior Insulation Rval,Tank Interior Insulation Rval
+,,,,,,,,,,,(gal),(Btu/h),,(?F-ft2-h/Btu),(?F-ft2-h/Btu)

@@ -1,0 +1,8 @@
+Space Interior Loads Fuel Use Report
+,,,,Non-Regulated,,,Non-Regulated,,,
+,,,,Equipment,,,Process,,,
+,,Floor Area,,Power Density,Schedule,Fuel Use,Power Density,Schedule,Fuel Use,
+Space Name,Conditioning Type,(ft2),Mult,(Btuh/ft2),(FLH),(therms),(Btuh/ft2),(FLH),(therms),
+"Attic Space","IndirectlyConditioned",0,1,,,,,,,
+"Dining","DirectlyConditioned",1250.46,1,,,,,,,
+"Kitchen","DirectlyConditioned",1250.46,1,,,,,,,

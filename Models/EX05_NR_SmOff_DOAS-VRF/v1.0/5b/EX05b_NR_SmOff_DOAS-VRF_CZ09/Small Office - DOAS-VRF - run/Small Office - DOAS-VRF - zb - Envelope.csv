@@ -1,0 +1,400 @@
+General Information
+Project Address,City,ZipCode,ClimateZone,Compliance Software,Compliance Manager,RulesetFile Name,Compliance Type
+" - specify - "," - specify - ",95837,"ClimateZone9","CBECC 2025.2.1.1 (1409)","BEMCmpMgr 2025.2.1.1 (890)","CA 2025 Nonresidential, Vers. 1.0 (T24_2025.bin)","NewEnvelopeAndMechanical"
+
+No. of Thermal Zones,No. of Thermal Zones (cond),No. of Air Systems,No. of Zonal Systems,No. of Terminal Units
+10,8,2,8,7
+
+No. of Stories
+Total,New,Existing,Altered
+1,1,0,0
+
+No. of Above Grade Stories
+Total,New,Existing,Altered
+1,1,0,0
+
+No. of Dwelling Units (Conditioned)
+Total,New,Existing,Altered
+0,0,0,0
+
+NonRes Floor Area (Conditioned)
+Total,New,Existing,Altered
+1,1,0,0
+
+Res Floor Area (Conditioned)
+Total,New,Existing,Altered
+0,0,0,0
+
+,Conditioned Floor Area
+Total Floor Area,Total,New,Existing,Altered
+13894.6,13585,0,0,0
+
+
+
+Building Wall Area
+Total ExtWall,N ExtWall,E ExtWall,S ExtWall,W ExtWall,
+(ft2),(ft2),(ft2),(ft2),(ft2)
+4466.46,1145.70,1078.31,811.67,1430.80
+
+Building New Wall Area
+Total ExtWall,N ExtWall,E ExtWall,S ExtWall,W ExtWall,
+(ft2),(ft2),(ft2),(ft2),(ft2)
+4466.46,1145.70,1078.31,811.67,1430.80
+Building Existing or Altered Wall Area
+Total ExtWall,N ExtWall,E ExtWall,S ExtWall,W ExtWall,
+(ft2),(ft2),(ft2),(ft2),(ft2)
+0.00,0.00,0.00,0.00,0.00
+
+
+Building Window Area,
+Total Window Area,North Window,E Window,S Window,W Window
+(ft2),(ft2),(ft2),(ft2),(ft2)
+891.81,329.21,139.20,17.40,406.00
+
+Building New Window Area on New Walls,
+Total Window Area,North Window,E Window,S Window,W Window
+(ft2),(ft2),(ft2),(ft2),(ft2)
+891.81,329.21,139.20,17.40,406.00
+Building New Window Area on Existing or Altered Walls,
+Total Window Area,North Window,E Window,S Window,W Window
+(ft2),(ft2),(ft2),(ft2),(ft2)
+0.00,0.00,0.00,0.00,0.00
+Building Existing or Altered Window Area on Existing or Altered Walls,
+Total Window Area,North Window,E Window,S Window,W Window
+(ft2),(ft2),(ft2),(ft2),(ft2)
+0.00,0.00,0.00,0.00,0.00
+
+
+Window to Wall Ratio
+Bldg. WWR,North WWR,East WWR,South WWR,West WWR
+(frac.),(frac.),(frac.),(frac.),(frac.)
+0.1997,0.2873,0.1291,0.0214,0.2838
+
+New Window to New Wall Ratio
+Bldg. WWR,North WWR,East WWR,South WWR,West WWR
+(frac.),(frac.),(frac.),(frac.),(frac.)
+0.1997,0.2873,0.1291,0.0214,0.2838
+New Window to Existing or Altered Wall Ratio
+Bldg. WWR,North WWR,East WWR,South WWR,West WWR
+(frac.),(frac.),(frac.),(frac.),(frac.)
+0.0000,0.0000,0.0000,0.0000,0.0000
+Existing or Altered Window to Existing or Altered Wall Ratio
+Bldg. WWR,North WWR,East WWR,South WWR,West WWR
+(frac.),(frac.),(frac.),(frac.),(frac.)
+0.0000,0.0000,0.0000,0.0000,0.0000
+
+
+Skylight to Roof Ratio (SRR),Display Perimeter\SRR,West,Total
+(frac.),(ft),(ft)
+0.0500,0.00,0.00
+
+New Skylight to New Roof Ratio (SRR)
+(frac.)
+0.0580
+New Skylight to Existing or Altered Roof Ratio (SRR)
+(frac.)
+0.0000
+Existing or Altered Skylight to Existing or Altered Roof Ratio (SRR)
+(frac.)
+0.0000
+
+
+
+Exterior Roofs
+,,,,,,,,,,,,Aged Thermal Emittance,,ThrmlAbs,,Aged Solar Reflectance,,SolAbs,
+Name,Status,Name,Occupancy Classification,Conditioning Status,Assigned Occ Class (Ref),Area,Tilt,Slope Category,Cons Name,Construction Type,U-Factor,Roof,Cons,Roof,Cons,Roof,Cons,Roof,Cons
+,,,,,,(ft2),(deg),,,,(Btu/h-?F-ft2),(frac.),(frac.),(frac.),(frac.),(frac.),(frac.),(frac.),(frac.),
+"ST000011_C2","New","Zn 101 Reception Space","Nonresidential","DirectlyConditioned","NonResidential",351.15,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"RC000000_C1","New","Zn 102 Mail Space","Nonresidential","DirectlyConditioned","NonResidential",311.02,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST000018_C1","New","Zn 103 Copy_Print Space","Nonresidential","DirectlyConditioned","NonResidential",292.31,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST000017_C6","New","Zn 104 Corridor Space","Nonresidential","DirectlyConditioned","NonResidential",437.71,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST000013_C2","New","Zn 105 Phone Space","Nonresidential","DirectlyConditioned","NonResidential",119.13,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST000012_C4","New","Zn 106 Conference Space","Nonresidential","DirectlyConditioned","NonResidential",488.62,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST000014_C3","New","Zn 107 Storage Space","Nonresidential","DirectlyConditioned","NonResidential",316.08,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST000015_C3","New","Zn 108 Break Room Space","Nonresidential","DirectlyConditioned","NonResidential",598.43,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST000016_C2","New","Zn 109 Dining Space","Nonresidential","DirectlyConditioned","NonResidential",499.78,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"11000003_C29","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned","NonResidential",5712.79,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"PN000000_C2","New","Zn 111A Vestibule Space","Nonresidential","DirectlyConditioned","NonResidential",101.35,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST000000_C2","New","Zn 112 Huddle Space","Nonresidential","DirectlyConditioned","NonResidential",147.07,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"FT000000_C8","New","Zn 113 Restroom Space","Nonresidential","Unconditioned","NonResidential",245.50,0,"Low","FlatNonresWoodFramingAndOtherRoofUnconditioned","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST000007_C3","New","Zn 120 Conference Space","Nonresidential","DirectlyConditioned","NonResidential",390.77,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST000008_C2","New","Zn 121 Huddle Space","Nonresidential","DirectlyConditioned","NonResidential",99.34,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST000009_C3","New","Zn 122 Office Space","Nonresidential","DirectlyConditioned","NonResidential",198.66,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST00000A_C2","New","Zn 123 Office Space","Nonresidential","DirectlyConditioned","NonResidential",178.92,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST00000C_C2","New","Zn 124 Conference Space","Nonresidential","DirectlyConditioned","NonResidential",148.30,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"11000002_C1","New","Zn 125 Electrical Space","Nonresidential","Unconditioned","NonResidential",64.09,0,"Low","FlatNonresWoodFramingAndOtherRoofUnconditioned","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST00000E_C1","New","Zn 126 Copy Space","Nonresidential","DirectlyConditioned","NonResidential",150.84,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST00000D_C1","New","Zn 127 Huddle Space","Nonresidential","DirectlyConditioned","NonResidential",98.64,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST00000B_C1","New","Zn 128 IT Room Space","Nonresidential","DirectlyConditioned","NonResidential",131.89,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST00000F_C3","New","Zn 129 Conference Space","Nonresidential","DirectlyConditioned","NonResidential",172.81,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST000010_C5","New","Zn 130 Library Space","Nonresidential","DirectlyConditioned","NonResidential",1818.04,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"11000000_C1","New","Zn 131 Support Space","Nonresidential","DirectlyConditioned","NonResidential",58.88,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST000003_C2","New","Zn 131 Support Space","Nonresidential","DirectlyConditioned","NonResidential",79.64,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST000004_C2","New","Zn 131 Support Space","Nonresidential","DirectlyConditioned","NonResidential",62.42,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST000005_C2","New","Zn 131 Support Space","Nonresidential","DirectlyConditioned","NonResidential",264.89,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+"ST000006_C2","New","Zn 131 Support Space","Nonresidential","DirectlyConditioned","NonResidential",355.55,0,"Low","FlatNonresWoodFramingAndOtherRoofU028","WoodFramingAndOtherRoof",-99996.000,0.85,0.85,0.75,0.75,0.63,0.63,0.37,0.37
+
+
+
+Exterior Wall
+,,Space
+Name,Status,Name,Occupancy Classification,Conditioning Status,Building Type,Area,Azimuth,Cons Name,Construction Type,U Factor,Window Area
+,,,,,,(ft2),(deg),,,(Btu/h-?F-ft2),(ft2)
+"ST000011_W-10","New","Zn 101 Reception Space","Nonresidential","DirectlyConditioned","NonResidential",180.45,330.001,"MetalFrameWallU055","MetalFrameWall",-99996.000,47.04
+"ST000013_W-10","New","Zn 105 Phone Space","Nonresidential","DirectlyConditioned","NonResidential",202.17,329.999,"MetalFrameWallU055","MetalFrameWall",-99996.000,127.08
+"ST000012_W-10","New","Zn 106 Conference Space","Nonresidential","DirectlyConditioned","NonResidential",42.50,59.9991,"MetalFrameWallU055","MetalFrameWall",-99996.000,0.00
+"ST000012_W01","New","Zn 106 Conference Space","Nonresidential","DirectlyConditioned","NonResidential",215.70,14.0604,"MetalFrameWallU055","MetalFrameWall",-99996.000,92.80
+"ST000012_W12","New","Zn 106 Conference Space","Nonresidential","DirectlyConditioned","NonResidential",28.22,330.011,"MetalFrameWallU055","MetalFrameWall",-99996.000,13.47
+"ST000014_W-10","New","Zn 107 Storage Space","Nonresidential","DirectlyConditioned","NonResidential",42.50,60.0011,"MetalFrameWallU055","MetalFrameWall",-99996.000,0.00
+"ST000014_W01","New","Zn 107 Storage Space","Nonresidential","DirectlyConditioned","NonResidential",38.14,329.999,"MetalFrameWallU055","MetalFrameWall",-99996.000,0.00
+"ST000015_W-10","New","Zn 108 Break Room Space","Nonresidential","DirectlyConditioned","NonResidential",242.61,60.0002,"MetalFrameWallU055","MetalFrameWall",-99996.000,7.50
+"ST000015_W01","New","Zn 108 Break Room Space","Nonresidential","DirectlyConditioned","NonResidential",266.86,330,"MetalFrameWallU055","MetalFrameWall",-99996.000,0.00
+"ST000016_W-10","New","Zn 109 Dining Space","Nonresidential","DirectlyConditioned","NonResidential",290.37,60.0001,"MetalFrameWallU055","MetalFrameWall",-99996.000,62.11
+"11000003_W-10","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned","NonResidential",336.95,59.9999,"MetalFrameWallU055","MetalFrameWall",-99996.000,52.20
+"PN000000_W-10","New","Zn 111A Vestibule Space","Nonresidential","DirectlyConditioned","NonResidential",62.89,225.224,"MetalFrameWallU055","MetalFrameWall",-99996.000,27.66
+"ST000000_W-10","New","Zn 112 Huddle Space","Nonresidential","DirectlyConditioned","NonResidential",123.38,60,"MetalFrameWallU055","MetalFrameWall",-99996.000,17.40
+"FT000000_W-10","New","Zn 113 Restroom Space","Nonresidential","Unconditioned","NonResidential",183.33,150,"MetalFrameWallUnconditioned","MetalFrameWall",-99996.000,0.00
+"FT000000_W01","New","Zn 113 Restroom Space","Nonresidential","Unconditioned","NonResidential",116.70,60,"MetalFrameWallUnconditioned","MetalFrameWall",-99996.000,0.00
+"ST000007_W-10","New","Zn 120 Conference Space","Nonresidential","DirectlyConditioned","NonResidential",170.36,225.964,"MetalFrameWallU055","MetalFrameWall",-99996.000,0.00
+"ST000007_W01","New","Zn 120 Conference Space","Nonresidential","DirectlyConditioned","NonResidential",215.77,150,"MetalFrameWallU055","MetalFrameWall",-99996.000,0.00
+"ST000008_W-10","New","Zn 121 Huddle Space","Nonresidential","DirectlyConditioned","NonResidential",63.99,225.963,"MetalFrameWallU055","MetalFrameWall",-99996.000,0.00
+"ST000009_W-10","New","Zn 122 Office Space","Nonresidential","DirectlyConditioned","NonResidential",106.16,225.226,"MetalFrameWallU055","MetalFrameWall",-99996.000,0.00
+"ST000009_W01","New","Zn 122 Office Space","Nonresidential","DirectlyConditioned","NonResidential",13.04,225.967,"MetalFrameWallU055","MetalFrameWall",-99996.000,0.00
+"ST00000A_W-10","New","Zn 123 Office Space","Nonresidential","DirectlyConditioned","NonResidential",117.75,225.226,"MetalFrameWallU055","MetalFrameWall",-99996.000,24.54
+"ST00000C_W-10","New","Zn 124 Conference Space","Nonresidential","DirectlyConditioned","NonResidential",183.77,225.225,"MetalFrameWallU055","MetalFrameWall",-99996.000,69.60
+"ST00000F_W-10","New","Zn 129 Conference Space","Nonresidential","DirectlyConditioned","NonResidential",128.19,225.65,"MetalFrameWallU055","MetalFrameWall",-99996.000,38.44
+"ST00000F_W01","New","Zn 129 Conference Space","Nonresidential","DirectlyConditioned","NonResidential",90.00,149.999,"MetalFrameWallU055","MetalFrameWall",-99996.000,17.40
+"ST000010_W-10","New","Zn 130 Library Space","Nonresidential","DirectlyConditioned","NonResidential",215.93,282.185,"MetalFrameWallU055","MetalFrameWall",-99996.000,110.20
+"ST000010_W01","New","Zn 130 Library Space","Nonresidential","DirectlyConditioned","NonResidential",275.00,239.999,"MetalFrameWallU055","MetalFrameWall",-99996.000,87.00
+"ST000010_W12","New","Zn 130 Library Space","Nonresidential","DirectlyConditioned","NonResidential",93.74,225.653,"MetalFrameWallU055","MetalFrameWall",-99996.000,48.56
+"ST000010_W23","New","Zn 130 Library Space","Nonresidential","DirectlyConditioned","NonResidential",214.16,329.999,"MetalFrameWallU055","MetalFrameWall",-99996.000,48.82
+"ST000003_W-10","New","Zn 131 Support Space","Nonresidential","DirectlyConditioned","NonResidential",68.29,150,"MetalFrameWallU055","MetalFrameWall",-99996.000,0.00
+"ST000004_W-10","New","Zn 131 Support Space","Nonresidential","DirectlyConditioned","NonResidential",53.53,149.999,"MetalFrameWallU055","MetalFrameWall",-99996.000,0.00
+"ST000005_W-10","New","Zn 131 Support Space","Nonresidential","DirectlyConditioned","NonResidential",168.32,150,"MetalFrameWallU055","MetalFrameWall",-99996.000,0.00
+"ST000006_W-10","New","Zn 131 Support Space","Nonresidential","DirectlyConditioned","NonResidential",215.77,150,"MetalFrameWallU055","MetalFrameWall",-99996.000,0.00
+
+
+
+Exterior Floor
+,,Space
+Name,Status,Name,Occupancy Classification,Conditioning Status,Building Type,Area,Cons Name,Construction Type,U Factor
+,,,,,,(ft2),,,(Btu/h-?F-ft2)
+"ST000011_F1","New","Zn 101 Reception Space","Nonresidential","DirectlyConditioned","NonResidential",351.15,"OtherFloorU071","OtherFloor",-99996.000,
+"RC000000_F0","New","Zn 102 Mail Space","Nonresidential","DirectlyConditioned","NonResidential",311.02,"OtherFloorU071","OtherFloor",-99996.000,
+"ST000018_F0","New","Zn 103 Copy_Print Space","Nonresidential","DirectlyConditioned","NonResidential",292.31,"OtherFloorU071","OtherFloor",-99996.000,
+"ST000017_F5","New","Zn 104 Corridor Space","Nonresidential","DirectlyConditioned","NonResidential",437.71,"OtherFloorU071","OtherFloor",-99996.000,
+"ST000013_F1","New","Zn 105 Phone Space","Nonresidential","DirectlyConditioned","NonResidential",119.13,"OtherFloorU071","OtherFloor",-99996.000,
+"ST000012_F3","New","Zn 106 Conference Space","Nonresidential","DirectlyConditioned","NonResidential",488.62,"OtherFloorU071","OtherFloor",-99996.000,
+"ST000014_F2","New","Zn 107 Storage Space","Nonresidential","DirectlyConditioned","NonResidential",316.08,"OtherFloorU071","OtherFloor",-99996.000,
+"ST000015_F2","New","Zn 108 Break Room Space","Nonresidential","DirectlyConditioned","NonResidential",598.43,"OtherFloorU071","OtherFloor",-99996.000,
+"ST000016_F1","New","Zn 109 Dining Space","Nonresidential","DirectlyConditioned","NonResidential",499.78,"OtherFloorU071","OtherFloor",-99996.000,
+"11000003_F28","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned","NonResidential",5712.79,"OtherFloorU071","OtherFloor",-99996.000,
+"PN000000_F1","New","Zn 111A Vestibule Space","Nonresidential","DirectlyConditioned","NonResidential",101.35,"OtherFloorU071","OtherFloor",-99996.000,
+"ST000000_F1","New","Zn 112 Huddle Space","Nonresidential","DirectlyConditioned","NonResidential",147.07,"OtherFloorU071","OtherFloor",-99996.000,
+"FT000000_F7","New","Zn 113 Restroom Space","Nonresidential","Unconditioned","NonResidential",245.50,"OtherFloorUnconditioned","OtherFloor",-99996.000,
+"ST000007_F2","New","Zn 120 Conference Space","Nonresidential","DirectlyConditioned","NonResidential",390.77,"OtherFloorU071","OtherFloor",-99996.000,
+"ST000008_F1","New","Zn 121 Huddle Space","Nonresidential","DirectlyConditioned","NonResidential",99.34,"OtherFloorU071","OtherFloor",-99996.000,
+"ST000009_F2","New","Zn 122 Office Space","Nonresidential","DirectlyConditioned","NonResidential",198.66,"OtherFloorU071","OtherFloor",-99996.000,
+"ST00000A_F1","New","Zn 123 Office Space","Nonresidential","DirectlyConditioned","NonResidential",178.92,"OtherFloorU071","OtherFloor",-99996.000,
+"ST00000C_F1","New","Zn 124 Conference Space","Nonresidential","DirectlyConditioned","NonResidential",148.30,"OtherFloorU071","OtherFloor",-99996.000,
+"11000002_F0","New","Zn 125 Electrical Space","Nonresidential","Unconditioned","NonResidential",64.09,"OtherFloorUnconditioned","OtherFloor",-99996.000,
+"ST00000E_F0","New","Zn 126 Copy Space","Nonresidential","DirectlyConditioned","NonResidential",150.84,"OtherFloorU071","OtherFloor",-99996.000,
+"ST00000D_F0","New","Zn 127 Huddle Space","Nonresidential","DirectlyConditioned","NonResidential",98.64,"OtherFloorU071","OtherFloor",-99996.000,
+"ST00000B_F0","New","Zn 128 IT Room Space","Nonresidential","DirectlyConditioned","NonResidential",131.89,"OtherFloorU071","OtherFloor",-99996.000,
+"ST00000F_F2","New","Zn 129 Conference Space","Nonresidential","DirectlyConditioned","NonResidential",172.81,"OtherFloorU071","OtherFloor",-99996.000,
+"ST000010_F4","New","Zn 130 Library Space","Nonresidential","DirectlyConditioned","NonResidential",1818.04,"OtherFloorU071","OtherFloor",-99996.000,
+"11000000_F0","New","Zn 131 Support Space","Nonresidential","DirectlyConditioned","NonResidential",58.88,"OtherFloorU071","OtherFloor",-99996.000,
+"ST000003_F1","New","Zn 131 Support Space","Nonresidential","DirectlyConditioned","NonResidential",79.64,"OtherFloorU071","OtherFloor",-99996.000,
+"ST000004_F1","New","Zn 131 Support Space","Nonresidential","DirectlyConditioned","NonResidential",62.42,"OtherFloorU071","OtherFloor",-99996.000,
+"ST000005_F1","New","Zn 131 Support Space","Nonresidential","DirectlyConditioned","NonResidential",264.89,"OtherFloorU071","OtherFloor",-99996.000,
+"ST000006_F1","New","Zn 131 Support Space","Nonresidential","DirectlyConditioned","NonResidential",355.55,"OtherFloorU071","OtherFloor",-99996.000,
+
+
+
+Window
+,,,,Exterior Wall,Window
+Name,Status,Occupancy Classification,Conditioning Status,Name,Area,Azimuth,Product Type,Cert Method,Cons Name,Frame Type,Glazing Type,U Factor,SHGC,Visual Transmittance, U Factor Simulated,Inside Convection Coefficient
+,,,,,(ft2),(Deg),,,,,,(Btu/h-?F-ft2),,,(Btu/h-?F-ft2),(Btu/h-?F-ft2)
+"ST000011_W-1-W0","New","Nonresidential","DirectlyConditioned","ST000011_W-10",43.66,330.001,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000011_W-1-W1","New","Nonresidential","DirectlyConditioned","ST000011_W-10",3.39,330.001,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000013_W-1-W0","New","Nonresidential","DirectlyConditioned","ST000013_W-10",3.93,329.999,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000013_W-1-W1","New","Nonresidential","DirectlyConditioned","ST000013_W-10",17.40,329.999,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000013_W-1-W2","New","Nonresidential","DirectlyConditioned","ST000013_W-10",17.40,329.999,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000013_W-1-W3","New","Nonresidential","DirectlyConditioned","ST000013_W-10",88.35,329.999,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000012_W0-W0","New","Nonresidential","DirectlyConditioned","ST000012_W01",23.20,14.0604,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000012_W0-W1","New","Nonresidential","DirectlyConditioned","ST000012_W01",23.20,14.0604,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000012_W0-W2","New","Nonresidential","DirectlyConditioned","ST000012_W01",23.20,14.0604,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000012_W0-W3","New","Nonresidential","DirectlyConditioned","ST000012_W01",23.20,14.0604,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000012_W1-W0","New","Nonresidential","DirectlyConditioned","ST000012_W12",13.47,330.011,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000015_W-1-W0","New","Nonresidential","DirectlyConditioned","ST000015_W-10",7.50,60.0002,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000016_W-1-W0","New","Nonresidential","DirectlyConditioned","ST000016_W-10",17.40,60.0001,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000016_W-1-W1","New","Nonresidential","DirectlyConditioned","ST000016_W-10",17.40,60.0001,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000016_W-1-W2","New","Nonresidential","DirectlyConditioned","ST000016_W-10",17.40,60.0001,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000016_W-1-W3","New","Nonresidential","DirectlyConditioned","ST000016_W-10",9.90,60.0001,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"11000003_W-1-W0","New","Nonresidential","DirectlyConditioned","11000003_W-10",17.40,59.9999,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"11000003_W-1-W1","New","Nonresidential","DirectlyConditioned","11000003_W-10",17.40,59.9999,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"11000003_W-1-W2","New","Nonresidential","DirectlyConditioned","11000003_W-10",17.40,59.9999,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"PN000000_W-1-W0","New","Nonresidential","DirectlyConditioned","PN000000_W-10",17.40,225.224,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"PN000000_W-1-W1","New","Nonresidential","DirectlyConditioned","PN000000_W-10",10.25,225.224,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000000_W-1-W0","New","Nonresidential","DirectlyConditioned","ST000000_W-10",17.40,60,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST00000A_W-1-W0","New","Nonresidential","DirectlyConditioned","ST00000A_W-10",7.14,225.226,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST00000A_W-1-W1","New","Nonresidential","DirectlyConditioned","ST00000A_W-10",17.40,225.226,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST00000C_W-1-W0","New","Nonresidential","DirectlyConditioned","ST00000C_W-10",17.40,225.225,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST00000C_W-1-W1","New","Nonresidential","DirectlyConditioned","ST00000C_W-10",17.40,225.225,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST00000C_W-1-W2","New","Nonresidential","DirectlyConditioned","ST00000C_W-10",17.40,225.225,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST00000C_W-1-W3","New","Nonresidential","DirectlyConditioned","ST00000C_W-10",17.40,225.225,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST00000F_W-1-W0","New","Nonresidential","DirectlyConditioned","ST00000F_W-10",3.64,225.65,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST00000F_W-1-W1","New","Nonresidential","DirectlyConditioned","ST00000F_W-10",17.40,225.65,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST00000F_W-1-W2","New","Nonresidential","DirectlyConditioned","ST00000F_W-10",17.40,225.65,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST00000F_W0-W0","New","Nonresidential","DirectlyConditioned","ST00000F_W01",17.40,149.999,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000010_W-1-W0","New","Nonresidential","DirectlyConditioned","ST000010_W-10",23.20,282.185,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000010_W-1-W1","New","Nonresidential","DirectlyConditioned","ST000010_W-10",23.20,282.185,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000010_W-1-W2","New","Nonresidential","DirectlyConditioned","ST000010_W-10",23.20,282.185,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000010_W-1-W3","New","Nonresidential","DirectlyConditioned","ST000010_W-10",23.20,282.185,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000010_W-1-W4","New","Nonresidential","DirectlyConditioned","ST000010_W-10",17.40,282.185,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000010_W0-W0","New","Nonresidential","DirectlyConditioned","ST000010_W01",17.40,239.999,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000010_W0-W1","New","Nonresidential","DirectlyConditioned","ST000010_W01",17.40,239.999,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000010_W0-W2","New","Nonresidential","DirectlyConditioned","ST000010_W01",17.40,239.999,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000010_W0-W3","New","Nonresidential","DirectlyConditioned","ST000010_W01",17.40,239.999,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000010_W0-W4","New","Nonresidential","DirectlyConditioned","ST000010_W01",17.40,239.999,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000010_W1-W0","New","Nonresidential","DirectlyConditioned","ST000010_W12",17.40,225.653,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000010_W1-W1","New","Nonresidential","DirectlyConditioned","ST000010_W12",17.40,225.653,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000010_W1-W2","New","Nonresidential","DirectlyConditioned","ST000010_W12",13.76,225.653,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000010_W2-W0","New","Nonresidential","DirectlyConditioned","ST000010_W23",14.01,329.999,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000010_W2-W1","New","Nonresidential","DirectlyConditioned","ST000010_W23",17.40,329.999,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+"ST000010_W2-W2","New","Nonresidential","DirectlyConditioned","ST000010_W23",17.40,329.999,"FixedWindow","NFRCRated","Exterior Window - Fixed","- specify -","- specify -",0.340,0.220,0.420,0.34000,-99996.00000
+
+
+
+Skylight
+,,Space,,Exterior Roof,,,Skylight
+Name,Status,Occupancy Classification,Conditioning Status,Name,Area,Tilt,Cons Name,Curb,Glazing,U Factor,SHGC,Visual Transmittance, U Factor Simulated,Inside Convection Coefficient
+,,,,,(ft2),(Deg),,,,(Btu/h-?F-ft2),,,(Btu/h-?F-ft2),(Btu/h-?F-ft2)
+"ST000011_C-W0","New","Nonresidential","DirectlyConditioned","ST000011_C2",42.23,0,"Skylight - Fixed","CurbMounted","Glass",0.580,0.25,0.49,0.58000,-99996.00000
+"RC000000_C-W0","New","Nonresidential","DirectlyConditioned","RC000000_C1",42.35,0,"Skylight - Fixed","CurbMounted","Glass",0.580,0.25,0.49,0.58000,-99996.00000
+"ST000018_C-W0","New","Nonresidential","DirectlyConditioned","ST000018_C1",42.68,0,"Skylight - Fixed","CurbMounted","Glass",0.580,0.25,0.49,0.58000,-99996.00000
+"11000003_C-W0","New","Nonresidential","DirectlyConditioned","11000003_C29",42.48,0,"Skylight - Fixed","CurbMounted","Glass",0.580,0.25,0.49,0.58000,-99996.00000
+"11000003_C-W1","New","Nonresidential","DirectlyConditioned","11000003_C29",42.48,0,"Skylight - Fixed","CurbMounted","Glass",0.580,0.25,0.49,0.58000,-99996.00000
+"11000003_C-W10","New","Nonresidential","DirectlyConditioned","11000003_C29",42.48,0,"Skylight - Fixed","CurbMounted","Glass",0.580,0.25,0.49,0.58000,-99996.00000
+"11000003_C-W2","New","Nonresidential","DirectlyConditioned","11000003_C29",42.48,0,"Skylight - Fixed","CurbMounted","Glass",0.580,0.25,0.49,0.58000,-99996.00000
+"11000003_C-W3","New","Nonresidential","DirectlyConditioned","11000003_C29",42.48,0,"Skylight - Fixed","CurbMounted","Glass",0.580,0.25,0.49,0.58000,-99996.00000
+"11000003_C-W4","New","Nonresidential","DirectlyConditioned","11000003_C29",42.48,0,"Skylight - Fixed","CurbMounted","Glass",0.580,0.25,0.49,0.58000,-99996.00000
+"11000003_C-W5","New","Nonresidential","DirectlyConditioned","11000003_C29",42.48,0,"Skylight - Fixed","CurbMounted","Glass",0.580,0.25,0.49,0.58000,-99996.00000
+"11000003_C-W6","New","Nonresidential","DirectlyConditioned","11000003_C29",42.48,0,"Skylight - Fixed","CurbMounted","Glass",0.580,0.25,0.49,0.58000,-99996.00000
+"11000003_C-W7","New","Nonresidential","DirectlyConditioned","11000003_C29",42.48,0,"Skylight - Fixed","CurbMounted","Glass",0.580,0.25,0.49,0.58000,-99996.00000
+"11000003_C-W8","New","Nonresidential","DirectlyConditioned","11000003_C29",42.48,0,"Skylight - Fixed","CurbMounted","Glass",0.580,0.25,0.49,0.58000,-99996.00000
+"11000003_C-W9","New","Nonresidential","DirectlyConditioned","11000003_C29",42.48,0,"Skylight - Fixed","CurbMounted","Glass",0.580,0.25,0.49,0.58000,-99996.00000
+"ST000010_C-W0","New","Nonresidential","DirectlyConditioned","ST000010_C5",42.34,0,"Skylight - Fixed","CurbMounted","Glass",0.580,0.25,0.49,0.58000,-99996.00000
+"ST000010_C-W1","New","Nonresidential","DirectlyConditioned","ST000010_C5",42.34,0,"Skylight - Fixed","CurbMounted","Glass",0.580,0.25,0.49,0.58000,-99996.00000
+
+
+
+Interior Wall
+,,Space
+Name,Status,Name,Occupancy Classification,Conditioning Status,Area,Azimuth,Cons Name,Construction Type,U Factor
+,,,,,(ft2),(deg),,,(Btu/h-?F-ft2)
+"ST000010_W100 Reversed","New","Zn 101 Reception Space","Nonresidential","DirectlyConditioned",194.60,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000011_W30","New","Zn 101 Reception Space","Nonresidential","DirectlyConditioned",24.19,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000011_W31","New","Zn 101 Reception Space","Nonresidential","DirectlyConditioned",132.89,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000011_W32","New","Zn 101 Reception Space","Nonresidential","DirectlyConditioned",37.51,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000011_W40","New","Zn 101 Reception Space","Nonresidential","DirectlyConditioned",180.44,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"RC000000_W20","New","Zn 102 Mail Space","Nonresidential","DirectlyConditioned",172.36,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"RC000000_W30","New","Zn 102 Mail Space","Nonresidential","DirectlyConditioned",180.45,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000010_W101 Reversed","New","Zn 102 Mail Space","Nonresidential","DirectlyConditioned",172.36,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000017_W20 Reversed","New","Zn 103 Copy_Print Space","Nonresidential","DirectlyConditioned",341.95,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000018_W20","New","Zn 103 Copy_Print Space","Nonresidential","DirectlyConditioned",240.71,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000018_W30","New","Zn 103 Copy_Print Space","Nonresidential","DirectlyConditioned",32.99,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000012_W50 Reversed","New","Zn 104 Corridor Space","Nonresidential","DirectlyConditioned",60.89,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000012_W60 Reversed","New","Zn 104 Corridor Space","Nonresidential","DirectlyConditioned",273.75,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000013_W30 Reversed","New","Zn 104 Corridor Space","Nonresidential","DirectlyConditioned",116.85,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000017_W10","New","Zn 104 Corridor Space","Nonresidential","DirectlyConditioned",218.73,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000017_W21","New","Zn 104 Corridor Space","Nonresidential","DirectlyConditioned",109.70,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000013_W40","New","Zn 105 Phone Space","Nonresidential","DirectlyConditioned",162.17,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000012_W51","New","Zn 106 Conference Space","Nonresidential","DirectlyConditioned",94.82,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000014_W50","New","Zn 107 Storage Space","Nonresidential","DirectlyConditioned",147.13,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000014_W60","New","Zn 107 Storage Space","Nonresidential","DirectlyConditioned",245.95,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000014_W61","New","Zn 107 Storage Space","Nonresidential","DirectlyConditioned",6.28,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000015_W40","New","Zn 108 Break Room Space","Nonresidential","DirectlyConditioned",54.35,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000015_W41","New","Zn 108 Break Room Space","Nonresidential","DirectlyConditioned",172.12,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000016_W30","New","Zn 109 Dining Space","Nonresidential","DirectlyConditioned",172.12,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000016_W40","New","Zn 109 Dining Space","Nonresidential","DirectlyConditioned",290.37,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"11000000_W40 Reversed","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned",7.55,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"11000000_W50 Reversed","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned",122.41,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"FT000000_W41 Reversed","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned",8.50,-99996,"WoodFrameIntWallU099","WoodFramingAndOtherWall",-99996.000
+"FT000000_W50 Reversed","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned",64.11,-99996,"WoodFrameIntWallU099","WoodFramingAndOtherWall",-99996.000
+"PN000000_W60 Reversed","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned",63.52,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000000_W31 Reversed","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned",74.09,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000000_W40 Reversed","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned",119.20,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000005_W50 Reversed","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned",168.34,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000006_W40 Reversed","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned",215.27,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000007_W41 Reversed","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned",139.28,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000008_W40 Reversed","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned",93.55,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000009_W41 Reversed","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned",16.67,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000009_W50 Reversed","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned",120.01,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000009_W60 Reversed","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned",27.33,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST00000A_W40 Reversed","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned",117.93,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST00000D_W41 Reversed","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned",48.48,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST00000D_W50 Reversed","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned",101.66,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST00000E_W31 Reversed","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned",67.24,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST00000E_W40 Reversed","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned",156.16,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000010_W102 Reversed","New","Zn 111 Open Office Space","Nonresidential","DirectlyConditioned",166.32,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"PN000000_W70","New","Zn 111A Vestibule Space","Nonresidential","DirectlyConditioned",45.57,-99996,"WoodFrameIntWallU099","WoodFramingAndOtherWall",-99996.000
+"ST00000A_W30 Reversed","New","Zn 111A Vestibule Space","Nonresidential","DirectlyConditioned",153.06,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST00000C_W31 Reversed","New","Zn 111A Vestibule Space","Nonresidential","DirectlyConditioned",11.11,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST00000C_W40 Reversed","New","Zn 111A Vestibule Space","Nonresidential","DirectlyConditioned",79.82,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST00000E_W30 Reversed","New","Zn 111A Vestibule Space","Nonresidential","DirectlyConditioned",28.48,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000000_W20","New","Zn 112 Huddle Space","Nonresidential","DirectlyConditioned",119.20,-99996,"WoodFrameIntWallU099","WoodFramingAndOtherWall",-99996.000
+"ST000000_W30","New","Zn 112 Huddle Space","Nonresidential","DirectlyConditioned",49.28,-99996,"WoodFrameIntWallU099","WoodFramingAndOtherWall",-99996.000
+"FT000000_W10","New","Zn 113 Restroom Space","Nonresidential","Unconditioned",116.70,-99996,"WoodFrameIntWallU099","WoodFramingAndOtherWall",-99996.000
+"FT000000_W40","New","Zn 113 Restroom Space","Nonresidential","Unconditioned",40.67,-99996,"WoodFrameIntWallU099","WoodFramingAndOtherWall",-99996.000
+"ST000006_W20 Reversed","New","Zn 120 Conference Space","Nonresidential","DirectlyConditioned",164.97,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000007_W40","New","Zn 120 Conference Space","Nonresidential","DirectlyConditioned",118.30,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000008_W30","New","Zn 121 Huddle Space","Nonresidential","DirectlyConditioned",137.55,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST000009_W40","New","Zn 122 Office Space","Nonresidential","DirectlyConditioned",150.65,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST00000C_W20","New","Zn 124 Conference Space","Nonresidential","DirectlyConditioned",49.78,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST00000C_W21","New","Zn 124 Conference Space","Nonresidential","DirectlyConditioned",34.56,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST00000C_W30","New","Zn 124 Conference Space","Nonresidential","DirectlyConditioned",50.41,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST00000C_W32","New","Zn 124 Conference Space","Nonresidential","DirectlyConditioned",116.65,-99996,"WoodFrameIntWallU099","WoodFramingAndOtherWall",-99996.000
+"ST00000B_W60 Reversed","New","Zn 125 Electrical Space","Nonresidential","Unconditioned",70.76,-99996,"WoodFrameIntWallU099","WoodFramingAndOtherWall",-99996.000
+"ST00000E_W20 Reversed","New","Zn 125 Electrical Space","Nonresidential","Unconditioned",106.23,-99996,"WoodFrameIntWallU099","WoodFramingAndOtherWall",-99996.000
+"ST00000B_W51 Reversed","New","Zn 126 Copy Space","Nonresidential","DirectlyConditioned",49.94,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST00000E_W50","New","Zn 126 Copy Space","Nonresidential","DirectlyConditioned",97.04,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST00000B_W50 Reversed","New","Zn 127 Huddle Space","Nonresidential","DirectlyConditioned",69.25,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST00000D_W30","New","Zn 127 Huddle Space","Nonresidential","DirectlyConditioned",32.41,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST00000D_W40","New","Zn 127 Huddle Space","Nonresidential","DirectlyConditioned",48.47,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST00000B_W30","New","Zn 128 IT Room Space","Nonresidential","DirectlyConditioned",78.50,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST00000B_W40","New","Zn 128 IT Room Space","Nonresidential","DirectlyConditioned",131.53,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST00000F_W40","New","Zn 129 Conference Space","Nonresidential","DirectlyConditioned",155.84,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+"ST00000F_W50","New","Zn 129 Conference Space","Nonresidential","DirectlyConditioned",39.88,-99996,"MetalFrameWallInterior","UNDEFINED",-99996.000
+
+
+
+Construction Assembly
+Name,Surface Type,Material Layer 1,Material Layer 2,Material Layer 3,Material Layer 4,Material Layer 5, Material Layer 6, Material Layer 7, Material Layer 8, Material Layer 9, Material Layer 10
+"MetalFrameWallU055","ExteriorWall","","","","","","","","","",""
+"MetalFrameWallUnconditioned","ExteriorWall","","","","","","","","","",""
+"MetalFrameWallInterior","InteriorWall","","","","","","","","","",""
+"WoodFrameIntWallU099","InteriorWall","","","","","","","","","",""
+"FlatNonresWoodFramingAndOtherRoofU028","Roof","","","","","","","","","",""
+"FlatNonresWoodFramingAndOtherRoofUnconditioned","Roof","","","","","","","","","",""
+"OtherFloorU071","ExteriorFloor","","","","","","","","","",""
+"OtherFloorUnconditioned","ExteriorFloor","","","","","","","","","",""
+
+
+
+Construction Materials
+Name,Code Item,Type,R-value,Thickness,Frame Type,Frame Configuration,Frame Depth, Frame Cavity Insulation(for composite material)
+,,,(?F-ft2-h/Btuh),(in),,,,(?F-ft2-h/Btuh)
+"Stucco - 7/8 in.","UNDEFINED","Plastering Materials",0.180,0.880,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation R14.60","UNDEFINED","Insulation Board",14.600,2.330,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation R1.41","UNDEFINED","Insulation Board",1.410,0.225,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation R0.02","UNDEFINED","Insulation Board",0.020,0.003,"- specify -","- specify -","- specify -",0.000
+"Air - Metal Wall Framing - 16 or 24 in. OC","UNDEFINED","Air",0.650,5.500,"- specify -","- specify -","- specify -",0.000
+"Gypsum Board - 1/2 in.","UNDEFINED","Bldg Board and Siding",0.450,0.500,"- specify -","- specify -","- specify -",0.000
+"Gypsum Board - 5/8 in.","UNDEFINED","Bldg Board and Siding",0.560,0.630,"- specify -","- specify -","- specify -",0.000
+"Wood Frame w/ R11.25","UNDEFINED","Composite",7.204,0.000,"Wood","Wall16inOC","3_5In",11.250
+"Metal Standing Seam - 1/16 in.","UNDEFINED","Roofing",0.000,0.063,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation R34.93","UNDEFINED","Insulation Board",34.930,5.575,"- specify -","- specify -","- specify -",0.000
+"Compliance Insulation R9.83","UNDEFINED","Insulation Board",9.830,1.570,"- specify -","- specify -","- specify -",0.000
+"Plywood - 5/8 in.","UNDEFINED","Bldg Board and Siding",0.780,0.630,"- specify -","- specify -","- specify -",0.000
+"Carpet - 3/4 in.","UNDEFINED","Finish Materials",2.380,0.750,"- specify -","- specify -","- specify -",0.000

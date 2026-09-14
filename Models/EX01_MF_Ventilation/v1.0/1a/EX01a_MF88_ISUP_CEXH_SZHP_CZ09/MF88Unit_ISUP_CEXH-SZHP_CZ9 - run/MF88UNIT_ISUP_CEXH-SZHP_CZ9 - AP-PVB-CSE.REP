@@ -1,0 +1,288 @@
+
+
+Error Messages for Run 001: MF88 Individual Supply + Central Exhaust (SZHP)  /
+
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - AP-PVB-CSE.CSE(149): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - AP-PVB-CSE.CSE(149): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - AP-PVB-CSE.CSE(149): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaSupFanElecPwr' is ignored when there is no supply fan
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - AP-PVB-CSE.CSE(149): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaSupFanEndUse' is ignored when there is no supply fan
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - AP-PVB-CSE.CSE(149): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaHXBypass' is ignored when there is no supply fan
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - AP-PVB-CSE.CSE(149): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaExhFanElecPwr' is ignored when there is no exhaust fan
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - AP-PVB-CSE.CSE(149): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaExhFanEndUse' is ignored when there is no exhaust fan
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - AP-PVB-CSE.CSE(149): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaHXBypass' is ignored when there is no exhaust fan
+---------------
+
+
+
+Log for Run 001: MF88 Individual Supply + Central Exhaust (SZHP)  /  Proposed 
+
+CSE 0.927.0 for Win32 console
+
+
+
+Input for Run 001:
+
+#        #define  RunDateFmt  11:32, Sat, May 23, 2026
+#        #define  RunID                7   // Proposed
+#        #define  AnalysisType        13   // Proposed and Standard
+#        #define  CompCodeBase      2025   // CA2025
+#        #define  StdDesignBase     2025   // CA2025
+#        #define  StandardsVersion  2026   // Compliance2025
+#        #define  DesignRatingBase     0   // n/a
+#        #define  ClimateZone          9   // ClimateZone9
+#        #define  DD1  Aug 14
+#        #define  CD1  Jun 20
+#        #define  HD1  Dec 01
+#        #define  SEASONCHANGESETPT  60
+#        #define  FANVENTLOCKOUTTEMP  68
+#        #define  ISSEASONCOOLING  (@weather.taDbAvg07 > SEASONCHANGESETPT)
+#        #define  FANVENTAVAIL  (@weather.taDbAvg07 > FANVENTLOCKOUTTEMP)
+#        #define  WINDOWVENTAVAIL  (!@Top.autoSizing && ($hour < 24 && ($hour > 12 || $radDiff+$radbeam > .01)))
+#        #define  HWUSEF_WD  hourval( 0.014, 0.008, 0.009, 0.011, 0.020, 0.044, 0.089, 0.107, 0.089, 0.066, 0.052, 0.038, 0.036, 0.033, 0.032, 0.026, 0.042, 0.048, 0.052, 0.047, 0.042, 0.039, 0.036, 0.022 )
+#        #define  HWUSEF_WE  hourval( 0.018, 0.010, 0.009, 0.008, 0.015, 0.023, 0.026, 0.047, 0.077, 0.083, 0.074, 0.061, 0.051, 0.043, 0.039, 0.039, 0.052, 0.058, 0.056, 0.052, 0.047, 0.044, 0.040, 0.028 )
+#        #define  Cook_WD       hourval( .005,.004,.004,.004,.004,.014,.019,.025,.026,.022,.021,.029,.035,.032,.034,.052,.115,.193,.180,.098,.042,.020,.012,.010)
+#        #define  Cook_WEH      hourval( .005,.004,.003,.003,.003,.005,.010,.027,.048,.048,.046,.055,.063,.059,.062,.068,.091,.139,.129,.072,.032,.014,.009,.005)
+#        #define  TV_WD         hourval( .035,.026,.023,.022,.021,.021,.025,.032,.038,.040,.038,.038,.041,.042,.042,.041,.044,.049,.056,.064,.070,.074,.067,.051)
+#        #define  TV_WEH        hourval( .035,.027,.022,.021,.020,.020,.022,.029,.037,.043,.042,.039,.040,.042,.045,.048,.051,.052,.056,.061,.065,.069,.064,.050)
+#        #define  STB_WD        hourval( .040,.040,.040,.040,.040,.040,.040,.041,.040,.040,.040,.040,.040,.040,.041,.041,.042,.043,.044,.045,.046,.047,.045,.045)
+#        #define  STB_WEH       hourval( .041,.041,.040,.041,.040,.040,.040,.040,.041,.042,.042,.041,.041,.041,.041,.042,.042,.043,.044,.044,.045,.045,.044,.039)
+#        #define  Comp_WD       hourval( .036,.033,.032,.032,.031,.032,.034,.036,.039,.043,.045,.045,.046,.046,.046,.047,.048,.049,.049,.049,.049,.048,.044,.041)
+#        #define  Comp_WEH      hourval( .036,.034,.033,.033,.032,.033,.033,.035,.038,.042,.044,.045,.046,.047,.047,.048,.049,.049,.048,.048,.048,.047,.044,.041)
+#        #define  RMEL_WD       hourval( .037,.035,.034,.034,.032,.036,.042,.044,.037,.032,.033,.033,.032,.033,.035,.037,.044,.053,.058,.060,.062,.060,.052,.045)
+#        #define  RMEL_WEH      hourval( .037,.035,.034,.034,.032,.036,.042,.044,.037,.032,.033,.033,.032,.033,.035,.037,.044,.053,.058,.060,.062,.060,.052,.045)
+#        #define  IntLight_WD   hourval( .023,.019,.015,.017,.021,.031,.042,.041,.034,.029,.027,.025,.021,.021,.021,.026,.031,.044,.084,.117,.113,.096,.063,.039)
+#        #define  IntLight_WEH  hourval( .023,.019,.015,.017,.021,.031,.042,.041,.034,.029,.027,.025,.021,.021,.021,.026,.031,.044,.084,.117,.113,.096,.063,.039)
+#        #define  ExtLight_WD   hourval( .046,.046,.046,.046,.046,.037,.035,.034,.033,.028,.022,.015,.012,.011,.011,.012,.019,.037,.049,.065,.091,.105,.091,.063)
+#        #define  ExtLight_WEH  hourval( .046,.046,.045,.045,.046,.045,.044,.041,.036,.030,.024,.016,.012,.011,.011,.012,.019,.038,.048,.060,.083,.098,.085,.059)
+#        #define  Cook_SM    choose1( $month, 1.094,1.065,1.074,0.889,0.891,0.935,0.993,0.92,0.923,0.92,1.128,1.168)
+#        #define  TV_SM      choose1( $month, 1.032,.991,.986,.99,.971,.971,1.002,1.013,1.008,1.008,1.02,1.008)
+#        #define  STB_SM     choose1( $month, 1.02,.84,.92,.98,.91,.94,1.05,1.06,1.06,1.14,1.03,1.050)
+#        #define  Comp_SM    choose1( $month, 0.98,0.87,0.89,1.11,1.14,0.99,1.05,1.01,0.96,0.97,0.99,1.04)
+#        #define  Other_SM   choose1( $month,  1.19,1.11,1.02,.93,.84,.8,.82,.88,.98,1.07,1.16,1.2)
+#        #define  RefrConst_WD   hourval( -0.5436,-0.3646,-0.4044,-0.3871,-0.5341,-0.7521,-0.3747,0.0041,-0.1293,-0.4644,-0.4800,-0.4351,-0.2195,-0.3301,-0.0919,-0.1686,-0.4819,-0.4731,-0.2223,0.0604,-0.1466,-0.3214,-0.4113,-0.7701)
+#        #define  RefrConst_WEH  hourval( -0.3467,-0.2779,-0.2844,-0.2954,-0.4680,-0.5127,-0.7110,-0.5662,0.0463,-0.2995,-0.2388,-0.2646,-0.2905,-0.2730,-0.3306,-0.0031,-0.4356,-0.2580,0.2384,0.1176,-0.0458,-0.0596,-0.5300,0.0197 )
+#        #define  RefrTemp_WD    hourval( 0.0195,0.0167,0.0169,0.0165,0.0183,0.0218,0.0178,0.0136,0.0151,0.0189,0.0188,0.0183,0.0156,0.0169,0.0137,0.0149,0.0197,0.0208,0.0184,0.0144,0.0166,0.0184,0.0188,0.0229)
+#        #define  RefrTemp_WEH   hourval( 0.0171,0.0156,0.0155,0.0154,0.0175,0.0181,0.0212,0.0201,0.0130,0.0176,0.0165,0.0171,0.0177,0.0176,0.0182,0.0139,0.0197,0.0180,0.0121,0.0135,0.0154,0.0150,0.0205,0.0129)
+#        #define  FVCHPC  0.95		// VCHP cooling input energy factor
+#        #define  FVCHPH  0.88		// VCHP heating input energy factor
+#        #define  NumCntrlWHtrs( s)  tofloat( 1+fix(@DHWSYS[ s].loadMax / (15400. * @DHWSYS[ s].loadMaxDur)))
+#        #define  RunFileName  MF88Unit_ISUP_CEXH-SZHP_CZ9 - ap
+           repHdrL = "MF88 Individual Supply + Central Exhaust (SZHP)"
+           runTitle = "MF88 Individual Supply + Central Exhaust (SZHP)  /  Proposed (PV-Batt only)  /  MF88Unit_ISUP_CEXH-SZHP_CZ9.cibd25x"
+           wfName = "CA_Title24_2025_LOS-ANGELES-USC.epw"
+           ebTolHour = 0.001
+           ebTolDay = 0.001
+           ebTolMon = 0.001
+           ebTolSubHr = 0.001
+           tol = 0.01                           // Endtest convergence tolerance for internal iteration in models
+           jan1DOW = "THU"
+           skyModel = "anisotropic"
+           bldgAzm = 0
+           dt = "YES"
+           heatDsTDbO = 43.1                    // °F
+           coolDsCond = "ClgDC_0p4pct_Aug"
+           ventAvail = zonal
+           nSubSteps = 6
+           wuDays = 15
+           awTrigSlr = 0.3
+           anTolAbs = 0.03
+           anTolRel = 0.003
+           auszTol = 0.05
+           awTrigT = 15
+           awTrigH = 1
+        
+           IMPORTFILE   "EplusElecUseImportFile"  
+              imFileName = "MF88Unit_ISUP_CEXH-SZHP_CZ9 - ap-pvb-cse-elecuse.csv"    // Name of (path &) file to read data from
+              imTitle = "EplusElecUse"          // Title expected to be found on line 3 of the import file
+              imFreq = "Hour"                   // Specifies the interval at which CSE reads from the import file
+              imHeader = "Yes"                  // Indicates whether the import file include a 4 line header
+        
+           GAIN   "EplusElecUseGain"  
+              gnMeter = "MtrElec"               // Meter that tracks internal gain
+              gnEndUse = "User1"                // Internal gain enduse
+              gnPower = 3412.14 * import( "EplusElecUseImportFile", "EplusTotalKWH" )    // Expression representing internal gain power, Btuh
+        
+         DELETE Report "eb"    // move from end of CSE file
+        
+        DESCOND   "ClgDC_0p4pct_Aug"  
+           dcDB = 92.7                          // Cooling design dry-bulb temperature, °F
+           dcDay = Aug 21                       // Calendar date for this design cooling conditions
+           dcMCDBR = 20.7                       // Coincident daily dry-bulb range, °F
+           dcMCWB = 70.2                        // Coincident wet-bulb temperature, °F
+           dcMCWBR = 7.8                        // Coincident daily wet-bulb range, °F
+           dcTauB = 0.383                       // ASHRAE beam 'pseudo optical depth'
+           dcTauD = 2.433                       // ASHRAE diffuse 'pseudo optical depth'
+           dcWindSpeed = 2                      // Wind speed for design conditions, mph
+        
+        METER   "MtrElec"  
+        
+        PERFORMANCEMAP   "Heat Pump System - Res-htgperfmap"      // Single speed: Autosized / HSPF2 7.5
+        
+           PMGRIDAXIS   "Heat Pump System - Res-htgdbtaxis"  
+              pmGXType = "DBT"
+              pmGXValues = 0, 5, 17, 47
+              pmGXRefValue = 47
+        
+           PMGRIDAXIS   "Heat Pump System - Res-htgspdaxis"  
+              pmGXType = "Speed"
+              pmGXValues = 1
+              pmGXRefValue = 1
+        
+           PMLOOKUPDATA   "Heat Pump System - Res-htgcapdata"  
+              pmLUType = "CapRat"
+              pmLUValues = 0.414067,            // 0F
+                           0.4764,              // 5F
+                           0.626,               // 17F
+                           1                    // 47F
+        
+           PMLOOKUPDATA   "Heat Pump System - Res-htgcopdata"  
+              pmLUType = "COP"
+              pmLUValues = 1.776497,            // 0F
+                           1.97852,             // 5F
+                           2.414382,            // 17F
+                           3.273178             // 47F
+        
+        PERFORMANCEMAP   "Heat Pump System - Res-clgperfmap"      // Single speed: Autosized / EER2 11.7 / SEER2 14.3
+        
+           PMGRIDAXIS   "Heat Pump System - Res-clgdbtaxis"  
+              pmGXType = "DBT"
+              pmGXValues = 40, 48, 82, 95, 125
+              pmGXRefValue = 95
+        
+           PMGRIDAXIS   "Heat Pump System - Res-clgspdaxis"  
+              pmGXType = "Speed"
+              pmGXValues = 1
+              pmGXRefValue = 1
+        
+           PMLOOKUPDATA   "Heat Pump System - Res-clgcapdata"  
+              pmLUType = "CapRat"
+              pmLUValues = 1.290231,            // 40F
+                           1.24779,             // 48.0F
+                           1.0686,              // 82F
+                           1,                   // 95F
+                           0.841692             // 125F
+        
+           PMLOOKUPDATA   "Heat Pump System - Res-clgcopdata"  
+              pmLUType = "COP"
+              pmLUValues = 10.541931,           // 40F
+                           10.195166,           // 48.0F
+                           4.36554,             // 82F
+                           3.428933,            // 95F
+                           2.105477             // 125F
+        
+        DOAS   "doas-Res Central Exhaust (All Units)"  
+           oaSupFanElecPwr = 0.35               // Fan input power per unit air flow (at design flow and pressure), W/cfm
+           oaSupFanEndUse = "FANV"              // Enduse to apply fan energy usage to
+           oaExhFanElecPwr = 0.302              // Fan input power per unit air flow (at design flow and pressure), W/cfm
+           oaExhFanEndUse = "FANV"              // Enduse to exhaust fan energy usage to
+           oaHXBypass = "No"                    // This field denotes whether the heat exchanger is locked out when economizer is operating.
+        
+        PVARRAY   "PV Array-sim"  
+-----------------------
+???     C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - AP-PVB-CSE.CSE(149): Info: 
+???       doas 'doas-Res Central Exhaust (All Units)': 
+???         'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+-----------------------
+           pvDCSysSize = 274.5                  // kW
+           pvModuleType = "Standard"
+           pvArrayType = "FixedOpenRack"
+           pvTilt = 22.619884                   // deg
+           pvAzm = 170                          // deg
+           pvSIF = 2                            // frac
+           pvInverterEff = 0.96                 // frac
+           pvSysLosses = 0.1744                 // frac
+           pvElecMtr = "MtrElec"
+        
+        BATTERY   "Battery-sim"  
+           btChgEff = 0.95
+           btDschgEff = 0.95
+           btMaxCap = 221.17                    // kWh
+           btMaxChgPwr = 65.04                  // kW
+           btMaxDschgPwr = 65.04                // kW
+           btChgReq = select( $dsDay>0, 0,   $month>(1-1) && $month<(12+1) && $hour<19 && $hour>(11-1),-min(@BATTERY[ 1].loadSeen, 0), default -max( @BATTERY[ 1].loadSeen, 0))    // kW
+           btMeter = "MtrElec"
+        
+        EXPORT   "ExportElec"  
+           exExportfile = "Primary"             // Name of EXPORTFILE to write simulation results to
+           exType = "MTR"                       // Export type
+           exFreq = "HOUR"                      // Time interval for generating rows of export data
+           exMeter = "MtrElec"                  // Meter to report
+           exBtuSf = 1000                       // Result scaling factor (1,000 reports kBtu)
+           exDayBeg = Jan 1                     // initial day of export period
+           exDayEnd = Dec 31                    // final day of export period
+        
+        
+         RUN
+         $EOF
+-----------------------
+???     C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - AP-PVB-CSE.CSE(149): Info: 
+???       doas 'doas-Res Central Exhaust (All Units)': 
+???         'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+-----------------------
+???     C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - AP-PVB-CSE.CSE(149): Info: 
+???       doas 'doas-Res Central Exhaust (All Units)': 
+???         'oaSupFanElecPwr' is ignored when there is no supply fan
+-----------------------
+???     C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - AP-PVB-CSE.CSE(149): Info: 
+???       doas 'doas-Res Central Exhaust (All Units)': 
+???         'oaSupFanEndUse' is ignored when there is no supply fan
+-----------------------
+???     C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - AP-PVB-CSE.CSE(149): Info: 
+???       doas 'doas-Res Central Exhaust (All Units)': 
+???         'oaHXBypass' is ignored when there is no supply fan
+-----------------------
+???     C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - AP-PVB-CSE.CSE(149): Info: 
+???       doas 'doas-Res Central Exhaust (All Units)': 
+???         'oaExhFanElecPwr' is ignored when there is no exhaust fan
+-----------------------
+???     C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - AP-PVB-CSE.CSE(149): Info: 
+???       doas 'doas-Res Central Exhaust (All Units)': 
+???         'oaExhFanEndUse' is ignored when there is no exhaust fan
+-----------------------
+???     C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - AP-PVB-CSE.CSE(149): Info: 
+???       doas 'doas-Res Central Exhaust (All Units)': 
+???         'oaHXBypass' is ignored when there is no exhaust fan
+-----------------------
+
+
+
+CSE 0.927.0 for Win32 console run(s) done: Sat 23-May-26  11: am
+
+Executable:   c:\program files\cbecc 2025.2.0.1\cse\cse.exe
+              03-Nov-25   3:3 pm   (VS 14.29    3377664 bytes)  (HPWH 1.26.0)
+Command line: -b
+              C:\Users\MichaelSawford\A2 Efficiency\P-2050-006.00 SCE T24 Complex HVAC - Documents\4.00-Modeling\EX01a_MF Ventilation\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88Unit_ISUP_CEXH-SZHP_CZ9 - run\MF88Unit_ISUP_CEXH-SZHP_CZ9 - ap-pvb-cse
+Input file:   C:\Users\MichaelSawford\A2 Efficiency\P-2050-006.00 SCE T24 Complex HVAC - Documents\4.00-Modeling\EX01a_MF Ventilation\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88Unit_ISUP_CEXH-SZHP_CZ9 - run\MF88Unit_ISUP_CEXH-SZHP_CZ9 - ap-pvb-cse.cse
+Report file:  C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF88_1A_ISUP_CEXH-SZHP_CZ09\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - RUN\MF88UNIT_ISUP_CEXH-SZHP_CZ9 - AP-PVB-CSE.REP
+
+Timing info --
+
+               Input:  Time = 0.04     Calls = 1         T/C = 0.0350
+          AutoSizing:  Time = 0.00     Calls = 0         T/C = 0.0000
+          Simulation:  Time = 0.12     Calls = 1         T/C = 0.1200
+             Reports:  Time = 0.01     Calls = 1         T/C = 0.0100
+               Total:  Time = 0.17     Calls = 1         T/C = 0.1670

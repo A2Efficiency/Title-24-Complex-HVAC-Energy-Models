@@ -1,0 +1,3657 @@
+
+OS:Version,
+  {28f5a8af-fbaf-4a80-9c99-148deb3f4169}, !- Handle
+  3.10.0;                                 !- Version Identifier
+
+OS:SimulationControl,
+  {eb4a663a-a0bc-483e-95e1-7f7bb3da3b08}, !- Handle
+  ,                                       !- Do Zone Sizing Calculation
+  ,                                       !- Do System Sizing Calculation
+  ,                                       !- Do Plant Sizing Calculation
+  No,                                     !- Run Simulation for Sizing Periods
+  Yes,                                    !- Run Simulation for Weather File Run Periods
+  ,                                       !- Loads Convergence Tolerance Value {W}
+  ,                                       !- Temperature Convergence Tolerance Value {deltaC}
+  FullExterior,                           !- Solar Distribution
+  50;                                     !- Maximum Number of Warmup Days
+
+OS:YearDescription,
+  {cf2084c1-480f-4f63-a015-4aa8fda66e50}, !- Handle
+  2009,                                   !- Calendar Year
+  ,                                       !- Day of Week for Start Day
+  ;                                       !- Is Leap Year
+
+OS:RunPeriod,
+  {1b51f773-5438-4543-a417-e10f388141e8}, !- Handle
+  CA_Title24_2025_LOS-ANGELES-USC,        !- Name
+  1,                                      !- Begin Month
+  1,                                      !- Begin Day of Month
+  12,                                     !- End Month
+  31,                                     !- End Day of Month
+  No,                                     !- Use Weather File Holidays and Special Days
+  No,                                     !- Use Weather File Daylight Saving Period
+  Yes,                                    !- Apply Weekend Holiday Rule
+  ,                                       !- Use Weather File Rain Indicators
+  ,                                       !- Use Weather File Snow Indicators
+  ;                                       !- Number of Times Runperiod to be Repeated
+
+OS:Site,
+  {b60ec752-8328-4d25-8004-9cdb8146fcfb}, !- Handle
+  LOS ANGELES USC,                        !- Name
+  38.69,                                  !- Latitude {deg}
+  -121.6,                                 !- Longitude {deg}
+  -8,                                     !- Time Zone {hr}
+  54.5592,                                !- Elevation {m}
+  Suburbs;                                !- Terrain
+
+OS:SizingPeriod:DesignDay,
+  {7aa3eba9-f985-4566-841c-b1f8bbc7f580}, !- Handle
+  LOS ANGELES USC Ann Htg 99.6% Condns DB, !- Name
+  6.2,                                    !- Maximum Dry-Bulb Temperature {C}
+  0,                                      !- Daily Dry-Bulb Temperature Range {deltaC}
+  100663,                                 !- Barometric Pressure {Pa}
+  0.6,                                    !- Wind Speed {m/s}
+  20,                                     !- Wind Direction {deg}
+  0,                                      !- Sky Clearness
+  No,                                     !- Rain Indicator
+  No,                                     !- Snow Indicator
+  21,                                     !- Day of Month
+  12,                                     !- Month
+  WinterDesignDay,                        !- Day Type
+  No,                                     !- Daylight Saving Time Indicator
+  Wetbulb,                                !- Humidity Condition Type
+  ,                                       !- Humidity Condition Day Schedule Name
+  6.2,                                    !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
+  ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
+  ASHRAEClearSky;                         !- Solar Model Indicator
+
+OS:SizingPeriod:DesignDay,
+  {f699f74a-4c14-4085-8059-a860254d82a7}, !- Handle
+  LOS ANGELES USC  June .4% Condns DB=>MCWB, !- Name
+  32.3,                                   !- Maximum Dry-Bulb Temperature {C}
+  8.2,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
+  100663,                                 !- Barometric Pressure {Pa}
+  0.6,                                    !- Wind Speed {m/s}
+  260,                                    !- Wind Direction {deg}
+  ,                                       !- Sky Clearness
+  No,                                     !- Rain Indicator
+  No,                                     !- Snow Indicator
+  21,                                     !- Day of Month
+  6,                                      !- Month
+  SummerDesignDay,                        !- Day Type
+  No,                                     !- Daylight Saving Time Indicator
+  Wetbulb,                                !- Humidity Condition Type
+  ,                                       !- Humidity Condition Day Schedule Name
+  20.7,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
+  ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
+  ASHRAETau,                              !- Solar Model Indicator
+  ,                                       !- Beam Solar Day Schedule Name
+  ,                                       !- Diffuse Solar Day Schedule Name
+  0.405,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance {dimensionless}
+  2.324;                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance {dimensionless}
+
+OS:SizingPeriod:DesignDay,
+  {90743517-757f-4270-bf7c-361cb41b92e0}, !- Handle
+  LOS ANGELES USC  July .4% Condns DB=>MCWB, !- Name
+  33.8,                                   !- Maximum Dry-Bulb Temperature {C}
+  9.2,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
+  100663,                                 !- Barometric Pressure {Pa}
+  0.6,                                    !- Wind Speed {m/s}
+  260,                                    !- Wind Direction {deg}
+  ,                                       !- Sky Clearness
+  No,                                     !- Rain Indicator
+  No,                                     !- Snow Indicator
+  21,                                     !- Day of Month
+  7,                                      !- Month
+  SummerDesignDay,                        !- Day Type
+  No,                                     !- Daylight Saving Time Indicator
+  Wetbulb,                                !- Humidity Condition Type
+  ,                                       !- Humidity Condition Day Schedule Name
+  22.1,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
+  ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
+  ASHRAETau,                              !- Solar Model Indicator
+  ,                                       !- Beam Solar Day Schedule Name
+  ,                                       !- Diffuse Solar Day Schedule Name
+  0.402,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance {dimensionless}
+  2.401;                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance {dimensionless}
+
+OS:SizingPeriod:DesignDay,
+  {de005b00-a399-4230-af73-3189e653e9b5}, !- Handle
+  LOS ANGELES USC  August .4% Condns DB=>MCWB, !- Name
+  33.7,                                   !- Maximum Dry-Bulb Temperature {C}
+  9.6,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
+  100663,                                 !- Barometric Pressure {Pa}
+  0.6,                                    !- Wind Speed {m/s}
+  260,                                    !- Wind Direction {deg}
+  ,                                       !- Sky Clearness
+  No,                                     !- Rain Indicator
+  No,                                     !- Snow Indicator
+  21,                                     !- Day of Month
+  8,                                      !- Month
+  SummerDesignDay,                        !- Day Type
+  No,                                     !- Daylight Saving Time Indicator
+  Wetbulb,                                !- Humidity Condition Type
+  ,                                       !- Humidity Condition Day Schedule Name
+  21.2,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
+  ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
+  ASHRAETau,                              !- Solar Model Indicator
+  ,                                       !- Beam Solar Day Schedule Name
+  ,                                       !- Diffuse Solar Day Schedule Name
+  0.383,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance {dimensionless}
+  2.433;                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance {dimensionless}
+
+OS:SizingPeriod:DesignDay,
+  {b71a2ff0-7f71-4a0e-8b8b-120f875c12bb}, !- Handle
+  LOS ANGELES USC  September .4% Condns DB=>MCWB, !- Name
+  36.3,                                   !- Maximum Dry-Bulb Temperature {C}
+  9.8,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
+  100663,                                 !- Barometric Pressure {Pa}
+  0.6,                                    !- Wind Speed {m/s}
+  260,                                    !- Wind Direction {deg}
+  ,                                       !- Sky Clearness
+  No,                                     !- Rain Indicator
+  No,                                     !- Snow Indicator
+  21,                                     !- Day of Month
+  9,                                      !- Month
+  SummerDesignDay,                        !- Day Type
+  No,                                     !- Daylight Saving Time Indicator
+  Wetbulb,                                !- Humidity Condition Type
+  ,                                       !- Humidity Condition Day Schedule Name
+  20.1,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
+  ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
+  ASHRAETau,                              !- Solar Model Indicator
+  ,                                       !- Beam Solar Day Schedule Name
+  ,                                       !- Diffuse Solar Day Schedule Name
+  0.369,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance {dimensionless}
+  2.465;                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance {dimensionless}
+
+OS:SizingPeriod:DesignDay,
+  {2bd0566f-bc26-4610-969b-afb2d4a701b9}, !- Handle
+  LOS ANGELES USC  October .4% Condns DB=>MCWB, !- Name
+  35.2,                                   !- Maximum Dry-Bulb Temperature {C}
+  9.9,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
+  100663,                                 !- Barometric Pressure {Pa}
+  0.6,                                    !- Wind Speed {m/s}
+  260,                                    !- Wind Direction {deg}
+  ,                                       !- Sky Clearness
+  No,                                     !- Rain Indicator
+  No,                                     !- Snow Indicator
+  21,                                     !- Day of Month
+  10,                                     !- Month
+  SummerDesignDay,                        !- Day Type
+  No,                                     !- Daylight Saving Time Indicator
+  Wetbulb,                                !- Humidity Condition Type
+  ,                                       !- Humidity Condition Day Schedule Name
+  16.8,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
+  ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
+  ASHRAETau,                              !- Solar Model Indicator
+  ,                                       !- Beam Solar Day Schedule Name
+  ,                                       !- Diffuse Solar Day Schedule Name
+  0.38,                                   !- ASHRAE Clear Sky Optical Depth for Beam Irradiance {dimensionless}
+  2.397;                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance {dimensionless}
+
+OS:SizingPeriod:DesignDay,
+  {bd156d13-096c-4008-83ed-59454f1f7e49}, !- Handle
+  LOS ANGELES USC  November .4% Condns DB=>MCWB, !- Name
+  31.9,                                   !- Maximum Dry-Bulb Temperature {C}
+  10.4,                                   !- Daily Dry-Bulb Temperature Range {deltaC}
+  100663,                                 !- Barometric Pressure {Pa}
+  0.6,                                    !- Wind Speed {m/s}
+  260,                                    !- Wind Direction {deg}
+  ,                                       !- Sky Clearness
+  No,                                     !- Rain Indicator
+  No,                                     !- Snow Indicator
+  21,                                     !- Day of Month
+  11,                                     !- Month
+  SummerDesignDay,                        !- Day Type
+  No,                                     !- Daylight Saving Time Indicator
+  Wetbulb,                                !- Humidity Condition Type
+  ,                                       !- Humidity Condition Day Schedule Name
+  15.4,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
+  ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
+  ASHRAETau,                              !- Solar Model Indicator
+  ,                                       !- Beam Solar Day Schedule Name
+  ,                                       !- Diffuse Solar Day Schedule Name
+  0.325,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance {dimensionless}
+  2.558;                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance {dimensionless}
+
+OS:WeatherFile,
+  {83100b85-8efc-43a3-bfc0-7b18e7f1e1ca}, !- Handle
+  Usc Downtown La Campus,                 !- City
+  CA,                                     !- State Province Region
+  USA,                                    !- Country
+  USC-DOWNTOWN-LA-CAMPUS,                 !- Data Source
+  722874,                                 !- WMO Number
+  34.024,                                 !- Latitude {deg}
+  -118.291,                               !- Longitude {deg}
+  -8,                                     !- Time Zone {hr}
+  54.6,                                   !- Elevation {m}
+  C:/Users/MichaelSawford/Documents/CBECC 2025 Data/EPW25/CA_Title24_2025_LOS-ANGELES-USC.epw, !- Url
+  FDD82080,                               !- Checksum
+  ,                                       !- Start Date Actual Year
+  Sunday;                                 !- Start Day of Week
+
+OS:Sizing:Parameters,
+  {b15fef36-90cd-4940-a7e3-accf55911a3d}, !- Handle
+  1,                                      !- Heating Sizing Factor
+  1;                                      !- Cooling Sizing Factor
+
+OS:Curve:Biquadratic,
+  {ae3b5d22-fb30-4e9d-9553-a4d19143cd27}, !- Handle
+  BlrHWCondBlrFIRRatio_fQRatioTewtSI,     !- Name
+  1.19381,                                !- Coefficient1 Constant
+  -0.110825,                              !- Coefficient2 x
+  0.039514,                               !- Coefficient3 x**2
+  -0.006371,                              !- Coefficient4 y
+  3.8e-05,                                !- Coefficient5 y**2
+  0.00083,                                !- Coefficient6 x*y
+  0.1,                                    !- Minimum Value of x
+  1,                                      !- Maximum Value of x
+  15.56,                                  !- Minimum Value of y
+  71.1,                                   !- Maximum Value of y
+  0.93,                                   !- Minimum Curve Output
+  1.05;                                   !- Maximum Curve Output
+
+OS:Curve:Cubic,
+  {2133e8c6-5024-4a4c-903a-1c623d538b35}, !- Handle
+  HtRejVSDFanPwrRatio_fQRatio,            !- Name
+  0.331629,                               !- Coefficient1 Constant
+  -0.885676,                              !- Coefficient2 x
+  0.605565,                               !- Coefficient3 x**2
+  0.948482,                               !- Coefficient4 x**3
+  0,                                      !- Minimum Value of x
+  100;                                    !- Maximum Value of x
+
+OS:Schedule:Day,
+  {ff0b40b8-1734-4327-8eee-c926ca6d7ed3}, !- Handle
+  CARes2013 InsLighting Hrly,             !- Name
+  {37fa6e3e-2e26-43b9-816a-bcb2d4c3a28a}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  0.023,                                  !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  0.019,                                  !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  0.015,                                  !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  0.017,                                  !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  0.021,                                  !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  0.031,                                  !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  0.042,                                  !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  0.041,                                  !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  0.034,                                  !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  0.029,                                  !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  0.027,                                  !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  0.025,                                  !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  0.021,                                  !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  0.021,                                  !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  0.021,                                  !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  0.026,                                  !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  0.031,                                  !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  0.044,                                  !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  0.084,                                  !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  0.118,                                  !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  0.113,                                  !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  0.096,                                  !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  0.063,                                  !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  0.038;                                  !- Value Until Time 24
+
+OS:ScheduleTypeLimits,
+  {37fa6e3e-2e26-43b9-816a-bcb2d4c3a28a}, !- Handle
+  Fraction,                               !- Name
+  0,                                      !- Lower Limit Value
+  1,                                      !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Dimensionless;                          !- Unit Type
+
+OS:Schedule:Day,
+  {a9c2e87e-ff45-4d38-9c62-f3a1c191da1f}, !- Handle
+  CARes2013 Occupancy Hrly,               !- Name
+  {37fa6e3e-2e26-43b9-816a-bcb2d4c3a28a}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  0.035,                                  !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  0.035,                                  !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  0.035,                                  !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  0.035,                                  !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  0.035,                                  !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  0.059,                                  !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  0.082,                                  !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  0.055,                                  !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  0.027,                                  !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  0.014,                                  !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  0.014,                                  !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  0.014,                                  !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  0.014,                                  !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  0.014,                                  !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  0.019,                                  !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  0.027,                                  !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  0.041,                                  !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  0.055,                                  !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  0.068,                                  !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  0.082,                                  !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  0.082,                                  !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  0.07,                                   !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  0.053,                                  !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  0.035;                                  !- Value Until Time 24
+
+OS:Schedule:Day,
+  {bed23ddd-e2a8-43dc-85ce-290530e05210}, !- Handle
+  CARes2013 Equipment Hrly,               !- Name
+  {37fa6e3e-2e26-43b9-816a-bcb2d4c3a28a}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  0.037,                                  !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  0.035,                                  !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  0.034,                                  !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  0.034,                                  !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  0.032,                                  !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  0.036,                                  !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  0.042,                                  !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  0.044,                                  !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  0.037,                                  !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  0.032,                                  !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  0.033,                                  !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  0.033,                                  !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  0.032,                                  !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  0.033,                                  !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  0.035,                                  !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  0.037,                                  !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  0.044,                                  !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  0.053,                                  !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  0.058,                                  !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  0.06,                                   !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  0.062,                                  !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  0.06,                                   !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  0.052,                                  !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  0.045;                                  !- Value Until Time 24
+
+OS:Schedule:Day,
+  {ddee8db6-158b-4c60-ac85-a2d16fed05ce}, !- Handle
+  CARes2013 ExtLighting Hrly,             !- Name
+  {37fa6e3e-2e26-43b9-816a-bcb2d4c3a28a}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  0,                                      !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  0,                                      !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  0,                                      !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  0,                                      !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  0,                                      !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  0,                                      !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  0,                                      !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  0,                                      !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  0,                                      !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  0,                                      !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  0,                                      !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  0,                                      !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  0,                                      !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  0,                                      !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  0,                                      !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  0,                                      !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  0,                                      !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  0,                                      !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  0,                                      !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  0,                                      !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  0.25,                                   !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  0.25,                                   !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  0.25,                                   !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  0.25;                                   !- Value Until Time 24
+
+OS:Schedule:Day,
+  {97d3b7cd-bf1a-4fee-af18-e5e71ce9d2fd}, !- Handle
+  CARes2013 SZ Heat Hrly,                 !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  18.3333333333333,                       !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  18.3333333333333,                       !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  18.3333333333333,                       !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  18.3333333333333,                       !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  18.3333333333333,                       !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  18.3333333333333,                       !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  19.1666666666667,                       !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  20,                                     !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  20,                                     !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  20,                                     !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  20,                                     !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  20,                                     !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  20,                                     !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  20,                                     !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  20,                                     !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  20,                                     !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  20,                                     !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  20,                                     !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  20,                                     !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  20,                                     !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  20,                                     !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  20,                                     !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  20,                                     !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  18.3333333333333;                       !- Value Until Time 24
+
+OS:ScheduleTypeLimits,
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Handle
+  Temperature,                            !- Name
+  ,                                       !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  ,                                       !- Numeric Type
+  Temperature;                            !- Unit Type
+
+OS:Schedule:Day,
+  {92102b3b-92df-4dd2-a561-27b12c97eb78}, !- Handle
+  CARes2013 Liv Heat Hrly,                !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  18.3333333333333,                       !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  18.3333333333333,                       !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  18.3333333333333,                       !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  18.3333333333333,                       !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  18.3333333333333,                       !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  18.3333333333333,                       !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  19.1666666666667,                       !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  20,                                     !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  20,                                     !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  20,                                     !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  20,                                     !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  20,                                     !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  20,                                     !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  20,                                     !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  20,                                     !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  20,                                     !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  20,                                     !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  20,                                     !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  20,                                     !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  20,                                     !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  20,                                     !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  20,                                     !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  20,                                     !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  18.3333333333333;                       !- Value Until Time 24
+
+OS:Schedule:Day,
+  {43adba9c-ff75-49c1-a09a-b412157bc8d8}, !- Handle
+  CARes2013 Slp Heat Hrly,                !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  18.3333333333333,                       !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  18.3333333333333,                       !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  18.3333333333333,                       !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  18.3333333333333,                       !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  18.3333333333333,                       !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  18.3333333333333,                       !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  19.1666666666667,                       !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  20,                                     !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  20,                                     !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  18.3333333333333,                       !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  18.3333333333333,                       !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  18.3333333333333,                       !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  18.3333333333333,                       !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  18.3333333333333,                       !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  18.3333333333333,                       !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  18.3333333333333,                       !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  20,                                     !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  20,                                     !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  20,                                     !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  20,                                     !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  20,                                     !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  20,                                     !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  20,                                     !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  18.3333333333333;                       !- Value Until Time 24
+
+OS:Schedule:Day,
+  {89375fac-6826-4c27-8658-9412bdc69d54}, !- Handle
+  CARes2013 SZ Cool Hrly,                 !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  25.5555555555556,                       !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  25.5555555555556,                       !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  25.5555555555556,                       !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  25.5555555555556,                       !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  25.5555555555556,                       !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  25.5555555555556,                       !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  25.5555555555556,                       !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  28.3333333333333,                       !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  28.3333333333333,                       !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  28.3333333333333,                       !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  28.3333333333333,                       !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  28.3333333333333,                       !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  28.3333333333333,                       !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  27.7777777777778,                       !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  27.2222222222222,                       !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  26.6666666666667,                       !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  26.1111111111111,                       !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  25.5555555555556,                       !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  25.5555555555556,                       !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  25.5555555555556,                       !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  25.5555555555556,                       !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  25.5555555555556,                       !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  25.5555555555556,                       !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  25.5555555555556;                       !- Value Until Time 24
+
+OS:Schedule:Day,
+  {7ae5a80c-dabf-4c49-b355-dda80327c73e}, !- Handle
+  CARes2013 Liv Cool Hrly,                !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  25.5555555555556,                       !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  25.5555555555556,                       !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  25.5555555555556,                       !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  25.5555555555556,                       !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  25.5555555555556,                       !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  25.5555555555556,                       !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  25.5555555555556,                       !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  28.3333333333333,                       !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  28.3333333333333,                       !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  28.3333333333333,                       !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  28.3333333333333,                       !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  28.3333333333333,                       !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  28.3333333333333,                       !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  27.7777777777778,                       !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  27.2222222222222,                       !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  26.6666666666667,                       !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  26.1111111111111,                       !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  25.5555555555556,                       !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  25.5555555555556,                       !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  25.5555555555556,                       !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  25.5555555555556,                       !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  25.5555555555556,                       !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  25.5555555555556,                       !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  25.5555555555556;                       !- Value Until Time 24
+
+OS:Schedule:Day,
+  {77cd05bc-eab0-44de-b21e-c8bc439d115e}, !- Handle
+  CARes2013 Slp Cool Hrly,                !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  25.5555555555556,                       !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  25.5555555555556,                       !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  25.5555555555556,                       !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  25.5555555555556,                       !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  25.5555555555556,                       !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  25.5555555555556,                       !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  25.5555555555556,                       !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  28.3333333333333,                       !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  28.3333333333333,                       !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  28.3333333333333,                       !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  28.3333333333333,                       !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  28.3333333333333,                       !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  28.3333333333333,                       !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  27.7777777777778,                       !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  27.2222222222222,                       !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  26.6666666666667,                       !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  26.1111111111111,                       !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  25.5555555555556,                       !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  25.5555555555556,                       !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  25.5555555555556,                       !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  25.5555555555556,                       !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  25.5555555555556,                       !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  25.5555555555556,                       !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  25.5555555555556;                       !- Value Until Time 24
+
+OS:Schedule:Day,
+  {0fc228b6-bc9e-44d2-aef3-44222dcf1bac}, !- Handle
+  WaterMainCZ09Jan,                       !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  14.2777777777778,                       !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  14.2777777777778,                       !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  14.2777777777778,                       !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  14.2777777777778,                       !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  14.2777777777778,                       !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  14.2777777777778,                       !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  14.2777777777778,                       !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  14.2777777777778,                       !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  14.2777777777778,                       !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  14.2777777777778,                       !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  14.2777777777778,                       !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  14.2777777777778,                       !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  14.2777777777778,                       !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  14.2777777777778,                       !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  14.2777777777778,                       !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  14.2777777777778,                       !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  14.2777777777778,                       !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  14.2777777777778,                       !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  14.2777777777778,                       !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  14.2777777777778,                       !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  14.2777777777778,                       !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  14.2777777777778,                       !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  14.2777777777778,                       !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  14.2777777777778;                       !- Value Until Time 24
+
+OS:Schedule:Day,
+  {7d430e9f-6727-456e-a5a4-4a225181b5c9}, !- Handle
+  WaterMainCZ09Feb,                       !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  14.2222222222222,                       !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  14.2222222222222,                       !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  14.2222222222222,                       !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  14.2222222222222,                       !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  14.2222222222222,                       !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  14.2222222222222,                       !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  14.2222222222222,                       !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  14.2222222222222,                       !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  14.2222222222222,                       !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  14.2222222222222,                       !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  14.2222222222222,                       !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  14.2222222222222,                       !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  14.2222222222222,                       !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  14.2222222222222,                       !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  14.2222222222222,                       !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  14.2222222222222,                       !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  14.2222222222222,                       !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  14.2222222222222,                       !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  14.2222222222222,                       !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  14.2222222222222,                       !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  14.2222222222222,                       !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  14.2222222222222,                       !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  14.2222222222222,                       !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  14.2222222222222;                       !- Value Until Time 24
+
+OS:Schedule:Day,
+  {3ee830ff-5c16-4c79-9999-5da8bef42cdf}, !- Handle
+  WaterMainCZ09Mar,                       !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  14.4444444444444,                       !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  14.4444444444444,                       !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  14.4444444444444,                       !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  14.4444444444444,                       !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  14.4444444444444,                       !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  14.4444444444444,                       !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  14.4444444444444,                       !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  14.4444444444444,                       !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  14.4444444444444,                       !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  14.4444444444444,                       !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  14.4444444444444,                       !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  14.4444444444444,                       !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  14.4444444444444,                       !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  14.4444444444444,                       !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  14.4444444444444,                       !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  14.4444444444444,                       !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  14.4444444444444,                       !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  14.4444444444444,                       !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  14.4444444444444,                       !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  14.4444444444444,                       !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  14.4444444444444,                       !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  14.4444444444444,                       !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  14.4444444444444,                       !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  14.4444444444444;                       !- Value Until Time 24
+
+OS:Schedule:Day,
+  {4b8b6d8d-8462-45bd-97c7-781e92eab4b5}, !- Handle
+  WaterMainCZ09Apr,                       !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  14.8333333333333,                       !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  14.8333333333333,                       !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  14.8333333333333,                       !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  14.8333333333333,                       !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  14.8333333333333,                       !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  14.8333333333333,                       !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  14.8333333333333,                       !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  14.8333333333333,                       !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  14.8333333333333,                       !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  14.8333333333333,                       !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  14.8333333333333,                       !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  14.8333333333333,                       !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  14.8333333333333,                       !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  14.8333333333333,                       !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  14.8333333333333,                       !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  14.8333333333333,                       !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  14.8333333333333,                       !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  14.8333333333333,                       !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  14.8333333333333,                       !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  14.8333333333333,                       !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  14.8333333333333,                       !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  14.8333333333333,                       !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  14.8333333333333,                       !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  14.8333333333333;                       !- Value Until Time 24
+
+OS:Schedule:Day,
+  {b38bacfb-727a-4af5-a73f-a91b669e61d0}, !- Handle
+  WaterMainCZ09May,                       !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  14.9444444444444,                       !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  14.9444444444444,                       !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  14.9444444444444,                       !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  14.9444444444444,                       !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  14.9444444444444,                       !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  14.9444444444444,                       !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  14.9444444444444,                       !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  14.9444444444444,                       !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  14.9444444444444,                       !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  14.9444444444444,                       !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  14.9444444444444,                       !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  14.9444444444444,                       !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  14.9444444444444,                       !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  14.9444444444444,                       !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  14.9444444444444,                       !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  14.9444444444444,                       !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  14.9444444444444,                       !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  14.9444444444444,                       !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  14.9444444444444,                       !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  14.9444444444444,                       !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  14.9444444444444,                       !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  14.9444444444444,                       !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  14.9444444444444,                       !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  14.9444444444444;                       !- Value Until Time 24
+
+OS:Schedule:Day,
+  {3d8981b3-9249-42d0-a0f0-92d073f79598}, !- Handle
+  WaterMainCZ09Jun,                       !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  16.2222222222222,                       !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  16.2222222222222,                       !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  16.2222222222222,                       !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  16.2222222222222,                       !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  16.2222222222222,                       !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  16.2222222222222,                       !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  16.2222222222222,                       !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  16.2222222222222,                       !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  16.2222222222222,                       !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  16.2222222222222,                       !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  16.2222222222222,                       !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  16.2222222222222,                       !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  16.2222222222222,                       !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  16.2222222222222,                       !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  16.2222222222222,                       !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  16.2222222222222,                       !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  16.2222222222222,                       !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  16.2222222222222,                       !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  16.2222222222222,                       !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  16.2222222222222,                       !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  16.2222222222222,                       !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  16.2222222222222,                       !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  16.2222222222222,                       !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  16.2222222222222;                       !- Value Until Time 24
+
+OS:Schedule:Day,
+  {09369d54-dc59-4d49-a7b6-65967d0e90dd}, !- Handle
+  WaterMainCZ09Jul,                       !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  16.8888888888889,                       !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  16.8888888888889,                       !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  16.8888888888889,                       !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  16.8888888888889,                       !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  16.8888888888889,                       !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  16.8888888888889,                       !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  16.8888888888889,                       !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  16.8888888888889,                       !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  16.8888888888889,                       !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  16.8888888888889,                       !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  16.8888888888889,                       !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  16.8888888888889,                       !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  16.8888888888889,                       !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  16.8888888888889,                       !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  16.8888888888889,                       !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  16.8888888888889,                       !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  16.8888888888889,                       !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  16.8888888888889,                       !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  16.8888888888889,                       !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  16.8888888888889,                       !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  16.8888888888889,                       !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  16.8888888888889,                       !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  16.8888888888889,                       !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  16.8888888888889;                       !- Value Until Time 24
+
+OS:Schedule:Day,
+  {7d1460df-f8ea-4f1d-95be-e8512972db83}, !- Handle
+  WaterMainCZ09Aug,                       !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  17.7222222222222,                       !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  17.7222222222222,                       !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  17.7222222222222,                       !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  17.7222222222222,                       !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  17.7222222222222,                       !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  17.7222222222222,                       !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  17.7222222222222,                       !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  17.7222222222222,                       !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  17.7222222222222,                       !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  17.7222222222222,                       !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  17.7222222222222,                       !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  17.7222222222222,                       !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  17.7222222222222,                       !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  17.7222222222222,                       !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  17.7222222222222,                       !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  17.7222222222222,                       !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  17.7222222222222,                       !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  17.7222222222222,                       !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  17.7222222222222,                       !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  17.7222222222222,                       !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  17.7222222222222,                       !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  17.7222222222222,                       !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  17.7222222222222,                       !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  17.7222222222222;                       !- Value Until Time 24
+
+OS:Schedule:Day,
+  {5e0750b6-e198-42cb-ad37-7066ce8453e7}, !- Handle
+  WaterMainCZ09Sep,                       !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  18.0555555555556,                       !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  18.0555555555556,                       !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  18.0555555555556,                       !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  18.0555555555556,                       !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  18.0555555555556,                       !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  18.0555555555556,                       !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  18.0555555555556,                       !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  18.0555555555556,                       !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  18.0555555555556,                       !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  18.0555555555556,                       !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  18.0555555555556,                       !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  18.0555555555556,                       !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  18.0555555555556,                       !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  18.0555555555556,                       !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  18.0555555555556,                       !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  18.0555555555556,                       !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  18.0555555555556,                       !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  18.0555555555556,                       !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  18.0555555555556,                       !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  18.0555555555556,                       !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  18.0555555555556,                       !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  18.0555555555556,                       !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  18.0555555555556,                       !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  18.0555555555556;                       !- Value Until Time 24
+
+OS:Schedule:Day,
+  {1aa02c80-3298-4780-830b-c23ce4fc7cb8}, !- Handle
+  WaterMainCZ09Oct,                       !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  18,                                     !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  18,                                     !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  18,                                     !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  18,                                     !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  18,                                     !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  18,                                     !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  18,                                     !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  18,                                     !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  18,                                     !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  18,                                     !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  18,                                     !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  18,                                     !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  18,                                     !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  18,                                     !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  18,                                     !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  18,                                     !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  18,                                     !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  18,                                     !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  18,                                     !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  18,                                     !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  18,                                     !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  18,                                     !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  18,                                     !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  18;                                     !- Value Until Time 24
+
+OS:Schedule:Day,
+  {68f0dd08-d840-454e-b26d-83ecd4d92765}, !- Handle
+  WaterMainCZ09Nov,                       !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  16.2777777777778,                       !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  16.2777777777778,                       !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  16.2777777777778,                       !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  16.2777777777778,                       !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  16.2777777777778,                       !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  16.2777777777778,                       !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  16.2777777777778,                       !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  16.2777777777778,                       !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  16.2777777777778,                       !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  16.2777777777778,                       !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  16.2777777777778,                       !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  16.2777777777778,                       !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  16.2777777777778,                       !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  16.2777777777778,                       !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  16.2777777777778,                       !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  16.2777777777778,                       !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  16.2777777777778,                       !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  16.2777777777778,                       !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  16.2777777777778,                       !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  16.2777777777778,                       !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  16.2777777777778,                       !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  16.2777777777778,                       !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  16.2777777777778,                       !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  16.2777777777778;                       !- Value Until Time 24
+
+OS:Schedule:Day,
+  {fe4b10da-7449-4b71-a28a-bf9d224109c6}, !- Handle
+  WaterMainCZ09Dec,                       !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  14.6111111111111,                       !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  14.6111111111111,                       !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  14.6111111111111,                       !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  14.6111111111111,                       !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  14.6111111111111,                       !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  14.6111111111111,                       !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  14.6111111111111,                       !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  14.6111111111111,                       !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  14.6111111111111,                       !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  14.6111111111111,                       !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  14.6111111111111,                       !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  14.6111111111111,                       !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  14.6111111111111,                       !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  14.6111111111111,                       !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  14.6111111111111,                       !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  14.6111111111111,                       !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  14.6111111111111,                       !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  14.6111111111111,                       !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  14.6111111111111,                       !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  14.6111111111111,                       !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  14.6111111111111,                       !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  14.6111111111111,                       !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  14.6111111111111,                       !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  14.6111111111111;                       !- Value Until Time 24
+
+OS:Schedule:Day,
+  {a9e037e6-8f74-44a2-b864-4c0d97503c5e}, !- Handle
+  OnDay,                                  !- Name
+  {37fa6e3e-2e26-43b9-816a-bcb2d4c3a28a}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  1,                                      !- Value Until Time 1
+  2,                                      !- Hour 2
+  0,                                      !- Minute 2
+  1,                                      !- Value Until Time 2
+  3,                                      !- Hour 3
+  0,                                      !- Minute 3
+  1,                                      !- Value Until Time 3
+  4,                                      !- Hour 4
+  0,                                      !- Minute 4
+  1,                                      !- Value Until Time 4
+  5,                                      !- Hour 5
+  0,                                      !- Minute 5
+  1,                                      !- Value Until Time 5
+  6,                                      !- Hour 6
+  0,                                      !- Minute 6
+  1,                                      !- Value Until Time 6
+  7,                                      !- Hour 7
+  0,                                      !- Minute 7
+  1,                                      !- Value Until Time 7
+  8,                                      !- Hour 8
+  0,                                      !- Minute 8
+  1,                                      !- Value Until Time 8
+  9,                                      !- Hour 9
+  0,                                      !- Minute 9
+  1,                                      !- Value Until Time 9
+  10,                                     !- Hour 10
+  0,                                      !- Minute 10
+  1,                                      !- Value Until Time 10
+  11,                                     !- Hour 11
+  0,                                      !- Minute 11
+  1,                                      !- Value Until Time 11
+  12,                                     !- Hour 12
+  0,                                      !- Minute 12
+  1,                                      !- Value Until Time 12
+  13,                                     !- Hour 13
+  0,                                      !- Minute 13
+  1,                                      !- Value Until Time 13
+  14,                                     !- Hour 14
+  0,                                      !- Minute 14
+  1,                                      !- Value Until Time 14
+  15,                                     !- Hour 15
+  0,                                      !- Minute 15
+  1,                                      !- Value Until Time 15
+  16,                                     !- Hour 16
+  0,                                      !- Minute 16
+  1,                                      !- Value Until Time 16
+  17,                                     !- Hour 17
+  0,                                      !- Minute 17
+  1,                                      !- Value Until Time 17
+  18,                                     !- Hour 18
+  0,                                      !- Minute 18
+  1,                                      !- Value Until Time 18
+  19,                                     !- Hour 19
+  0,                                      !- Minute 19
+  1,                                      !- Value Until Time 19
+  20,                                     !- Hour 20
+  0,                                      !- Minute 20
+  1,                                      !- Value Until Time 20
+  21,                                     !- Hour 21
+  0,                                      !- Minute 21
+  1,                                      !- Value Until Time 21
+  22,                                     !- Hour 22
+  0,                                      !- Minute 22
+  1,                                      !- Value Until Time 22
+  23,                                     !- Hour 23
+  0,                                      !- Minute 23
+  1,                                      !- Value Until Time 23
+  24,                                     !- Hour 24
+  0,                                      !- Minute 24
+  1;                                      !- Value Until Time 24
+
+OS:Schedule:Week,
+  {9c14a3b4-3a49-40fb-8489-f7d4084a8816}, !- Handle
+  WaterMainCZ09JanWk,                     !- Name
+  ,                                       !- Schedule Rendering Name
+  {0fc228b6-bc9e-44d2-aef3-44222dcf1bac}, !- Sunday Schedule:Day Name
+  {0fc228b6-bc9e-44d2-aef3-44222dcf1bac}, !- Monday Schedule:Day Name
+  {0fc228b6-bc9e-44d2-aef3-44222dcf1bac}, !- Tuesday Schedule:Day Name
+  {0fc228b6-bc9e-44d2-aef3-44222dcf1bac}, !- Wednesday Schedule:Day Name
+  {0fc228b6-bc9e-44d2-aef3-44222dcf1bac}, !- Thursday Schedule:Day Name
+  {0fc228b6-bc9e-44d2-aef3-44222dcf1bac}, !- Friday Schedule:Day Name
+  {0fc228b6-bc9e-44d2-aef3-44222dcf1bac}, !- Saturday Schedule:Day Name
+  {0fc228b6-bc9e-44d2-aef3-44222dcf1bac}, !- Holiday Schedule:Day Name
+  {0fc228b6-bc9e-44d2-aef3-44222dcf1bac}, !- SummerDesignDay Schedule:Day Name
+  {0fc228b6-bc9e-44d2-aef3-44222dcf1bac}, !- WinterDesignDay Schedule:Day Name
+  {0fc228b6-bc9e-44d2-aef3-44222dcf1bac}, !- CustomDay1 Schedule:Day Name
+  {0fc228b6-bc9e-44d2-aef3-44222dcf1bac}; !- CustomDay2 Schedule:Day Name
+
+OS:Schedule:Week,
+  {1b1b6b8e-c6b7-43ba-9338-7492236b237a}, !- Handle
+  WaterMainCZ09FebWk,                     !- Name
+  ,                                       !- Schedule Rendering Name
+  {7d430e9f-6727-456e-a5a4-4a225181b5c9}, !- Sunday Schedule:Day Name
+  {7d430e9f-6727-456e-a5a4-4a225181b5c9}, !- Monday Schedule:Day Name
+  {7d430e9f-6727-456e-a5a4-4a225181b5c9}, !- Tuesday Schedule:Day Name
+  {7d430e9f-6727-456e-a5a4-4a225181b5c9}, !- Wednesday Schedule:Day Name
+  {7d430e9f-6727-456e-a5a4-4a225181b5c9}, !- Thursday Schedule:Day Name
+  {7d430e9f-6727-456e-a5a4-4a225181b5c9}, !- Friday Schedule:Day Name
+  {7d430e9f-6727-456e-a5a4-4a225181b5c9}, !- Saturday Schedule:Day Name
+  {7d430e9f-6727-456e-a5a4-4a225181b5c9}, !- Holiday Schedule:Day Name
+  {7d430e9f-6727-456e-a5a4-4a225181b5c9}, !- SummerDesignDay Schedule:Day Name
+  {7d430e9f-6727-456e-a5a4-4a225181b5c9}, !- WinterDesignDay Schedule:Day Name
+  {7d430e9f-6727-456e-a5a4-4a225181b5c9}, !- CustomDay1 Schedule:Day Name
+  {7d430e9f-6727-456e-a5a4-4a225181b5c9}; !- CustomDay2 Schedule:Day Name
+
+OS:Schedule:Week,
+  {d6dbb15f-a02e-43d7-9cd2-9a1b2ab94f53}, !- Handle
+  WaterMainCZ09MarWk,                     !- Name
+  ,                                       !- Schedule Rendering Name
+  {3ee830ff-5c16-4c79-9999-5da8bef42cdf}, !- Sunday Schedule:Day Name
+  {3ee830ff-5c16-4c79-9999-5da8bef42cdf}, !- Monday Schedule:Day Name
+  {3ee830ff-5c16-4c79-9999-5da8bef42cdf}, !- Tuesday Schedule:Day Name
+  {3ee830ff-5c16-4c79-9999-5da8bef42cdf}, !- Wednesday Schedule:Day Name
+  {3ee830ff-5c16-4c79-9999-5da8bef42cdf}, !- Thursday Schedule:Day Name
+  {3ee830ff-5c16-4c79-9999-5da8bef42cdf}, !- Friday Schedule:Day Name
+  {3ee830ff-5c16-4c79-9999-5da8bef42cdf}, !- Saturday Schedule:Day Name
+  {3ee830ff-5c16-4c79-9999-5da8bef42cdf}, !- Holiday Schedule:Day Name
+  {3ee830ff-5c16-4c79-9999-5da8bef42cdf}, !- SummerDesignDay Schedule:Day Name
+  {3ee830ff-5c16-4c79-9999-5da8bef42cdf}, !- WinterDesignDay Schedule:Day Name
+  {3ee830ff-5c16-4c79-9999-5da8bef42cdf}, !- CustomDay1 Schedule:Day Name
+  {3ee830ff-5c16-4c79-9999-5da8bef42cdf}; !- CustomDay2 Schedule:Day Name
+
+OS:Schedule:Week,
+  {49ec701c-db4b-4ce1-9f70-410d98ae06b6}, !- Handle
+  WaterMainCZ09AprWk,                     !- Name
+  ,                                       !- Schedule Rendering Name
+  {4b8b6d8d-8462-45bd-97c7-781e92eab4b5}, !- Sunday Schedule:Day Name
+  {4b8b6d8d-8462-45bd-97c7-781e92eab4b5}, !- Monday Schedule:Day Name
+  {4b8b6d8d-8462-45bd-97c7-781e92eab4b5}, !- Tuesday Schedule:Day Name
+  {4b8b6d8d-8462-45bd-97c7-781e92eab4b5}, !- Wednesday Schedule:Day Name
+  {4b8b6d8d-8462-45bd-97c7-781e92eab4b5}, !- Thursday Schedule:Day Name
+  {4b8b6d8d-8462-45bd-97c7-781e92eab4b5}, !- Friday Schedule:Day Name
+  {4b8b6d8d-8462-45bd-97c7-781e92eab4b5}, !- Saturday Schedule:Day Name
+  {4b8b6d8d-8462-45bd-97c7-781e92eab4b5}, !- Holiday Schedule:Day Name
+  {4b8b6d8d-8462-45bd-97c7-781e92eab4b5}, !- SummerDesignDay Schedule:Day Name
+  {4b8b6d8d-8462-45bd-97c7-781e92eab4b5}, !- WinterDesignDay Schedule:Day Name
+  {4b8b6d8d-8462-45bd-97c7-781e92eab4b5}, !- CustomDay1 Schedule:Day Name
+  {4b8b6d8d-8462-45bd-97c7-781e92eab4b5}; !- CustomDay2 Schedule:Day Name
+
+OS:Schedule:Week,
+  {d06e8219-e605-420f-9c70-7875991a0ef1}, !- Handle
+  WaterMainCZ09MayWk,                     !- Name
+  ,                                       !- Schedule Rendering Name
+  {b38bacfb-727a-4af5-a73f-a91b669e61d0}, !- Sunday Schedule:Day Name
+  {b38bacfb-727a-4af5-a73f-a91b669e61d0}, !- Monday Schedule:Day Name
+  {b38bacfb-727a-4af5-a73f-a91b669e61d0}, !- Tuesday Schedule:Day Name
+  {b38bacfb-727a-4af5-a73f-a91b669e61d0}, !- Wednesday Schedule:Day Name
+  {b38bacfb-727a-4af5-a73f-a91b669e61d0}, !- Thursday Schedule:Day Name
+  {b38bacfb-727a-4af5-a73f-a91b669e61d0}, !- Friday Schedule:Day Name
+  {b38bacfb-727a-4af5-a73f-a91b669e61d0}, !- Saturday Schedule:Day Name
+  {b38bacfb-727a-4af5-a73f-a91b669e61d0}, !- Holiday Schedule:Day Name
+  {b38bacfb-727a-4af5-a73f-a91b669e61d0}, !- SummerDesignDay Schedule:Day Name
+  {b38bacfb-727a-4af5-a73f-a91b669e61d0}, !- WinterDesignDay Schedule:Day Name
+  {b38bacfb-727a-4af5-a73f-a91b669e61d0}, !- CustomDay1 Schedule:Day Name
+  {b38bacfb-727a-4af5-a73f-a91b669e61d0}; !- CustomDay2 Schedule:Day Name
+
+OS:Schedule:Week,
+  {994b413d-0a27-43f5-9e96-a5e574bf480d}, !- Handle
+  WaterMainCZ09JunWk,                     !- Name
+  ,                                       !- Schedule Rendering Name
+  {3d8981b3-9249-42d0-a0f0-92d073f79598}, !- Sunday Schedule:Day Name
+  {3d8981b3-9249-42d0-a0f0-92d073f79598}, !- Monday Schedule:Day Name
+  {3d8981b3-9249-42d0-a0f0-92d073f79598}, !- Tuesday Schedule:Day Name
+  {3d8981b3-9249-42d0-a0f0-92d073f79598}, !- Wednesday Schedule:Day Name
+  {3d8981b3-9249-42d0-a0f0-92d073f79598}, !- Thursday Schedule:Day Name
+  {3d8981b3-9249-42d0-a0f0-92d073f79598}, !- Friday Schedule:Day Name
+  {3d8981b3-9249-42d0-a0f0-92d073f79598}, !- Saturday Schedule:Day Name
+  {3d8981b3-9249-42d0-a0f0-92d073f79598}, !- Holiday Schedule:Day Name
+  {3d8981b3-9249-42d0-a0f0-92d073f79598}, !- SummerDesignDay Schedule:Day Name
+  {3d8981b3-9249-42d0-a0f0-92d073f79598}, !- WinterDesignDay Schedule:Day Name
+  {3d8981b3-9249-42d0-a0f0-92d073f79598}, !- CustomDay1 Schedule:Day Name
+  {3d8981b3-9249-42d0-a0f0-92d073f79598}; !- CustomDay2 Schedule:Day Name
+
+OS:Schedule:Week,
+  {893ba033-429e-4a03-b2cb-0cc527f3c0af}, !- Handle
+  WaterMainCZ09JulWk,                     !- Name
+  ,                                       !- Schedule Rendering Name
+  {09369d54-dc59-4d49-a7b6-65967d0e90dd}, !- Sunday Schedule:Day Name
+  {09369d54-dc59-4d49-a7b6-65967d0e90dd}, !- Monday Schedule:Day Name
+  {09369d54-dc59-4d49-a7b6-65967d0e90dd}, !- Tuesday Schedule:Day Name
+  {09369d54-dc59-4d49-a7b6-65967d0e90dd}, !- Wednesday Schedule:Day Name
+  {09369d54-dc59-4d49-a7b6-65967d0e90dd}, !- Thursday Schedule:Day Name
+  {09369d54-dc59-4d49-a7b6-65967d0e90dd}, !- Friday Schedule:Day Name
+  {09369d54-dc59-4d49-a7b6-65967d0e90dd}, !- Saturday Schedule:Day Name
+  {09369d54-dc59-4d49-a7b6-65967d0e90dd}, !- Holiday Schedule:Day Name
+  {09369d54-dc59-4d49-a7b6-65967d0e90dd}, !- SummerDesignDay Schedule:Day Name
+  {09369d54-dc59-4d49-a7b6-65967d0e90dd}, !- WinterDesignDay Schedule:Day Name
+  {09369d54-dc59-4d49-a7b6-65967d0e90dd}, !- CustomDay1 Schedule:Day Name
+  {09369d54-dc59-4d49-a7b6-65967d0e90dd}; !- CustomDay2 Schedule:Day Name
+
+OS:Schedule:Week,
+  {13696e90-a529-4a9b-9454-11f7231d0d99}, !- Handle
+  WaterMainCZ09AugWk,                     !- Name
+  ,                                       !- Schedule Rendering Name
+  {7d1460df-f8ea-4f1d-95be-e8512972db83}, !- Sunday Schedule:Day Name
+  {7d1460df-f8ea-4f1d-95be-e8512972db83}, !- Monday Schedule:Day Name
+  {7d1460df-f8ea-4f1d-95be-e8512972db83}, !- Tuesday Schedule:Day Name
+  {7d1460df-f8ea-4f1d-95be-e8512972db83}, !- Wednesday Schedule:Day Name
+  {7d1460df-f8ea-4f1d-95be-e8512972db83}, !- Thursday Schedule:Day Name
+  {7d1460df-f8ea-4f1d-95be-e8512972db83}, !- Friday Schedule:Day Name
+  {7d1460df-f8ea-4f1d-95be-e8512972db83}, !- Saturday Schedule:Day Name
+  {7d1460df-f8ea-4f1d-95be-e8512972db83}, !- Holiday Schedule:Day Name
+  {7d1460df-f8ea-4f1d-95be-e8512972db83}, !- SummerDesignDay Schedule:Day Name
+  {7d1460df-f8ea-4f1d-95be-e8512972db83}, !- WinterDesignDay Schedule:Day Name
+  {7d1460df-f8ea-4f1d-95be-e8512972db83}, !- CustomDay1 Schedule:Day Name
+  {7d1460df-f8ea-4f1d-95be-e8512972db83}; !- CustomDay2 Schedule:Day Name
+
+OS:Schedule:Week,
+  {1f070cf2-2ac9-4512-8b37-830679f97cbf}, !- Handle
+  WaterMainCZ09SepWk,                     !- Name
+  ,                                       !- Schedule Rendering Name
+  {5e0750b6-e198-42cb-ad37-7066ce8453e7}, !- Sunday Schedule:Day Name
+  {5e0750b6-e198-42cb-ad37-7066ce8453e7}, !- Monday Schedule:Day Name
+  {5e0750b6-e198-42cb-ad37-7066ce8453e7}, !- Tuesday Schedule:Day Name
+  {5e0750b6-e198-42cb-ad37-7066ce8453e7}, !- Wednesday Schedule:Day Name
+  {5e0750b6-e198-42cb-ad37-7066ce8453e7}, !- Thursday Schedule:Day Name
+  {5e0750b6-e198-42cb-ad37-7066ce8453e7}, !- Friday Schedule:Day Name
+  {5e0750b6-e198-42cb-ad37-7066ce8453e7}, !- Saturday Schedule:Day Name
+  {5e0750b6-e198-42cb-ad37-7066ce8453e7}, !- Holiday Schedule:Day Name
+  {5e0750b6-e198-42cb-ad37-7066ce8453e7}, !- SummerDesignDay Schedule:Day Name
+  {5e0750b6-e198-42cb-ad37-7066ce8453e7}, !- WinterDesignDay Schedule:Day Name
+  {5e0750b6-e198-42cb-ad37-7066ce8453e7}, !- CustomDay1 Schedule:Day Name
+  {5e0750b6-e198-42cb-ad37-7066ce8453e7}; !- CustomDay2 Schedule:Day Name
+
+OS:Schedule:Week,
+  {90d01983-e865-4009-b7f4-bb8cf9d45f92}, !- Handle
+  WaterMainCZ09OctWk,                     !- Name
+  ,                                       !- Schedule Rendering Name
+  {1aa02c80-3298-4780-830b-c23ce4fc7cb8}, !- Sunday Schedule:Day Name
+  {1aa02c80-3298-4780-830b-c23ce4fc7cb8}, !- Monday Schedule:Day Name
+  {1aa02c80-3298-4780-830b-c23ce4fc7cb8}, !- Tuesday Schedule:Day Name
+  {1aa02c80-3298-4780-830b-c23ce4fc7cb8}, !- Wednesday Schedule:Day Name
+  {1aa02c80-3298-4780-830b-c23ce4fc7cb8}, !- Thursday Schedule:Day Name
+  {1aa02c80-3298-4780-830b-c23ce4fc7cb8}, !- Friday Schedule:Day Name
+  {1aa02c80-3298-4780-830b-c23ce4fc7cb8}, !- Saturday Schedule:Day Name
+  {1aa02c80-3298-4780-830b-c23ce4fc7cb8}, !- Holiday Schedule:Day Name
+  {1aa02c80-3298-4780-830b-c23ce4fc7cb8}, !- SummerDesignDay Schedule:Day Name
+  {1aa02c80-3298-4780-830b-c23ce4fc7cb8}, !- WinterDesignDay Schedule:Day Name
+  {1aa02c80-3298-4780-830b-c23ce4fc7cb8}, !- CustomDay1 Schedule:Day Name
+  {1aa02c80-3298-4780-830b-c23ce4fc7cb8}; !- CustomDay2 Schedule:Day Name
+
+OS:Schedule:Week,
+  {5052ab71-0392-4615-a95a-c29ff9f78608}, !- Handle
+  WaterMainCZ09NovWk,                     !- Name
+  ,                                       !- Schedule Rendering Name
+  {68f0dd08-d840-454e-b26d-83ecd4d92765}, !- Sunday Schedule:Day Name
+  {68f0dd08-d840-454e-b26d-83ecd4d92765}, !- Monday Schedule:Day Name
+  {68f0dd08-d840-454e-b26d-83ecd4d92765}, !- Tuesday Schedule:Day Name
+  {68f0dd08-d840-454e-b26d-83ecd4d92765}, !- Wednesday Schedule:Day Name
+  {68f0dd08-d840-454e-b26d-83ecd4d92765}, !- Thursday Schedule:Day Name
+  {68f0dd08-d840-454e-b26d-83ecd4d92765}, !- Friday Schedule:Day Name
+  {68f0dd08-d840-454e-b26d-83ecd4d92765}, !- Saturday Schedule:Day Name
+  {68f0dd08-d840-454e-b26d-83ecd4d92765}, !- Holiday Schedule:Day Name
+  {68f0dd08-d840-454e-b26d-83ecd4d92765}, !- SummerDesignDay Schedule:Day Name
+  {68f0dd08-d840-454e-b26d-83ecd4d92765}, !- WinterDesignDay Schedule:Day Name
+  {68f0dd08-d840-454e-b26d-83ecd4d92765}, !- CustomDay1 Schedule:Day Name
+  {68f0dd08-d840-454e-b26d-83ecd4d92765}; !- CustomDay2 Schedule:Day Name
+
+OS:Schedule:Week,
+  {01dbad43-232a-475b-9d49-70a9b51b145c}, !- Handle
+  WaterMainCZ09DecWk,                     !- Name
+  ,                                       !- Schedule Rendering Name
+  {fe4b10da-7449-4b71-a28a-bf9d224109c6}, !- Sunday Schedule:Day Name
+  {fe4b10da-7449-4b71-a28a-bf9d224109c6}, !- Monday Schedule:Day Name
+  {fe4b10da-7449-4b71-a28a-bf9d224109c6}, !- Tuesday Schedule:Day Name
+  {fe4b10da-7449-4b71-a28a-bf9d224109c6}, !- Wednesday Schedule:Day Name
+  {fe4b10da-7449-4b71-a28a-bf9d224109c6}, !- Thursday Schedule:Day Name
+  {fe4b10da-7449-4b71-a28a-bf9d224109c6}, !- Friday Schedule:Day Name
+  {fe4b10da-7449-4b71-a28a-bf9d224109c6}, !- Saturday Schedule:Day Name
+  {fe4b10da-7449-4b71-a28a-bf9d224109c6}, !- Holiday Schedule:Day Name
+  {fe4b10da-7449-4b71-a28a-bf9d224109c6}, !- SummerDesignDay Schedule:Day Name
+  {fe4b10da-7449-4b71-a28a-bf9d224109c6}, !- WinterDesignDay Schedule:Day Name
+  {fe4b10da-7449-4b71-a28a-bf9d224109c6}, !- CustomDay1 Schedule:Day Name
+  {fe4b10da-7449-4b71-a28a-bf9d224109c6}; !- CustomDay2 Schedule:Day Name
+
+OS:Schedule:Week,
+  {fd6a1eae-8cee-4a49-b8e5-c7c2bded4874}, !- Handle
+  OnWk,                                   !- Name
+  ,                                       !- Schedule Rendering Name
+  {a9e037e6-8f74-44a2-b864-4c0d97503c5e}, !- Sunday Schedule:Day Name
+  {a9e037e6-8f74-44a2-b864-4c0d97503c5e}, !- Monday Schedule:Day Name
+  {a9e037e6-8f74-44a2-b864-4c0d97503c5e}, !- Tuesday Schedule:Day Name
+  {a9e037e6-8f74-44a2-b864-4c0d97503c5e}, !- Wednesday Schedule:Day Name
+  {a9e037e6-8f74-44a2-b864-4c0d97503c5e}, !- Thursday Schedule:Day Name
+  {a9e037e6-8f74-44a2-b864-4c0d97503c5e}, !- Friday Schedule:Day Name
+  {a9e037e6-8f74-44a2-b864-4c0d97503c5e}, !- Saturday Schedule:Day Name
+  {a9e037e6-8f74-44a2-b864-4c0d97503c5e}, !- Holiday Schedule:Day Name
+  {a9e037e6-8f74-44a2-b864-4c0d97503c5e}, !- SummerDesignDay Schedule:Day Name
+  {a9e037e6-8f74-44a2-b864-4c0d97503c5e}, !- WinterDesignDay Schedule:Day Name
+  {a9e037e6-8f74-44a2-b864-4c0d97503c5e}, !- CustomDay1 Schedule:Day Name
+  {a9e037e6-8f74-44a2-b864-4c0d97503c5e}; !- CustomDay2 Schedule:Day Name
+
+OS:Schedule:Year,
+  {225e4918-ca66-49fc-80b7-c9fb4434693e}, !- Handle
+  WaterMainCZ09,                          !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  1,                                      !- Month 1
+  31,                                     !- Day 1
+  {9c14a3b4-3a49-40fb-8489-f7d4084a8816}, !- Week Schedule Until Date 1
+  2,                                      !- Month 2
+  28,                                     !- Day 2
+  {1b1b6b8e-c6b7-43ba-9338-7492236b237a}, !- Week Schedule Until Date 2
+  3,                                      !- Month 3
+  31,                                     !- Day 3
+  {d6dbb15f-a02e-43d7-9cd2-9a1b2ab94f53}, !- Week Schedule Until Date 3
+  4,                                      !- Month 4
+  30,                                     !- Day 4
+  {49ec701c-db4b-4ce1-9f70-410d98ae06b6}, !- Week Schedule Until Date 4
+  5,                                      !- Month 5
+  31,                                     !- Day 5
+  {d06e8219-e605-420f-9c70-7875991a0ef1}, !- Week Schedule Until Date 5
+  6,                                      !- Month 6
+  30,                                     !- Day 6
+  {994b413d-0a27-43f5-9e96-a5e574bf480d}, !- Week Schedule Until Date 6
+  7,                                      !- Month 7
+  31,                                     !- Day 7
+  {893ba033-429e-4a03-b2cb-0cc527f3c0af}, !- Week Schedule Until Date 7
+  8,                                      !- Month 8
+  31,                                     !- Day 8
+  {13696e90-a529-4a9b-9454-11f7231d0d99}, !- Week Schedule Until Date 8
+  9,                                      !- Month 9
+  30,                                     !- Day 9
+  {1f070cf2-2ac9-4512-8b37-830679f97cbf}, !- Week Schedule Until Date 9
+  10,                                     !- Month 10
+  31,                                     !- Day 10
+  {90d01983-e865-4009-b7f4-bb8cf9d45f92}, !- Week Schedule Until Date 10
+  11,                                     !- Month 11
+  30,                                     !- Day 11
+  {5052ab71-0392-4615-a95a-c29ff9f78608}, !- Week Schedule Until Date 11
+  12,                                     !- Month 12
+  31,                                     !- Day 12
+  {01dbad43-232a-475b-9d49-70a9b51b145c}; !- Week Schedule Until Date 12
+
+OS:Schedule:Year,
+  {e511dd4a-7bae-480c-b4c2-a088f7da6762}, !- Handle
+  On,                                     !- Name
+  {37fa6e3e-2e26-43b9-816a-bcb2d4c3a28a}, !- Schedule Type Limits Name
+  12,                                     !- Month 1
+  31,                                     !- Day 1
+  {fd6a1eae-8cee-4a49-b8e5-c7c2bded4874}; !- Week Schedule Until Date 1
+
+OS:External:File,
+  {a830d3a7-771d-4e6e-a2d8-d405cc84113a}, !- Handle
+  {1e75ae5a-3684-4f09-936d-5a42a752f477}, !- Name
+  EX03_MF08_Central-WSHP_CZ09 - ap-CSE-PlantLds.csv; !- File Name
+
+OS:Schedule:File,
+  {51d8018b-c0ad-4302-95b0-34e24b16dfed}, !- Handle
+  CW Loop-ProcLd1-LdSch,                  !- Name
+  {52292b45-05e4-433e-8176-fc19ec0b114d}, !- Schedule Type Limits Name
+  {a830d3a7-771d-4e6e-a2d8-d405cc84113a}, !- External File Name
+  9,                                      !- Column Number
+  4,                                      !- Rows to Skip at Top
+  ,                                       !- Number of Hours of Data
+  Comma,                                  !- Column Separator
+  Yes,                                    !- Interpolate to Timestep
+  60;                                     !- Minutes per Item
+
+OS:Schedule:File,
+  {b651dc73-f01b-4287-9d3c-90bd046928c8}, !- Handle
+  CW Loop-ProcLd1-FlwSch,                 !- Name
+  {bd589a31-7771-4457-8489-dbc6f5e5f1e3}, !- Schedule Type Limits Name
+  {a830d3a7-771d-4e6e-a2d8-d405cc84113a}, !- External File Name
+  10,                                     !- Column Number
+  4,                                      !- Rows to Skip at Top
+  ,                                       !- Number of Hours of Data
+  Comma,                                  !- Column Separator
+  Yes,                                    !- Interpolate to Timestep
+  60;                                     !- Minutes per Item
+
+OS:RunPeriodControl:SpecialDays,
+  {f278bf1f-3a64-4bc0-9953-c3f45213ffa3}, !- Handle
+  New Year's Day,                         !- Name
+  1/1,                                    !- Start Date
+  ,                                       !- Duration {days}
+  ;                                       !- Special Day Type
+
+OS:RunPeriodControl:SpecialDays,
+  {635673b7-6b0f-4df3-a818-fb9f62ca17b6}, !- Handle
+  Martin Luther King Day,                 !- Name
+  3rd Monday in January,                  !- Start Date
+  ,                                       !- Duration {days}
+  ;                                       !- Special Day Type
+
+OS:RunPeriodControl:SpecialDays,
+  {81ee920f-25a1-4304-97ec-c117afc8e52c}, !- Handle
+  Presidents Day,                         !- Name
+  3rd Monday in February,                 !- Start Date
+  ,                                       !- Duration {days}
+  ;                                       !- Special Day Type
+
+OS:RunPeriodControl:SpecialDays,
+  {45059809-d72d-4639-b647-67248c451169}, !- Handle
+  Memorial Day,                           !- Name
+  5th Monday in May,                      !- Start Date
+  ,                                       !- Duration {days}
+  ;                                       !- Special Day Type
+
+OS:RunPeriodControl:SpecialDays,
+  {bbc9fde0-b03e-488f-9087-05d22be40a1e}, !- Handle
+  Independence Day,                       !- Name
+  7/4,                                    !- Start Date
+  ,                                       !- Duration {days}
+  ;                                       !- Special Day Type
+
+OS:RunPeriodControl:SpecialDays,
+  {3ac4228c-f0ac-464c-82cf-4d800ee91181}, !- Handle
+  Labor Day,                              !- Name
+  1st Monday in September,                !- Start Date
+  ,                                       !- Duration {days}
+  ;                                       !- Special Day Type
+
+OS:RunPeriodControl:SpecialDays,
+  {360196b0-c698-4106-bc4b-0cf8ea4e973a}, !- Handle
+  Columbus Day,                           !- Name
+  2nd Monday in October,                  !- Start Date
+  ,                                       !- Duration {days}
+  ;                                       !- Special Day Type
+
+OS:RunPeriodControl:SpecialDays,
+  {5444f23a-7680-4344-ac0d-889b905dba14}, !- Handle
+  Veterans Day,                           !- Name
+  11/11,                                  !- Start Date
+  ,                                       !- Duration {days}
+  ;                                       !- Special Day Type
+
+OS:RunPeriodControl:SpecialDays,
+  {e7b88399-0e4a-416a-bb0c-94e4a1390146}, !- Handle
+  Thanksgiving Day,                       !- Name
+  4th Thursday in November,               !- Start Date
+  ,                                       !- Duration {days}
+  ;                                       !- Special Day Type
+
+OS:RunPeriodControl:SpecialDays,
+  {7cb25b0e-d06b-4fbe-b662-0b94d7054e78}, !- Handle
+  Christmas Day,                          !- Name
+  12/25,                                  !- Start Date
+  ,                                       !- Duration {days}
+  ;                                       !- Special Day Type
+
+OS:Site:WaterMainsTemperature,
+  {35b37e5a-1a6c-47a8-adb9-8affad7fc626}, !- Handle
+  Schedule,                               !- Calculation Method
+  {225e4918-ca66-49fc-80b7-c9fb4434693e}; !- Temperature Schedule Name
+
+OS:Facility,
+  {d1458448-7750-4638-a3ef-83860a0e9bb3}; !- Handle
+
+OS:Building,
+  {d281e44c-c1b0-4777-bffc-397b47b5b0a6}, !- Handle
+  Building,                               !- Name
+  ,                                       !- Building Sector Type
+  0,                                      !- North Axis {deg}
+  ,                                       !- Nominal Floor to Floor Height {m}
+  ,                                       !- Space Type Name
+  ,                                       !- Default Construction Set Name
+  ;                                       !- Default Schedule Set Name
+
+OS:PlantLoop,
+  {33994d50-0558-42fc-be39-c557c0147aa3}, !- Handle
+  CW Loop,                                !- Name
+  Water,                                  !- Fluid Type
+  0,                                      !- Glycol Concentration
+  ,                                       !- User Defined Fluid Type
+  ,                                       !- Plant Equipment Operation Heating Load
+  ,                                       !- Plant Equipment Operation Cooling Load
+  ,                                       !- Primary Plant Equipment Operation Scheme
+  {ab826fbe-277e-4b72-83c7-00a1ece0ae5f}, !- Loop Temperature Setpoint Node Name
+  ,                                       !- Maximum Loop Temperature {C}
+  ,                                       !- Minimum Loop Temperature {C}
+  0.000889571769232915,                   !- Maximum Loop Flow Rate {m3/s}
+  ,                                       !- Minimum Loop Flow Rate {m3/s}
+  Autocalculate,                          !- Plant Loop Volume {m3}
+  {bc9b54b0-1833-4e24-b988-892a905fd382}, !- Plant Side Inlet Node Name
+  {4af20862-595f-4c80-8314-20b709f2fa15}, !- Plant Side Outlet Node Name
+  ,                                       !- Plant Side Branch List Name
+  {f1e2a10c-5f81-4a9b-86b3-63497e918246}, !- Demand Side Inlet Node Name
+  {68479be9-18b6-41eb-ae83-948bf4acfbbd}, !- Demand Side Outlet Node Name
+  ,                                       !- Demand Side Branch List Name
+  ,                                       !- Demand Side Connector List Name
+  Optimal,                                !- Load Distribution Scheme
+  {29b05d04-c8f0-4d28-970c-5d4c14a52035}, !- Availability Manager List Name
+  ,                                       !- Plant Loop Demand Calculation Scheme
+  ,                                       !- Common Pipe Simulation
+  ,                                       !- Pressure Simulation Type
+  ,                                       !- Plant Equipment Operation Heating Load Schedule
+  ,                                       !- Plant Equipment Operation Cooling Load Schedule
+  ,                                       !- Primary Plant Equipment Operation Scheme Schedule
+  ,                                       !- Component Setpoint Operation Scheme Schedule
+  {9e0d6787-aa4f-451f-a752-2683425f1538}, !- Demand Mixer Name
+  {34e17156-8772-45c8-b82d-b77be5abff2b}, !- Demand Splitter Name
+  {3754b100-0614-4276-9c62-84ea8319d60e}, !- Supply Mixer Name
+  {d4324932-6035-4410-add4-71dc54f863ec}; !- Supply Splitter Name
+
+OS:Node,
+  {27471f8a-def6-4572-aa26-1229c069c078}, !- Handle
+  CW Loop Supply Inlet Node,              !- Name
+  {bc9b54b0-1833-4e24-b988-892a905fd382}, !- Inlet Port
+  {1cbdf67e-6561-4a86-ba82-b28f678c6859}; !- Outlet Port
+
+OS:Node,
+  {ab826fbe-277e-4b72-83c7-00a1ece0ae5f}, !- Handle
+  CW Loop Supply Mixer Outlet Node,       !- Name
+  {c7e175ce-d055-4ef6-a6a5-74e2b56ffd9f}, !- Inlet Port
+  {4af20862-595f-4c80-8314-20b709f2fa15}; !- Outlet Port
+
+OS:Node,
+  {2244e9df-3215-42c4-ba05-643b83291bad}, !- Handle
+  CW Loop Supply Splitter Outlet Node 1,  !- Name
+  {9e6cbdcd-290d-4b61-a7d2-c179da27ecfb}, !- Inlet Port
+  {15faf020-5747-4879-af77-13b4cf71098b}; !- Outlet Port
+
+OS:Connector:Mixer,
+  {3754b100-0614-4276-9c62-84ea8319d60e}, !- Handle
+  CW Loop Supply Mixer,                   !- Name
+  {c7e175ce-d055-4ef6-a6a5-74e2b56ffd9f}, !- Outlet Branch Name
+  {ab6171d9-5a0c-41f5-8bf3-80fa5ab3730d}, !- Inlet Branch Name 1
+  {8205758b-16e9-430a-9ee9-b7913863cf23}, !- Inlet Branch Name 2
+  {ee836249-9cde-4e02-846a-f39f0277f64a}; !- Inlet Branch Name 3
+
+OS:Connector:Splitter,
+  {d4324932-6035-4410-add4-71dc54f863ec}, !- Handle
+  CW Loop Supply Splitter,                !- Name
+  {33e76d93-d00c-4c08-8c16-ef9d6bbdb381}, !- Inlet Branch Name
+  {9e6cbdcd-290d-4b61-a7d2-c179da27ecfb}, !- Outlet Branch Name 1
+  {de944f6d-84a4-4928-a397-d5d9c2eab37f}, !- Outlet Branch Name 2
+  {d4d1f5d9-baea-420e-bff0-2abd3d26a55b}; !- Outlet Branch Name 3
+
+OS:Connection,
+  {bc9b54b0-1833-4e24-b988-892a905fd382}, !- Handle
+  {33994d50-0558-42fc-be39-c557c0147aa3}, !- Source Object
+  14,                                     !- Outlet Port
+  {27471f8a-def6-4572-aa26-1229c069c078}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {9e6cbdcd-290d-4b61-a7d2-c179da27ecfb}, !- Handle
+  {d4324932-6035-4410-add4-71dc54f863ec}, !- Source Object
+  3,                                      !- Outlet Port
+  {2244e9df-3215-42c4-ba05-643b83291bad}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {c7e175ce-d055-4ef6-a6a5-74e2b56ffd9f}, !- Handle
+  {3754b100-0614-4276-9c62-84ea8319d60e}, !- Source Object
+  2,                                      !- Outlet Port
+  {ab826fbe-277e-4b72-83c7-00a1ece0ae5f}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {4af20862-595f-4c80-8314-20b709f2fa15}, !- Handle
+  {ab826fbe-277e-4b72-83c7-00a1ece0ae5f}, !- Source Object
+  3,                                      !- Outlet Port
+  {33994d50-0558-42fc-be39-c557c0147aa3}, !- Target Object
+  15;                                     !- Inlet Port
+
+OS:Node,
+  {6ddab12e-be80-44bb-9af9-a7727ff23240}, !- Handle
+  CW Loop Demand Inlet Node,              !- Name
+  {f1e2a10c-5f81-4a9b-86b3-63497e918246}, !- Inlet Port
+  {148db76f-defd-4637-9c3b-2090bce0564a}; !- Outlet Port
+
+OS:Node,
+  {11fe8889-242b-4efd-9b8c-e39bbf9525a3}, !- Handle
+  CW Loop Demand Mixer Outlet Node,       !- Name
+  {66d52ca3-d8f2-4366-b89a-b0430508f8f6}, !- Inlet Port
+  {68479be9-18b6-41eb-ae83-948bf4acfbbd}; !- Outlet Port
+
+OS:Node,
+  {3a3f32b4-da33-4bb4-b26d-b297dcd1b585}, !- Handle
+  CW Loop Demand Splitter Outlet Node 1,  !- Name
+  {5018e78e-18da-4b68-a2d6-109735689cdb}, !- Inlet Port
+  {cb27723a-e1c2-4600-a77f-6b6a6739d98c}; !- Outlet Port
+
+OS:Connector:Mixer,
+  {9e0d6787-aa4f-451f-a752-2683425f1538}, !- Handle
+  CW Loop Demand Mixer,                   !- Name
+  {66d52ca3-d8f2-4366-b89a-b0430508f8f6}, !- Outlet Branch Name
+  {d46920db-9dbc-4eaf-a5f9-81c5d91d2b68}; !- Inlet Branch Name 1
+
+OS:Connector:Splitter,
+  {34e17156-8772-45c8-b82d-b77be5abff2b}, !- Handle
+  CW Loop Demand Splitter,                !- Name
+  {148db76f-defd-4637-9c3b-2090bce0564a}, !- Inlet Branch Name
+  {5018e78e-18da-4b68-a2d6-109735689cdb}; !- Outlet Branch Name 1
+
+OS:Connection,
+  {f1e2a10c-5f81-4a9b-86b3-63497e918246}, !- Handle
+  {33994d50-0558-42fc-be39-c557c0147aa3}, !- Source Object
+  17,                                     !- Outlet Port
+  {6ddab12e-be80-44bb-9af9-a7727ff23240}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {148db76f-defd-4637-9c3b-2090bce0564a}, !- Handle
+  {6ddab12e-be80-44bb-9af9-a7727ff23240}, !- Source Object
+  3,                                      !- Outlet Port
+  {34e17156-8772-45c8-b82d-b77be5abff2b}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {5018e78e-18da-4b68-a2d6-109735689cdb}, !- Handle
+  {34e17156-8772-45c8-b82d-b77be5abff2b}, !- Source Object
+  3,                                      !- Outlet Port
+  {3a3f32b4-da33-4bb4-b26d-b297dcd1b585}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {66d52ca3-d8f2-4366-b89a-b0430508f8f6}, !- Handle
+  {9e0d6787-aa4f-451f-a752-2683425f1538}, !- Source Object
+  2,                                      !- Outlet Port
+  {11fe8889-242b-4efd-9b8c-e39bbf9525a3}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {68479be9-18b6-41eb-ae83-948bf4acfbbd}, !- Handle
+  {11fe8889-242b-4efd-9b8c-e39bbf9525a3}, !- Source Object
+  3,                                      !- Outlet Port
+  {33994d50-0558-42fc-be39-c557c0147aa3}, !- Target Object
+  18;                                     !- Inlet Port
+
+OS:Sizing:Plant,
+  {20bdd84c-42b6-42ed-a869-9f6c1491da64}, !- Handle
+  {33994d50-0558-42fc-be39-c557c0147aa3}, !- Plant or Condenser Loop Name
+  Condenser,                              !- Loop Type
+  26.1111111111111,                       !- Design Loop Exit Temperature {C}
+  5.55555555555556,                       !- Loop Design Temperature Difference {deltaC}
+  NonCoincident,                          !- Sizing Option
+  1,                                      !- Zone Timesteps in Averaging Window
+  None;                                   !- Coincident Sizing Factor Mode
+
+OS:AvailabilityManagerAssignmentList,
+  {29b05d04-c8f0-4d28-970c-5d4c14a52035}, !- Handle
+  Plant Loop 1 AvailabilityManagerAssignmentList; !- Name
+
+OS:Boiler:HotWater,
+  {ae62c178-8934-4225-b229-e25c55a03e61}, !- Handle
+  CW Loop Boiler,                         !- Name
+  NaturalGas,                             !- Fuel Type
+  6447.56354378889,                       !- Nominal Capacity {W}
+  0.90125,                                !- Nominal Thermal Efficiency
+  EnteringBoiler,                         !- Efficiency Curve Temperature Evaluation Variable
+  {ae3b5d22-fb30-4e9d-9553-a4d19143cd27}, !- Normalized Boiler Efficiency Curve Name
+  0.000277646277005264,                   !- Design Water Flow Rate {m3/s}
+  ,                                       !- Minimum Part Load Ratio
+  ,                                       !- Maximum Part Load Ratio
+  ,                                       !- Optimum Part Load Ratio
+  {15faf020-5747-4879-af77-13b4cf71098b}, !- Boiler Water Inlet Node Name
+  {169c6c76-7d7c-4a7c-972f-54fd334308af}, !- Boiler Water Outlet Node Name
+  99,                                     !- Water Outlet Upper Temperature Limit {C}
+  ConstantFlow,                           !- Boiler Flow Mode
+  1.9239529614666,                        !- On Cycle Parasitic Electric Load {W}
+  0,                                      !- Off Cycle Parasitic Fuel Load {W}
+  1,                                      !- Sizing Factor
+  General;                                !- End-Use Subcategory
+
+OS:Node,
+  {2da214cb-da03-47f2-a181-80416c7cc6e8}, !- Handle
+  CW Loop Boiler Outlet Node,             !- Name
+  {169c6c76-7d7c-4a7c-972f-54fd334308af}, !- Inlet Port
+  {ab6171d9-5a0c-41f5-8bf3-80fa5ab3730d}; !- Outlet Port
+
+OS:Connection,
+  {15faf020-5747-4879-af77-13b4cf71098b}, !- Handle
+  {2244e9df-3215-42c4-ba05-643b83291bad}, !- Source Object
+  3,                                      !- Outlet Port
+  {ae62c178-8934-4225-b229-e25c55a03e61}, !- Target Object
+  11;                                     !- Inlet Port
+
+OS:Connection,
+  {169c6c76-7d7c-4a7c-972f-54fd334308af}, !- Handle
+  {ae62c178-8934-4225-b229-e25c55a03e61}, !- Source Object
+  12,                                     !- Outlet Port
+  {2da214cb-da03-47f2-a181-80416c7cc6e8}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {ab6171d9-5a0c-41f5-8bf3-80fa5ab3730d}, !- Handle
+  {2da214cb-da03-47f2-a181-80416c7cc6e8}, !- Source Object
+  3,                                      !- Outlet Port
+  {3754b100-0614-4276-9c62-84ea8319d60e}, !- Target Object
+  3;                                      !- Inlet Port
+
+OS:CoolingTower:VariableSpeed,
+  {4dc583a9-2185-474f-941d-4abebfc41d15}, !- Handle
+  CW Loop Cooling Tower,                  !- Name
+  {868ae593-4fbd-4c6d-a2fe-f0717c2bbc33}, !- Water Inlet Node
+  {f9314846-d110-41f7-91a7-d3dc63cce718}, !- Water Outlet Node
+  CoolToolsCrossFlow,                     !- Model Type
+  ,                                       !- Model Coefficient
+  20.5555511111111,                       !- Design Inlet Air Wet-Bulb Temperature {C}
+  5.55556,                                !- Design Approach Temperature {deltaC}
+  5.55555555555556,                       !- Design Range Temperature {deltaC}
+  0.000889571769232915,                   !- Design Water Flow Rate {m3/s}
+  0.6555349986048,                        !- Design Air Flow Rate {m3/s}
+  249.0638,                               !- Design Fan Power {W}
+  {909a40e4-f7e3-4fea-b36f-24613e62827a}, !- Fan Power Ratio Function of Air Flow Rate Ratio Curve
+  0.5,                                    !- Minimum Air Flow Rate Ratio
+  0.125,                                  !- Fraction of Tower Capacity in Free Convection Regime
+  0,                                      !- Basin Heater Capacity {W/K}
+  2,                                      !- Basin Heater Setpoint Temperature {C}
+  ,                                       !- Basin Heater Operating Schedule
+  SaturatedExit,                          !- Evaporation Loss Mode
+  0.2,                                    !- Evaporation Loss Factor {percent/K}
+  0.008,                                  !- Drift Loss Percent {percent}
+  ConcentrationRatio,                     !- Blowdown Calculation Mode
+  3,                                      !- Blowdown Concentration Ratio
+  ,                                       !- Blowdown Makeup Water Usage Schedule
+  ,                                       !- Supply Water Storage Tank
+  ,                                       !- Outdoor Air Inlet Node
+  1,                                      !- Number of Cells
+  ,                                       !- Cell Control
+  ,                                       !- Cell Minimum  Water Flow Rate Fraction
+  ,                                       !- Cell Maximum Water Flow Rate Fraction
+  1,                                      !- Sizing Factor
+  General;                                !- End-Use Subcategory
+
+OS:Curve:Cubic,
+  {909a40e4-f7e3-4fea-b36f-24613e62827a}, !- Handle
+  Cooling Tower Variable Speed 1 Fan Power Ratio Curve, !- Name
+  -0.0093,                                !- Coefficient1 Constant
+  0.0512,                                 !- Coefficient2 x
+  -0.0838,                                !- Coefficient3 x**2
+  1.0419,                                 !- Coefficient4 x**3
+  0.15,                                   !- Minimum Value of x
+  1;                                      !- Maximum Value of x
+
+OS:Node,
+  {999760dd-a88b-4e0d-8a78-e3e48b3fca0f}, !- Handle
+  CW Loop Supply Splitter Outlet Node 2,  !- Name
+  {de944f6d-84a4-4928-a397-d5d9c2eab37f}, !- Inlet Port
+  {868ae593-4fbd-4c6d-a2fe-f0717c2bbc33}; !- Outlet Port
+
+OS:Connection,
+  {de944f6d-84a4-4928-a397-d5d9c2eab37f}, !- Handle
+  {d4324932-6035-4410-add4-71dc54f863ec}, !- Source Object
+  4,                                      !- Outlet Port
+  {999760dd-a88b-4e0d-8a78-e3e48b3fca0f}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Node,
+  {7faa22a1-1d0f-4702-98c0-823a480cb4e5}, !- Handle
+  CW Loop Cooling Tower Outlet Node,      !- Name
+  {f9314846-d110-41f7-91a7-d3dc63cce718}, !- Inlet Port
+  {8205758b-16e9-430a-9ee9-b7913863cf23}; !- Outlet Port
+
+OS:Connection,
+  {868ae593-4fbd-4c6d-a2fe-f0717c2bbc33}, !- Handle
+  {999760dd-a88b-4e0d-8a78-e3e48b3fca0f}, !- Source Object
+  3,                                      !- Outlet Port
+  {4dc583a9-2185-474f-941d-4abebfc41d15}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {f9314846-d110-41f7-91a7-d3dc63cce718}, !- Handle
+  {4dc583a9-2185-474f-941d-4abebfc41d15}, !- Source Object
+  3,                                      !- Outlet Port
+  {7faa22a1-1d0f-4702-98c0-823a480cb4e5}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {8205758b-16e9-430a-9ee9-b7913863cf23}, !- Handle
+  {7faa22a1-1d0f-4702-98c0-823a480cb4e5}, !- Source Object
+  3,                                      !- Outlet Port
+  {3754b100-0614-4276-9c62-84ea8319d60e}, !- Target Object
+  4;                                      !- Inlet Port
+
+OS:Pipe:Adiabatic,
+  {44fb67f1-8d8a-4516-b0f8-05041fd23702}, !- Handle
+  Pipe Adiabatic 1,                       !- Name
+  {f43c8b40-31a2-4f93-8482-c10d8f355d50}, !- Inlet Node Name
+  {2e652a4a-c4dd-468c-9f03-a86ce3ca091f}; !- Outlet Node Name
+
+OS:Node,
+  {aafd6b1d-87d3-4867-9d93-ff0479f1567b}, !- Handle
+  CW Loop Supply Splitter Outlet Node 3,  !- Name
+  {d4d1f5d9-baea-420e-bff0-2abd3d26a55b}, !- Inlet Port
+  {f43c8b40-31a2-4f93-8482-c10d8f355d50}; !- Outlet Port
+
+OS:Connection,
+  {d4d1f5d9-baea-420e-bff0-2abd3d26a55b}, !- Handle
+  {d4324932-6035-4410-add4-71dc54f863ec}, !- Source Object
+  5,                                      !- Outlet Port
+  {aafd6b1d-87d3-4867-9d93-ff0479f1567b}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Node,
+  {c1442d28-3696-41c4-8a34-7715fd2c78b9}, !- Handle
+  Pipe Adiabatic 1 Outlet Node,           !- Name
+  {2e652a4a-c4dd-468c-9f03-a86ce3ca091f}, !- Inlet Port
+  {ee836249-9cde-4e02-846a-f39f0277f64a}; !- Outlet Port
+
+OS:Connection,
+  {f43c8b40-31a2-4f93-8482-c10d8f355d50}, !- Handle
+  {aafd6b1d-87d3-4867-9d93-ff0479f1567b}, !- Source Object
+  3,                                      !- Outlet Port
+  {44fb67f1-8d8a-4516-b0f8-05041fd23702}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {2e652a4a-c4dd-468c-9f03-a86ce3ca091f}, !- Handle
+  {44fb67f1-8d8a-4516-b0f8-05041fd23702}, !- Source Object
+  3,                                      !- Outlet Port
+  {c1442d28-3696-41c4-8a34-7715fd2c78b9}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {ee836249-9cde-4e02-846a-f39f0277f64a}, !- Handle
+  {c1442d28-3696-41c4-8a34-7715fd2c78b9}, !- Source Object
+  3,                                      !- Outlet Port
+  {3754b100-0614-4276-9c62-84ea8319d60e}, !- Target Object
+  5;                                      !- Inlet Port
+
+OS:Pump:ConstantSpeed,
+  {7e93cd86-e897-4f77-be05-ad00ee7687cf}, !- Handle
+  CW Loop Pump,                           !- Name
+  {1cbdf67e-6561-4a86-ba82-b28f678c6859}, !- Inlet Node Name
+  {cc3ea756-4e6d-4b80-bf47-4e2b3be506cf}, !- Outlet Node Name
+  0.000889571769232915,                   !- Rated Flow Rate {m3/s}
+  59781.34,                               !- Rated Pump Head {Pa}
+  88.7147,                                !- Rated Power Consumption {W}
+  0.855,                                  !- Motor Efficiency
+  0,                                      !- Fraction of Motor Inefficiencies to Fluid Stream
+  Intermittent,                           !- Pump Control Type
+  ,                                       !- Pump Flow Rate Schedule
+  ,                                       !- Pump Curve
+  ,                                       !- Impeller Diameter {m}
+  ,                                       !- Rotational Speed {rev/min}
+  ,                                       !- Zone
+  ,                                       !- Skin Loss Radiative Fraction
+  PowerPerFlowPerPressure,                !- Design Power Sizing Method
+  348701.1,                               !- Design Electric Power per Unit Flow Rate {W/(m3/s)}
+  1.282051282,                            !- Design Shaft Power per Unit Flow Rate per Unit Head {W-s/m3-Pa}
+  General;                                !- End-Use Subcategory
+
+OS:Node,
+  {cc84f6d3-dbd5-42c4-8154-8edb8a061879}, !- Handle
+  CW Loop Pump Outlet Node,               !- Name
+  {cc3ea756-4e6d-4b80-bf47-4e2b3be506cf}, !- Inlet Port
+  {33e76d93-d00c-4c08-8c16-ef9d6bbdb381}; !- Outlet Port
+
+OS:Connection,
+  {1cbdf67e-6561-4a86-ba82-b28f678c6859}, !- Handle
+  {27471f8a-def6-4572-aa26-1229c069c078}, !- Source Object
+  3,                                      !- Outlet Port
+  {7e93cd86-e897-4f77-be05-ad00ee7687cf}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {cc3ea756-4e6d-4b80-bf47-4e2b3be506cf}, !- Handle
+  {7e93cd86-e897-4f77-be05-ad00ee7687cf}, !- Source Object
+  3,                                      !- Outlet Port
+  {cc84f6d3-dbd5-42c4-8154-8edb8a061879}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {33e76d93-d00c-4c08-8c16-ef9d6bbdb381}, !- Handle
+  {cc84f6d3-dbd5-42c4-8154-8edb8a061879}, !- Source Object
+  3,                                      !- Outlet Port
+  {d4324932-6035-4410-add4-71dc54f863ec}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:LoadProfile:Plant,
+  {ab8cba50-23d4-4dc1-94ce-479fd95b50d8}, !- Handle
+  CW Loop-ProcLd1,                        !- Name
+  {cb27723a-e1c2-4600-a77f-6b6a6739d98c}, !- Inlet Node Name
+  {2d96384b-8ae7-4139-b457-d1666b76dc2f}, !- Outlet Node Name
+  {51d8018b-c0ad-4302-95b0-34e24b16dfed}, !- Load Schedule Name
+  1.00010579332483,                       !- Peak Flow Rate {m3/s}
+  {b651dc73-f01b-4287-9d3c-90bd046928c8}, !- Flow Rate Fraction Schedule Name
+  Water,                                  !- Plant Loop Fluid Type
+  5,                                      !- Degree of SubCooling {C}
+  20;                                     !- Degree of Loop SubCooling {C}
+
+OS:Schedule:Constant,
+  {d54cd776-3c4d-4b24-b745-bc3ce3b3d9ea}, !- Handle
+  Always On Discrete,                     !- Name
+  {0c1456c2-230b-4f43-9465-839c80c5ba74}, !- Schedule Type Limits Name
+  1;                                      !- Value
+
+OS:ScheduleTypeLimits,
+  {0c1456c2-230b-4f43-9465-839c80c5ba74}, !- Handle
+  On Off Limits,                          !- Name
+  0,                                      !- Lower Limit Value
+  1,                                      !- Upper Limit Value
+  Discrete,                               !- Numeric Type
+  ;                                       !- Unit Type
+
+OS:Schedule:Ruleset,
+  {282d7532-244e-4e9b-be31-d1948e0bd63b}, !- Handle
+  Schedule Ruleset 1,                     !- Name
+  {0524f032-e66f-45be-8b95-6bf6e7a9caac}, !- Schedule Type Limits Name
+  {22f38cf7-6fa7-4b49-b881-69dc0886bbc7}; !- Default Day Schedule Name
+
+OS:Schedule:Day,
+  {22f38cf7-6fa7-4b49-b881-69dc0886bbc7}, !- Handle
+  Schedule Day 1,                         !- Name
+  {0524f032-e66f-45be-8b95-6bf6e7a9caac}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  4,                                      !- Hour 1
+  0,                                      !- Minute 1
+  8000,                                   !- Value Until Time 1
+  8,                                      !- Hour 2
+  0,                                      !- Minute 2
+  6000,                                   !- Value Until Time 2
+  9,                                      !- Hour 3
+  0,                                      !- Minute 3
+  0,                                      !- Value Until Time 3
+  12,                                     !- Hour 4
+  0,                                      !- Minute 4
+  6000,                                   !- Value Until Time 4
+  24,                                     !- Hour 5
+  0,                                      !- Minute 5
+  10000;                                  !- Value Until Time 5
+
+OS:ScheduleTypeLimits,
+  {0524f032-e66f-45be-8b95-6bf6e7a9caac}, !- Handle
+  Dimensionless,                          !- Name
+  ,                                       !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous;                             !- Numeric Type
+
+OS:ScheduleTypeLimits,
+  {52292b45-05e4-433e-8176-fc19ec0b114d}, !- Handle
+  Load,                                   !- Name
+  ,                                       !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous;                             !- Numeric Type
+
+OS:ScheduleTypeLimits,
+  {bd589a31-7771-4457-8489-dbc6f5e5f1e3}, !- Handle
+  Flow Rate Fraction,                     !- Name
+  0,                                      !- Lower Limit Value
+  1,                                      !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Dimensionless;                          !- Unit Type
+
+OS:Node,
+  {23cebd97-7b99-4502-806a-a12846695ca6}, !- Handle
+  CW Loop-ProcLd1 Outlet Node,            !- Name
+  {2d96384b-8ae7-4139-b457-d1666b76dc2f}, !- Inlet Port
+  {d46920db-9dbc-4eaf-a5f9-81c5d91d2b68}; !- Outlet Port
+
+OS:Connection,
+  {cb27723a-e1c2-4600-a77f-6b6a6739d98c}, !- Handle
+  {3a3f32b4-da33-4bb4-b26d-b297dcd1b585}, !- Source Object
+  3,                                      !- Outlet Port
+  {ab8cba50-23d4-4dc1-94ce-479fd95b50d8}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {2d96384b-8ae7-4139-b457-d1666b76dc2f}, !- Handle
+  {ab8cba50-23d4-4dc1-94ce-479fd95b50d8}, !- Source Object
+  3,                                      !- Outlet Port
+  {23cebd97-7b99-4502-806a-a12846695ca6}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {d46920db-9dbc-4eaf-a5f9-81c5d91d2b68}, !- Handle
+  {23cebd97-7b99-4502-806a-a12846695ca6}, !- Source Object
+  3,                                      !- Outlet Port
+  {9e0d6787-aa4f-451f-a752-2683425f1538}, !- Target Object
+  3;                                      !- Inlet Port
+
+OS:Schedule:Ruleset,
+  {dbed690c-188b-4652-a3b6-4c2923989286}, !- Handle
+  CW Loop Supply Temp Schedule,           !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  {d4ede80d-b2e7-43da-b2cc-df14347782c0}; !- Default Day Schedule Name
+
+OS:Schedule:Day,
+  {d4ede80d-b2e7-43da-b2cc-df14347782c0}, !- Handle
+  CW Loop Supply Temp Schedule Day Schedule, !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  26.1111111111111;                       !- Value Until Time 1
+
+OS:Schedule:Ruleset,
+  {9e41baea-e01d-41b2-957f-64ac9e725fb1}, !- Handle
+  CW Loop Heating Supply Temp Schedule,   !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  {c3a75954-8c89-4abb-b7ee-7c6f80601621}; !- Default Day Schedule Name
+
+OS:Schedule:Day,
+  {c3a75954-8c89-4abb-b7ee-7c6f80601621}, !- Handle
+  CW Loop Heating Supply Temp Schedule Day Schedule, !- Name
+  {fe7ff84a-8869-40f3-9da6-973dca748684}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  15.5555555555556;                       !- Value Until Time 1
+
+OS:SetpointManager:Scheduled:DualSetpoint,
+  {ebe588c7-6e8b-4528-a866-1aef18c5c372}, !- Handle
+  CW Loop Supply Outlet SPM,              !- Name
+  ,                                       !- Control Variable
+  {dbed690c-188b-4652-a3b6-4c2923989286}, !- High Setpoint Schedule Name
+  {9e41baea-e01d-41b2-957f-64ac9e725fb1}, !- Low Setpoint Schedule Name
+  {ab826fbe-277e-4b72-83c7-00a1ece0ae5f}; !- Setpoint Node or NodeList Name
+
+OS:Timestep,
+  {1f1df752-e29f-4124-9d07-bc14c6524bc5}, !- Handle
+  4;                                      !- Number of Timesteps per Hour
+
+OS:Output:Meter,
+  {f9b79ecf-0aa6-4f1e-9008-8e75eb52b754}, !- Handle
+  Electricity:Facility,                   !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {5e4ca6c5-e132-48c3-a397-5199a41d0a8e}, !- Handle
+  InteriorLights:Electricity,             !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {b0e8f4d7-0ee0-4cce-b43c-0990e944d0aa}, !- Handle
+  ExteriorLights:Electricity,             !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {2e85d44c-1ce4-442a-ab13-9d718e84f35a}, !- Handle
+  InteriorEquipment:Electricity,          !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {3e35b0fd-9cc7-4b86-9ac4-9af208e170f8}, !- Handle
+  ExteriorEquipment:Electricity,          !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {6fb0ebda-d3d4-42b1-8a8b-710efb4fd22b}, !- Handle
+  Fans:Electricity,                       !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {67fd69fb-7b5a-4958-9ddb-441f0b2f0df5}, !- Handle
+  Pumps:Electricity,                      !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {339884ea-b88a-4aea-8554-5e6ed4e3260e}, !- Handle
+  Heating:Electricity,                    !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {252fb6fd-9ef4-4c9d-a1f6-8686e427b9df}, !- Handle
+  Cooling:Electricity,                    !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {54087e1a-d4e2-474c-bf78-759fdfbceebe}, !- Handle
+  HeatRejection:Electricity,              !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {72598b81-c345-41ae-a499-2a275977cb63}, !- Handle
+  Humidifier:Electricity,                 !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {eb832c9e-b0cc-4469-a305-68f48985f91b}, !- Handle
+  HeatRecovery:Electricity,               !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {88823d3d-a648-4b26-b316-7a6f08829e6b}, !- Handle
+  WaterSystems:Electricity,               !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {82d59226-0e1f-42c8-9424-2bcaade0dae6}, !- Handle
+  Cogeneration:Electricity,               !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {cbe83366-22f5-4b50-bbec-008b353aa937}, !- Handle
+  Refrigeration:Electricity,              !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {bf84615d-0cf4-435b-a496-86416aabb69c}, !- Handle
+  Chillers:Electricity,                   !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {c1ed2082-1124-420c-adb3-cef0a6aa5e08}, !- Handle
+  NaturalGas:Facility,                    !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {5414c75e-cfda-463d-a559-9318ad39cd48}, !- Handle
+  InteriorLights:NaturalGas,              !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {66493e47-09c7-49f3-84ec-0512850e8bfc}, !- Handle
+  ExteriorLights:NaturalGas,              !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {36aa0320-2778-4a4a-ab33-cbec3aeaa883}, !- Handle
+  InteriorEquipment:NaturalGas,           !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {edb1385a-29e4-4559-9538-3fdd23568dff}, !- Handle
+  ExteriorEquipment:NaturalGas,           !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {7d1842c8-7128-4894-beb4-0dbb5f95de01}, !- Handle
+  Fans:NaturalGas,                        !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {eac7ddf5-3ab9-4025-b65b-fbb9e1f6ab5a}, !- Handle
+  Pumps:NaturalGas,                       !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {a535e2d3-e164-4d28-8d49-c19ad32af019}, !- Handle
+  Heating:NaturalGas,                     !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {c1f0f7c7-dda4-4d40-908f-34a75ea59fe4}, !- Handle
+  Cooling:NaturalGas,                     !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {906adcf7-0fa8-4f10-99e6-9a00cfb6141b}, !- Handle
+  HeatRejection:NaturalGas,               !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {34a1c84f-b234-4102-b352-aacbac4c1c6d}, !- Handle
+  Humidifier:NaturalGas,                  !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {3222f407-bd8f-4aed-82f4-8cbaf1a4b2b0}, !- Handle
+  HeatRecovery:NaturalGas,                !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {862ef5ec-17ae-4f41-99a1-a8c5c44cee85}, !- Handle
+  WaterSystems:NaturalGas,                !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {9fbcceff-1617-45b1-8d95-1db2f1920e10}, !- Handle
+  Cogeneration:NaturalGas,                !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {e60ce82c-e4d2-4c2c-8494-aedc6d52fd8b}, !- Handle
+  Refrigeration:NaturalGas,               !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {d3ee7f2c-335e-48c8-a6c9-0186d15ee8ff}, !- Handle
+  Chillers:NaturalGas,                    !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {a792bb98-7e82-4a41-a2d7-81e26cdf3ba7}, !- Handle
+  Coal:Facility,                          !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {275d704e-8f1f-4738-ac32-2f779eda84c8}, !- Handle
+  InteriorLights:Coal,                    !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {5f865f6e-31e7-4309-ae19-8ae5a3a339d7}, !- Handle
+  ExteriorLights:Coal,                    !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {aff0b711-84c9-4616-91d1-5da61d7b3335}, !- Handle
+  InteriorEquipment:Coal,                 !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {3e39400e-de6f-4190-83fe-2103e1ea43d5}, !- Handle
+  ExteriorEquipment:Coal,                 !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {582b418f-723d-436a-a3dc-a02e64935551}, !- Handle
+  Fans:Coal,                              !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {a0447a84-b982-4777-a218-f1829c94cd00}, !- Handle
+  Pumps:Coal,                             !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {7e406375-22d1-49ac-95b2-e064b7bb5259}, !- Handle
+  Heating:Coal,                           !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {2198f8c2-c311-4f47-ad82-9460d7e84c10}, !- Handle
+  Cooling:Coal,                           !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {fef0c532-9525-439d-97cc-424814a74fdc}, !- Handle
+  HeatRejection:Coal,                     !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {8af9a8b3-1ceb-4484-b1a8-d6ce7c7cdf8f}, !- Handle
+  Humidifier:Coal,                        !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {3959c03c-1654-4138-9404-ae107dda86b7}, !- Handle
+  HeatRecovery:Coal,                      !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {e2538eb5-4ce2-4d0f-8cc3-687cd2ca2b43}, !- Handle
+  WaterSystems:Coal,                      !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {574800b4-9da6-4ffe-beee-54248810a01c}, !- Handle
+  Cogeneration:Coal,                      !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {c44b4b63-662c-47b4-91a9-55b7ede9c8c8}, !- Handle
+  Refrigeration:Coal,                     !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {945267dd-8032-4a6b-b7d4-34c385cbacf5}, !- Handle
+  Chillers:Coal,                          !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {a5ddee37-1305-46e9-802b-6a03e7621b8a}, !- Handle
+  DistrictCooling:Facility,               !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {2645c801-0825-4b5b-bfc2-8148665eb92a}, !- Handle
+  InteriorLights:DistrictCooling,         !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {c03c88c7-8021-4aca-97e0-a07517afa2af}, !- Handle
+  ExteriorLights:DistrictCooling,         !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {38a611ff-2a00-40db-9b66-57f1d4736b48}, !- Handle
+  InteriorEquipment:DistrictCooling,      !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {e0538f10-0fa7-42c3-8b82-b7d072560b76}, !- Handle
+  ExteriorEquipment:DistrictCooling,      !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {06dd06a8-9600-442b-b6d8-b2a3d3b9d11d}, !- Handle
+  Fans:DistrictCooling,                   !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {915e526e-7986-4231-bf7c-422cdbf8df51}, !- Handle
+  Pumps:DistrictCooling,                  !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {ac90ff98-9e01-4dc5-a49f-6342deb2db5c}, !- Handle
+  Heating:DistrictCooling,                !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {8bd883c4-2352-4d20-b5ec-955ec3bb9d77}, !- Handle
+  Cooling:DistrictCooling,                !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {07a27d83-35af-40bd-abb2-1c8fa6152f1b}, !- Handle
+  HeatRejection:DistrictCooling,          !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {f11047d3-6a89-4676-b8e5-07f368525b0d}, !- Handle
+  Humidifier:DistrictCooling,             !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {4548ccca-e0d1-473a-ab21-fb6aadaebac0}, !- Handle
+  HeatRecovery:DistrictCooling,           !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {4c6c9041-3f26-4ccb-871d-5b409b4a4f55}, !- Handle
+  WaterSystems:DistrictCooling,           !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {c9b717b8-cad5-438c-b8dd-266a0e8421ef}, !- Handle
+  Cogeneration:DistrictCooling,           !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {8c5c010b-667f-47d1-8843-ecb8e1e6b6c3}, !- Handle
+  Refrigeration:DistrictCooling,          !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {661e7b38-f82d-48d6-821f-7c99f56da1c0}, !- Handle
+  Chillers:DistrictCooling,               !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {6056e270-357a-45aa-9c6a-c81fccdb0cbe}, !- Handle
+  DistrictHeatingWater:Facility,          !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {1569768b-181c-4536-8553-224094d21ef3}, !- Handle
+  InteriorLights:DistrictHeatingWater,    !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {bfbfcadc-7bf4-4aa9-8e01-7387915326bb}, !- Handle
+  ExteriorLights:DistrictHeatingWater,    !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {4f9efda6-dd0e-4cb6-a6aa-cd71546dcf4e}, !- Handle
+  InteriorEquipment:DistrictHeatingWater, !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {8ae61b67-4957-475a-ac64-7f4d0452f50b}, !- Handle
+  ExteriorEquipment:DistrictHeatingWater, !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {b53622bd-668d-4861-a99f-56f803959b8b}, !- Handle
+  Fans:DistrictHeatingWater,              !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {d88b5177-d5e1-4c68-b54c-fa1ba5f87b82}, !- Handle
+  Pumps:DistrictHeatingWater,             !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {571cbcb8-7841-47a8-9eb4-13749526005a}, !- Handle
+  Heating:DistrictHeatingWater,           !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {a61c499d-0ddb-4818-921f-38700d497e1b}, !- Handle
+  Cooling:DistrictHeatingWater,           !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {31b70972-b3b3-4c7a-948a-f37c2e6df02c}, !- Handle
+  HeatRejection:DistrictHeatingWater,     !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {a56ab0bd-dcd0-4014-87d2-add3a8cebfef}, !- Handle
+  Humidifier:DistrictHeatingWater,        !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {be1e586f-716f-4a18-9ff0-57ccc92ec3df}, !- Handle
+  HeatRecovery:DistrictHeatingWater,      !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {a1b56f22-06bb-4e8d-869d-fef88118103c}, !- Handle
+  WaterSystems:DistrictHeatingWater,      !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {64ac27f8-855c-4b88-8880-3ca0796255aa}, !- Handle
+  Cogeneration:DistrictHeatingWater,      !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {140ac51f-d3f7-44d1-a08c-a03ed041b8cc}, !- Handle
+  Refrigeration:DistrictHeatingWater,     !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {d055a01c-1175-4195-862b-decfe497dea6}, !- Handle
+  Chillers:DistrictHeatingWater,          !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {ec59c0d3-6de3-4bae-8a4b-27e538fdc17e}, !- Handle
+  Receptacle:InteriorEquipment:Electricity, !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {eaec85af-eed3-4ce9-9886-6573bdaaf973}, !- Handle
+  Process:InteriorEquipment:Electricity,  !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {80f273a7-026d-4976-a056-9c9cd7285f49}, !- Handle
+  Refrig:InteriorEquipment:Electricity,   !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {b888126b-e57c-4069-9e50-0aaabdcfaaee}, !- Handle
+  Internal Transport:InteriorEquipment:Electricity, !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {a86749cc-2bac-4a9a-a96a-d72cbd5037ad}, !- Handle
+  Receptacle:ExteriorEquipment:Electricity, !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {f4971613-e26c-4640-afb8-a7de8683a225}, !- Handle
+  Process:ExteriorEquipment:Electricity,  !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {3acc05be-488f-4064-9923-cc819e635f74}, !- Handle
+  Refrig:ExteriorEquipment:Electricity,   !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {9f3b4a82-81c5-4278-9671-782a557b3057}, !- Handle
+  Receptacle:InteriorEquipment:NaturalGas, !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {52ed55b9-a099-43b0-8571-eb4071385f6d}, !- Handle
+  Process:InteriorEquipment:NaturalGas,   !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {cebadd76-61e5-491f-8ec0-f0030b37797f}, !- Handle
+  Receptacle:ExteriorEquipment:NaturalGas, !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {4da583f9-b5b8-4684-b792-17b06f57c3a2}, !- Handle
+  Process:ExteriorEquipment:NaturalGas,   !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {6fc2a146-4d9f-450c-85aa-c941cd23e8c2}, !- Handle
+  ComplianceLtg:InteriorLights:Electricity, !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {1125f5bf-f391-4de1-9b6d-1a93c1aded6c}, !- Handle
+  NonComplianceLtg:InteriorLights:Electricity, !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {531fc127-2512-4c8f-989d-561add61d72d}, !- Handle
+  Reg Ltg:ExteriorLights:Electricity,     !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Meter,
+  {cf388684-c811-40b4-a2af-2cda94f9ea0b}, !- Handle
+  NonReg Ltg:ExteriorLights:Electricity,  !- Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {b7f73147-8666-45eb-ac26-36178bc4f840}, !- Handle
+  Output Variable 1,                      !- Name
+  ,                                       !- Key Value
+  Chiller Evaporator Cooling Rate,        !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {228d453f-78ee-48d4-a2bf-4a4cf61cc9c2}, !- Handle
+  Output Variable 2,                      !- Name
+  ,                                       !- Key Value
+  Cooling Tower Heat Transfer Rate,       !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {552e4f41-969b-44ce-8a71-133c2670259f}, !- Handle
+  Output Variable 3,                      !- Name
+  ,                                       !- Key Value
+  Boiler Heating Rate,                    !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {9361fb62-5206-4368-b922-3180e23bd9d3}, !- Handle
+  Output Variable 4,                      !- Name
+  ,                                       !- Key Value
+  Pump Electricity Rate,                  !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {9317b8e6-319b-45a0-8a2e-fd33ed675c80}, !- Handle
+  Output Variable 5,                      !- Name
+  ,                                       !- Key Value
+  Pump Mass Flow Rate,                    !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {bedc3448-b73d-4210-9d3e-42c5aa4db0a7}, !- Handle
+  Output Variable 6,                      !- Name
+  ,                                       !- Key Value
+  Pump Outlet Temperature,                !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {4db4682c-af71-460f-9bfd-60a0b3be9387}, !- Handle
+  Output Variable 7,                      !- Name
+  ,                                       !- Key Value
+  Debug Plant Loop Bypass Fraction,       !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {60142e5d-5384-459b-b2d1-ee11bc8de813}, !- Handle
+  Output Variable 8,                      !- Name
+  ,                                       !- Key Value
+  Debug Plant Loop Bypass Fraction,       !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {fac64a93-4d9f-4315-be11-68b6eb01c77d}, !- Handle
+  Output Variable 9,                      !- Name
+  ,                                       !- Key Value
+  Chiller Condenser Heat Transfer Rate,   !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {c2c02f66-e65a-455c-9995-ea40a085bcce}, !- Handle
+  Output Variable 10,                     !- Name
+  ,                                       !- Key Value
+  Chiller Electricity Rate,               !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {269af288-d2f1-4f92-8e67-e834c49005c8}, !- Handle
+  Output Variable 11,                     !- Name
+  ,                                       !- Key Value
+  Cooling Tower Heat Transfer Rate,       !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {c00cf179-9cf6-4c53-b8fb-3877beb7dc86}, !- Handle
+  Output Variable 12,                     !- Name
+  ,                                       !- Key Value
+  Cooling Tower Fan Electricity Rate,     !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {77bb7ffa-b562-4a81-9ba0-6c277dc96b8b}, !- Handle
+  Output Variable 13,                     !- Name
+  ,                                       !- Key Value
+  Boiler NaturalGas Rate,                 !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {991fdf11-15fe-43c4-9d00-1e59ef5aa7c5}, !- Handle
+  Output Variable 14,                     !- Name
+  ,                                       !- Key Value
+  Boiler Ancillary Electricity Rate,      !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {7a062699-e360-48ef-b5af-d636a0919168}, !- Handle
+  Output Variable 15,                     !- Name
+  ,                                       !- Key Value
+  Plant Supply Side Cooling Demand Rate,  !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {68eb51f2-8162-424a-b4a4-84cbfc3a39ac}, !- Handle
+  Output Variable 16,                     !- Name
+  ,                                       !- Key Value
+  Plant Supply Side Heating Demand Rate,  !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {3e49c359-9d7c-4069-acd9-b9c5b128deb3}, !- Handle
+  Output Variable 17,                     !- Name
+  ,                                       !- Key Value
+  Chiller Evaporator Cooling Rate,        !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {7d817158-9cae-48c2-8959-f7d0a09af01d}, !- Handle
+  Output Variable 18,                     !- Name
+  ,                                       !- Key Value
+  Boiler Heating Rate,                    !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {3bbf55b8-6890-4890-93db-1847e7a581e7}, !- Handle
+  Output Variable 19,                     !- Name
+  ,                                       !- Key Value
+  Plant Supply Side Inlet Temperature,    !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {9cad8dc4-580f-4bbd-81a7-f4ca3058a4d7}, !- Handle
+  Output Variable 20,                     !- Name
+  ,                                       !- Key Value
+  Plant Supply Side Outlet Temperature,   !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:Output:Variable,
+  {45befd59-7c07-4334-bd23-2511cf925c66}, !- Handle
+  Output Variable 21,                     !- Name
+  CW Loop Demand Mixer Outlet Node,       !- Key Value
+  System Node Mass Flow Rate,             !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OS:OutputControl:ReportingTolerances,
+  {9f29f1bf-33e5-487e-9d3a-b785948572bc}, !- Handle
+  0.56,                                   !- Tolerance for Time Heating Setpoint Not Met {deltaC}
+  0.56;                                   !- Tolerance for Time Cooling Setpoint Not Met {deltaC}
+

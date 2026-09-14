@@ -1,0 +1,16 @@
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF08_1A_ISUP_CEXH_SZHP_CZ09\MF8UNIT_ISUP_CEXH_SZHP_CZ09 - RUN\MF8UNIT_ISUP_CEXH_SZHP_CZ09 - AP-CSE.CSE(2170): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF08_1A_ISUP_CEXH_SZHP_CZ09\MF8UNIT_ISUP_CEXH_SZHP_CZ09 - RUN\MF8UNIT_ISUP_CEXH_SZHP_CZ09 - AP-CSE.CSE(2170): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+C:\USERS\MICHAELSAWFORD\A2 EFFICIENCY\P-2050-006.00 SCE T24 COMPLEX HVAC - DOCUMENTS\4.00-MODELING\EX01A_MF VENTILATION\MF08_1A_ISUP_CEXH_SZHP_CZ09\MF8UNIT_ISUP_CEXH_SZHP_CZ09 - RUN\MF8UNIT_ISUP_CEXH_SZHP_CZ09 - AP-CSE.CSE(2170): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+Warning: Zone 'Attic-atc': Condensation occurred in 285 subhours of run.
+    Total condensation heat = 74.8499 kBtu.
+---------------

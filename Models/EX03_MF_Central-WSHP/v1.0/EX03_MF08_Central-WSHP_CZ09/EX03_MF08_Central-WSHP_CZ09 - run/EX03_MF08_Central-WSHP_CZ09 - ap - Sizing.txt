@@ -1,0 +1,3 @@
+Boiler:  timeSeries( eachPeriod, Hourly, Boiler Heating Rate,  ) -->> 3414.43
+HtReject:  timeSeries( eachPeriod, Hourly, Cooling Tower Heat Transfer Rate,  ) -->> 18304.7
+Pump:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Pumps') AND (RowName = 'CW LOOP PUMP') AND (ColumnName='Water Flow') AND (Units = 'gal/min') -->> 14.1015

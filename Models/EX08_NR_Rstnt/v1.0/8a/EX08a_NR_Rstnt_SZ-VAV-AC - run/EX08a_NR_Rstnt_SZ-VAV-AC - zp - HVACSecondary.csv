@@ -1,0 +1,60 @@
+AirSystems
+,,,,,Cooling,,,,Heating,,,Fan/Ventilation,,,Controls
+Name,Type,Status,System Count,Floor Area Served,Net Capacity,Design Supply T,Capacity/Area,Supply Flow/Ton,Net Capacity,Design Supply T,Capacity/Area,Supply Flow,Supply Flow/Area,Design OA,OA/Area,Control Zone Name,Temp Control,FixedT,Supply HiT,At Outdoor,Supply LowT,At OutdoorT,ReheatCtrlMthd,Availability Schedule,Night Cycle Control
+,,,(#),(ft2),(Btu/hr),(degF),(Btu/ft2),(cfm/ton),(Btu/hr),(degF),(Btu/ft2),(cfm),(cfm/ft2),(cfm),(cfm/ft2),,,(degF),(degF),(degF),(degF),( degF),,,
+"Dining - RTU / DOAS 1","SZVAVAC","New",1,1250.46,98700,55,78.931,243.161,95423,85,76.3103,2000,1.59941,618.978,0.495,"Dining Thermal Zone","NoSATControl",,-99996,,-99996,,"UNDEFINED","RestaurantHVACAvail","CycleOnCallPrimaryZone"
+"Kitchen-RTU / DOAS 2","SZVAVAC","New",1,1250.46,205000,55,163.94,263.415,151516,85,121.168,4500,3.59868,1700,1.3595,"Kitchen Thermal Zone","NoSATControl",,-99996,,-99996,,"UNDEFINED","RestaurantHVACAvail","CycleOnCallPrimaryZone"
+
+
+
+ZoneSystems
+,,,,Cooling,,,,Heating,,,Fan/Ventilation,,,Controls
+Name,Type,System Count,Floor Area Served,Net Capacity,Design Supply T,Capacity/Area,Supply Flow/Ton,Net Capacity,Design Supply T,Capacity/Area,Supply Flow,Supply Flow/Area,Design OA,OA/Area,Control Zone Name,Temp Control,Availability Schedule
+,,(#),(ft2),(Btu/hr),(degF),(Btu/ft2),(cfm/ton),(Btu/hr),(degF),(Btu/ft2),(cfm),(cfm/ft2),(cfm),( cfm/ft2),,,,,,,,,,
+"KitchenExhaust","Exhaust",1,0,0,-99996,0,0,0,-99996,0,0,0,0,0,"NONE","NoSATControl","RestaurantHVACAvail"
+
+
+
+Terminal Units
+,,,,Relationships,,,,,AirFlow,,VAV,,Fan Powered Terminal
+Name,Type,Status,Qty,System,System Qty,Zone,Floor Area,HVAC Zones,Primary Max,Primary Min,Heating Max,Reheat Control,Induced Air Zone,Induction Ratio,Fan Power,Parallel Box Control,Flow Fraction
+,,,(#),,(#),,(ft2),(#),(cfm),(cfm),(cfm),,,,( W/cfm)
+"Dining TerminalUnit","VAVNoReheatBox","New",1,"Dining - RTU / DOAS 1",1,"Dining Thermal Zone",1250.46,1,2000,1200,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"Kitchen TerminalUnit","VAVNoReheatBox","New",1,"Kitchen-RTU / DOAS 2",1,"Kitchen Thermal Zone",1250.46,1,4500,1700,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+
+
+
+Cooling Coils
+,,,,Relationships,,,Capacity,,,,ChilledWater,,,DirectExpansion
+Name,Type,Status,Fuel Src,System,System Qty,Zone,Total-Net,Total-Gross,FluidSegIn,FluidSegOut,Design Flow Rate,Condenser Type,Number Stages,SEER (rounded),CodeMin SEER,EER (rounded),CodeMin EER,IEER (roundded),CodeMin IEER,EIR,Sizing Ratio,SEER2 (rounded),CodeMin SEER2,EER2 (rounded), CodeMin EER2
+,,,,,(#),,(Btu/hr),(Btu/hr),(Btu/hr),(Btu/hr),( gpm)
+"Dining CoilClg","DirectExpansion","New","Electric","Dining - RTU / DOAS 1",1,"n/a",98700,102975,"NONE","NONE",-99996,"Air",1,-99996,-99996,11,11,14.6,14.6,0.255793,1,-99996,-99996,-99996,-99996
+"Kitchen CoilClg","DirectExpansion","New","Electric","Kitchen-RTU / DOAS 2",1,"n/a",205000,213879,"NONE","NONE",-99996,"Air",2,-99996,-99996,10.8,10.8,14,14,0.261298,1,-99996,-99996,-99996,-99996
+
+
+
+Heating Coils
+,,,,Relationships,,,Capacity,,HotWater,,,HeatPump,,,,,,,,,Furnace
+Name,Type,Status,Fuel Src,System,System Qty,Zone,Total-Net,Total-Gross,FluidSeg In,FluidSeg Out,Design Flow Rate,Condenser Type,Number Stages,HSPF (rounded),CodeMin HSPF,COP (rounded),CodeMin COP,EIR,Comp Lockout Temp,Supp Htr Temp,AFUE,CodeMin AFUE,Thrml Eff,CodeMin Thrml Eff,SizingRatio,HSPF2 (rounded), CodeMin HSPF2
+,,,,,(#),,(Btu/hr),(Btu/hr),,,(gpm),,,,,,,,(?F),( ?F)
+"Dining CoilHtg","Furnace","New","Gas","Dining - RTU / DOAS 1",1,"n/a",95423,95423,"NONE","NONE",-99996,"UNDEFINED",1,-99996,-99996,-99996,-99996,-99996,-99996,-99996,0.81,0.81,0.815459,-99996,1,-99996,-99996
+"Kitchen CoilHtg","Furnace","New","Gas","Kitchen-RTU / DOAS 2",1,"n/a",151516,151516,"NONE","NONE",-99996,"UNDEFINED",1,-99996,-99996,-99996,-99996,-99996,-99996,-99996,0.81,0.81,0.815459,-99996,1,-99996,-99996
+
+
+
+Fans
+,,,,,Relationships,,,Capacity,,,Power,,,,Motor
+Name,Control Method,Status,Class,Cent Type,System,System Qty,Zone,Maximum,Minimum,Efficiency,Modeling Method,Brake HP,Total Static,Power Index,Nameplate HP,Position,Efficiency
+,,,,,,(#),,(cfm),(cfm),,,(hp),(inH2O),(W/cfm),( hp)
+"Dining Fan","VariableSpeedDrive","New","Centrifugal","AirFoil","Dining - RTU / DOAS 1",1,"n/a",2000,1200,0.65,"PowerPerUnitFlow",1.73093,3.56969,0.746,2,"InAirStream",0.865
+"Kitchen Fan","VariableSpeedDrive","New","Centrifugal","AirFoil","Kitchen-RTU / DOAS 2",1,"n/a",4500,1700,0.65,"PowerPerUnitFlow",4.28091,3.92379,0.82,5,"InAirStream",0.865
+"KitchExh Fan","ConstantVolume","New","Centrifugal","AirFoil","KitchenExhaust",1,"UNDEFINED",2400,-99996,0.5,"StaticPressure",1.81016,2.393,0.650121,2,"InAirStream",0.865
+
+
+
+Outside Air Control
+,,,,Relationships,,Control
+Name,Control,Status,Design OA,Name,System Count,Econo Integration,Max OA Ratio,High DB Lockout,Low DB Lockout,High Enthalpy Lockout,OA Schedule Method,Delay,Schedule Name
+,,,(cfm),,(#),,,(F),(F),(Btu/lb),,( hrs)
+"DiningOAControl","DifferentialEnthalpy","New",618.978,"Dining - RTU / DOAS 1",1,"Integrated",1,71,-99996,30,"FollowHVACAvailability",0,"NONE"
+"Kitchen OAControl","DifferentialEnthalpy","New",1700,"Kitchen-RTU / DOAS 2",1,"Integrated",1,71,-99996,30,"FollowHVACAvailability",0,"NONE"

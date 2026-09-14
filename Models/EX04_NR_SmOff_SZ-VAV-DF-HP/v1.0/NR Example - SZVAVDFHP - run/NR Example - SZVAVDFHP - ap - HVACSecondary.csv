@@ -1,0 +1,102 @@
+AirSystems
+,,,,,Cooling,,,,Heating,,,Fan/Ventilation,,,Controls
+Name,Type,Status,System Count,Floor Area Served,Net Capacity,Design Supply T,Capacity/Area,Supply Flow/Ton,Net Capacity,Design Supply T,Capacity/Area,Supply Flow,Supply Flow/Area,Design OA,OA/Area,Control Zone Name,Temp Control,FixedT,Supply HiT,At Outdoor,Supply LowT,At OutdoorT,ReheatCtrlMthd,Availability Schedule,Night Cycle Control
+,,,(#),(ft2),(Btu/hr),(degF),(Btu/ft2),(cfm/ton),(Btu/hr),(degF),(Btu/ft2),(cfm),(cfm/ft2),(cfm),(cfm/ft2),,,(degF),(degF),(degF),(degF),( degF),,,
+"SZHPAirSys 1","SZVAVDFHP","New",1,1392.18,51545,55,37.0246,317.28,53687,95,38.5632,1362.85,0.978931,329.973,0.237018,"Zn Sys 1 Reception","NoSATControl",,-99996,,-99996,,"UNDEFINED","OfficeHVACAvail","CycleOnCallPrimaryZone"
+"SZHPAirSys 2","SZVAVDFHP","New",1,928.864,59153.2,55,63.6834,293.916,53687,95,57.7985,1448.84,1.5598,418.689,0.450754,"Zn Sys 2 Conference","NoSATControl",,-99996,,-99996,,"UNDEFINED","OfficeHVACAvail","CycleOnCallPrimaryZone"
+"SZHPAirSys 3","SZVAVDFHP","New",1,1414.3,46008.1,55,32.5307,384.151,45356,95,32.0696,1472.84,1.04139,591.029,0.417896,"Zn Sys 3 Break Room","NoSATControl",,-99996,,-99996,,"UNDEFINED","OfficeHVACAvail","CycleOnCallPrimaryZone"
+"SZHPAirSys 4","SZVAVDFHP","New",1,5962.26,202499,55,33.9635,331.995,210212,95,35.2571,5602.38,0.93964,928.369,0.155708,"Zn Sys 4 Open Office","NoSATControl",,-99996,,-99996,,"UNDEFINED","OfficeHVACAvail","CycleOnCallPrimaryZone"
+"SZHPAirSys 5","SZVAVDFHP","New",1,578.266,22534.6,55,38.9693,330.654,23500,95,40.6387,620.93,1.07378,121.011,0.209266,"Zn Sys 5 Conference-Office","NoSATControl",,-99996,,-99996,,"UNDEFINED","OfficeHVACAvail","CycleOnCallPrimaryZone"
+"SZHPAirSys 6","SZVAVDFHP","New",1,1359.22,47990.3,55,35.3073,391.787,72000,95,52.9717,1566.83,1.15274,672.813,0.495,"Zn Sys 6 Conference-Support","NoSATControl",,-99996,,-99996,,"UNDEFINED","OfficeHVACAvail","CycleOnCallPrimaryZone"
+"PSZ CRAC","SZAC","New",1,131.889,29239,65,221.695,414.675,0,-99996,0,1010.39,7.66094,19.7833,0.15,"Zn Sys 8 IT and Elec","FixedDualSetpoint",65,-99996,-99996,-99996,-99996,"UNDEFINED","DataHVACAvail","CycleOnCallPrimaryZone"
+"SZHPAirSys 7","SZVAVDFHP","New",1,1818.04,72924.4,55,40.1116,357.536,54000,95,29.7023,2172.76,1.19511,272.706,0.15,"Zn Sys 9 Library","NoSATControl",,-99996,,-99996,,"UNDEFINED","OfficeHVACAvail","CycleOnCallPrimaryZone"
+
+
+
+ZoneSystems
+,,,,Cooling,,,,Heating,,,Fan/Ventilation,,,Controls
+Name,Type,System Count,Floor Area Served,Net Capacity,Design Supply T,Capacity/Area,Supply Flow/Ton,Net Capacity,Design Supply T,Capacity/Area,Supply Flow,Supply Flow/Area,Design OA,OA/Area,Control Zone Name,Temp Control,Availability Schedule
+,,(#),(ft2),(Btu/hr),(degF),(Btu/ft2),(cfm/ton),(Btu/hr),(degF),(Btu/ft2),(cfm),(cfm/ft2),(cfm),( cfm/ft2),,,,,,,,,,
+"ZoneSys-Exhaust","Exhaust",1,0,0,-99996,0,0,0,-99996,0,0,0,0,0,"NONE","NoSATControl","AssemblyHVACAvail"
+
+
+
+Terminal Units
+,,,,Relationships,,,,,AirFlow,,VAV,,Fan Powered Terminal
+Name,Type,Status,Qty,System,System Qty,Zone,Floor Area,HVAC Zones,Primary Max,Primary Min,Heating Max,Reheat Control,Induced Air Zone,Induction Ratio,Fan Power,Parallel Box Control,Flow Fraction
+,,,(#),,(#),,(ft2),(#),(cfm),(cfm),(cfm),,,,( W/cfm)
+"CoreZn TU","VAVNoReheatBox","New",1,"SZHPAirSys 1",1,"Zn Sys 1 Reception",1392.18,1,1363,681.5,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"CoreZn TU 2","VAVNoReheatBox","New",1,"SZHPAirSys 2",1,"Zn Sys 2 Conference",928.864,1,1449,724.5,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"CoreZn TU 3","VAVNoReheatBox","New",1,"SZHPAirSys 3",1,"Zn Sys 3 Break Room",1414.3,1,1473,736.5,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"CoreZn TU 4","VAVNoReheatBox","New",1,"SZHPAirSys 4",1,"Zn Sys 4 Open Office",5962.26,1,5603,2801.5,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"CoreZn TU 5","VAVNoReheatBox","New",1,"SZHPAirSys 5",1,"Zn Sys 5 Conference-Office",578.266,1,621,310.5,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"CoreZn TU 6","VAVNoReheatBox","New",1,"SZHPAirSys 6",1,"Zn Sys 6 Conference-Support",1359.22,1,1567,783.5,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"CoreZn TU 8","Uncontrolled","New",1,"PSZ CRAC",1,"Zn Sys 8 IT and Elec",131.889,1,1010.39,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"CoreZn TU 9","VAVNoReheatBox","New",1,"SZHPAirSys 7",1,"Zn Sys 9 Library",1818.04,1,2173,1086.5,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+
+
+
+Cooling Coils
+,,,,Relationships,,,Capacity,,,,ChilledWater,,,DirectExpansion
+Name,Type,Status,Fuel Src,System,System Qty,Zone,Total-Net,Total-Gross,FluidSegIn,FluidSegOut,Design Flow Rate,Condenser Type,Number Stages,SEER (rounded),CodeMin SEER,EER (rounded),CodeMin EER,IEER (roundded),CodeMin IEER,EIR,Sizing Ratio,SEER2 (rounded),CodeMin SEER2,EER2 (rounded), CodeMin EER2
+,,,,,(#),,(Btu/hr),(Btu/hr),(Btu/hr),(Btu/hr),( gpm)
+"CoreZnCoolingCoil 1","DirectExpansion","New","Electric","SZHPAirSys 1",1,"n/a",51545,53777.4,"NONE","NONE",-99996,"Air",1,13.95,-99996,12.5,0,-99996,-99996,0.220116,-999,13.4,13.4,12,-99996
+"CoreZnCoolingCoil 2","DirectExpansion","New","Electric","SZHPAirSys 2",1,"n/a",59153.2,61715.2,"NONE","NONE",-99996,"Air",1,13.95,-99996,12.5,0,-99996,-99996,0.220116,-999,13.4,13.4,12,-99996
+"CoreZnCoolingCoil 3","DirectExpansion","New","Electric","SZHPAirSys 3",1,"n/a",46008.1,48000.7,"NONE","NONE",-99996,"Air",1,13.95,-99996,12.5,0,-99996,-99996,0.220116,-999,13.4,13.4,12,-99996
+"CoreZnCoolingCoil 4","DirectExpansion","New","Electric","SZHPAirSys 4",1,"n/a",202499,211269,"NONE","NONE",-99996,"Air",2,-99996,-99996,10.4,10.4,13.3,13.3,0.272945,-999,-99996,-99996,-99996,-99996
+"CoreZnCoolingCoil 5","DirectExpansion","New","Electric","SZHPAirSys 5",1,"n/a",22534.6,23510.6,"NONE","NONE",-99996,"Air",1,13.95,-99996,12.5,0,-99996,-99996,0.220116,-999,13.4,13.4,12,-99996
+"CoreZnCoolingCoil 6","DirectExpansion","New","Electric","SZHPAirSys 6",1,"n/a",47990.3,50068.8,"NONE","NONE",-99996,"Air",1,13.95,-99996,12.5,0,-99996,-99996,0.220116,-999,13.4,13.4,12,-99996
+"CoreZnCoolingCoil 8","DirectExpansion","New","Electric","PSZ CRAC",1,"n/a",29239,31183.8,"NONE","NONE",-99996,"Air",1,-99996,-99996,-99996,-99996,-99996,-99996,0.280352,-999,-99996,-99996,-99996,-99996
+"CoreZnCoolingCoil 9","DirectExpansion","New","Electric","SZHPAirSys 7",1,"n/a",72924.4,76082.8,"NONE","NONE",-99996,"Air",2,-99996,-99996,10.8,10.8,13.9,13.9,0.261298,-999,-99996,-99996,-99996,-99996
+
+
+
+Heating Coils
+,,,,Relationships,,,Capacity,,HotWater,,,HeatPump,,,,,,,,,Furnace
+Name,Type,Status,Fuel Src,System,System Qty,Zone,Total-Net,Total-Gross,FluidSeg In,FluidSeg Out,Design Flow Rate,Condenser Type,Number Stages,HSPF (rounded),CodeMin HSPF,COP (rounded),CodeMin COP,EIR,Comp Lockout Temp,Supp Htr Temp,AFUE,CodeMin AFUE,Thrml Eff,CodeMin Thrml Eff,SizingRatio,HSPF2 (rounded), CodeMin HSPF2
+,,,,,(#),,(Btu/hr),(Btu/hr),,,(gpm),,,,,,,,(?F),( ?F)
+"CoreZnHeatingCoil","HeatPump","New","Electric","SZHPAirSys 1",1,"n/a",53687,51454.6,"NONE","NONE",-99996,"Air",1,8,-99996,3.5,-99996,0.254724,17,35,-99996,-99996,-99996,-99996,-999,6.7,6.7
+"CoreZnSupplyHeatingCoil 1","Furnace","New","Gas","SZHPAirSys 1",1,"n/a",33009,33009,"NONE","NONE",-99996,"UNDEFINED",1,-99996,-99996,-99996,-99996,-99996,-99996,-99996,0.81,0.81,0.815459,-99996,-999,-99996,-99996
+"CoreZnHeatingCoil 2","HeatPump","New","Electric","SZHPAirSys 2",1,"n/a",53687,51125,"NONE","NONE",-99996,"Air",1,8,-99996,3.5,-99996,0.24992,17,35,-99996,-99996,-99996,-99996,-999,6.7,6.7
+"CoreZnSupplyHeatingCoil 2","Furnace","New","Gas","SZHPAirSys 2",1,"n/a",43690,43690,"NONE","NONE",-99996,"UNDEFINED",1,-99996,-99996,-99996,-99996,-99996,-99996,-99996,0.81,0.81,0.815459,-99996,-999,-99996,-99996
+"CoreZnHeatingCoil 3","HeatPump","New","Electric","SZHPAirSys 3",1,"n/a",45356,43363.4,"NONE","NONE",-99996,"Air",1,8,-99996,3.5,-99996,0.252891,17,35,-99996,-99996,-99996,-99996,-999,6.7,6.7
+"CoreZnSupplyHeatingCoil 3","Furnace","New","Gas","SZHPAirSys 3",1,"n/a",53059,53059,"NONE","NONE",-99996,"UNDEFINED",1,-99996,-99996,-99996,-99996,-99996,-99996,-99996,0.81,0.81,0.815459,-99996,-999,-99996,-99996
+"CoreZnHeatingCoil 4","HeatPump","New","Electric","SZHPAirSys 4",1,"n/a",210212,201442,"NONE","NONE",-99996,"Air",1,-99996,-99996,3.5,3.3,0.254616,17,35,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"CoreZnSupplyHeatingCoil 4","Furnace","New","Gas","SZHPAirSys 4",1,"n/a",132016,132016,"NONE","NONE",-99996,"UNDEFINED",1,-99996,-99996,-99996,-99996,-99996,-99996,-99996,0.81,0.81,0.815459,-99996,-999,-99996,-99996
+"CoreZnHeatingCoil 5","HeatPump","New","Electric","SZHPAirSys 5",1,"n/a",23500,22524,"NONE","NONE",-99996,"Air",1,8,-99996,3.5,-99996,0.254764,17,35,-99996,-99996,-99996,-99996,-999,6.7,6.7
+"CoreZnSupplyHeatingCoil 5","Furnace","New","Gas","SZHPAirSys 5",1,"n/a",15662,15662,"NONE","NONE",-99996,"UNDEFINED",1,-99996,-99996,-99996,-99996,-99996,-99996,-99996,0.81,0.81,0.815459,-99996,-999,-99996,-99996
+"CoreZnHeatingCoil 6","HeatPump","New","Electric","SZHPAirSys 6",1,"n/a",72000,69921.5,"NONE","NONE",-99996,"Air",1,8,-99996,3.5,-99996,0.264481,17,35,-99996,-99996,-99996,-99996,-999,6.7,6.7
+"CoreZnSupplyHeatingCoil 6","Furnace","New","Gas","SZHPAirSys 6",1,"n/a",58750,58750,"NONE","NONE",-99996,"UNDEFINED",1,-99996,-99996,-99996,-99996,-99996,-99996,-99996,0.81,0.81,0.815459,-99996,-999,-99996,-99996
+"CoreZnHeatingCoil 9","HeatPump","New","Electric","SZHPAirSys 7",1,"n/a",54000,50841.6,"NONE","NONE",-99996,"Air",1,-99996,-99996,3.5,3.4,0.241341,17,35,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"CoreZnSupplyHeatingCoil 9","Furnace","New","Gas","SZHPAirSys 7",1,"n/a",54000,54000,"NONE","NONE",-99996,"UNDEFINED",1,-99996,-99996,-99996,-99996,-99996,-99996,-99996,0.81,0.81,0.815459,-99996,-999,-99996,-99996
+
+
+
+Fans
+,,,,,Relationships,,,Capacity,,,Power,,,,Motor
+Name,Control Method,Status,Class,Cent Type,System,System Qty,Zone,Maximum,Minimum,Efficiency,Modeling Method,Brake HP,Total Static,Power Index,Nameplate HP,Position,Efficiency
+,,,,,,(#),,(cfm),(cfm),,,(hp),(inH2O),(W/cfm),( hp)
+"CoreZnSupplyFan","VariableSpeedDrive","New","Centrifugal","AirFoil","SZHPAirSys 1",1,"n/a",1362.85,681.425,0.65,"PowerPerUnitFlow",1.17317,3.55055,0.9646,1.1,"InAirStream",0.665385
+"CoreZnSupplyFan 2","VariableSpeedDrive","New","Centrifugal","AirFoil","SZHPAirSys 2",1,"n/a",1448.84,724.42,0.65,"PowerPerUnitFlow",1.2472,3.55055,0.9646,1.4,"InAirStream",0.665385
+"CoreZnSupplyFan 3","VariableSpeedDrive","New","Centrifugal","AirFoil","SZHPAirSys 3",1,"n/a",1472.84,736.42,0.65,"PowerPerUnitFlow",1.26786,3.55055,0.9646,1.5,"InAirStream",0.665385
+"CoreZnSupplyFan 4","VariableSpeedDrive","New","Centrifugal","AirFoil","SZHPAirSys 4",1,"n/a",5602.38,2801.19,0.65,"PowerPerUnitFlow",5.11258,3.76399,0.9646,5.3,"InAirStream",0.705385
+"CoreZnSupplyFan 5","VariableSpeedDrive","New","Centrifugal","AirFoil","SZHPAirSys 5",1,"n/a",620.93,310.465,0.65,"PowerPerUnitFlow",0.528332,3.5095,0.9646,0.6,"InAirStream",0.657692
+"CoreZnSupplyFan 6","VariableSpeedDrive","New","Centrifugal","AirFoil","SZHPAirSys 6",1,"n/a",1566.83,783.415,0.65,"PowerPerUnitFlow",1.425,3.75124,1.01912,1.6,"InAirStream",0.665385
+"CoreZnSupplyFan 8","ConstantVolume","New","Centrifugal","AirFoil","PSZ CRAC",1,"n/a",1010.39,-99996,0.556,"StaticPressure",0.784688,2.74,0.880422,0.8,"InAirStream",0.657692
+"CoreZnSupplyFan 9","VariableSpeedDrive","New","Centrifugal","AirFoil","SZHPAirSys 7",1,"n/a",2172.76,1086.38,0.65,"PowerPerUnitFlow",1.93523,3.67369,0.9646,2.2,"InAirStream",0.688462
+"Exhaust Fan","ConstantVolume","New","Centrifugal","AirFoil","ZoneSys-Exhaust",1,"UNDEFINED",250,-99996,0.65,"PowerPerUnitFlow",0.2375,3.91837,0.828444,0.3,"InAirStream",0.855
+
+
+
+Outside Air Control
+,,,,Relationships,,Control
+Name,Control,Status,Design OA,Name,System Count,Econo Integration,Max OA Ratio,High DB Lockout,Low DB Lockout,High Enthalpy Lockout,OA Schedule Method,Delay,Schedule Name
+,,,(cfm),,(#),,,(F),(F),(Btu/lb),,( hrs)
+"CoreZnOAControl","FixedDryBulb","New",329.973,"SZHPAirSys 1",1,"NonIntegrated",1,71,-99996,50,"FollowHVACAvailability",0,"NONE"
+"CoreZnOAControl 2","FixedDryBulb","New",418.689,"SZHPAirSys 2",1,"NonIntegrated",1,71,-99996,50,"FollowHVACAvailability",0,"NONE"
+"CoreZnOAControl 3","FixedDryBulb","New",591.029,"SZHPAirSys 3",1,"NonIntegrated",1,71,-99996,50,"FollowHVACAvailability",0,"NONE"
+"CoreZnOAControl 4","FixedDryBulb","New",928.369,"SZHPAirSys 4",1,"NonIntegrated",1,71,-99996,50,"FollowHVACAvailability",0,"NONE"
+"CoreZnOAControl 5","NoEconomizer","New",121.011,"SZHPAirSys 5",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"CoreZnOAControl 6","FixedDryBulb","New",672.813,"SZHPAirSys 6",1,"NonIntegrated",1,71,-99996,50,"FollowHVACAvailability",0,"NONE"
+"CoreZnOAControl 8","FixedDryBulb","New",19.7833,"PSZ CRAC",1,"NonIntegrated",0.9,71,-99996,50,"FollowHVACAvailability",0,"NONE"
+"CoreZnOAControl 9","FixedDryBulb","New",272.706,"SZHPAirSys 7",1,"NonIntegrated",1,71,-99996,50,"FollowHVACAvailability",0,"NONE"

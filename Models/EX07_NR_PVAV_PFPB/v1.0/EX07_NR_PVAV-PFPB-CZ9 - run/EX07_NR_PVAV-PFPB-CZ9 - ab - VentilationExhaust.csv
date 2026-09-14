@@ -1,0 +1,53 @@
+BuildingStory
+,,Floor Area (including multipliers),,,,,Ventilation (Design),,,Ventilation (For Balance),,,,,,General,,Comm. Kitchen,,Parking Garage,,Laboratory
+Name,Multiplier,Total,Cond. NRes,Cond. Res,Total Cond.,Number,Total,Code Min.,Exhaust,Total,Code Min.,Tot:Min Ratio,Exhaust,Vent:Exh Ratio,Vent Mult.,Vent,Exhaust,Vent,Exhaust,Vent,Exhaust,Vent,Exhaust
+,,(ft2),(ft2),(ft2),(ft2),(people),(cfm),(cfm),(cfm),(cfm),(cfm),,(cfm),,,(cfm),(cfm),(cfm),(cfm),(cfm),(cfm),(cfm),(cfm)
+"BottomFlr",1,17875.9,17875.9,0.0,17875.9,89.4,2681,2681,0,2681,2681,1.000,0,1.000,1.000,2681,0,0,0,0,0,0,0
+"MidFlr",1,17875.9,17875.9,0.0,17875.9,89.4,2681,2681,0,2681,2681,1.000,0,1.000,1.000,2681,0,0,0,0,0,0,0
+"TopFloor",1,17875.9,17875.9,0.0,17875.9,89.4,2681,2681,0,2681,2681,1.000,0,1.000,1.000,2681,0,0,0,0,0,0,0
+
+Space
+,,,,,,,Occupancy,,,Ventilation,,Design Input (By Component),,,,,Minimum Req. (By Component),,,,Simulated,,,Exhaust,,,ForBalance
+Name,Story Name,Condg Type,Space Function,Thermal Zone,Floor Area,Multiplier,Design,Minimum,Number,Spec. Method,Control,Per Occupant,Per Area,Per Volume,Per Space,Calculated Flow,Per Occupant,Per Area,Per Volume,Calculated Flow,Per Occupant,Per Area,Calculated Flow,Calculated Flow,Lab Exh Type,Max Kitchen,Ventilation,Exhaust
+,,,,,(ft2),,(ppl/1000ft2),(ppl/1000ft2),(people),,,(cfm/person),(cfm/ft2),(ACH),(cfm),(cfm),(cfm/person),(cfm/ft2),(ACH),(cfm),(cfm/person),(cfm/ft2),(cfm),(cfm),,(cfm),(cfm),(cfm)
+"Core_bottom","BottomFlr","DirectlyConditioned","Office Area (>250 square feet)","Core_bottom Thermal Zone",10586.7,1,10.0,10.0,52.9,"Maximum","Fixed",15,0.15,0,0,1588,15,0.15,0,1588,0,0.15,1588.01,0,"UNDEFINED",0,1588,0
+"Perimeter_bot_ZN_1","BottomFlr","DirectlyConditioned","Office Area (>250 square feet)","Perimeter_bot_ZN_1 Thermal Zone",2231.8,1,10.0,10.0,11.2,"Maximum","Fixed",15,0.15,0,0,335,15,0.15,0,335,0,0.15,334.765,0,"UNDEFINED",0,335,0
+"Perimeter_bot_ZN_2","BottomFlr","DirectlyConditioned","Office Area (>250 square feet)","Perimeter_bot_ZN_2 Thermal Zone",1412.9,1,10.0,10.0,7.1,"Maximum","Fixed",15,0.15,0,0,212,15,0.15,0,212,0,0.15,211.935,0,"UNDEFINED",0,212,0
+"Perimeter_bot_ZN_3","BottomFlr","DirectlyConditioned","Office Area (>250 square feet)","Perimeter_bot_ZN_3 Thermal Zone",2231.8,1,10.0,10.0,11.2,"Maximum","Fixed",15,0.15,0,0,335,15,0.15,0,335,0,0.15,334.765,0,"UNDEFINED",0,335,0
+"Perimeter_bot_ZN_4","BottomFlr","DirectlyConditioned","Office Area (>250 square feet)","Perimeter_bot_ZN_4 Thermal Zone",1412.8,1,10.0,10.0,7.1,"Maximum","Fixed",15,0.15,0,0,212,15,0.15,0,212,0,0.15,211.92,0,"UNDEFINED",0,212,0
+"FirstFloor_Plenum","BottomFlr","Plenum","Unoccupied-Exclude from Gross Floor Area","FirstFloor_Plenum Thermal Zone",0.0,1,0.0,0.0,0.0,"NoVentilation","UNDEFINED",0,0,0,0,0,0,0,0,0,0,0,0,0,"UNDEFINED",0,0,0
+"Core_mid","MidFlr","DirectlyConditioned","Office Area (>250 square feet)","Core_mid Thermal Zone",10586.7,1,10.0,10.0,52.9,"Maximum","Fixed",15,0.15,0,0,1588,15,0.15,0,1588,0,0.15,1588.01,0,"UNDEFINED",0,1588,0
+"Perimeter_mid_ZN_1","MidFlr","DirectlyConditioned","Office Area (>250 square feet)","Perimeter_mid_ZN_1 Thermal Zone",2231.8,1,10.0,10.0,11.2,"Maximum","Fixed",15,0.15,0,0,335,15,0.15,0,335,0,0.15,334.765,0,"UNDEFINED",0,335,0
+"Perimeter_mid_ZN_2","MidFlr","DirectlyConditioned","Office Area (>250 square feet)","Perimeter_mid_ZN_2 Thermal Zone",1412.9,1,10.0,10.0,7.1,"Maximum","Fixed",15,0.15,0,0,212,15,0.15,0,212,0,0.15,211.935,0,"UNDEFINED",0,212,0
+"Perimeter_mid_ZN_3","MidFlr","DirectlyConditioned","Office Area (>250 square feet)","Perimeter_mid_ZN_3 Thermal Zone",2231.8,1,10.0,10.0,11.2,"Maximum","Fixed",15,0.15,0,0,335,15,0.15,0,335,0,0.15,334.765,0,"UNDEFINED",0,335,0
+"Perimeter_mid_ZN_4","MidFlr","DirectlyConditioned","Office Area (>250 square feet)","Perimeter_mid_ZN_4 Thermal Zone",1412.8,1,10.0,10.0,7.1,"Maximum","Fixed",15,0.15,0,0,212,15,0.15,0,212,0,0.15,211.92,0,"UNDEFINED",0,212,0
+"MidFloor_Plenum","MidFlr","Plenum","Unoccupied-Exclude from Gross Floor Area","MidFloor_Plenum Thermal Zone",0.0,1,0.0,0.0,0.0,"NoVentilation","UNDEFINED",0,0,0,0,0,0,0,0,0,0,0,0,0,"UNDEFINED",0,0,0
+"Core_top","TopFloor","DirectlyConditioned","Office Area (>250 square feet)","Core_top Thermal Zone",10586.7,1,10.0,10.0,52.9,"Maximum","Fixed",15,0.15,0,0,1588,15,0.15,0,1588,0,0.15,1588.01,0,"UNDEFINED",0,1588,0
+"Perimeter_top_ZN_1","TopFloor","DirectlyConditioned","Office Area (>250 square feet)","Perimeter_top_ZN_1 Thermal Zone",2231.8,1,10.0,10.0,11.2,"Maximum","Fixed",15,0.15,0,0,335,15,0.15,0,335,0,0.15,334.765,0,"UNDEFINED",0,335,0
+"Perimeter_top_ZN_2","TopFloor","DirectlyConditioned","Office Area (>250 square feet)","Perimeter_top_ZN_2 Thermal Zone",1412.9,1,10.0,10.0,7.1,"Maximum","Fixed",15,0.15,0,0,212,15,0.15,0,212,0,0.15,211.935,0,"UNDEFINED",0,212,0
+"Perimeter_top_ZN_3","TopFloor","DirectlyConditioned","Office Area (>250 square feet)","Perimeter_top_ZN_3 Thermal Zone",2231.8,1,10.0,10.0,11.2,"Maximum","Fixed",15,0.15,0,0,335,15,0.15,0,335,0,0.15,334.765,0,"UNDEFINED",0,335,0
+"Perimeter_top_ZN_4","TopFloor","DirectlyConditioned","Office Area (>250 square feet)","Perimeter_top_ZN_4 Thermal Zone",1412.8,1,10.0,10.0,7.1,"Maximum","Fixed",15,0.15,0,0,212,15,0.15,0,212,0,0.15,211.92,0,"UNDEFINED",0,212,0
+"TopFloor_Plenum","TopFloor","Plenum","Unoccupied-Exclude from Gross Floor Area","TopFloor_Plenum Thermal Zone",0.0,1,0.0,0.0,0.0,"NoVentilation","UNDEFINED",0,0,0,0,0,0,0,0,0,0,0,0,0,"UNDEFINED",0,0,0
+
+ThermalZone
+,,,,,,,Occupancy,,,,Ventilation,,Design Value (Total),,,,Minimum Req. (Total),,,,Simulated,,,Exhaust
+Name,Story Name,Type,Ventilation Source,Pri. HVAC System,Ventilation System,Floor Area,Multiplier,Design,Minimum,Number,Spec. Method,Control,Per Occupant,Per Area,Per Volume,Calculated Flow,Per Occupant,Per Area,Per Volume,Calculated Flow,Per Occupant,Per Area,Calculated Flow,Calculated Flow,ExhSysRef,ExhOperMode,ExhCtrlMthd,ExhBalancedSchRef
+,,,,,(ft2),,(ppl/1000ft2),(ppl/1000ft2),(people),,,,(cfm/person),(cfm/ft2),(ACH),(cfm),(cfm/person),(cfm/ft2),(ACH),(cfm),(cfm/person),(cfm/ft2),(cfm),(cfm)
+"Core_bottom Thermal Zone","BottomFlr","Conditioned","Forced","BaseAirSys15","BaseAirSys15",10586.7,1,10.0,10.0,52.9,"Maximum","Fixed",30,0.15,1,1588,30,0.15,1,1588,0,0.15,1588
+"Perimeter_bot_ZN_1 Thermal Zone","BottomFlr","Conditioned","Forced","BaseAirSys15","BaseAirSys15",2231.8,1,10.0,10.0,11.2,"Maximum","Fixed",30,0.15,0.999999,335,30,0.15,0.999999,335,0,0.15,335
+"Perimeter_bot_ZN_2 Thermal Zone","BottomFlr","Conditioned","Forced","BaseAirSys15","BaseAirSys15",1412.9,1,10.0,10.0,7.1,"Maximum","Fixed",30,0.15,1,212,30,0.15,1,212,0,0.15,212
+"Perimeter_bot_ZN_3 Thermal Zone","BottomFlr","Conditioned","Forced","BaseAirSys15","BaseAirSys15",2231.8,1,10.0,10.0,11.2,"Maximum","Fixed",30,0.15,0.999999,335,30,0.15,0.999999,335,0,0.15,335
+"Perimeter_bot_ZN_4 Thermal Zone","BottomFlr","Conditioned","Forced","BaseAirSys15","BaseAirSys15",1412.8,1,10.0,10.0,7.1,"Maximum","Fixed",30,0.15,0.999999,212,30,0.15,0.999999,212,0,0.15,212
+"FirstFloor_Plenum Thermal Zone","BottomFlr","Plenum","None","NONE","NONE",0.0,1,0.0,0.0,0.0,"NoVentilation","UNDEFINED",0,0,0,0,0,0,0,0,0,0,0
+"Core_mid Thermal Zone","MidFlr","Conditioned","Forced","BaseAirSys15-2","BaseAirSys15-2",10586.7,1,10.0,10.0,52.9,"Maximum","Fixed",30,0.15,1,1588,30,0.15,1,1588,0,0.15,1588
+"Perimeter_mid_ZN_1 Thermal Zone","MidFlr","Conditioned","Forced","BaseAirSys15-2","BaseAirSys15-2",2231.8,1,10.0,10.0,11.2,"Maximum","Fixed",30,0.15,0.999999,335,30,0.15,0.999999,335,0,0.15,335
+"Perimeter_mid_ZN_2 Thermal Zone","MidFlr","Conditioned","Forced","BaseAirSys15-2","BaseAirSys15-2",1412.9,1,10.0,10.0,7.1,"Maximum","Fixed",30,0.15,1,212,30,0.15,1,212,0,0.15,212
+"Perimeter_mid_ZN_3 Thermal Zone","MidFlr","Conditioned","Forced","BaseAirSys15-2","BaseAirSys15-2",2231.8,1,10.0,10.0,11.2,"Maximum","Fixed",30,0.15,0.999999,335,30,0.15,0.999999,335,0,0.15,335
+"Perimeter_mid_ZN_4 Thermal Zone","MidFlr","Conditioned","Forced","BaseAirSys15-2","BaseAirSys15-2",1412.8,1,10.0,10.0,7.1,"Maximum","Fixed",30,0.15,0.999999,212,30,0.15,0.999999,212,0,0.15,212
+"MidFloor_Plenum Thermal Zone","MidFlr","Plenum","None","NONE","NONE",0.0,1,0.0,0.0,0.0,"NoVentilation","UNDEFINED",0,0,0,0,0,0,0,0,0,0,0
+"Core_top Thermal Zone","TopFloor","Conditioned","Forced","BaseAirSys15-3","BaseAirSys15-3",10586.7,1,10.0,10.0,52.9,"Maximum","Fixed",30,0.15,1,1588,30,0.15,1,1588,0,0.15,1588
+"Perimeter_top_ZN_1 Thermal Zone","TopFloor","Conditioned","Forced","BaseAirSys15-3","BaseAirSys15-3",2231.8,1,10.0,10.0,11.2,"Maximum","Fixed",30,0.15,0.999999,335,30,0.15,0.999999,335,0,0.15,335
+"Perimeter_top_ZN_2 Thermal Zone","TopFloor","Conditioned","Forced","BaseAirSys15-3","BaseAirSys15-3",1412.9,1,10.0,10.0,7.1,"Maximum","Fixed",30,0.15,1,212,30,0.15,1,212,0,0.15,212
+"Perimeter_top_ZN_3 Thermal Zone","TopFloor","Conditioned","Forced","BaseAirSys15-3","BaseAirSys15-3",2231.8,1,10.0,10.0,11.2,"Maximum","Fixed",30,0.15,0.999999,335,30,0.15,0.999999,335,0,0.15,335
+"Perimeter_top_ZN_4 Thermal Zone","TopFloor","Conditioned","Forced","BaseAirSys15-3","BaseAirSys15-3",1412.8,1,10.0,10.0,7.1,"Maximum","Fixed",30,0.15,0.999999,212,30,0.15,0.999999,212,0,0.15,212
+"TopFloor_Plenum Thermal Zone","TopFloor","Plenum","None","NONE","NONE",0.0,1,0.0,0.0,0.0,"NoVentilation","UNDEFINED",0,0,0,0,0,0,0,0,0,0,0

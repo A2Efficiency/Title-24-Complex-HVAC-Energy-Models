@@ -1,0 +1,31 @@
+BuildingStory
+,,Floor Area (including multipliers),,,,,Ventilation (Design),,,Ventilation (For Balance),,,,,,General,,Comm. Kitchen,,Parking Garage,,Laboratory
+Name,Multiplier,Total,Cond. NRes,Cond. Res,Total Cond.,Number,Total,Code Min.,Exhaust,Total,Code Min.,Tot:Min Ratio,Exhaust,Vent:Exh Ratio,Vent Mult.,Vent,Exhaust,Vent,Exhaust,Vent,Exhaust,Vent,Exhaust
+,,(ft2),(ft2),(ft2),(ft2),(people),(cfm),(cfm),(cfm),(cfm),(cfm),,(cfm),,,(cfm),(cfm),(cfm),(cfm),(cfm),(cfm),(cfm),(cfm)
+"Building Story Nonresidential",1,17613.0,17613.0,0.0,17613.0,299.4,4491,4491,0,4491,4491,1.000,0,1.000,1.000,4491,0,0,0,0,0,0,0
+
+Space
+,,,,,,,Occupancy,,,Ventilation,,Design Input (By Component),,,,,Minimum Req. (By Component),,,,Simulated,,,Exhaust,,,ForBalance
+Name,Story Name,Condg Type,Space Function,Thermal Zone,Floor Area,Multiplier,Design,Minimum,Number,Spec. Method,Control,Per Occupant,Per Area,Per Volume,Per Space,Calculated Flow,Per Occupant,Per Area,Per Volume,Calculated Flow,Per Occupant,Per Area,Calculated Flow,Calculated Flow,Lab Exh Type,Max Kitchen,Ventilation,Exhaust
+,,,,,(ft2),,(ppl/1000ft2),(ppl/1000ft2),(people),,,(cfm/person),(cfm/ft2),(ACH),(cfm),(cfm),(cfm/person),(cfm/ft2),(ACH),(cfm),(cfm/person),(cfm/ft2),(cfm),(cfm),,(cfm),(cfm),(cfm)
+"F1 Retail N Core","Building Story Nonresidential","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","Thermal Zone: F1 Retail N-NW",1665.0,1,17.0,17.0,28.3,"Maximum","Fixed",15,0.2,0,0,425,15,0.2,0,425,0,0.255,424.575,0,"UNDEFINED",0,425,0
+"F1 Retail NE Core","Building Story Nonresidential","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","Thermal Zone: F1 Retail NE",1440.0,1,17.0,17.0,24.5,"Maximum","Fixed",15,0.2,0,0,367,15,0.2,0,367,0,0.255,367.2,0,"UNDEFINED",0,367,0
+"F1 Retail NE Inner","Building Story Nonresidential","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","Thermal Zone: F1 Retail NE",1440.0,1,17.0,17.0,24.5,"Maximum","Fixed",15,0.2,0,0,367,15,0.2,0,367,0,0.255,367.2,0,"UNDEFINED",0,367,0
+"F1 Retail NE Outer","Building Story Nonresidential","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","Thermal Zone: F1 Retail NE",1440.0,1,17.0,17.0,24.5,"Maximum","Fixed",15,0.2,0,0,367,15,0.2,0,367,0,0.255,367.2,0,"UNDEFINED",0,367,0
+"F1 Retail NW Inner Core","Building Story Nonresidential","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","Thermal Zone: F1 Retail N-NW",1440.0,1,17.0,17.0,24.5,"Maximum","Fixed",15,0.2,0,0,367,15,0.2,0,367,0,0.255,367.2,0,"UNDEFINED",0,367,0
+"F1 Retail NW Outer","Building Story Nonresidential","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","Thermal Zone: F1 Retail N-NW",1440.0,1,17.0,17.0,24.5,"Maximum","Fixed",15,0.2,0,0,367,15,0.2,0,367,0,0.255,367.2,0,"UNDEFINED",0,367,0
+"F1 Retail NW Outer Core","Building Story Nonresidential","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","Thermal Zone: F1 Retail N-NW",1440.0,1,17.0,17.0,24.5,"Maximum","Fixed",15,0.2,0,0,367,15,0.2,0,367,0,0.255,367.2,0,"UNDEFINED",0,367,0
+"F1 Retail SE Bottom","Building Story Nonresidential","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","Thermal Zone: F1 Retail SE",1440.0,1,17.0,17.0,24.5,"Maximum","Fixed",15,0.2,0,0,367,15,0.2,0,367,0,0.255,367.2,0,"UNDEFINED",0,367,0
+"F1 Retail SE Top","Building Story Nonresidential","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","Thermal Zone: F1 Retail SE",1440.0,1,17.0,17.0,24.5,"Maximum","Fixed",15,0.2,0,0,367,15,0.2,0,367,0,0.255,367.2,0,"UNDEFINED",0,367,0
+"F1 Retail SW Bottom","Building Story Nonresidential","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","Thermal Zone: F1 Retail SW",1440.0,1,17.0,17.0,24.5,"Maximum","Fixed",15,0.2,0,0,367,15,0.2,0,367,0,0.255,367.2,0,"UNDEFINED",0,367,0
+"F1 Retail SW Core","Building Story Nonresidential","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","Thermal Zone: F1 Retail SW",1440.0,1,17.0,17.0,24.5,"Maximum","Fixed",15,0.2,0,0,367,15,0.2,0,367,0,0.255,367.2,0,"UNDEFINED",0,367,0
+"F1 Retail SW Top","Building Story Nonresidential","DirectlyConditioned","Retail Sales Area (Retail Merchandise Sales)","Thermal Zone: F1 Retail SW",1548.0,1,17.0,17.0,26.3,"Maximum","Fixed",15,0.2,0,0,395,15,0.2,0,395,0,0.255,394.74,0,"UNDEFINED",0,395,0
+
+ThermalZone
+,,,,,,,Occupancy,,,,Ventilation,,Design Value (Total),,,,Minimum Req. (Total),,,,Simulated,,,Exhaust
+Name,Story Name,Type,Ventilation Source,Pri. HVAC System,Ventilation System,Floor Area,Multiplier,Design,Minimum,Number,Spec. Method,Control,Per Occupant,Per Area,Per Volume,Calculated Flow,Per Occupant,Per Area,Per Volume,Calculated Flow,Per Occupant,Per Area,Calculated Flow,Calculated Flow,ExhSysRef,ExhOperMode,ExhCtrlMthd,ExhBalancedSchRef
+,,,,,(ft2),,(ppl/1000ft2),(ppl/1000ft2),(people),,,,(cfm/person),(cfm/ft2),(ACH),(cfm),(cfm/person),(cfm/ft2),(ACH),(cfm),(cfm/person),(cfm/ft2),(cfm),(cfm)
+"Thermal Zone: F1 Retail N-NW","Building Story Nonresidential","Conditioned","Forced","BaseAirSys5","BaseAirSys5",5985.0,1,17.0,17.0,101.7,"Maximum","Fixed",15,0.255,1.53,1526,15,0.255,1.53,1526,0,0.255,1526
+"Thermal Zone: F1 Retail NE","Building Story Nonresidential","Conditioned","Forced","BaseAirSys5","BaseAirSys5",4320.0,1,17.0,17.0,73.4,"Maximum","Fixed",15,0.255,1.53,1102,15,0.255,1.53,1102,0,0.255,1102
+"Thermal Zone: F1 Retail SE","Building Story Nonresidential","Conditioned","Forced","BaseAirSys5","BaseAirSys5",2880.0,1,17.0,17.0,49.0,"Maximum","Fixed",15,0.255,1.53,734,15,0.255,1.53,734,0,0.255,734
+"Thermal Zone: F1 Retail SW","Building Story Nonresidential","Conditioned","Forced","BaseAirSys5","BaseAirSys5",4428.0,1,17.0,17.0,75.3,"Maximum","Fixed",15,0.255,1.53,1129,15,0.255,1.53,1129,0,0.255,1129

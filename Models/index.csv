@@ -1,0 +1,15 @@
+example,example_folder,variant,version,cbecc_version,path,last_updated,notes
+Example 1,EX01_MF_Ventilation,1a,v1.0,CBECC 2025.2.0.1 (1395),Models/EX01_MF_Ventilation/v1.0/1a/,7/22/2026,Individual supply / central exhaust (MF08 & MF88)
+Example 1,EX01_MF_Ventilation,1b,v1.0,CBECC 2025.2.0.1 (1395),Models/EX01_MF_Ventilation/v1.0/1b/,7/22/2026,Central supply / individual exhaust (MF08 & MF88)
+Example 1,EX01_MF_Ventilation,1c,v1.0,CBECC 2025.2.0.1 (1395),Models/EX01_MF_Ventilation/v1.0/1c/,7/22/2026,Individual supply / individual exhaust (MF08 & MF88)
+Example 1,EX01_MF_Ventilation,1d,v1.0,CBECC 2025.2.0.1 (1395),Models/EX01_MF_Ventilation/v1.0/1d/,7/22/2026,Balanced with heat recovery (MF08)
+Example 1,EX01_MF_Ventilation,1e,v1.0,CBECC 2025.2.0.1 (1395),Models/EX01_MF_Ventilation/v1.0/1e/,7/22/2026,Central supply / central exhaust (MF08)
+Example 2,EX02_MF_Central-VRF-HP,,v1.0,CBECC 2025.2.0.1 (1395),Models/EX02_MF_Central-VRF-HP/v1.0/,7/22/2026,Central VRF heat pump (Type 1 & Type 2)
+Example 3,EX03_MF_Central-WSHP,,v1.0,CBECC 2025.2.0.1 (1395),Models/EX03_MF_Central-WSHP/v1.0/,7/22/2026,Water-source heat pumps (MF08 & MF88)
+Example 4,EX04_NR_SmOff_SZ-VAV-DF-HP,,v1.0,CBECC 2025.2.0.1 (1395),Models/EX04_NR_SmOff_SZ-VAV-DF-HP/v1.0/,7/22/2026,Single-zone VAV dual-fuel heat pumps
+Example 5,EX05_NR_SmOff_DOAS-VRF,5a,v1.0,CBECC 2025.2.0.1 (1395),Models/EX05_NR_SmOff_DOAS-VRF/v1.0/5a/,7/22/2026,DOAS with HRV + multi-zone VRF
+Example 5,EX05_NR_SmOff_DOAS-VRF,5b,v1.0,CBECC 2025.2.1.1 (1409),Models/EX05_NR_SmOff_DOAS-VRF/v1.0/5b/,7/22/2026,DOAS + multi-zone VRF
+Example 6,EX06_NR_Class-Lab-DOAS-FPFC,,v1.0,CBECC 2025.2.0.1 (1395),Models/EX06_NR_Class-Lab-DOAS-FPFC/v1.0/,7/22/2026,DOAS with four-pipe fan coils + air-to-water HP
+Example 7,EX07_NR_PVAV_PFPB,,v1.0,CBECC 2025.2.0.1 (1395),Models/EX07_NR_PVAV_PFPB/v1.0/,7/22/2026,Packaged VAV with fan-powered boxes + air-to-water HP
+Example 8,EX08_NR_Rstnt,8a,v1.0,CBECC 2025.2.0.1 (1395),Models/EX08_NR_Rstnt/v1.0/8a/,7/22/2026,Restaurant single-zone VAV with AC
+Example 8,EX08_NR_Rstnt,8b,v1.0,CBECC 2025.2.0.1 (1395),Models/EX08_NR_Rstnt/v1.0/8b/,7/22/2026,Restaurant single-zone VAV dual-fuel heat pump

@@ -1,0 +1,2292 @@
+
+Version,
+  25.1;                                   !- Version Identifier
+
+Timestep,
+  4;                                      !- Number of Timesteps per Hour
+
+Building,
+  Building,                               !- Name
+  0,                                      !- North Axis {deg}
+  Suburbs,                                !- Terrain
+  ,                                       !- Loads Convergence Tolerance Value {W}
+  ,                                       !- Temperature Convergence Tolerance Value {deltaC}
+  FullExterior,                           !- Solar Distribution
+  50,                                     !- Maximum Number of Warmup Days
+  ;                                       !- Minimum Number of Warmup Days
+
+Output:Meter:MeterFileOnly,
+  Chillers:Coal,                          !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Chillers:DistrictCooling,               !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Chillers:DistrictHeatingWater,          !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Chillers:Electricity,                   !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Chillers:NaturalGas,                    !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Cogeneration:Coal,                      !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Cogeneration:DistrictCooling,           !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Cogeneration:DistrictHeatingWater,      !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Cogeneration:Electricity,               !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Cogeneration:NaturalGas,                !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  ComplianceLtg:InteriorLights:Electricity, !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Cooling:Coal,                           !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Cooling:DistrictCooling,                !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Cooling:DistrictHeatingWater,           !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Cooling:Electricity,                    !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Cooling:NaturalGas,                     !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  ExteriorEquipment:Coal,                 !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  ExteriorEquipment:DistrictCooling,      !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  ExteriorEquipment:DistrictHeatingWater, !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  ExteriorEquipment:Electricity,          !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  ExteriorEquipment:NaturalGas,           !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  ExteriorLights:Coal,                    !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  ExteriorLights:DistrictCooling,         !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  ExteriorLights:DistrictHeatingWater,    !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  ExteriorLights:Electricity,             !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  ExteriorLights:NaturalGas,              !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Fans:Coal,                              !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Fans:DistrictCooling,                   !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Fans:DistrictHeatingWater,              !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Fans:Electricity,                       !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Fans:NaturalGas,                        !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Heating:Coal,                           !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Heating:DistrictCooling,                !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Heating:DistrictHeatingWater,           !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Heating:Electricity,                    !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Heating:NaturalGas,                     !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  HeatRecovery:Coal,                      !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  HeatRecovery:DistrictCooling,           !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  HeatRecovery:DistrictHeatingWater,      !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  HeatRecovery:Electricity,               !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  HeatRecovery:NaturalGas,                !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  HeatRejection:Coal,                     !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  HeatRejection:DistrictCooling,          !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  HeatRejection:DistrictHeatingWater,     !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  HeatRejection:Electricity,              !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  HeatRejection:NaturalGas,               !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Humidifier:Coal,                        !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Humidifier:DistrictCooling,             !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Humidifier:DistrictHeatingWater,        !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Humidifier:Electricity,                 !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Humidifier:NaturalGas,                  !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  InteriorEquipment:Coal,                 !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  InteriorEquipment:DistrictCooling,      !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  InteriorEquipment:DistrictHeatingWater, !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  InteriorEquipment:Electricity,          !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  InteriorEquipment:NaturalGas,           !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  InteriorLights:Coal,                    !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  InteriorLights:DistrictCooling,         !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  InteriorLights:DistrictHeatingWater,    !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  InteriorLights:Electricity,             !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  InteriorLights:NaturalGas,              !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Internal Transport:InteriorEquipment:Electricity, !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  NonComplianceLtg:InteriorLights:Electricity, !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  NonReg Ltg:ExteriorLights:Electricity,  !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Process:ExteriorEquipment:Electricity,  !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Process:ExteriorEquipment:NaturalGas,   !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Process:InteriorEquipment:Electricity,  !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Process:InteriorEquipment:NaturalGas,   !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Pumps:Coal,                             !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Pumps:DistrictCooling,                  !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Pumps:DistrictHeatingWater,             !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Pumps:Electricity,                      !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Pumps:NaturalGas,                       !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Receptacle:ExteriorEquipment:Electricity, !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Receptacle:ExteriorEquipment:NaturalGas, !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Receptacle:InteriorEquipment:Electricity, !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Receptacle:InteriorEquipment:NaturalGas, !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Refrig:ExteriorEquipment:Electricity,   !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Refrig:InteriorEquipment:Electricity,   !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Refrigeration:Coal,                     !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Refrigeration:DistrictCooling,          !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Refrigeration:DistrictHeatingWater,     !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Refrigeration:Electricity,              !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Refrigeration:NaturalGas,               !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Reg Ltg:ExteriorLights:Electricity,     !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  WaterSystems:Coal,                      !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  WaterSystems:DistrictCooling,           !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  WaterSystems:DistrictHeatingWater,      !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  WaterSystems:Electricity,               !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  WaterSystems:NaturalGas,                !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+SimulationControl,
+  No,                                     !- Do Zone Sizing Calculation
+  No,                                     !- Do System Sizing Calculation
+  No,                                     !- Do Plant Sizing Calculation
+  No,                                     !- Run Simulation for Sizing Periods
+  Yes,                                    !- Run Simulation for Weather File Run Periods
+  ,                                       !- Do HVAC Sizing Simulation for Sizing Periods
+  ;                                       !- Maximum Number of HVAC Sizing Simulation Passes
+
+RunPeriod,
+  CA_Title24_2025_LOS-ANGELES-USC,        !- Name
+  1,                                      !- Begin Month
+  1,                                      !- Begin Day of Month
+  2009,                                   !- Begin Year
+  12,                                     !- End Month
+  31,                                     !- End Day of Month
+  2009,                                   !- End Year
+  Thursday,                               !- Day of Week for Start Day
+  No,                                     !- Use Weather File Holidays and Special Days
+  No,                                     !- Use Weather File Daylight Saving Period
+  Yes,                                    !- Apply Weekend Holiday Rule
+  Yes,                                    !- Use Weather File Rain Indicators
+  Yes;                                    !- Use Weather File Snow Indicators
+
+Sizing:Parameters,
+  1,                                      !- Heating Sizing Factor
+  1;                                      !- Cooling Sizing Factor
+
+Output:Table:SummaryReports,
+  AllSummary;                             !- Report Name 1
+
+GlobalGeometryRules,
+  UpperLeftCorner,                        !- Starting Vertex Position
+  Counterclockwise,                       !- Vertex Entry Direction
+  Relative,                               !- Coordinate System
+  Relative,                               !- Daylighting Reference Point Coordinate System
+  Relative;                               !- Rectangular Surface Coordinate System
+
+Schedule:Constant,
+  Always On Discrete,                     !- Name
+  On Off Limits,                          !- Schedule Type Limits Name
+  1;                                      !- Hourly Value
+
+Schedule:Constant,
+  Always Off Discrete,                    !- Name
+  On Off Limits,                          !- Schedule Type Limits Name
+  0;                                      !- Hourly Value
+
+Schedule:Constant,
+  Always On Continuous,                   !- Name
+  Fractional,                             !- Schedule Type Limits Name
+  1;                                      !- Hourly Value
+
+ScheduleTypeLimits,
+  Fraction,                               !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A3}
+  1,                                      !- Upper Limit Value {BasedOnField A3}
+  Continuous,                             !- Numeric Type
+  dimensionless;                          !- Unit Type
+
+ScheduleTypeLimits,
+  Fractional,                             !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A3}
+  1,                                      !- Upper Limit Value {BasedOnField A3}
+  Continuous;                             !- Numeric Type
+
+ScheduleTypeLimits,
+  On Off Limits,                          !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A3}
+  1,                                      !- Upper Limit Value {BasedOnField A3}
+  Discrete;                               !- Numeric Type
+
+ScheduleTypeLimits,
+  Temperature,                            !- Name
+  ,                                       !- Lower Limit Value {BasedOnField A3}
+  ,                                       !- Upper Limit Value {BasedOnField A3}
+  ,                                       !- Numeric Type
+  temperature;                            !- Unit Type
+
+Schedule:Day:Interval,
+  CARes2013 Equipment Hrly,               !- Name
+  Fraction,                               !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  0.037,                                  !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  0.035,                                  !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  0.034,                                  !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  0.034,                                  !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  0.032,                                  !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  0.036,                                  !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  0.042,                                  !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  0.044,                                  !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  0.037,                                  !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  0.032,                                  !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  0.033,                                  !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  0.033,                                  !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  0.032,                                  !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  0.033,                                  !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  0.035,                                  !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  0.037,                                  !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  0.044,                                  !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  0.053,                                  !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  0.058,                                  !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  0.06,                                   !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  0.062,                                  !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  0.06,                                   !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  0.052,                                  !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  0.045;                                  !- Value Until Time 24
+
+Schedule:Day:Interval,
+  CARes2013 ExtLighting Hrly,             !- Name
+  Fraction,                               !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  0,                                      !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  0,                                      !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  0,                                      !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  0,                                      !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  0,                                      !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  0,                                      !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  0,                                      !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  0,                                      !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  0,                                      !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  0,                                      !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  0,                                      !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  0,                                      !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  0,                                      !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  0,                                      !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  0,                                      !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  0,                                      !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  0,                                      !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  0,                                      !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  0,                                      !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  0,                                      !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  0.25,                                   !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  0.25,                                   !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  0.25,                                   !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  0.25;                                   !- Value Until Time 24
+
+Schedule:Day:Interval,
+  CARes2013 InsLighting Hrly,             !- Name
+  Fraction,                               !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  0.023,                                  !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  0.019,                                  !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  0.015,                                  !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  0.017,                                  !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  0.021,                                  !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  0.031,                                  !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  0.042,                                  !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  0.041,                                  !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  0.034,                                  !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  0.029,                                  !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  0.027,                                  !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  0.025,                                  !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  0.021,                                  !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  0.021,                                  !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  0.021,                                  !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  0.026,                                  !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  0.031,                                  !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  0.044,                                  !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  0.084,                                  !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  0.118,                                  !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  0.113,                                  !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  0.096,                                  !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  0.063,                                  !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  0.038;                                  !- Value Until Time 24
+
+Schedule:Day:Interval,
+  CARes2013 Liv Cool Hrly,                !- Name
+  Temperature,                            !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  28.3333333333333,                       !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  28.3333333333333,                       !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  28.3333333333333,                       !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  28.3333333333333,                       !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  28.3333333333333,                       !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  28.3333333333333,                       !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  27.7777777777778,                       !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  27.2222222222222,                       !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  26.6666666666667,                       !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  26.1111111111111,                       !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  25.5555555555556;                       !- Value Until Time 24
+
+Schedule:Day:Interval,
+  CARes2013 Liv Heat Hrly,                !- Name
+  Temperature,                            !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  19.1666666666667,                       !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  20,                                     !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  20,                                     !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  20,                                     !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  20,                                     !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  20,                                     !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  20,                                     !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  20,                                     !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  20,                                     !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  20,                                     !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  20,                                     !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  20,                                     !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  20,                                     !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  20,                                     !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  20,                                     !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  20,                                     !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  20,                                     !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  18.3333333333333;                       !- Value Until Time 24
+
+Schedule:Day:Interval,
+  CARes2013 Occupancy Hrly,               !- Name
+  Fraction,                               !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  0.035,                                  !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  0.035,                                  !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  0.035,                                  !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  0.035,                                  !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  0.035,                                  !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  0.059,                                  !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  0.082,                                  !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  0.055,                                  !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  0.027,                                  !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  0.014,                                  !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  0.014,                                  !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  0.014,                                  !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  0.014,                                  !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  0.014,                                  !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  0.019,                                  !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  0.027,                                  !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  0.041,                                  !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  0.055,                                  !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  0.068,                                  !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  0.082,                                  !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  0.082,                                  !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  0.07,                                   !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  0.053,                                  !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  0.035;                                  !- Value Until Time 24
+
+Schedule:Day:Interval,
+  CARes2013 Slp Cool Hrly,                !- Name
+  Temperature,                            !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  28.3333333333333,                       !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  28.3333333333333,                       !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  28.3333333333333,                       !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  28.3333333333333,                       !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  28.3333333333333,                       !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  28.3333333333333,                       !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  27.7777777777778,                       !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  27.2222222222222,                       !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  26.6666666666667,                       !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  26.1111111111111,                       !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  25.5555555555556;                       !- Value Until Time 24
+
+Schedule:Day:Interval,
+  CARes2013 Slp Heat Hrly,                !- Name
+  Temperature,                            !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  19.1666666666667,                       !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  20,                                     !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  20,                                     !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  20,                                     !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  20,                                     !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  20,                                     !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  20,                                     !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  20,                                     !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  20,                                     !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  20,                                     !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  18.3333333333333;                       !- Value Until Time 24
+
+Schedule:Day:Interval,
+  CARes2013 SZ Cool Hrly,                 !- Name
+  Temperature,                            !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  28.3333333333333,                       !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  28.3333333333333,                       !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  28.3333333333333,                       !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  28.3333333333333,                       !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  28.3333333333333,                       !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  28.3333333333333,                       !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  27.7777777777778,                       !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  27.2222222222222,                       !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  26.6666666666667,                       !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  26.1111111111111,                       !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  25.5555555555556,                       !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  25.5555555555556;                       !- Value Until Time 24
+
+Schedule:Day:Interval,
+  CARes2013 SZ Heat Hrly,                 !- Name
+  Temperature,                            !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  18.3333333333333,                       !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  19.1666666666667,                       !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  20,                                     !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  20,                                     !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  20,                                     !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  20,                                     !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  20,                                     !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  20,                                     !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  20,                                     !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  20,                                     !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  20,                                     !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  20,                                     !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  20,                                     !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  20,                                     !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  20,                                     !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  20,                                     !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  20,                                     !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  20,                                     !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  18.3333333333333;                       !- Value Until Time 24
+
+Schedule:Day:Interval,
+  WaterMainCZ09Apr,                       !- Name
+  Temperature,                            !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  14.8333333333333,                       !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  14.8333333333333;                       !- Value Until Time 24
+
+Schedule:Day:Interval,
+  WaterMainCZ09Aug,                       !- Name
+  Temperature,                            !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  17.7222222222222,                       !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  17.7222222222222;                       !- Value Until Time 24
+
+Schedule:Day:Interval,
+  WaterMainCZ09Dec,                       !- Name
+  Temperature,                            !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  14.6111111111111,                       !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  14.6111111111111;                       !- Value Until Time 24
+
+Schedule:Day:Interval,
+  WaterMainCZ09Feb,                       !- Name
+  Temperature,                            !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  14.2222222222222,                       !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  14.2222222222222;                       !- Value Until Time 24
+
+Schedule:Day:Interval,
+  WaterMainCZ09Jan,                       !- Name
+  Temperature,                            !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  14.2777777777778,                       !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  14.2777777777778;                       !- Value Until Time 24
+
+Schedule:Day:Interval,
+  WaterMainCZ09Jul,                       !- Name
+  Temperature,                            !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  16.8888888888889,                       !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  16.8888888888889;                       !- Value Until Time 24
+
+Schedule:Day:Interval,
+  WaterMainCZ09Jun,                       !- Name
+  Temperature,                            !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  16.2222222222222,                       !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  16.2222222222222;                       !- Value Until Time 24
+
+Schedule:Day:Interval,
+  WaterMainCZ09Mar,                       !- Name
+  Temperature,                            !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  14.4444444444444,                       !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  14.4444444444444;                       !- Value Until Time 24
+
+Schedule:Day:Interval,
+  WaterMainCZ09May,                       !- Name
+  Temperature,                            !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  14.9444444444444,                       !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  14.9444444444444;                       !- Value Until Time 24
+
+Schedule:Day:Interval,
+  WaterMainCZ09Nov,                       !- Name
+  Temperature,                            !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  16.2777777777778,                       !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  16.2777777777778;                       !- Value Until Time 24
+
+Schedule:Day:Interval,
+  WaterMainCZ09Oct,                       !- Name
+  Temperature,                            !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  18,                                     !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  18,                                     !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  18,                                     !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  18,                                     !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  18,                                     !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  18,                                     !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  18,                                     !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  18,                                     !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  18,                                     !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  18,                                     !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  18,                                     !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  18,                                     !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  18,                                     !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  18,                                     !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  18,                                     !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  18,                                     !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  18,                                     !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  18,                                     !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  18,                                     !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  18,                                     !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  18,                                     !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  18,                                     !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  18,                                     !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  18;                                     !- Value Until Time 24
+
+Schedule:Day:Interval,
+  WaterMainCZ09Sep,                       !- Name
+  Temperature,                            !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  01:00,                                  !- Time 1 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 1
+  02:00,                                  !- Time 2 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 2
+  03:00,                                  !- Time 3 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 3
+  04:00,                                  !- Time 4 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 4
+  05:00,                                  !- Time 5 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 5
+  06:00,                                  !- Time 6 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 6
+  07:00,                                  !- Time 7 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 7
+  08:00,                                  !- Time 8 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 8
+  09:00,                                  !- Time 9 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 9
+  10:00,                                  !- Time 10 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 10
+  11:00,                                  !- Time 11 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 11
+  12:00,                                  !- Time 12 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 12
+  13:00,                                  !- Time 13 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 13
+  14:00,                                  !- Time 14 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 14
+  15:00,                                  !- Time 15 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 15
+  16:00,                                  !- Time 16 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 16
+  17:00,                                  !- Time 17 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 17
+  18:00,                                  !- Time 18 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 18
+  19:00,                                  !- Time 19 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 19
+  20:00,                                  !- Time 20 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 20
+  21:00,                                  !- Time 21 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 21
+  22:00,                                  !- Time 22 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 22
+  23:00,                                  !- Time 23 {hh:mm}
+  18.0555555555556,                       !- Value Until Time 23
+  24:00,                                  !- Time 24 {hh:mm}
+  18.0555555555556;                       !- Value Until Time 24
+
+Schedule:Week:Daily,
+  WaterMainCZ09AprWk,                     !- Name
+  WaterMainCZ09Apr,                       !- Sunday Schedule:Day Name
+  WaterMainCZ09Apr,                       !- Monday Schedule:Day Name
+  WaterMainCZ09Apr,                       !- Tuesday Schedule:Day Name
+  WaterMainCZ09Apr,                       !- Wednesday Schedule:Day Name
+  WaterMainCZ09Apr,                       !- Thursday Schedule:Day Name
+  WaterMainCZ09Apr,                       !- Friday Schedule:Day Name
+  WaterMainCZ09Apr,                       !- Saturday Schedule:Day Name
+  WaterMainCZ09Apr,                       !- Holiday Schedule:Day Name
+  WaterMainCZ09Apr,                       !- SummerDesignDay Schedule:Day Name
+  WaterMainCZ09Apr,                       !- WinterDesignDay Schedule:Day Name
+  WaterMainCZ09Apr,                       !- CustomDay1 Schedule:Day Name
+  WaterMainCZ09Apr;                       !- CustomDay2 Schedule:Day Name
+
+Schedule:Week:Daily,
+  WaterMainCZ09AugWk,                     !- Name
+  WaterMainCZ09Aug,                       !- Sunday Schedule:Day Name
+  WaterMainCZ09Aug,                       !- Monday Schedule:Day Name
+  WaterMainCZ09Aug,                       !- Tuesday Schedule:Day Name
+  WaterMainCZ09Aug,                       !- Wednesday Schedule:Day Name
+  WaterMainCZ09Aug,                       !- Thursday Schedule:Day Name
+  WaterMainCZ09Aug,                       !- Friday Schedule:Day Name
+  WaterMainCZ09Aug,                       !- Saturday Schedule:Day Name
+  WaterMainCZ09Aug,                       !- Holiday Schedule:Day Name
+  WaterMainCZ09Aug,                       !- SummerDesignDay Schedule:Day Name
+  WaterMainCZ09Aug,                       !- WinterDesignDay Schedule:Day Name
+  WaterMainCZ09Aug,                       !- CustomDay1 Schedule:Day Name
+  WaterMainCZ09Aug;                       !- CustomDay2 Schedule:Day Name
+
+Schedule:Week:Daily,
+  WaterMainCZ09DecWk,                     !- Name
+  WaterMainCZ09Dec,                       !- Sunday Schedule:Day Name
+  WaterMainCZ09Dec,                       !- Monday Schedule:Day Name
+  WaterMainCZ09Dec,                       !- Tuesday Schedule:Day Name
+  WaterMainCZ09Dec,                       !- Wednesday Schedule:Day Name
+  WaterMainCZ09Dec,                       !- Thursday Schedule:Day Name
+  WaterMainCZ09Dec,                       !- Friday Schedule:Day Name
+  WaterMainCZ09Dec,                       !- Saturday Schedule:Day Name
+  WaterMainCZ09Dec,                       !- Holiday Schedule:Day Name
+  WaterMainCZ09Dec,                       !- SummerDesignDay Schedule:Day Name
+  WaterMainCZ09Dec,                       !- WinterDesignDay Schedule:Day Name
+  WaterMainCZ09Dec,                       !- CustomDay1 Schedule:Day Name
+  WaterMainCZ09Dec;                       !- CustomDay2 Schedule:Day Name
+
+Schedule:Week:Daily,
+  WaterMainCZ09FebWk,                     !- Name
+  WaterMainCZ09Feb,                       !- Sunday Schedule:Day Name
+  WaterMainCZ09Feb,                       !- Monday Schedule:Day Name
+  WaterMainCZ09Feb,                       !- Tuesday Schedule:Day Name
+  WaterMainCZ09Feb,                       !- Wednesday Schedule:Day Name
+  WaterMainCZ09Feb,                       !- Thursday Schedule:Day Name
+  WaterMainCZ09Feb,                       !- Friday Schedule:Day Name
+  WaterMainCZ09Feb,                       !- Saturday Schedule:Day Name
+  WaterMainCZ09Feb,                       !- Holiday Schedule:Day Name
+  WaterMainCZ09Feb,                       !- SummerDesignDay Schedule:Day Name
+  WaterMainCZ09Feb,                       !- WinterDesignDay Schedule:Day Name
+  WaterMainCZ09Feb,                       !- CustomDay1 Schedule:Day Name
+  WaterMainCZ09Feb;                       !- CustomDay2 Schedule:Day Name
+
+Schedule:Week:Daily,
+  WaterMainCZ09JanWk,                     !- Name
+  WaterMainCZ09Jan,                       !- Sunday Schedule:Day Name
+  WaterMainCZ09Jan,                       !- Monday Schedule:Day Name
+  WaterMainCZ09Jan,                       !- Tuesday Schedule:Day Name
+  WaterMainCZ09Jan,                       !- Wednesday Schedule:Day Name
+  WaterMainCZ09Jan,                       !- Thursday Schedule:Day Name
+  WaterMainCZ09Jan,                       !- Friday Schedule:Day Name
+  WaterMainCZ09Jan,                       !- Saturday Schedule:Day Name
+  WaterMainCZ09Jan,                       !- Holiday Schedule:Day Name
+  WaterMainCZ09Jan,                       !- SummerDesignDay Schedule:Day Name
+  WaterMainCZ09Jan,                       !- WinterDesignDay Schedule:Day Name
+  WaterMainCZ09Jan,                       !- CustomDay1 Schedule:Day Name
+  WaterMainCZ09Jan;                       !- CustomDay2 Schedule:Day Name
+
+Schedule:Week:Daily,
+  WaterMainCZ09JulWk,                     !- Name
+  WaterMainCZ09Jul,                       !- Sunday Schedule:Day Name
+  WaterMainCZ09Jul,                       !- Monday Schedule:Day Name
+  WaterMainCZ09Jul,                       !- Tuesday Schedule:Day Name
+  WaterMainCZ09Jul,                       !- Wednesday Schedule:Day Name
+  WaterMainCZ09Jul,                       !- Thursday Schedule:Day Name
+  WaterMainCZ09Jul,                       !- Friday Schedule:Day Name
+  WaterMainCZ09Jul,                       !- Saturday Schedule:Day Name
+  WaterMainCZ09Jul,                       !- Holiday Schedule:Day Name
+  WaterMainCZ09Jul,                       !- SummerDesignDay Schedule:Day Name
+  WaterMainCZ09Jul,                       !- WinterDesignDay Schedule:Day Name
+  WaterMainCZ09Jul,                       !- CustomDay1 Schedule:Day Name
+  WaterMainCZ09Jul;                       !- CustomDay2 Schedule:Day Name
+
+Schedule:Week:Daily,
+  WaterMainCZ09JunWk,                     !- Name
+  WaterMainCZ09Jun,                       !- Sunday Schedule:Day Name
+  WaterMainCZ09Jun,                       !- Monday Schedule:Day Name
+  WaterMainCZ09Jun,                       !- Tuesday Schedule:Day Name
+  WaterMainCZ09Jun,                       !- Wednesday Schedule:Day Name
+  WaterMainCZ09Jun,                       !- Thursday Schedule:Day Name
+  WaterMainCZ09Jun,                       !- Friday Schedule:Day Name
+  WaterMainCZ09Jun,                       !- Saturday Schedule:Day Name
+  WaterMainCZ09Jun,                       !- Holiday Schedule:Day Name
+  WaterMainCZ09Jun,                       !- SummerDesignDay Schedule:Day Name
+  WaterMainCZ09Jun,                       !- WinterDesignDay Schedule:Day Name
+  WaterMainCZ09Jun,                       !- CustomDay1 Schedule:Day Name
+  WaterMainCZ09Jun;                       !- CustomDay2 Schedule:Day Name
+
+Schedule:Week:Daily,
+  WaterMainCZ09MarWk,                     !- Name
+  WaterMainCZ09Mar,                       !- Sunday Schedule:Day Name
+  WaterMainCZ09Mar,                       !- Monday Schedule:Day Name
+  WaterMainCZ09Mar,                       !- Tuesday Schedule:Day Name
+  WaterMainCZ09Mar,                       !- Wednesday Schedule:Day Name
+  WaterMainCZ09Mar,                       !- Thursday Schedule:Day Name
+  WaterMainCZ09Mar,                       !- Friday Schedule:Day Name
+  WaterMainCZ09Mar,                       !- Saturday Schedule:Day Name
+  WaterMainCZ09Mar,                       !- Holiday Schedule:Day Name
+  WaterMainCZ09Mar,                       !- SummerDesignDay Schedule:Day Name
+  WaterMainCZ09Mar,                       !- WinterDesignDay Schedule:Day Name
+  WaterMainCZ09Mar,                       !- CustomDay1 Schedule:Day Name
+  WaterMainCZ09Mar;                       !- CustomDay2 Schedule:Day Name
+
+Schedule:Week:Daily,
+  WaterMainCZ09MayWk,                     !- Name
+  WaterMainCZ09May,                       !- Sunday Schedule:Day Name
+  WaterMainCZ09May,                       !- Monday Schedule:Day Name
+  WaterMainCZ09May,                       !- Tuesday Schedule:Day Name
+  WaterMainCZ09May,                       !- Wednesday Schedule:Day Name
+  WaterMainCZ09May,                       !- Thursday Schedule:Day Name
+  WaterMainCZ09May,                       !- Friday Schedule:Day Name
+  WaterMainCZ09May,                       !- Saturday Schedule:Day Name
+  WaterMainCZ09May,                       !- Holiday Schedule:Day Name
+  WaterMainCZ09May,                       !- SummerDesignDay Schedule:Day Name
+  WaterMainCZ09May,                       !- WinterDesignDay Schedule:Day Name
+  WaterMainCZ09May,                       !- CustomDay1 Schedule:Day Name
+  WaterMainCZ09May;                       !- CustomDay2 Schedule:Day Name
+
+Schedule:Week:Daily,
+  WaterMainCZ09NovWk,                     !- Name
+  WaterMainCZ09Nov,                       !- Sunday Schedule:Day Name
+  WaterMainCZ09Nov,                       !- Monday Schedule:Day Name
+  WaterMainCZ09Nov,                       !- Tuesday Schedule:Day Name
+  WaterMainCZ09Nov,                       !- Wednesday Schedule:Day Name
+  WaterMainCZ09Nov,                       !- Thursday Schedule:Day Name
+  WaterMainCZ09Nov,                       !- Friday Schedule:Day Name
+  WaterMainCZ09Nov,                       !- Saturday Schedule:Day Name
+  WaterMainCZ09Nov,                       !- Holiday Schedule:Day Name
+  WaterMainCZ09Nov,                       !- SummerDesignDay Schedule:Day Name
+  WaterMainCZ09Nov,                       !- WinterDesignDay Schedule:Day Name
+  WaterMainCZ09Nov,                       !- CustomDay1 Schedule:Day Name
+  WaterMainCZ09Nov;                       !- CustomDay2 Schedule:Day Name
+
+Schedule:Week:Daily,
+  WaterMainCZ09OctWk,                     !- Name
+  WaterMainCZ09Oct,                       !- Sunday Schedule:Day Name
+  WaterMainCZ09Oct,                       !- Monday Schedule:Day Name
+  WaterMainCZ09Oct,                       !- Tuesday Schedule:Day Name
+  WaterMainCZ09Oct,                       !- Wednesday Schedule:Day Name
+  WaterMainCZ09Oct,                       !- Thursday Schedule:Day Name
+  WaterMainCZ09Oct,                       !- Friday Schedule:Day Name
+  WaterMainCZ09Oct,                       !- Saturday Schedule:Day Name
+  WaterMainCZ09Oct,                       !- Holiday Schedule:Day Name
+  WaterMainCZ09Oct,                       !- SummerDesignDay Schedule:Day Name
+  WaterMainCZ09Oct,                       !- WinterDesignDay Schedule:Day Name
+  WaterMainCZ09Oct,                       !- CustomDay1 Schedule:Day Name
+  WaterMainCZ09Oct;                       !- CustomDay2 Schedule:Day Name
+
+Schedule:Week:Daily,
+  WaterMainCZ09SepWk,                     !- Name
+  WaterMainCZ09Sep,                       !- Sunday Schedule:Day Name
+  WaterMainCZ09Sep,                       !- Monday Schedule:Day Name
+  WaterMainCZ09Sep,                       !- Tuesday Schedule:Day Name
+  WaterMainCZ09Sep,                       !- Wednesday Schedule:Day Name
+  WaterMainCZ09Sep,                       !- Thursday Schedule:Day Name
+  WaterMainCZ09Sep,                       !- Friday Schedule:Day Name
+  WaterMainCZ09Sep,                       !- Saturday Schedule:Day Name
+  WaterMainCZ09Sep,                       !- Holiday Schedule:Day Name
+  WaterMainCZ09Sep,                       !- SummerDesignDay Schedule:Day Name
+  WaterMainCZ09Sep,                       !- WinterDesignDay Schedule:Day Name
+  WaterMainCZ09Sep,                       !- CustomDay1 Schedule:Day Name
+  WaterMainCZ09Sep;                       !- CustomDay2 Schedule:Day Name
+
+Schedule:Year,
+  WaterMainCZ09,                          !- Name
+  Temperature,                            !- Schedule Type Limits Name
+  WaterMainCZ09JanWk,                     !- Schedule:Week Name 1
+  1,                                      !- Start Month 1
+  1,                                      !- Start Day 1
+  1,                                      !- End Month 1
+  31,                                     !- End Day 1
+  WaterMainCZ09FebWk,                     !- Schedule:Week Name 2
+  2,                                      !- Start Month 2
+  1,                                      !- Start Day 2
+  2,                                      !- End Month 2
+  28,                                     !- End Day 2
+  WaterMainCZ09MarWk,                     !- Schedule:Week Name 3
+  3,                                      !- Start Month 3
+  1,                                      !- Start Day 3
+  3,                                      !- End Month 3
+  31,                                     !- End Day 3
+  WaterMainCZ09AprWk,                     !- Schedule:Week Name 4
+  4,                                      !- Start Month 4
+  1,                                      !- Start Day 4
+  4,                                      !- End Month 4
+  30,                                     !- End Day 4
+  WaterMainCZ09MayWk,                     !- Schedule:Week Name 5
+  5,                                      !- Start Month 5
+  1,                                      !- Start Day 5
+  5,                                      !- End Month 5
+  31,                                     !- End Day 5
+  WaterMainCZ09JunWk,                     !- Schedule:Week Name 6
+  6,                                      !- Start Month 6
+  1,                                      !- Start Day 6
+  6,                                      !- End Month 6
+  30,                                     !- End Day 6
+  WaterMainCZ09JulWk,                     !- Schedule:Week Name 7
+  7,                                      !- Start Month 7
+  1,                                      !- Start Day 7
+  7,                                      !- End Month 7
+  31,                                     !- End Day 7
+  WaterMainCZ09AugWk,                     !- Schedule:Week Name 8
+  8,                                      !- Start Month 8
+  1,                                      !- Start Day 8
+  8,                                      !- End Month 8
+  31,                                     !- End Day 8
+  WaterMainCZ09SepWk,                     !- Schedule:Week Name 9
+  9,                                      !- Start Month 9
+  1,                                      !- Start Day 9
+  9,                                      !- End Month 9
+  30,                                     !- End Day 9
+  WaterMainCZ09OctWk,                     !- Schedule:Week Name 10
+  10,                                     !- Start Month 10
+  1,                                      !- Start Day 10
+  10,                                     !- End Month 10
+  31,                                     !- End Day 10
+  WaterMainCZ09NovWk,                     !- Schedule:Week Name 11
+  11,                                     !- Start Month 11
+  1,                                      !- Start Day 11
+  11,                                     !- End Month 11
+  30,                                     !- End Day 11
+  WaterMainCZ09DecWk,                     !- Schedule:Week Name 12
+  12,                                     !- Start Month 12
+  1,                                      !- Start Day 12
+  12,                                     !- End Month 12
+  31;                                     !- End Day 12
+
+OutdoorAir:Node,
+  Model Outdoor Air Node;                 !- Name
+
+RunPeriodControl:SpecialDays,
+  Christmas Day,                          !- Name
+  12/25,                                  !- Start Date
+  ,                                       !- Duration {days}
+  ;                                       !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+  Columbus Day,                           !- Name
+  2nd Monday in October,                  !- Start Date
+  ,                                       !- Duration {days}
+  ;                                       !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+  Independence Day,                       !- Name
+  7/4,                                    !- Start Date
+  ,                                       !- Duration {days}
+  ;                                       !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+  Labor Day,                              !- Name
+  1st Monday in September,                !- Start Date
+  ,                                       !- Duration {days}
+  ;                                       !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+  Martin Luther King Day,                 !- Name
+  3rd Monday in January,                  !- Start Date
+  ,                                       !- Duration {days}
+  ;                                       !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+  Memorial Day,                           !- Name
+  Last Monday in May,                     !- Start Date
+  ,                                       !- Duration {days}
+  ;                                       !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+  New Year's Day,                         !- Name
+  1/1,                                    !- Start Date
+  ,                                       !- Duration {days}
+  ;                                       !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+  Presidents Day,                         !- Name
+  3rd Monday in February,                 !- Start Date
+  ,                                       !- Duration {days}
+  ;                                       !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+  Thanksgiving Day,                       !- Name
+  4th Thursday in November,               !- Start Date
+  ,                                       !- Duration {days}
+  ;                                       !- Special Day Type
+
+RunPeriodControl:SpecialDays,
+  Veterans Day,                           !- Name
+  11/11,                                  !- Start Date
+  ,                                       !- Duration {days}
+  ;                                       !- Special Day Type
+
+OutputControl:ReportingTolerances,
+  0.56,                                   !- Tolerance for Time Heating Setpoint Not Met {deltaC}
+  0.56;                                   !- Tolerance for Time Cooling Setpoint Not Met {deltaC}
+
+Site:Location,
+  LOS ANGELES USC,                        !- Name
+  38.69,                                  !- Latitude {deg}
+  -121.6,                                 !- Longitude {deg}
+  -8,                                     !- Time Zone {hr}
+  54.5592;                                !- Elevation {m}
+
+Site:WaterMainsTemperature,
+  Schedule,                               !- Calculation Method
+  WaterMainCZ09;                          !- Temperature Schedule Name
+
+SizingPeriod:DesignDay,
+  LOS ANGELES USC  August .4% Condns DB=>MCWB, !- Name
+  8,                                      !- Month
+  21,                                     !- Day of Month
+  SummerDesignDay,                        !- Day Type
+  33.7,                                   !- Maximum Dry-Bulb Temperature {C}
+  9.6,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
+  DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
+  ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
+  Wetbulb,                                !- Humidity Condition Type
+  21.2,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  ,                                       !- Humidity Condition Day Schedule Name
+  ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                       !- Daily Wet-Bulb Temperature Range {deltaC}
+  100663,                                 !- Barometric Pressure {Pa}
+  0.6,                                    !- Wind Speed {m/s}
+  260,                                    !- Wind Direction {deg}
+  No,                                     !- Rain Indicator
+  No,                                     !- Snow Indicator
+  No,                                     !- Daylight Saving Time Indicator
+  ASHRAETau,                              !- Solar Model Indicator
+  ,                                       !- Beam Solar Day Schedule Name
+  ,                                       !- Diffuse Solar Day Schedule Name
+  0.383,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
+  2.433,                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
+  ,                                       !- Sky Clearness
+  ,                                       !- Maximum Number Warmup Days
+  FullResetAtBeginEnvironment;            !- Begin Environment Reset Mode
+
+SizingPeriod:DesignDay,
+  LOS ANGELES USC  July .4% Condns DB=>MCWB, !- Name
+  7,                                      !- Month
+  21,                                     !- Day of Month
+  SummerDesignDay,                        !- Day Type
+  33.8,                                   !- Maximum Dry-Bulb Temperature {C}
+  9.2,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
+  DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
+  ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
+  Wetbulb,                                !- Humidity Condition Type
+  22.1,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  ,                                       !- Humidity Condition Day Schedule Name
+  ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                       !- Daily Wet-Bulb Temperature Range {deltaC}
+  100663,                                 !- Barometric Pressure {Pa}
+  0.6,                                    !- Wind Speed {m/s}
+  260,                                    !- Wind Direction {deg}
+  No,                                     !- Rain Indicator
+  No,                                     !- Snow Indicator
+  No,                                     !- Daylight Saving Time Indicator
+  ASHRAETau,                              !- Solar Model Indicator
+  ,                                       !- Beam Solar Day Schedule Name
+  ,                                       !- Diffuse Solar Day Schedule Name
+  0.402,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
+  2.401,                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
+  ,                                       !- Sky Clearness
+  ,                                       !- Maximum Number Warmup Days
+  FullResetAtBeginEnvironment;            !- Begin Environment Reset Mode
+
+SizingPeriod:DesignDay,
+  LOS ANGELES USC  June .4% Condns DB=>MCWB, !- Name
+  6,                                      !- Month
+  21,                                     !- Day of Month
+  SummerDesignDay,                        !- Day Type
+  32.3,                                   !- Maximum Dry-Bulb Temperature {C}
+  8.2,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
+  DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
+  ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
+  Wetbulb,                                !- Humidity Condition Type
+  20.7,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  ,                                       !- Humidity Condition Day Schedule Name
+  ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                       !- Daily Wet-Bulb Temperature Range {deltaC}
+  100663,                                 !- Barometric Pressure {Pa}
+  0.6,                                    !- Wind Speed {m/s}
+  260,                                    !- Wind Direction {deg}
+  No,                                     !- Rain Indicator
+  No,                                     !- Snow Indicator
+  No,                                     !- Daylight Saving Time Indicator
+  ASHRAETau,                              !- Solar Model Indicator
+  ,                                       !- Beam Solar Day Schedule Name
+  ,                                       !- Diffuse Solar Day Schedule Name
+  0.405,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
+  2.324,                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
+  ,                                       !- Sky Clearness
+  ,                                       !- Maximum Number Warmup Days
+  FullResetAtBeginEnvironment;            !- Begin Environment Reset Mode
+
+SizingPeriod:DesignDay,
+  LOS ANGELES USC  November .4% Condns DB=>MCWB, !- Name
+  11,                                     !- Month
+  21,                                     !- Day of Month
+  SummerDesignDay,                        !- Day Type
+  31.9,                                   !- Maximum Dry-Bulb Temperature {C}
+  10.4,                                   !- Daily Dry-Bulb Temperature Range {deltaC}
+  DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
+  ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
+  Wetbulb,                                !- Humidity Condition Type
+  15.4,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  ,                                       !- Humidity Condition Day Schedule Name
+  ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                       !- Daily Wet-Bulb Temperature Range {deltaC}
+  100663,                                 !- Barometric Pressure {Pa}
+  0.6,                                    !- Wind Speed {m/s}
+  260,                                    !- Wind Direction {deg}
+  No,                                     !- Rain Indicator
+  No,                                     !- Snow Indicator
+  No,                                     !- Daylight Saving Time Indicator
+  ASHRAETau,                              !- Solar Model Indicator
+  ,                                       !- Beam Solar Day Schedule Name
+  ,                                       !- Diffuse Solar Day Schedule Name
+  0.325,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
+  2.558,                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
+  ,                                       !- Sky Clearness
+  ,                                       !- Maximum Number Warmup Days
+  FullResetAtBeginEnvironment;            !- Begin Environment Reset Mode
+
+SizingPeriod:DesignDay,
+  LOS ANGELES USC  October .4% Condns DB=>MCWB, !- Name
+  10,                                     !- Month
+  21,                                     !- Day of Month
+  SummerDesignDay,                        !- Day Type
+  35.2,                                   !- Maximum Dry-Bulb Temperature {C}
+  9.9,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
+  DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
+  ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
+  Wetbulb,                                !- Humidity Condition Type
+  16.8,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  ,                                       !- Humidity Condition Day Schedule Name
+  ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                       !- Daily Wet-Bulb Temperature Range {deltaC}
+  100663,                                 !- Barometric Pressure {Pa}
+  0.6,                                    !- Wind Speed {m/s}
+  260,                                    !- Wind Direction {deg}
+  No,                                     !- Rain Indicator
+  No,                                     !- Snow Indicator
+  No,                                     !- Daylight Saving Time Indicator
+  ASHRAETau,                              !- Solar Model Indicator
+  ,                                       !- Beam Solar Day Schedule Name
+  ,                                       !- Diffuse Solar Day Schedule Name
+  0.38,                                   !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
+  2.397,                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
+  ,                                       !- Sky Clearness
+  ,                                       !- Maximum Number Warmup Days
+  FullResetAtBeginEnvironment;            !- Begin Environment Reset Mode
+
+SizingPeriod:DesignDay,
+  LOS ANGELES USC  September .4% Condns DB=>MCWB, !- Name
+  9,                                      !- Month
+  21,                                     !- Day of Month
+  SummerDesignDay,                        !- Day Type
+  36.3,                                   !- Maximum Dry-Bulb Temperature {C}
+  9.8,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
+  DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
+  ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
+  Wetbulb,                                !- Humidity Condition Type
+  20.1,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  ,                                       !- Humidity Condition Day Schedule Name
+  ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                       !- Daily Wet-Bulb Temperature Range {deltaC}
+  100663,                                 !- Barometric Pressure {Pa}
+  0.6,                                    !- Wind Speed {m/s}
+  260,                                    !- Wind Direction {deg}
+  No,                                     !- Rain Indicator
+  No,                                     !- Snow Indicator
+  No,                                     !- Daylight Saving Time Indicator
+  ASHRAETau,                              !- Solar Model Indicator
+  ,                                       !- Beam Solar Day Schedule Name
+  ,                                       !- Diffuse Solar Day Schedule Name
+  0.369,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
+  2.465,                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
+  ,                                       !- Sky Clearness
+  ,                                       !- Maximum Number Warmup Days
+  FullResetAtBeginEnvironment;            !- Begin Environment Reset Mode
+
+SizingPeriod:DesignDay,
+  LOS ANGELES USC Ann Htg 99.6% Condns DB, !- Name
+  12,                                     !- Month
+  21,                                     !- Day of Month
+  WinterDesignDay,                        !- Day Type
+  6.2,                                    !- Maximum Dry-Bulb Temperature {C}
+  0,                                      !- Daily Dry-Bulb Temperature Range {deltaC}
+  DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
+  ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
+  Wetbulb,                                !- Humidity Condition Type
+  6.2,                                    !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  ,                                       !- Humidity Condition Day Schedule Name
+  ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                       !- Daily Wet-Bulb Temperature Range {deltaC}
+  100663,                                 !- Barometric Pressure {Pa}
+  0.6,                                    !- Wind Speed {m/s}
+  20,                                     !- Wind Direction {deg}
+  No,                                     !- Rain Indicator
+  No,                                     !- Snow Indicator
+  No,                                     !- Daylight Saving Time Indicator
+  ASHRAEClearSky,                         !- Solar Model Indicator
+  ,                                       !- Beam Solar Day Schedule Name
+  ,                                       !- Diffuse Solar Day Schedule Name
+  ,                                       !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
+  ,                                       !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
+  0,                                      !- Sky Clearness
+  ,                                       !- Maximum Number Warmup Days
+  FullResetAtBeginEnvironment;            !- Begin Environment Reset Mode
+
+Output:Meter:MeterFileOnly,
+  Coal:Facility,                          !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  DistrictCooling:Facility,               !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  DistrictHeatingWater:Facility,          !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  Electricity:Facility,                   !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Meter:MeterFileOnly,
+  NaturalGas:Facility,                    !- Key Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Chiller Evaporator Cooling Rate,        !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Chiller Electricity Rate,               !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Cooling Tower Heat Transfer Rate,       !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Cooling Tower Fan Electricity Rate,     !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Boiler NaturalGas Rate,                 !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Boiler Ancillary Electricity Rate,      !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Plant Supply Side Cooling Demand Rate,  !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Plant Supply Side Heating Demand Rate,  !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Chiller Evaporator Cooling Rate,        !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Boiler Heating Rate,                    !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Plant Supply Side Inlet Temperature,    !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Cooling Tower Heat Transfer Rate,       !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Plant Supply Side Outlet Temperature,   !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Boiler Heating Rate,                    !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Pump Electricity Rate,                  !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Pump Mass Flow Rate,                    !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Pump Outlet Temperature,                !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Debug Plant Loop Bypass Fraction,       !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Debug Plant Loop Bypass Fraction,       !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+Output:Variable,
+  ,                                       !- Key Value
+  Chiller Condenser Heat Transfer Rate,   !- Variable Name
+  Hourly;                                 !- Reporting Frequency
+
+OutputControl:Table:Style,
+  HTML,                                   !- Column Separator
+  InchPound;                              !- Unit Conversion
+
+Output:VariableDictionary,
+  IDF,                                    !- Key Field
+  Unsorted;                               !- Sort Option
+
+Output:SQLite,
+  SimpleAndTabular;                       !- Option Type
+
+Output:Variable,
+  *,                                      !- Key Value
+  Site Outdoor Air Drybulb Temperature,   !- Variable Name
+  Timestep;                               !- Reporting Frequency
+
+RunPeriodControl:DaylightSavingTime, 2nd Sunday in Mar, 1st Sunday in Nov; 
+
