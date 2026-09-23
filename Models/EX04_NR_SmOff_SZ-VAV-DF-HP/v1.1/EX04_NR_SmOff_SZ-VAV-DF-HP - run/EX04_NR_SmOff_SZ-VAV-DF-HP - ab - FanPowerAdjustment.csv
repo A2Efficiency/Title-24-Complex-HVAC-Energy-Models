@@ -1,0 +1,27 @@
+AirSystems
+,,Fan Capacity,,,,Fan Pwr (Design),,,,,Fan Pwr Ratio,,,,Fan Pwr Adj
+System Name,Type,Supply Fan Capacity,Return Fan Capacity,Relief Fan Capacity,Exhaust Fan Capacity,Supply Fan Pwr,Return Fan Pwr,Relief Fan Pwr,Exhaust Fan Pwr,Total System Fan Pwr,Supply Fan Pwr Ratio,Return Fan Pwr Ratio,Relief Fan Pwr Ratio,Exhaust Fan Pwr Ratio,Total Exhaust Fan Pwr Adj,Total NonExhaust Fan Pwr Adj,Total System Fan Pwr Adj,Fully Ducted Exhaust Pressure Drop Adj,Exhaust Filter Pressure Drop Adj,Biosafety Cabinet Pressure Drop Adj,Fully Ducted Return Pressure Drop Adj,MERV16 Filter Pressure Drop Adj,Air Cleaner Pressure Drop Adj,Fully Ducted Exhaust Design Flow,Exhaust Filter Design Flow,Biosafety Design Flow,Fully Ducted Return Design Flow,MERV16 Filter Design Flow,Air Cleaner Design Flow
+,,(cfm),(cfm),(cfm),(cfm),(kW),(kW),(kW),(kW),(kW),(frac),(frac),(frac),(frac),(kW),(kW),(kW),(inH2O),(inH2O),(inH2O),(inH2O),(inH2O),(inH2O),(cfm),(cfm),(cfm),(cfm),(cfm),(cfm)
+"BaseAirSys7or3b","SZHP",1171.2,0.0,0.0,0.0,0.869,0.000,0.000,0.000,1.011,1.000,0.000,0.000,0.000,0.000,0.000,0.000,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000
+"BaseAirSys7or3b-2","SZHP",1373.5,0.0,0.0,0.0,1.019,0.000,0.000,0.000,1.075,1.000,0.000,0.000,0.000,0.000,0.000,0.000,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000
+"BaseAirSys7or3b-3","SZHP",1564.0,0.0,0.0,0.0,1.160,0.000,0.000,0.000,1.093,1.000,0.000,0.000,0.000,0.000,0.000,0.000,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000
+"BaseAirSys7or3b-4","SZVAVHP",5379.4,0.0,0.0,0.0,3.873,0.000,0.000,0.000,4.157,1.000,0.000,0.000,0.000,0.000,0.000,0.000,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000
+"BaseAirSys7or3b-5","SZHP",637.5,0.0,0.0,0.0,0.473,0.000,0.000,0.000,0.461,1.000,0.000,0.000,0.000,0.000,0.000,0.000,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000
+"BaseAirSys7or3b-6","SZHP",1649.7,0.0,0.0,0.0,1.224,0.000,0.000,0.000,1.163,1.000,0.000,0.000,0.000,0.000,0.000,0.000,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000
+"BaseAirSys11","SZAC",1010.5,0.0,0.0,0.0,0.586,0.000,0.000,0.000,0.684,1.000,0.000,0.000,0.000,0.000,0.000,0.000,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000
+"BaseAirSys7or3b-7","SZHP",2020.7,0.0,0.0,0.0,1.499,0.000,0.000,0.000,1.612,1.000,0.000,0.000,0.000,0.000,0.000,0.000,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000
+
+Thermal Zone
+,,,,,,Fan Capacity,,,Fan Flow Ratio,,,Fan Pwr,,,,,Fan Pwr Adj
+Name,Pri HVAC Sys,Vent Sys,Exhaust Sys,Floor Area,Multiplier,Pri. System Flow,Ventilation System Flow,Exhaust Flow,Zone Pri-Air-Flow-to-Sys Flow Ratio,Zone Vent-to-Sys-Air Flow Ratio,Zone Exh-to-Sys Flow Ratio,Prop Supply Fan Pwr,Prop Return Fan Pwr,Prop Relief Fan Pwr,Prop Exhaust Fan Pwr,Total Prop Fan Pwr,Total Exhaust Fan Pwr Adj,Total NonExhaust Fan Pwr Adj,Total Fan Pwr Adj,Fully Ducted Exhaust Pwr Adj,Exhaust Filter Fan Pwr Adj,Biosafety Cabinet Fan Pwr Adj,Fully Ducted Return Fan Pwr Adj,MERV16 Fan Pwr Adj,Air Cleaner Fan Pwr Adj,Exhaust Fan Motor BHP
+,,,,(ft2),,(cfm),(cfm),(cfm),(frac),(frac),(frac),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW)
+"Zn Sys 1 Reception","BaseAirSys7or3b","BaseAirSys7or3b","NONE",1392.2,1,1171.2,1171.2,0.0,1.000,0.000,0.000,1.011,0.000,0.000,0.000,1.011,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Zn Sys 2 Conference","BaseAirSys7or3b-2","BaseAirSys7or3b-2","NONE",928.9,1,1373.5,1373.5,0.0,1.000,0.000,0.000,1.075,0.000,0.000,0.000,1.075,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Zn Sys 3 Break Room","BaseAirSys7or3b-3","BaseAirSys7or3b-3","NONE",1414.3,1,1564.0,1564.0,0.0,1.000,0.000,0.000,1.093,0.000,0.000,0.000,1.093,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Zn Sys 4 Open Office","BaseAirSys7or3b-4","BaseAirSys7or3b-4","NONE",5962.3,1,5379.4,5379.4,0.0,1.000,0.000,0.000,4.157,0.000,0.000,0.000,4.157,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Zn Sys 5 Conference-Office","BaseAirSys7or3b-5","BaseAirSys7or3b-5","NONE",578.3,1,637.5,637.5,0.0,1.000,0.000,0.000,0.461,0.000,0.000,0.000,0.461,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Zn Sys 6 Conference-Support","BaseAirSys7or3b-6","BaseAirSys7or3b-6","NONE",1359.2,1,1649.7,1649.7,0.0,1.000,0.000,0.000,1.163,0.000,0.000,0.000,1.163,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Zn Sys 7 Restrooms","NONE","NONE","NONE",245.5,1,0.0,0.0,250.0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.150
+"Zn Sys 8 IT and Elec","BaseAirSys11","BaseAirSys11","NONE",131.9,1,1010.5,1010.5,0.0,1.000,0.000,0.000,0.684,0.000,0.000,0.000,0.684,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Zn Sys 9 Library","BaseAirSys7or3b-7","BaseAirSys7or3b-7","NONE",1818.0,1,2020.7,2020.7,0.0,1.000,0.000,0.000,1.612,0.000,0.000,0.000,1.612,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Zn Sys 10 Elec","NONE","NONE","NONE",64.1,1,0.0,0.0,0.0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000

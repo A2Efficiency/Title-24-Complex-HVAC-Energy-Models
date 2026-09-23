@@ -1,0 +1,16 @@
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1e\EX01e_MF08_CSUP_CEXH_SZHP_CZ09\EX01e_MF08_CSUP_CEXH_SZHP_CZ09 - batch\EX01e_MF08_CSUP_CEXH_SZHP_CZ09 - ab-cse.cse(2233): Info: 
+  doas 'doas-Central IAQ Balanced': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1e\EX01e_MF08_CSUP_CEXH_SZHP_CZ09\EX01e_MF08_CSUP_CEXH_SZHP_CZ09 - batch\EX01e_MF08_CSUP_CEXH_SZHP_CZ09 - ab-cse.cse(2233): Info: 
+  doas 'doas-Central IAQ Balanced': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1e\EX01e_MF08_CSUP_CEXH_SZHP_CZ09\EX01e_MF08_CSUP_CEXH_SZHP_CZ09 - batch\EX01e_MF08_CSUP_CEXH_SZHP_CZ09 - ab-cse.cse(2233): Info: 
+  doas 'doas-Central IAQ Balanced': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+Warning: Zone 'Attic-atc': Condensation occurred in 301 subhours of run.
+    Total condensation heat = 81.1075 kBtu.
+---------------

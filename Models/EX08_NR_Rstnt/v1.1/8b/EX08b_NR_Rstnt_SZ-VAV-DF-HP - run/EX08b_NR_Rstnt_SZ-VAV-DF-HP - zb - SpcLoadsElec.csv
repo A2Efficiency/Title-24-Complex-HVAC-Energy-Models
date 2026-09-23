@@ -1,0 +1,39 @@
+Space Interior Loads Electric Use Report
+,,,,,Regulated,,,,Non-Regulated,,,,Non-Regulated,,,,Non-Regulated,,,,Non-Regulated,,,
+Space,,,,,Interior Lighting,,,,Interior Lighting,,,,Receptacle,,,,Process,,,,Commercial Refrigeration,,,
+Name,Conditioning Type,Space Function,Floor Area,Multiplier,Power Density,Schedule Name,Schedule,Energy Use,Power Density,Schedule Name,Schedule,Energy Use,Power Density,Schedule Name,Schedule,Energy Use,Power Density,Schedule Name,Schedule,Energy Use,Power Density,Schedule Name,Schedule,Energy Use,
+,,,(ft2),,(W/ft2),,(FLH),(kWh),(W/ft2),,(FLH),(kWh),(W/ft2),,(FLH),(kWh),(W/ft2),,(FLH),(kWh),(W/ft2),,(FLH),(kWh),
+"Attic Space","IndirectlyConditioned","Unoccupied-Exclude from Gross Floor Area",0,1,,,,,,,,,,,,,,,,,,,,,
+"Dining","DirectlyConditioned","Dining Area (Cafeteria/Fast Food)",1250.46,1,0.45,"RestaurantLights",4754.3,2675.28,,,,,0.5,"RestaurantReceptacle",5053.15,3159.38,,,,,,,,,
+"Kitchen","DirectlyConditioned","Kitchen/Food Preparation Area",1250.46,1,0.95,"RestaurantLights",4754.3,5647.81,,,,,1.5,"RestaurantReceptacle",5053.15,9478.14,,,,,,,,,
+
+
+
+Space Loads Report
+Space,,,,,,Occupancy,,,,,Service Hot Water,,Ventilation,,,,,,Infiltration,,,Thermal Zone
+Name,Conditioning Type,Space Function,Floor Area,Story Name,Multiplier,Density,Number,Schedule Name,Sensible Heat Rate,Latent Heat Rate,SHW Use, Schedule Name,Prop. DsgnVentPerArea,Prop. DsgnVentPerPerson,Code VentPerArea,Code VentPerPerson,Sim. Area Flow,Sim. Person Flow,Method,Schedule Name,Design Infiltration Rate,Clg Tstat Sch, Htg Tstat Sch
+,,,(ft2),,,(ppl/1000ft2),(people),,(Btu/h-person),(Btu/h-person),(gal/person),,(cfm/ft2),(cfm/person),(cfm/ft2),(cfm/person),(cfm),(cfm),,,(cfm/ft2)
+"Attic Space","IndirectlyConditioned","Unoccupied-Exclude from Gross Floor Area",0.0000,"QS Restaurant 1",1,-99996,0,"",-99996,-99996,-99996,"NONE",0,0,0,0,0,0,"FlowExteriorWallArea","On",0.2352,"NONE","NONE"
+"Dining","DirectlyConditioned","Dining Area (Cafeteria/Fast Food)",1250.4600,"QS Restaurant 1",1,33,41.2652,"RestaurantOccupancy",275,275,0.578,"RestaurantServiceHotWater",0.495,15,0.495,15,187.569,0,"FlowExteriorWallArea","RestaurantInfiltration",0.2352,"RestaurantClgSetpt","RestaurantHtgSetpt"
+"Kitchen","DirectlyConditioned","Kitchen/Food Preparation Area",1250.4600,"QS Restaurant 1",1,3,3.75138,"RestaurantOccupancy",275,475,0.578,"RestaurantServiceHotWater",1.3595,453.167,1.3595,453.167,1700,0,"FlowExteriorWallArea","RestaurantInfiltration",0.2352,"RestaurantClgSetpt","RestaurantHtgSetpt"
+
+
+
+Space Interior Lighting Report
+Space,,,,,Regulated,,,,,,,,,,,Non-Regulated
+Name,Conditioning Type,Space Function,Lighting Status,Floor Area,Lighting Specification Method,Installed Power,Schedule Name,Schedule,Lighting System Count,Lighting Control Credit,General Lighting Power,Area Category Allowances,Tailored Allowances,Simulated Power,Simulated LPD,Power,Schedule Name,Schedule,LPD
+,,,,(ft2),,(Watts),,(FLH),,(Watts),(Watts),(Watts),(Watts),(Watts),(Watts/ft2),(Watts),,(FLH),(Watts/ft2),
+"Attic Space","IndirectlyConditioned","Unoccupied-Exclude from Gross Floor Area","New",0,,,
+"Dining","DirectlyConditioned","Dining Area (Cafeteria/Fast Food)","New",1250.46,"AreaCategoryMethod",0,"RestaurantLights",4754.3,0,0,562.707,0,-99996,562.707,0.45
+"Kitchen","DirectlyConditioned","Kitchen/Food Preparation Area","New",1250.46,"AreaCategoryMethod",0,"RestaurantLights",4754.3,0,0,1187.94,0,-99996,1187.94,0.95
+
+
+
+Space Daylighting,,,,,,,,,,,,,,,,,,,,,,,,,
+Name,SpcFunc,FlrArea,DayltgCtrlType,MandMinDaylitArea,MinDimLtgFrac,MinDimPwrFrac,NumOfCtrlSteps,SkylitDaylitArea,SkylitDayltgCtrlLtgPwr,SkylitDayltgCtrlLtgFrac,SkylitDayltgIllumSetpt,SkylitDayltgIllumSetptAdjFac,SkylitDayltgAdjIllumSetpt,,PriSideDayltgRefPtCoord[1],PriSideDayltgRefPtCoord[2],PriSideDayltgRefPtCoord[3],PriSideDaylitArea,PriSideDayltgCtrlLtgPwr,PriSideDayltgCtrlLtgFrac,PriSideDayltgIllumSetpt,PriSideDayltgIllumSetptAdjFac,PriSideDayltgAdjIllumSetpt,,SecSideDayltgRefPtCoord[1],SecSideDayltgRefPtCoord[2],SecSideDayltgRefPtCoord[3],SecSideDaylitArea,SecSideDayltgCtrlLtgPwr,SecSideDayltgCtrlLtgFrac,SecSideDayltgIllumSetpt,SecSideDayltgIllumSetptAdjFac,SecSideDayltgAdjIllumSetpt
+Space,,,,,,,,Skylit Zone,,,,,,,Primary Sidelit Daylit Zone,,,,,,,,,,Secondary Sidelit Daylit Zone,,,,,,
+Name,Space Function,Floor Area,Control Type,MinDayltg per 140.3c,Min. Dim. Ltg. Frac.,Min Dim. Pwr. Frac.,Switched # Ctrl. Steps,Daylit Area,Controlled Watts,Control Fraction,Illuminance Set Pt,Illum Set Pt Adj Factor,Adj Illum. Set Point,,Ref Pt Coord [1],Ref Pt Coord [2],Ref Pt Coord [3],Daylit Area,Controlled Watts,Control Fraction,Illuminance Set Pt,Illum Set Pt Adj Factor,Adj Illum. Set Point,,Ref Pt Coord [1],Ref Pt Coord [2],Ref Pt Coord [3],Daylit Area,Controlled Watts,Control Fraction,Illuminance Set Pt,Illum Set Pt Adj Factor,Adj Illum. Set Point
+,,(ft2),,(ft2),,,,(ft2),(Watts),(Frac),(lux),,(lux),,,,,(ft2),(Watts),(Frac),(lux),,(lux),,,,,(ft2),(Watts),(Frac),(lux),,(lux)
+"Attic Space","Unoccupied-Exclude from Gross Floor Area",0,"None",-99996,0,-99996,-99996,0,0,0,0,-99996,0,,-99996,-99996,-99996,0,0,0,0,-99996,0,,-99996,-99996,-99996,0,0,0,0,-99996,0
+"Dining","Dining Area (Cafeteria/Fast Food)",1250.46,"None",-99996,0,-99996,-99996,0,0,0,125,-99996,125,,25.0049,6.50164,2.5,565.5,0,0,125,-99996,187.5,,25.0049,13.0033,2.5,396.5,0,0,125,-99996,250
+"Kitchen","Kitchen/Food Preparation Area",1250.46,"None",-99996,0,-99996,-99996,0,0,0,300,-99996,300,,-99996,-99996,-99996,0,0,0,300,-99996,450,,-99996,-99996,-99996,0,0,0,300,-99996,600

@@ -1,0 +1,29 @@
+FluidSystems
+,,,,,Controls,,,,,,Supply Side Components,,,Demand Side Components,,,
+Name,Type,Status,Design SupplyT,Design DelT,TempCtrl,FixedT,Supply HiT,At Outdoor,Supply LowT,At OutdoorT,Num Comps,Total Capacity,Flow Rate,Num Comps,Total Capacity,Sensible Capacity,Flow Rate,
+,,,(degF),(degF),,(degF),(degF),(degF),(degF),(degF),,(Btu/hr),(gpm),,(Btu/hr),(Btu/hr),( gpm),
+"CW Loop","CondenserWater","New",79,10,"FixedDualSetpoint",79,-99996,-99996,-99996,-99996,1,70000,14.1,0,250971,0,0
+
+
+Boiler
+Name,Fluid System Name,Status,Type,Fuel,Draft Type,Rated Capacity,AFUE,Thermal Efficiency,Forced Draft Power,Minimum Unload Ratio
+,,,,,,(Btu/h),,,hp
+"CW Loop Boiler","CW Loop","New","HotWater","Gas","Condensing",22000,0.91,0.90125,0.0176,0.25
+
+
+Cooling Tower
+Name,Fluid System Name,Status,Type,Rated Capacity,Number of Cells,Tower Air flow,Fan Type,Total Fan HP,Condenser Water Flow Rate,Capacity Control,Low Speed Air Flow Ratio, Minimum Speed Ratio
+,,,,,(Btu/h),cfm,,hp,gpm,,,,
+"CW Loop Cooling Tower","CW Loop","New","OpenTower",70000,1,1389,"Axial",0.334,14.1,"VariableSpeedDrive",0.5,0.5
+
+
+Pump
+Name,Serving Equipment,Status,Count,Operation,Speed Type,Design Flow Rate,Nameplate HP,Power,Power Per Flow,Break Horse Power,Head,Motor Efficiency,Impeller Efficiency,Minimum Flow Rate
+,,,,,,(gpm),(hp),(kW),(W/gpm),(bhp),(ft. H20),,,(gpm)
+"CW Loop Pump","CW Return Segment","New",1,"OnDemand","ConstantSpeed",14.1,0.125,0.0887147,6.29182,0.100972,20,0.855,0.7
+
+
+Residential Water Heater
+,System,,,,Water Heater
+Name,System Name,System Type,System Count,Distribution Type,Status,Type,Fuel,Count,Thermal Efficiency,StandbyLoss Fraction,Storage Capacity,Rated Capacity,Energy Factor,Tank Exterior Insulation Rval,Tank Interior Insulation Rval
+,,,,,,,,,,,(gal),(Btu/h),,(?F-ft2-h/Btu),(?F-ft2-h/Btu)

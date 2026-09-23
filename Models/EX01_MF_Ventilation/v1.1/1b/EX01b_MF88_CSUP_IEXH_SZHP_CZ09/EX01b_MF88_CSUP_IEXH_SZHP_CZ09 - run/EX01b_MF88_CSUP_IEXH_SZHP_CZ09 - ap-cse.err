@@ -1,0 +1,49 @@
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - ap-cse.cse(656): Info: 
+  DHWSYS 'dhwsys-F1 Business Center': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump' has a fixed setpoint.
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - ap-cse.cse(681): Info: 
+  DHWSYS 'dhwsys-F1 Fitness Center': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 3' has a fixed setpoint.
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - ap-cse.cse(706): Info: 
+  DHWSYS 'dhwsys-F1 Leasing Office': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 4' has a fixed setpoint.
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - ap-cse.cse(731): Info: 
+  DHWSYS 'dhwsys-F1 Lobby': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 5' has a fixed setpoint.
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - ap-cse.cse(756): Info: 
+  DHWSYS 'dhwsys-F1 Mech Rm': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 6' has a fixed setpoint.
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - ap-cse.cse(781): Info: 
+  DHWSYS 'dhwsys-F2 Break Room': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 7' has a fixed setpoint.
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - ap-cse.cse(806): Info: 
+  DHWSYS 'dhwsys-F3 Break Room': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 8' has a fixed setpoint.
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - ap-cse.cse(831): Info: 
+  DHWSYS 'dhwsys-F4 Break Room': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 9' has a fixed setpoint.
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - ap-cse.cse(856): Info: 
+  DHWSYS 'dhwsys-F5 Break Room': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 10' has a fixed setpoint.
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - ap-cse.cse(36364): Info: 
+  doas 'doas-Res Central Supply (All Units)': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - ap-cse.cse(36364): Info: 
+  doas 'doas-Res Central Supply (All Units)': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - ap-cse.cse(36364): Info: 
+  doas 'doas-Res Central Supply (All Units)': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------

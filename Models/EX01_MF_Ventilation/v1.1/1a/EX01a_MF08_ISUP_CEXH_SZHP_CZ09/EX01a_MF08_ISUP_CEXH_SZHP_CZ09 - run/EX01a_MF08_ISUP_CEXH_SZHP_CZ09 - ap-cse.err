@@ -1,0 +1,16 @@
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1a\EX01a_MF08_ISUP_CEXH_SZHP_CZ09\EX01a_MF08_ISUP_CEXH_SZHP_CZ09 - batch\EX01a_MF08_ISUP_CEXH_SZHP_CZ09 - ap-cse.cse(2179): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1a\EX01a_MF08_ISUP_CEXH_SZHP_CZ09\EX01a_MF08_ISUP_CEXH_SZHP_CZ09 - batch\EX01a_MF08_ISUP_CEXH_SZHP_CZ09 - ap-cse.cse(2179): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1a\EX01a_MF08_ISUP_CEXH_SZHP_CZ09\EX01a_MF08_ISUP_CEXH_SZHP_CZ09 - batch\EX01a_MF08_ISUP_CEXH_SZHP_CZ09 - ap-cse.cse(2179): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+Warning: Zone 'Attic-atc': Condensation occurred in 320 subhours of run.
+    Total condensation heat = 87.565 kBtu.
+---------------

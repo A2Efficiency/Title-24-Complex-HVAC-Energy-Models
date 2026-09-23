@@ -1,0 +1,32 @@
+; Tables for Std model AutoHardSize capacity look-up rules
+TABLE EX08a_NR_Rstnt_SZ-VAV-AC25TrmlUnit
+PropName,BaseName,Type,System,Zone,PriAirFlowMax,PriAirFlowMin,HtgAirFlowMax,ReheatCtrlMthd
+;,,,,,(cfm),(cfm),( cfm)
+,"Dining TerminalUnit","VAVNoReheatBox","Dining - RTU / DOAS 1","Dining Thermal Zone",2000.000,1200.000,-99996.000,""
+,"Kitchen TerminalUnit","VAVNoReheatBox","Kitchen-RTU / DOAS 2","Kitchen Thermal Zone",4500.000,1700.000,-99996.000,""
+ENDTABLE
+TABLE EX08a_NR_Rstnt_SZ-VAV-AC25CoilClg
+PropName,BaseName,Type,System,Zone,CapTotNetRtd,CapTotGrossRtd,FluidFlowRtDsgn,DXSEER,DXEER,NumClgStages
+;,,,,,(Btu/hr),(Btu/hr),( gpm),
+,"Dining CoilClg","DirectExpansion","Dining - RTU / DOAS 1","n/a",98700.000,102974.757,-99996.00000,-99996.000,11.000,1
+,"Kitchen CoilClg","DirectExpansion","Kitchen-RTU / DOAS 2","n/a",205000.000,213878.674,-99996.00000,-99996.000,10.800,2
+ENDTABLE
+TABLE EX08a_NR_Rstnt_SZ-VAV-AC25CoilHtg
+PropName,BaseName,Type,System,Zone,CapTotNetRtd,CapTotGrossRtd,FluidFlowRtDsgn,FurnAFUE,FurnThrmlEff,
+;,,,,,(Btu/hr),(Btu/hr),( gpm),
+,"Dining CoilHtg","Furnace","Dining - RTU / DOAS 1","n/a",95423.000,95423.000,-99996.00000,0.810,0.815
+,"Kitchen CoilHtg","Furnace","Kitchen-RTU / DOAS 2","n/a",151516.000,151516.000,-99996.00000,0.810,0.815
+ENDTABLE
+TABLE EX08a_NR_Rstnt_SZ-VAV-AC25Fan
+PropName,BaseName,CtrlMthd,System,Zone,FlowCap,FlowMin,FlowEff,ModelingMthd,TotStaticPress,MtrBHP,MtrHP,MtrPos,MtrEff,PwrIdx
+;,,,,,(cfm),(cfm),,,(inH2O),(hp),(hp),,(W/cfm)
+,"Dining Fan","VariableSpeedDrive","Dining - RTU / DOAS 1","n/a",2000.000,1200.000,0.650,"PowerPerUnitFlow",3.570,1.731,2.000,"InAirStream",0.865,0.7460
+,"Kitchen Fan","VariableSpeedDrive","Kitchen-RTU / DOAS 2","n/a",4500.000,1700.000,0.650,"PowerPerUnitFlow",3.924,4.281,5.000,"InAirStream",0.865,0.8200
+,"KitchExh Fan","ConstantVolume","KitchenExhaust","UNDEFINED",2400.000,-99996.000,0.500,"StaticPressure",2.393,1.810,2.000,"InAirStream",0.865,0.6501
+ENDTABLE
+TABLE EX08a_NR_Rstnt_SZ-VAV-AC25OACtrl
+PropName,BaseName,EconoCtrlMthd,System,EconoIntegration
+;
+,"DiningOAControl","DifferentialEnthalpy","Dining - RTU / DOAS 1","Integrated"
+,"Kitchen OAControl","DifferentialEnthalpy","Kitchen-RTU / DOAS 2","Integrated"
+ENDTABLE

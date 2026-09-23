@@ -1,0 +1,177 @@
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(656): Info: 
+  DHWSYS 'dhwsys-F1 Business Center': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump' has a fixed setpoint.
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(681): Info: 
+  DHWSYS 'dhwsys-F1 Fitness Center': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 3' has a fixed setpoint.
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(706): Info: 
+  DHWSYS 'dhwsys-F1 Leasing Office': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 4' has a fixed setpoint.
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(731): Info: 
+  DHWSYS 'dhwsys-F1 Lobby': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 5' has a fixed setpoint.
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(756): Info: 
+  DHWSYS 'dhwsys-F1 Mech Rm': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 6' has a fixed setpoint.
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(781): Info: 
+  DHWSYS 'dhwsys-F2 Break Room': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 7' has a fixed setpoint.
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(806): Info: 
+  DHWSYS 'dhwsys-F3 Break Room': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 8' has a fixed setpoint.
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(831): Info: 
+  DHWSYS 'dhwsys-F4 Break Room': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 9' has a fixed setpoint.
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(856): Info: 
+  DHWSYS 'dhwsys-F5 Break Room': 
+    'wsTSetpoint' is ignored -- HPWH 'dhwhtr1-Heat Pump 10' has a fixed setpoint.
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(34705): Warning: 
+  airHandler 'F1 Business Cent AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (252.928 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(34736): Warning: 
+  airHandler 'F1 Corridor AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (256.799 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(34767): Warning: 
+  airHandler 'F1 Fitness Cente AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (236.21 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(34829): Warning: 
+  airHandler 'F1 Lobby AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (272.509 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(34922): Warning: 
+  airHandler 'F2 Corridor AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (223.94 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(34953): Warning: 
+  airHandler 'F2 Break Room AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (243.023 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(34984): Warning: 
+  airHandler 'F2 Stairs E AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (225.063 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(35015): Warning: 
+  airHandler 'F2 Stairs W AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (225.027 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(35046): Warning: 
+  airHandler 'F3 Corridor AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (224.504 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(35077): Warning: 
+  airHandler 'F3 Break Room AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (242.341 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(35108): Warning: 
+  airHandler 'F3 Stairs E AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (225.18 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(35139): Warning: 
+  airHandler 'F3 Stairs W AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (224.494 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(35170): Warning: 
+  airHandler 'F4 Corridor AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (224.144 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(35201): Warning: 
+  airHandler 'F4 Break Room AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (243.296 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(35232): Warning: 
+  airHandler 'F4 Stairs E AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (224.618 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(35263): Warning: 
+  airHandler 'F4 Stairs W AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (225.55 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(35294): Warning: 
+  airHandler 'F5 Corridor AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (225.047 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(35325): Warning: 
+  airHandler 'F5 Break Room AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (246.901 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(35356): Warning: 
+  airHandler 'F5 Stairs E AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (259.638 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX03_MF_Central-WSHP\EX03_MF88_Central-WSHP_CZ09\EX03_MF88_Central-WSHP_CZ09 - batch\EX03_MF88_Central-WSHP_CZ09 - zp-cse.cse(35387): Warning: 
+  airHandler 'F5 Stairs W AirSys-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (260.913 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------

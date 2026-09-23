@@ -1,0 +1,213 @@
+AirSystems
+,,,,,Cooling,,,,Heating,,,Fan/Ventilation,,,Controls
+Name,Type,Status,System Count,Floor Area Served,Net Capacity,Design Supply T,Capacity/Area,Supply Flow/Ton,Net Capacity,Design Supply T,Capacity/Area,Supply Flow,Supply Flow/Area,Design OA,OA/Area,Control Zone Name,Temp Control,FixedT,Supply HiT,At Outdoor,Supply LowT,At OutdoorT,ReheatCtrlMthd,Availability Schedule,Night Cycle Control
+,,,(#),(ft2),(Btu/hr),(degF),(Btu/ft2),(cfm/ton),(Btu/hr),(degF),(Btu/ft2),(cfm),(cfm/ft2),(cfm),(cfm/ft2),,,(degF),(degF),(degF),(degF),( degF),,,
+"BaseAirSys5","PVAV","New",1,17613,499173,55,28.3412,401.65,441930,60,25.0911,16707.7,0.948603,4491.31,0.255,"NONE","WarmestReset",,60,,55,,"DualMaximum","RetailHVACAvail","CycleOnCallAnyZone"
+"ResBaseAirSys_SZHP","SZHP","New",1,360,12096.6,58,33.6018,292.127,13144.5,-99996,36.5124,294.479,0.817998,178.2,0.495,"F1 Business Center","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-2","SZHP","New",1,1464,21163.7,58,14.4561,292.127,22997,-99996,15.7083,515.208,0.351918,219.6,0.15,"F1 Corridor","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-3","SZHP","New",1,900,15716.2,58,17.4624,292.127,17077.5,-99996,18.975,382.593,0.425104,135,0.15,"F1 Fitness Center","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-4","SZHP","New",1,414,9511.48,58,22.9746,321.441,10335.4,-99996,24.9647,254.781,0.615414,62.1,0.15,"F1 Leasing Office","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-5","SZHP","New",1,1050,15061.1,58,14.3439,292.127,16365.7,-99996,15.5864,366.646,0.349187,157.5,0.15,"F1 Lobby","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-6","SZHP","New",1,180,4938.85,58,27.4381,293.525,5366.66,-99996,29.8148,120.806,0.671146,27,0.15,"F1 Stairs E","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-7","SZHP","New",1,180,5441.04,58,30.228,297.84,5912.35,-99996,32.8464,135.047,0.75026,27,0.15,"F1 Stairs W","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-8","SZHP","New",1,2340,16581.1,58,7.08596,292.127,18017.4,-99996,7.69975,403.65,0.1725,351,0.15,"F2 Corridor","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-9","SZHP","New",1,180,5747.37,58,31.9299,292.127,6245.22,-99996,34.6957,139.914,0.777298,89.1,0.495,"F2 Break Room","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-10","SZHP","New",1,180,1275.47,58,7.08596,292.127,1385.96,-99996,7.69975,31.05,0.1725,27,0.15,"F2 Stairs E","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-11","SZHP","New",1,180,1275.47,58,7.08596,292.127,1385.96,-99996,7.69975,31.05,0.1725,27,0.15,"F2 Stairs W","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-12","SZHP","New",1,2340,16581.1,58,7.08596,292.127,18017.4,-99996,7.69975,403.65,0.1725,351,0.15,"F3 Corridor","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-13","SZHP","New",1,180,5768.07,58,32.0448,292.127,6267.7,-99996,34.8206,140.417,0.780096,89.1,0.495,"F3 Break Room","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-14","SZHP","New",1,180,1275.47,58,7.08596,292.127,1385.96,-99996,7.69975,31.05,0.1725,27,0.15,"F3 Stairs E","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-15","SZHP","New",1,180,1275.47,58,7.08596,292.127,1385.96,-99996,7.69975,31.05,0.1725,27,0.15,"F3 Stairs W","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-16","SZHP","New",1,2340,16581.1,58,7.08596,292.127,18017.4,-99996,7.69975,403.65,0.1725,351,0.15,"F4 Corridor","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-17","SZHP","New",1,180,5767.55,58,32.0419,292.127,6267.14,-99996,34.8174,140.405,0.780026,89.1,0.495,"F4 Break Room","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-18","SZHP","New",1,180,1275.47,58,7.08596,292.127,1385.96,-99996,7.69975,31.05,0.1725,27,0.15,"F4 Stairs E","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-19","SZHP","New",1,180,1275.47,58,7.08596,292.127,1385.96,-99996,7.69975,31.05,0.1725,27,0.15,"F4 Stairs W","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-20","SZHP","New",1,2340,16581.1,58,7.08596,292.127,18017.4,-99996,7.69975,403.65,0.1725,351,0.15,"F5 Corridor","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-21","SZHP","New",1,180,6138.09,58,34.1005,292.127,6669.78,-99996,37.0544,149.425,0.83014,89.1,0.495,"F5 Break Room","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-22","SZHP","New",1,180,2128.63,58,11.8257,292.127,2313.02,-99996,12.8501,51.8192,0.287885,27,0.15,"F5 Stairs E","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"ResBaseAirSys_SZHP-23","SZHP","New",1,180,2209.87,58,12.277,292.127,2401.29,-99996,13.3405,53.7968,0.298871,27,0.15,"F5 Stairs W","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+
+
+
+Terminal Units
+,,,,Relationships,,,,,AirFlow,,VAV,,Fan Powered Terminal
+Name,Type,Status,Qty,System,System Qty,Zone,Floor Area,HVAC Zones,Primary Max,Primary Min,Heating Max,Reheat Control,Induced Air Zone,Induction Ratio,Fan Power,Parallel Box Control,Flow Fraction
+,,,(#),,(#),,(ft2),(#),(cfm),(cfm),(cfm),,,,( W/cfm)
+"BaseVAVBox TrmlUnit","VAVReheatBox","New",1,"BaseAirSys5",1,"Thermal Zone: F1 Retail N-NW",5985,1,4880.93,1526.17,2440.46,"DualMaximum","NONE",-99996,-99996,"UNDEFINED",-99996
+"BaseVAVBox TrmlUnit-2","VAVReheatBox","New",1,"BaseAirSys5",1,"Thermal Zone: F1 Retail NE",4320,1,3670.75,1101.6,1835.37,"DualMaximum","NONE",-99996,-99996,"UNDEFINED",-99996
+"BaseVAVBox TrmlUnit-3","VAVReheatBox","New",1,"BaseAirSys5",1,"Thermal Zone: F1 Retail SE",2880,1,2435.01,734.4,1217.51,"DualMaximum","NONE",-99996,-99996,"UNDEFINED",-99996
+"BaseVAVBox TrmlUnit-4","VAVReheatBox","New",1,"BaseAirSys5",1,"Thermal Zone: F1 Retail SW",4428,1,3807.57,1129.14,1903.78,"DualMaximum","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit","Uncontrolled","New",1,"ResBaseAirSys_SZHP",1,"F1 Business Center",5985,1,294.479,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-2","Uncontrolled","New",1,"ResBaseAirSys_SZHP-2",1,"F1 Corridor",4320,1,515.208,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-3","Uncontrolled","New",1,"ResBaseAirSys_SZHP-3",1,"F1 Fitness Center",2880,1,382.593,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-4","Uncontrolled","New",1,"ResBaseAirSys_SZHP-4",1,"F1 Leasing Office",4428,1,254.781,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-5","Uncontrolled","New",1,"ResBaseAirSys_SZHP-5",1,"F1 Lobby",-99996,-99996,366.646,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-6","Uncontrolled","New",1,"ResBaseAirSys_SZHP-6",1,"F1 Stairs E",-99996,-99996,120.806,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-7","Uncontrolled","New",1,"ResBaseAirSys_SZHP-7",1,"F1 Stairs W",-99996,-99996,135.047,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-8","Uncontrolled","New",1,"ResBaseAirSys_SZHP-8",1,"F2 Corridor",-99996,-99996,403.65,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-9","Uncontrolled","New",1,"ResBaseAirSys_SZHP-9",1,"F2 Break Room",-99996,-99996,139.914,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-10","Uncontrolled","New",1,"ResBaseAirSys_SZHP-10",1,"F2 Stairs E",-99996,-99996,31.05,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-11","Uncontrolled","New",1,"ResBaseAirSys_SZHP-11",1,"F2 Stairs W",-99996,-99996,31.05,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-12","Uncontrolled","New",1,"ResBaseAirSys_SZHP-12",1,"F3 Corridor",-99996,-99996,403.65,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-13","Uncontrolled","New",1,"ResBaseAirSys_SZHP-13",1,"F3 Break Room",-99996,-99996,140.417,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-14","Uncontrolled","New",1,"ResBaseAirSys_SZHP-14",1,"F3 Stairs E",-99996,-99996,31.05,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-15","Uncontrolled","New",1,"ResBaseAirSys_SZHP-15",1,"F3 Stairs W",-99996,-99996,31.05,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-16","Uncontrolled","New",1,"ResBaseAirSys_SZHP-16",1,"F4 Corridor",-99996,-99996,403.65,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-17","Uncontrolled","New",1,"ResBaseAirSys_SZHP-17",1,"F4 Break Room",-99996,-99996,140.405,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-18","Uncontrolled","New",1,"ResBaseAirSys_SZHP-18",1,"F4 Stairs E",-99996,-99996,31.05,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-19","Uncontrolled","New",1,"ResBaseAirSys_SZHP-19",1,"F4 Stairs W",-99996,-99996,31.05,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-20","Uncontrolled","New",1,"ResBaseAirSys_SZHP-20",1,"F5 Corridor",-99996,-99996,403.65,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-21","Uncontrolled","New",1,"ResBaseAirSys_SZHP-21",1,"F5 Break Room",-99996,-99996,149.425,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-22","Uncontrolled","New",1,"ResBaseAirSys_SZHP-22",1,"F5 Stairs E",-99996,-99996,51.8192,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"ResBaseAirSys TrmlUnit-23","Uncontrolled","New",1,"ResBaseAirSys_SZHP-23",1,"F5 Stairs W",-99996,-99996,53.7968,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+
+
+
+Cooling Coils
+,,,,Relationships,,,Capacity,,,,ChilledWater,,,DirectExpansion
+Name,Type,Status,Fuel Src,System,System Qty,Zone,Total-Net,Total-Gross,FluidSegIn,FluidSegOut,Design Flow Rate,Condenser Type,Number Stages,SEER (rounded),CodeMin SEER,EER (rounded),CodeMin EER,IEER (roundded),CodeMin IEER,EIR,Sizing Ratio,SEER2 (rounded),CodeMin SEER2,EER2 (rounded), CodeMin EER2
+,,,,,(#),,(Btu/hr),(Btu/hr),(Btu/hr),(Btu/hr),( gpm)
+"BaseSys5 CoilClg","DirectExpansion","New","Electric","BaseAirSys5",1,"UNDEFINED",499173,520792,"NONE","NONE",-99996,"Air",2,-99996,-99996,9.8,9.8,-99996,-99996,0.292197,1.15,-99996,-99996,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg","DirectExpansion","New","Electric","ResBaseAirSys_SZHP",1,"n/a",12096.6,12620.5,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.975008,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-2","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-2",1,"n/a",21163.7,22080.3,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,1.05738,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-3","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-3",1,"n/a",15716.2,16396.9,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.916753,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-4","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-4",1,"n/a",9511.48,9923.43,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,1.15,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-5","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-5",1,"n/a",15061.1,15713.4,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,1.06586,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-6","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-6",1,"n/a",4938.85,5152.75,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,1.15,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-7","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-7",1,"n/a",5441.04,5676.7,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,1.15,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-8","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-8",1,"n/a",16581.1,17299.3,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.874509,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-9","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-9",1,"n/a",5747.37,5996.3,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.938213,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-10","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-10",1,"n/a",1275.47,1330.71,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.87682,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-11","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-11",1,"n/a",1275.47,1330.71,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.873253,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-12","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-12",1,"n/a",16581.1,17299.3,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.873264,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-13","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-13",1,"n/a",5768.07,6017.88,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.939145,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-14","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-14",1,"n/a",1275.47,1330.71,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.876924,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-15","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-15",1,"n/a",1275.47,1330.71,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.873407,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-16","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-16",1,"n/a",16581.1,17299.3,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.8734,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-17","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-17",1,"n/a",5767.55,6017.34,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.942628,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-18","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-18",1,"n/a",1275.47,1330.71,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.876162,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-19","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-19",1,"n/a",1275.47,1330.71,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.877294,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-20","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-20",1,"n/a",16581.1,17299.3,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.871394,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-21","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-21",1,"n/a",6138.09,6403.94,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.955699,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-22","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-22",1,"n/a",2128.63,2220.82,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,1.00517,14.3,14.3,-99996,-99996
+"ResBaseAirSys_SZHP CoilClg-23","DirectExpansion","New","Electric","ResBaseAirSys_SZHP-23",1,"n/a",2209.87,2305.58,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,1.012,14.3,14.3,-99996,-99996
+
+
+
+Heating Coils
+,,,,Relationships,,,Capacity,,HotWater,,,HeatPump,,,,,,,,,Furnace
+Name,Type,Status,Fuel Src,System,System Qty,Zone,Total-Net,Total-Gross,FluidSeg In,FluidSeg Out,Design Flow Rate,Condenser Type,Number Stages,HSPF (rounded),CodeMin HSPF,COP (rounded),CodeMin COP,EIR,Comp Lockout Temp,Supp Htr Temp,AFUE,CodeMin AFUE,Thrml Eff,CodeMin Thrml Eff,SizingRatio,HSPF2 (rounded), CodeMin HSPF2
+,,,,,(#),,(Btu/hr),(Btu/hr),,,(gpm),,,,,,,,(?F),( ?F)
+"BaseSys5 CoilHtg","HotWater","New","- specify -","BaseAirSys5",1,"UNDEFINED",100929,100929,"BaseHWPriSupSeg","BaseHWPriRetSeg",8.07126,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,1.25,-99996,-99996
+"ResBaseAirSys_SZHP CoilHtg","HeatPump","New","Electric","ResBaseAirSys_SZHP",1,"n/a",13144.5,12620.5,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.51401,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-2","HeatPump","New","Electric","ResBaseAirSys_SZHP-2",1,"n/a",22997,22080.3,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.74698,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-3","HeatPump","New","Electric","ResBaseAirSys_SZHP-3",1,"n/a",17077.5,16396.9,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.87227,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-4","HeatPump","New","Electric","ResBaseAirSys_SZHP-4",1,"n/a",10335.4,9923.43,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.90288,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-5","HeatPump","New","Electric","ResBaseAirSys_SZHP-5",1,"n/a",16365.7,15713.4,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.74382,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-6","HeatPump","New","Electric","ResBaseAirSys_SZHP-6",1,"n/a",5366.66,5152.75,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,2.12723,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-7","HeatPump","New","Electric","ResBaseAirSys_SZHP-7",1,"n/a",5912.35,5676.7,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,2.15156,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-8","HeatPump","New","Electric","ResBaseAirSys_SZHP-8",1,"n/a",18017.4,17299.3,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.29215,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-9","HeatPump","New","Electric","ResBaseAirSys_SZHP-9",1,"n/a",6245.22,5996.3,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.47836,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-10","HeatPump","New","Electric","ResBaseAirSys_SZHP-10",1,"n/a",1385.96,1330.71,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.29215,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-11","HeatPump","New","Electric","ResBaseAirSys_SZHP-11",1,"n/a",1385.96,1330.71,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.29215,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-12","HeatPump","New","Electric","ResBaseAirSys_SZHP-12",1,"n/a",18017.4,17299.3,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.29215,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-13","HeatPump","New","Electric","ResBaseAirSys_SZHP-13",1,"n/a",6267.7,6017.88,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.48092,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-14","HeatPump","New","Electric","ResBaseAirSys_SZHP-14",1,"n/a",1385.96,1330.71,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.29215,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-15","HeatPump","New","Electric","ResBaseAirSys_SZHP-15",1,"n/a",1385.96,1330.71,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.29215,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-16","HeatPump","New","Electric","ResBaseAirSys_SZHP-16",1,"n/a",18017.4,17299.3,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.29215,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-17","HeatPump","New","Electric","ResBaseAirSys_SZHP-17",1,"n/a",6267.14,6017.34,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.48086,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-18","HeatPump","New","Electric","ResBaseAirSys_SZHP-18",1,"n/a",1385.96,1330.71,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.29215,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-19","HeatPump","New","Electric","ResBaseAirSys_SZHP-19",1,"n/a",1385.96,1330.71,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.29215,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-20","HeatPump","New","Electric","ResBaseAirSys_SZHP-20",1,"n/a",18017.4,17299.3,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.29215,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-21","HeatPump","New","Electric","ResBaseAirSys_SZHP-21",1,"n/a",6669.78,6403.94,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.52508,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-22","HeatPump","New","Electric","ResBaseAirSys_SZHP-22",1,"n/a",2313.02,2220.82,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.61535,7.5,7.5
+"ResBaseAirSys_SZHP CoilHtg-23","HeatPump","New","Electric","ResBaseAirSys_SZHP-23",1,"n/a",2401.29,2305.58,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.64107,7.5,7.5
+"BaseVAVBox CoilHtg","HotWater","New","- specify -","BaseAirSys5",1,"Thermal Zone: F1 Retail N-NW",100309,100309,"BaseHWPriSupSeg","BaseHWPriRetSeg",8.02167,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,1.25,-99996,-99996
+"BaseVAVBox CoilHtg-2","HotWater","New","- specify -","BaseAirSys5",1,"Thermal Zone: F1 Retail NE",78778.5,78778.5,"BaseHWPriSupSeg","BaseHWPriRetSeg",6.29988,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,1.25,-99996,-99996
+"BaseVAVBox CoilHtg-3","HotWater","New","- specify -","BaseAirSys5",1,"Thermal Zone: F1 Retail SE",66302.6,66302.6,"BaseHWPriSupSeg","BaseHWPriRetSeg",5.3022,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,1.25,-99996,-99996
+"BaseVAVBox CoilHtg-4","HotWater","New","- specify -","BaseAirSys5",1,"Thermal Zone: F1 Retail SW",95610.7,95610.7,"BaseHWPriSupSeg","BaseHWPriRetSeg",7.64595,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,1.25,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg","Resistance","New","Electric","ResBaseAirSys_SZHP",1,"n/a",14210.1,14210.1,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-2","Resistance","New","Electric","ResBaseAirSys_SZHP-2",1,"n/a",21818.1,21818.1,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-3","Resistance","New","Electric","ResBaseAirSys_SZHP-3",1,"n/a",15219.4,15219.4,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-4","Resistance","New","Electric","ResBaseAirSys_SZHP-4",1,"n/a",9169.45,9169.45,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-5","Resistance","New","Electric","ResBaseAirSys_SZHP-5",1,"n/a",15552.4,15552.4,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-6","Resistance","New","Electric","ResBaseAirSys_SZHP-6",1,"n/a",4268.85,4268.85,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-7","Resistance","New","Electric","ResBaseAirSys_SZHP-7",1,"n/a",4663.45,4663.45,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-8","Resistance","New","Electric","ResBaseAirSys_SZHP-8",1,"n/a",22548,22548,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-9","Resistance","New","Electric","ResBaseAirSys_SZHP-9",1,"n/a",6901,6901,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-10","Resistance","New","Electric","ResBaseAirSys_SZHP-10",1,"n/a",1734.46,1734.46,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-11","Resistance","New","Electric","ResBaseAirSys_SZHP-11",1,"n/a",1734.46,1734.46,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-12","Resistance","New","Electric","ResBaseAirSys_SZHP-12",1,"n/a",22548,22548,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-13","Resistance","New","Electric","ResBaseAirSys_SZHP-13",1,"n/a",6914.81,6914.81,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-14","Resistance","New","Electric","ResBaseAirSys_SZHP-14",1,"n/a",1734.46,1734.46,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-15","Resistance","New","Electric","ResBaseAirSys_SZHP-15",1,"n/a",1734.46,1734.46,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-16","Resistance","New","Electric","ResBaseAirSys_SZHP-16",1,"n/a",22548,22548,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-17","Resistance","New","Electric","ResBaseAirSys_SZHP-17",1,"n/a",6914.46,6914.46,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-18","Resistance","New","Electric","ResBaseAirSys_SZHP-18",1,"n/a",1734.46,1734.46,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-19","Resistance","New","Electric","ResBaseAirSys_SZHP-19",1,"n/a",1734.46,1734.46,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-20","Resistance","New","Electric","ResBaseAirSys_SZHP-20",1,"n/a",22548,22548,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-21","Resistance","New","Electric","ResBaseAirSys_SZHP-21",1,"n/a",7162.49,7162.49,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-22","Resistance","New","Electric","ResBaseAirSys_SZHP-22",1,"n/a",2356.55,2356.55,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"ResBaseAirSys_SZHP SuppCoilHtg-23","Resistance","New","Electric","ResBaseAirSys_SZHP-23",1,"n/a",2411.47,2411.47,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+
+
+
+Fans
+,,,,,Relationships,,,Capacity,,,Power,,,,Motor
+Name,Control Method,Status,Class,Cent Type,System,System Qty,Zone,Maximum,Minimum,Efficiency,Modeling Method,Brake HP,Total Static,Power Index,Nameplate HP,Position,Efficiency
+,,,,,,(#),,(cfm),(cfm),,,(hp),(inH2O),(W/cfm),( hp)
+"BaseSys5 SupFan","VariableSpeedDrive","New","Centrifugal","AirFoil","BaseAirSys5",1,"UNDEFINED",16707.7,4491.31,0.65,"PowerPerUnitFlow",19.7145,4.86687,0.946,20,"InAirStream",0.93
+"ResBaseAirSys_SZHP SupFan","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP",1,"n/a",294.479,-99996,0.65,"PowerPerUnitFlow",0.250564,3.5095,0.742,0.5,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-2","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-2",1,"n/a",515.208,-99996,0.65,"PowerPerUnitFlow",0.438376,3.5095,0.742,0.5,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-3","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-3",1,"n/a",382.593,-99996,0.65,"PowerPerUnitFlow",0.325538,3.5095,0.742,0.5,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-4","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-4",1,"n/a",254.781,-99996,0.65,"PowerPerUnitFlow",0.216786,3.5095,0.742,0.25,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-5","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-5",1,"n/a",366.646,-99996,0.65,"PowerPerUnitFlow",0.311969,3.5095,0.742,0.5,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-6","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-6",1,"n/a",120.806,-99996,0.65,"PowerPerUnitFlow",0.102791,3.5095,0.742,0.125,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-7","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-7",1,"n/a",135.047,-99996,0.65,"PowerPerUnitFlow",0.114908,3.5095,0.742,0.125,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-8","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-8",1,"n/a",403.65,-99996,0.65,"PowerPerUnitFlow",0.343454,3.5095,0.742,0.5,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-9","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-9",1,"n/a",139.914,-99996,0.65,"PowerPerUnitFlow",0.119049,3.5095,0.742,0.125,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-10","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-10",1,"n/a",31.05,-99996,0.65,"PowerPerUnitFlow",0.0264196,3.5095,0.742,0.083,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-11","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-11",1,"n/a",31.05,-99996,0.65,"PowerPerUnitFlow",0.0264196,3.5095,0.742,0.083,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-12","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-12",1,"n/a",403.65,-99996,0.65,"PowerPerUnitFlow",0.343454,3.5095,0.742,0.5,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-13","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-13",1,"n/a",140.417,-99996,0.65,"PowerPerUnitFlow",0.119477,3.5095,0.742,0.125,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-14","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-14",1,"n/a",31.05,-99996,0.65,"PowerPerUnitFlow",0.0264196,3.5095,0.742,0.083,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-15","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-15",1,"n/a",31.05,-99996,0.65,"PowerPerUnitFlow",0.0264196,3.5095,0.742,0.083,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-16","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-16",1,"n/a",403.65,-99996,0.65,"PowerPerUnitFlow",0.343454,3.5095,0.742,0.5,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-17","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-17",1,"n/a",140.405,-99996,0.65,"PowerPerUnitFlow",0.119466,3.5095,0.742,0.125,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-18","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-18",1,"n/a",31.05,-99996,0.65,"PowerPerUnitFlow",0.0264196,3.5095,0.742,0.083,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-19","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-19",1,"n/a",31.05,-99996,0.65,"PowerPerUnitFlow",0.0264196,3.5095,0.742,0.083,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-20","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-20",1,"n/a",403.65,-99996,0.65,"PowerPerUnitFlow",0.343454,3.5095,0.742,0.5,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-21","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-21",1,"n/a",149.425,-99996,0.65,"PowerPerUnitFlow",0.127142,3.5095,0.742,0.25,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-22","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-22",1,"n/a",51.8192,-99996,0.65,"PowerPerUnitFlow",0.0440915,3.5095,0.742,0.083,"InAirStream",0.855
+"ResBaseAirSys_SZHP SupFan-23","ConstantVolume","New","Centrifugal","AirFoil","ResBaseAirSys_SZHP-23",1,"n/a",53.7968,-99996,0.65,"PowerPerUnitFlow",0.0457742,3.5095,0.742,0.083,"InAirStream",0.855
+
+
+
+Outside Air Control
+,,,,Relationships,,Control
+Name,Control,Status,Design OA,Name,System Count,Econo Integration,Max OA Ratio,High DB Lockout,Low DB Lockout,High Enthalpy Lockout,OA Schedule Method,Delay,Schedule Name
+,,,(cfm),,(#),,,(F),(F),(Btu/lb),,( hrs)
+"BaseSys5 OACtrl","FixedDryBulb","New",4491.31,"BaseAirSys5",1,"Integrated",1,71,-99996,50,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl","NoEconomizer","New",178.2,"ResBaseAirSys_SZHP",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-2","NoEconomizer","New",219.6,"ResBaseAirSys_SZHP-2",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-3","NoEconomizer","New",135,"ResBaseAirSys_SZHP-3",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-4","NoEconomizer","New",62.1,"ResBaseAirSys_SZHP-4",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-5","NoEconomizer","New",157.5,"ResBaseAirSys_SZHP-5",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-6","NoEconomizer","New",27,"ResBaseAirSys_SZHP-6",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-7","NoEconomizer","New",27,"ResBaseAirSys_SZHP-7",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-8","NoEconomizer","New",351,"ResBaseAirSys_SZHP-8",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-9","NoEconomizer","New",89.1,"ResBaseAirSys_SZHP-9",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-10","NoEconomizer","New",27,"ResBaseAirSys_SZHP-10",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-11","NoEconomizer","New",27,"ResBaseAirSys_SZHP-11",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-12","NoEconomizer","New",351,"ResBaseAirSys_SZHP-12",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-13","NoEconomizer","New",89.1,"ResBaseAirSys_SZHP-13",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-14","NoEconomizer","New",27,"ResBaseAirSys_SZHP-14",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-15","NoEconomizer","New",27,"ResBaseAirSys_SZHP-15",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-16","NoEconomizer","New",351,"ResBaseAirSys_SZHP-16",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-17","NoEconomizer","New",89.1,"ResBaseAirSys_SZHP-17",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-18","NoEconomizer","New",27,"ResBaseAirSys_SZHP-18",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-19","NoEconomizer","New",27,"ResBaseAirSys_SZHP-19",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-20","NoEconomizer","New",351,"ResBaseAirSys_SZHP-20",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-21","NoEconomizer","New",89.1,"ResBaseAirSys_SZHP-21",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-22","NoEconomizer","New",27,"ResBaseAirSys_SZHP-22",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"ResBaseAirSys_SZHP OACtrl-23","NoEconomizer","New",27,"ResBaseAirSys_SZHP-23",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"

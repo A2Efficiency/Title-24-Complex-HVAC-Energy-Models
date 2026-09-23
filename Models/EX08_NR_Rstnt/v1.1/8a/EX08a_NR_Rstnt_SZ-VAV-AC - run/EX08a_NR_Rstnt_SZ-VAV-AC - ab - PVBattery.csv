@@ -1,0 +1,14 @@
+PV Array & Battery Report
+,"PV and Battery required based on Prescriptive tables:  24.4 kWdc PV  /  Battery Energy 11.8 kWh and Power 2.94 kW (Time of Use control)"
+,"Standard Design PV Capacity: 24.4 kWdc  /  (no battery)"
+,"User-specified PV array capacity:  24.3 kWdc  (no battery equipment defined)"
+
+Prescriptive PV/Battery Requirements:
+Space/ResOtherZn/ResZn,,,,,,NonRes & HiRiseRes Multiplied Areas by PVBattery Bldg Type,,,,,,,,,,,,,LowRiseRes,,Prescriptive Capacities:
+Name,Conditioning Type,Space Function,PV/Batt Bldg Type,Floor Area,Multiplier,"Events, Exhibits",Library,Hotel/Motel,"Office, Financial, Unleased, Med Office/Clinic",Restaurants,"Retail, Grocery",School,Warehouse,Religious Worship,"Sports, Recreation",Highrise Multifamily,none,# Res Dwellings,MultArea,,PV,Batt Energy,Batt Power
+,,,,(ft2),,(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),,(ft2),,(kWdc),(kWh),(kW)
+"Attic Space","IndirectlyConditioned","Unoccupied-Exclude from Gross Floor Area","none",0,1,,,,,,,,,,,,0,,,,0,0,0,
+"Dining","DirectlyConditioned","Dining Area (Cafeteria/Fast Food)","Restaurants",1250.46,1,,,,,1250.46,,,,,,,,,,,12.192,5.88374,1.47094,
+"Kitchen","DirectlyConditioned","Kitchen/Food Preparation Area","Restaurants",1250.46,1,,,,,1250.46,,,,,,,,,,,12.192,5.88374,1.47094,
+,,,,,Sums:,0,0,0,0,2500.92,0,0,0,0,0,0,0,0,0,,24.384,11.7675,2.94187,
+,,Bldg Cond Area:,2500.92,,Pcts:,0.0,0.0,0.0,0.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,

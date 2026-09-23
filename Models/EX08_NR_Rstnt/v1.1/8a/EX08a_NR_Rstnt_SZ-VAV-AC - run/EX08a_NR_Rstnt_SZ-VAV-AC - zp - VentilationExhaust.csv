@@ -1,0 +1,21 @@
+BuildingStory
+,,Floor Area (including multipliers),,,,,Ventilation (Design),,,Ventilation (For Balance),,,,,,General,,Comm. Kitchen,,Parking Garage,,Laboratory
+Name,Multiplier,Total,Cond. NRes,Cond. Res,Total Cond.,Number,Total,Code Min.,Exhaust,Total,Code Min.,Tot:Min Ratio,Exhaust,Vent:Exh Ratio,Vent Mult.,Vent,Exhaust,Vent,Exhaust,Vent,Exhaust,Vent,Exhaust
+,,(ft2),(ft2),(ft2),(ft2),(people),(cfm),(cfm),(cfm),(cfm),(cfm),,(cfm),,,(cfm),(cfm),(cfm),(cfm),(cfm),(cfm),(cfm),(cfm)
+"QS Restaurant 1",1,2500.9,2500.9,0.0,2500.9,45.0,2319,2319,2400,2319,2319,1.000,2400,0.966,1.000,619,0,1700,2400,0,0,0,0
+
+Space
+,,,,,,,Occupancy,,,Ventilation,,Design Input (By Component),,,,,Minimum Req. (By Component),,,,Simulated,,,Exhaust,,,ForBalance
+Name,Story Name,Condg Type,Space Function,Thermal Zone,Floor Area,Multiplier,Design,Minimum,Number,Spec. Method,Control,Per Occupant,Per Area,Per Volume,Per Space,Calculated Flow,Per Occupant,Per Area,Per Volume,Calculated Flow,Per Occupant,Per Area,Calculated Flow,Calculated Flow,Lab Exh Type,Max Kitchen,Ventilation,Exhaust
+,,,,,(ft2),,(ppl/1000ft2),(ppl/1000ft2),(people),,,(cfm/person),(cfm/ft2),(ACH),(cfm),(cfm),(cfm/person),(cfm/ft2),(ACH),(cfm),(cfm/person),(cfm/ft2),(cfm),(cfm),,(cfm),(cfm),(cfm)
+"Attic Space","QS Restaurant 1","IndirectlyConditioned","Unoccupied-Exclude from Gross Floor Area","Attic Zn",0.0,1,0.0,0.0,0.0,"NoVentilation","UNDEFINED",0,0,0,0,0,0,0,0,0,0,0,-99996,0,"UNDEFINED",0,0,0
+"Dining","QS Restaurant 1","DirectlyConditioned","Dining Area (Cafeteria/Fast Food)","Dining Thermal Zone",1250.5,1,66.0,66.0,41.3,"Maximum","CO2Sensors",15,0.15,0,0,619,15,0.15,0,619,0,0.495,-99996,0,"UNDEFINED",0,619,0
+"Kitchen","QS Restaurant 1","DirectlyConditioned","Kitchen/Food Preparation Area","Kitchen Thermal Zone",1250.5,1,6.0,6.0,3.8,"Maximum","Fixed",15,0.15,0,1700,1700,15,0.15,0,1700,0,1.3595,-99996,2400,"UNDEFINED",2800,1700,2400
+
+ThermalZone
+,,,,,,,Occupancy,,,,Ventilation,,Design Value (Total),,,,Minimum Req. (Total),,,,Simulated,,,Exhaust
+Name,Story Name,Type,Ventilation Source,Pri. HVAC System,Ventilation System,Floor Area,Multiplier,Design,Minimum,Number,Spec. Method,Control,Per Occupant,Per Area,Per Volume,Calculated Flow,Per Occupant,Per Area,Per Volume,Calculated Flow,Per Occupant,Per Area,Calculated Flow,Calculated Flow,ExhSysRef,ExhOperMode,ExhCtrlMthd,ExhBalancedSchRef
+,,,,,(ft2),,(ppl/1000ft2),(ppl/1000ft2),(people),,,,(cfm/person),(cfm/ft2),(ACH),(cfm),(cfm/person),(cfm/ft2),(ACH),(cfm),(cfm/person),(cfm/ft2),(cfm),(cfm)
+"Attic Zn","QS Restaurant 1","Unconditioned","None","NONE","NONE",0.0,1,0.0,0.0,0.0,"NoVentilation","UNDEFINED",0,0,0,0,0,0,0,0,0,0,-99996
+"Dining Thermal Zone","QS Restaurant 1","Conditioned","Forced","Dining - RTU / DOAS 1","Dining - RTU / DOAS 1",1250.5,1,66.0,66.0,41.3,"Maximum","CO2Sensors",15,0.495,2.96922,619,15,0.495,2.96922,619,0,0.495,-99996
+"Kitchen Thermal Zone","QS Restaurant 1","Conditioned","Forced","Kitchen-RTU / DOAS 2","Kitchen-RTU / DOAS 2",1250.5,1,6.0,6.0,3.8,"Maximum","Fixed",453.167,1.3595,8.15485,1700,453.167,1.3595,8.15485,1700,0,1.3595,-99996,2400,"KitchenExhaust","DecoupledFromSystem","ConstantFlowConstantSpeedFan","On"

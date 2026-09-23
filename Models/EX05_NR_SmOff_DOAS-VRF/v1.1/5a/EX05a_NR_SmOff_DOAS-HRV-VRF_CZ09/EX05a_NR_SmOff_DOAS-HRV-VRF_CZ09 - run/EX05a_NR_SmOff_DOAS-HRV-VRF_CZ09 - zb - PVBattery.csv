@@ -1,0 +1,36 @@
+PV Array & Battery Report
+,"PV and Battery required based on Prescriptive tables:  46.1 kWdc PV  /  Battery Energy 68.0 kWh and Power 17.00 kW (Time of Use control)"
+,"Standard Design PV Capacity: 46.1 kWdc  /  Battery Capacity: 68.0 kWh  (power 17.00 kW, Time of Use control)"
+,"User-specified PV and Battery:  46.1 kWdc PV  /  68.0 kWh Battery  (17.0/17.0 charge/discharge rate (kW), Time of Use control)"
+
+Prescriptive PV/Battery Requirements:
+Space/ResOtherZn/ResZn,,,,,,NonRes & HiRiseRes Multiplied Areas by PVBattery Bldg Type,,,,,,,,,,,,,LowRiseRes,,Prescriptive Capacities:
+Name,Conditioning Type,Space Function,PV/Batt Bldg Type,Floor Area,Multiplier,"Events, Exhibits",Library,Hotel/Motel,"Office, Financial, Unleased, Med Office/Clinic",Restaurants,"Retail, Grocery",School,Warehouse,Religious Worship,"Sports, Recreation",Highrise Multifamily,none,# Res Dwellings,MultArea,,PV,Batt Energy,Batt Power
+,,,,(ft2),,(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),,(ft2),,(kWdc),(kWh),(kW)
+"Zn 101 Reception Space","DirectlyConditioned","Lobby, Main Entry","Office, Financial, Unleased, Med Office/Clinic",351.146,1,,,,351.146,,,,,,,,,,,,1.09909,1.94424,0.48606,
+"Zn 102 Mail Space","DirectlyConditioned","Storage, General","Office, Financial, Unleased, Med Office/Clinic",311.019,1,,,,311.019,,,,,,,,,,,,0.973489,1.72206,0.430516,
+"Zn 103 Copy_Print Space","DirectlyConditioned","Storage, General","Office, Financial, Unleased, Med Office/Clinic",292.306,1,,,,292.306,,,,,,,,,,,,0.914916,1.61845,0.404612,
+"Zn 104 Corridor Space","DirectlyConditioned","Corridor Area","Office, Financial, Unleased, Med Office/Clinic",437.712,1,,,,437.712,,,,,,,,,,,,1.37004,2.42354,0.605885,
+"Zn 105 Phone Space","DirectlyConditioned","Electrical, Mechanical, Telephone Rooms","Office, Financial, Unleased, Med Office/Clinic",119.127,1,,,,119.127,,,,,,,,,,,,0.372868,0.659588,0.164897,
+"Zn 106 Conference Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area","Events, Exhibits",488.62,1,488.62,,,,,,,,,,,,,,,2.26231,1.21384,0.303459,
+"Zn 107 Storage Space","DirectlyConditioned","Storage, General","Office, Financial, Unleased, Med Office/Clinic",316.083,1,,,,316.083,,,,,,,,,,,,0.98934,1.7501,0.437526,
+"Zn 108 Break Room Space","DirectlyConditioned","Lounge, Breakroom, or Waiting Area","Office, Financial, Unleased, Med Office/Clinic",598.434,1,,,,598.434,,,,,,,,,,,,1.8731,3.31344,0.828359,
+"Zn 109 Dining Space","DirectlyConditioned","Lounge, Breakroom, or Waiting Area","Office, Financial, Unleased, Med Office/Clinic",499.782,1,,,,499.782,,,,,,,,,,,,1.56432,2.76721,0.691803,
+"Zn 111 Open Office Space","DirectlyConditioned","Office Area (>250 square feet)","Office, Financial, Unleased, Med Office/Clinic",5712.79,1,,,,5712.79,,,,,,,,,,,,17.881,31.6308,7.9077,
+"Zn 111A Vestibule Space","DirectlyConditioned","Corridor Area","Office, Financial, Unleased, Med Office/Clinic",101.352,1,,,,101.352,,,,,,,,,,,,0.317232,0.56117,0.140293,
+"Zn 112 Huddle Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area","Events, Exhibits",147.069,1,147.069,,,,,,,,,,,,,,,0.68093,0.365351,0.0913377,
+"Zn 113 Restroom Space","Unconditioned","Restrooms","Office, Financial, Unleased, Med Office/Clinic",245.503,1,,,,0,,,,,,,,,,,,0,0,0,
+"Zn 120 Conference Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area","Events, Exhibits",390.769,1,390.769,,,,,,,,,,,,,,,1.80926,0.970753,0.242688,
+"Zn 121 Huddle Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area","Events, Exhibits",99.3377,1,99.3377,,,,,,,,,,,,,,,0.459934,0.246776,0.0616939,
+"Zn 122 Office Space","DirectlyConditioned","Office Area (<=250 square feet)","Office, Financial, Unleased, Med Office/Clinic",198.656,1,,,,198.656,,,,,,,,,,,,0.621795,1.09993,0.274982,
+"Zn 123 Office Space","DirectlyConditioned","Office Area (<=250 square feet)","Office, Financial, Unleased, Med Office/Clinic",178.92,1,,,,178.92,,,,,,,,,,,,0.560019,0.990651,0.247663,
+"Zn 124 Conference Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area","Events, Exhibits",148.303,1,148.303,,,,,,,,,,,,,,,0.686644,0.368416,0.0921041,
+"Zn 125 Electrical Space","Unconditioned","Electrical, Mechanical, Telephone Rooms","Office, Financial, Unleased, Med Office/Clinic",64.0852,1,,,,0,,,,,,,,,,,,0,0,0,
+"Zn 126 Copy Space","DirectlyConditioned","Storage, General","Office, Financial, Unleased, Med Office/Clinic",150.835,1,,,,150.835,,,,,,,,,,,,0.472114,0.83515,0.208788,
+"Zn 127 Huddle Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area","Events, Exhibits",98.6374,1,98.6374,,,,,,,,,,,,,,,0.456691,0.245036,0.061259,
+"Zn 128 IT Room Space","DirectlyConditioned","Computer Room","Office, Financial, Unleased, Med Office/Clinic",131.889,1,,,,131.889,,,,,,,,,,,,0.412811,0.730246,0.182561,
+"Zn 129 Conference Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area","Events, Exhibits",172.814,1,172.814,,,,,,,,,,,,,,,0.800128,0.429306,0.107327,
+"Zn 130 Library Space","DirectlyConditioned","Office Area (>250 square feet)","Office, Financial, Unleased, Med Office/Clinic",1818.04,1,,,,1818.04,,,,,,,,,,,,5.69046,10.0662,2.51655,
+"Zn 131 Support Space","DirectlyConditioned","Convention, Conference, Multipurpose and Meeting Area","Events, Exhibits",821.379,1,821.379,,,,,,,,,,,,,,,3.80298,2.04048,0.510119,
+,,,,,Sums:,2366.93,0,0,11218.1,0,0,0,0,0,0,0,0,0,0,,46.0715,67.9927,16.9982,
+,,Bldg Cond Area:,13585,,Pcts:,17.4,0.0,0.0,82.6,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,

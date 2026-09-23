@@ -1,0 +1,146 @@
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38847): Info: 
+  doas 'doas-Res Central Supply (All Units)': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38847): Info: 
+  doas 'doas-Res Central Supply (All Units)': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38134): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (255.919 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38165): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-2-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (274.951 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38196): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-3-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (235.537 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38351): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-8-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (224.898 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38382): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-9-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (244.773 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38413): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-10-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (226.866 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38444): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-11-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (228.963 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38475): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-12-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (224.874 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38506): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-13-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (245.048 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38537): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-14-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (225.639 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38568): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-15-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (226.824 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38599): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-16-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (224.913 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38630): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-17-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (245.075 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38661): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-18-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (225.691 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38692): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-19-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (227.852 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38723): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-20-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (225.094 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38754): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-21-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (249.618 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38785): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-22-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (266.866 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38816): Warning: 
+  airHandler 'ResBaseAirSys_SZHP-23-ah': 
+    Supply fan design air flow (autosized) per ton of rated cooling
+    capacity (267.787 cfm/ton) is outside of the expected range (280 - 450 cfm/ton)
+    cooling coil rated air flow per ton is 400 cfm/ton
+
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1b\EX01b_MF88_CSUP_IEXH_SZHP_CZ09\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - batch\EX01b_MF88_CSUP_IEXH_SZHP_CZ09 - zb-cse.cse(38847): Info: 
+  doas 'doas-Res Central Supply (All Units)': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------

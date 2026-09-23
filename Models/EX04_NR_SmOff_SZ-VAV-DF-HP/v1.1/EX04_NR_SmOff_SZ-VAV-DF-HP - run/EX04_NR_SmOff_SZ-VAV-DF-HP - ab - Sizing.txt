@@ -1,0 +1,160 @@
+Zone:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName = 'ZN SYS 1 RECEPTION') AND (ColumnName='During Occupied Cooling') AND (Units = 'hr') -->> 0.75
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName='ZN SYS 1 RECEPTION') AND (ColumnName='During Occupied Heating') AND (Units='hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='ZN SYS 1 RECEPTION') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 20901.2
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='ZN SYS 1 RECEPTION') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 17290.8
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='ZN SYS 1 RECEPTION') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 956.454
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='ZN SYS 1 RECEPTION') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 633.57
+
+Zone:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName = 'ZN SYS 2 CONFERENCE') AND (ColumnName='During Occupied Cooling') AND (Units = 'hr') -->> 0.25
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName='ZN SYS 2 CONFERENCE') AND (ColumnName='During Occupied Heating') AND (Units='hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='ZN SYS 2 CONFERENCE') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 24805.2
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='ZN SYS 2 CONFERENCE') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 15024.3
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='ZN SYS 2 CONFERENCE') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 1135.11
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='ZN SYS 2 CONFERENCE') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 550.521
+
+Zone:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName = 'ZN SYS 3 BREAK ROOM') AND (ColumnName='During Occupied Cooling') AND (Units = 'hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName='ZN SYS 3 BREAK ROOM') AND (ColumnName='During Occupied Heating') AND (Units='hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='ZN SYS 3 BREAK ROOM') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 29214.3
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='ZN SYS 3 BREAK ROOM') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 16357.8
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='ZN SYS 3 BREAK ROOM') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 1336.87
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='ZN SYS 3 BREAK ROOM') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 599.383
+
+Zone:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName = 'ZN SYS 4 OPEN OFFICE') AND (ColumnName='During Occupied Cooling') AND (Units = 'hr') -->> 1.25
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName='ZN SYS 4 OPEN OFFICE') AND (ColumnName='During Occupied Heating') AND (Units='hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='ZN SYS 4 OPEN OFFICE') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 96260.1
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='ZN SYS 4 OPEN OFFICE') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 54917.8
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='ZN SYS 4 OPEN OFFICE') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 4404.94
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='ZN SYS 4 OPEN OFFICE') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 2012.3
+
+Zone:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName = 'ZN SYS 5 CONFERENCE-OFFICE') AND (ColumnName='During Occupied Cooling') AND (Units = 'hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName='ZN SYS 5 CONFERENCE-OFFICE') AND (ColumnName='During Occupied Heating') AND (Units='hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='ZN SYS 5 CONFERENCE-OFFICE') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 11991.3
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='ZN SYS 5 CONFERENCE-OFFICE') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 8474.27
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='ZN SYS 5 CONFERENCE-OFFICE') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 548.73
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='ZN SYS 5 CONFERENCE-OFFICE') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 310.514
+
+Zone:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName = 'ZN SYS 6 CONFERENCE-SUPPORT') AND (ColumnName='During Occupied Cooling') AND (Units = 'hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName='ZN SYS 6 CONFERENCE-SUPPORT') AND (ColumnName='During Occupied Heating') AND (Units='hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='ZN SYS 6 CONFERENCE-SUPPORT') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 31326
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='ZN SYS 6 CONFERENCE-SUPPORT') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 17661.3
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='ZN SYS 6 CONFERENCE-SUPPORT') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 1433.5
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='ZN SYS 6 CONFERENCE-SUPPORT') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 647.144
+
+Zone:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName = 'ZN SYS 7 RESTROOMS') AND (ColumnName='During Occupied Cooling') AND (Units = 'hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName='ZN SYS 7 RESTROOMS') AND (ColumnName='During Occupied Heating') AND (Units='hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='ZN SYS 7 RESTROOMS') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='ZN SYS 7 RESTROOMS') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='ZN SYS 7 RESTROOMS') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='ZN SYS 7 RESTROOMS') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 0
+
+Zone:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName = 'ZN SYS 8 IT AND ELEC') AND (ColumnName='During Occupied Cooling') AND (Units = 'hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName='ZN SYS 8 IT AND ELEC') AND (ColumnName='During Occupied Heating') AND (Units='hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='ZN SYS 8 IT AND ELEC') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 9520.34
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='ZN SYS 8 IT AND ELEC') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 299.52
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='ZN SYS 8 IT AND ELEC') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 871.317
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='ZN SYS 8 IT AND ELEC') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 7.839
+
+Zone:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName = 'ZN SYS 9 LIBRARY') AND (ColumnName='During Occupied Cooling') AND (Units = 'hr') -->> 2.25
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName='ZN SYS 9 LIBRARY') AND (ColumnName='During Occupied Heating') AND (Units='hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='ZN SYS 9 LIBRARY') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 36028.3
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='ZN SYS 9 LIBRARY') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 19475.2
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='ZN SYS 9 LIBRARY') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 1648.68
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='ZN SYS 9 LIBRARY') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 713.61
+
+Zone:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName = 'ZN SYS 10 ELEC') AND (ColumnName='During Occupied Cooling') AND (Units = 'hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='SystemSummary') AND (ReportForString='Entire Facility') AND (TableName='Time Setpoint Not Met') AND (RowName='ZN SYS 10 ELEC') AND (ColumnName='During Occupied Heating') AND (Units='hr') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='ZN SYS 10 ELEC') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='ZN SYS 10 ELEC') AND (ColumnName='Calculated Design Load') AND (Units='Btu/h') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Cooling') AND (RowName='ZN SYS 10 ELEC') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 0
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='HVACSizingSummary') AND (ReportForString='Entire Facility') AND (TableName='Zone Sensible Heating') AND (RowName='ZN SYS 10 ELEC') AND (ColumnName='Calculated Design Air Flow') AND (Units='ft3/min') -->> 0
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'BASESYS7OR3B SUPFAN') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 1171.02
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'BASESYS7OR3B SUPFAN-2') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 1373.3
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'BASESYS7OR3B SUPFAN-3') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 1563.8
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'BASESYS7OR3B SUPFAN-4') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 5378.81
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'BASESYS7OR3B SUPFAN-5') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 637.44
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'BASESYS7OR3B SUPFAN-6') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 1649.55
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'BASESYS11 SUPFAN') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 1010.4
+
+Fan:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Fans') AND (RowName = 'BASESYS7OR3B SUPFAN-7') AND (ColumnName='Max Air Flow Rate') AND (Units = 'ft3/min') -->> 2020.42
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'BASESYS7OR3B COILCLG') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 46355.8
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'BASESYS7OR3B COILCLG') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 32662.1
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'BASESYS7OR3B COILCLG') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'BASESYS7OR3B COILCLG-2') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 50330
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'BASESYS7OR3B COILCLG-2') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 36712.5
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'BASESYS7OR3B COILCLG-2') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'BASESYS7OR3B COILCLG-3') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 51673.9
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'BASESYS7OR3B COILCLG-3') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 39613.9
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'BASESYS7OR3B COILCLG-3') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'BASESYS7OR3B COILCLG-4') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 184116
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'BASESYS7OR3B COILCLG-4') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 138702
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'BASESYS7OR3B COILCLG-4') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'BASESYS7OR3B COILCLG-5') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 21120.9
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'BASESYS7OR3B COILCLG-5') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 16153.4
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'BASESYS7OR3B COILCLG-5') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'BASESYS7OR3B COILCLG-6') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 57470.6
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'BASESYS7OR3B COILCLG-6') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 42891.5
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'BASESYS7OR3B COILCLG-6') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'BASESYS11 COILCLG') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 29237.7
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'BASESYS11 COILCLG') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 29237.7
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'BASESYS11 COILCLG') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilClg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'BASESYS7OR3B COILCLG-7') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 63230.9
+        SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Cooling Coils') AND (RowName = 'BASESYS7OR3B COILCLG-7') AND (ColumnName='Nominal Sensible Capacity') AND (Units = 'Btu/h') -->> 49837.4
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Cooling:Water') AND (CompName = 'BASESYS7OR3B COILCLG-7') AND (Description='Design Size Design Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'BASESYS7OR3B COILHTG') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 46355.8
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'BASESYS7OR3B COILHTG') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'BASESYS7OR3B COILHTG-2') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 50330
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'BASESYS7OR3B COILHTG-2') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'BASESYS7OR3B COILHTG-3') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 51673.9
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'BASESYS7OR3B COILHTG-3') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'BASESYS7OR3B COILHTG-4') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 184116
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'BASESYS7OR3B COILHTG-4') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'BASESYS7OR3B COILHTG-5') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 21120.9
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'BASESYS7OR3B COILHTG-5') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'BASESYS7OR3B COILHTG-6') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 57470.6
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'BASESYS7OR3B COILHTG-6') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'BASESYS7OR3B COILHTG-7') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 63230.9
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'BASESYS7OR3B COILHTG-7') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'BASESYS7OR3B SUPPCOILHTG') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 29209
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'BASESYS7OR3B SUPPCOILHTG') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'BASESYS7OR3B SUPPCOILHTG-2') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 35317
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'BASESYS7OR3B SUPPCOILHTG-2') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'BASESYS7OR3B SUPPCOILHTG-3') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 44277
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'BASESYS7OR3B SUPPCOILHTG-3') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'BASESYS7OR3B SUPPCOILHTG-4') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 113549
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'BASESYS7OR3B SUPPCOILHTG-4') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'BASESYS7OR3B SUPPCOILHTG-5') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 13800.6
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'BASESYS7OR3B SUPPCOILHTG-5') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'BASESYS7OR3B SUPPCOILHTG-6') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 48436.3
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'BASESYS7OR3B SUPPCOILHTG-6') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+
+CoilHtg:  SELECT Value FROM TabularDataWithStrings WHERE (ReportName='EquipmentSummary') AND (ReportForString='Entire Facility') AND (TableName='Heating Coils') AND (RowName = 'BASESYS7OR3B SUPPCOILHTG-7') AND (ColumnName='Nominal Total Capacity') AND (Units = 'Btu/h') -->> 39993.1
+        SELECT Value FROM ComponentSizes WHERE (CompType='Coil:Heating:Water') AND (CompName = 'BASESYS7OR3B SUPPCOILHTG-7') AND (Description='Maximum Water Flow Rate') AND (Units = 'm3/s') -->> 0
+

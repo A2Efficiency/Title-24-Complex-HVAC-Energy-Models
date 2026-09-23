@@ -1,0 +1,29 @@
+PV Array & Battery Report
+,"PV and Battery required based on Prescriptive tables:  167.9 kWdc PV  /  Battery Energy 296.9 kWh and Power 74.23 kW (Time of Use control)"
+,"Standard Design PV Capacity: 167.9 kWdc  /  Battery Capacity: 296.9 kWh  (power 74.23 kW, Time of Use control)"
+,"User-specified PV and Battery:  167.9 kWdc PV  /  296.8 kWh Battery  (70.5/70.5 charge/discharge rate (kW), Basic control)"
+
+Prescriptive PV/Battery Requirements:
+Space/ResOtherZn/ResZn,,,,,,NonRes & HiRiseRes Multiplied Areas by PVBattery Bldg Type,,,,,,,,,,,,,LowRiseRes,,Prescriptive Capacities:
+Name,Conditioning Type,Space Function,PV/Batt Bldg Type,Floor Area,Multiplier,"Events, Exhibits",Library,Hotel/Motel,"Office, Financial, Unleased, Med Office/Clinic",Restaurants,"Retail, Grocery",School,Warehouse,Religious Worship,"Sports, Recreation",Highrise Multifamily,none,# Res Dwellings,MultArea,,PV,Batt Energy,Batt Power
+,,,,(ft2),,(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),(ft2),,(ft2),,(kWdc),(kWh),(kW)
+"Core_bottom","DirectlyConditioned","Office Area (>250 square feet)","Office, Financial, Unleased, Med Office/Clinic",10586.7,1,,,,10586.7,,,,,,,,,,,,33.1364,58.6169,14.6542,
+"Perimeter_bot_ZN_1","DirectlyConditioned","Office Area (>250 square feet)","Office, Financial, Unleased, Med Office/Clinic",2231.76,1,,,,2231.76,,,,,,,,,,,,6.98542,12.3569,3.08923,
+"Perimeter_bot_ZN_2","DirectlyConditioned","Office Area (>250 square feet)","Office, Financial, Unleased, Med Office/Clinic",1412.9,1,,,,1412.9,,,,,,,,,,,,4.42238,7.82302,1.95575,
+"Perimeter_bot_ZN_3","DirectlyConditioned","Office Area (>250 square feet)","Office, Financial, Unleased, Med Office/Clinic",2231.76,1,,,,2231.76,,,,,,,,,,,,6.98542,12.3569,3.08923,
+"Perimeter_bot_ZN_4","DirectlyConditioned","Office Area (>250 square feet)","Office, Financial, Unleased, Med Office/Clinic",1412.8,1,,,,1412.8,,,,,,,,,,,,4.42206,7.82244,1.95561,
+"FirstFloor_Plenum","Plenum","Unoccupied-Exclude from Gross Floor Area","none",0,1,,,,,,,,,,,,0,,,,0,0,0,
+"Core_mid","DirectlyConditioned","Office Area (>250 square feet)","Office, Financial, Unleased, Med Office/Clinic",10586.7,1,,,,10586.7,,,,,,,,,,,,33.1364,58.6169,14.6542,
+"Perimeter_mid_ZN_1","DirectlyConditioned","Office Area (>250 square feet)","Office, Financial, Unleased, Med Office/Clinic",2231.76,1,,,,2231.76,,,,,,,,,,,,6.98542,12.3569,3.08923,
+"Perimeter_mid_ZN_2","DirectlyConditioned","Office Area (>250 square feet)","Office, Financial, Unleased, Med Office/Clinic",1412.9,1,,,,1412.9,,,,,,,,,,,,4.42238,7.82302,1.95575,
+"Perimeter_mid_ZN_3","DirectlyConditioned","Office Area (>250 square feet)","Office, Financial, Unleased, Med Office/Clinic",2231.76,1,,,,2231.76,,,,,,,,,,,,6.98542,12.3569,3.08923,
+"Perimeter_mid_ZN_4","DirectlyConditioned","Office Area (>250 square feet)","Office, Financial, Unleased, Med Office/Clinic",1412.8,1,,,,1412.8,,,,,,,,,,,,4.42206,7.82244,1.95561,
+"MidFloor_Plenum","Plenum","Unoccupied-Exclude from Gross Floor Area","none",0,1,,,,,,,,,,,,0,,,,0,0,0,
+"Core_top","DirectlyConditioned","Office Area (>250 square feet)","Office, Financial, Unleased, Med Office/Clinic",10586.7,1,,,,10586.7,,,,,,,,,,,,33.1364,58.6169,14.6542,
+"Perimeter_top_ZN_1","DirectlyConditioned","Office Area (>250 square feet)","Office, Financial, Unleased, Med Office/Clinic",2231.76,1,,,,2231.76,,,,,,,,,,,,6.98542,12.3569,3.08923,
+"Perimeter_top_ZN_2","DirectlyConditioned","Office Area (>250 square feet)","Office, Financial, Unleased, Med Office/Clinic",1412.9,1,,,,1412.9,,,,,,,,,,,,4.42238,7.82302,1.95575,
+"Perimeter_top_ZN_3","DirectlyConditioned","Office Area (>250 square feet)","Office, Financial, Unleased, Med Office/Clinic",2231.76,1,,,,2231.76,,,,,,,,,,,,6.98542,12.3569,3.08923,
+"Perimeter_top_ZN_4","DirectlyConditioned","Office Area (>250 square feet)","Office, Financial, Unleased, Med Office/Clinic",1412.8,1,,,,1412.8,,,,,,,,,,,,4.42206,7.82244,1.95561,
+"TopFloor_Plenum","Plenum","Unoccupied-Exclude from Gross Floor Area","none",0,1,,,,,,,,,,,,0,,,,0,0,0,
+,,,,,Sums:,0,0,0,53627.8,0,0,0,0,0,0,0,0,0,0,,167.855,296.929,74.2322,
+,,Bldg Cond Area:,53627.8,,Pcts:,0.0,0.0,0.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,

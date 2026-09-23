@@ -1,0 +1,6 @@
+
+
+Residential Water Heater
+,System,,,,Water Heater
+Name,System Name,System Type,System Count,Distribution Type,Status,Type,Fuel,Count,Thermal Efficiency,StandbyLoss Fraction,Storage Capacity,Rated Capacity,Energy Factor,Tank Exterior Insulation Rval,Tank Interior Insulation Rval
+,,,,,,,,,,,(gal),(Btu/h),,(?F-ft2-h/Btu),(?F-ft2-h/Btu)

@@ -1,0 +1,12 @@
+FluidSystems
+,,,,,Controls,,,,,,Supply Side Components,,,Demand Side Components,,,
+Name,Type,Status,Design SupplyT,Design DelT,TempCtrl,FixedT,Supply HiT,At Outdoor,Supply LowT,At OutdoorT,Num Comps,Total Capacity,Flow Rate,Num Comps,Total Capacity,Sensible Capacity,Flow Rate,
+,,,(degF),(degF),,(degF),(degF),(degF),(degF),(degF),,(Btu/hr),(gpm),,(Btu/hr),(Btu/hr),( gpm),
+"SHWFluidSysGas","ServiceHotWater","New",135,80,"Fixed",135,-99996,-99996,-99996,-99996,0,0,0,0,0,0,0
+
+
+Water Heater
+,System,,,Water Heater
+Name,System Name,System Type,System Count,Status,Type,Fuel,Count,Thermal Efficiency,StandbyLoss Fraction,Storage Capacity,Rated Capacity,Energy Factor
+,,,,,,,,,,(gal),(Btu/h),
+"WaterHeater1","SHWFluidSysGas","ServiceHotWater",1,"New","Conventional","Gas",1,0.8,-99996.000,30,37294.6,-99996.000

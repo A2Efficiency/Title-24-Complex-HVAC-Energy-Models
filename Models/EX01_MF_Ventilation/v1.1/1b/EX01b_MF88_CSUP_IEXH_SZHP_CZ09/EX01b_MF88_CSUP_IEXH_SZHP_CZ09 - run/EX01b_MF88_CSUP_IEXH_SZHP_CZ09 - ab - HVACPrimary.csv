@@ -1,0 +1,33 @@
+FluidSystems
+,,,,,Controls,,,,,,Supply Side Components,,,Demand Side Components,,,
+Name,Type,Status,Design SupplyT,Design DelT,TempCtrl,FixedT,Supply HiT,At Outdoor,Supply LowT,At OutdoorT,Num Comps,Total Capacity,Flow Rate,Num Comps,Total Capacity,Sensible Capacity,Flow Rate,
+,,,(degF),(degF),,(degF),(degF),(degF),(degF),(degF),,(Btu/hr),(gpm),,(Btu/hr),(Btu/hr),( gpm),
+"NonResBaseElecSHWSystem","ServiceHotWater","New",135,80,"Fixed",135,-99996,-99996,-99996,-99996,0,0,0,0,0,0,0
+"BaseHWSystem","HotWater","New",130,25,"Fixed",130,-99996,-99996,-99996,-99996,2,266706,21.3284,5,441930,0,0
+
+
+Boiler
+Name,Fluid System Name,Status,Type,Fuel,Draft Type,Rated Capacity,AFUE,Thermal Efficiency,Forced Draft Power,Minimum Unload Ratio
+,,,,,,(Btu/h),,,hp
+"Base Blr","BaseHWSystem","New","HotWater","Gas","MechanicalNoncondensing",133353,0.82,0.8225,0.106683,0.25
+"Base Blr-2","BaseHWSystem","New","HotWater","Gas","MechanicalNoncondensing",133353,0.82,0.8225,0.106683,0.25
+
+
+Pump
+Name,Serving Equipment,Status,Count,Operation,Speed Type,Design Flow Rate,Nameplate HP,Power,Power Per Flow,Break Horse Power,Head,Motor Efficiency,Impeller Efficiency,Minimum Flow Rate
+,,,,,,(gpm),(hp),(kW),(W/gpm),(bhp),(ft. H20),,,(gpm)
+"Base HW Pump","Base Blr","New",1,"OnDemand","VariableSpeed",10.6642,0.5,0.20262,19,0.23235,60.3958,0.855,0.7
+"Base HW Pump-2","Base Blr-2","New",1,"OnDemand","VariableSpeed",10.6642,0.5,0.20262,19,0.23235,60.3958,0.855,0.7
+
+
+Water Heater
+,System,,,Water Heater
+Name,System Name,System Type,System Count,Status,Type,Fuel,Count,Thermal Efficiency,StandbyLoss Fraction,Storage Capacity,Rated Capacity,Energy Factor
+,,,,,,,,,,(gal),(Btu/h),
+"NonResBaseElecWaterHeater","NonResBaseElecSHWSystem","ServiceHotWater",1,"New","Conventional","Electricity",1,1,0.012,30,29835.7,0.951
+
+
+Residential Water Heater
+,System,,,,Water Heater
+Name,System Name,System Type,System Count,Distribution Type,Status,Type,Fuel,Count,Thermal Efficiency,StandbyLoss Fraction,Storage Capacity,Rated Capacity,Energy Factor,Tank Exterior Insulation Rval,Tank Interior Insulation Rval
+,,,,,,,,,,,(gal),(Btu/h),,(?F-ft2-h/Btu),(?F-ft2-h/Btu)

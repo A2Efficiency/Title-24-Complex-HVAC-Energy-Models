@@ -1,0 +1,30 @@
+AirSystems
+,,Fan Capacity,,,,Fan Pwr (Design),,,,,Fan Pwr Ratio,,,,Fan Pwr Adj
+System Name,Type,Supply Fan Capacity,Return Fan Capacity,Relief Fan Capacity,Exhaust Fan Capacity,Supply Fan Pwr,Return Fan Pwr,Relief Fan Pwr,Exhaust Fan Pwr,Total System Fan Pwr,Supply Fan Pwr Ratio,Return Fan Pwr Ratio,Relief Fan Pwr Ratio,Exhaust Fan Pwr Ratio,Total Exhaust Fan Pwr Adj,Total NonExhaust Fan Pwr Adj,Total System Fan Pwr Adj,Fully Ducted Exhaust Pressure Drop Adj,Exhaust Filter Pressure Drop Adj,Biosafety Cabinet Pressure Drop Adj,Fully Ducted Return Pressure Drop Adj,MERV16 Filter Pressure Drop Adj,Air Cleaner Pressure Drop Adj,Fully Ducted Exhaust Design Flow,Exhaust Filter Design Flow,Biosafety Design Flow,Fully Ducted Return Design Flow,MERV16 Filter Design Flow,Air Cleaner Design Flow
+,,(cfm),(cfm),(cfm),(cfm),(kW),(kW),(kW),(kW),(kW),(frac),(frac),(frac),(frac),(kW),(kW),(kW),(inH2O),(inH2O),(inH2O),(inH2O),(inH2O),(inH2O),(cfm),(cfm),(cfm),(cfm),(cfm),(cfm)
+"BottomVAV","PVAV",11478.1,0.0,0.0,0.0,10.858,0.000,0.000,0.000,10.858,1.000,0.000,0.000,0.000,0.000,0.000,0.000,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000
+"Mid VAV","PVAV",12116.1,0.0,0.0,0.0,11.462,0.000,0.000,0.000,11.462,1.000,0.000,0.000,0.000,0.000,0.000,0.000,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000
+"Top VAV","PVAV",12788.4,0.0,0.0,0.0,12.098,0.000,0.000,0.000,12.098,1.000,0.000,0.000,0.000,0.000,0.000,0.000,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0.000,0.000,0.000,0.000,0.000,0.000
+
+Thermal Zone
+,,,,,,Fan Capacity,,,Fan Flow Ratio,,,Fan Pwr,,,,,Fan Pwr Adj
+Name,Pri HVAC Sys,Vent Sys,Exhaust Sys,Floor Area,Multiplier,Pri. System Flow,Ventilation System Flow,Exhaust Flow,Zone Pri-Air-Flow-to-Sys Flow Ratio,Zone Vent-to-Sys-Air Flow Ratio,Zone Exh-to-Sys Flow Ratio,Prop Supply Fan Pwr,Prop Return Fan Pwr,Prop Relief Fan Pwr,Prop Exhaust Fan Pwr,Total Prop Fan Pwr,Total Exhaust Fan Pwr Adj,Total NonExhaust Fan Pwr Adj,Total Fan Pwr Adj,Fully Ducted Exhaust Pwr Adj,Exhaust Filter Fan Pwr Adj,Biosafety Cabinet Fan Pwr Adj,Fully Ducted Return Fan Pwr Adj,MERV16 Fan Pwr Adj,Air Cleaner Fan Pwr Adj,Exhaust Fan Motor BHP
+,,,,(ft2),,(cfm),(cfm),(cfm),(frac),(frac),(frac),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW),(kW)
+"Core_bottom Thermal Zone","BottomVAV","BottomVAV","NONE",10586.7,1,6427.4,6797.7,0.0,0.560,0.000,0.000,6.080,0.000,0.000,0.000,6.080,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Perimeter_bot_ZN_1 Thermal Zone","BottomVAV","BottomVAV","NONE",2231.8,1,1733.3,1433.0,0.0,0.151,0.000,0.000,1.640,0.000,0.000,0.000,1.640,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Perimeter_bot_ZN_2 Thermal Zone","BottomVAV","BottomVAV","NONE",1412.9,1,1044.5,907.2,0.0,0.091,0.000,0.000,0.988,0.000,0.000,0.000,0.988,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Perimeter_bot_ZN_3 Thermal Zone","BottomVAV","BottomVAV","NONE",2231.8,1,1190.5,1433.0,0.0,0.104,0.000,0.000,1.126,0.000,0.000,0.000,1.126,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Perimeter_bot_ZN_4 Thermal Zone","BottomVAV","BottomVAV","NONE",1412.8,1,1082.4,907.2,0.0,0.094,0.000,0.000,1.024,0.000,0.000,0.000,1.024,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"FirstFloor_Plenum Thermal Zone","NONE","NONE","NONE",0.0,1,0.0,0.0,0.0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Core_mid Thermal Zone","Mid VAV","Mid VAV","NONE",10586.7,1,6423.5,7175.5,0.0,0.530,0.000,0.000,6.077,0.000,0.000,0.000,6.077,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Perimeter_mid_ZN_1 Thermal Zone","Mid VAV","Mid VAV","NONE",2231.8,1,1987.0,1512.7,0.0,0.164,0.000,0.000,1.880,0.000,0.000,0.000,1.880,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Perimeter_mid_ZN_2 Thermal Zone","Mid VAV","Mid VAV","NONE",1412.9,1,1191.3,957.6,0.0,0.098,0.000,0.000,1.127,0.000,0.000,0.000,1.127,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Perimeter_mid_ZN_3 Thermal Zone","Mid VAV","Mid VAV","NONE",2231.8,1,1247.9,1512.7,0.0,0.103,0.000,0.000,1.181,0.000,0.000,0.000,1.181,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Perimeter_mid_ZN_4 Thermal Zone","Mid VAV","Mid VAV","NONE",1412.8,1,1266.4,957.6,0.0,0.105,0.000,0.000,1.198,0.000,0.000,0.000,1.198,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"MidFloor_Plenum Thermal Zone","NONE","NONE","NONE",0.0,1,0.0,0.0,0.0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Core_top Thermal Zone","Top VAV","Top VAV","NONE",10586.7,1,6794.9,7573.7,0.0,0.531,0.000,0.000,6.428,0.000,0.000,0.000,6.428,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Perimeter_top_ZN_1 Thermal Zone","Top VAV","Top VAV","NONE",2231.8,1,2085.3,1596.6,0.0,0.163,0.000,0.000,1.973,0.000,0.000,0.000,1.973,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Perimeter_top_ZN_2 Thermal Zone","Top VAV","Top VAV","NONE",1412.9,1,1215.3,1010.8,0.0,0.095,0.000,0.000,1.150,0.000,0.000,0.000,1.150,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Perimeter_top_ZN_3 Thermal Zone","Top VAV","Top VAV","NONE",2231.8,1,1326.6,1596.6,0.0,0.104,0.000,0.000,1.255,0.000,0.000,0.000,1.255,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"Perimeter_top_ZN_4 Thermal Zone","Top VAV","Top VAV","NONE",1412.8,1,1366.2,1010.7,0.0,0.107,0.000,0.000,1.292,0.000,0.000,0.000,1.292,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000
+"TopFloor_Plenum Thermal Zone","NONE","NONE","NONE",0.0,1,0.0,0.0,0.0,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000

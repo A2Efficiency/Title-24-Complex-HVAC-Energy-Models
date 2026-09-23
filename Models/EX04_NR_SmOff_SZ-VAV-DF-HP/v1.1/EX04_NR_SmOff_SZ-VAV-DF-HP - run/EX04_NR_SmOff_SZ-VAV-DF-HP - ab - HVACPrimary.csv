@@ -1,0 +1,14 @@
+FluidSystems
+,,,,,Controls,,,,,,Supply Side Components,,,Demand Side Components,,,
+Name,Type,Status,Design SupplyT,Design DelT,TempCtrl,FixedT,Supply HiT,At Outdoor,Supply LowT,At OutdoorT,Num Comps,Total Capacity,Flow Rate,Num Comps,Total Capacity,Sensible Capacity,Flow Rate,
+,,,(degF),(degF),,(degF),(degF),(degF),(degF),(degF),,(Btu/hr),(gpm),,(Btu/hr),(Btu/hr),( gpm),
+"NonResBaseGasSHWSystem","ServiceHotWater","New",135,80,"Fixed",135,-99996,-99996,-99996,-99996,0,0,0,0,0,0,0
+"NonResBaseElecSHWSystem","ServiceHotWater","New",135,80,"Fixed",135,-99996,-99996,-99996,-99996,0,0,0,0,0,0,0
+
+
+Water Heater
+,System,,,Water Heater
+Name,System Name,System Type,System Count,Status,Type,Fuel,Count,Thermal Efficiency,StandbyLoss Fraction,Storage Capacity,Rated Capacity,Energy Factor
+,,,,,,,,,,(gal),(Btu/h),
+"NonResBaseGasWaterHeater","NonResBaseGasSHWSystem","ServiceHotWater",1,"New","Conventional","Gas",1,0.8,0.086,5.22275,6492.69,0.667
+"NonResBaseElecWaterHeater","NonResBaseElecSHWSystem","ServiceHotWater",1,"New","Conventional","Electricity",1,1,0.014,24.7772,24641.6,0.953

@@ -1,0 +1,44 @@
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX02_MF_Central-VRF-HP\EX02_MF08_Central_VRF_HP_CZ09\EX02_MF08_Res_VRF_TYPE 2_HP_CZ09 - batch\EX02_MF08_Res_VRF_TYPE 2_HP_CZ09 - ap-cse.cse(2087): Info: 
+  RSYS 'rsys-Zone1 HVACSys': 
+    DUCTSEG 'SupplyDuct-rsys-Zone1 HVACSys' is unused (rsDSEH and rsDSEC both given)
+    and has no effect
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX02_MF_Central-VRF-HP\EX02_MF08_Central_VRF_HP_CZ09\EX02_MF08_Res_VRF_TYPE 2_HP_CZ09 - batch\EX02_MF08_Res_VRF_TYPE 2_HP_CZ09 - ap-cse.cse(2087): Info: 
+  RSYS 'rsys-Zone1 HVACSys': 
+    DUCTSEG 'ReturnDuct-rsys-Zone1 HVACSys' is unused (rsDSEH and rsDSEC both given)
+    and has no effect
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX02_MF_Central-VRF-HP\EX02_MF08_Central_VRF_HP_CZ09\EX02_MF08_Res_VRF_TYPE 2_HP_CZ09 - batch\EX02_MF08_Res_VRF_TYPE 2_HP_CZ09 - ap-cse.cse(2133): Info: 
+  RSYS 'rsys-Zone2 HVACSys': 
+    DUCTSEG 'SupplyDuct-rsys-Zone2 HVACSys' is unused (rsDSEH and rsDSEC both given)
+    and has no effect
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX02_MF_Central-VRF-HP\EX02_MF08_Central_VRF_HP_CZ09\EX02_MF08_Res_VRF_TYPE 2_HP_CZ09 - batch\EX02_MF08_Res_VRF_TYPE 2_HP_CZ09 - ap-cse.cse(2133): Info: 
+  RSYS 'rsys-Zone2 HVACSys': 
+    DUCTSEG 'ReturnDuct-rsys-Zone2 HVACSys' is unused (rsDSEH and rsDSEC both given)
+    and has no effect
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX02_MF_Central-VRF-HP\EX02_MF08_Central_VRF_HP_CZ09\EX02_MF08_Res_VRF_TYPE 2_HP_CZ09 - batch\EX02_MF08_Res_VRF_TYPE 2_HP_CZ09 - ap-cse.cse(2087): Info: 
+  RSYS 'rsys-Zone1 HVACSys': 
+    DUCTSEG 'SupplyDuct-rsys-Zone1 HVACSys' is unused (rsDSEH and rsDSEC both given)
+    and has no effect
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX02_MF_Central-VRF-HP\EX02_MF08_Central_VRF_HP_CZ09\EX02_MF08_Res_VRF_TYPE 2_HP_CZ09 - batch\EX02_MF08_Res_VRF_TYPE 2_HP_CZ09 - ap-cse.cse(2087): Info: 
+  RSYS 'rsys-Zone1 HVACSys': 
+    DUCTSEG 'ReturnDuct-rsys-Zone1 HVACSys' is unused (rsDSEH and rsDSEC both given)
+    and has no effect
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX02_MF_Central-VRF-HP\EX02_MF08_Central_VRF_HP_CZ09\EX02_MF08_Res_VRF_TYPE 2_HP_CZ09 - batch\EX02_MF08_Res_VRF_TYPE 2_HP_CZ09 - ap-cse.cse(2133): Info: 
+  RSYS 'rsys-Zone2 HVACSys': 
+    DUCTSEG 'SupplyDuct-rsys-Zone2 HVACSys' is unused (rsDSEH and rsDSEC both given)
+    and has no effect
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX02_MF_Central-VRF-HP\EX02_MF08_Central_VRF_HP_CZ09\EX02_MF08_Res_VRF_TYPE 2_HP_CZ09 - batch\EX02_MF08_Res_VRF_TYPE 2_HP_CZ09 - ap-cse.cse(2133): Info: 
+  RSYS 'rsys-Zone2 HVACSys': 
+    DUCTSEG 'ReturnDuct-rsys-Zone2 HVACSys' is unused (rsDSEH and rsDSEC both given)
+    and has no effect
+---------------
+Warning: Zone 'Attic-atc': Condensation occurred in 262 subhours of run.
+    Total condensation heat = 72.9431 kBtu.
+---------------

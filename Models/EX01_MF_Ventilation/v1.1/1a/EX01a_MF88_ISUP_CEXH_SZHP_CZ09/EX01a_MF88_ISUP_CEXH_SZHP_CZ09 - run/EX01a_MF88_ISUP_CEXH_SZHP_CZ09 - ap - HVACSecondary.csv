@@ -1,0 +1,213 @@
+AirSystems
+,,,,,Cooling,,,,Heating,,,Fan/Ventilation,,,Controls
+Name,Type,Status,System Count,Floor Area Served,Net Capacity,Design Supply T,Capacity/Area,Supply Flow/Ton,Net Capacity,Design Supply T,Capacity/Area,Supply Flow,Supply Flow/Area,Design OA,OA/Area,Control Zone Name,Temp Control,FixedT,Supply HiT,At Outdoor,Supply LowT,At OutdoorT,ReheatCtrlMthd,Availability Schedule,Night Cycle Control
+,,,(#),(ft2),(Btu/hr),(degF),(Btu/ft2),(cfm/ton),(Btu/hr),(degF),(Btu/ft2),(cfm),(cfm/ft2),(cfm),(cfm/ft2),,,(degF),(degF),(degF),(degF),( degF),,,
+"BaseSys5 F1","PVAV","New",1,17613,499173,55,28.3412,401.649,441930,60,25.0911,16707.7,0.9486,4491.31,0.255,"NONE","WarmestReset",,60,,55,,"DualMaximum","RetailHVACAvail","CycleOnCallAnyZone"
+"F1 Business Cent AirSys","SZHP","New",1,360,11873.8,58,32.9829,292.127,12902.4,95,35.8399,289.056,0.802933,178.2,0.495,"F1 Business Center","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F1 Corridor AirSys","SZHP","New",1,1464,15751.5,58,10.7592,292.127,17115.9,95,11.6912,383.453,0.261921,219.6,0.15,"F1 Corridor","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F1 Fitness Cente AirSys","SZHP","New",1,900,14978.4,58,16.6427,292.127,16275.8,95,18.0843,364.633,0.405148,135,0.15,"F1 Fitness Center","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F1 Leasing Offic AirSys","SZHP","New",1,414,9201.32,58,22.2254,322.98,9998.35,95,24.1506,247.654,0.598197,62.1,0.15,"F1 Leasing Office","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F1 Lobby AirSys","SZHP","New",1,1050,14364.2,58,13.6802,292.127,15608.4,95,14.8652,349.68,0.333029,157.5,0.15,"F1 Lobby","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F1 Stairs E AirSys","SZHP","New",1,180,4206.74,58,23.3708,292.127,4571.13,95,25.3952,102.409,0.568936,27,0.15,"F1 Stairs E","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F1 Stairs W AirSys","SZHP","New",1,180,4644.26,58,25.8014,292.127,5046.55,95,28.0364,113.059,0.628108,27,0.15,"F1 Stairs W","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F2 Corridor AirSys","SZHP","New",1,2340,16581.1,58,7.08596,292.127,18017.4,95,7.69975,403.65,0.1725,351,0.15,"F2 Corridor","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F2 Break Room AirSys","SZHP","New",1,180,5733.63,58,31.8535,292.127,6230.28,95,34.6127,139.579,0.775439,89.1,0.495,"F2 Break Room","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F2 Stairs E AirSys","SZHP","New",1,180,1275.47,58,7.08596,292.127,1385.96,95,7.69975,31.05,0.1725,27,0.15,"F2 Stairs E","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F2 Stairs W AirSys","SZHP","New",1,180,1275.47,58,7.08596,292.127,1385.96,95,7.69975,31.05,0.1725,27,0.15,"F2 Stairs W","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F3 Corridor AirSys","SZHP","New",1,2340,16581.1,58,7.08596,292.127,18017.4,95,7.69975,403.65,0.1725,351,0.15,"F3 Corridor","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F3 Break Room AirSys","SZHP","New",1,180,5756.44,58,31.9802,292.127,6255.08,95,34.7504,140.134,0.778524,89.1,0.495,"F3 Break Room","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F3 Stairs E AirSys","SZHP","New",1,180,1275.47,58,7.08596,292.127,1385.96,95,7.69975,31.05,0.1725,27,0.15,"F3 Stairs E","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F3 Stairs W AirSys","SZHP","New",1,180,1275.47,58,7.08596,292.127,1385.96,95,7.69975,31.05,0.1725,27,0.15,"F3 Stairs W","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F4 Corridor AirSys","SZHP","New",1,2340,16581.1,58,7.08596,292.127,18017.4,95,7.69975,403.65,0.1725,351,0.15,"F4 Corridor","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F4 Break Room AirSys","SZHP","New",1,180,5755.26,58,31.9737,292.127,6253.79,95,34.7433,140.106,0.778365,89.1,0.495,"F4 Break Room","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F4 Stairs E AirSys","SZHP","New",1,180,1275.47,58,7.08596,292.127,1385.96,95,7.69975,31.05,0.1725,27,0.15,"F4 Stairs E","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F4 Stairs W AirSys","SZHP","New",1,180,1275.47,58,7.08596,292.127,1385.96,95,7.69975,31.05,0.1725,27,0.15,"F4 Stairs W","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F5 Corridor AirSys","SZHP","New",1,2340,16581.1,58,7.08596,292.127,18017.4,95,7.69975,403.65,0.1725,351,0.15,"F5 Corridor","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F5 Break Room AirSys","SZHP","New",1,180,6135.31,58,34.085,292.127,6666.76,95,37.0375,149.357,0.829763,89.1,0.495,"F5 Break Room","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F5 Stairs E AirSys","SZHP","New",1,180,2130.91,58,11.8384,292.127,2315.49,95,12.8638,51.8747,0.288193,27,0.15,"F5 Stairs E","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+"F5 Stairs W AirSys","SZHP","New",1,180,2167.8,58,12.0433,292.127,2355.58,95,13.0865,52.7727,0.293182,27,0.15,"F5 Stairs W","NoSATControl",,-99996,,-99996,,"UNDEFINED","AllOnHVACAvail","CycleOnCallPrimaryZone"
+
+
+
+Terminal Units
+,,,,Relationships,,,,,AirFlow,,VAV,,Fan Powered Terminal
+Name,Type,Status,Qty,System,System Qty,Zone,Floor Area,HVAC Zones,Primary Max,Primary Min,Heating Max,Reheat Control,Induced Air Zone,Induction Ratio,Fan Power,Parallel Box Control,Flow Fraction
+,,,(#),,(#),,(ft2),(#),(cfm),(cfm),(cfm),,,,( W/cfm)
+"BaseVAV TrmlUnit-7","VAVReheatBox","New",1,"BaseSys5 F1",1,"Thermal Zone: F1 Retail N-NW",5985,1,4880.93,1526.17,2440.46,"DualMaximum","NONE",-99996,-99996,"UNDEFINED",-99996
+"BaseVAV TrmlUnit-8","VAVReheatBox","New",1,"BaseSys5 F1",1,"Thermal Zone: F1 Retail NE",4320,1,3670.75,1101.6,1835.37,"DualMaximum","NONE",-99996,-99996,"UNDEFINED",-99996
+"BaseVAV TrmlUnit-9","VAVReheatBox","New",1,"BaseSys5 F1",1,"Thermal Zone: F1 Retail SE",2880,1,2435.01,734.4,1217.51,"DualMaximum","NONE",-99996,-99996,"UNDEFINED",-99996
+"BaseVAV TrmlUnit-10","VAVReheatBox","New",1,"BaseSys5 F1",1,"Thermal Zone: F1 Retail SW",4428,1,3807.57,1129.14,1903.78,"DualMaximum","NONE",-99996,-99996,"UNDEFINED",-99996
+"F1 Business Cent TrmlUnit","Uncontrolled","New",1,"F1 Business Cent AirSys",1,"F1 Business Center",5985,1,289.056,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F1 Corridor TrmlUnit","Uncontrolled","New",1,"F1 Corridor AirSys",1,"F1 Corridor",4320,1,383.453,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F1 Fitness Cente TrmlUnit","Uncontrolled","New",1,"F1 Fitness Cente AirSys",1,"F1 Fitness Center",2880,1,364.633,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F1 Leasing Offic TrmlUnit","Uncontrolled","New",1,"F1 Leasing Offic AirSys",1,"F1 Leasing Office",4428,1,247.654,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F1 Lobby TrmlUnit","Uncontrolled","New",1,"F1 Lobby AirSys",1,"F1 Lobby",-99996,-99996,349.68,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F1 Stairs E TrmlUnit","Uncontrolled","New",1,"F1 Stairs E AirSys",1,"F1 Stairs E",-99996,-99996,102.409,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F1 Stairs W TrmlUnit","Uncontrolled","New",1,"F1 Stairs W AirSys",1,"F1 Stairs W",-99996,-99996,113.059,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F2 Corridor TrmlUnit","Uncontrolled","New",1,"F2 Corridor AirSys",1,"F2 Corridor",-99996,-99996,403.65,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F2 Break Room TrmlUnit","Uncontrolled","New",1,"F2 Break Room AirSys",1,"F2 Break Room",-99996,-99996,139.579,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F2 Stairs E TrmlUnit","Uncontrolled","New",1,"F2 Stairs E AirSys",1,"F2 Stairs E",-99996,-99996,31.05,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F2 Stairs W TrmlUnit","Uncontrolled","New",1,"F2 Stairs W AirSys",1,"F2 Stairs W",-99996,-99996,31.05,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F3 Corridor TrmlUnit","Uncontrolled","New",1,"F3 Corridor AirSys",1,"F3 Corridor",-99996,-99996,403.65,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F3 Break Room TrmlUnit","Uncontrolled","New",1,"F3 Break Room AirSys",1,"F3 Break Room",-99996,-99996,140.134,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F3 Stairs E TrmlUnit","Uncontrolled","New",1,"F3 Stairs E AirSys",1,"F3 Stairs E",-99996,-99996,31.05,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F3 Stairs W TrmlUnit","Uncontrolled","New",1,"F3 Stairs W AirSys",1,"F3 Stairs W",-99996,-99996,31.05,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F4 Corridor TrmlUnit","Uncontrolled","New",1,"F4 Corridor AirSys",1,"F4 Corridor",-99996,-99996,403.65,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F4 Break Room TrmlUnit","Uncontrolled","New",1,"F4 Break Room AirSys",1,"F4 Break Room",-99996,-99996,140.106,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F4 Stairs E TrmlUnit","Uncontrolled","New",1,"F4 Stairs E AirSys",1,"F4 Stairs E",-99996,-99996,31.05,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F4 Stairs W TrmlUnit","Uncontrolled","New",1,"F4 Stairs W AirSys",1,"F4 Stairs W",-99996,-99996,31.05,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F5 Corridor TrmlUnit","Uncontrolled","New",1,"F5 Corridor AirSys",1,"F5 Corridor",-99996,-99996,403.65,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F5 Break Room TrmlUnit","Uncontrolled","New",1,"F5 Break Room AirSys",1,"F5 Break Room",-99996,-99996,149.357,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F5 Stairs E TrmlUnit","Uncontrolled","New",1,"F5 Stairs E AirSys",1,"F5 Stairs E",-99996,-99996,51.8747,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+"F5 Stairs W TrmlUnit","Uncontrolled","New",1,"F5 Stairs W AirSys",1,"F5 Stairs W",-99996,-99996,52.7727,-99996,-99996,"","NONE",-99996,-99996,"UNDEFINED",-99996
+
+
+
+Cooling Coils
+,,,,Relationships,,,Capacity,,,,ChilledWater,,,DirectExpansion
+Name,Type,Status,Fuel Src,System,System Qty,Zone,Total-Net,Total-Gross,FluidSegIn,FluidSegOut,Design Flow Rate,Condenser Type,Number Stages,SEER (rounded),CodeMin SEER,EER (rounded),CodeMin EER,IEER (roundded),CodeMin IEER,EIR,Sizing Ratio,SEER2 (rounded),CodeMin SEER2,EER2 (rounded), CodeMin EER2
+,,,,,(#),,(Btu/hr),(Btu/hr),(Btu/hr),(Btu/hr),( gpm)
+"BaseSys5 CoilClg","DirectExpansion","New","Electric","BaseSys5 F1",1,"UNDEFINED",499173,520792,"NONE","NONE",-99996,"Air",2,-99996,-99996,9.8,9.8,13,13,0.292197,-999,-99996,-99996,-99996,-99996
+"F1 Business Cent ClgCoil","DirectExpansion","New","Electric","F1 Business Cent AirSys",1,"n/a",11873.8,12388.1,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.967579,14.3,14.3,-99996,-99996
+"F1 Corridor ClgCoil","DirectExpansion","New","Electric","F1 Corridor AirSys",1,"n/a",15751.5,16433.7,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.973912,14.3,14.3,-99996,-99996
+"F1 Fitness Cente ClgCoil","DirectExpansion","New","Electric","F1 Fitness Cente AirSys",1,"n/a",14978.4,15627.1,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.897773,14.3,14.3,-99996,-99996
+"F1 Leasing Offic ClgCoil","DirectExpansion","New","Electric","F1 Leasing Offic AirSys",1,"n/a",9201.32,9599.84,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,1.15,14.3,14.3,-99996,-99996
+"F1 Lobby ClgCoil","DirectExpansion","New","Electric","F1 Lobby AirSys",1,"n/a",14364.2,14986.3,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,1.04001,14.3,14.3,-99996,-99996
+"F1 Stairs E ClgCoil","DirectExpansion","New","Electric","F1 Stairs E AirSys",1,"n/a",4206.74,4388.94,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,1.11822,14.3,14.3,-99996,-99996
+"F1 Stairs W ClgCoil","DirectExpansion","New","Electric","F1 Stairs W AirSys",1,"n/a",4644.26,4845.41,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,1.13559,14.3,14.3,-99996,-99996
+"F2 Corridor ClgCoil","DirectExpansion","New","Electric","F2 Corridor AirSys",1,"n/a",16581.1,17299.3,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.858737,14.3,14.3,-99996,-99996
+"F2 Break Room ClgCoil","DirectExpansion","New","Electric","F2 Break Room AirSys",1,"n/a",5733.63,5981.95,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.929628,14.3,14.3,-99996,-99996
+"F2 Stairs E ClgCoil","DirectExpansion","New","Electric","F2 Stairs E AirSys",1,"n/a",1275.47,1330.71,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.861237,14.3,14.3,-99996,-99996
+"F2 Stairs W ClgCoil","DirectExpansion","New","Electric","F2 Stairs W AirSys",1,"n/a",1275.47,1330.71,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.868743,14.3,14.3,-99996,-99996
+"F3 Corridor ClgCoil","DirectExpansion","New","Electric","F3 Corridor AirSys",1,"n/a",16581.1,17299.3,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.858273,14.3,14.3,-99996,-99996
+"F3 Break Room ClgCoil","DirectExpansion","New","Electric","F3 Break Room AirSys",1,"n/a",5756.44,6005.76,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.93071,14.3,14.3,-99996,-99996
+"F3 Stairs E ClgCoil","DirectExpansion","New","Electric","F3 Stairs E AirSys",1,"n/a",1275.47,1330.71,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.873356,14.3,14.3,-99996,-99996
+"F3 Stairs W ClgCoil","DirectExpansion","New","Electric","F3 Stairs W AirSys",1,"n/a",1275.47,1330.71,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.868874,14.3,14.3,-99996,-99996
+"F4 Corridor ClgCoil","DirectExpansion","New","Electric","F4 Corridor AirSys",1,"n/a",16581.1,17299.3,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.858409,14.3,14.3,-99996,-99996
+"F4 Break Room ClgCoil","DirectExpansion","New","Electric","F4 Break Room AirSys",1,"n/a",5755.26,6004.53,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.930825,14.3,14.3,-99996,-99996
+"F4 Stairs E ClgCoil","DirectExpansion","New","Electric","F4 Stairs E AirSys",1,"n/a",1275.47,1330.71,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.873746,14.3,14.3,-99996,-99996
+"F4 Stairs W ClgCoil","DirectExpansion","New","Electric","F4 Stairs W AirSys",1,"n/a",1275.47,1330.71,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.86131,14.3,14.3,-99996,-99996
+"F5 Corridor ClgCoil","DirectExpansion","New","Electric","F5 Corridor AirSys",1,"n/a",16581.1,17299.3,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.859258,14.3,14.3,-99996,-99996
+"F5 Break Room ClgCoil","DirectExpansion","New","Electric","F5 Break Room AirSys",1,"n/a",6135.31,6401.03,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.947263,14.3,14.3,-99996,-99996
+"F5 Stairs E ClgCoil","DirectExpansion","New","Electric","F5 Stairs E AirSys",1,"n/a",2130.91,2223.2,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.989262,14.3,14.3,-99996,-99996
+"F5 Stairs W ClgCoil","DirectExpansion","New","Electric","F5 Stairs W AirSys",1,"n/a",2167.8,2261.69,"NONE","NONE",-99996,"Air",1,15.05,-99996,11.95,-99996,-99996,-99996,0.232158,0.994452,14.3,14.3,-99996,-99996
+
+
+
+Heating Coils
+,,,,Relationships,,,Capacity,,HotWater,,,HeatPump,,,,,,,,,Furnace
+Name,Type,Status,Fuel Src,System,System Qty,Zone,Total-Net,Total-Gross,FluidSeg In,FluidSeg Out,Design Flow Rate,Condenser Type,Number Stages,HSPF (rounded),CodeMin HSPF,COP (rounded),CodeMin COP,EIR,Comp Lockout Temp,Supp Htr Temp,AFUE,CodeMin AFUE,Thrml Eff,CodeMin Thrml Eff,SizingRatio,HSPF2 (rounded), CodeMin HSPF2
+,,,,,(#),,(Btu/hr),(Btu/hr),,,(gpm),,,,,,,,(?F),( ?F)
+"BaseSys5 CoilHtg","HotWater","New","- specify -","BaseSys5 F1",1,"UNDEFINED",100929,100929,"GF Retail HW Supply","GF Retail HW Return",8.07126,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"BaseVAVBox CoilHtg-7","HotWater","New","- specify -","BaseSys5 F1",1,"Thermal Zone: F1 Retail N-NW",100309,100309,"GF Retail HW Supply","GF Retail HW Return",8.02167,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"BaseVAVBox CoilHtg-8","HotWater","New","- specify -","BaseSys5 F1",1,"Thermal Zone: F1 Retail NE",78778.5,78778.5,"GF Retail HW Supply","GF Retail HW Return",6.29988,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"BaseVAVBox CoilHtg-9","HotWater","New","- specify -","BaseSys5 F1",1,"Thermal Zone: F1 Retail SE",66302.6,66302.6,"GF Retail HW Supply","GF Retail HW Return",5.3022,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"BaseVAVBox CoilHtg-10","HotWater","New","- specify -","BaseSys5 F1",1,"Thermal Zone: F1 Retail SW",95610.7,95610.7,"GF Retail HW Supply","GF Retail HW Return",7.64595,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F1 Business Cent HtgCoil","HeatPump","New","Electric","F1 Business Cent AirSys",1,"n/a",12902.4,12388.1,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,0.967579,7.5,7.5
+"F1 Business Cent HPSuppHtgCoil","Resistance","New","Electric","F1 Business Cent AirSys",1,"n/a",14238.6,14238.6,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F1 Corridor HtgCoil","HeatPump","New","Electric","F1 Corridor AirSys",1,"n/a",17115.9,16433.7,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,0.973912,7.5,7.5
+"F1 Corridor HPSuppHtgCoil","Resistance","New","Electric","F1 Corridor AirSys",1,"n/a",18491.6,18491.6,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F1 Fitness Cente HtgCoil","HeatPump","New","Electric","F1 Fitness Cente AirSys",1,"n/a",16275.8,15627.1,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,0.897773,7.5,7.5
+"F1 Fitness Cente HPSuppHtgCoil","Resistance","New","Electric","F1 Fitness Cente AirSys",1,"n/a",14934.1,14934.1,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F1 Leasing Offic HtgCoil","HeatPump","New","Electric","F1 Leasing Offic AirSys",1,"n/a",9998.35,9599.84,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.15,7.5,7.5
+"F1 Leasing Offic HPSuppHtgCoil","Resistance","New","Electric","F1 Leasing Offic AirSys",1,"n/a",9041.09,9041.09,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F1 Lobby HtgCoil","HeatPump","New","Electric","F1 Lobby AirSys",1,"n/a",15608.4,14986.3,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.04001,7.5,7.5
+"F1 Lobby HPSuppHtgCoil","Resistance","New","Electric","F1 Lobby AirSys",1,"n/a",15337,15337,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F1 Stairs E HtgCoil","HeatPump","New","Electric","F1 Stairs E AirSys",1,"n/a",4571.13,4388.94,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.11822,7.5,7.5
+"F1 Stairs E HPSuppHtgCoil","Resistance","New","Electric","F1 Stairs E AirSys",1,"n/a",3850.91,3850.91,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F1 Stairs W HtgCoil","HeatPump","New","Electric","F1 Stairs W AirSys",1,"n/a",5046.55,4845.41,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,1.13559,7.5,7.5
+"F1 Stairs W HPSuppHtgCoil","Resistance","New","Electric","F1 Stairs W AirSys",1,"n/a",4154.93,4154.93,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F2 Corridor HtgCoil","HeatPump","New","Electric","F2 Corridor AirSys",1,"n/a",18017.4,17299.3,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,0.858737,7.5,7.5
+"F2 Corridor HPSuppHtgCoil","Resistance","New","Electric","F2 Corridor AirSys",1,"n/a",22996.8,22996.8,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F2 Break Room HtgCoil","HeatPump","New","Electric","F2 Break Room AirSys",1,"n/a",6230.28,5981.95,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,0.929628,7.5,7.5
+"F2 Break Room HPSuppHtgCoil","Resistance","New","Electric","F2 Break Room AirSys",1,"n/a",6998.56,6998.56,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F2 Stairs E HtgCoil","HeatPump","New","Electric","F2 Stairs E AirSys",1,"n/a",1385.96,1330.71,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,0.861237,7.5,7.5
+"F2 Stairs E HPSuppHtgCoil","Resistance","New","Electric","F2 Stairs E AirSys",1,"n/a",1773.64,1773.64,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F2 Stairs W HtgCoil","HeatPump","New","Electric","F2 Stairs W AirSys",1,"n/a",1385.96,1330.71,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,0.868743,7.5,7.5
+"F2 Stairs W HPSuppHtgCoil","Resistance","New","Electric","F2 Stairs W AirSys",1,"n/a",1773.64,1773.64,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F3 Corridor HtgCoil","HeatPump","New","Electric","F3 Corridor AirSys",1,"n/a",18017.4,17299.3,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,0.858273,7.5,7.5
+"F3 Corridor HPSuppHtgCoil","Resistance","New","Electric","F3 Corridor AirSys",1,"n/a",22996.8,22996.8,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F3 Break Room HtgCoil","HeatPump","New","Electric","F3 Break Room AirSys",1,"n/a",6255.08,6005.76,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,0.93071,7.5,7.5
+"F3 Break Room HPSuppHtgCoil","Resistance","New","Electric","F3 Break Room AirSys",1,"n/a",7013.9,7013.9,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F3 Stairs E HtgCoil","HeatPump","New","Electric","F3 Stairs E AirSys",1,"n/a",1385.96,1330.71,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,0.873356,7.5,7.5
+"F3 Stairs E HPSuppHtgCoil","Resistance","New","Electric","F3 Stairs E AirSys",1,"n/a",1773.64,1773.64,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F3 Stairs W HtgCoil","HeatPump","New","Electric","F3 Stairs W AirSys",1,"n/a",1385.96,1330.71,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,0.868874,7.5,7.5
+"F3 Stairs W HPSuppHtgCoil","Resistance","New","Electric","F3 Stairs W AirSys",1,"n/a",1773.64,1773.64,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F4 Corridor HtgCoil","HeatPump","New","Electric","F4 Corridor AirSys",1,"n/a",18017.4,17299.3,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,0.858409,7.5,7.5
+"F4 Corridor HPSuppHtgCoil","Resistance","New","Electric","F4 Corridor AirSys",1,"n/a",22996.8,22996.8,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F4 Break Room HtgCoil","HeatPump","New","Electric","F4 Break Room AirSys",1,"n/a",6253.79,6004.53,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,0.930825,7.5,7.5
+"F4 Break Room HPSuppHtgCoil","Resistance","New","Electric","F4 Break Room AirSys",1,"n/a",7013.16,7013.16,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F4 Stairs E HtgCoil","HeatPump","New","Electric","F4 Stairs E AirSys",1,"n/a",1385.96,1330.71,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,0.873746,7.5,7.5
+"F4 Stairs E HPSuppHtgCoil","Resistance","New","Electric","F4 Stairs E AirSys",1,"n/a",1768.98,1768.98,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F4 Stairs W HtgCoil","HeatPump","New","Electric","F4 Stairs W AirSys",1,"n/a",1385.96,1330.71,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,0.86131,7.5,7.5
+"F4 Stairs W HPSuppHtgCoil","Resistance","New","Electric","F4 Stairs W AirSys",1,"n/a",1768.98,1768.98,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F5 Corridor HtgCoil","HeatPump","New","Electric","F5 Corridor AirSys",1,"n/a",18017.4,17299.3,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,0.859258,7.5,7.5
+"F5 Corridor HPSuppHtgCoil","Resistance","New","Electric","F5 Corridor AirSys",1,"n/a",22996.8,22996.8,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F5 Break Room HtgCoil","HeatPump","New","Electric","F5 Break Room AirSys",1,"n/a",6666.76,6401.03,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,0.947263,7.5,7.5
+"F5 Break Room HPSuppHtgCoil","Resistance","New","Electric","F5 Break Room AirSys",1,"n/a",7264.91,7264.91,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F5 Stairs E HtgCoil","HeatPump","New","Electric","F5 Stairs E AirSys",1,"n/a",2315.49,2223.2,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,0.989262,7.5,7.5
+"F5 Stairs E HPSuppHtgCoil","Resistance","New","Electric","F5 Stairs E AirSys",1,"n/a",2399.61,2399.61,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+"F5 Stairs W HtgCoil","HeatPump","New","Electric","F5 Stairs W AirSys",1,"n/a",2355.58,2261.69,"NONE","NONE",0,"Air",1,8.8,-99996,3.4,-99996,0.264815,0,35,-99996,-99996,-99996,-99996,0.994452,7.5,7.5
+"F5 Stairs W HPSuppHtgCoil","Resistance","New","Electric","F5 Stairs W AirSys",1,"n/a",2424.74,2424.74,"NONE","NONE",0,"UNDEFINED",-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-99996,-999,-99996,-99996
+
+
+
+Fans
+,,,,,Relationships,,,Capacity,,,Power,,,,Motor
+Name,Control Method,Status,Class,Cent Type,System,System Qty,Zone,Maximum,Minimum,Efficiency,Modeling Method,Brake HP,Total Static,Power Index,Nameplate HP,Position,Efficiency
+,,,,,,(#),,(cfm),(cfm),,,(hp),(inH2O),(W/cfm),( hp)
+"BaseSys5 Fan","VariableSpeedDrive","New","Centrifugal","AirFoil","BaseSys5 F1",1,"UNDEFINED",16707.7,4491.31,0.65,"PowerPerUnitFlow",19.8416,4.89827,0.946,21.25,"InAirStream",0.936
+"F1 Business Cent SupFan","ConstantVolume","New","Centrifugal","AirFoil","F1 Business Cent AirSys",1,"n/a",289.056,-99996,0.65,"PowerPerUnitFlow",0.24595,3.5095,0.742,0.25,"InAirStream",0.855
+"F1 Corridor SupFan","ConstantVolume","New","Centrifugal","AirFoil","F1 Corridor AirSys",1,"n/a",383.453,-99996,0.65,"PowerPerUnitFlow",0.326269,3.5095,0.742,0.5,"InAirStream",0.855
+"F1 Fitness Cente SupFan","ConstantVolume","New","Centrifugal","AirFoil","F1 Fitness Cente AirSys",1,"n/a",364.633,-99996,0.65,"PowerPerUnitFlow",0.310256,3.5095,0.742,0.5,"InAirStream",0.855
+"F1 Leasing Offic SupFan","ConstantVolume","New","Centrifugal","AirFoil","F1 Leasing Offic AirSys",1,"n/a",247.654,-99996,0.65,"PowerPerUnitFlow",0.210722,3.5095,0.742,0.25,"InAirStream",0.855
+"F1 Lobby SupFan","ConstantVolume","New","Centrifugal","AirFoil","F1 Lobby AirSys",1,"n/a",349.68,-99996,0.65,"PowerPerUnitFlow",0.297533,3.5095,0.742,0.5,"InAirStream",0.855
+"F1 Stairs E SupFan","ConstantVolume","New","Centrifugal","AirFoil","F1 Stairs E AirSys",1,"n/a",102.409,-99996,0.65,"PowerPerUnitFlow",0.0871365,3.5095,0.742,0.125,"InAirStream",0.855
+"F1 Stairs W SupFan","ConstantVolume","New","Centrifugal","AirFoil","F1 Stairs W AirSys",1,"n/a",113.059,-99996,0.65,"PowerPerUnitFlow",0.0961991,3.5095,0.742,0.125,"InAirStream",0.855
+"F2 Corridor SupFan","ConstantVolume","New","Centrifugal","AirFoil","F2 Corridor AirSys",1,"n/a",403.65,-99996,0.65,"PowerPerUnitFlow",0.343454,3.5095,0.742,0.5,"InAirStream",0.855
+"F2 Break Room SupFan","ConstantVolume","New","Centrifugal","AirFoil","F2 Break Room AirSys",1,"n/a",139.579,-99996,0.65,"PowerPerUnitFlow",0.118764,3.5095,0.742,0.125,"InAirStream",0.855
+"F2 Stairs E SupFan","ConstantVolume","New","Centrifugal","AirFoil","F2 Stairs E AirSys",1,"n/a",31.05,-99996,0.65,"PowerPerUnitFlow",0.0264196,3.5095,0.742,0.083,"InAirStream",0.855
+"F2 Stairs W SupFan","ConstantVolume","New","Centrifugal","AirFoil","F2 Stairs W AirSys",1,"n/a",31.05,-99996,0.65,"PowerPerUnitFlow",0.0264196,3.5095,0.742,0.083,"InAirStream",0.855
+"F3 Corridor SupFan","ConstantVolume","New","Centrifugal","AirFoil","F3 Corridor AirSys",1,"n/a",403.65,-99996,0.65,"PowerPerUnitFlow",0.343454,3.5095,0.742,0.5,"InAirStream",0.855
+"F3 Break Room SupFan","ConstantVolume","New","Centrifugal","AirFoil","F3 Break Room AirSys",1,"n/a",140.134,-99996,0.65,"PowerPerUnitFlow",0.119236,3.5095,0.742,0.125,"InAirStream",0.855
+"F3 Stairs E SupFan","ConstantVolume","New","Centrifugal","AirFoil","F3 Stairs E AirSys",1,"n/a",31.05,-99996,0.65,"PowerPerUnitFlow",0.0264196,3.5095,0.742,0.083,"InAirStream",0.855
+"F3 Stairs W SupFan","ConstantVolume","New","Centrifugal","AirFoil","F3 Stairs W AirSys",1,"n/a",31.05,-99996,0.65,"PowerPerUnitFlow",0.0264196,3.5095,0.742,0.083,"InAirStream",0.855
+"F4 Corridor SupFan","ConstantVolume","New","Centrifugal","AirFoil","F4 Corridor AirSys",1,"n/a",403.65,-99996,0.65,"PowerPerUnitFlow",0.343454,3.5095,0.742,0.5,"InAirStream",0.855
+"F4 Break Room SupFan","ConstantVolume","New","Centrifugal","AirFoil","F4 Break Room AirSys",1,"n/a",140.106,-99996,0.65,"PowerPerUnitFlow",0.119212,3.5095,0.742,0.125,"InAirStream",0.855
+"F4 Stairs E SupFan","ConstantVolume","New","Centrifugal","AirFoil","F4 Stairs E AirSys",1,"n/a",31.05,-99996,0.65,"PowerPerUnitFlow",0.0264196,3.5095,0.742,0.083,"InAirStream",0.855
+"F4 Stairs W SupFan","ConstantVolume","New","Centrifugal","AirFoil","F4 Stairs W AirSys",1,"n/a",31.05,-99996,0.65,"PowerPerUnitFlow",0.0264196,3.5095,0.742,0.083,"InAirStream",0.855
+"F5 Corridor SupFan","ConstantVolume","New","Centrifugal","AirFoil","F5 Corridor AirSys",1,"n/a",403.65,-99996,0.65,"PowerPerUnitFlow",0.343454,3.5095,0.742,0.5,"InAirStream",0.855
+"F5 Break Room SupFan","ConstantVolume","New","Centrifugal","AirFoil","F5 Break Room AirSys",1,"n/a",149.357,-99996,0.65,"PowerPerUnitFlow",0.127084,3.5095,0.742,0.25,"InAirStream",0.855
+"F5 Stairs E SupFan","ConstantVolume","New","Centrifugal","AirFoil","F5 Stairs E AirSys",1,"n/a",51.8747,-99996,0.65,"PowerPerUnitFlow",0.0441387,3.5095,0.742,0.083,"InAirStream",0.855
+"F5 Stairs W SupFan","ConstantVolume","New","Centrifugal","AirFoil","F5 Stairs W AirSys",1,"n/a",52.7727,-99996,0.65,"PowerPerUnitFlow",0.0449028,3.5095,0.742,0.083,"InAirStream",0.855
+
+
+
+Outside Air Control
+,,,,Relationships,,Control
+Name,Control,Status,Design OA,Name,System Count,Econo Integration,Max OA Ratio,High DB Lockout,Low DB Lockout,High Enthalpy Lockout,OA Schedule Method,Delay,Schedule Name
+,,,(cfm),,(#),,,(F),(F),(Btu/lb),,( hrs)
+"BaseSys5 OACtrl","FixedDryBulb","New",4491.31,"BaseSys5 F1",1,"Integrated",1,71,-99996,50,"FollowHVACAvailability",0,"NONE"
+"F1 Business Cent OACtrl","NoEconomizer","New",178.2,"F1 Business Cent AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F1 Corridor OACtrl","NoEconomizer","New",219.6,"F1 Corridor AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F1 Fitness Cente OACtrl","NoEconomizer","New",135,"F1 Fitness Cente AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F1 Leasing Offic OACtrl","NoEconomizer","New",62.1,"F1 Leasing Offic AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F1 Lobby OACtrl","NoEconomizer","New",157.5,"F1 Lobby AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F1 Stairs E OACtrl","NoEconomizer","New",27,"F1 Stairs E AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F1 Stairs W OACtrl","NoEconomizer","New",27,"F1 Stairs W AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F2 Corridor OACtrl","NoEconomizer","New",351,"F2 Corridor AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F2 Break Room OACtrl","NoEconomizer","New",89.1,"F2 Break Room AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F2 Stairs E OACtrl","NoEconomizer","New",27,"F2 Stairs E AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F2 Stairs W OACtrl","NoEconomizer","New",27,"F2 Stairs W AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F3 Corridor OACtrl","NoEconomizer","New",351,"F3 Corridor AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F3 Break Room OACtrl","NoEconomizer","New",89.1,"F3 Break Room AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F3 Stairs E OACtrl","NoEconomizer","New",27,"F3 Stairs E AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F3 Stairs W OACtrl","NoEconomizer","New",27,"F3 Stairs W AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F4 Corridor OACtrl","NoEconomizer","New",351,"F4 Corridor AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F4 Break Room OACtrl","NoEconomizer","New",89.1,"F4 Break Room AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F4 Stairs E OACtrl","NoEconomizer","New",27,"F4 Stairs E AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F4 Stairs W OACtrl","NoEconomizer","New",27,"F4 Stairs W AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F5 Corridor OACtrl","NoEconomizer","New",351,"F5 Corridor AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F5 Break Room OACtrl","NoEconomizer","New",89.1,"F5 Break Room AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F5 Stairs E OACtrl","NoEconomizer","New",27,"F5 Stairs E AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"
+"F5 Stairs W OACtrl","NoEconomizer","New",27,"F5 Stairs W AirSys",1,"UNDEFINED",-99996,-99996,-99996,-99996,"FollowHVACAvailability",0,"NONE"

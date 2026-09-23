@@ -1,0 +1,33 @@
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1a\EX01a_MF88_ISUP_CEXH_SZHP_CZ09\EX01a_MF88_ISUP_CEXH_SZHP_CZ09 - batch\EX01a_MF88_ISUP_CEXH_SZHP_CZ09 - ab-pvb-cse.cse(2904): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1a\EX01a_MF88_ISUP_CEXH_SZHP_CZ09\EX01a_MF88_ISUP_CEXH_SZHP_CZ09 - batch\EX01a_MF88_ISUP_CEXH_SZHP_CZ09 - ab-pvb-cse.cse(2904): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaHXBypass' is ignored when oaHXSenEffHDs is not set
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1a\EX01a_MF88_ISUP_CEXH_SZHP_CZ09\EX01a_MF88_ISUP_CEXH_SZHP_CZ09 - batch\EX01a_MF88_ISUP_CEXH_SZHP_CZ09 - ab-pvb-cse.cse(2904): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaSupFanElecPwr' is ignored when there is no supply fan
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1a\EX01a_MF88_ISUP_CEXH_SZHP_CZ09\EX01a_MF88_ISUP_CEXH_SZHP_CZ09 - batch\EX01a_MF88_ISUP_CEXH_SZHP_CZ09 - ab-pvb-cse.cse(2904): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaSupFanEndUse' is ignored when there is no supply fan
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1a\EX01a_MF88_ISUP_CEXH_SZHP_CZ09\EX01a_MF88_ISUP_CEXH_SZHP_CZ09 - batch\EX01a_MF88_ISUP_CEXH_SZHP_CZ09 - ab-pvb-cse.cse(2904): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaHXBypass' is ignored when there is no supply fan
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1a\EX01a_MF88_ISUP_CEXH_SZHP_CZ09\EX01a_MF88_ISUP_CEXH_SZHP_CZ09 - batch\EX01a_MF88_ISUP_CEXH_SZHP_CZ09 - ab-pvb-cse.cse(2904): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaExhFanElecPwr' is ignored when there is no exhaust fan
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1a\EX01a_MF88_ISUP_CEXH_SZHP_CZ09\EX01a_MF88_ISUP_CEXH_SZHP_CZ09 - batch\EX01a_MF88_ISUP_CEXH_SZHP_CZ09 - ab-pvb-cse.cse(2904): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaExhFanEndUse' is ignored when there is no exhaust fan
+---------------
+C:\Users\MichaelSawford\Documents\Claude\Projects\Complex HVAC\v1.1_build\output\EX01_MF_Ventilation\1a\EX01a_MF88_ISUP_CEXH_SZHP_CZ09\EX01a_MF88_ISUP_CEXH_SZHP_CZ09 - batch\EX01a_MF88_ISUP_CEXH_SZHP_CZ09 - ab-pvb-cse.cse(2904): Info: 
+  doas 'doas-Res Central Exhaust (All Units)': 
+    'oaHXBypass' is ignored when there is no exhaust fan
+---------------
